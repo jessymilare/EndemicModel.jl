@@ -205,7 +205,11 @@ function prettify(obj::AbstractVector; kwargs...)
     map(elt -> prettify(elt; kwargs...), obj)
 end
 prettify(obj::Integer; kwargs...) = obj
-prettify(obj::Real; digits = 2, kwargs...) = round(obj; digits = digits)
+function prettify(obj::Real; digits = 2, kwargs...)
+    obj < 1.0 && (digits += 1)
+    obj < 0.1 && (digits += 1)
+    round(obj; digits = digits)
+end
 prettify(obj::Quantity{<:Integer}; digits = 2, kwargs...) = string(obj)
 prettify(obj::Quantity; digits = 2, kwargs...) =
     round(unit(obj), obj; digits = digits + 2)
@@ -213,7 +217,7 @@ prettify(obj::Symbol; kwargs...) = Symbol(prettify(string(obj); kwargs...))
 
 function prettify(obj::AbstractString; kwargs...)
     if all(c -> Int(c) < 255, obj)
-        titlecase(replace(obj, "_" => " "), strict = false)
+        titlecase(replace(obj, "_" => " "); strict = false)
     else
         obj
     end
@@ -223,4 +227,52 @@ function prettify(obj::AbstractDataFrame; kwargs...)
     newcols = [prettify(col; kwargs...) for col ∈ eachcol(obj)]
     newnames = prettify(names(obj); kwargs...)
     DataFrame(newcols, newnames)
+end
+
+function prettify(obj::Missing; kwargs...)
+    nothing
+end
+
+nonmissing(value, default) = ismissing(value) ? default : value
+
+function to_json_dict(
+    data::AbstractDataFrame,
+    keys = [:state, :city, :date];
+    values = [:confirmed, :active, :recovered, :deaths],
+    dfvalues = [:estimated_population],
+)
+    len = nrow(data)
+    colnames = names(data)
+    key = first(keys)
+    restkeys = keys[2:end]
+    @argcheck key ∈ colnames
+
+    jsondict = OrderedDict()
+    if isempty(restkeys)
+        for jsonkey ∈ intersect(dfvalues, colnames)
+            jsondict[jsonkey] = data[1, jsonkey]
+        end
+        values = intersect(values, colnames)
+        for i ∈ 1:len
+            jsonkey = data[i, key]
+            jsonval = OrderedDict(
+                [string(index) => prettify(data[i, index]) for index ∈ values],
+            )
+            jsondict[jsonkey] = jsonval
+        end
+    else
+        for (gkey, gdata) ∈ pairs(groupby(data, key))
+            jsondict[gkey[key]] = to_json_dict(gdata, restkeys)
+        end
+    end
+    jsondict
+end
+
+function to_json(
+    data::AbstractDataFrame,
+    keys = [:state, :city, :date];
+    values = [:confirmed, :active, :recovered, :deaths],
+    dfvalues = [:estimated_population],
+)
+    JSON.json(to_json_dict(data, keys; values = values, dfvalues = dfvalues), 4)
 end

@@ -508,9 +508,9 @@ function import_data(source::BrasilIo; url = BRASIL_IO_URL, kwargs...)
     raw_data[(raw_data.deaths .=== missing), :deaths] .= 0
     sort!(raw_data, [:state, :city, :date])
 
+    rename!(raw_data, "estimated_population_2019" => :estimated_population)
     per_state = @where(raw_data, :place_type .== "state")
     per_city = @where(raw_data, :place_type .== "city")
-    rename!(raw_data, "estimated_population_2019" => :estimated_population)
 
     select!(per_state, Not([:city, :place_type]))
     select!(per_city, Not([:place_type]))

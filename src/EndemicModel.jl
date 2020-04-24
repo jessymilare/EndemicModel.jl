@@ -2,6 +2,7 @@ module EndemicModel
 
 import Base.Iterators
 import CSV
+import JSON
 import OdsIO
 import ZipFile
 
@@ -30,6 +31,7 @@ export AbstractDataSource,
     option,
     option!,
     get_parameters,
+    to_json,
 
     DATA_SOURCES,
     import_data,
@@ -48,31 +50,25 @@ export AbstractDataSource,
     table_grouper,
     covid_19_database,
 
-    PARAMS,
-    NPARAMS,
-    VARIABLES,
-    NVARIABLES,
-    ParamsNamedTuple,
-    VariablesNamedTuple,
-    model_ode,
-    model_ode_function,
-    pack_variables,
-    unpack_variables,
-    pack_parameters,
-    unpack_parameters,
-    model_parameters,
-    model_initial_values,
+    SEIRModel,
+    pack_vars,
+    unpack_vars,
+    unpack_params,
+    SEIR_ODE_fun,
+    SEIR_ODEProblem,
+    model_plot,
     model_problem,
     model_solution,
-    model_decode_solution,
-    model_plot,
-    model_loss_function
+    to_dataframe,
+    loss,
+    optimize_params
 
 const DATA_SOURCES = Dict{Symbol, Type}()
 
 include("utils.jl")
 include("datasources.jl")
 include("database.jl")
+include("covid19.jl")
 include("model.jl")
 
 end # module
