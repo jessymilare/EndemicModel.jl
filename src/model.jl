@@ -18,24 +18,39 @@ end
 function paramsof!(model::AbstractEndemicModel, value)
     model.params = value
 end
+function modeldata_of(model::AbstractEndemicModel)
+    model.modeldata
+end
+function modeldata_of!(model::AbstractEndemicModel, value::AbstractDataFrame)
+    model.modeldata = value
+end
 
 dataof(model::AbstractEndemicModel) = model.data
 
 const SEIR_VARS = (:S, :E, :I, :R)
 const SEIR_DERIV = (:dS, :dE, :dI, :dR)
-const SEIR_PARAMS = (:M, :β, :γ, :α)
+const SEIR_PARAMS = (:M, :β, :γ, :α, :τ)
 const SEIRVars = NamedTuple{SEIR_VARS, NTuple{4, Vector{Float64}}}
 const SEIRDeriv = NamedTuple{SEIR_DERIV, NTuple{4, Vector{Float64}}}
-const SEIRParams = NamedTuple{SEIR_PARAMS, NTuple{4, Vector{Float64}}}
+const SEIRParams = NamedTuple{
+    SEIR_PARAMS,
+    Tuple{
+        Vector{Float64},
+        Array{Float64, 2},
+        Vector{Float64},
+        Vector{Float64},
+        Array{Float64, 2},
+    },
+}
 
 SEIRVars(S, E, I, R) = (SEIRVars((S, E, I, R)))
-SEIRParams(M, β, γ, α) = (SEIRParams((M, β, γ, α)))
+SEIRParams(M, β, γ, α, τ) = (SEIRParams((M, β, γ, α, τ)))
 SEIRDeriv(dS, dE, dI, dR) = SEIRDeriv((dS, dE, dI, dR))
 
 function SEIRDeriv(vars::SEIRVars, params::SEIRParams)
     (S, E, I, R) = vars
-    (M, β, γ, α) = params
-    StoE = sum(β .* (I ./ M)) * S
+    (M, β, γ, α, τ) = params
+    StoE = β * (I ./ M) .* S
     EtoI = γ .* E
     ItoR = α .* I
 
@@ -51,14 +66,15 @@ end
 Compute the derivative of a SEIR-type differential equation.
 S, E, I, R must be vectors of the same length `n`.
 M, γ must be vectors of length `n`.
-β must be an array of length `n x n`.
+β must be an matrix of length `n x n`.
+τ must be an lower triangular matrix of length `n x n`, i.e., τ[i,j] = 0 for j >= i.
 
 Equations:
 M = S + E + I + R
 dM = 0
 dS = - β * (I ./ M) .* S
 dE = β * (I ./ M) .* S - γ .* E
-dI = γ .* E - α .* I
+dI = γ .* E - α .* I + τ * I - τ' * I
 dR = α .* I
 """
 function SEIRDeriv(
@@ -67,11 +83,12 @@ function SEIRDeriv(
     I::AbstractVector{Float64},
     R::AbstractVector{Float64},
     M::AbstractVector{Float64},
-    β::AbstractVector{Float64},
+    β::AbstractArray{Float64, 2},
     γ::AbstractVector{Float64},
     α::AbstractVector{Float64},
+    τ::AbstractArray{Float64, 2},
 )
-    SEIRDeriv((; S = S, E = E, I = I, R = R), (; M = M, β = β, γ = γ, α = α))
+    SEIRDeriv((; S = S, E = E, I = I, R = R), (; M = M, β = β, γ = γ, α = α, τ = τ))
 end
 
 """
@@ -178,14 +195,15 @@ function SEIRModel(
     I::AbstractVector{Float64},
     R::AbstractVector{Float64},
     M::AbstractVector{Float64},
-    β::AbstractVector{Float64},
+    β::AbstractArray{Float64, 2},
     γ::AbstractVector{Float64},
     α::AbstractVector{Float64},
+    τ::AbstractArray{Float64, 2},
     groupnames::Union{Nothing, Vector{Symbol}} = nothing,
 )
     SEIRModel(
         (; S = S, E = E, I = I, R = R),
-        (; M = M, β = β, γ = γ, α = α),
+        (; M = M, β = β, γ = γ, α = α, τ = τ),
         groupnames,
     )
 end
@@ -195,14 +213,25 @@ function SEIRModel(data::DataFrame)
     deaths = data.deaths[end]
     recovered = data.recovered[end]
     μ = deaths / (recovered + deaths)
-    M = numpeople * [1 - μ, μ]
-    I = data.active[1] * [1 - μ, μ]
+    M = numpeople * [0.0, 0.0, 1.0 - μ, μ]
+    I = data.active[1] * [0.0, 0.0, 1.0 - μ, μ]
     S = M - I
-    E = Float64[0.0, 0.0]
-    R = Float64[data.recovered[1], data.deaths[1]]
-    β = [0.15, 0.15]
-    γ = [1.0 / 3.0, 1.0 / 3.0]
-    α = [1.0 / 17.0, 1.0 / 14.0]
+    E = Float64[0.0, 0.0, 0.0, 0.0]
+    R = Float64[0.0, 0.0, data.recovered[1], data.deaths[1]]
+    β = [
+        0.15 0.15 0.15 0.15
+        0.15 0.15 0.15 0.15
+        0.15 0.15 0.15 0.15
+        0.15 0.15 0.15 0.15
+    ]
+    γ = [1.0 / 3.0, 1.0 / 3.0, 1.0 / 3.0, 1.0 / 3.0]
+    α = [1.0 / 17.0, 1.0 / 14.0, 1.0 / 17.0, 1.0 / 14.0]
+    τ = [
+        0.0 0.0 0.0 0.0
+        0.0 0.0 0.0 0.0
+        0.1 0.0 0.0 0.0 # 10% probability of confirmation - nonlethal cases
+        0.0 0.9 0.0 0.0 # 90% probability of confirmation - lethal cases
+    ]
 
     if :recovered_unconf ∉ names(data)
         insertcols!(data, ncol(data) + 1, :recovered_unconf => zeros(Int, nrow(data)))
@@ -211,7 +240,7 @@ function SEIRModel(data::DataFrame)
         insertcols!(data, ncol(data) + 1, :active_unconf => zeros(Int, nrow(data)))
     end
 
-    model = SEIRModel(S, E, I, R, M, β, γ, α)
+    model = SEIRModel(S, E, I, R, M, β, γ, α, τ)
     model.data = data
     model
 end
@@ -232,14 +261,15 @@ function diff_phuber_loss(δ::Real)
     function _diff_phuber_loss(a)
         diff_phuber_loss(a, δ)
     end
-    _phuber_loss
+    _diff_phuber_loss
 end
 
 function estimate_unconf!(data::DataFrame, μ::Float64)
     for row ∈ eachrow(data)
-        row.recovered_unconf = round((row.deaths / μ) - row.deaths - row.recovered)
-        rate_conf = row.recovered / row.recovered_unconf
-        row.active_unconf = round(row.active / rate_conf)
+        rec_unconf = round((row.deaths / μ) - row.deaths - row.recovered)
+        row.recovered_unconf = rec_unconf
+        rate_conf = rec_unconf == 0 ? 0 : row.recovered / rec_unconf
+        row.active_unconf = rate_conf == 0.0 ? 0 : round(row.active / rate_conf)
     end
     data
 end
@@ -252,51 +282,52 @@ function loss(
     params = paramsof(model)
     lethal_groups = model.lethal_groups
     data = dataof(model)
-    sdata = to_dataframe(model)
+    sdata = to_dataframe!(model)
     M = params[:M]
     μ = sum(M[lethal_groups]) / sum(M)
     estimate_unconf!(data, μ)
-    #=
-        rec_tot = loss_func(data.recovered .- mean(data.recovered))
-        dth_tot = loss_func(data.deaths .- mean(data.deaths))
-        act_tot = loss_func(data.active .- mean(data.active))
-        rec_unconf_tot = loss_func(data.recovered_unconf .- mean(data.recovered_unconf))
-        act_unconf_tot = loss_func(data.active_unconf .- mean(data.active_unconf))
-        max_loss = rec_tot + dth_tot + act_tot + rec_unconf_tot + act_unconf_tot
-    =#
+
+    rec_tot = loss_func(data.recovered .- mean(data.recovered))
+    dth_tot = loss_func(data.deaths .- mean(data.deaths))
+    act_tot = loss_func(data.active .- mean(data.active))
+    rec_unconf_tot = loss_func(data.recovered_unconf .- mean(data.recovered_unconf))
+    act_unconf_tot = loss_func(data.active_unconf .- mean(data.active_unconf))
+    max_loss = rec_tot + dth_tot + act_tot + rec_unconf_tot + act_unconf_tot
+
     rec_loss = Float64[]
     act_loss = Float64[]
     dth_loss = Float64[]
     rec_unconf_loss = Float64[]
     act_unconf_loss = Float64[]
-
+    #=
     diff_rec_loss = Float64[]
     diff_act_loss = Float64[]
     diff_dth_loss = Float64[]
     diff_rec_unconf_loss = Float64[]
     diff_act_unconf_loss = Float64[]
-
+    =#
     for (i, si) ∈ zip(1:nrow(data), 1:4:nrow(sdata))
         push!(rec_loss, data.recovered[i] - sdata.recovered[si])
         push!(act_loss, data.active[i] - sdata.active[si])
         push!(dth_loss, data.deaths[i] - sdata.deaths[si])
-        push!(rec_unconf_loss, data.recovered_unconf - sdata.recovered_unconf)
-        push!(act_unconf_loss, data.active_unconf - sdata.active_unconf)
-
+        push!(rec_unconf_loss, data.recovered_unconf[i] - sdata.recovered_unconf[si])
+        push!(act_unconf_loss, data.active_unconf[i] - sdata.active_unconf[si])
+        #=
         push!(diff_rec_loss, sdata.diff_recovered[si])
         push!(diff_act_loss, sdata.diff_active[si])
         push!(diff_dth_loss, sdata.diff_deaths[si])
-        push!(diff_rec_unconf_loss, sdata.diff_recovered_unconf)
-        push!(diff_act_unconf_loss, sdata.diff_active_unconf)
+        push!(diff_rec_unconf_loss, sdata.diff_recovered_unconf[si])
+        push!(diff_act_unconf_loss, sdata.diff_active_unconf[si])
+        =#
     end
     loss_value = (
         loss_func(rec_loss) +
         loss_func(act_loss) +
         loss_func(dth_loss) +
-        loss(rec_unconf_loss) +
-        loss(act_unconf_loss)
-    ) # / max_loss
-
+        loss_func(rec_unconf_loss) +
+        loss_func(act_unconf_loss)
+    )
+    #=
     diff_loss_value = (
         diff_loss_func(rec_loss) .* diff_rec_loss +
         diff_loss_func(act_loss) .* diff_act_loss +
@@ -304,42 +335,46 @@ function loss(
         diff_loss_func(rec_unconf_loss) .* diff_rec_unconf_loss +
         diff_loss_func(act_unconf_loss) .* diff_act_unconf_loss
     )
+    =#
 
-    (loss_value, diff_loss_value)
+    loss_value / max_loss
 end
 
 function optimize_params(model::SEIRModel)
     lastparams = nothing
-    diff_value = nothing
     function _calc_loss(params)
-        paramsof!(model, unpack_params(params))
-        (value, diff_value) = loss(model)
-        lastparams = params
-        value
+        paramsof!(model, unpack_params(params, model.ngroups))
+        loss(model)
     end
-    function diff(params)
-        if last_params != params
+    #=function diff(params)
+        if lastparams != params
             _calc_loss(params)
         end
         return diff_value
-    end
+    end=#
 
     n = model.ngroups
     params = paramsof(model)
-    lower = zeros(Float64, 4 * n)
     maxM = fill(sum(params[:M]), n)
-    maxβ = fill(10.0, n)
     maxαγ = fill(1.0, n)
-    upper = pack_params((; M = maxM, β = maxβ, γ = maxαγ, α = maxαγ))
+    maxβ = fill(10.0, (n, n))
+    maxτ = fill(0.0, (n, n))
+    for i ∈ 2:n
+        for j ∈ 1:(i - 1)
+            maxτ[i, j] = 1.0
+        end
+    end
+    upper = pack_params((; M = maxM, β = maxβ, γ = maxαγ, α = maxαγ, τ = maxτ))
+    lower = zeros(Float64, length(upper))
     minbox = Fminbox(NelderMead())
     optimize(
         _calc_loss,
-        diff,
+        #diff,
         lower,
         upper,
         pack_params(params),
-        minbox;
-        inplace = false,
+        minbox,
+        #inplace = false,
     )
 end
 
@@ -374,11 +409,18 @@ function pack_vars(tup::Union{Tuple, NamedTuple})
     pack_vars(tup...)
 end
 
-function pack_params(M, β, γ, α)
-    vectors = zip(M, β, γ, α)
+function pack_params(M, β, γ, α, τ)
+    vectors = zip(M, γ, α)
     result = Float64[]
-    for vec ∈ vectors
-        append!(result, vec)
+    for v ∈ vectors
+        append!(result, v)
+    end
+    append!(result, vec(β))
+    n = size(τ, 1)
+    for i ∈ 2:n
+        for j ∈ 1:(i - 1)
+            push!(result, τ[i, j])
+        end
     end
     result
 end
@@ -397,22 +439,38 @@ function unpack_vars(X::Vector{Float64})
     (; S = S, E = E, I = I, R = R)
 end
 
-function unpack_params(P::Vector{Float64})
-    Plen = length(P)
-    np = 4
-    Plen = length(P)
+function unpack_params(P::Vector{Float64}, ngroups::Int)
+    np = 3
+    Plen = 3 * ngroups
     M = view(P, 1:np:Plen)
-    β = view(P, 2:np:Plen)
-    γ = view(P, 3:np:Plen)
-    α = view(P, 4:np:Plen)
-    (; M = M, β = β, γ = γ, α = α)
+    γ = view(P, 2:np:Plen)
+    α = view(P, 3:np:Plen)
+    βend = Plen + ngroups * ngroups
+    β_vec = P[(Plen + 1):βend]
+    τ_vec = P[(βend + 1):end]
+    β = Array{Float64, 2}(undef, ngroups, ngroups)
+    τ = zeros(Float64, (ngroups, ngroups))
+    for i ∈ 1:ngroups
+        for j ∈ 1:ngroups
+            β[i, j] = β_vec[(j - 1) * ngroups + i]
+        end
+    end
+    k = 1
+    for i ∈ 2:ngroups
+        for j ∈ 1:(i - 1)
+            τ[i, j] = τ_vec[k]
+            k += 1
+        end
+    end
+    (; M = M, β = β, γ = γ, α = α, τ = τ)
 end
 
 function SEIR_ODE_fun(X, P, t)
     (S, E, I, R) = unpack_vars(X)
-    (M, β, γ, α) = unpack_params(P)
+    n = length(S)
+    (M, β, γ, α, τ) = unpack_params(P, n)
 
-    (dS, dE, dI, dR) = SEIRDeriv(SEIRVars(S, E, I, R), SEIRParams(M, β, γ, α))
+    (dS, dE, dI, dR) = SEIRDeriv(SEIRVars(S, E, I, R), SEIRParams(M, β, γ, α, τ))
     pack_vars(dS, dE, dI, dR)
 end
 
@@ -428,7 +486,7 @@ function model_solution(model::SEIRModel)
     solve(model_problem(model), Euler(); dt = 0.25)
 end
 
-function to_dataframe(problem::ODEProblem)
+function to_dataframe(problem::ODEProblem, model::SEIRModel)
     solution = solve(problem, Euler(); dt = 0.25)
     days = solution.t
     n = length(days)
@@ -446,6 +504,7 @@ function to_dataframe(problem::ODEProblem)
     diff_active_unconf = zeros(Float64, n)
     diff_recovered = zeros(Float64, n)
     diff_recovered_unconf = zeros(Float64, n)
+    diff_deaths = zeros(Float64, n)
     for i ∈ 1:n
         (S, E, I, R) = unpack_vars(solution[i])
         (dS, dE, dI, dR) = SEIRDeriv(S, E, I, R)
@@ -470,21 +529,21 @@ function to_dataframe(problem::ODEProblem)
         recovered = recovered,
         recovered_unconf = recovered_unconf,
         deaths = deaths,
-        diff_exposed = exposed,
+        diff_exposed = diff_exposed,
         diff_active_unconf = diff_active_unconf,
-        diff_active = active,
-        diff_recovered = recovered,
+        diff_active = diff_active,
+        diff_recovered = diff_recovered,
         diff_recovered_unconf = diff_recovered_unconf,
-        diff_deaths = deaths,
+        diff_deaths = diff_deaths,
     )
 end
 
 function to_dataframe!(model::SEIRModel)
-    model.modeldata = to_dataframe(model_problem(model))
+    model.modeldata = to_dataframe(model_problem(model), model)
 end
 
 function to_dataframe(model::SEIRModel)
-    to_dataframe(model_problem(model))
+    to_dataframe(model_problem(model), model)
 end
 
 function model_plot(df::DataFrame, colnames = names(df); title = summary(df))

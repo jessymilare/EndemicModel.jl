@@ -52,6 +52,7 @@ export AbstractDataSource,
 
     SEIRModel,
     pack_vars,
+    pack_params,
     unpack_vars,
     unpack_params,
     SEIR_ODE_fun,
