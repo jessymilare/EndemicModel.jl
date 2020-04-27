@@ -1,31 +1,40 @@
 
-@defgroup br_total(per_state) (date,) [(confirmed, deaths) => sum]
+@deftable Brazil(per_country_group) per_country_group[:Brazil]
 
-@deftable br_total2(br_total, Brazil) begin
-    brdf = select(Brazil, [:date, :estimated_population, :recovered])
-    join(br_total, brdf; on = [:date], kind = :left)
-end
-
-@deftable per_state2(per_state, br_total2) begin
+@deftable per_state2(per_state, Brazil) begin
     nrec = Union{Int, Missing}[]
     for row ∈ eachrow(per_state)
-        brrow = br_total2[br_total2.date .== row.date, :]
-        brrec = brrow.recovered[1]
-        brconf = brrow.confirmed[1]
-        conf = row.confirmed
-        push!(nrec, round(Union{Int, Missing}, brrec * conf / brconf))
+        brrow = Brazil[Brazil.date .== row.date, :]
+        push!(
+            nrec,
+            if !isempty(brrow)
+                brrec = brrow.recovered[1]
+                brconf = brrow.confirmed[1]
+                conf = row.confirmed
+                brconf == 0 ? 0 : round(Union{Int, Missing}, brrec * conf / brconf)
+            else
+                missing
+            end,
+        )
     end
     insertcols!(per_state, 5, :recovered => nrec)
 end
 
-@deftable per_city2(per_city, br_total2) begin
+@deftable per_city2(per_city, Brazil) begin
     nrec = Union{Int, Missing}[]
     for row ∈ eachrow(per_city)
-        brrow = br_total2[br_total2.date .== row.date, :]
-        brrec = brrow.recovered[1]
-        brconf = brrow.confirmed[1]
-        conf = row.confirmed
-        push!(nrec, round(Union{Int, Missing}, brrec * conf / brconf))
+        brrow = Brazil[Brazil.date .== row.date, :]
+        push!(
+            nrec,
+            if !isempty(brrow)
+                brrec = brrow.recovered[1]
+                brconf = brrow.confirmed[1]
+                conf = row.confirmed
+                brconf == 0 ? 0 : round(Union{Int, Missing}, brrec * conf / brconf)
+            else
+                missing
+            end,
+        )
     end
     insertcols!(per_city, 6, :recovered => nrec)
 end
@@ -58,8 +67,6 @@ end
     (test_kind,) => maximum,
     (confirmed, recovered, deaths, closed, active) => sum,
 ]
-
-@deftable Brazil(per_country_group) per_country_group[:Brazil]
 
 @defcolumn μ_closed(deaths, closed) 1.0 .* deaths ./ closed
 @defcolumn μ_confirmed(deaths, confirmed) 1.0 .* deaths ./ confirmed
@@ -146,14 +153,12 @@ function covid_19_database(
         column_closed,
         column_active,
         group_world2,
-        group_br_total,
         copy_pop_tests_tables,
         table_world3,
         group_per_country,
         group_total,
         table_Brazil,
         copy_brazil_tables,
-        table_br_total2,
         table_per_state2,
         table_per_city2,
         column_μ_closed,

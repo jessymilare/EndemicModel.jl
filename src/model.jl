@@ -45,21 +45,12 @@ const SEIRParams = NamedTuple{
 
 SEIRVars(S, E, I, R) = (SEIRVars((S, E, I, R)))
 SEIRParams(M, β, γ, α, τ) = (SEIRParams((M, β, γ, α, τ)))
-SEIRDeriv(dS, dE, dI, dR) = SEIRDeriv((dS, dE, dI, dR))
 
 function SEIRDeriv(vars::SEIRVars, params::SEIRParams)
     (S, E, I, R) = vars
     (M, β, γ, α, τ) = params
-    StoE = β * (I ./ M) .* S
-    EtoI = γ .* E
-    ItoR = α .* I
 
-    dS = -StoE
-    dE = StoE - EtoI
-    dI = EtoI - ItoR
-    dR = ItoR
-
-    (; dS = dS, dE = dE, dI = dI, dR = dR)
+    SEIRDeriv(S, E, I, R, M, β, γ, α, τ)
 end
 
 """
@@ -72,8 +63,8 @@ M, γ must be vectors of length `n`.
 Equations:
 M = S + E + I + R
 dM = 0
-dS = - β * (I ./ M) .* S
-dE = β * (I ./ M) .* S - γ .* E
+dS = - β * (I ./ sum(M)) .* S
+dE = β * (I ./ sum(M)) .* S - γ .* E
 dI = γ .* E - α .* I + τ * I - τ' * I
 dR = α .* I
 """
@@ -88,7 +79,16 @@ function SEIRDeriv(
     α::AbstractVector{Float64},
     τ::AbstractArray{Float64, 2},
 )
-    SEIRDeriv((; S = S, E = E, I = I, R = R), (; M = M, β = β, γ = γ, α = α, τ = τ))
+    StoE = β * (I ./ sum(M)) .* S
+    EtoI = γ .* E
+    ItoR = α .* I
+
+    dS = max.(-StoE, -S)
+    dE = max.(StoE - EtoI, -E)
+    dI = max.(EtoI - ItoR + τ * I - τ' * I, -I)
+    dR = max.(ItoR, -R)
+
+    (; dS = dS, dE = dE, dI = dI, dR = dR)
 end
 
 """
@@ -213,7 +213,7 @@ function SEIRModel(data::DataFrame)
     deaths = data.deaths[end]
     recovered = data.recovered[end]
     μ = deaths / (recovered + deaths)
-    M = numpeople * [0.0, 0.0, 1.0 - μ, μ]
+    M = numpeople * [1.0 - μ, μ, 0.0, 0.0]
     I = data.active[1] * [0.0, 0.0, 1.0 - μ, μ]
     S = M - I
     E = Float64[0.0, 0.0, 0.0, 0.0]
@@ -265,6 +265,7 @@ function diff_phuber_loss(δ::Real)
 end
 
 function estimate_unconf!(data::DataFrame, μ::Float64)
+    μ <= 0 && return data
     for row ∈ eachrow(data)
         rec_unconf = round((row.deaths / μ) - row.deaths - row.recovered)
         row.recovered_unconf = rec_unconf
@@ -306,7 +307,11 @@ function loss(
     diff_rec_unconf_loss = Float64[]
     diff_act_unconf_loss = Float64[]
     =#
-    for (i, si) ∈ zip(1:nrow(data), 1:4:nrow(sdata))
+    if nrow(sdata) < 4 * nrow(data)
+        return Inf
+    end
+    for i ∈ 1:nrow(data)
+        si = 4 * (i - 1) + 1
         push!(rec_loss, data.recovered[i] - sdata.recovered[si])
         push!(act_loss, data.active[i] - sdata.active[si])
         push!(dth_loss, data.deaths[i] - sdata.deaths[si])
@@ -340,10 +345,18 @@ function loss(
     loss_value / max_loss
 end
 
-function optimize_params(model::SEIRModel)
+function optimize_params(model::SEIRModel, packed_params = (:γ, :α, :τ))
     lastparams = nothing
+    model_params = paramsof(model)
     function _calc_loss(params)
-        paramsof!(model, unpack_params(params, model.ngroups))
+        newparams = unpack_params(
+            params,
+            model.ngroups;
+            packed_params = packed_params,
+            default_params = model_params,
+        )
+
+        paramsof!(model, newparams)
         loss(model)
     end
     #=function diff(params)
@@ -357,22 +370,23 @@ function optimize_params(model::SEIRModel)
     params = paramsof(model)
     maxM = fill(sum(params[:M]), n)
     maxαγ = fill(1.0, n)
-    maxβ = fill(10.0, (n, n))
+    maxβ = fill(1.0, (n, n))
     maxτ = fill(0.0, (n, n))
     for i ∈ 2:n
         for j ∈ 1:(i - 1)
             maxτ[i, j] = 1.0
         end
     end
-    upper = pack_params((; M = maxM, β = maxβ, γ = maxαγ, α = maxαγ, τ = maxτ))
-    lower = zeros(Float64, length(upper))
+    maxp = (; M = maxM, β = maxβ, γ = maxαγ, α = maxαγ, τ = maxτ)
+    upper = pack_params(maxp; packed_params = packed_params)
+    lower = fill(-0.001, length(upper))
     minbox = Fminbox(NelderMead())
     optimize(
         _calc_loss,
         #diff,
         lower,
         upper,
-        pack_params(params),
+        pack_params(params; packed_params = packed_params),
         minbox,
         #inplace = false,
     )
@@ -410,23 +424,41 @@ function pack_vars(tup::Union{Tuple, NamedTuple})
 end
 
 function pack_params(M, β, γ, α, τ)
-    vectors = zip(M, γ, α)
+    args = filter(!isnothing, (M, γ, α))
+    vectors = zip(args...)
     result = Float64[]
     for v ∈ vectors
         append!(result, v)
     end
-    append!(result, vec(β))
-    n = size(τ, 1)
-    for i ∈ 2:n
-        for j ∈ 1:(i - 1)
-            push!(result, τ[i, j])
+    if β !== nothing
+        append!(result, vec(β))
+    end
+    if τ !== nothing
+        n = size(τ, 1)
+        for i ∈ 2:n
+            for j ∈ 1:(i - 1)
+                push!(result, τ[i, j])
+            end
         end
     end
     result
 end
 
-function pack_params(tup::Union{Tuple, NamedTuple})
+function pack_params(tup::Tuple)
     pack_params(tup...)
+end
+
+function pack_params(tup::NamedTuple; packed_params = keys(tup))
+    if packed_params == SEIR_PARAMS
+        pack_params(tup...)
+    else
+        M = :M ∈ packed_params ? tup[:M] : nothing
+        β = :β ∈ packed_params ? tup[:β] : nothing
+        γ = :γ ∈ packed_params ? tup[:γ] : nothing
+        α = :α ∈ packed_params ? tup[:α] : nothing
+        τ = :τ ∈ packed_params ? tup[:τ] : nothing
+        pack_params(M, β, γ, α, τ)
+    end
 end
 
 function unpack_vars(X::Vector{Float64})
@@ -439,28 +471,59 @@ function unpack_vars(X::Vector{Float64})
     (; S = S, E = E, I = I, R = R)
 end
 
-function unpack_params(P::Vector{Float64}, ngroups::Int)
-    np = 3
-    Plen = 3 * ngroups
-    M = view(P, 1:np:Plen)
-    γ = view(P, 2:np:Plen)
-    α = view(P, 3:np:Plen)
-    βend = Plen + ngroups * ngroups
-    β_vec = P[(Plen + 1):βend]
-    τ_vec = P[(βend + 1):end]
-    β = Array{Float64, 2}(undef, ngroups, ngroups)
-    τ = zeros(Float64, (ngroups, ngroups))
-    for i ∈ 1:ngroups
-        for j ∈ 1:ngroups
-            β[i, j] = β_vec[(j - 1) * ngroups + i]
-        end
+function unpack_params(
+    P::Vector{Float64},
+    ngroups::Int;
+    packed_params = SEIR_PARAMS,
+    default_params = (),
+)
+    vecvars = [:M, :γ, :α] ∩ packed_params
+    Plen = length(vecvars) * ngroups
+    index = 1
+    np = length(vecvars)
+    if :M ∈ vecvars
+        M = view(P, index:np:Plen)
+        index += 1
+    else
+        M = default_params[:M]
     end
-    k = 1
-    for i ∈ 2:ngroups
-        for j ∈ 1:(i - 1)
-            τ[i, j] = τ_vec[k]
-            k += 1
+    if :γ ∈ vecvars
+        γ = view(P, index:np:Plen)
+        index += 1
+    else
+        γ = default_params[:γ]
+    end
+    if :α ∈ vecvars
+        α = view(P, index:np:Plen)
+        index += 1
+    else
+        α = default_params[:α]
+    end
+    if :β ∈ packed_params
+        βend = Plen + ngroups * ngroups
+        β_vec = P[(Plen + 1):βend]
+        β = Array{Float64, 2}(undef, ngroups, ngroups)
+        for i ∈ 1:ngroups
+            for j ∈ 1:ngroups
+                β[i, j] = β_vec[(j - 1) * ngroups + i]
+            end
         end
+    else
+        β = default_params[:β]
+        βend = Plen
+    end
+    if :τ ∈ packed_params
+        τ_vec = P[(βend + 1):end]
+        τ = zeros(Float64, (ngroups, ngroups))
+        k = 1
+        for i ∈ 2:ngroups
+            for j ∈ 1:(i - 1)
+                τ[i, j] = τ_vec[k]
+                k += 1
+            end
+        end
+    else
+        τ = default_params[:τ]
     end
     (; M = M, β = β, γ = γ, α = α, τ = τ)
 end
@@ -488,6 +551,7 @@ end
 
 function to_dataframe(problem::ODEProblem, model::SEIRModel)
     solution = solve(problem, Euler(); dt = 0.25)
+    (M, β, γ, α, τ) = paramsof(model)
     days = solution.t
     n = length(days)
     ng = model.ngroups
@@ -507,7 +571,7 @@ function to_dataframe(problem::ODEProblem, model::SEIRModel)
     diff_deaths = zeros(Float64, n)
     for i ∈ 1:n
         (S, E, I, R) = unpack_vars(solution[i])
-        (dS, dE, dI, dR) = SEIRDeriv(S, E, I, R)
+        (dS, dE, dI, dR) = SEIRDeriv(S, E, I, R, M, β, γ, α, τ)
         exposed[i] = sum(E)
         active_unconf[i] = sum(I[unconf])
         active[i] = sum(I) - active_unconf[i]
@@ -556,18 +620,22 @@ function model_plot(df::DataFrame, colnames = names(df); title = summary(df))
         label = string(y1),
         title = title,
         w = 3,
-        legend = :right,
+        legend = :left,
     )
     for yn ∈ colnames[3:end]
-        plot!(
-            df[!, xlabel],
-            df[!, yn];
-            xlabel = string(xlabel),
-            label = string(yn),
-            w = 3,
-        )
+        ynstr = string(yn)
+        if length(ynstr) >= 5 && ynstr[1:5] != "diff_"
+            plot!(
+                win,
+                df[!, xlabel],
+                df[!, yn];
+                xlabel = string(xlabel),
+                label = ynstr,
+                w = 3,
+            )
+        end
     end
-    win
+    gui(win)
 end
 
 function model_plot(model::SEIRModel)

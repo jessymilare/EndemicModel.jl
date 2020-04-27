@@ -61,8 +61,14 @@ export AbstractDataSource,
     model_problem,
     model_solution,
     to_dataframe,
+    to_dataframe!,
     loss,
-    optimize_params
+    optimize_params,
+
+    dataof,
+    dataof!,
+    paramsof,
+    paramsof!
 
 const DATA_SOURCES = Dict{Symbol, Type}()
 
