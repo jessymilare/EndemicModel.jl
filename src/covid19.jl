@@ -2,38 +2,38 @@
 @deftable Brazil(per_country_group) per_country_group[:Brazil]
 
 @deftable per_state2(per_state, Brazil) begin
-    nrec = Union{Int, Missing}[]
+    nrec = Union{Int,Missing}[]
     for row ∈ eachrow(per_state)
         brrow = Brazil[Brazil.date .== row.date, :]
         push!(
             nrec,
             if !isempty(brrow)
-                brrec = brrow.recovered[1]
-                brconf = brrow.confirmed[1]
-                conf = row.confirmed
-                brconf == 0 ? 0 : round(Union{Int, Missing}, brrec * conf / brconf)
-            else
-                missing
-            end,
+            brrec = brrow.recovered[1]
+            brconf = brrow.confirmed[1]
+            conf = row.confirmed
+            brconf == 0 ? 0 : round(Union{Int,Missing}, brrec * conf / brconf)
+        else
+            missing
+        end,
         )
     end
     insertcols!(per_state, 5, :recovered => nrec)
 end
 
 @deftable per_city2(per_city, Brazil) begin
-    nrec = Union{Int, Missing}[]
+    nrec = Union{Int,Missing}[]
     for row ∈ eachrow(per_city)
         brrow = Brazil[Brazil.date .== row.date, :]
         push!(
             nrec,
             if !isempty(brrow)
-                brrec = brrow.recovered[1]
-                brconf = brrow.confirmed[1]
-                conf = row.confirmed
-                brconf == 0 ? 0 : round(Union{Int, Missing}, brrec * conf / brconf)
-            else
-                missing
-            end,
+            brrec = brrow.recovered[1]
+            brconf = brrow.confirmed[1]
+            conf = row.confirmed
+            brconf == 0 ? 0 : round(Union{Int,Missing}, brrec * conf / brconf)
+        else
+            missing
+        end,
         )
     end
     insertcols!(per_city, 6, :recovered => nrec)
@@ -41,6 +41,56 @@ end
 
 @defcolumn closed(recovered, deaths) recovered .+ deaths
 @defcolumn active(confirmed, closed) confirmed .- closed
+
+const μ_covid_19 = 0.034
+
+@defcolumn μ_closed(deaths, closed) 1.0 .* deaths ./ closed
+@defcolumn μ_confirmed(deaths, confirmed) 1.0 .* deaths ./ confirmed
+
+@defcolumn μ_closed_est(deaths, recovered) begin
+    ind = findfirst((recovered .>= 100) .& (deaths .>= 1))
+    if deaths[end] == 0 || ind == nothing
+        μ_covid_19
+    else
+        dth, rec = deaths[ind:end], recovered[ind:end]
+        vals = filter(x -> !ismissing(x) && !isnan(x) && !isinf(x), dth ./ (dth .+ rec))
+        isempty(vals) || 0.0 ∈ vals ? μ_covid_19 : minimum(vals)
+    end
+end
+
+@defcolumn μ_conf_est(deaths, confirmed) begin
+    ind = findfirst((confirmed .>= 1000) .& (deaths .>= 10))
+    if deaths[end] == 0 || ind == nothing
+        μ_covid_19
+    else
+        dth, conf = deaths[ind:end], confirmed[ind:end]
+        vals = filter(x -> !ismissing(x) && !isnan(x) && !isinf(x), dth ./ conf)
+        isempty(vals) || 0.0 ∈ vals ? μ_covid_19 : minimum(vals)
+    end
+end
+
+@defcolumn recovered_unconfirmed(deaths, recovered, μ_closed_est) begin
+    vals = (deaths ./ μ_closed_est) .- deaths .- recovered
+    max.(round.(Union{Int, Missing}, vals), 0)
+end
+
+@defcolumn unconfirmed(deaths, confirmed, μ_conf_est, recovered_unconfirmed) begin
+    vals = (deaths ./ μ_conf_est) .- deaths .- confirmed
+    max.(round.(Union{Int, Missing}, vals), recovered_unconfirmed, 0)
+end
+
+@defcolumn recovered_total(recovered, recovered_unconfirmed) begin
+    recovered .+ recovered_unconfirmed
+end
+
+@defcolumn active_unconfirmed(unconfirmed, recovered_unconfirmed) begin
+    unconfirmed .- recovered_unconfirmed
+end
+
+@defcolumn active_total(active, active_unconfirmed) active .+ active_unconfirmed
+
+@defcolumn closed_total(deaths, recovered_total) deaths .+ recovered_total
+
 @defgroup world2(world) (country, date) [
     (latitude, longitude) => mean,
     (confirmed, recovered, deaths, closed, active) => sum,
@@ -67,9 +117,6 @@ end
     (test_kind,) => maximum,
     (confirmed, recovered, deaths, closed, active) => sum,
 ]
-
-@defcolumn μ_closed(deaths, closed) 1.0 .* deaths ./ closed
-@defcolumn μ_confirmed(deaths, confirmed) 1.0 .* deaths ./ confirmed
 
 @defcolumn confirmed_per_1mi(confirmed, estimated_population) begin
     1.0e6 .* confirmed ./ estimated_population
@@ -163,6 +210,14 @@ function covid_19_database(
         table_per_city2,
         column_μ_closed,
         column_μ_confirmed,
+        column_μ_closed_est,
+        column_μ_conf_est,
+        column_unconfirmed,
+        column_recovered_unconfirmed,
+        column_recovered_total,
+        column_active_unconfirmed,
+        column_active_total,
+        column_closed_total,
         column_confirmed_per_1mi,
         column_deaths_per_1mi,
         column_recovered_per_1mi,
@@ -171,5 +226,5 @@ function covid_19_database(
         column_tests_per_confirmed,
         column_tests_per_1mi,
     ]
-    Database{Dict{Symbol, Any}}(sources, kwargs, funcs)
+    Database{Dict{Symbol,Any}}(sources, kwargs, funcs)
 end

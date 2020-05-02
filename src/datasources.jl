@@ -448,7 +448,6 @@ function import_data(source::TotalTestsOWID; url = TESTING_OWID_URL, kwargs...)
     data[!, :country] = map(row -> row[1], country_split) |> correct_countries!
     test_kinds = map(row -> row[2], country_split) |> correct_test_kind!
     insertcols!(data, 3, :test_kind => test_kinds)
-    data = data[data.test_kind .!= "inconsistent units (COVID Tracking Project)", :]
 
     rows = collect(eachrow(data))
     nextrows = rows[2:end]
