@@ -1,0 +1,12 @@
+Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff3 Recovered,Diff3 Deaths,Diff3 Closed,Diff3 Active,μ_closed,μ_confirmed,μ_closed_est
+United Kingdom,Anguilla,18.22,-63.0686,2020-02-09,0,0,0,0,0,,,,,,,,,,,,,,,,NaN,NaN,0.034
+United Kingdom,Bermuda,32.31,-64.7505,2020-02-09,0,0,0,0,0,,,,,,,,,,,,,,,,NaN,NaN,0.034
+United Kingdom,British Virgin Islands,18.42,-64.64,2020-02-09,0,0,0,0,0,,,,,,,,,,,,,,,,NaN,NaN,0.034
+United Kingdom,Cayman Islands,19.31,-81.2546,2020-02-09,0,0,0,0,0,,,,,,,,,,,,,,,,NaN,NaN,0.034
+United Kingdom,Channel Islands,49.37,-2.3644,2020-02-09,0,0,0,0,0,,,,,,,,,,,,,,,,NaN,NaN,0.034
+United Kingdom,Falkland Islands (Malvinas),-51.7963,-59.5236,2020-02-09,0,0,0,0,0,,,,,,,,,,,,,,,,NaN,NaN,0.034
+United Kingdom,Gibraltar,36.14,-5.3536,2020-02-09,0,0,0,0,0,,,,,,,,,,,,,,,,NaN,NaN,0.034
+United Kingdom,Isle Of Man,54.24,-4.5481,2020-02-09,0,0,0,0,0,,,,,,,,,,,,,,,,NaN,NaN,0.034
+United Kingdom,Montserrat,16.74,-62.1874,2020-02-09,0,0,0,0,0,,,,,,,,,,,,,,,,NaN,NaN,0.034
+United Kingdom,Turks And Caicos Islands,21.69,-71.7979,2020-02-09,0,0,0,0,0,,,,,,,,,,,,,,,,NaN,NaN,0.034
+United Kingdom,,55.38,-3.436,2020-02-09,3,0,0,0,3,,,,,,,,,,,,,,,,NaN,0.0,0.034

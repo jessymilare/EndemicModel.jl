@@ -558,7 +558,7 @@ function export_data(
         data = prettify(data)
     end
     exists(destiny) && rm(destiny; recursive = true)
-    csv_write(destiny, data)
+    csv_write(destiny, data; transform = (col, val) -> something(val, missing))
     destiny
 end
 

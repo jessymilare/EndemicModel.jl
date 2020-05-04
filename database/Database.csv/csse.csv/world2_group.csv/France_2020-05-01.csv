@@ -1,0 +1,12 @@
+Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff3 Recovered,Diff3 Deaths,Diff3 Closed,Diff3 Active,μ_closed,μ_confirmed,μ_closed_est
+France,French Guiana,3.93,-53.1258,2020-05-01,128,98,1,99,29,,,,,,,,,,,,,,,,0.0101,0.0078,0.034
+France,French Polynesia,-17.6797,149.41,2020-05-01,58,51,0,51,7,,,,,,,,,,,,,,,,0.0,0.0,0.034
+France,Guadeloupe,16.25,-61.5833,2020-05-01,152,95,12,107,45,,,,,,,,,,,,,,,,0.112,0.0789,0.034
+France,Martinique,14.64,-61.0242,2020-05-01,179,83,14,97,82,,,,,,,,,,,,,,,,0.144,0.0782,0.034
+France,Mayotte,-12.8275,45.17,2020-05-01,539,235,4,239,300,,,,,,,,,,,,,,,,0.0167,0.0074,0.034
+France,New Caledonia,-20.9043,165.62,2020-05-01,18,17,0,17,1,,,,,,,,,,,,,,,,0.0,0.0,0.034
+France,Reunion,-21.1351,55.25,2020-05-01,422,300,0,300,122,,,,,,,,,,,,,,,,0.0,0.0,0.034
+France,Saint Barthelemy,17.9,-62.8333,2020-05-01,6,6,0,6,0,,,,,,,,,,,,,,,,0.0,0.0,0.034
+France,Saint Pierre And Miquelon,46.89,-56.3159,2020-05-01,1,0,0,0,1,,,,,,,,,,,,,,,,NaN,0.0,0.034
+France,St Martin,18.07,-63.0501,2020-05-01,38,27,3,30,8,,,,,,,,,,,,,,,,0.1,0.0789,0.034
+France,,46.23,2.21,2020-05-01,165764,49300,24563,73863,91901,,,,,,,,,,,,,,,,0.333,0.148,0.034

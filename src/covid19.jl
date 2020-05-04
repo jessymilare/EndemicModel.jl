@@ -2,38 +2,38 @@
 @deftable Brazil(per_country_group) per_country_group[:Brazil]
 
 @deftable per_state2(per_state, Brazil) begin
-    nrec = Union{Int,Missing}[]
+    nrec = Union{Int, Missing}[]
     for row ∈ eachrow(per_state)
         brrow = Brazil[Brazil.date .== row.date, :]
         push!(
             nrec,
             if !isempty(brrow)
-            brrec = brrow.recovered[1]
-            brconf = brrow.confirmed[1]
-            conf = row.confirmed
-            brconf == 0 ? 0 : round(Union{Int,Missing}, brrec * conf / brconf)
-        else
-            missing
-        end,
+                brrec = brrow.recovered[1]
+                brconf = brrow.confirmed[1]
+                conf = row.confirmed
+                brconf == 0 ? 0 : round(Union{Int, Missing}, brrec * conf / brconf)
+            else
+                missing
+            end,
         )
     end
     insertcols!(per_state, 5, :recovered => nrec)
 end
 
 @deftable per_city2(per_city, Brazil) begin
-    nrec = Union{Int,Missing}[]
+    nrec = Union{Int, Missing}[]
     for row ∈ eachrow(per_city)
         brrow = Brazil[Brazil.date .== row.date, :]
         push!(
             nrec,
             if !isempty(brrow)
-            brrec = brrow.recovered[1]
-            brconf = brrow.confirmed[1]
-            conf = row.confirmed
-            brconf == 0 ? 0 : round(Union{Int,Missing}, brrec * conf / brconf)
-        else
-            missing
-        end,
+                brrec = brrow.recovered[1]
+                brconf = brrow.confirmed[1]
+                conf = row.confirmed
+                brconf == 0 ? 0 : round(Union{Int, Missing}, brrec * conf / brconf)
+            else
+                missing
+            end,
         )
     end
     insertcols!(per_city, 6, :recovered => nrec)
@@ -41,6 +41,80 @@ end
 
 @defcolumn closed(recovered, deaths) recovered .+ deaths
 @defcolumn active(confirmed, closed) confirmed .- closed
+
+function _column_diff(column, date, ndays)
+    n = length(date)
+    result = Vector{Union{Float64, Missing}}(missing, n)
+    half2 = floor(Int, ndays / 2)
+    half1 = ndays - half2
+    istart = 1 + half1
+    iend = n - half2
+    for i ∈ istart:iend
+        if ( # consistency check
+            date[i - half1] + Day(ndays) == date[i] + Day(half2) == date[i + half2] &&
+            !ismissing(column[i - half1]) &&
+            isfinite(column[i - half1]) &&
+            column[i - half1] > 0
+        )
+            # Geometric mean of column[i+1]/column[i] over `ndays`
+            diff_rate = (column[i + half2] / column[i - half1])^(1 / ndays)
+            if !ismissing(diff_rate) && isfinite(diff_rate)
+                result[i] = diff_rate * column[i]
+            end
+        end
+    end
+    result
+end
+
+@defcolumn diff_confirmed(date, confirmed) _column_diff(confirmed, date, 7)
+#= begin
+    n = length(date)
+    result = Vector{Union{Float64, Missing}}(missing, n)
+    for i ∈ 5:(n - 3)
+        if (
+            date[i - 4] + Day(7) == date[i] + Day(3) == date[i + 3] && # consistency check
+            !ismissing(confirmed[i - 4]) &&
+            isfinite(confirmed[i - 4]) &&
+            confirmed[i - 4] > 0
+        )
+            # Geometric mean of confirmed[i+1]/confirmed[i] over 7 days
+            diff_rate = (confirmed[i + 3] / confirmed[i - 4])^(1 / 7)
+            if !ismissing(diff_rate) && isfinite(diff_rate)
+                result[i] = diff_rate * confirmed[i]
+            end
+        end
+    end
+    result
+end
+=#
+
+@defcolumn diff_recovered(date, recovered) _column_diff(recovered, date, 7)
+@defcolumn diff_deaths(date, deaths) _column_diff(deaths, date, 7)
+
+@defcolumn diff_closed(diff_recovered, diff_deaths) diff_recovered .+ diff_deaths
+@defcolumn diff_active(diff_confirmed, diff_closed) diff_confirmed .- diff_closed
+
+@defcolumn diff2_confirmed(date, diff_confirmed) _column_diff(diff_confirmed, date, 5)
+@defcolumn diff2_recovered(date, diff_recovered) _column_diff(diff_recovered, date, 5)
+@defcolumn diff2_deaths(date, diff_deaths) _column_diff(diff_deaths, date, 5)
+
+@defcolumn diff2_closed(diff2_recovered, diff2_deaths) diff2_recovered .+ diff2_deaths
+@defcolumn diff2_active(diff2_confirmed, diff2_closed) diff2_confirmed .- diff2_closed
+
+@defcolumn diff3_confirmed(date, diff2_confirmed) _column_diff(
+    diff2_confirmed,
+    date,
+    3,
+)
+@defcolumn diff3_recovered(date, diff2_recovered) _column_diff(
+    diff2_recovered,
+    date,
+    3,
+)
+@defcolumn diff3_deaths(date, diff2_deaths) _column_diff(diff2_deaths, date, 3)
+
+@defcolumn diff3_closed(diff3_recovered, diff3_deaths) diff3_recovered .+ diff3_deaths
+@defcolumn diff3_active(diff3_confirmed, diff3_closed) diff3_confirmed .- diff3_closed
 
 const μ_covid_19 = 0.034
 
@@ -53,43 +127,10 @@ const μ_covid_19 = 0.034
         μ_covid_19
     else
         dth, rec = deaths[ind:end], recovered[ind:end]
-        vals = filter(x -> !ismissing(x) && !isnan(x) && !isinf(x), dth ./ (dth .+ rec))
+        vals = filter(x -> !ismissing(x) && isfinite(x), dth ./ (dth .+ rec))
         isempty(vals) || 0.0 ∈ vals ? μ_covid_19 : minimum(vals)
     end
 end
-
-@defcolumn μ_conf_est(deaths, confirmed) begin
-    ind = findfirst((confirmed .>= 1000) .& (deaths .>= 10))
-    if deaths[end] == 0 || ind == nothing
-        μ_covid_19
-    else
-        dth, conf = deaths[ind:end], confirmed[ind:end]
-        vals = filter(x -> !ismissing(x) && !isnan(x) && !isinf(x), dth ./ conf)
-        isempty(vals) || 0.0 ∈ vals ? μ_covid_19 : minimum(vals)
-    end
-end
-
-@defcolumn recovered_unconfirmed(deaths, recovered, μ_closed_est) begin
-    vals = (deaths ./ μ_closed_est) .- deaths .- recovered
-    max.(round.(Union{Int, Missing}, vals), 0)
-end
-
-@defcolumn unconfirmed(deaths, confirmed, μ_conf_est, recovered_unconfirmed) begin
-    vals = (deaths ./ μ_conf_est) .- deaths .- confirmed
-    max.(round.(Union{Int, Missing}, vals), recovered_unconfirmed, 0)
-end
-
-@defcolumn recovered_total(recovered, recovered_unconfirmed) begin
-    recovered .+ recovered_unconfirmed
-end
-
-@defcolumn active_unconfirmed(unconfirmed, recovered_unconfirmed) begin
-    unconfirmed .- recovered_unconfirmed
-end
-
-@defcolumn active_total(active, active_unconfirmed) active .+ active_unconfirmed
-
-@defcolumn closed_total(deaths, recovered_total) deaths .+ recovered_total
 
 @defgroup world2(world) (country, date) [
     (latitude, longitude) => mean,
@@ -208,16 +249,24 @@ function covid_19_database(
         copy_brazil_tables,
         table_per_state2,
         table_per_city2,
+        column_diff_confirmed,
+        column_diff_recovered,
+        column_diff_deaths,
+        column_diff_closed,
+        column_diff_active,
+        column_diff2_confirmed,
+        column_diff2_recovered,
+        column_diff2_deaths,
+        column_diff2_closed,
+        column_diff2_active,
+        column_diff3_confirmed,
+        column_diff3_recovered,
+        column_diff3_deaths,
+        column_diff3_closed,
+        column_diff3_active,
         column_μ_closed,
         column_μ_confirmed,
         column_μ_closed_est,
-        column_μ_conf_est,
-        column_unconfirmed,
-        column_recovered_unconfirmed,
-        column_recovered_total,
-        column_active_unconfirmed,
-        column_active_total,
-        column_closed_total,
         column_confirmed_per_1mi,
         column_deaths_per_1mi,
         column_recovered_per_1mi,
@@ -226,5 +275,5 @@ function covid_19_database(
         column_tests_per_confirmed,
         column_tests_per_1mi,
     ]
-    Database{Dict{Symbol,Any}}(sources, kwargs, funcs)
+    Database{Dict{Symbol, Any}}(sources, kwargs, funcs)
 end

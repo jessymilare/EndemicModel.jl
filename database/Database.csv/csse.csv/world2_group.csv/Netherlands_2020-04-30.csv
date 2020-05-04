@@ -1,0 +1,6 @@
+Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff3 Recovered,Diff3 Deaths,Diff3 Closed,Diff3 Active,μ_closed,μ_confirmed,μ_closed_est
+Netherlands,Aruba,12.52,-70.0358,2020-04-30,100,79,2,81,19,,,,,,,,,,,,,,,,0.0247,0.02,0.034
+Netherlands,"Bonaire, Sint Eustatius And Saba",12.18,-68.2385,2020-04-30,5,0,0,0,5,,,,,,,,,,,,,,,,NaN,0.0,0.034
+Netherlands,Curacao,12.17,-68.99,2020-04-30,16,13,1,14,2,,,,,,,,,,,,,,,,0.0714,0.0625,0.034
+Netherlands,Sint Maarten,18.04,-63.0548,2020-04-30,75,33,13,46,29,,,,,,,,,,,,,,,,0.283,0.173,0.034
+Netherlands,,52.13,5.29,2020-04-30,39316,0,4795,4795,34521,,,,,,,,,,,,,,,,1.0,0.122,0.034

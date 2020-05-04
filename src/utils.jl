@@ -169,7 +169,7 @@ end
     PathDesignator
 )
 
-@defoption(database_data_type, :ods, "Default format of database files.", Symbol)
+@defoption(database_data_type, :csv, "Default format of database files.", Symbol)
 
 function get_parameters(
     table::AbstractString;

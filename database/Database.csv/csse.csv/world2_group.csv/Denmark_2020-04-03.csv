@@ -1,0 +1,4 @@
+Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff3 Recovered,Diff3 Deaths,Diff3 Closed,Diff3 Active,μ_closed,μ_confirmed,μ_closed_est
+Denmark,Faroe Islands,61.89,-6.9118,2020-04-03,179,91,0,91,88,,,,,,,,,,,,,,,,0.0,0.0,0.104
+Denmark,Greenland,71.71,-42.6043,2020-04-03,10,3,0,3,7,,,,,,,,,,,,,,,,0.0,0.0,0.104
+Denmark,,56.26,9.5,2020-04-03,3757,1193,139,1332,2425,,,,,,,,,,,,,,,,0.104,0.037,0.104

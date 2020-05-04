@@ -328,6 +328,7 @@ function export_data(
     database_data_type = option(:database_data_type),
     database_directory = option(:database_directory),
     database_filename = option(:database_filename),
+    pretty::Bool = true,
     kwargs...,
 )
     output = database_path(
@@ -335,7 +336,13 @@ function export_data(
         database_directory = database_directory,
         database_filename = database_filename,
     )
-    export_data(database_data_type, database; output = output, kwargs...)
+    export_data(
+        database_data_type,
+        database;
+        pretty = pretty,
+        output = output,
+        kwargs...,
+    )
 end
 
 macro defcolumn(fcall::Expr, body::Expr)
