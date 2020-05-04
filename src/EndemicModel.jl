@@ -3,7 +3,6 @@ module EndemicModel
 import Base.Iterators
 import CSV
 import JSON
-import OdsIO
 import ZipFile
 
 using ArgCheck
