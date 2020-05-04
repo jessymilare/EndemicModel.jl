@@ -366,13 +366,18 @@ WorldPopulationWB(::Nothing; kwargs...) = WorldPopulationWB()
 
 DATA_SOURCES[:world_population] = WorldPopulationWB
 
-function import_data(source::WorldPopulationWB; url = WORLD_POP_WB_URL, kwargs...)
+function import_data(
+    source::WorldPopulationWB;
+    update_period = Year(1),
+    url = WORLD_POP_WB_URL,
+    kwargs...,
+)
     curyear = year(today())
     years = [string(y) for y ∈ WORLD_POP_YEAR_0:curyear]
     keycols = ["Country Name", "Country Code"]
     col_select = keycols ∪ years
 
-    file = import_data(DownloadSource(url))
+    file = import_data(DownloadSource(url); update_period = update_period, kwargs...)
     global r = ZipFile.Reader(file)
     zipfiles = r.files
     file = zipfiles[findfirst(f -> f.name[1:10] == "API_SP.POP", zipfiles)]
