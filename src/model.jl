@@ -334,7 +334,12 @@ function SEIR_ODE_fun(X, P, t)
     pack_vars(dS, dE, dI, dR)
 end
 
-function SEIR_ODEProblem(inivars::SEIRVars, params::SEIRParams; maxtime = 360.0)
+function SEIR_ODEProblem(
+    inivars::SEIRVars,
+    params::SEIRParams;
+    maxtime = 180.0,
+    kwargs...,
+)
     ODEProblem(SEIR_ODE_fun, pack_vars(inivars), (0.0, maxtime), pack_params(params))
 end
 
@@ -350,7 +355,7 @@ function to_dataframe(problem::ODEProblem, model::SEIRModel)
     solution = solve(problem, Euler(); dt = 1.0)
     (M, β, γ, α) = paramsof(model)
     days = solution.t
-    date = model.data.date[1] .+ Day.(days .- 1)
+    date = model.data.date[end] .+ Day.(days)
     n = length(days)
     ng = model.ngroups
     lethal = model.lethal_groups
@@ -358,6 +363,7 @@ function to_dataframe(problem::ODEProblem, model::SEIRModel)
     active = zeros(Float64, n)
     recovered = zeros(Float64, n)
     deaths = zeros(Float64, n)
+    confirmed = zeros(Float64, n)
     diff_exposed = zeros(Float64, n)
     diff_active = zeros(Float64, n)
     diff_recovered = zeros(Float64, n)
@@ -369,13 +375,15 @@ function to_dataframe(problem::ODEProblem, model::SEIRModel)
         active[i] = sum(I)
         recovered[i] = sum(R[setdiff(1:ng, lethal)])
         deaths[i] = sum(R[lethal])
+        confirmed[i] = active[i] + recovered[i] + deaths[i]
         diff_exposed[i] = sum(dE)
         diff_active[i] = sum(dI)
         diff_recovered[i] = sum(dR[setdiff(1:ng, lethal)])
         diff_deaths[i] = sum(dR[lethal])
     end
-    DataFrame(
+    df = DataFrame(
         date = date,
+        confirmed = confirmed,
         exposed = exposed,
         active = active,
         recovered = recovered,
@@ -385,6 +393,8 @@ function to_dataframe(problem::ODEProblem, model::SEIRModel)
         diff_recovered = diff_recovered,
         diff_deaths = diff_deaths,
     )
+
+    df
 end
 
 function to_dataframe!(model::SEIRModel; kwargs...)
@@ -395,13 +405,22 @@ function to_dataframe(model::SEIRModel; kwargs...)
     to_dataframe(model_problem(model; kwargs...), model)
 end
 
-const PLOT_COLUMNS = [:date, :day, :confirmed, :exposed, :active, :recovered, :deaths]
+const PLOT_COLUMNS = [:date, :confirmed, :exposed, :active, :recovered, :deaths]
 
 function model_plot(
     df::DataFrame,
     colnames = intersect(names(df), PLOT_COLUMNS);
     title = summary(df),
+    minimum_plot_factor = option(:minimum_plot_factor),
+    kwargs...,
 )
+    numpeople = if hasproperty(df, :estimated_population)
+        df.estimated_population[1]
+    else
+        df.confirmed[end]
+    end
+    n = findlast(df.active .>= numpeople * minimum_plot_factor)
+    df = df[1:n, :]
     xlabel = colnames[1]
     y1 = colnames[2]
     win = plot(
@@ -410,7 +429,7 @@ function model_plot(
         xlabel = string(xlabel),
         label = string(y1),
         title = title,
-        legend = :left,
+        legend = :topleft,
     )
     for yn ∈ colnames[3:end]
         ynstr = string(yn)
@@ -421,10 +440,10 @@ end
 
 function model_plot(model::SEIRModel; kwargs...)
     df = to_dataframe!(model; kwargs...)
-    model_plot(df)
+    model_plot(df; kwargs...)
 end
 
-function model_plot(problem::ODEProblem)
+function model_plot(problem::ODEProblem; kwargs...)
     df = to_dataframe(problem; kwargs...)
-    model_plot(df)
+    model_plot(df; kwargs...)
 end

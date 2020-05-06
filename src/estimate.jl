@@ -26,15 +26,18 @@ end
 function model_loss(
     model::SEIRModel;
     loss_func::Function = phuber_loss(1.0),
-    diff_loss_func::Function = diff_phuber_loss(1.0),
+    # diff_loss_func::Function = diff_phuber_loss(1.0),
 )
     params = paramsof(model)
-    lethal_groups = model.lethal_groups
+    lethal = model.lethal_groups
+    ng = model.ngroups
     data = dataof(model)
-    ndays = Dates.days(data.date[end] - data.date[1]) + 240
-    sdata = to_dataframe!(model; maxtime = Float64(ndays))
+    ndays = Dates.days(data.date[end] - data.date[1])
+    solution = model_solution(model; maxtime = -ndays - 1 |> Float64)
+    days = Int.(solution.t)
+    n = length(days)
     M = params[:M]
-    μ = sum(M[lethal_groups]) / sum(M)
+    μ = sum(M[lethal]) / sum(M)
 
     rec_tot = loss_func(data.recovered .- mean(data.recovered))
     dth_tot = loss_func(data.deaths .- mean(data.deaths))
@@ -49,9 +52,12 @@ function model_loss(
     diff_act_loss = Float64[]
     diff_dth_loss = Float64[] =#
     for i ∈ 1:nrow(data)
-        push!(rec_loss, data.recovered[i] - sdata.recovered[i])
-        push!(act_loss, data.active[i] - sdata.active[i])
-        push!(dth_loss, data.deaths[i] - sdata.deaths[i])
+        day = -Dates.days(data.date[end] - data.date[i])
+        sol = solution[end - i + 1]
+        (S, E, I, R) = unpack_vars(sol)
+        push!(rec_loss, data.recovered[i] - sum(R[setdiff(1:ng, lethal)]))
+        push!(act_loss, data.active[i] - sum(I))
+        push!(dth_loss, data.deaths[i] - sum(R[lethal]))
         #=
         push!(diff_rec_loss, sdata.diff_recovered[si])
         push!(diff_act_loss, sdata.diff_active[si])
@@ -96,7 +102,7 @@ function optimize_params(model::SEIRModel, packed_params = (:β, :γ, :α))
 
     maxM = fill(sum(model_params[:M]), n)
     maxαγ = fill(1.0, n)
-    maxβ = 1.0
+    maxβ = fill(1.0, n)
     maxp = (; M = maxM, β = maxβ, γ = maxαγ, α = maxαγ)
     maxE = maxM ./ 2
     upper = pack_params(maxp; packed_params = packed_params)
@@ -110,7 +116,7 @@ function optimize_params(model::SEIRModel, packed_params = (:β, :γ, :α))
 end
 
 function estimate_μ(data; ndays = 14)
-    mean(data.μ_closed[(end - ndays):end])
+    data.μ_closed_est[1] * 0.5
 end
 
 function estimate_α(data; ndays = 7, μ = estimate_μ(data))
@@ -184,18 +190,43 @@ function estimate_β(
     ]
 end
 
-function SEIRModel(data::DataFrame)
-    data = data[data.confirmed .>= 1000, :]
+function estimate_exposed!(
+    data;
+    ndays = 7,
+    μ = estimate_μ(data),
+    α = estimate_α(data; μ = μ),
+    γ = estimate_γ(data; μ = μ, α = α),
+)
+    d1 = data.diff_confirmed
+    d1_1, d1_2 = (1.0 - μ) * d1, μ * d1
+
+    E_unlethal, E_lethal = d1_1 ./ γ[1], d1_2 ./ γ[2]
+    E = E_unlethal + E_lethal
+    if :exposed ∉ names(data)
+        insertcols!(data, ncol(data) + 1, :exposed => E)
+    else
+        data.exposed = E
+    end
+    [E_unlethal, E_lethal]
+end
+
+function SEIRModel(
+    data::DataFrame;
+    minimum_confirmed_factor = option(:minimum_confirmed_factor),
+)
     numpeople = data.estimated_population[1]
+    data = data[data.confirmed .>= numpeople * minimum_confirmed_factor, :]
     μ = estimate_μ(data)
     M = numpeople * [(1.0 - μ), μ]
-    I = [(1.0 - μ), μ] * data.active[1]
+    I = [(1.0 - μ), μ] * data.active[end]
     S = M - I
     E = I
-    R = Float64[data.recovered[1], data.deaths[1]]
+    R = Float64[data.recovered[end], data.deaths[end]]
     α = estimate_α(data; μ = μ)
     γ = estimate_γ(data; μ = μ, α = α)
     β = estimate_β(data; μ = μ, α = α, γ = γ)
+
+    estimate_exposed!(data; μ = μ, α = α, γ = γ)
 
     model = SEIRModel(S, E, I, R, M, β, γ, α, [:non_lethal, :lethal])
     model.data = data
