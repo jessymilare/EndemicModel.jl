@@ -1,2 +1,2 @@
-Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff3 Recovered,Diff3 Deaths,Diff3 Closed,Diff3 Active,μ_closed,μ_confirmed,μ_closed_est
-Algeria,,28.03,1.66,2020-04-18,2534,894,367,1261,1273,,,,,,,,,,,,,,,,0.291,0.145,0.291
+Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
+Algeria,,28.03,1.66,2020-04-18,2534,894,367,1261,1273,,,,,,,,,,,,,,0.291,0.145,0.291

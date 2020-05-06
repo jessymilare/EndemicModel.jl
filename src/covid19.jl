@@ -57,7 +57,7 @@ function _column_diff(column, date, ndays)
             column[i - half1] > 0
         )
             # Geometric mean of column[i+1]/column[i] over `ndays`
-            diff_rate = (column[i + half2] / column[i - half1])^(1 / ndays)
+            diff_rate = abs(column[i + half2] / column[i - half1])^(1 / ndays) - 1
             if !ismissing(diff_rate) && isfinite(diff_rate)
                 result[i] = diff_rate * column[i]
             end
@@ -106,6 +106,7 @@ end
     date,
     3,
 )
+#=
 @defcolumn diff3_recovered(date, diff2_recovered) _column_diff(
     diff2_recovered,
     date,
@@ -115,11 +116,33 @@ end
 
 @defcolumn diff3_closed(diff3_recovered, diff3_deaths) diff3_recovered .+ diff3_deaths
 @defcolumn diff3_active(diff3_confirmed, diff3_closed) diff3_confirmed .- diff3_closed
+=#
+@defcolumn diff4_confirmed(date, diff3_confirmed) _column_diff(
+    diff3_confirmed,
+    date,
+    3,
+)
+
+@defcolumn diff5_confirmed(date, diff4_confirmed) _column_diff(
+    diff4_confirmed,
+    date,
+    3,
+)
+
+@defcolumn diff6_confirmed(date, diff5_confirmed) _column_diff(
+    diff5_confirmed,
+    date,
+    3,
+)
 
 const μ_covid_19 = 0.034
 
-@defcolumn μ_closed(deaths, closed) 1.0 .* deaths ./ closed
-@defcolumn μ_confirmed(deaths, confirmed) 1.0 .* deaths ./ confirmed
+@defcolumn μ_closed(deaths, closed) begin
+    replace(1.0 .* deaths ./ closed, NaN => missing)
+end
+@defcolumn μ_confirmed(deaths, confirmed) begin
+    replace(1.0 .* deaths ./ confirmed, NaN => missing)
+end
 
 @defcolumn μ_closed_est(deaths, recovered) begin
     ind = findfirst((recovered .>= 100) .& (deaths .>= 1))
@@ -260,10 +283,8 @@ function covid_19_database(
         column_diff2_closed,
         column_diff2_active,
         column_diff3_confirmed,
-        column_diff3_recovered,
-        column_diff3_deaths,
-        column_diff3_closed,
-        column_diff3_active,
+        column_diff4_confirmed,
+        column_diff5_confirmed,
         column_μ_closed,
         column_μ_confirmed,
         column_μ_closed_est,

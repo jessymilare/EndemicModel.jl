@@ -1,4 +1,4 @@
-Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff3 Recovered,Diff3 Deaths,Diff3 Closed,Diff3 Active,μ_closed,μ_confirmed,μ_closed_est
-Denmark,Faroe Islands,61.89,-6.9118,2020-04-09,184,136,0,136,48,,,,,,,,,,,,,,,,0.0,0.0,0.12
-Denmark,Greenland,71.71,-42.6043,2020-04-09,11,11,0,11,0,,,,,,,,,,,,,,,,0.0,0.0,0.12
-Denmark,,56.26,9.5,2020-04-09,5635,1736,237,1973,3662,,,,,,,,,,,,,,,,0.12,0.0421,0.12
+Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
+Denmark,Faroe Islands,61.89,-6.9118,2020-04-09,184,136,0,136,48,,,,,,,,,,,,,,0.0,0.0,0.12
+Denmark,Greenland,71.71,-42.6043,2020-04-09,11,11,0,11,0,,,,,,,,,,,,,,0.0,0.0,0.12
+Denmark,,56.26,9.5,2020-04-09,5635,1736,237,1973,3662,,,,,,,,,,,,,,0.12,0.0421,0.12

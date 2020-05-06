@@ -61,7 +61,7 @@ export AbstractDataSource,
     model_solution,
     to_dataframe,
     to_dataframe!,
-    loss,
+    model_loss,
     optimize_params,
 
     dataof,

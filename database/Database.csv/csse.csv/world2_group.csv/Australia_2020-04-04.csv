@@ -1,9 +1,9 @@
-Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff3 Recovered,Diff3 Deaths,Diff3 Closed,Diff3 Active,μ_closed,μ_confirmed,μ_closed_est
-Australia,Australian Capital Territory,-35.4735,149.01,2020-04-04,93,18,2,20,73,,,,,,,,,,,,,,,,0.1,0.0215,0.015
-Australia,New South Wales,-33.8688,151.21,2020-04-04,2493,4,12,16,2477,,,,,,,,,,,,,,,,0.75,0.0048,0.015
-Australia,Northern Territory,-12.4634,130.85,2020-04-04,26,1,0,1,25,,,,,,,,,,,,,,,,0.0,0.0,0.015
-Australia,Queensland,-28.0167,153.4,2020-04-04,900,8,4,12,888,,,,,,,,,,,,,,,,0.333,0.0044,0.015
-Australia,South Australia,-34.9285,138.6,2020-04-04,407,46,0,46,361,,,,,,,,,,,,,,,,0.0,0.0,0.015
-Australia,Tasmania,-41.4545,145.97,2020-04-04,80,5,2,7,73,,,,,,,,,,,,,,,,0.286,0.025,0.015
-Australia,Victoria,-37.8136,144.96,2020-04-04,1115,527,8,535,580,,,,,,,,,,,,,,,,0.015,0.0072,0.015
-Australia,Western Australia,-31.9505,115.86,2020-04-04,436,92,2,94,342,,,,,,,,,,,,,,,,0.0213,0.0046,0.015
+Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
+Australia,Australian Capital Territory,-35.4735,149.01,2020-04-04,93,18,2,20,73,,,,,,,,,,,,,,0.1,0.0215,0.015
+Australia,New South Wales,-33.8688,151.21,2020-04-04,2493,4,12,16,2477,,,,,,,,,,,,,,0.75,0.0048,0.015
+Australia,Northern Territory,-12.4634,130.85,2020-04-04,26,1,0,1,25,,,,,,,,,,,,,,0.0,0.0,0.015
+Australia,Queensland,-28.0167,153.4,2020-04-04,900,8,4,12,888,,,,,,,,,,,,,,0.333,0.0044,0.015
+Australia,South Australia,-34.9285,138.6,2020-04-04,407,46,0,46,361,,,,,,,,,,,,,,0.0,0.0,0.015
+Australia,Tasmania,-41.4545,145.97,2020-04-04,80,5,2,7,73,,,,,,,,,,,,,,0.286,0.025,0.015
+Australia,Victoria,-37.8136,144.96,2020-04-04,1115,527,8,535,580,,,,,,,,,,,,,,0.015,0.0072,0.015
+Australia,Western Australia,-31.9505,115.86,2020-04-04,436,92,2,94,342,,,,,,,,,,,,,,0.0213,0.0046,0.015
