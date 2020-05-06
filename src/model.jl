@@ -208,7 +208,7 @@ function SEIRModel(
     I::AbstractVector{Float64},
     R::AbstractVector{Float64},
     M::AbstractVector{Float64},
-    β::Float64,
+    β::AbstractVector{Float64},
     γ::AbstractVector{Float64},
     α::AbstractVector{Float64},
     groupnames::Union{Nothing, Vector{Symbol}} = nothing,

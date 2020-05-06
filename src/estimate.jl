@@ -109,61 +109,84 @@ function optimize_params(model::SEIRModel, packed_params = (:β, :γ, :α))
     optimize(_calc_loss, lower, upper, opt_params, minbox)
 end
 
-function estimate_μ(data)
-    data.μ_closed_est[1]
+function estimate_μ(data; ndays = 14)
+    mean(data.μ_closed[(end - ndays):end])
 end
 
 function estimate_α(data; ndays = 7, μ = estimate_μ(data))
-    dt = data[data.diff_reccovered .!= missing, :]
+    dt = data[data.diff_recovered .!== missing, :]
     # Get numbers from last `ndays` days
-    diff_rec = dt.diff_recovered[(end - ndays):ndays]
-    diff_dth = dt.diff_deaths[(end - ndays):ndays]
-    dR = [diff_red, diff_dth]
-    active = dt.active[(end - ndays):ndays]
-    I = active .* [μ, 1.0 - μ]
-
-    mean.(I ./ dR)
+    dR1 = dt.diff_recovered[(end - ndays):end]
+    dR2 = dt.diff_deaths[(end - ndays):end]
+    active = dt.active[(end - ndays):end]
+    I1, I2 = (1.0 - μ) .* active, μ .* active
+    [mean(dR1 ./ I1), mean(dR2 ./ I2)]
 end
 
-function estimate_γ(data; ndays = 7, α = estimate_α(data), μ = estimate_μ(data))
-    dt = data[data.diff3_confirmed .!= missing, :]
+function _γ_root(d1, d2, d3, I, α)
+    root1 = mean(
+        -(
+            sqrt.(abs.(
+                4 .* I .* d2 .^ 3 +
+                (-3 .* d1 .^ 2 .+ 2 .* I .* α .* d1 .+ I .^ 2 .* α .^ 2) .* d2 .^ 2 .+ (2 .* I .^ 2 .* α .* d3 .- 6 .* I .* d3 .* d1) .* d2 .+
+                4 .* d3 .* d1 .^ 3 .- 4 .* I .* α .* d3 .* d1 .^ 2 .+
+                I .^ 2 .* d3 .^ 2,
+            )) .+ (I .* α .- d1) .* d2 .+ I .* d3
+        ) ./ (2 .* I .* d2 .- 2 .* d1 .^ 2 .+ 2 .* I .* α .* d1),
+    )
+
+    root2 = mean(
+        (
+            sqrt.(abs.(
+                4 .* I .* d2 .^ 3 +
+                (-3 .* d1 .^ 2 .+ 2 .* I .* α .* d1 .+ I .^ 2 .* α .^ 2) .* d2 .^ 2 .+ (2 .* I .^ 2 .* α .* d3 .- 6 .* I .* d3 .* d1) .* d2 .+
+                4 .* d3 .* d1 .^ 3 .- 4 .* I .* α .* d3 .* d1 .^ 2 .+
+                I .^ 2 .* d3 .^ 2,
+            )) .+ (d1 .- I .* α) .* d2 .- I .* d3
+        ) ./ (2 .* I .* d2 .- 2 .* d1 .^ 2 .+ 2 .* I .* α .* d1),
+    )
+
+    @show root1, root2
+    max(root1, root2)
+end
+
+function estimate_γ(data; ndays = 7, μ = estimate_μ(data), α = estimate_α(data; μ = μ))
+    dt = data[data.diff3_confirmed .!== missing, :]
     # Get numbers from last `ndays` days
-    d1 = dt.diff_confirmed[end - ndays, ndays]
-    d2 = dt.diff2_confirmed[end - ndays, ndays]
-    d3 = dt.diff3_confirmed[end - ndays, ndays]
+    d1 = dt.diff_confirmed[(end - ndays):end]
+    d2 = dt.diff2_confirmed[(end - ndays):end]
+    d3 = dt.diff3_confirmed[(end - ndays):end]
 
-    active = dt.active[end - ndays, ndays]
-    I = active * [μ, 1.0 - μ]
+    active = dt.active[(end - ndays):end]
+    I1, I2 = (1.0 - μ) .* active, μ .* active
 
-    (
-        sqrt.(
-            4 .* I .* d2^3 + (-3 * d1^2 .+ 2 .* I .* α .* d1 .+ I^2 .* α^2) * d2^2 .+
-            (2 .* I^2 .* α .* d3 .- 6 .* I .* d3 .* d1) * d2 .+ 4 .* d3 .* d1^3 .-
-            4 .* I .* α .* d3 .* d1^2 .+ I .^ 2 .* d3^2,
-        ) .+ (d1 .- I .* α) .* d2 .- I .* d3
-    ) ./ (2 .* I .* d2 .- 2 .* d1^2 .+ 2 .* I .* α .* d1)
+    [_γ_root(d1, d2, d3, I1, α[1]), _γ_root(d1, d2, d3, I2, α[2])]
 end
 
 function estimate_β(
     data;
     ndays = 7,
-    α = estimate_α(data),
     μ = estimate_μ(data),
-    γ = estimate_γ(data),
+    α = estimate_α(data; μ = μ),
+    γ = estimate_γ(data; μ = μ, α = α),
 )
-    dt = data[data.diff3_confirmed .!= missing, :]
+    dt = data[data.diff3_confirmed .!== missing, :]
     # Get numbers from last `ndays` days
-    d1 = dt.diff_confirmed[end - ndays, ndays]
-    d2 = dt.diff2_confirmed[end - ndays, ndays]
+    d1 = dt.diff_confirmed[(end - ndays):end]
+    d2 = dt.diff2_confirmed[(end - ndays):end]
 
-    active = dt.active[end - ndays, ndays]
-    I = active * [μ, 1.0 - μ]
+    active = dt.active[(end - ndays):end]
+    I1, I2 = (1.0 - μ) .* active, μ .* active
 
-    (d2 .+ γ .* d1) ./ (γ .* I .+ d1)
+    [
+        mean((d2 .+ γ[1] .* d1) ./ (γ[2] .* I2 .+ d1)),
+        mean((d2 .+ γ[2] .* d1) ./ (γ[2] .* I2 .+ d1)),
+    ]
 end
 
 function SEIRModel(data::DataFrame)
     data = data[data.confirmed .>= 1000, :]
+    numpeople = data.estimated_population[1]
     μ = estimate_μ(data)
     M = numpeople * [(1.0 - μ), μ]
     I = [(1.0 - μ), μ] * data.active[1]

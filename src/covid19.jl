@@ -166,6 +166,7 @@ end
     keys = [:country, :date, :latitude, :longitude]
     vals1 = [:estimated_population, :total_tests, :test_kind]
     vals2 = [:confirmed, :recovered, :deaths, :closed, :active]
+    sort!(gdf, [:country, :test_kind, :date])
     select(gdf, keys ∪ vals1 ∪ vals2)
 end
 

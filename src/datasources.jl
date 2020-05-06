@@ -482,7 +482,7 @@ function import_data(source::TotalTestsOWID; url = TESTING_OWID_URL, kwargs...)
             )
         end
     end
-    sort!(data, [:country, :date])
+    sort!(data, [:country, :test_kind, :date])
     data
 end
 

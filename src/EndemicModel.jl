@@ -61,13 +61,22 @@ export AbstractDataSource,
     model_solution,
     to_dataframe,
     to_dataframe!,
-    model_loss,
-    optimize_params,
 
     dataof,
     dataof!,
     paramsof,
-    paramsof!
+    paramsof!,
+
+    phuber_loss,
+    diff_phuber_loss,
+    l2_loss,
+    diff_l2_loss,
+    model_loss,
+    optimize_params,
+    estimate_μ,
+    estimate_α,
+    estimate_γ,
+    estimate_β
 
 const DATA_SOURCES = Dict{Symbol, Type}()
 
@@ -76,5 +85,6 @@ include("datasources.jl")
 include("database.jl")
 include("covid19.jl")
 include("model.jl")
+include("estimate.jl")
 
 end # module
