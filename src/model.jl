@@ -360,9 +360,12 @@ function model_plot(
     df::DataFrame,
     colnames = intersect(names(df), PLOT_COLUMNS);
     title = summary(df),
+    ylabel = "People (millions)",
+    yfactor = 1e-6,
     minimum_plot_factor = option(:minimum_plot_factor),
     kwargs...,
 )
+    colnames = intersect(colnames, names(df))
     numpeople = if hasproperty(df, :estimated_population)
         df.estimated_population[1]
     else
@@ -370,29 +373,37 @@ function model_plot(
     end
     n = findlast(df.active .>= numpeople * minimum_plot_factor)
     df = df[1:n, :]
-    xlabel = colnames[1]
-    y1 = colnames[2]
+    xlabel = :date
+    y1 = colnames[1]
     win = plot(
         df[!, xlabel],
-        df[!, y1],
+        df[!, y1] .* yfactor,
         xlabel = string(xlabel),
         label = string(y1),
+        ylabel = ylabel,
         title = title,
-        legend = :topleft,
+        legend = :right,
     )
-    for yn ∈ colnames[3:end]
+    for yn ∈ colnames[2:end]
         ynstr = string(yn)
-        plot!(win, df[!, xlabel], df[!, yn]; xlabel = string(xlabel), label = ynstr)
+        plot!(
+            win,
+            df[!, xlabel],
+            df[!, yn] .* yfactor;
+            xlabel = string(xlabel),
+            label = ynstr,
+            ylabel = ylabel,
+        )
     end
     gui(win)
 end
 
-function model_plot(model::SEIRModel; kwargs...)
+function model_plot(model::SEIRModel, colnames = PLOT_COLUMNS; kwargs...)
     df = to_dataframe!(model; kwargs...)
-    model_plot(df; kwargs...)
+    model_plot(df, colnames; kwargs...)
 end
 
-function model_plot(problem::ODEProblem; kwargs...)
+function model_plot(problem::ODEProblem, colnames = PLOT_COLUMNS; kwargs...)
     df = to_dataframe(problem; kwargs...)
-    model_plot(df; kwargs...)
+    model_plot(df, colnames; kwargs...)
 end

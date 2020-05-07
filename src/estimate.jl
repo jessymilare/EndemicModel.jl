@@ -26,12 +26,15 @@ end
 function model_loss(
     model::SEIRModel;
     loss_func::Function = phuber_loss(1.0),
+    ndays = nothing,
+    kwargs...,
     # diff_loss_func::Function = diff_phuber_loss(1.0),
 )
     params = paramsof(model)
     ng = model.ngroups
     data = dataof(model)
-    ndays = Dates.days(data.date[end] - data.date[1])
+    ndays = something(ndays, Dates.days(data.date[end] - data.date[1]))
+    istart, iend = nrow(data) - ndays, nrow(data)
     solution = model_solution(model; maxtime = -ndays - 1 |> Float64)
     days = Int.(solution.t)
     n = length(days)
@@ -50,13 +53,13 @@ function model_loss(
     diff_rec_loss = Float64[]
     diff_act_loss = Float64[]
     diff_dth_loss = Float64[] =#
-    for i ∈ 1:nrow(data)
+    for i ∈ 1:(iend - istart + 1)
         day = -Dates.days(data.date[end] - data.date[i])
         sol = solution[end - i + 1]
         (S, E, I, R) = unpack_vars(sol)
-        push!(rec_loss, data.recovered[i] - sum((1 .- μ) .* R))
-        push!(act_loss, data.active[i] - sum(I))
-        push!(dth_loss, data.deaths[i] - sum(μ .* R))
+        push!(rec_loss, data.recovered[i - 1 + istart] - sum((1 .- μ) .* R))
+        push!(act_loss, data.active[i - 1 + istart] - sum(I))
+        push!(dth_loss, data.deaths[i - 1 + istart] - sum(μ .* R))
         #=
         push!(diff_rec_loss, sdata.diff_recovered[si])
         push!(diff_act_loss, sdata.diff_active[si])
@@ -73,7 +76,12 @@ function model_loss(
     loss_value / max_loss
 end
 
-function optimize_params(model::SEIRModel, packed_params = (:β, :γ, :α, :μ))
+function optimize_params(
+    model::SEIRModel;
+    packed_params = (:β, :γ, :α, :μ),
+    ndays = 14,
+    kwargs...,
+)
     n = model.ngroups
     lastparams = nothing
     model_params = paramsof(model)
@@ -90,7 +98,7 @@ function optimize_params(model::SEIRModel, packed_params = (:β, :γ, :α, :μ))
         paramsof!(model, newparams)
         (S, E, I, R) = varsof(model)
         varsof!(model, SEIRVars(S, newE, I, R))
-        model_loss(model)
+        model_loss(model; ndays = ndays, kwargs...)
     end
     #= function diff(params)
         if lastparams != params

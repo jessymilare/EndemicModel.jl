@@ -149,9 +149,10 @@ end
     if deaths[end] == 0 || ind == nothing
         μ_covid_19
     else
+        ind = max(1, length(deaths) - 14, ind)
         dth, rec = deaths[ind:end], recovered[ind:end]
         vals = filter(x -> !ismissing(x) && isfinite(x), dth ./ (dth .+ rec))
-        isempty(vals) || 0.0 ∈ vals ? μ_covid_19 : minimum(vals)
+        isempty(vals) || 0.0 ∈ vals ? μ_covid_19 : mean(vals)
     end
 end
 
