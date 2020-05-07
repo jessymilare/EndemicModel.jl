@@ -1,2 +1,2 @@
 Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
-Senegal,,14.5,-14.4524,2020-04-22,442,253,6,259,183,,,,,,,,,,,,,,0.0232,0.0136,0.0232
+Senegal,,14.5,-14.4524,2020-04-22,442,253,6,259,183,,,,,,,,,,,,,,0.0232,0.0136,0.034

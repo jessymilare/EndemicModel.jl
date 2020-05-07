@@ -1,2 +1,2 @@
 Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
-Azerbaijan,,40.14,47.58,2020-04-12,1098,250,11,261,837,,,,,,,,,,,,,,0.0421,0.01,0.0421
+Azerbaijan,,40.14,47.58,2020-04-12,1098,250,11,261,837,,,,,,,,,,,,,,0.0421,0.01,0.034

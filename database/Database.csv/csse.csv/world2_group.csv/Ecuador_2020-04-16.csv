@@ -1,2 +1,2 @@
 Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
-Ecuador,,-1.8312,-78.1834,2020-04-16,8225,838,403,1241,6984,,,,,,,,,,,,,,0.325,0.049,0.325
+Ecuador,,-1.8312,-78.1834,2020-04-16,8225,838,403,1241,6984,,,,,,,,,,,,,,0.325,0.049,0.034

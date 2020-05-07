@@ -1,2 +1,2 @@
 Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
-Burkina Faso,,12.24,-1.5616,2020-04-10,443,146,24,170,273,,,,,,,,,,,,,,0.141,0.0542,0.141
+Burkina Faso,,12.24,-1.5616,2020-04-10,443,146,24,170,273,,,,,,,,,,,,,,0.141,0.0542,0.034

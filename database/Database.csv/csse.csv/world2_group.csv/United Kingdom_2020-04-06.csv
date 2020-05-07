@@ -1,12 +1,12 @@
 Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
-United Kingdom,Anguilla,18.22,-63.0686,2020-04-06,3,0,0,0,3,,,,,,,,,,,,,,,0.0,0.979
-United Kingdom,Bermuda,32.31,-64.7505,2020-04-06,39,17,2,19,20,,,,,,,,,,,,,,0.105,0.0513,0.979
-United Kingdom,British Virgin Islands,18.42,-64.64,2020-04-06,3,0,0,0,3,,,,,,,,,,,,,,,0.0,0.979
-United Kingdom,Cayman Islands,19.31,-81.2546,2020-04-06,39,1,1,2,37,,,,,,,,,,,,,,0.5,0.0256,0.979
-United Kingdom,Channel Islands,49.37,-2.3644,2020-04-06,323,27,7,34,289,,,,,,,,,,,,,,0.206,0.0217,0.979
-United Kingdom,Falkland Islands (Malvinas),-51.7963,-59.5236,2020-04-06,2,0,0,0,2,,,,,,,,,,,,,,,0.0,0.979
-United Kingdom,Gibraltar,36.14,-5.3536,2020-04-06,109,52,0,52,57,,,,,,,,,,,,,,0.0,0.0,0.979
-United Kingdom,Isle Of Man,54.24,-4.5481,2020-04-06,139,55,1,56,83,,,,,,,,,,,,,,0.0179,0.0072,0.979
-United Kingdom,Montserrat,16.74,-62.1874,2020-04-06,6,0,0,0,6,,,,,,,,,,,,,,,0.0,0.979
-United Kingdom,Turks And Caicos Islands,21.69,-71.7979,2020-04-06,8,0,1,1,7,,,,,,,,,,,,,,1.0,0.125,0.979
-United Kingdom,,55.38,-3.436,2020-04-06,51608,135,6433,6568,45040,,,,,,,,,,,,,,0.979,0.125,0.979
+United Kingdom,Anguilla,18.22,-63.0686,2020-04-06,3,0,0,0,3,,,,,,,,,,,,,,,0.0,0.034
+United Kingdom,Bermuda,32.31,-64.7505,2020-04-06,39,17,2,19,20,,,,,,,,,,,,,,0.105,0.0513,0.034
+United Kingdom,British Virgin Islands,18.42,-64.64,2020-04-06,3,0,0,0,3,,,,,,,,,,,,,,,0.0,0.034
+United Kingdom,Cayman Islands,19.31,-81.2546,2020-04-06,39,1,1,2,37,,,,,,,,,,,,,,0.5,0.0256,0.034
+United Kingdom,Channel Islands,49.37,-2.3644,2020-04-06,323,27,7,34,289,,,,,,,,,,,,,,0.206,0.0217,0.034
+United Kingdom,Falkland Islands (Malvinas),-51.7963,-59.5236,2020-04-06,2,0,0,0,2,,,,,,,,,,,,,,,0.0,0.034
+United Kingdom,Gibraltar,36.14,-5.3536,2020-04-06,109,52,0,52,57,,,,,,,,,,,,,,0.0,0.0,0.034
+United Kingdom,Isle Of Man,54.24,-4.5481,2020-04-06,139,55,1,56,83,,,,,,,,,,,,,,0.0179,0.0072,0.034
+United Kingdom,Montserrat,16.74,-62.1874,2020-04-06,6,0,0,0,6,,,,,,,,,,,,,,,0.0,0.034
+United Kingdom,Turks And Caicos Islands,21.69,-71.7979,2020-04-06,8,0,1,1,7,,,,,,,,,,,,,,1.0,0.125,0.034
+United Kingdom,,55.38,-3.436,2020-04-06,51608,135,6433,6568,45040,,,,,,,,,,,,,,0.979,0.125,0.034

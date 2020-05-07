@@ -1,2 +1,2 @@
 Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
-Niger,,17.61,8.08,2020-05-01,728,478,33,511,217,,,,,,,,,,,,,,0.0646,0.0453,0.0646
+Niger,,17.61,8.08,2020-05-01,728,478,33,511,217,,,,,,,,,,,,,,0.0646,0.0453,0.034

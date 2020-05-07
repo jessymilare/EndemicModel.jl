@@ -145,7 +145,13 @@ end
 end
 
 @defcolumn μ_closed_est(deaths, recovered) begin
-    ind = findfirst((recovered .>= 100) .& (deaths .>= 1))
+    ind = findfirst(map(
+        p -> begin
+            (d, r) = p
+            !ismissing(d) && !ismissing(r) && d >= 1 && r >= 1000
+        end,
+        zip(deaths, recovered),
+    ))
     if deaths[end] == 0 || ind == nothing
         μ_covid_19
     else
@@ -167,7 +173,28 @@ end
     keys = [:country, :date, :latitude, :longitude]
     vals1 = [:estimated_population, :total_tests, :test_kind]
     vals2 = [:confirmed, :recovered, :deaths, :closed, :active]
-    sort!(gdf, [:country, :test_kind, :date])
+    testkinds = filter(!ismissing, Set(gdf.test_kind))
+    if length(testkinds) > 1
+        if "units unclear" ∈ testkinds
+            delete!(testkinds::Set, "units unclear")
+        end
+        if length(testkinds) > 1
+            if "samples tested" ∈ testkinds
+                delete!(testkinds::Set, "samples tested")
+            end
+        end
+        if length(testkinds) > 1
+            if "samples tested" ∈ testkinds
+                delete!(testkinds::Set, "samples tested")
+            end
+        end
+        if length(testkinds) > 1
+            testkinds = Set([rand(testkinds)])
+        end
+        testkind = pop!(testkinds)
+        gdf = gdf[(gdf.test_kind .=== testkind) .| (ismissing.(gdf.test_kind)), :]
+    end
+    sort!(gdf, [:country, :date])
     select(gdf, keys ∪ vals1 ∪ vals2)
 end
 

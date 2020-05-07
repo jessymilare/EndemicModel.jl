@@ -1,2 +1,2 @@
 Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
-Greece,,39.07,21.82,2020-04-25,2506,577,130,707,1799,,,,,,,,,,,,,,0.184,0.0519,0.184
+Greece,,39.07,21.82,2020-04-25,2506,577,130,707,1799,,,,,,,,,,,,,,0.184,0.0519,0.034

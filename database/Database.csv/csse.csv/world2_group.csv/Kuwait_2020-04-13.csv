@@ -1,2 +1,2 @@
 Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
-Kuwait,,29.5,47.75,2020-04-13,1300,150,2,152,1148,,,,,,,,,,,,,,0.0132,0.0015,0.0132
+Kuwait,,29.5,47.75,2020-04-13,1300,150,2,152,1148,,,,,,,,,,,,,,0.0132,0.0015,0.034

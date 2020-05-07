@@ -1,2 +1,2 @@
 Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
-Jordan,,31.24,36.51,2020-04-08,358,150,6,156,202,,,,,,,,,,,,,,0.0385,0.0168,0.0385
+Jordan,,31.24,36.51,2020-04-08,358,150,6,156,202,,,,,,,,,,,,,,0.0385,0.0168,0.034

@@ -1,2 +1,2 @@
 Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
-New Zealand,,-40.9006,174.89,2020-04-06,1106,176,1,177,929,,,,,,,,,,,,,,0.0056,0.0009,0.0056
+New Zealand,,-40.9006,174.89,2020-04-06,1106,176,1,177,929,,,,,,,,,,,,,,0.0056,0.0009,0.034
