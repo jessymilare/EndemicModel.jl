@@ -29,7 +29,6 @@ function model_loss(
     # diff_loss_func::Function = diff_phuber_loss(1.0),
 )
     params = paramsof(model)
-    lethal = model.lethal_groups
     ng = model.ngroups
     data = dataof(model)
     ndays = Dates.days(data.date[end] - data.date[1])
@@ -37,7 +36,7 @@ function model_loss(
     days = Int.(solution.t)
     n = length(days)
     M = params[:M]
-    μ = sum(M[lethal]) / sum(M)
+    μ = params[:μ]
 
     rec_tot = loss_func(data.recovered .- mean(data.recovered))
     dth_tot = loss_func(data.deaths .- mean(data.deaths))
@@ -55,9 +54,9 @@ function model_loss(
         day = -Dates.days(data.date[end] - data.date[i])
         sol = solution[end - i + 1]
         (S, E, I, R) = unpack_vars(sol)
-        push!(rec_loss, data.recovered[i] - sum(R[setdiff(1:ng, lethal)]))
+        push!(rec_loss, data.recovered[i] - sum((1 .- μ) .* R))
         push!(act_loss, data.active[i] - sum(I))
-        push!(dth_loss, data.deaths[i] - sum(R[lethal]))
+        push!(dth_loss, data.deaths[i] - sum(μ .* R))
         #=
         push!(diff_rec_loss, sdata.diff_recovered[si])
         push!(diff_act_loss, sdata.diff_active[si])
@@ -74,7 +73,7 @@ function model_loss(
     loss_value / max_loss
 end
 
-function optimize_params(model::SEIRModel, packed_params = (:β, :γ, :α))
+function optimize_params(model::SEIRModel, packed_params = (:β, :γ, :α, :μ))
     n = model.ngroups
     lastparams = nothing
     model_params = paramsof(model)
@@ -103,7 +102,7 @@ function optimize_params(model::SEIRModel, packed_params = (:β, :γ, :α))
     maxM = fill(sum(model_params[:M]), n)
     maxαγ = fill(1.0, n)
     maxβ = fill(1.0, n)
-    maxp = (; M = maxM, β = maxβ, γ = maxαγ, α = maxαγ)
+    maxp = (; M = maxM, β = maxβ, γ = maxαγ, α = maxαγ, μ = maxαγ)
     maxE = maxM ./ 2
     upper = pack_params(maxp; packed_params = packed_params)
     append!(upper, maxE)
@@ -116,17 +115,16 @@ function optimize_params(model::SEIRModel, packed_params = (:β, :γ, :α))
 end
 
 function estimate_μ(data; ndays = 14)
-    data.μ_closed_est[1] * 0.5
+    [data.μ_closed_est[1]]
 end
 
 function estimate_α(data; ndays = 7, μ = estimate_μ(data))
-    dt = data[data.diff_recovered .!== missing, :]
+    dt = data[data.diff_closed .!== missing, :]
     # Get numbers from last `ndays` days
-    dR1 = dt.diff_recovered[(end - ndays):end]
-    dR2 = dt.diff_deaths[(end - ndays):end]
-    active = dt.active[(end - ndays):end]
-    I1, I2 = (1.0 - μ) .* active, μ .* active
-    [mean(dR1 ./ I1), mean(dR2 ./ I2)]
+    dR = dt.diff_closed[(end - ndays):end]
+    I = dt.active[(end - ndays):end]
+    @show dR, I
+    [mean(dR ./ I)]
 end
 
 function _γ_root(d1, d2, d3, I, α)
@@ -163,10 +161,9 @@ function estimate_γ(data; ndays = 7, μ = estimate_μ(data), α = estimate_α(d
     d2 = dt.diff2_confirmed[(end - ndays):end]
     d3 = dt.diff3_confirmed[(end - ndays):end]
 
-    active = dt.active[(end - ndays):end]
-    I1, I2 = (1.0 - μ) .* active, μ .* active
+    I = dt.active[(end - ndays):end]
 
-    [_γ_root(d1, d2, d3, I1, α[1]), _γ_root(d1, d2, d3, I2, α[2])]
+    [_γ_root(d1, d2, d3, I, α)]
 end
 
 function estimate_β(
@@ -181,13 +178,9 @@ function estimate_β(
     d1 = dt.diff_confirmed[(end - ndays):end]
     d2 = dt.diff2_confirmed[(end - ndays):end]
 
-    active = dt.active[(end - ndays):end]
-    I1, I2 = (1.0 - μ) .* active, μ .* active
+    I = dt.active[(end - ndays):end]
 
-    [
-        mean((d2 .+ γ[1] .* d1) ./ (γ[2] .* I2 .+ d1)),
-        mean((d2 .+ γ[2] .* d1) ./ (γ[2] .* I2 .+ d1)),
-    ]
+    [mean((d2 .+ γ .* d1) ./ (γ .* I .+ d1))]
 end
 
 function estimate_exposed!(
@@ -198,16 +191,14 @@ function estimate_exposed!(
     γ = estimate_γ(data; μ = μ, α = α),
 )
     d1 = data.diff_confirmed
-    d1_1, d1_2 = (1.0 - μ) * d1, μ * d1
-
-    E_unlethal, E_lethal = d1_1 ./ γ[1], d1_2 ./ γ[2]
-    E = E_unlethal + E_lethal
+    E = d1 ./ γ
+    Eint = [ismissing(elt) ? missing : round(Int, elt) for elt ∈ E]
     if :exposed ∉ names(data)
-        insertcols!(data, ncol(data) + 1, :exposed => E)
+        insertcols!(data, ncol(data) + 1, :exposed => Eint)
     else
-        data.exposed = E
+        data.exposed = Eint
     end
-    [E_unlethal, E_lethal]
+    E
 end
 
 function SEIRModel(
@@ -216,19 +207,20 @@ function SEIRModel(
 )
     numpeople = data.estimated_population[1]
     data = data[data.confirmed .>= numpeople * minimum_confirmed_factor, :]
+    M = Float64[numpeople]
     μ = estimate_μ(data)
-    M = numpeople * [(1.0 - μ), μ]
-    I = [(1.0 - μ), μ] * data.active[end]
-    S = M - I
-    E = I
-    R = Float64[data.recovered[end], data.deaths[end]]
     α = estimate_α(data; μ = μ)
     γ = estimate_γ(data; μ = μ, α = α)
     β = estimate_β(data; μ = μ, α = α, γ = γ)
 
     estimate_exposed!(data; μ = μ, α = α, γ = γ)
+    idx = findlast(!ismissing, data.exposed)
+    I = Float64[data.active[idx]]
+    S = M - I
+    R = Float64[data.closed[idx]]
+    E = Float64[data.exposed[idx]]
 
-    model = SEIRModel(S, E, I, R, M, β, γ, α, [:non_lethal, :lethal])
+    model = SEIRModel(S, E, I, R, M, β, γ, α, μ; initial_date = data.date[idx])
     model.data = data
     model
 end

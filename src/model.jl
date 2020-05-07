@@ -29,17 +29,17 @@ dataof(model::AbstractEndemicModel) = model.data
 
 const SEIR_VARS = (:S, :E, :I, :R)
 const SEIR_DERIV = (:dS, :dE, :dI, :dR)
-const SEIR_PARAMS = (:M, :β, :γ, :α)
+const SEIR_PARAMS = (:M, :β, :γ, :α, :μ)
 const SEIRVars = NamedTuple{SEIR_VARS, NTuple{4, Vector{Float64}}}
 const SEIRDeriv = NamedTuple{SEIR_DERIV, NTuple{4, Vector{Float64}}}
-const SEIRParams = NamedTuple{SEIR_PARAMS, NTuple{4, Vector{Float64}}}
+const SEIRParams = NamedTuple{SEIR_PARAMS, NTuple{5, Vector{Float64}}}
 
 SEIRVars(S, E, I, R) = SEIRVars((S, E, I, R))
-SEIRParams(M, β, γ, α) = SEIRParams((M, β, γ, α))
+SEIRParams(M, β, γ, α, μ) = SEIRParams((M, β, γ, α, μ))
 
 function SEIRDeriv(vars::SEIRVars, params::SEIRParams)
     (S, E, I, R) = vars
-    (M, β, γ, α) = params
+    (M, β, γ, α, μ) = params
 
     SEIRDeriv(S, E, I, R, M, β, γ, α)
 end
@@ -88,40 +88,11 @@ function initial_M(kind::Val{:nogroup}; estimated_population = 1e6, kwargs...)
     Float64[estimated_population]
 end
 
-function initial_M(
-    kind::Val{:lethal_group};
-    estimated_population = 1e6,
-    μ = μ_covid_19,
-    kwargs...,
-)
-    Float64(estimated_population) .* Float64[1.0 - μ, μ]
-end
-
-function initial_M(
-    kind::Val{:serious_lethal_groups};
-    estimated_population = 1e6,
-    μ = μ_covid_19,
-    serious_rate = 0.1,
-    kwargs...,
-)
-    Float64(estimated_population) .* [1.0 - μ - serious_rate, serious_rate, μ]
-end
-
-function initial_M(
-    kind::Val{:lethal_conf_groups};
-    estimated_population = 1e6,
-    μ = μ_covid_19,
-    kwargs...,
-)
-    Float64(estimated_population) .* Float64[1.0 - μ, μ, 0.0, 0.0]
-end
-
 """
 Represent a SEIR differential equation.
 
 S, E, I, R must be vectors of the same length `n`.
-M, γ must be vectors of length `n`.
-β must be an array of length `n x n`.
+M, β, γ, α, μ must be vectors of length `n`.
 
 Variables:
 S = susceptible
@@ -134,6 +105,7 @@ M = total susceptible population
 β = transmission rate
 γ = evolution rate, i.e., E -> I rate
 α = recovery/death rate, i.e., Ic -> R rate
+μ = death rate
 
 Equations:
 M = S + E + I + R
@@ -149,56 +121,29 @@ mutable struct SEIRModel <: AbstractEndemicModel
     params::SEIRParams
     ngroups::Int
     groupnames::Vector{Symbol}
-    lethal_groups::Vector{Int}
-    unconfirmed_groups::Vector{Int}
     data::Union{Nothing, DataFrame}
     modeldata::Union{Nothing, DataFrame}
+    info::Dict{Symbol, Any}
 
     function SEIRModel(
         vars::SEIRVars,
         params::SEIRParams,
-        groupnames::Union{Nothing, Vector{Symbol}} = nothing,
+        groupnames::Union{Nothing, Vector{Symbol}} = nothing;
+        kwargs...,
     )
         ngroups = length(vars[1])
         if groupnames == nothing
             if ngroups == 1
                 groupnames = [:all]
-                lethal_groups = Int[]
-                unconfirmed_groups = Int[]
-            elseif ngroups == 2
-                groupnames = [:non_lethal, :lethal]
-                lethal_groups = Int[2]
-                unconfirmed_groups = Int[]
-            elseif ngroups == 3
-                groupnames = [:mild, :serious, :lethal]
-                lethal_groups = Int[3]
-                unconfirmed_groups = Int[]
             else
                 @error "Parameter `groupnames` must be provided."
-            end
-        else
-            lethal_groups = Int[]
-            unconfirmed_groups = Int[]
-            for i ∈ 1:ngroups
-                if string(groupnames[i])[1:6] == "lethal"
-                    push!(lethal_groups, i)
-                end
             end
         end
 
         deriv = SEIRDeriv(vars, params)
+        info = Dict(kwargs...)
 
-        new(
-            vars,
-            deriv,
-            params,
-            ngroups,
-            groupnames,
-            lethal_groups,
-            unconfirmed_groups,
-            nothing,
-            nothing,
-        )
+        new(vars, deriv, params, ngroups, groupnames, nothing, nothing, info)
     end
 end
 
@@ -211,13 +156,11 @@ function SEIRModel(
     β::AbstractVector{Float64},
     γ::AbstractVector{Float64},
     α::AbstractVector{Float64},
-    groupnames::Union{Nothing, Vector{Symbol}} = nothing,
+    μ::AbstractVector{Float64},
+    groupnames::Union{Nothing, Vector{Symbol}} = nothing;
+    kwargs...,
 )
-    SEIRModel(
-        (; S = S, E = E, I = I, R = R),
-        (; M = M, β = β, γ = γ, α = α),
-        groupnames,
-    )
+    SEIRModel(SEIRVars(S, E, I, R), SEIRParams(M, β, γ, α, μ), groupnames; kwargs...)
 end
 
 function step(model::SEIRModel)
@@ -252,8 +195,8 @@ function pack_vars(tup::Union{Tuple, NamedTuple})
     pack_vars(tup...)
 end
 
-function pack_params(M, β, γ, α)
-    args = filter(!isnothing, (M, β, γ, α))
+function pack_params(M, β, γ, α, μ)
+    args = filter(!isnothing, (M, β, γ, α, μ))
     vectors = zip(args...)
     result = Float64[]
     for v ∈ vectors
@@ -274,7 +217,8 @@ function pack_params(tup::NamedTuple; packed_params = keys(tup))
         β = :β ∈ packed_params ? tup[:β] : nothing
         γ = :γ ∈ packed_params ? tup[:γ] : nothing
         α = :α ∈ packed_params ? tup[:α] : nothing
-        pack_params(M, β, γ, α)
+        μ = :μ ∈ packed_params ? tup[:μ] : nothing
+        pack_params(M, β, γ, α, μ)
     end
 end
 
@@ -285,7 +229,7 @@ function unpack_vars(X::Vector{Float64})
     E = view(X, 2:nv:Xlen)
     I = view(X, 3:nv:Xlen)
     R = view(X, 4:nv:Xlen)
-    (; S = S, E = E, I = I, R = R)
+    SEIRVars(S, E, I, R)
 end
 
 function unpack_params(
@@ -294,7 +238,7 @@ function unpack_params(
     packed_params = SEIR_PARAMS,
     default_params = (),
 )
-    vecvars = [:M, :β, :γ, :α] ∩ packed_params
+    vecvars = [:M, :β, :γ, :α, :μ] ∩ packed_params
     Plen = length(vecvars) * ngroups
     index = 1
     np = length(vecvars)
@@ -322,15 +266,21 @@ function unpack_params(
     else
         α = default_params[:α]
     end
-    (; M = M, β = β, γ = γ, α = α)
+    if :μ ∈ vecvars
+        μ = view(P, index:np:Plen)
+        index += 1
+    else
+        μ = default_params[:μ]
+    end
+    SEIRParams(M, β, γ, α, μ)
 end
 
 function SEIR_ODE_fun(X, P, t)
     (S, E, I, R) = unpack_vars(X)
     n = length(S)
-    (M, β, γ, α) = unpack_params(P, n)
+    (M, β, γ, α, μ) = unpack_params(P, n)
 
-    (dS, dE, dI, dR) = SEIRDeriv(SEIRVars(S, E, I, R), SEIRParams(M, β, γ, α))
+    (dS, dE, dI, dR) = SEIRDeriv(SEIRVars(S, E, I, R), SEIRParams(M, β, γ, α, μ))
     pack_vars(dS, dE, dI, dR)
 end
 
@@ -353,12 +303,12 @@ end
 
 function to_dataframe(problem::ODEProblem, model::SEIRModel)
     solution = solve(problem, Euler(); dt = 1.0)
-    (M, β, γ, α) = paramsof(model)
+    (M, β, γ, α, μ) = paramsof(model)
     days = solution.t
-    date = model.data.date[end] .+ Day.(days)
+    initial_date = get(model.info, :initial_date, model.data.date[end])
+    date = initial_date .+ Day.(days)
     n = length(days)
     ng = model.ngroups
-    lethal = model.lethal_groups
     exposed = zeros(Float64, n)
     active = zeros(Float64, n)
     recovered = zeros(Float64, n)
@@ -373,13 +323,13 @@ function to_dataframe(problem::ODEProblem, model::SEIRModel)
         (dS, dE, dI, dR) = SEIRDeriv(S, E, I, R, M, β, γ, α)
         exposed[i] = sum(E)
         active[i] = sum(I)
-        recovered[i] = sum(R[setdiff(1:ng, lethal)])
-        deaths[i] = sum(R[lethal])
+        recovered[i] = sum(R .* (1.0 .- μ))
+        deaths[i] = sum(R .* μ)
         confirmed[i] = active[i] + recovered[i] + deaths[i]
         diff_exposed[i] = sum(dE)
         diff_active[i] = sum(dI)
-        diff_recovered[i] = sum(dR[setdiff(1:ng, lethal)])
-        diff_deaths[i] = sum(dR[lethal])
+        diff_recovered[i] = sum(dR .* (1.0 .- μ))
+        diff_deaths[i] = sum(dR .* μ)
     end
     df = DataFrame(
         date = date,
