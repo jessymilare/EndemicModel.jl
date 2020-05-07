@@ -221,6 +221,6 @@ function SEIRModel(
     E = Float64[data.exposed[idx]]
 
     model = SEIRModel(S, E, I, R, M, β, γ, α, μ; initial_date = data.date[idx])
-    model.data = data
+    dataof!(model, data)
     model
 end

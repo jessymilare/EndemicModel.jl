@@ -18,14 +18,15 @@ end
 function paramsof!(model::AbstractEndemicModel, value)
     model.params = value
 end
-function modeldata_of(model::AbstractEndemicModel)
+function modeldataof(model::AbstractEndemicModel)
     model.modeldata
 end
-function modeldata_of!(model::AbstractEndemicModel, value::AbstractDataFrame)
+function modeldataof!(model::AbstractEndemicModel, value::AbstractDataFrame)
     model.modeldata = value
 end
 
 dataof(model::AbstractEndemicModel) = model.data
+dataof!(model::AbstractEndemicModel, value) = model.data = value
 
 const SEIR_VARS = (:S, :E, :I, :R)
 const SEIR_DERIV = (:dS, :dE, :dI, :dR)
@@ -301,7 +302,7 @@ function model_solution(model::SEIRModel; kwargs...)
     solve(model_problem(model; kwargs...), Euler(); dt = 1.0)
 end
 
-function to_dataframe(problem::ODEProblem, model::SEIRModel)
+function to_dataframe(problem::ODEProblem, model::SEIRModel; kwargs...)
     solution = solve(problem, Euler(); dt = 1.0)
     (M, β, γ, α, μ) = paramsof(model)
     days = solution.t
@@ -331,7 +332,7 @@ function to_dataframe(problem::ODEProblem, model::SEIRModel)
         diff_recovered[i] = sum(dR .* (1.0 .- μ))
         diff_deaths[i] = sum(dR .* μ)
     end
-    df = DataFrame(
+    DataFrame(
         date = date,
         confirmed = confirmed,
         exposed = exposed,
@@ -343,16 +344,14 @@ function to_dataframe(problem::ODEProblem, model::SEIRModel)
         diff_recovered = diff_recovered,
         diff_deaths = diff_deaths,
     )
-
-    df
 end
 
 function to_dataframe!(model::SEIRModel; kwargs...)
-    model.modeldata = to_dataframe(model_problem(model; kwargs...), model)
+    modeldataof!(model, to_dataframe(model; kwargs...))
 end
 
 function to_dataframe(model::SEIRModel; kwargs...)
-    to_dataframe(model_problem(model; kwargs...), model)
+    to_dataframe(model_problem(model; kwargs...), model; kwargs...)
 end
 
 const PLOT_COLUMNS = [:date, :confirmed, :exposed, :active, :recovered, :deaths]
