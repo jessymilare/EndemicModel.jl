@@ -313,7 +313,7 @@ function _import_data(source::CsseSource; kwargs...)
                 date_value = Date(string(colname), "m/d/y") + Year(2000)
                 Symbol(string(date_value))
             else
-                CSSE_COLUMNS[colname]
+                CSSE_COLUMNS[Symbol(colname)]
             end for colname ∈ names(df)
         ]
         rename!(df, newcolnames)
@@ -338,7 +338,7 @@ function import_data(source::CsseSource; kwargs...)
                 push!(date_syms, colsym)
             end
         end
-        datadf = by(df, key_columns) do subdf
+        datadf = combine(groupby(df, key_columns)) do subdf
             col_values = [sum(subdf[!, date_sym]) for date_sym ∈ date_syms]
             DataFrame(; date = dates, main_col_name => col_values)
         end
@@ -398,11 +398,11 @@ function import_data(
             break
         end
     end
-    years = intersect(map(Symbol, years), names(data))
+    years = intersect(Symbol.(years), Symbol.(names(data)))
     fyear = years[1]
     lyear = years[end]
 
-    deleterows!(data, data[!, fyear] .=== missing)
+    delete!(data, data[!, fyear] .=== missing)
     myear = years[findlast(y -> all(data[!, y] .!== missing), years)]
 
     fyear_int = parse(Int, string(fyear))
@@ -415,7 +415,7 @@ function import_data(
         factor === missing ? (data[i, myear] / data[i, fyear])^(1 / n) : factor
         for (i, factor) ∈ enumerate(avg_pop_factor)
     ]
-    insertcols!(data, ncol(data) + 1; avg_pop_factor = navg_factor)
+    insertcols!(data, ncol(data) + 1, :avg_pop_factor => navg_factor)
 
     n = (curyear - lyear_int)
     pop_est = (data[!, lyear] .* (data.avg_pop_factor .^ n))
@@ -424,7 +424,7 @@ function import_data(
         for (i, val) ∈ enumerate(pop_est)
     ]
     npop_est = npop_est .|> round .|> Int
-    insertcols!(data, ncol(data) + 1; estimated_population = npop_est)
+    insertcols!(data, ncol(data) + 1, :estimated_population => npop_est)
 
     select(data, :country, :country_code, :avg_pop_factor, :estimated_population)
 end

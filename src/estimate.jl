@@ -126,7 +126,8 @@ function estimate_μ(data::AbstractDataFrame; ndays = 14)
     [data.μ_closed_est[1]]
 end
 
-estimate_μ(model::AbstractEndemicModel; kwargs...) = estimate_μ(dataof(model); kwargs...)
+estimate_μ(model::AbstractEndemicModel; kwargs...) =
+    estimate_μ(dataof(model); kwargs...)
 
 function estimate_α(data::AbstractDataFrame; ndays = 7, μ = estimate_μ(data))
     dt = data[data.diff_closed .!== missing, :]
@@ -137,7 +138,8 @@ function estimate_α(data::AbstractDataFrame; ndays = 7, μ = estimate_μ(data))
     [geomean(dR ./ I)]
 end
 
-estimate_α(model::AbstractEndemicModel; kwargs...) = estimate_α(dataof(model); kwargs...)
+estimate_α(model::AbstractEndemicModel; kwargs...) =
+    estimate_α(dataof(model); kwargs...)
 
 function _γ_root(d1, d2, d3, I, α)
     a = -I .* d2 .+ d1 .^ 2 .- I .* α .* d1
@@ -169,7 +171,8 @@ function estimate_γ(
     [_γ_root(d1, d2, d3, I, α)]
 end
 
-estimate_γ(model::AbstractEndemicModel; kwargs...) = estimate_γ(dataof(model); kwargs...)
+estimate_γ(model::AbstractEndemicModel; kwargs...) =
+    estimate_γ(dataof(model); kwargs...)
 
 function estimate_β(
     data::AbstractDataFrame;

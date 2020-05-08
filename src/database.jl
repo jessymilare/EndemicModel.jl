@@ -231,7 +231,7 @@ function group_table!(
             key = ensure_unique(groupdict, key)
             groupdict[key] = DataFrame(df)
         end
-        combdf = combine(groupdf; combargs...)
+        combdf = combine(groupdf, combargs...)
         tblname_groups = ensure_unique(data, Symbol(tblname, :_group))
         data[tblname_groups] = groupdict
         data[tblname] = combdf
