@@ -354,18 +354,16 @@ function to_dataframe(model::SEIRModel; kwargs...)
     to_dataframe(model_problem(model; kwargs...), model; kwargs...)
 end
 
-const PLOT_COLUMNS = [:date, :confirmed, :exposed, :active, :recovered, :deaths]
-
 function model_plot(
-    df::DataFrame,
-    colnames = intersect(names(df), PLOT_COLUMNS);
+    df::DataFrame;
+    plot_columns = option(:plot_columns),
     title = summary(df),
-    ylabel = "People (millions)",
     yfactor = 1e-6,
+    ylabel = yfactor == 1e-6 ? "People (millions)" : "People",
     minimum_plot_factor = option(:minimum_plot_factor),
     kwargs...,
 )
-    colnames = intersect(colnames, names(df))
+    colnames = intersect(plot_columns, Symbol.(names(df)))
     numpeople = if hasproperty(df, :estimated_population)
         df.estimated_population[1]
     else
@@ -398,12 +396,12 @@ function model_plot(
     gui(win)
 end
 
-function model_plot(model::SEIRModel, colnames = PLOT_COLUMNS; kwargs...)
+function model_plot(model::SEIRModel; kwargs...)
     df = to_dataframe!(model; kwargs...)
-    model_plot(df, colnames; kwargs...)
+    model_plot(df; kwargs...)
 end
 
-function model_plot(problem::ODEProblem, colnames = PLOT_COLUMNS; kwargs...)
+function model_plot(problem::ODEProblem; kwargs...)
     df = to_dataframe(problem; kwargs...)
-    model_plot(df, colnames; kwargs...)
+    model_plot(df; kwargs...)
 end

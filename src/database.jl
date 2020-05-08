@@ -221,8 +221,8 @@ function group_table!(
         df = data[sourcetbl]
         keycols = Vector{Symbol}(keycols)
         combargs = []
-        for (vcols, gfunc) ∈ cols_and_funcs
-            append!(combargs, vcols .=> vcols .=> gfunc)
+        for (vcol, gfunc) ∈ cols_and_funcs
+            append!(combargs, vcol .=> (col -> (; vcol => gfunc(col))))
         end
         groupdf = groupby(df, keycols; sort = true)
         groupdict = Dict{Symbol, Any}()
@@ -231,7 +231,13 @@ function group_table!(
             key = ensure_unique(groupdict, key)
             groupdict[key] = DataFrame(df)
         end
-        combdf = combine(groupdf, combargs...)
+        combdf = combine(groupdf) do subdf
+            colpairs = []
+            for (vcols, gfunc) ∈ cols_and_funcs, vcol ∈ vcols
+                push!(colpairs, vcol => gfunc(subdf[!, vcol]))
+            end
+            DataFrame(; colpairs...)
+        end
         tblname_groups = ensure_unique(data, Symbol(tblname, :_group))
         data[tblname_groups] = groupdict
         data[tblname] = combdf

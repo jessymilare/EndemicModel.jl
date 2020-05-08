@@ -9,6 +9,8 @@ diff_l2_loss(a::Real) = 2 * a
 l2_loss(a::Vector{<:Real}) = sum(a .* a)
 diff_l2_loss(a::Vector{<:Real}) = 2 * a
 
+_ratemean(itr) = geomean(Complex.(1.0 .+ itr)).re - 1.0
+
 function phuber_loss(δ::Real)
     function _phuber_loss(a)
         phuber_loss(a, δ)
@@ -135,7 +137,7 @@ function estimate_α(data::AbstractDataFrame; ndays = 7, μ = estimate_μ(data))
     dR = dt.diff_closed[(end - ndays):end]
     I = dt.active[(end - ndays):end]
     @show dR, I
-    [geomean(dR ./ I)]
+    [_ratemean(dR ./ I)]
 end
 
 estimate_α(model::AbstractEndemicModel; kwargs...) =
@@ -147,8 +149,8 @@ function _γ_root(d1, d2, d3, I, α)
     c = -I .* d3
     Δ = b .^ 2 - 4 .* a .* c
 
-    root1 = geomean((-sqrt.(abs.(Δ)) .- b) ./ (2a))
-    root2 = geomean((sqrt.(abs.(Δ)) .- b) ./ (2a))
+    root1 = _ratemean((-sqrt.(abs.(Δ)) .- b) ./ (2a))
+    root2 = _ratemean((sqrt.(abs.(Δ)) .- b) ./ (2a))
 
     @show root1, root2
     max(root1, root2)
@@ -188,7 +190,7 @@ function estimate_β(
 
     I = dt.active[(end - ndays):end]
 
-    [geomean((d2 .+ γ .* d1) ./ (γ .* I .+ d1))]
+    [_ratemean((d2 .+ γ .* d1) ./ (γ .* I .+ d1))]
 end
 
 function estimate_exposed(

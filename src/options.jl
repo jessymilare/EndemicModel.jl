@@ -114,3 +114,10 @@ end
     "Factor for minimum number of confirmed people to be considered in plots.",
     Real
 )
+
+@defoption(
+    plot_columns,
+    [:confirmed, :exposed, :active, :recovered, :deaths],
+    "Columns of data to be ploted by `model_plot`.",
+    Vector{Symbol},
+)

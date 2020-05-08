@@ -187,6 +187,7 @@ end
             :,
         ]
     end
+    @show names(df) names(gdf)
     sort!(gdf, [:country, :date])
     select(gdf, keys ∪ vals1 ∪ vals2)
 end
