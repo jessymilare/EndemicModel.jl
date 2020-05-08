@@ -126,7 +126,7 @@ function estimate_μ(data::AbstractDataFrame; ndays = 14)
     [data.μ_closed_est[1]]
 end
 
-estimate_μ(model::AbstractModel; kwargs...) = estimate_μ(dataof(model); kwargs...)
+estimate_μ(model::AbstractEndemicModel; kwargs...) = estimate_μ(dataof(model); kwargs...)
 
 function estimate_α(data::AbstractDataFrame; ndays = 7, μ = estimate_μ(data))
     dt = data[data.diff_closed .!== missing, :]
@@ -137,17 +137,13 @@ function estimate_α(data::AbstractDataFrame; ndays = 7, μ = estimate_μ(data))
     [geomean(dR ./ I)]
 end
 
-estimate_α(model::AbstractModel; kwargs...) = estimate_α(dataof(model); kwargs...)
+estimate_α(model::AbstractEndemicModel; kwargs...) = estimate_α(dataof(model); kwargs...)
 
 function _γ_root(d1, d2, d3, I, α)
-    Δ1 = 4 .* I .* d2 .^ 3
-    Δ2 = (-3 .* d1 .^ 2 .+ 2 .* I .* α .* d1 .+ I .^ 2 .* α .^ 2) .* d2 .^ 2
-    Δ3 = (2 .* I .^ 2 .* α .* d3 .- 6 .* I .* d3 .* d1) .* d2
-    Δ4 = 4 .* d3 .* d1 .^ 3 .- 4 .* I .* α .* d3 .* d1 .^ 2
-    Δ5 = I .^ 2 .* d3 .^ 2
-    Δ = Δ1 + Δ2 + Δ3 + Δ4 + Δ5
-    b = (I .* α .- d1) .* d2 .+ I .* d3
-    a = I .* d2 .- d1 .^ 2 .+ I .* α .* d1
+    a = -I .* d2 .+ d1 .^ 2 .- I .* α .* d1
+    b = d1 .* d2 .- I .* α .* d2
+    c = -I .* d3
+    Δ = b .^ 2 - 4 .* a .* c
 
     root1 = geomean((-sqrt.(abs.(Δ)) .- b) ./ (2a))
     root2 = geomean((sqrt.(abs.(Δ)) .- b) ./ (2a))
@@ -173,7 +169,7 @@ function estimate_γ(
     [_γ_root(d1, d2, d3, I, α)]
 end
 
-estimate_γ(model::AbstractModel; kwargs...) = estimate_γ(dataof(model); kwargs...)
+estimate_γ(model::AbstractEndemicModel; kwargs...) = estimate_γ(dataof(model); kwargs...)
 
 function estimate_β(
     data::AbstractDataFrame;
@@ -214,9 +210,9 @@ function estimate_exposed!(data::AbstractDataFrame; kwargs...)
     E
 end
 
-estimate_exposed(model::AbstractModel; kwargs...) =
+estimate_exposed(model::AbstractEndemicModel; kwargs...) =
     estimate_exposed(dataof(model); kwargs...)
-estimate_exposed!(model::AbstractModel; kwargs...) =
+estimate_exposed!(model::AbstractEndemicModel; kwargs...) =
     estimate_exposed!(dataof(model); kwargs...)
 
 function SEIRModel(
