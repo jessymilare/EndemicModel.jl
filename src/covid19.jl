@@ -175,24 +175,17 @@ end
     vals2 = [:confirmed, :recovered, :deaths, :closed, :active]
     testkinds = filter(!ismissing, Set(gdf.test_kind))
     if length(testkinds) > 1
-        if "units unclear" ∈ testkinds
-            delete!(testkinds::Set, "units unclear")
+        testkind = if "samples tested" ∈ testkinds
+            "samples tested"
+        elseif "people tested" ∈ testkinds
+            "people tested"
+        else
+            pop!(testkinds)
         end
-        if length(testkinds) > 1
-            if "samples tested" ∈ testkinds
-                delete!(testkinds::Set, "samples tested")
-            end
-        end
-        if length(testkinds) > 1
-            if "samples tested" ∈ testkinds
-                delete!(testkinds::Set, "samples tested")
-            end
-        end
-        if length(testkinds) > 1
-            testkinds = Set([rand(testkinds)])
-        end
-        testkind = pop!(testkinds)
-        gdf = gdf[(gdf.test_kind .=== testkind) .| (ismissing.(gdf.test_kind)), :]
+        gdf = gdf[
+            map(elt -> ismissing(elt) || elt == testkind, gdf.test_kind) |> collect,
+            :,
+        ]
     end
     sort!(gdf, [:country, :date])
     select(gdf, keys ∪ vals1 ∪ vals2)

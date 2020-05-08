@@ -17,7 +17,7 @@ using FilePaths
 using Interpolations
 using Optim
 using Plots
-using Statistics
+using StatsBase
 using Unitful
 
 export AbstractDataSource,

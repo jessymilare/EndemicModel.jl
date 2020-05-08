@@ -122,47 +122,46 @@ function optimize_params(
     optimize(_calc_loss, lower, upper, opt_params, minbox)
 end
 
-function estimate_μ(data; ndays = 14)
+function estimate_μ(data::AbstractDataFrame; ndays = 14)
     [data.μ_closed_est[1]]
 end
 
-function estimate_α(data; ndays = 7, μ = estimate_μ(data))
+estimate_μ(model::AbstractModel; kwargs...) = estimate_μ(dataof(model); kwargs...)
+
+function estimate_α(data::AbstractDataFrame; ndays = 7, μ = estimate_μ(data))
     dt = data[data.diff_closed .!== missing, :]
     # Get numbers from last `ndays` days
     dR = dt.diff_closed[(end - ndays):end]
     I = dt.active[(end - ndays):end]
     @show dR, I
-    [mean(dR ./ I)]
+    [geomean(dR ./ I)]
 end
 
-function _γ_root(d1, d2, d3, I, α)
-    root1 = mean(
-        -(
-            sqrt.(abs.(
-                4 .* I .* d2 .^ 3 +
-                (-3 .* d1 .^ 2 .+ 2 .* I .* α .* d1 .+ I .^ 2 .* α .^ 2) .* d2 .^ 2 .+ (2 .* I .^ 2 .* α .* d3 .- 6 .* I .* d3 .* d1) .* d2 .+
-                4 .* d3 .* d1 .^ 3 .- 4 .* I .* α .* d3 .* d1 .^ 2 .+
-                I .^ 2 .* d3 .^ 2,
-            )) .+ (I .* α .- d1) .* d2 .+ I .* d3
-        ) ./ (2 .* I .* d2 .- 2 .* d1 .^ 2 .+ 2 .* I .* α .* d1),
-    )
+estimate_α(model::AbstractModel; kwargs...) = estimate_α(dataof(model); kwargs...)
 
-    root2 = mean(
-        (
-            sqrt.(abs.(
-                4 .* I .* d2 .^ 3 +
-                (-3 .* d1 .^ 2 .+ 2 .* I .* α .* d1 .+ I .^ 2 .* α .^ 2) .* d2 .^ 2 .+ (2 .* I .^ 2 .* α .* d3 .- 6 .* I .* d3 .* d1) .* d2 .+
-                4 .* d3 .* d1 .^ 3 .- 4 .* I .* α .* d3 .* d1 .^ 2 .+
-                I .^ 2 .* d3 .^ 2,
-            )) .+ (d1 .- I .* α) .* d2 .- I .* d3
-        ) ./ (2 .* I .* d2 .- 2 .* d1 .^ 2 .+ 2 .* I .* α .* d1),
-    )
+function _γ_root(d1, d2, d3, I, α)
+    Δ1 = 4 .* I .* d2 .^ 3
+    Δ2 = (-3 .* d1 .^ 2 .+ 2 .* I .* α .* d1 .+ I .^ 2 .* α .^ 2) .* d2 .^ 2
+    Δ3 = (2 .* I .^ 2 .* α .* d3 .- 6 .* I .* d3 .* d1) .* d2
+    Δ4 = 4 .* d3 .* d1 .^ 3 .- 4 .* I .* α .* d3 .* d1 .^ 2
+    Δ5 = I .^ 2 .* d3 .^ 2
+    Δ = Δ1 + Δ2 + Δ3 + Δ4 + Δ5
+    b = (I .* α .- d1) .* d2 .+ I .* d3
+    a = I .* d2 .- d1 .^ 2 .+ I .* α .* d1
+
+    root1 = geomean((-sqrt.(abs.(Δ)) .- b) ./ (2a))
+    root2 = geomean((sqrt.(abs.(Δ)) .- b) ./ (2a))
 
     @show root1, root2
     max(root1, root2)
 end
 
-function estimate_γ(data; ndays = 7, μ = estimate_μ(data), α = estimate_α(data; μ = μ))
+function estimate_γ(
+    data::AbstractDataFrame;
+    ndays = 7,
+    μ = estimate_μ(data),
+    α = estimate_α(data; μ = μ),
+)
     dt = data[data.diff3_confirmed .!== missing, :]
     # Get numbers from last `ndays` days
     d1 = dt.diff_confirmed[(end - ndays):end]
@@ -174,8 +173,10 @@ function estimate_γ(data; ndays = 7, μ = estimate_μ(data), α = estimate_α(d
     [_γ_root(d1, d2, d3, I, α)]
 end
 
+estimate_γ(model::AbstractModel; kwargs...) = estimate_γ(dataof(model); kwargs...)
+
 function estimate_β(
-    data;
+    data::AbstractDataFrame;
     ndays = 7,
     μ = estimate_μ(data),
     α = estimate_α(data; μ = μ),
@@ -188,11 +189,11 @@ function estimate_β(
 
     I = dt.active[(end - ndays):end]
 
-    [mean((d2 .+ γ .* d1) ./ (γ .* I .+ d1))]
+    [geomean((d2 .+ γ .* d1) ./ (γ .* I .+ d1))]
 end
 
-function estimate_exposed!(
-    data;
+function estimate_exposed(
+    data::AbstractDataFrame;
     ndays = 7,
     μ = estimate_μ(data),
     α = estimate_α(data; μ = μ),
@@ -200,17 +201,26 @@ function estimate_exposed!(
 )
     d1 = data.diff_confirmed
     E = d1 ./ γ
-    Eint = [ismissing(elt) ? missing : round(Int, elt) for elt ∈ E]
+    [ismissing(elt) ? missing : round(Int, elt) for elt ∈ E]
+end
+
+function estimate_exposed!(data::AbstractDataFrame; kwargs...)
+    E = estimate_exposed(data; kwargs...)
     if :exposed ∉ names(data)
-        insertcols!(data, ncol(data) + 1, :exposed => Eint)
+        insertcols!(data, ncol(data) + 1, :exposed => E)
     else
-        data.exposed = Eint
+        data.exposed = E
     end
     E
 end
 
+estimate_exposed(model::AbstractModel; kwargs...) =
+    estimate_exposed(dataof(model); kwargs...)
+estimate_exposed!(model::AbstractModel; kwargs...) =
+    estimate_exposed!(dataof(model); kwargs...)
+
 function SEIRModel(
-    data::DataFrame;
+    data::AbstractDataFrame;
     minimum_confirmed_factor = option(:minimum_confirmed_factor),
 )
     numpeople = data.estimated_population[1]

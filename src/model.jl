@@ -55,8 +55,8 @@ In this system, `exposed` people are also considered infections, yet not tested 
 Equations:
 M = S + E + I + R
 dM = 0
-dS = - β * ((E .+ I) ./ sum(M)) .* S
-dE = β * ((E .+ I) ./ sum(M)) .* S - γ .* E
+dS = - β * (I ./ sum(M)) .* S
+dE = β * (I ./ sum(M)) .* S - γ .* E
 dI = γ .* E - α .* I
 dR = α .* I
 """
@@ -71,7 +71,7 @@ function SEIRDeriv(
     α::AbstractVector{Float64},
 )
     pop = sum(M)
-    StoE = β .* sum((E .+ I) ./ pop) .* S
+    StoE = β .* sum(I ./ pop) .* S
     EtoI = γ .* E
     ItoR = α .* I
 
@@ -97,8 +97,8 @@ M, β, γ, α, μ must be vectors of length `n`.
 
 Variables:
 S = susceptible
-E = exposed (infected, but not tested and confirmed)
-I = active (confirmed)
+E = exposed (infected, but not infeccious)
+I = active (infeccious, confirmed)
 R = recovered / deaths
 
 Parameters:
