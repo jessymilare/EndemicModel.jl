@@ -1,48 +1,48 @@
 abstract type AbstractEndemicModel end
 
-function varsof(model::AbstractEndemicModel)
-    model.vars
-end
-function varsof!(model::AbstractEndemicModel, value)
-    model.vars = value
-end
-function derivof(model::AbstractEndemicModel)
-    model.deriv
-end
-function derivof!(model::AbstractEndemicModel, value)
-    model.deriv = value
-end
-function paramsof(model::AbstractEndemicModel)
-    model.params
-end
-function paramsof!(model::AbstractEndemicModel, value)
-    model.params = value
-end
-function modeldataof(model::AbstractEndemicModel)
-    model.modeldata
-end
-function modeldataof!(model::AbstractEndemicModel, value::AbstractDataFrame)
+variables(model::AbstractEndemicModel) = model.variables
+variables!(model::AbstractEndemicModel, value) = model.variables = value
+
+derivatives(model::AbstractEndemicModel) = model.derivatives
+derivatives!(model::AbstractEndemicModel, value) = model.derivatives = value
+
+parameters(model::AbstractEndemicModel) = model.parameters
+parameters!(model::AbstractEndemicModel, value) = model.parameters = value
+
+modeldata(model::AbstractEndemicModel) = model.modeldata
+modeldata!(model::AbstractEndemicModel, value::AbstractDataFrame) =
     model.modeldata = value
+
+function modeldata!(model::AbstractEndemicModel)
+    if isnothing(model.modeldata)
+        model.modeldata = to_dataframe(model)
+    else
+        model.modeldata
+    end
 end
 
-dataof(model::AbstractEndemicModel) = model.data
-dataof!(model::AbstractEndemicModel, value) = model.data = value
+datadict(model::AbstractEndemicModel) = model.data
+datadict!(model::AbstractEndemicModel, value) = model.data = value
+
+export_data(model::AbstractEndemicModel; kwargs...) =
+    export_data(modeldata(model); kwargs...)
 
 const SEIR_VARS = (:S, :E, :I, :R)
 const SEIR_DERIV = (:dS, :dE, :dI, :dR)
 const SEIR_PARAMS = (:M, :β, :γ, :α, :μ)
-const SEIRVars = NamedTuple{SEIR_VARS, NTuple{4, Vector{Float64}}}
-const SEIRDeriv = NamedTuple{SEIR_DERIV, NTuple{4, Vector{Float64}}}
-const SEIRParams = NamedTuple{SEIR_PARAMS, NTuple{5, Vector{Float64}}}
+const SEIRVariables = NamedTuple{SEIR_VARS, NTuple{4, Vector{Float64}}}
+const SEIRDerivatives = NamedTuple{SEIR_DERIV, NTuple{4, Vector{Float64}}}
+const SEIRParameters = NamedTuple{SEIR_PARAMS, NTuple{5, Vector{Float64}}}
 
-SEIRVars(S, E, I, R) = SEIRVars((S, E, I, R))
-SEIRParams(M, β, γ, α, μ) = SEIRParams((M, β, γ, α, μ))
+SEIRVariables(S, E, I, R) = SEIRVariables((S, E, I, R))
+SEIRDerivatives(dS, dE, dI, dR) = SEIRDerivatives((dS, dE, dI, dR))
+SEIRParameters(M, β, γ, α, μ) = SEIRParameters((M, β, γ, α, μ))
 
-function SEIRDeriv(vars::SEIRVars, params::SEIRParams)
+function _SEIR_derivative(vars::SEIRVariables, params::SEIRParameters)
     (S, E, I, R) = vars
     (M, β, γ, α, μ) = params
 
-    SEIRDeriv(S, E, I, R, M, β, γ, α)
+    _SEIR_derivative(S, E, I, R, M, β, γ, α)
 end
 
 """
@@ -60,7 +60,7 @@ dE = β * (I ./ sum(M)) .* S - γ .* E
 dI = γ .* E - α .* I
 dR = α .* I
 """
-function SEIRDeriv(
+function _SEIR_derivative(
     S::AbstractVector{Float64},
     E::AbstractVector{Float64},
     I::AbstractVector{Float64},
@@ -117,36 +117,35 @@ dI = γ .* E - α .* I
 dR = α .* I
 """
 mutable struct SEIRModel <: AbstractEndemicModel
-    vars::SEIRVars
-    deriv::SEIRDeriv
-    params::SEIRParams
+    variables::SEIRVariables
+    derivatives::SEIRDerivatives
+    parameters::SEIRParameters
     ngroups::Int
     groupnames::Vector{Symbol}
-    data::Union{Nothing, DataFrame}
-    modeldata::Union{Nothing, DataFrame}
-    info::Dict{Symbol, Any}
+    data::Union{Nothing, AbstractDataFrame}
+    modeldata::Union{Nothing, AbstractDataFrame}
+    default_kwargs::Dict{Symbol, Any}
 
     function SEIRModel(
-        vars::SEIRVars,
-        params::SEIRParams,
-        groupnames::Union{Nothing, Vector{Symbol}} = nothing;
+        vars::SEIRVariables,
+        params::SEIRParameters;
+        ngroups::Int = length(vars[1]),
+        groupnames = ("group_" .* string.(1:ngroups)),
+        data::Union{Nothing, AbstractDataFrame} = nothing,
+        modeldata::Union{Nothing, AbstractDataFrame} = nothing,
         kwargs...,
     )
-        ngroups = length(vars[1])
-        if groupnames == nothing
-            if ngroups == 1
-                groupnames = [:all]
-            else
-                @error "Parameter `groupnames` must be provided."
-            end
-        end
+        groupnames = collect(Symbol.(groupnames))
+        deriv = _SEIR_derivative(vars, params)
+        info = Dict(kwargs)
 
-        deriv = SEIRDeriv(vars, params)
-        info = Dict(kwargs...)
-
-        new(vars, deriv, params, ngroups, groupnames, nothing, nothing, info)
+        model = new(vars, deriv, params, ngroups, groupnames, data, modeldata, info)
+        isnothing(modeldata) && modeldata!(model)
+        model
     end
 end
+
+SEIRModel(model::SEIRModel) = model
 
 function SEIRModel(
     S::AbstractVector{Float64},
@@ -157,29 +156,52 @@ function SEIRModel(
     β::AbstractVector{Float64},
     γ::AbstractVector{Float64},
     α::AbstractVector{Float64},
-    μ::AbstractVector{Float64},
-    groupnames::Union{Nothing, Vector{Symbol}} = nothing;
+    μ::AbstractVector{Float64};
     kwargs...,
 )
-    SEIRModel(SEIRVars(S, E, I, R), SEIRParams(M, β, γ, α, μ), groupnames; kwargs...)
+    SEIRModel(SEIRVariables(S, E, I, R), SEIRParameters(M, β, γ, α, μ); kwargs...)
 end
 
-function step(model::SEIRModel)
-    (S, E, I, R) = varsof(model)
-    (dS, dE, dI, dR) = derivof(model)
-    vars = SEIRVars(S + dS, E + dE, I + dI, R + dR)
-    params = paramsof(model)
-    SEIRModel(vars, params)
+function model_step(model::SEIRModel, n::Int = 1)
+    (S, E, I, R) = variables(model)
+    (dS, dE, dI, dR) = derivatives(model)
+    params = parameters(model)
+    (M, β, γ, α, μ) = params
+    if n > 0
+        while n > 0
+            (S, E, I, R) = (S + dS, E + dE, I + dI, R + dR)
+            (dS, dE, dI, dR) = _SEIR_derivative(S, E, I, R, M, β, γ, α)
+            n -= 1
+        end
+    else
+        while n < 0
+            (S, E, I, R) = (S - dS, E - dE, I - dI, R - dR)
+            (dS, dE, dI, dR) = _SEIR_derivative(S, E, I, R, M, β, γ, α)
+            n += 1
+        end
+    end
+    SEIRModel(SEIRVariables(S, E, I, R), SEIRDerivatives(dS, dE, dI, dR))
 end
 
-function step!(model::SEIRModel)
-    (S, E, I, R) = varsof(model)
-    (dS, dE, dI, dR) = derivof(model)
-    vars = SEIRVars(S + dS, E + dE, I + dI, R + dR)
-    params = paramsof(model)
-    deriv = SEIRDeriv(vars, params)
-    varsof!(model, vars)
-    derivof!(model, deriv)
+function model_step!(model::SEIRModel, n::Int = 1)
+    (S, E, I, R) = variables(model)
+    (dS, dE, dI, dR) = derivatives(model)
+    (M, β, γ, α, μ) = parameters(model)
+    if n > 0
+        while n > 0
+            (S, E, I, R) = (S + dS, E + dE, I + dI, R + dR)
+            (dS, dE, dI, dR) = _SEIR_derivative(S, E, I, R, M, β, γ, α)
+            n -= 1
+        end
+    else
+        while n < 0
+            (S, E, I, R) = (S - dS, E - dE, I - dI, R - dR)
+            (dS, dE, dI, dR) = _SEIR_derivative(S, E, I, R, M, β, γ, α)
+            n += 1
+        end
+    end
+    variables!(model, SEIRVariables(S, E, I, R))
+    derivatives!(model, SEIRDerivatives(dS, dE, dI, dR))
     model
 end
 
@@ -230,7 +252,7 @@ function unpack_vars(X::Vector{Float64})
     E = view(X, 2:nv:Xlen)
     I = view(X, 3:nv:Xlen)
     R = view(X, 4:nv:Xlen)
-    SEIRVars(S, E, I, R)
+    SEIRVariables(S, E, I, R)
 end
 
 function unpack_params(
@@ -273,7 +295,7 @@ function unpack_params(
     else
         μ = default_params[:μ]
     end
-    SEIRParams(M, β, γ, α, μ)
+    SEIRParameters(M, β, γ, α, μ)
 end
 
 function SEIR_ODE_fun(X, P, t)
@@ -281,13 +303,14 @@ function SEIR_ODE_fun(X, P, t)
     n = length(S)
     (M, β, γ, α, μ) = unpack_params(P, n)
 
-    (dS, dE, dI, dR) = SEIRDeriv(SEIRVars(S, E, I, R), SEIRParams(M, β, γ, α, μ))
+    (dS, dE, dI, dR) =
+        _SEIR_derivative(SEIRVariables(S, E, I, R), SEIRParameters(M, β, γ, α, μ))
     pack_vars(dS, dE, dI, dR)
 end
 
 function SEIR_ODEProblem(
-    inivars::SEIRVars,
-    params::SEIRParams;
+    inivars::SEIRVariables,
+    params::SEIRParameters;
     maxtime = 180.0,
     kwargs...,
 )
@@ -295,18 +318,18 @@ function SEIR_ODEProblem(
 end
 
 function model_problem(model::SEIRModel; kwargs...)
-    SEIR_ODEProblem(varsof(model), paramsof(model); kwargs...)
+    SEIR_ODEProblem(variables(model), parameters(model); kwargs...)
 end
 
 function model_solution(model::SEIRModel; kwargs...)
     solve(model_problem(model; kwargs...), Euler(); dt = 1.0)
 end
 
-function to_dataframe(problem::ODEProblem, model::SEIRModel; kwargs...)
-    solution = solve(problem, Euler(); dt = 1.0)
-    (M, β, γ, α, μ) = paramsof(model)
+function to_dataframe(model::SEIRModel; kwargs...)
+    solution = model_solution(model; kwargs...)
+    (M, β, γ, α, μ) = parameters(model)
     days = solution.t
-    initial_date = get(model.info, :initial_date, model.data.date[end])
+    initial_date = get(model.info, :initial_date, today())
     date = initial_date .+ Day.(days)
     n = length(days)
     ng = model.ngroups
@@ -321,7 +344,7 @@ function to_dataframe(problem::ODEProblem, model::SEIRModel; kwargs...)
     diff_deaths = zeros(Float64, n)
     for i ∈ 1:n
         (S, E, I, R) = unpack_vars(solution[i])
-        (dS, dE, dI, dR) = SEIRDeriv(S, E, I, R, M, β, γ, α)
+        (dS, dE, dI, dR) = _SEIR_derivative(S, E, I, R, M, β, γ, α)
         exposed[i] = sum(E)
         active[i] = sum(I)
         recovered[i] = sum(R .* (1.0 .- μ))
@@ -344,14 +367,6 @@ function to_dataframe(problem::ODEProblem, model::SEIRModel; kwargs...)
         diff_recovered = diff_recovered,
         diff_deaths = diff_deaths,
     )
-end
-
-function to_dataframe!(model::SEIRModel; kwargs...)
-    modeldataof!(model, to_dataframe(model; kwargs...))
-end
-
-function to_dataframe(model::SEIRModel; kwargs...)
-    to_dataframe(model_problem(model; kwargs...), model; kwargs...)
 end
 
 function model_plot(
@@ -380,7 +395,7 @@ function model_plot(
         label = string(y1),
         ylabel = ylabel,
         title = title,
-        legend = :right,
+        legend = :topleft,
     )
     for yn ∈ colnames[2:end]
         ynstr = string(yn)

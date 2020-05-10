@@ -32,12 +32,13 @@ function model_loss(
     kwargs...,
     # diff_loss_func::Function = diff_phuber_loss(1.0),
 )
-    params = paramsof(model)
+    params = parameters(model)
     ng = model.ngroups
-    data = dataof(model)
+    data = datadict(model)
     ndays = something(ndays, Dates.days(data.date[end] - data.date[1]))
+    model_back = model_step(model, -ndays)
     istart, iend = nrow(data) - ndays, nrow(data)
-    solution = model_solution(model; maxtime = -ndays - 1 |> Float64)
+    solution = model_solution(model; maxtime = ndays |> Float64)
     days = Int.(solution.t)
     n = length(days)
     M = params[:M]
@@ -57,7 +58,7 @@ function model_loss(
     diff_dth_loss = Float64[] =#
     for i ∈ 1:(iend - istart + 1)
         day = -Dates.days(data.date[end] - data.date[i])
-        sol = solution[end - i + 1]
+        sol = solution[i]
         (S, E, I, R) = unpack_vars(sol)
         push!(rec_loss, data.recovered[i - 1 + istart] - sum((1 .- μ) .* R))
         push!(act_loss, data.active[i - 1 + istart] - sum(I))
@@ -86,7 +87,7 @@ function optimize_params(
 )
     n = model.ngroups
     lastparams = nothing
-    model_params = paramsof(model)
+    model_params = parameters(model)
     function _calc_loss(arg)
         params = arg[1:(end - n)]
         newE = arg[(end - n + 1):end]
@@ -97,9 +98,9 @@ function optimize_params(
             default_params = model_params,
         )
 
-        paramsof!(model, newparams)
-        (S, E, I, R) = varsof(model)
-        varsof!(model, SEIRVars(S, newE, I, R))
+        parameters!(model, newparams)
+        (S, E, I, R) = variables(model)
+        variables!(model, SEIRVariables(S, newE, I, R))
         model_loss(model; ndays = ndays, kwargs...)
     end
     #= function diff(params)
@@ -124,14 +125,19 @@ function optimize_params(
     optimize(_calc_loss, lower, upper, opt_params, minbox)
 end
 
-function estimate_μ(data::AbstractDataFrame; ndays = 14)
+function estimate_μ(data::AbstractDataFrame; ndays = 14, kwargs...)
     [data.μ_closed_est[1]]
 end
 
 estimate_μ(model::AbstractEndemicModel; kwargs...) =
-    estimate_μ(dataof(model); kwargs...)
+    estimate_μ(datadict(model); kwargs...)
 
-function estimate_α(data::AbstractDataFrame; ndays = 7, μ = estimate_μ(data))
+function estimate_α(
+    data::AbstractDataFrame;
+    ndays = 7,
+    μ = estimate_μ(data),
+    kwargs...,
+)
     dt = data[data.diff_closed .!== missing, :]
     # Get numbers from last `ndays` days
     dR = dt.diff_closed[(end - ndays):end]
@@ -141,7 +147,7 @@ function estimate_α(data::AbstractDataFrame; ndays = 7, μ = estimate_μ(data))
 end
 
 estimate_α(model::AbstractEndemicModel; kwargs...) =
-    estimate_α(dataof(model); kwargs...)
+    estimate_α(datadict(model); kwargs...)
 
 function _γ_root(d1, d2, d3, I, α)
     a = -I .* d2 .+ d1 .^ 2 .- I .* α .* d1
@@ -161,6 +167,7 @@ function estimate_γ(
     ndays = 7,
     μ = estimate_μ(data),
     α = estimate_α(data; μ = μ),
+    kwargs...,
 )
     dt = data[data.diff3_confirmed .!== missing, :]
     # Get numbers from last `ndays` days
@@ -174,7 +181,7 @@ function estimate_γ(
 end
 
 estimate_γ(model::AbstractEndemicModel; kwargs...) =
-    estimate_γ(dataof(model); kwargs...)
+    estimate_γ(datadict(model); kwargs...)
 
 function estimate_β(
     data::AbstractDataFrame;
@@ -182,6 +189,7 @@ function estimate_β(
     μ = estimate_μ(data),
     α = estimate_α(data; μ = μ),
     γ = estimate_γ(data; μ = μ, α = α),
+    kwargs...,
 )
     dt = data[data.diff3_confirmed .!== missing, :]
     # Get numbers from last `ndays` days
@@ -196,9 +204,10 @@ end
 function estimate_exposed(
     data::AbstractDataFrame;
     ndays = 7,
-    μ = estimate_μ(data),
-    α = estimate_α(data; μ = μ),
-    γ = estimate_γ(data; μ = μ, α = α),
+    μ = estimate_μ(data; kwargs...),
+    α = estimate_α(data; μ = μ, kwargs...),
+    γ = estimate_γ(data; μ = μ, α = α, kwargs...),
+    kwargs...,
 )
     d1 = data.diff_confirmed
     E = d1 ./ γ
@@ -216,30 +225,68 @@ function estimate_exposed!(data::AbstractDataFrame; kwargs...)
 end
 
 estimate_exposed(model::AbstractEndemicModel; kwargs...) =
-    estimate_exposed(dataof(model); kwargs...)
+    estimate_exposed(datadict(model); kwargs...)
 estimate_exposed!(model::AbstractEndemicModel; kwargs...) =
-    estimate_exposed!(dataof(model); kwargs...)
+    estimate_exposed!(datadict(model); kwargs...)
 
 function SEIRModel(
     data::AbstractDataFrame;
     minimum_confirmed_factor = option(:minimum_confirmed_factor),
+    kwargs...,
 )
     numpeople = data.estimated_population[1]
     data = data[data.confirmed .>= numpeople * minimum_confirmed_factor, :]
     M = Float64[numpeople]
-    μ = estimate_μ(data)
-    α = estimate_α(data; μ = μ)
-    γ = estimate_γ(data; μ = μ, α = α)
-    β = estimate_β(data; μ = μ, α = α, γ = γ)
+    μ = estimate_μ(data; kwargs...)
+    α = estimate_α(data; μ = μ, kwargs...)
+    γ = estimate_γ(data; μ = μ, α = α, kwargs...)
+    β = estimate_β(data; μ = μ, α = α, γ = γ, kwargs...)
 
-    estimate_exposed!(data; μ = μ, α = α, γ = γ)
-    idx = findlast(!ismissing, data.exposed)
+    exposed = estimate_exposed!(data; μ = μ, α = α, γ = γ, kwargs...)
+    idx = findlast(!ismissing, exposed)
     I = Float64[data.active[idx]]
     S = M - I
     R = Float64[data.closed[idx]]
-    E = Float64[data.exposed[idx]]
+    E = Float64[exposed[idx]]
+    initial_date = data.date[idx]
+    vars, params = SEIRVariables(S, E, I, R), SEIRParameters(M, β, γ, α, μ)
 
-    model = SEIRModel(S, E, I, R, M, β, γ, α, μ; initial_date = data.date[idx])
-    dataof!(model, data)
+    SEIRModel(vars, params; data = data, initial_date = initial_date, kwargs...)
+end
+
+function SEIRModel(data::D; kwargs...) where {D <: AbstractDict}
+    function _try(data)
+        try
+            SEIRModel(data; kwargs...)
+        catch
+            missing
+        end
+    end
+    result = D(key => _try(subdata) for (key, subdata) ∈ data)
+    filter!(p -> !ismissing(p[2]), result)
+end
+
+SEIRModel(database::AbstractDatabase; kwargs...) =
+    SEIRModel(datadict(database); kwargs...)
+
+function SEIRModel!(database::AbstractDatabase; kwargs...)
+    model = modeldict!(database, SEIRModel(database; kwargs...))
+    paramdict!(database, parameters(model))
     model
+end
+
+function parameters(data::D) where {D <: AbstractDict}
+    result = D()
+    columns = [param => Vector{Float64}[] for param ∈ SEIR_PARAMS]
+    paramdf = DataFrame(:key => String[], columns...)
+    for (key, subdata) ∈ data
+        if subdata isa AbstractDict
+            result[key] = parameters(subdata)
+        else
+            params = pairs(parameters(subdata))
+            push!(paramdf, (; key = String(key), params...))
+        end
+    end
+    !isempty(paramdf) && (result[:parameters] = paramdf)
+    result
 end

@@ -53,7 +53,7 @@ end
 @defoption(
     parameter_directory,
     join(parent(@__PATH__), p"input/"),
-    "Directory to look for parameters.",
+    "Directory to look for input parameters.",
     PathDesignator
 )
 
@@ -103,6 +103,43 @@ end
 @defoption(database_data_type, :csv, "Default format of database files.", Symbol)
 
 @defoption(
+    model_directory,
+    join(parent(@__PATH__), p"model/"),
+    "Directory where models are exported.",
+    PathDesignator
+)
+
+@defoption(
+    model_filename,
+    "Database",
+    "Default name of exported model file.",
+    PathDesignator
+)
+
+@defoption(model_data_type, :csv, "Default format of model files.", Symbol)
+
+@defoption(
+    parameters_subdirectory,
+    p"PARAMETERS",
+    "Subdirectory where model parameters are exported.",
+    PathDesignator
+)
+
+@defoption(
+    parameters_filename,
+    "Parameters",
+    "Default name of exported model parameters file.",
+    PathDesignator
+)
+
+@defoption(
+    parameters_data_type,
+    :csv,
+    "Default format of model parameters files.",
+    Symbol
+)
+
+@defoption(
     minimum_confirmed_factor,
     1e-5,
     "Factor for minimum number of confirmed people to be considered in estimates.",
@@ -110,7 +147,7 @@ end
 )
 @defoption(
     minimum_plot_factor,
-    1e-3,
+    1e-6,
     "Factor for minimum number of confirmed people to be considered in plots.",
     Real
 )

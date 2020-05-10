@@ -182,12 +182,9 @@ end
         else
             pop!(testkinds)
         end
-        gdf = gdf[
-            map(elt -> ismissing(elt) || elt == testkind, gdf.test_kind) |> collect,
-            :,
-        ]
+        rows = map(elt -> ismissing(elt) || elt == testkind, gdf.test_kind)
+        gdf = gdf[collect(rows), :]
     end
-    @show names(df) names(gdf)
     sort!(gdf, [:country, :date])
     select(gdf, keys ∪ vals1 ∪ vals2)
 end
@@ -319,5 +316,12 @@ function covid_19_database(
         column_tests_per_confirmed,
         column_tests_per_1mi,
     ]
-    Database{Dict{Symbol, Any}}(sources, kwargs, funcs)
+    db = Database{Dict{Symbol, Any}}(sources, kwargs, funcs)
+end
+
+function covid_19(; kwargs...)
+    db = covid_19_database(; kwargs...)
+    SEIRModel!(db; kwargs...)
+    export_data(db; kwargs...)
+    db
 end

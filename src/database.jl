@@ -1,17 +1,32 @@
 abstract type AbstractDatabase{D <: AbstractDict} end
 abstract type AbstractSubDatabase{D <: AbstractDict} <: AbstractDatabase{D} end
 
-sourcesof(database::AbstractDatabase) = database.sources
-sourcesof!(database::AbstractDatabase, value) = (database.sources = value)
-kwargsof(database::AbstractDatabase) = database.kwargs
-kwargsof!(database::AbstractDatabase, value) = (database.kwargs = value)
-computeof(database::AbstractDatabase) = database.compute
-computeof!(database::AbstractDatabase, value) = (database.compute = value)
-dataof(database::AbstractDatabase) = database.data
-dataof!(database::AbstractDatabase, value) = (database.data = value)
+sources(database::AbstractDatabase) = database.sources
+sources!(database::AbstractDatabase, value) = database.sources = value
+
+default_kwargs(database::AbstractDatabase) = database.kwargs
+default_kwargs!(database::AbstractDatabase, value) = database.kwargs = value
+
+computing_functions(database::AbstractDatabase) = database.computing_functions
+computing_functions!(database::AbstractDatabase, value) =
+    database.computing_functions = value
+
+datadict(database::AbstractDatabase) = database.datadict
+datadict!(database::AbstractDatabase, value) = database.datadict = value
+
+modeldict(database::AbstractDatabase) = database.modeldict
+modeldict!(database::AbstractDatabase, value) = database.modeldict = value
+
+paramdict(database::AbstractDatabase) = database.paramdict
+paramdict!(database::AbstractDatabase, value) = database.paramdict = value
+
+Base.iterate(database::AbstractDatabase) = iterate(datadict(database))
+Base.keys(database::AbstractDatabase) = keys(datadict(database))
+Base.values(database::AbstractDatabase) = values(datadict(database))
+Base.pairs(database::AbstractDatabase) = pairs(datadict(database))
 
 function Base.summary(database::AbstractDatabase{D}) where {D}
-    data::D = dataof(database)
+    data::D = datadict(database)
     len = length(data)
     nsubdata = count(v -> v isa D, values(data))
     ntables = len - nsubdata
@@ -22,110 +37,173 @@ end
 mutable struct Database{D <: AbstractDict} <: AbstractDatabase{D}
     sources::Vector{Symbol}
     kwargs::Dict{Symbol, Any}
-    compute::Vector{Function}
-    data::D
+    computing_functions::Vector{Function}
+    datadict::D
+    modeldict::D
+    paramdict::D
     function Database{D}(
         sources::Vector{Symbol},
         kwargs::Dict{Symbol, Any},
-        compute::Vector{Function} = Function[],
+        computing_functions::Vector{Function},
+        datadict::Union{D, Nothing},
     ) where {D <: AbstractDict}
-        db = new(sources, kwargs, compute, D())
-        data = import_data(db; kwargs...)
-        eltdata = length(data) == 1 ? collect(values(data))[1] : data
-        db.data = eltdata isa AbstractDict ? eltdata : data
+        data = something(datadict, D())
+        modeldict, paramdict = D(), D()
+        db = new(sources, kwargs, computing_functions, data, modeldict, paramdict)
+        if isnothing(datadict)
+            data = import_data(db; kwargs...)
+            eltdata = length(data) == 1 ? collect(values(data))[1] : data
+            db.datadict = eltdata isa AbstractDict ? eltdata : data
+        end
         db
     end
 end
 
-rootof(database::Database) = database
+root(database::Database) = database
+Base.parent(database::Database) = database
 
-function Database{D}(
-    sources::Vector{Symbol},
-    kwargs,
-    compute::Vector{Function} = Function[],
-) where {D <: AbstractDict}
-    Database{D}(sources, Dict{Symbol, Any}(kwargs), compute)
+function Database{D}(sources, kwargs, computing_functions) where {D <: AbstractDict}
+    sources = collect(Symbol.(sources))
+    kwargs, cmp = Dict{Symbol, Any}(kwargs), Vector{Function}(computing_functions)
+    Database{D}(sources, kwargs, cmp, nothing)
 end
 
-Database(args...) = Database{Dict}(args...)
+Database(args...) = Database{Dict{Symbol, Any}}(args...)
 
 function Database{D}(
-    sources::Vector{Symbol},
-    compute::Vector{Function} = Function[];
+    sources::Union{AbstractVector, Tuple},
+    computing_functions::Vector{Function} = Function[];
     kwargs...,
 ) where {D <: AbstractDict}
-    Database{D}(sources, Dict(kwargs), compute)
+    sources = collect(Symbol.(sources))
+    Database{D}(sources, Dict{Symbol, Any}(kwargs), computing_functions)
 end
 
-function Database{D}(source::Symbol, args...; kwargs...) where {D}
-    Database{D}(Vector{Symbol}([source]), args...; kwargs...)
+function Database{D}(
+    source::Union{Symbol, AbstractString},
+    args...;
+    kwargs...,
+) where {D}
+    Database{D}(Vector{Symbol}([Symbol(source)]), args...; kwargs...)
 end
 
-function show(io::IO, database::Database{D}) where {D}
+function Base.show(io::IO, database::AbstractDatabase{D}) where {D}
     print(io, summary(database), "\n")
 end
 
-function show(io::IO, ::MIME"text/plain", database::Database{D}) where {D}
+function Base.show(io::IO, ::MIME"text/plain", database::AbstractDatabase{D}) where {D}
     show(io, database)
 end
 
-function show(database::Database{D}) where {D}
+function Base.show(database::AbstractDatabase{D}) where {D}
     show(stdout, database)
 end
 
-mutable struct SubDatabase{D} <: AbstractSubDatabase{D}
-    root::Database
-    datakeys::Vector{Symbol}
-    data::D
+mutable struct SubDatabase{D <: AbstractDict} <: AbstractDatabase{D}
+    parent::AbstractDatabase
+    key::Symbol
+    datadict::D
     function SubDatabase{D}(
-        root::Database,
-        datakeys::Vector{Symbol},
-        data::D;
-        kwargs...,
+        parent::AbstractDatabase,
+        key::Union{Symbol, AbstractString},
+        data::D = datadict(parent)[key],
     ) where {D <: AbstractDict}
-        new(root, datakeys, data)
+        new(parent, Symbol(key), data)
     end
-end
-
-sourcesof(database::SubDatabase) = sourcesof(database.root)
-sourcesof!(database::SubDatabase, value) = sourcesof!(database.root, value)
-kwargsof(database::SubDatabase) = kwargsof(database.root)
-kwargsof!(database::SubDatabase, value) = kwargsof!(database.root, value)
-computeof(database::SubDatabase) = computeof(database.root)
-computeof!(database::SubDatabase, value) = computeof!(database.root, value)
-function dataof(database::SubDatabase)
-    pdata = dataof(root)
-    dataof(database.root)
-end
-dataof!(database::SubDatabase, value) = dataof!(database.root, value)
-
-rootof(database::SubDatabase) = database.root
-
-function SubDatabase{D}(
-    root::Database,
-    datakeys::Vector{Symbol};
-    kwargs...,
-) where {D <: AbstractDict}
-    data = dataof(root)
-    for k ∈ datakeys
-        data = data[k]
-    end
-    SubDatabase{D}(root, datakeys, data)
 end
 
 function SubDatabase{D}(
     parent::SubDatabase{D},
-    datakeys::Vector{Symbol};
-    kwargs...,
+    datakeys::Union{Tuple, AbstractVector},
 ) where {D <: AbstractDict}
-    data = dataof(parent)
-    for k ∈ datakeys
-        data = data[k]
+    for key ∈ Symbol.(datakeys)
+        data = datadict(parent)
+        parent = SubDatabase(parent, key, data[key])
     end
-    pdatakeys = datakeysof(parent)
-    ndatakeys = pdatakeys ∪ datakeys
-    root = rootof(parent)
-    SubDatabase{D}(root, ndatakeys, data)
+    parent
+end
+
+Base.parent(database::SubDatabase) = database.parent
+
+sources(database::SubDatabase) = sources(parent(database))
+sources!(database::SubDatabase, value) = sources!(parent(database)value)
+default_kwargs(database::SubDatabase) = default_kwargs(parent(database))
+default_kwargs!(database::SubDatabase, value) =
+    default_kwargs!(parent(database), value)
+computing_functions(database::SubDatabase) = computing_functions(parent(database))
+computing_functions!(database::SubDatabase, value) =
+    computing_functions!(parent(database), value)
+
+root(database::SubDatabase) = root(parent(database))
+
+function Base.getproperty(
+    database::AbstractDatabase{D},
+    key::Symbol,
+) where {D <: AbstractDict}
+    if hasfield(typeof(database), key)
+        getfield(database, key)
+    else
+        data = datadict(database)[key]
+        data isa AbstractDict ? SubDatabase{D}(database, key) : data
+    end
+end
+
+function Base.propertynames(database::AbstractDatabase{D}) where {D <: AbstractDict}
+    props = copy(collect(fieldnames(typeof(database))))
+    append!(props, keys(datadict(database)))
+end
+
+function Base.getindex(
+    database::AbstractDatabase{D},
+    key::Union{Symbol, AbstractString},
+    keys::Union{Symbol, AbstractString}...,
+) where {D <: AbstractDict}
+    database = getproperty(database, Symbol(key))
+    for key ∈ keys
+        database = getproperty(database, Symbol(key))
+    end
+    database
+end
+
+function Base.setindex!(
+    database::AbstractDatabase{D},
+    value,
+    key::Union{Symbol, AbstractString},
+    keys::Union{Symbol, AbstractString}...,
+) where {D <: AbstractDict}
+    if isempty(keys)
+        datadict(database)[key] = value
+    else
+        data, key = get!(datadict(database), key, D()), pop!(keys)
+        while !isempty(keys)
+            data, key = get!(data, key, D()), pop!(keys)
+        end
+        data[key] = value
+    end
+end
+
+function Base.get(
+    database::AbstractDatabase,
+    key::Union{Symbol, AbstractString},
+    default,
+)
+    get(datadict(database), Symbol(key), default)
+end
+
+function Base.get(
+    f::Base.Callable,
+    database::AbstractDatabase,
+    key::Union{Symbol, AbstractString},
+)
+    get(f, datadict(database), Symbol(key))
+end
+
+function Base.get!(
+    database::AbstractDatabase,
+    key::Union{Symbol, AbstractString},
+    default,
+)
+    get!(datadict(database), Symbol(key), default)
 end
 
 function create_column!(
@@ -169,7 +247,7 @@ function create_column!(
     func::Function;
     kwargs...,
 )
-    data = dataof(database)
+    data = datadict(database)
     (_, updated) = create_column!(data, colname, columnsyms, func; kwargs...)
     (database, updated)
 end
@@ -205,7 +283,8 @@ function create_table!(
     func::Function;
     kwargs...,
 )
-    (_, updated) = create_table!(dataof(database), tblname, tablesyms, func; kwargs...)
+    (_, updated) =
+        create_table!(datadict(database), tblname, tablesyms, func; kwargs...)
     (database, updated)
 end
 
@@ -270,7 +349,7 @@ function group_table!(
     kwargs...,
 )
     (_, updated) = group_table!(
-        dataof(database),
+        datadict(database),
         tblname,
         sourcetbl,
         keycols,
@@ -296,59 +375,14 @@ function group_table!(data, tblname, sourcetbls, keycols, cols_and_funcs...; kwa
     (data, updated)
 end
 
-function import_data(database::AbstractDatabase; kwargs...)
-    imp_kwargs = merge(kwargsof(database), kwargs)
-    data = import_data(sourcesof(database); imp_kwargs...)
-    funcs = computeof(database)
+function import_data(database::AbstractDatabase; kw...)
+    imp_kwargs = merge(default_kwargs(database), kw)
+    dt = import_data(sources(database); imp_kwargs...)
+    funcs = computing_functions(database)
 
-    while any(func(data) for func ∈ funcs)
+    while any(func(dt) for func ∈ funcs)
     end
-    data
-end
-
-function import_data!(database::AbstractDatabase; kwargs...)
-    dataof!(database, import_data(database; kwargs...))
-end
-
-function database_path(
-    ext::Union{Nothing, AbstractString} = data_extension(option(:database_data_type));
-    database_directory = option(:database_directory),
-    database_filename = option(:database_filename),
-    kwargs...,
-)
-    join(Path(database_directory), Path(database_filename) * "." * ext)
-end
-
-function database_path(sourcesym::Symbol; kwargs...)
-    source = DATA_SOURCES[sourcesym]
-    database_path(data_extension(source); kwargs...)
-end
-
-function export_data(source::AbstractDataSource, database::AbstractDatabase; kwargs...)
-    data = dataof(database)
-    export_data(source, data; kwargs...)
-end
-
-function export_data(
-    database::AbstractDatabase;
-    database_data_type = option(:database_data_type),
-    database_directory = option(:database_directory),
-    database_filename = option(:database_filename),
-    pretty::Bool = true,
-    kwargs...,
-)
-    output = database_path(
-        database_data_type;
-        database_directory = database_directory,
-        database_filename = database_filename,
-    )
-    export_data(
-        database_data_type,
-        database;
-        pretty = pretty,
-        output = output,
-        kwargs...,
-    )
+    dt
 end
 
 macro defcolumn(fcall::Expr, body::Expr)

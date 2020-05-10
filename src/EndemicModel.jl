@@ -47,7 +47,6 @@ export AbstractDataSource,
     column_creator,
     table_creator,
     table_grouper,
-    covid_19_database,
 
     SEIR_PARAMS,
     SEIR_DERIV,
@@ -56,6 +55,7 @@ export AbstractDataSource,
     SEIRDeriv,
     SEIRParams,
     SEIRModel,
+    SEIRModel!,
     pack_vars,
     pack_params,
     unpack_vars,
@@ -68,10 +68,21 @@ export AbstractDataSource,
     to_dataframe,
     to_dataframe!,
 
-    dataof,
-    dataof!,
-    paramsof,
-    paramsof!,
+    datadict,
+    datadict!,
+    modeldict,
+    modeldict!,
+    paramdict,
+    paramdict!,
+
+    variables,
+    variables!,
+    derivatives,
+    derivatives!,
+    parameters,
+    parameters!,
+    modeldata,
+    modeldata!,
 
     phuber_loss,
     diff_phuber_loss,
@@ -83,7 +94,10 @@ export AbstractDataSource,
     estimate_α,
     estimate_γ,
     estimate_β,
-    estimate_exposed!
+    estimate_exposed!,
+
+    covid_19_database,
+    covid_19
 
 const DATA_SOURCES = Dict{Symbol, Type}()
 
@@ -91,6 +105,7 @@ include("utils.jl")
 include("options.jl")
 include("datasources.jl")
 include("database.jl")
+include("database_files.jl")
 include("covid19.jl")
 include("model.jl")
 include("estimate.jl")
