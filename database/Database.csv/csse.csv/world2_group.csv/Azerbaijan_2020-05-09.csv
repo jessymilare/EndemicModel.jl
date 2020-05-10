@@ -1,0 +1,2 @@
+Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
+Azerbaijan,,40.14,47.58,2020-05-09,2422,1620,31,1651,771,,,,,,,,,,,,,,0.0188,0.0128,0.0188

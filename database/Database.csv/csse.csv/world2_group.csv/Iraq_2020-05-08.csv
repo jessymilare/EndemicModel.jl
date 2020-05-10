@@ -1,0 +1,2 @@
+Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
+Iraq,,33.0,44.0,2020-05-08,2603,1661,104,1765,838,,,,,,,,,,,,,,0.0589,0.04,0.0589
