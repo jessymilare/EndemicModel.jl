@@ -513,13 +513,13 @@ function import_data(source::BrasilIo; url = BRASIL_IO_URL, kwargs...)
     sort!(raw_data, [:state, :city, :date])
 
     rename!(raw_data, "estimated_population_2019" => :estimated_population)
-    per_state = @where(raw_data, :place_type .== "state")
-    per_city = @where(raw_data, :place_type .== "city")
+    states = @where(raw_data, :place_type .== "state")
+    cities = @where(raw_data, :place_type .== "city")
 
-    select!(per_state, Not([:city, :place_type]))
-    select!(per_city, Not([:place_type]))
+    select!(states, Not([:city, :place_type]))
+    select!(cities, Not([:place_type]))
 
-    DataDict(:per_state => per_state, :per_city => per_city)
+    DataDict(:states => states, :cities => cities)
 end
 
 # CSV file and directory of files
@@ -543,8 +543,10 @@ function import_data(source::CsvPath; kwargs...)
     path = pathof(source)
     @argcheck exists(path)
     if isfile(path)
+        @debug "Importing DataFrame from CSV file." path
         csv_read(path; copycols = true)
     else
+        @debug "Importing Dict from CSV directory." path
         DataDict(
             Symbol(filename(elt)) => import_data(CsvPath(elt); kwargs...)
             for elt ∈ readpath(path)
@@ -559,6 +561,7 @@ function export_data(
     kwargs...,
 )
     destiny = pathof(source)
+    @debug "Exporting DataFrame to CSV file." destiny _debuginfo(data)
     if pretty
         data = prettify(data)
     end
@@ -569,10 +572,12 @@ end
 
 function export_data(source::CsvPath, data::AbstractDict; kwargs...)
     destiny = pathof(source)
+    @debug "Exporting Dict to CSV directory." destiny _debuginfo(data)
     exists(destiny) && rm(destiny; recursive = true)
     mkdir(destiny; recursive = true)
     for (fname, fdata) ∈ data
-        fpath = join(destiny, Path(string(fname) * ".csv"))
+        fname = replace(string(fname), '/' => '_')
+        fpath = join(destiny, Path(fname * ".csv"))
         export_data(CsvPath(fpath), fdata; kwargs...)
     end
     destiny
@@ -654,7 +659,8 @@ function export_data(source::OdsPath, data::AbstractDataDict; kwargs...)
         dfsource = OdsPath(join(destiny, p"_DEFAULT_.ods"))
 
         for (fname, fdata) ∈ subdata
-            fpath = join(destiny, Path(string(fname) * ".ods"))
+            fname = replace(string(fname), '/' => '_')
+            fpath = join(destiny, Path(fname * ".ods"))
             export_data(OdsPath(fpath), fdata; kwargs...)
         end
     end

@@ -173,3 +173,11 @@ function to_json(
 )
     JSON.json(to_json_dict(data, keys; values = values, dfvalues = dfvalues), 4)
 end
+
+function _debuginfo(df::AbstractDataFrame)
+    summary(df) * " with columns " * "$(Tuple(names(df)))"
+end
+
+function _debuginfo(dict::AbstractDict)
+    summary(dict) * " with keys " * "$(Tuple(keys(dict)))"
+end

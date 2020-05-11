@@ -1,26 +1,47 @@
 
-@deftable per_state2(per_state, Brazil) begin
-    nrec = Union{Int, Missing}[]
-    for row ∈ eachrow(per_state)
-        brrow = Brazil[Brazil.date .== row.date, :]
-        push!(
-            nrec,
-            if !isempty(brrow)
-                brrec = brrow.recovered[1]
-                brconf = brrow.confirmed[1]
-                conf = row.confirmed
-                brconf == 0 ? 0 : round(Union{Int, Missing}, brrec * conf / brconf)
-            else
-                missing
-            end,
-        )
+@defgroup world2(world) (country, date) [
+    (latitude, longitude) => mean,
+    (confirmed, recovered, deaths) => sum,
+]
+
+@deftable world3(world2, world_population, total_tests) begin
+    df = join(world2, world_population; on = :country, kind = :left)
+    gdf = join(df, total_tests; on = [:country, :date], kind = :left)
+    keys = [:country, :date, :latitude, :longitude]
+    vals1 = [:estimated_population, :total_tests, :test_kind]
+    vals2 = [:confirmed, :recovered, :deaths]
+    testkinds = filter(!ismissing, Set(gdf.test_kind))
+    if length(testkinds) > 1
+        testkind = if "samples tested" ∈ testkinds
+            "samples tested"
+        elseif "people tested" ∈ testkinds
+            "people tested"
+        else
+            pop!(testkinds)
+        end
+        rows = map(elt -> ismissing(elt) || elt == testkind, gdf.test_kind)
+        gdf = gdf[collect(rows), :]
     end
-    insertcols!(per_state, 5, :recovered => nrec)
+    sort!(gdf, [:country, :date])
+    select(gdf, keys ∪ vals1 ∪ vals2)
 end
 
-@deftable per_city2(per_city, Brazil) begin
+@defgroup per_country(world3) (country,) [
+    (date, latitude, longitude) => identity,
+    (estimated_population, total_tests, test_kind) => identity,
+    (confirmed, recovered, deaths) => identity,
+]
+
+@defgroup total(per_country) (date,) [
+    (latitude, longitude) => mean,
+    (estimated_population, total_tests) => sum,
+    (test_kind,) => maximum,
+    (confirmed, recovered, deaths) => sum,
+]
+
+@deftable states2(states, Brazil) begin
     nrec = Union{Int, Missing}[]
-    for row ∈ eachrow(per_city)
+    for row ∈ eachrow(states)
         brrow = Brazil[Brazil.date .== row.date, :]
         push!(
             nrec,
@@ -34,8 +55,39 @@ end
             end,
         )
     end
-    insertcols!(per_city, 6, :recovered => nrec)
+    insertcols!(states, 5, :recovered => nrec)
 end
+
+@deftable cities2(cities, Brazil) begin
+    nrec = Union{Int, Missing}[]
+    for row ∈ eachrow(cities)
+        brrow = Brazil[Brazil.date .== row.date, :]
+        push!(
+            nrec,
+            if !isempty(brrow)
+                brrec = brrow.recovered[1]
+                brconf = brrow.confirmed[1]
+                conf = row.confirmed
+                brconf == 0 ? 0 : round(Union{Int, Missing}, brrec * conf / brconf)
+            else
+                missing
+            end,
+        )
+    end
+    insertcols!(cities, 6, :recovered => nrec)
+end
+
+@defgroup per_state(states2) (state,) [
+    (date, city_ibge_code) => identity,
+    (estimated_population,) => identity,
+    (confirmed, recovered, deaths) => identity,
+]
+
+@defgroup per_city(cities2) (city,) [
+    (state, date, city_ibge_code) => identity,
+    (estimated_population,) => identity,
+    (confirmed, recovered, deaths) => identity,
+]
 
 @defcolumn closed(recovered, deaths) recovered .+ deaths
 @defcolumn active(confirmed, closed) confirmed .- closed
@@ -160,46 +212,6 @@ end
     end
 end
 
-@defgroup world2(world) (country, date) [
-    (latitude, longitude) => mean,
-    (confirmed, recovered, deaths, closed, active) => sum,
-]
-
-@deftable world3(world2, world_population, total_tests) begin
-    df = join(world2, world_population; on = :country, kind = :left)
-    gdf = join(df, total_tests; on = [:country, :date], kind = :left)
-    keys = [:country, :date, :latitude, :longitude]
-    vals1 = [:estimated_population, :total_tests, :test_kind]
-    vals2 = [:confirmed, :recovered, :deaths, :closed, :active]
-    testkinds = filter(!ismissing, Set(gdf.test_kind))
-    if length(testkinds) > 1
-        testkind = if "samples tested" ∈ testkinds
-            "samples tested"
-        elseif "people tested" ∈ testkinds
-            "people tested"
-        else
-            pop!(testkinds)
-        end
-        rows = map(elt -> ismissing(elt) || elt == testkind, gdf.test_kind)
-        gdf = gdf[collect(rows), :]
-    end
-    sort!(gdf, [:country, :date])
-    select(gdf, keys ∪ vals1 ∪ vals2)
-end
-
-@defgroup per_country(world3) (country,) [
-    (date, latitude, longitude) => identity,
-    (estimated_population, total_tests, test_kind) => identity,
-    (confirmed, recovered, deaths, closed, active) => identity,
-]
-
-@defgroup total(per_country) (date,) [
-    (latitude, longitude) => mean,
-    (estimated_population, total_tests) => sum,
-    (test_kind,) => maximum,
-    (confirmed, recovered, deaths, closed, active) => sum,
-]
-
 @defcolumn confirmed_per_1mi(confirmed, estimated_population) begin
     1.0e6 .* confirmed ./ estimated_population
 end
@@ -280,16 +292,20 @@ function covid_19_database(
     kwargs...,
 )
     funcs = [
-        column_closed,
-        column_active,
+        # Tables
         group_world2,
         copy_pop_tests_tables,
         table_world3,
         group_per_country,
         group_total,
         copy_brazil_tables,
-        table_per_state2,
-        table_per_city2,
+        table_states2,
+        table_cities2,
+        group_per_state,
+        group_per_city,
+        # Columns
+        column_closed,
+        column_active,
         column_diff_confirmed,
         column_diff_recovered,
         column_diff_deaths,
