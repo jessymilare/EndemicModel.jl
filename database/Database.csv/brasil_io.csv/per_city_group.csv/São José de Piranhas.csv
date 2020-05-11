@@ -1,0 +1,12 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-04-29,PB,São José De Piranhas,1,0,0,20251,2514503,0,1,,,,,,,,,,,,,,,0.0,0.034,49.38,0.0,0.0,0.0,49.38
+2020-04-30,PB,São José De Piranhas,1,0,0,20251,2514503,0,1,,,,,,,,,,,,,,,0.0,0.034,49.38,0.0,0.0,0.0,49.38
+2020-05-01,PB,São José De Piranhas,1,0,0,20251,2514503,0,1,,,,,,,,,,,,,,,0.0,0.034,49.38,0.0,0.0,0.0,49.38
+2020-05-02,PB,São José De Piranhas,1,0,0,20251,2514503,0,1,,,,,,,,,,,,,,,0.0,0.034,49.38,0.0,0.0,0.0,49.38
+2020-05-03,PB,São José De Piranhas,1,0,0,20251,2514503,0,1,0.0,,,,,,,,,,,,,,0.0,0.034,49.38,0.0,0.0,0.0,49.38
+2020-05-04,PB,São José De Piranhas,1,0,0,20251,2514503,0,1,0.0,,,,,,,,,,,,,,0.0,0.034,49.38,0.0,0.0,0.0,49.38
+2020-05-05,PB,São José De Piranhas,1,0,0,20251,2514503,0,1,0.0,,,,,,,,,,,,,,0.0,0.034,49.38,0.0,0.0,0.0,49.38
+2020-05-06,PB,São José De Piranhas,1,0,0,20251,2514503,0,1,0.104,,,,,,,,,,,,,,0.0,0.034,49.38,0.0,0.0,0.0,49.38
+2020-05-07,PB,São José De Piranhas,1,0,0,20251,2514503,0,1,,,,,,,,,,,,,,,0.0,0.034,49.38,0.0,0.0,0.0,49.38
+2020-05-08,PB,São José De Piranhas,1,0,0,20251,2514503,0,1,,,,,,,,,,,,,,,0.0,0.034,49.38,0.0,0.0,0.0,49.38
+2020-05-09,PB,São José De Piranhas,2,1,1,20251,2514503,2,0,,,,,,,,,,,,,,0.5,0.5,0.034,98.76,49.38,49.38,98.76,0.0

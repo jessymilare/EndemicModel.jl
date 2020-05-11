@@ -1,0 +1,10 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-01,SE,Frei Paulo,1,0,0,15421,2802304,0,1,,,,,,,,,,,,,,,0.0,0.034,64.85,0.0,0.0,0.0,64.85
+2020-05-02,SE,Frei Paulo,2,0,1,15421,2802304,1,1,,,,,,,,,,,,,,0.0,0.0,0.034,129.69,0.0,64.85,64.85,64.85
+2020-05-03,SE,Frei Paulo,2,0,1,15421,2802304,1,1,,,,,,,,,,,,,,0.0,0.0,0.034,129.69,0.0,64.85,64.85,64.85
+2020-05-04,SE,Frei Paulo,2,0,1,15421,2802304,1,1,,,,,,,,,,,,,,0.0,0.0,0.034,129.69,0.0,64.85,64.85,64.85
+2020-05-05,SE,Frei Paulo,2,0,1,15421,2802304,1,1,0.208,,,,,,,,,,,,,0.0,0.0,0.034,129.69,0.0,64.85,64.85,64.85
+2020-05-06,SE,Frei Paulo,2,0,1,15421,2802304,1,1,0.0,0.0,,,,,,,,,,,,0.0,0.0,0.034,129.69,0.0,64.85,64.85,64.85
+2020-05-07,SE,Frei Paulo,2,1,1,15421,2802304,2,0,,,,,,,,,,,,,,0.5,0.5,0.034,129.69,64.85,64.85,129.69,0.0
+2020-05-08,SE,Frei Paulo,2,1,1,15421,2802304,2,0,,,,,,,,,,,,,,0.5,0.5,0.034,129.69,64.85,64.85,129.69,0.0
+2020-05-09,SE,Frei Paulo,2,1,1,15421,2802304,2,0,,,,,,,,,,,,,,0.5,0.5,0.034,129.69,64.85,64.85,129.69,0.0

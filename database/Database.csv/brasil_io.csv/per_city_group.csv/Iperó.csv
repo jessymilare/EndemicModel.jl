@@ -1,0 +1,8 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-04,SP,Iperó,1,0,0,37133,3521002,0,1,,,,,,,,,,,,,,,0.0,0.034,26.93,0.0,0.0,0.0,26.93
+2020-05-05,SP,Iperó,1,0,0,37133,3521002,0,1,,,,,,,,,,,,,,,0.0,0.034,26.93,0.0,0.0,0.0,26.93
+2020-05-06,SP,Iperó,1,0,0,37133,3521002,0,1,,,,,,,,,,,,,,,0.0,0.034,26.93,0.0,0.0,0.0,26.93
+2020-05-07,SP,Iperó,1,0,0,37133,3521002,0,1,,,,,,,,,,,,,,,0.0,0.034,26.93,0.0,0.0,0.0,26.93
+2020-05-08,SP,Iperó,1,0,0,37133,3521002,0,1,,,,,,,,,,,,,,,0.0,0.034,26.93,0.0,0.0,0.0,26.93
+2020-05-09,SP,Iperó,2,0,1,37133,3521002,1,1,,,,,,,,,,,,,,0.0,0.0,0.034,53.86,0.0,26.93,26.93,26.93
+2020-05-10,SP,Iperó,2,0,1,37133,3521002,1,1,,,,,,,,,,,,,,0.0,0.0,0.034,53.86,0.0,26.93,26.93,26.93

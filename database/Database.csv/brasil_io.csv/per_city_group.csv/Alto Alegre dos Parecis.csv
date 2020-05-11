@@ -1,0 +1,7 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-04,RO,Alto Alegre Dos Parecis,2,0,1,13241,1100379,1,1,,,,,,,,,,,,,,0.0,0.0,0.034,151.05,0.0,75.52,75.52,75.52
+2020-05-05,RO,Alto Alegre Dos Parecis,4,0,2,13241,1100379,2,2,,,,,,,,,,,,,,0.0,0.0,0.034,302.09,0.0,151.05,151.05,151.05
+2020-05-06,RO,Alto Alegre Dos Parecis,4,0,2,13241,1100379,2,2,,,,,,,,,,,,,,0.0,0.0,0.034,302.09,0.0,151.05,151.05,151.05
+2020-05-07,RO,Alto Alegre Dos Parecis,4,0,2,13241,1100379,2,2,,,,,,,,,,,,,,0.0,0.0,0.034,302.09,0.0,151.05,151.05,151.05
+2020-05-08,RO,Alto Alegre Dos Parecis,4,0,2,13241,1100379,2,2,,,,,,,,,,,,,,0.0,0.0,0.034,302.09,0.0,151.05,151.05,151.05
+2020-05-09,RO,Alto Alegre Dos Parecis,4,0,2,13241,1100379,2,2,,,,,,,,,,,,,,0.0,0.0,0.034,302.09,0.0,151.05,151.05,151.05

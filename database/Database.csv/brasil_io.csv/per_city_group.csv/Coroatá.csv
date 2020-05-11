@@ -1,0 +1,9 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-02,MA,Coroatá,1,0,0,65296,2103604,0,1,,,,,,,,,,,,,,,0.0,0.034,15.31,0.0,0.0,0.0,15.31
+2020-05-03,MA,Coroatá,1,0,0,65296,2103604,0,1,,,,,,,,,,,,,,,0.0,0.034,15.31,0.0,0.0,0.0,15.31
+2020-05-04,MA,Coroatá,2,0,1,65296,2103604,1,1,,,,,,,,,,,,,,0.0,0.0,0.034,30.63,0.0,15.31,15.31,15.31
+2020-05-05,MA,Coroatá,2,0,1,65296,2103604,1,1,,,,,,,,,,,,,,0.0,0.0,0.034,30.63,0.0,15.31,15.31,15.31
+2020-05-06,MA,Coroatá,12,0,5,65296,2103604,5,7,8.1,,,,,,,,,,,,,0.0,0.0,0.034,183.78,0.0,76.57,76.57,107.2
+2020-05-07,MA,Coroatá,15,0,6,65296,2103604,6,9,,,,,,,,,,,,,,0.0,0.0,0.034,229.72,0.0,91.89,91.89,137.83
+2020-05-08,MA,Coroatá,20,0,8,65296,2103604,8,12,,,,,,,,,,,,,,0.0,0.0,0.034,306.3,0.0,122.52,122.52,183.78
+2020-05-09,MA,Coroatá,37,0,15,65296,2103604,15,22,,,,,,,,,,,,,,0.0,0.0,0.034,566.65,0.0,229.72,229.72,336.93

@@ -1,0 +1,11 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-01,RS,Roca Sales,1,0,0,11393,4315800,0,1,,,,,,,,,,,,,,,0.0,0.034,87.77,0.0,0.0,0.0,87.77
+2020-05-02,RS,Roca Sales,1,0,0,11393,4315800,0,1,,,,,,,,,,,,,,,0.0,0.034,87.77,0.0,0.0,0.0,87.77
+2020-05-03,RS,Roca Sales,1,0,0,11393,4315800,0,1,,,,,,,,,,,,,,,0.0,0.034,87.77,0.0,0.0,0.0,87.77
+2020-05-04,RS,Roca Sales,1,0,0,11393,4315800,0,1,,,,,,,,,,,,,,,0.0,0.034,87.77,0.0,0.0,0.0,87.77
+2020-05-05,RS,Roca Sales,1,0,0,11393,4315800,0,1,0.104,,,,,,,,,,,,,,0.0,0.034,87.77,0.0,0.0,0.0,87.77
+2020-05-06,RS,Roca Sales,1,0,0,11393,4315800,0,1,0.104,,,,,,,,,,,,,,0.0,0.034,87.77,0.0,0.0,0.0,87.77
+2020-05-07,RS,Roca Sales,2,0,1,11393,4315800,1,1,0.208,,,,,,,,,,,,,0.0,0.0,0.034,175.55,0.0,87.77,87.77,87.77
+2020-05-08,RS,Roca Sales,2,0,1,11393,4315800,1,1,,,,,,,,,,,,,,0.0,0.0,0.034,175.55,0.0,87.77,87.77,87.77
+2020-05-09,RS,Roca Sales,2,0,1,11393,4315800,1,1,,,,,,,,,,,,,,0.0,0.0,0.034,175.55,0.0,87.77,87.77,87.77
+2020-05-10,RS,Roca Sales,2,0,1,11393,4315800,1,1,,,,,,,,,,,,,,0.0,0.0,0.034,175.55,0.0,87.77,87.77,87.77

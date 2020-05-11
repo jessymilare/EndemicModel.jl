@@ -1,0 +1,8 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-03,AM,Boa Vista Do Ramos,1,0,0,19207,1300680,0,1,,,,,,,,,,,,,,,0.0,0.034,52.06,0.0,0.0,0.0,52.06
+2020-05-04,AM,Boa Vista Do Ramos,1,0,0,19207,1300680,0,1,,,,,,,,,,,,,,,0.0,0.034,52.06,0.0,0.0,0.0,52.06
+2020-05-05,AM,Boa Vista Do Ramos,2,0,1,19207,1300680,1,1,,,,,,,,,,,,,,0.0,0.0,0.034,104.13,0.0,52.06,52.06,52.06
+2020-05-06,AM,Boa Vista Do Ramos,10,0,4,19207,1300680,4,6,,,,,,,,,,,,,,0.0,0.0,0.034,520.64,0.0,208.26,208.26,312.39
+2020-05-07,AM,Boa Vista Do Ramos,11,0,4,19207,1300680,4,7,,,,,,,,,,,,,,0.0,0.0,0.034,572.71,0.0,208.26,208.26,364.45
+2020-05-08,AM,Boa Vista Do Ramos,11,0,4,19207,1300680,4,7,,,,,,,,,,,,,,0.0,0.0,0.034,572.71,0.0,208.26,208.26,364.45
+2020-05-09,AM,Boa Vista Do Ramos,11,0,4,19207,1300680,4,7,,,,,,,,,,,,,,0.0,0.0,0.034,572.71,0.0,208.26,208.26,364.45

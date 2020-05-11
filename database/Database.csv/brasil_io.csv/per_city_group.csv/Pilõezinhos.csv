@@ -1,0 +1,10 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-01,PB,Pilõezinhos,1,0,0,4976,2511707,0,1,,,,,,,,,,,,,,,0.0,0.034,200.96,0.0,0.0,0.0,200.96
+2020-05-02,PB,Pilõezinhos,1,0,0,4976,2511707,0,1,,,,,,,,,,,,,,,0.0,0.034,200.96,0.0,0.0,0.0,200.96
+2020-05-03,PB,Pilõezinhos,2,0,1,4976,2511707,1,1,,,,,,,,,,,,,,0.0,0.0,0.034,401.93,0.0,200.96,200.96,200.96
+2020-05-04,PB,Pilõezinhos,2,0,1,4976,2511707,1,1,,,,,,,,,,,,,,0.0,0.0,0.034,401.93,0.0,200.96,200.96,200.96
+2020-05-05,PB,Pilõezinhos,2,0,1,4976,2511707,1,1,0.517,,,,,,,,,,,,,0.0,0.0,0.034,401.93,0.0,200.96,200.96,200.96
+2020-05-06,PB,Pilõezinhos,2,0,1,4976,2511707,1,1,0.517,,,,,,,,,,,,,0.0,0.0,0.034,401.93,0.0,200.96,200.96,200.96
+2020-05-07,PB,Pilõezinhos,4,0,2,4976,2511707,2,2,,,,,,,,,,,,,,0.0,0.0,0.034,803.86,0.0,401.93,401.93,401.93
+2020-05-08,PB,Pilõezinhos,5,0,2,4976,2511707,2,3,,,,,,,,,,,,,,0.0,0.0,0.034,1004.82,0.0,401.93,401.93,602.89
+2020-05-09,PB,Pilõezinhos,5,0,2,4976,2511707,2,3,,,,,,,,,,,,,,0.0,0.0,0.034,1004.82,0.0,401.93,401.93,602.89

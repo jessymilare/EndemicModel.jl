@@ -1,0 +1,13 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-04-28,ES,Divino De São Lourenço,0,0,0,4304,3201803,0,0,,,,,,,,,,,,,,,,0.034,0.0,0.0,0.0,0.0,0.0
+2020-04-29,ES,Divino De São Lourenço,0,0,0,4304,3201803,0,0,,,,,,,,,,,,,,,,0.034,0.0,0.0,0.0,0.0,0.0
+2020-04-30,ES,Divino De São Lourenço,0,0,0,4304,3201803,0,0,,,,,,,,,,,,,,,,0.034,0.0,0.0,0.0,0.0,0.0
+2020-05-01,ES,Divino De São Lourenço,0,0,0,4304,3201803,0,0,,,,,,,,,,,,,,,,0.034,0.0,0.0,0.0,0.0,0.0
+2020-05-02,ES,Divino De São Lourenço,0,0,0,4304,3201803,0,0,,,,,,,,,,,,,,,,0.034,0.0,0.0,0.0,0.0,0.0
+2020-05-03,ES,Divino De São Lourenço,0,0,0,4304,3201803,0,0,,,,,,,,,,,,,,,,0.034,0.0,0.0,0.0,0.0,0.0
+2020-05-04,ES,Divino De São Lourenço,0,0,0,4304,3201803,0,0,,,,,,,,,,,,,,,,0.034,0.0,0.0,0.0,0.0,0.0
+2020-05-05,ES,Divino De São Lourenço,1,0,0,4304,3201803,0,1,,,,,,,,,,,,,,,0.0,0.034,232.34,0.0,0.0,0.0,232.34
+2020-05-06,ES,Divino De São Lourenço,1,0,0,4304,3201803,0,1,,,,,,,,,,,,,,,0.0,0.034,232.34,0.0,0.0,0.0,232.34
+2020-05-07,ES,Divino De São Lourenço,1,0,0,4304,3201803,0,1,,,,,,,,,,,,,,,0.0,0.034,232.34,0.0,0.0,0.0,232.34
+2020-05-08,ES,Divino De São Lourenço,1,0,0,4304,3201803,0,1,,,,,,,,,,,,,,,0.0,0.034,232.34,0.0,0.0,0.0,232.34
+2020-05-09,ES,Divino De São Lourenço,1,0,0,4304,3201803,0,1,,,,,,,,,,,,,,,0.0,0.034,232.34,0.0,0.0,0.0,232.34

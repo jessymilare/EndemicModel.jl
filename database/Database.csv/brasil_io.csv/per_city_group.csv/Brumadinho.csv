@@ -1,0 +1,9 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-03,MG,Brumadinho,3,0,1,40103,3109006,1,2,,,,,,,,,,,,,,0.0,0.0,0.034,74.81,0.0,24.94,24.94,49.87
+2020-05-04,MG,Brumadinho,3,0,1,40103,3109006,1,2,,,,,,,,,,,,,,0.0,0.0,0.034,74.81,0.0,24.94,24.94,49.87
+2020-05-05,MG,Brumadinho,4,0,2,40103,3109006,2,2,,,,,,,,,,,,,,0.0,0.0,0.034,99.74,0.0,49.87,49.87,49.87
+2020-05-06,MG,Brumadinho,4,0,2,40103,3109006,2,2,,,,,,,,,,,,,,0.0,0.0,0.034,99.74,0.0,49.87,49.87,49.87
+2020-05-07,MG,Brumadinho,4,0,2,40103,3109006,2,2,0.68,0.438,,,,,,,,,,,,0.0,0.0,0.034,99.74,0.0,49.87,49.87,49.87
+2020-05-08,MG,Brumadinho,7,0,3,40103,3109006,3,4,,,,,,,,,,,,,,0.0,0.0,0.034,174.55,0.0,74.81,74.81,99.74
+2020-05-09,MG,Brumadinho,9,0,4,40103,3109006,4,5,,,,,,,,,,,,,,0.0,0.0,0.034,224.42,0.0,99.74,99.74,124.68
+2020-05-10,MG,Brumadinho,9,0,4,40103,3109006,4,5,,,,,,,,,,,,,,0.0,0.0,0.034,224.42,0.0,99.74,99.74,124.68

@@ -1,0 +1,11 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-01,SP,Jacupiranga,1,0,0,17866,3524600,0,1,,,,,,,,,,,,,,,0.0,0.034,55.97,0.0,0.0,0.0,55.97
+2020-05-02,SP,Jacupiranga,1,0,0,17866,3524600,0,1,,,,,,,,,,,,,,,0.0,0.034,55.97,0.0,0.0,0.0,55.97
+2020-05-03,SP,Jacupiranga,1,0,0,17866,3524600,0,1,,,,,,,,,,,,,,,0.0,0.034,55.97,0.0,0.0,0.0,55.97
+2020-05-04,SP,Jacupiranga,1,0,0,17866,3524600,0,1,,,,,,,,,,,,,,,0.0,0.034,55.97,0.0,0.0,0.0,55.97
+2020-05-05,SP,Jacupiranga,2,0,1,17866,3524600,1,1,0.34,,,,,,,,,,,,,0.0,0.0,0.034,111.94,0.0,55.97,55.97,55.97
+2020-05-06,SP,Jacupiranga,4,0,2,17866,3524600,2,2,0.68,,,,,,,,,,,,,0.0,0.0,0.034,223.89,0.0,111.94,111.94,111.94
+2020-05-07,SP,Jacupiranga,3,0,1,17866,3524600,1,2,0.51,,,,,,,,,,,,,0.0,0.0,0.034,167.92,0.0,55.97,55.97,111.94
+2020-05-08,SP,Jacupiranga,3,0,1,17866,3524600,1,2,,,,,,,,,,,,,,0.0,0.0,0.034,167.92,0.0,55.97,55.97,111.94
+2020-05-09,SP,Jacupiranga,3,0,1,17866,3524600,1,2,,,,,,,,,,,,,,0.0,0.0,0.034,167.92,0.0,55.97,55.97,111.94
+2020-05-10,SP,Jacupiranga,3,0,1,17866,3524600,1,2,,,,,,,,,,,,,,0.0,0.0,0.034,167.92,0.0,55.97,55.97,111.94

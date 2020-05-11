@@ -1,0 +1,12 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-04-29,MA,Humberto De Campos,2,0,1,28717,2105005,1,1,,,,,,,,,,,,,,0.0,0.0,0.034,69.65,0.0,34.82,34.82,34.82
+2020-04-30,MA,Humberto De Campos,2,0,1,28717,2105005,1,1,,,,,,,,,,,,,,0.0,0.0,0.034,69.65,0.0,34.82,34.82,34.82
+2020-05-01,MA,Humberto De Campos,2,0,1,28717,2105005,1,1,,,,,,,,,,,,,,0.0,0.0,0.034,69.65,0.0,34.82,34.82,34.82
+2020-05-02,MA,Humberto De Campos,3,0,1,28717,2105005,1,2,,,,,,,,,,,,,,0.0,0.0,0.034,104.47,0.0,34.82,34.82,69.65
+2020-05-03,MA,Humberto De Campos,6,0,3,28717,2105005,3,3,1.31,0.51,,,,,,,,,,,,0.0,0.0,0.034,208.94,0.0,104.47,104.47,104.47
+2020-05-04,MA,Humberto De Campos,6,0,3,28717,2105005,3,3,1.31,0.51,,,,,,,,,,,,0.0,0.0,0.034,208.94,0.0,104.47,104.47,104.47
+2020-05-05,MA,Humberto De Campos,8,0,3,28717,2105005,3,5,2.07,0.657,,,,,,,,,,,,0.0,0.0,0.034,278.58,0.0,104.47,104.47,174.11
+2020-05-06,MA,Humberto De Campos,8,0,3,28717,2105005,3,5,1.5,0.657,,,,,,,,,,,,0.0,0.0,0.034,278.58,0.0,104.47,104.47,174.11
+2020-05-07,MA,Humberto De Campos,8,0,3,28717,2105005,3,5,,,,,,,,,,,,,,0.0,0.0,0.034,278.58,0.0,104.47,104.47,174.11
+2020-05-08,MA,Humberto De Campos,10,0,4,28717,2105005,4,6,,,,,,,,,,,,,,0.0,0.0,0.034,348.23,0.0,139.29,139.29,208.94
+2020-05-09,MA,Humberto De Campos,10,0,4,28717,2105005,4,6,,,,,,,,,,,,,,0.0,0.0,0.034,348.23,0.0,139.29,139.29,208.94

@@ -1,0 +1,9 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-02,AM,Barreirinha,3,0,1,32041,1300508,1,2,,,,,,,,,,,,,,0.0,0.0,0.034,93.63,0.0,31.21,31.21,62.42
+2020-05-03,AM,Barreirinha,7,0,3,32041,1300508,3,4,,,,,,,,,,,,,,0.0,0.0,0.034,218.47,0.0,93.63,93.63,124.84
+2020-05-04,AM,Barreirinha,9,0,4,32041,1300508,4,5,,,,,,,,,,,,,,0.0,0.0,0.034,280.89,0.0,124.84,124.84,156.05
+2020-05-05,AM,Barreirinha,12,0,5,32041,1300508,5,7,,,,,,,,,,,,,,0.0,0.0,0.034,374.52,0.0,156.05,156.05,218.47
+2020-05-06,AM,Barreirinha,16,1,6,32041,1300508,7,9,6.44,2.66,,,,,,,,,,,,0.143,0.0625,0.034,499.36,31.21,187.26,218.47,280.89
+2020-05-07,AM,Barreirinha,23,1,9,32041,1300508,10,13,,,,,,,,,,,,,,0.1,0.0435,0.034,717.83,31.21,280.89,312.1,405.73
+2020-05-08,AM,Barreirinha,24,1,10,32041,1300508,11,13,,,,,,,,,,,,,,0.0909,0.0417,0.034,749.04,31.21,312.1,343.31,405.73
+2020-05-09,AM,Barreirinha,32,1,13,32041,1300508,14,18,,,,,,,,,,,,,,0.0714,0.0312,0.034,998.72,31.21,405.73,436.94,561.78

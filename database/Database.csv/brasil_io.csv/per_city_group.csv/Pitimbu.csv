@@ -1,0 +1,10 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-01,PB,Pitimbu,1,0,0,19065,2511905,0,1,,,,,,,,,,,,,,,0.0,0.034,52.45,0.0,0.0,0.0,52.45
+2020-05-02,PB,Pitimbu,1,0,0,19065,2511905,0,1,,,,,,,,,,,,,,,0.0,0.034,52.45,0.0,0.0,0.0,52.45
+2020-05-03,PB,Pitimbu,2,0,1,19065,2511905,1,1,,,,,,,,,,,,,,0.0,0.0,0.034,104.9,0.0,52.45,52.45,52.45
+2020-05-04,PB,Pitimbu,2,0,1,19065,2511905,1,1,,,,,,,,,,,,,,0.0,0.0,0.034,104.9,0.0,52.45,52.45,52.45
+2020-05-05,PB,Pitimbu,2,0,1,19065,2511905,1,1,0.641,,,,,,,,,,,,,0.0,0.0,0.034,104.9,0.0,52.45,52.45,52.45
+2020-05-06,PB,Pitimbu,6,0,2,19065,2511905,2,4,1.92,,,,,,,,,,,,,0.0,0.0,0.034,314.71,0.0,104.9,104.9,209.81
+2020-05-07,PB,Pitimbu,7,0,3,19065,2511905,3,4,,,,,,,,,,,,,,0.0,0.0,0.034,367.16,0.0,157.36,157.36,209.81
+2020-05-08,PB,Pitimbu,7,0,3,19065,2511905,3,4,,,,,,,,,,,,,,0.0,0.0,0.034,367.16,0.0,157.36,157.36,209.81
+2020-05-09,PB,Pitimbu,7,0,3,19065,2511905,3,4,,,,,,,,,,,,,,0.0,0.0,0.034,367.16,0.0,157.36,157.36,209.81

@@ -1,0 +1,8 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-03,PE,Buenos Aires,1,0,0,13155,2602704,0,1,,,,,,,,,,,,,,,0.0,0.034,76.02,0.0,0.0,0.0,76.02
+2020-05-04,PE,Buenos Aires,1,0,0,13155,2602704,0,1,,,,,,,,,,,,,,,0.0,0.034,76.02,0.0,0.0,0.0,76.02
+2020-05-05,PE,Buenos Aires,1,0,0,13155,2602704,0,1,,,,,,,,,,,,,,,0.0,0.034,76.02,0.0,0.0,0.0,76.02
+2020-05-06,PE,Buenos Aires,1,0,0,13155,2602704,0,1,,,,,,,,,,,,,,,0.0,0.034,76.02,0.0,0.0,0.0,76.02
+2020-05-07,PE,Buenos Aires,2,1,1,13155,2602704,2,0,,,,,,,,,,,,,,0.5,0.5,0.034,152.03,76.02,76.02,152.03,0.0
+2020-05-08,PE,Buenos Aires,2,1,1,13155,2602704,2,0,,,,,,,,,,,,,,0.5,0.5,0.034,152.03,76.02,76.02,152.03,0.0
+2020-05-09,PE,Buenos Aires,3,1,1,13155,2602704,2,1,,,,,,,,,,,,,,0.5,0.333,0.034,228.05,76.02,76.02,152.03,76.02

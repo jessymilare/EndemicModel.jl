@@ -1,0 +1,9 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-02,RO,Alta Floresta D'Oeste,1,0,0,22945,1100015,0,1,,,,,,,,,,,,,,,0.0,0.034,43.58,0.0,0.0,0.0,43.58
+2020-05-03,RO,Alta Floresta D'Oeste,1,0,0,22945,1100015,0,1,,,,,,,,,,,,,,,0.0,0.034,43.58,0.0,0.0,0.0,43.58
+2020-05-04,RO,Alta Floresta D'Oeste,1,0,0,22945,1100015,0,1,,,,,,,,,,,,,,,0.0,0.034,43.58,0.0,0.0,0.0,43.58
+2020-05-05,RO,Alta Floresta D'Oeste,1,0,0,22945,1100015,0,1,,,,,,,,,,,,,,,0.0,0.034,43.58,0.0,0.0,0.0,43.58
+2020-05-06,RO,Alta Floresta D'Oeste,1,0,0,22945,1100015,0,1,0.0,,,,,,,,,,,,,,0.0,0.034,43.58,0.0,0.0,0.0,43.58
+2020-05-07,RO,Alta Floresta D'Oeste,1,0,0,22945,1100015,0,1,,,,,,,,,,,,,,,0.0,0.034,43.58,0.0,0.0,0.0,43.58
+2020-05-08,RO,Alta Floresta D'Oeste,2,0,1,22945,1100015,1,1,,,,,,,,,,,,,,0.0,0.0,0.034,87.16,0.0,43.58,43.58,43.58
+2020-05-09,RO,Alta Floresta D'Oeste,1,0,0,22945,1100015,0,1,,,,,,,,,,,,,,,0.0,0.034,43.58,0.0,0.0,0.0,43.58

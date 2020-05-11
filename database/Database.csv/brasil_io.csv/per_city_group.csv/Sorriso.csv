@@ -1,0 +1,7 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-05,MT,Sorriso,4,0,2,90313,5107925,2,2,,,,,,,,,,,,,,0.0,0.0,0.034,44.29,0.0,22.15,22.15,22.15
+2020-05-06,MT,Sorriso,4,0,2,90313,5107925,2,2,,,,,,,,,,,,,,0.0,0.0,0.034,44.29,0.0,22.15,22.15,22.15
+2020-05-07,MT,Sorriso,7,0,3,90313,5107925,3,4,,,,,,,,,,,,,,0.0,0.0,0.034,77.51,0.0,33.22,33.22,44.29
+2020-05-08,MT,Sorriso,9,0,4,90313,5107925,4,5,,,,,,,,,,,,,,0.0,0.0,0.034,99.65,0.0,44.29,44.29,55.36
+2020-05-09,MT,Sorriso,9,0,4,90313,5107925,4,5,,,,,,,,,,,,,,0.0,0.0,0.034,99.65,0.0,44.29,44.29,55.36
+2020-05-10,MT,Sorriso,9,0,4,90313,5107925,4,5,,,,,,,,,,,,,,0.0,0.0,0.034,99.65,0.0,44.29,44.29,55.36

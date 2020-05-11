@@ -1,0 +1,13 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-04-28,MA,Alto Alegre Do Maranhão,2,0,1,27053,2100436,1,1,,,,,,,,,,,,,,0.0,0.0,0.034,73.93,0.0,36.96,36.96,36.96
+2020-04-29,MA,Alto Alegre Do Maranhão,2,0,1,27053,2100436,1,1,,,,,,,,,,,,,,0.0,0.0,0.034,73.93,0.0,36.96,36.96,36.96
+2020-04-30,MA,Alto Alegre Do Maranhão,2,0,1,27053,2100436,1,1,,,,,,,,,,,,,,0.0,0.0,0.034,73.93,0.0,36.96,36.96,36.96
+2020-05-01,MA,Alto Alegre Do Maranhão,2,0,1,27053,2100436,1,1,,,,,,,,,,,,,,0.0,0.0,0.034,73.93,0.0,36.96,36.96,36.96
+2020-05-02,MA,Alto Alegre Do Maranhão,4,0,2,27053,2100436,2,2,0.416,0.208,,,,,,,,,,,,0.0,0.0,0.034,147.86,0.0,73.93,73.93,73.93
+2020-05-03,MA,Alto Alegre Do Maranhão,4,0,2,27053,2100436,2,2,0.559,0.208,,,,,,,,,,,,0.0,0.0,0.034,147.86,0.0,73.93,73.93,73.93
+2020-05-04,MA,Alto Alegre Do Maranhão,4,0,2,27053,2100436,2,2,0.959,0.438,,,,,,,,,,,,0.0,0.0,0.034,147.86,0.0,73.93,73.93,73.93
+2020-05-05,MA,Alto Alegre Do Maranhão,4,0,2,27053,2100436,2,2,0.959,0.438,,,,,,,,,,,,0.0,0.0,0.034,147.86,0.0,73.93,73.93,73.93
+2020-05-06,MA,Alto Alegre Do Maranhão,5,0,2,27053,2100436,2,3,0.98,0.34,,,,,,,,,,,,0.0,0.0,0.034,184.82,0.0,73.93,73.93,110.89
+2020-05-07,MA,Alto Alegre Do Maranhão,9,0,4,27053,2100436,4,5,,,,,,,,,,,,,,0.0,0.0,0.034,332.68,0.0,147.86,147.86,184.82
+2020-05-08,MA,Alto Alegre Do Maranhão,9,0,4,27053,2100436,4,5,,,,,,,,,,,,,,0.0,0.0,0.034,332.68,0.0,147.86,147.86,184.82
+2020-05-09,MA,Alto Alegre Do Maranhão,14,0,6,27053,2100436,6,8,,,,,,,,,,,,,,0.0,0.0,0.034,517.5,0.0,221.79,221.79,295.72

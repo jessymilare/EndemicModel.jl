@@ -1,0 +1,8 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-04,SP,Nova Granada,2,0,1,21500,3533007,1,1,,,,,,,,,,,,,,0.0,0.0,0.034,93.02,0.0,46.51,46.51,46.51
+2020-05-05,SP,Nova Granada,2,0,1,21500,3533007,1,1,,,,,,,,,,,,,,0.0,0.0,0.034,93.02,0.0,46.51,46.51,46.51
+2020-05-06,SP,Nova Granada,3,0,1,21500,3533007,1,2,,,,,,,,,,,,,,0.0,0.0,0.034,139.53,0.0,46.51,46.51,93.02
+2020-05-07,SP,Nova Granada,3,0,1,21500,3533007,1,2,,,,,,,,,,,,,,0.0,0.0,0.034,139.53,0.0,46.51,46.51,93.02
+2020-05-08,SP,Nova Granada,3,0,1,21500,3533007,1,2,,,,,,,,,,,,,,0.0,0.0,0.034,139.53,0.0,46.51,46.51,93.02
+2020-05-09,SP,Nova Granada,4,0,2,21500,3533007,2,2,,,,,,,,,,,,,,0.0,0.0,0.034,186.05,0.0,93.02,93.02,93.02
+2020-05-10,SP,Nova Granada,5,0,2,21500,3533007,2,3,,,,,,,,,,,,,,0.0,0.0,0.034,232.56,0.0,93.02,93.02,139.53
