@@ -7,25 +7,41 @@
 ]
 
 @deftable world3(world2, world_population, total_tests) begin
-    df = join(world2, world_population; on = :country, kind = :left)
-    gdf = join(df, total_tests; on = [:country, :date], kind = :left)
-    keys = [:country, :date, :latitude, :longitude]
-    vals1 = [:estimated_population, :total_tests, :test_kind]
-    vals2 = [:confirmed, :recovered, :deaths]
-    testkinds = filter(!ismissing, Set(gdf.test_kind))
-    if length(testkinds) > 1
-        testkind = if "samples tested" ∈ testkinds
-            "samples tested"
-        elseif "people tested" ∈ testkinds
-            "people tested"
-        else
-            pop!(testkinds)
-        end
-        rows = map(elt -> ismissing(elt) || elt == testkind, gdf.test_kind)
-        gdf = gdf[collect(rows), :]
+    data = join(world2, world_population; on = :country, kind = :left)
+    data = join(data, total_tests; on = [:country, :date], kind = :left)
+    testdict = Dict(c => _choose_test(c, data) for c ∈ Set(data.country))
+    tests = [testdict[country] for country ∈ data.country]
+    data = @where(data, ismissing.(:test_kind) .| (:test_kind .== tests))
+    data = sort!(data, [:country, :date])
+    cols = [
+        :country,
+        :date,
+        :latitude,
+        :longitude,
+        :estimated_population,
+        :total_tests,
+        :test_kind,
+        :confirmed,
+        :recovered,
+        :deaths,
+    ]
+    select!(data, cols)
+end
+
+function _choose_test(country, data)
+    tests = filter(!ismissing, @where(data, :country .== country).test_kind)
+    if isempty(tests)
+        ""
+    elseif "people tested" ∈ tests
+        "people tested"
+    elseif "samples tested" ∈ tests
+        "samples tested"
+    elseif "units unclear" ∈ tests
+        "units unclear"
+    else
+        @warn "Unrecognized test kind(s)." tests
+        pop!(tests)
     end
-    sort!(gdf, [:country, :date])
-    select(gdf, keys ∪ vals1 ∪ vals2)
 end
 
 @defgroup per_country(world3) (country,) [
@@ -336,8 +352,14 @@ function covid_19_database(
 end
 
 function covid_19(; kwargs...)
+    @info "Creating COVID-19 database."
     db = covid_19_database(; kwargs...)
+    @info "COVID-19 database created." summary(db)
+    @info "Computing SEIR model for COVID-19 database."
     SEIRModel!(db; kwargs...)
-    export_data(db; kwargs...)
+    @info "SEIR model for COVID-19 database computed."
+    @info "Exporting COVID-19 database."
+    paths = export_data(db; kwargs...)
+    @info "COVID-19 database exported." paths
     db
 end

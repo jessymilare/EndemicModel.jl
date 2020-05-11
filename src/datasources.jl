@@ -47,6 +47,7 @@ function import_data(
     kwargs...,
 )
     @argcheck !isempty(sources)
+    @debug "Importing data." sources
     source_keys = make_symbols(sources)
     try
         if !force_update && cache_data_type != nothing
@@ -78,6 +79,7 @@ function import_data(
     if cache_data_type != nothing
         export_data(cache_data_type, result; kwargs...)
     end
+    @debug "Data imported." sources _debuginfo(result)
     result
 end
 
@@ -266,6 +268,7 @@ function import_data(data::DownloadSource; kwargs...)
     ext = all(isletter, ext) ? ext : nothing
     subpath = p"_DOWNLOADS_/" / string(hash(url))
     path = cache_path(ext; subpath = subpath, kwargs...)
+    @debug "Downloading data." url path
     download(url, path)
 end
 
@@ -327,6 +330,7 @@ function _import_data(source::CsseSource; kwargs...)
 end
 
 function import_data(source::CsseSource; kwargs...)
+    @debug "Importing CSSE data."
     raw_data = _import_data(source)
     key_columns = [:country, :state, :latitude, :longitude]
     dataframes = []
@@ -375,6 +379,7 @@ function import_data(
     url = WORLD_POP_WB_URL,
     kwargs...,
 )
+    @debug "Importing population data from World Bank."
     curyear = year(today())
     years = [string(y) for y ∈ WORLD_POP_YEAR_0:curyear]
     keycols = ["Country Name", "Country Code"]
@@ -448,6 +453,7 @@ DATA_SOURCES[:total_tests] = TotalTestsOWID
 const TESTING_OWID_URL = "https://github.com/owid/covid-19-data/raw/master/public/data/testing/covid-testing-all-observations.csv"
 
 function import_data(source::TotalTestsOWID; url = TESTING_OWID_URL, kwargs...)
+    @debug "Importing testing data from Our World In Data."
     file = import_data(DownloadSource(url))
     col_select = [:Entity, :Date, Symbol("Cumulative total")]
     data::DataFrame = csv_read(file; copycols = true, select = col_select)
@@ -467,23 +473,32 @@ function import_data(source::TotalTestsOWID; url = TESTING_OWID_URL, kwargs...)
         total_tests = [lastrow.total_tests],
     )
     push!(nextrows, nlastrow[1, :])
+    growth_rate, next_growth_rate = 1.0, 1.0
     for (row, nextrow) ∈ zip(rows, nextrows)
         if row.country == nextrow.country
             dtend = nextrow.date - Day(1)
+            ndays = Dates.days(nextrow.date - row.date)
+            growth_rate = (nextrow.total_tests / row.total_tests)^(1.0 / ndays)
+            next_growth_rate = growth_rate
         else
             dtend = today() - Day(1)
+            next_growth_rate = 1.0
         end
-        for dt ∈ (row.date + Day(1)):Day(1):dtend
-            append!(
+
+        for (i, dt) ∈ enumerate((row.date + Day(1)):Day(1):dtend)
+            tests_interpolated = round(Int, row.total_tests * growth_rate^i)
+            push!(
                 data,
-                DataFrame(;
-                    country = [row.country],
-                    date = [dt],
-                    test_kind = [row.test_kind],
-                    total_tests = [row.total_tests],
+                (;
+                    country = row.country,
+                    date = dt,
+                    test_kind = row.test_kind,
+                    total_tests = tests_interpolated,
                 ),
             )
         end
+
+        growth_rate = next_growth_rate
     end
     sort!(data, [:country, :test_kind, :date])
     data
@@ -503,6 +518,7 @@ BrasilIo(::Nothing; kwargs...) = BrasilIo()
 DATA_SOURCES[:brasil_io] = BrasilIo
 
 function import_data(source::BrasilIo; url = BRASIL_IO_URL, kwargs...)
+    @debug "Importing data from Brasil.io."
     col_drop = [:confirmed_per_100k_inhabitants, :death_rate, :is_last]
     file = import_data(DownloadSource(url))
     raw_data::DataFrame = csv_read(

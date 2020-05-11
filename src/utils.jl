@@ -177,9 +177,11 @@ function to_json(
 end
 
 function _debuginfo(df::AbstractDataFrame)
-    summary(df) * " with columns " * "$(Tuple(names(df)))"
+    summary(df) * " with columns " * "$(Tuple(Symbol.(names(df))))"
 end
 
 function _debuginfo(dict::AbstractDict)
     summary(dict) * " with keys " * "$(Tuple(keys(dict)))"
 end
+
+_debuginfo(object) = summary(object)

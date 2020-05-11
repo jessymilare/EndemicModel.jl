@@ -378,16 +378,6 @@ function group_table!(data, tblname, sourcetbls, keycols, cols_and_funcs...; kwa
     (data, updated)
 end
 
-function import_data(database::AbstractDatabase; kw...)
-    imp_kwargs = merge(default_kwargs(database), kw)
-    dt = import_data(sources(database); imp_kwargs...)
-    funcs = computing_functions(database)
-
-    while any(func(dt) for func ∈ funcs)
-    end
-    dt
-end
-
 macro defcolumn(fcall::Expr, body::Expr)
     @argcheck fcall.head == :call
     colname = fcall.args[1]

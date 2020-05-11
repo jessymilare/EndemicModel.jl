@@ -15,6 +15,20 @@ function database_path(sourcesym::Symbol; kwargs...)
     database_path(data_extension(source); kwargs...)
 end
 
+function import_data(database::AbstractDatabase; kw...)
+    imp_kwargs = merge(default_kwargs(database), kw)
+    @debug "Importing data."
+    data = import_data(sources(database); imp_kwargs...)
+    funcs = computing_functions(database)
+
+    @debug "Data imported." _debuginfo(data)
+    @debug "Computing database."
+    while any(func(data) for func ∈ funcs)
+    end
+    @debug "Database created."
+    data
+end
+
 function import_data!(database::AbstractDatabase; kwargs...)
     datadict!(database, import_data(database; kwargs...))
 end
@@ -53,24 +67,29 @@ function export_data(
         database_directory = parameters_directory,
         database_filename = parameters_filename,
     )
-
+    data = datadict(database)
+    @info "Exporting database." path = db_output _debuginfo(data)
     dbout = export_data(
         database_data_type,
-        datadict(database);
+        data;
         pretty = pretty,
         output = db_output,
         kwargs...,
     )
+    data = modeldata(database)
+    @info "Exporting database models." path = model_output _debuginfo(data)
     modelout = export_data(
         model_data_type,
-        modeldata(database);
+        data;
         pretty = pretty,
         output = model_output,
         kwargs...,
     )
+    data = paramdict(database)
+    @info "Exporting database model parameters." path = param_output _debuginfo(data)
     export_data(
         parameters_data_type,
-        paramdict(database);
+        data;
         pretty = pretty,
         output = param_output,
         kwargs...,

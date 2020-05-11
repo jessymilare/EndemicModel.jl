@@ -140,10 +140,11 @@ function estimate_α(
     μ = estimate_μ(data),
     kwargs...,
 )
-    dt = data[data.diff_closed .!== missing, :]
+    data = @where(data, .!ismissing.(:diff_closed))
+    ini = max(1, nrow(data) - ndays)
     # Get numbers from last `ndays` days
-    dR = dt.diff_closed[(end - ndays):end]
-    I = dt.active[(end - ndays):end]
+    dR = data.diff_closed[ini:end]
+    I = data.active[ini:end]
     [max(_ratemean(dR ./ I), 0.0)]
 end
 
@@ -171,13 +172,14 @@ function estimate_γ(
     α = estimate_α(data; μ = μ),
     kwargs...,
 )
-    dt = data[data.diff3_confirmed .!== missing, :]
+    data = @where(data, .!ismissing.(:diff3_confirmed) .& .!ismissing.(:active))
     # Get numbers from last `ndays` days
-    d1 = dt.diff_confirmed[(end - ndays):end]
-    d2 = dt.diff2_confirmed[(end - ndays):end]
-    d3 = dt.diff3_confirmed[(end - ndays):end]
+    ini = max(1, nrow(data) - ndays)
+    d1 = data.diff_confirmed[ini:end]
+    d2 = data.diff2_confirmed[ini:end]
+    d3 = data.diff3_confirmed[ini:end]
 
-    I = dt.active[(end - ndays):end]
+    I = data.active[ini:end]
 
     [_γ_root(d1, d2, d3, I, α)]
 end
@@ -195,12 +197,13 @@ function estimate_β(
     γ = estimate_γ(data; μ = μ, α = α),
     kwargs...,
 )
-    dt = data[data.diff3_confirmed .!== missing, :]
+    data = @where(data, .!ismissing.(:diff2_confirmed))
+    ini = max(1, nrow(data) - ndays)
     # Get numbers from last `ndays` days
-    d1 = dt.diff_confirmed[(end - ndays):end]
-    d2 = dt.diff2_confirmed[(end - ndays):end]
+    d1 = data.diff_confirmed[ini:end]
+    d2 = data.diff2_confirmed[ini:end]
 
-    I = dt.active[(end - ndays):end]
+    I = data.active[ini:end]
 
     # `factor` is `MIN_γ` when `γ` is `MIN_γ`
     # and approximately 1.0 when `γ` is far from `MIN_γ`
@@ -265,14 +268,21 @@ function SEIRModel(
 end
 
 function SEIRModel(data::D; kwargs...) where {D <: AbstractDict}
+    columns = [param => Vector{Float64}[] for param ∈ SEIR_PARAMS]
+    paramdf = DataFrame(:key => String[], columns...)
     function _try(data)
         try
-            SEIRModel(data; kwargs...)
+            model = SEIRModel(data; kwargs...)
+            if model isa AbstractEndemicModel
+                params = pairs(parameters(model))
+                push!(paramdf, (; key = String(key), first.(params)...))
+            end
         catch
             missing
         end
     end
     result = D(key => _try(subdata) for (key, subdata) ∈ data)
+    !isempty(paramdf) && (result[:SEIR_model_parameters] = paramdf)
     filter!(p -> !ismissing(p[2]), result)
 end
 
@@ -281,30 +291,5 @@ SEIRModel(database::AbstractDatabase; kwargs...) =
 
 function SEIRModel!(database::AbstractDatabase; kwargs...)
     model = modeldict!(database, SEIRModel(database; kwargs...))
-    paramdict!(database, parameters(model))
     model
-end
-
-parameters(database::AbstractDatabase) = parameters(modeldict(database))
-
-function parameters(data::D) where {D <: AbstractDict}
-    result = D()
-    columns = [param => Vector{Float64}[] for param ∈ SEIR_PARAMS]
-    paramdf = DataFrame(:key => String[], columns...)
-    for (key, subdata) ∈ data
-        if subdata isa AbstractDict
-            result[key] = parameters(subdata)
-        else
-            params = pairs(parameters(subdata))
-            push!(paramdf, (; key = String(key), params...))
-        end
-    end
-    !isempty(paramdf) && (result[:parameters] = paramdf)
-    result
-end
-
-modeldata(database::AbstractDatabase) = modeldata(modeldict(database))
-
-function modeldata(data::D) where {D <: AbstractDict}
-    D(key => modeldata(subdata) for (key, subdata) ∈ data)
 end
