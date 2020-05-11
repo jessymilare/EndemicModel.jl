@@ -149,6 +149,8 @@ end
 estimate_α(model::AbstractEndemicModel; kwargs...) =
     estimate_α(datadict(model); kwargs...)
 
+const MIN_γ = 0.01
+
 function _γ_root(d1, d2, d3, I, α)
     a = -I .* d2 .+ d1 .^ 2 .- I .* α .* d1
     b = d1 .* d2 .- I .* α .* d2
@@ -198,7 +200,8 @@ function estimate_β(
 
     I = dt.active[(end - ndays):end]
 
-    [max(_ratemean((d2 .+ γ .* d1) ./ (γ .* I .+ d1)), 0.0)]
+    factor = sqrt.(γ .^ 2 .- MIN_γ^2) ./ γ
+    [max(_ratemean((d2 .+ γ .* d1) ./ (γ .* I .+ d1)), 0.0)] .* factor
 end
 
 function estimate_exposed(
