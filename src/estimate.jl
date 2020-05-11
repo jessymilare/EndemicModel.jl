@@ -142,7 +142,6 @@ function estimate_α(
     # Get numbers from last `ndays` days
     dR = dt.diff_closed[(end - ndays):end]
     I = dt.active[(end - ndays):end]
-    @show dR, I
     [max(_ratemean(dR ./ I), 0.0)]
 end
 
@@ -160,7 +159,6 @@ function _γ_root(d1, d2, d3, I, α)
     root1 = _ratemean((-sqrt.(abs.(Δ)) .- b) ./ (2a))
     root2 = _ratemean((sqrt.(abs.(Δ)) .- b) ./ (2a))
 
-    @show root1, root2
     max(root1, root2, 0.01)
 end
 

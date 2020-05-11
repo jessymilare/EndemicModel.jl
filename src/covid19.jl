@@ -1,6 +1,4 @@
 
-@deftable Brazil(per_country_group) per_country_group[:Brazil]
-
 @deftable per_state2(per_state, Brazil) begin
     nrec = Union{Int, Missing}[]
     for row ∈ eachrow(per_state)
@@ -259,12 +257,13 @@ end
 function copy_brazil_tables(data::AbstractDict)
     csse = get(data, :csse, nothing)
     brasil_io = get(data, :brasil_io, nothing)
-    if csse != nothing && !haskey(data, :Brazil) && haskey(csse, :Brazil)
-        br = csse[:Brazil]
-        data[:Brazil] = br
-        if brasil_io != nothing
-            brasil_io[:Brazil] = br
-        end
+    if (
+        csse != nothing &&
+        brasil_io != nothing &&
+        !haskey(brasil_io, :Brazil) &&
+        haskey(csse, :per_country_group)
+    )
+        brasil_io[:Brazil] = csse[:per_country_group][:Brazil]
         true
     else
         for (_, subdata) ∈ data
@@ -288,7 +287,6 @@ function covid_19_database(
         table_world3,
         group_per_country,
         group_total,
-        table_Brazil,
         copy_brazil_tables,
         table_per_state2,
         table_per_city2,
