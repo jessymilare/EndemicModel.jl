@@ -1,3 +1,6 @@
+# This file is part of EndemicModel project, which is licensed under BDS-3-Clause.
+# See file LICENSE.md for more information.
+
 """
 A data source is supposed to be imported, exported or both.
 Subtypes representing importable data source must implement method `import_data`.

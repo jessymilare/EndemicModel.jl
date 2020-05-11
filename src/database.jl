@@ -1,3 +1,6 @@
+# This file is part of EndemicModel project, which is licensed under BDS-3-Clause.
+# See file LICENSE.md for more information.
+
 abstract type AbstractDatabase{D <: AbstractDict} end
 abstract type AbstractSubDatabase{D <: AbstractDict} <: AbstractDatabase{D} end
 

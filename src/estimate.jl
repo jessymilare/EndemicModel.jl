@@ -1,3 +1,5 @@
+# This file is part of EndemicModel project, which is licensed under BDS-3-Clause.
+# See file LICENSE.md for more information.
 
 phuber_loss(a::Real, δ::Real) = δ^2 * (sqrt(1 + (a / δ)^2) - 1)
 diff_phuber_loss(a::Real, δ::Real) = (sqrt(1 + (a / δ)^2)^-1) * a

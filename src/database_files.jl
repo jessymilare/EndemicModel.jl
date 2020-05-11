@@ -1,3 +1,5 @@
+# This file is part of EndemicModel project, which is licensed under BDS-3-Clause.
+# See file LICENSE.md for more information.
 
 function database_path(
     ext::Union{Nothing, AbstractString} = data_extension(option(:database_data_type));
