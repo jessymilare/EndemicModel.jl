@@ -61,7 +61,7 @@ function export_data(
     )
     modelout = export_data(
         model_data_type,
-        modeldict(database);
+        modeldata(database);
         pretty = pretty,
         output = model_output,
         kwargs...,

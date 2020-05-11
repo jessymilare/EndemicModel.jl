@@ -13,9 +13,12 @@ modeldata(model::AbstractEndemicModel) = model.modeldata
 modeldata!(model::AbstractEndemicModel, value::AbstractDataFrame) =
     model.modeldata = value
 
-function modeldata!(model::AbstractEndemicModel)
+default_kwargs(model::AbstractEndemicModel) = model.kwargs
+default_kwargs!(model::AbstractEndemicModel, value) = model.kwargs = value
+
+function modeldata!(model::AbstractEndemicModel; kwargs...)
     if isnothing(model.modeldata)
-        model.modeldata = to_dataframe(model)
+        model.modeldata = to_dataframe(model; kwargs...)
     else
         model.modeldata
     end
@@ -124,7 +127,7 @@ mutable struct SEIRModel <: AbstractEndemicModel
     groupnames::Vector{Symbol}
     data::Union{Nothing, AbstractDataFrame}
     modeldata::Union{Nothing, AbstractDataFrame}
-    default_kwargs::Dict{Symbol, Any}
+    kwargs::Dict{Symbol, Any}
 
     function SEIRModel(
         vars::SEIRVariables,
@@ -311,7 +314,7 @@ end
 function SEIR_ODEProblem(
     inivars::SEIRVariables,
     params::SEIRParameters;
-    maxtime = 180.0,
+    maxtime = 360.0,
     kwargs...,
 )
     ODEProblem(SEIR_ODE_fun, pack_vars(inivars), (0.0, maxtime), pack_params(params))
@@ -329,31 +332,34 @@ function to_dataframe(model::SEIRModel; kwargs...)
     solution = model_solution(model; kwargs...)
     (M, β, γ, α, μ) = parameters(model)
     days = solution.t
-    initial_date = get(model.info, :initial_date, today())
+    initial_date = get(default_kwargs(model), :initial_date, today())
     date = initial_date .+ Day.(days)
     n = length(days)
     ng = model.ngroups
-    exposed = zeros(Float64, n)
-    active = zeros(Float64, n)
-    recovered = zeros(Float64, n)
-    deaths = zeros(Float64, n)
-    confirmed = zeros(Float64, n)
-    diff_exposed = zeros(Float64, n)
-    diff_active = zeros(Float64, n)
-    diff_recovered = zeros(Float64, n)
-    diff_deaths = zeros(Float64, n)
+    exposed = zeros(Int, n)
+    active = zeros(Int, n)
+    recovered = zeros(Int, n)
+    deaths = zeros(Int, n)
+    confirmed = zeros(Int, n)
+    diff_exposed = zeros(Int, n)
+    diff_active = zeros(Int, n)
+    diff_recovered = zeros(Int, n)
+    diff_deaths = zeros(Int, n)
+
+    _round(x) = round(Int, min(x, 1e12))
+
     for i ∈ 1:n
         (S, E, I, R) = unpack_vars(solution[i])
         (dS, dE, dI, dR) = _SEIR_derivative(S, E, I, R, M, β, γ, α)
-        exposed[i] = sum(E)
-        active[i] = sum(I)
-        recovered[i] = sum(R .* (1.0 .- μ))
-        deaths[i] = sum(R .* μ)
-        confirmed[i] = active[i] + recovered[i] + deaths[i]
-        diff_exposed[i] = sum(dE)
-        diff_active[i] = sum(dI)
-        diff_recovered[i] = sum(dR .* (1.0 .- μ))
-        diff_deaths[i] = sum(dR .* μ)
+        exposed[i] = sum(E) |> _round
+        active[i] = sum(I) |> _round
+        recovered[i] = sum(R .* (1.0 .- μ)) |> _round
+        deaths[i] = sum(R .* μ) |> _round
+        confirmed[i] = active[i] + recovered[i] + deaths[i] |> _round
+        diff_exposed[i] = sum(dE) |> _round
+        diff_active[i] = sum(dI) |> _round
+        diff_recovered[i] = sum(dR .* (1.0 .- μ)) |> _round
+        diff_deaths[i] = sum(dR .* μ) |> _round
     end
     DataFrame(
         date = date,
@@ -369,51 +375,78 @@ function to_dataframe(model::SEIRModel; kwargs...)
     )
 end
 
+const FACTOR_LABEL_MAP = OrderedDict(
+    1e-8 => "People (hundreds of millions)",
+    1e-7 => "People (tens of millions)",
+    1e-6 => "People (millions)",
+    1e-5 => "People (hundreds of thousands)",
+    1e-4 => "People (tens of thousands)",
+    1e-3 => "People (thousands)",
+    1e-2 => "People (hundreds)",
+    1e-1 => "People (tens)",
+    1.0 => "People",
+)
+
+function _get_y_factor_and_label(max_yvalue)
+    for (yfactor, ylabel) ∈ FACTOR_LABEL_MAP
+        if max_yvalue * yfactor >= 10.0
+            return (yfactor, ylabel)
+        end
+    end
+    (1.0, "People")
+end
+
+function _get_plot_title(df)
+    city = "city" ∈ names(df) ? df[1, :city] : missing
+    state = "state" ∈ names(df) ? df[1, :state] : missing
+    country = "country" ∈ names(df) ? df[1, :country] : missing
+    location = skipmissing([city, state, country])
+    join(location, ", ")
+end
+
 function model_plot(
     df::DataFrame;
-    plot_columns = option(:plot_columns),
-    title = summary(df),
-    yfactor = 1e-6,
-    ylabel = yfactor == 1e-6 ? "People (millions)" : "People",
+    columns = option(:plot_columns),
+    title = _get_plot_title(df),
     minimum_plot_factor = option(:minimum_plot_factor),
+    date_format = option(:plot_date_format),
     kwargs...,
 )
-    colnames = intersect(plot_columns, Symbol.(names(df)))
+    colnames = intersect(columns, Symbol.(names(df)))
     numpeople = if hasproperty(df, :estimated_population)
         df.estimated_population[1]
     else
         df.confirmed[end]
     end
-    n = findlast(df.active .>= numpeople * minimum_plot_factor)
-    df = df[1:n, :]
-    xlabel = :date
+    max_yvalue = max([maximum(df[!, col]) for col ∈ colnames]...)
+    (yfactor, ylabel) = _get_y_factor_and_label(max_yvalue)
+
+    istart = findfirst(df.active .* yfactor .>= 0.1)
+    iend = findlast(df.active .>= numpeople * minimum_plot_factor)
+    df = df[istart:something(iend, nrow(df)), :]
+    X = Dates.format.(df.date, date_format)
+
     y1 = colnames[1]
     win = plot(
-        df[!, xlabel],
+        X,
         df[!, y1] .* yfactor,
-        xlabel = string(xlabel),
-        label = string(y1),
+        xrotation = 45,
+        xticks = 15,
+        label = prettify(string(y1)),
         ylabel = ylabel,
         title = title,
-        legend = :topleft,
+        legend = :right,
     )
     for yn ∈ colnames[2:end]
-        ynstr = string(yn)
-        plot!(
-            win,
-            df[!, xlabel],
-            df[!, yn] .* yfactor;
-            xlabel = string(xlabel),
-            label = ynstr,
-            ylabel = ylabel,
-        )
+        ynstr = prettify(string(yn))
+        plot!(win, X, df[!, yn] .* yfactor; label = ynstr)
     end
     gui(win)
 end
 
 function model_plot(model::SEIRModel; kwargs...)
-    df = to_dataframe!(model; kwargs...)
-    model_plot(df; kwargs...)
+    df = modeldata!(model; kwargs...)
+    model_plot(df; title = _get_plot_title(model.data) * " (model)", kwargs...)
 end
 
 function model_plot(problem::ODEProblem; kwargs...)

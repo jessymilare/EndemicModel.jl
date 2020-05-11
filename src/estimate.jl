@@ -143,7 +143,7 @@ function estimate_α(
     dR = dt.diff_closed[(end - ndays):end]
     I = dt.active[(end - ndays):end]
     @show dR, I
-    [_ratemean(dR ./ I)]
+    [max(_ratemean(dR ./ I), 0.0)]
 end
 
 estimate_α(model::AbstractEndemicModel; kwargs...) =
@@ -159,7 +159,7 @@ function _γ_root(d1, d2, d3, I, α)
     root2 = _ratemean((sqrt.(abs.(Δ)) .- b) ./ (2a))
 
     @show root1, root2
-    max(root1, root2)
+    max(root1, root2, 0.01)
 end
 
 function estimate_γ(
@@ -198,7 +198,7 @@ function estimate_β(
 
     I = dt.active[(end - ndays):end]
 
-    [_ratemean((d2 .+ γ .* d1) ./ (γ .* I .+ d1))]
+    [max(_ratemean((d2 .+ γ .* d1) ./ (γ .* I .+ d1)), 0.0)]
 end
 
 function estimate_exposed(
@@ -211,7 +211,8 @@ function estimate_exposed(
 )
     d1 = data.diff_confirmed
     E = d1 ./ γ
-    [ismissing(elt) ? missing : round(Int, elt) for elt ∈ E]
+    E = [ismissing(elt) ? missing : isfinite(elt) ? round(Int, elt) : 0 for elt ∈ E]
+    max.(E, 0)
 end
 
 function estimate_exposed!(data::AbstractDataFrame; kwargs...)
@@ -275,6 +276,8 @@ function SEIRModel!(database::AbstractDatabase; kwargs...)
     model
 end
 
+parameters(database::AbstractDatabase) = parameters(modeldict(database))
+
 function parameters(data::D) where {D <: AbstractDict}
     result = D()
     columns = [param => Vector{Float64}[] for param ∈ SEIR_PARAMS]
@@ -289,4 +292,10 @@ function parameters(data::D) where {D <: AbstractDict}
     end
     !isempty(paramdf) && (result[:parameters] = paramdf)
     result
+end
+
+modeldata(database::AbstractDatabase) = modeldata(modeldict(database))
+
+function modeldata(data::D) where {D <: AbstractDict}
+    D(key => modeldata(subdata) for (key, subdata) ∈ data)
 end

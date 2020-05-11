@@ -147,7 +147,7 @@ end
 )
 @defoption(
     minimum_plot_factor,
-    1e-6,
+    1e-2,
     "Factor for minimum number of confirmed people to be considered in plots.",
     Real
 )
@@ -157,4 +157,11 @@ end
     [:confirmed, :exposed, :active, :recovered, :deaths],
     "Columns of data to be ploted by `model_plot`.",
     Vector{Symbol},
+)
+
+@defoption(
+    plot_date_format,
+    dateformat"dd/mm/yyyy",
+    "Format of dates in plots.",
+    DateFormat,
 )
