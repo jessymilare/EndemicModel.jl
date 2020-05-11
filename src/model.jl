@@ -418,7 +418,7 @@ function model_plot(
     else
         df.confirmed[end]
     end
-    max_yvalue = max([maximum(df[!, col]) for col ∈ colnames]...)
+    max_yvalue = max([maximum(skipmissing(df[!, col])) for col ∈ colnames]...)
     (yfactor, ylabel) = _get_y_factor_and_label(max_yvalue)
 
     istart = findfirst(df.active .* yfactor .>= 0.1)

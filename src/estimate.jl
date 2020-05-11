@@ -183,6 +183,8 @@ end
 estimate_γ(model::AbstractEndemicModel; kwargs...) =
     estimate_γ(datadict(model); kwargs...)
 
+const MIN_β = 0.01
+
 function estimate_β(
     data::AbstractDataFrame;
     ndays = 7,
@@ -198,8 +200,10 @@ function estimate_β(
 
     I = dt.active[(end - ndays):end]
 
-    factor = sqrt.(γ .^ 2 .- MIN_γ^2) ./ γ
-    [max(_ratemean((d2 .+ γ .* d1) ./ (γ .* I .+ d1)), 0.0)] .* factor
+    # `factor` is `MIN_γ` when `γ` is `MIN_γ`
+    # and approximately 1.0 when `γ` is far from `MIN_γ`
+    factor = sqrt.(γ .^ 2 .- MIN_γ^2) ./ γ .+ MIN_γ
+    [max(_ratemean(factor .* (d2 .+ γ .* d1) ./ (γ .* I .+ d1)), MIN_β)]
 end
 
 function estimate_exposed(
@@ -211,8 +215,10 @@ function estimate_exposed(
     kwargs...,
 )
     d1 = data.diff_confirmed
-    E = d1 ./ γ
-    E = [ismissing(elt) ? missing : isfinite(elt) ? round(Int, elt) : 0 for elt ∈ E]
+
+    factor = sqrt.(γ .^ 2 .- MIN_γ^2) ./ γ .+ MIN_γ
+    E = factor .* d1 ./ γ
+    E = [ismissing(elt) ? missing : round(Int, elt) for elt ∈ E]
     max.(E, 0)
 end
 

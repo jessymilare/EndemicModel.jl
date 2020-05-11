@@ -185,7 +185,7 @@ end
     3,
 )
 
-const μ_covid_19 = 0.034
+const COVID_19_μ = 0.034
 
 @defcolumn μ_closed(deaths, closed) begin
     replace(1.0 .* deaths ./ closed, NaN => missing)
@@ -203,12 +203,12 @@ end
         zip(deaths, recovered),
     ))
     if deaths[end] == 0 || ind == nothing
-        μ_covid_19
+        COVID_19_μ
     else
         ind = max(1, length(deaths) - 14, ind)
         dth, rec = deaths[ind:end], recovered[ind:end]
-        vals = filter(x -> !ismissing(x) && isfinite(x), dth ./ (dth .+ rec))
-        isempty(vals) || 0.0 ∈ vals ? μ_covid_19 : mean(vals)
+        vals = filter(x -> !ismissing(x) && isfinite(x) && x > 0, dth ./ (dth .+ rec))
+        isempty(vals) ? COVID_19_μ : mean(vals)
     end
 end
 
