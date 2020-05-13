@@ -1,2 +1,2 @@
 Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
-Pakistan,,30.38,69.35,2020-03-25,1063,21,8,29,1034,,,,,,,,,,,,,,0.276,0.0075,0.034
+Pakistan,,30.38,69.35,2020-03-25,1063,21,8,29,1034,,,,,,,,,,,,,,0.276,0.0075,

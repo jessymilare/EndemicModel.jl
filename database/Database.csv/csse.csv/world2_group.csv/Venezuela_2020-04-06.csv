@@ -1,2 +1,2 @@
 Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
-Venezuela,,6.42,-66.5897,2020-04-06,165,65,7,72,93,,,,,,,,,,,,,,0.0972,0.0424,0.034
+Venezuela,,6.42,-66.5897,2020-04-06,165,65,7,72,93,,,,,,,,,,,,,,0.0972,0.0424,

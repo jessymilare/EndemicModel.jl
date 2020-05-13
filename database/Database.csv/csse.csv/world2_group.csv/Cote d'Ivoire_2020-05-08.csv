@@ -1,2 +1,2 @@
 Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
-Cote D'Ivoire,,7.54,-5.5471,2020-05-08,1602,754,20,774,828,,,,,,,,,,,,,,0.0258,0.0125,0.034
+Cote D'Ivoire,,7.54,-5.5471,2020-05-08,1602,754,20,774,828,,,,,,,,,,,,,,0.0258,0.0125,0.0258

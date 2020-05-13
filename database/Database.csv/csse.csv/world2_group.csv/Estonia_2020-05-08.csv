@@ -1,2 +1,2 @@
 Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
-Estonia,,58.6,25.01,2020-05-08,1725,704,56,760,965,,,,,,,,,,,,,,0.0737,0.0325,0.034
+Estonia,,58.6,25.01,2020-05-08,1725,704,56,760,965,,,,,,,,,,,,,,0.0737,0.0325,0.0737

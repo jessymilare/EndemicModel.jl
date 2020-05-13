@@ -1,2 +1,2 @@
 Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
-Mali,,17.57,-3.9962,2020-04-18,216,41,13,54,162,,,,,,,,,,,,,,0.241,0.0602,0.034
+Mali,,17.57,-3.9962,2020-04-18,216,41,13,54,162,,,,,,,,,,,,,,0.241,0.0602,

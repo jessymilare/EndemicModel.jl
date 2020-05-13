@@ -1,2 +1,2 @@
 Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
-Belarus,,53.71,27.95,2020-04-12,2578,203,26,229,2349,,,,,,,,,,,,,,0.114,0.0101,0.034
+Belarus,,53.71,27.95,2020-04-12,2578,203,26,229,2349,,,,,,,,,,,,,,0.114,0.0101,0.114

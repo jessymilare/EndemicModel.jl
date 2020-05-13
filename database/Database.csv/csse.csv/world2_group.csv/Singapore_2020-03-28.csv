@@ -1,2 +1,2 @@
 Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
-Singapore,,1.28,103.83,2020-03-28,802,198,2,200,602,,,,,,,,,,,,,,0.01,0.0025,0.034
+Singapore,,1.28,103.83,2020-03-28,802,198,2,200,602,,,,,,,,,,,,,,0.01,0.0025,0.01

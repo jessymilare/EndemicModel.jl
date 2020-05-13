@@ -1,3 +1,5 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-08,MA,São Domingos Do Maranhão,11,0,4,34376,2110708,4,7,,,,,,,,,,,,,,0.0,0.0,0.034,319.99,0.0,116.36,116.36,203.63
-2020-05-09,MA,São Domingos Do Maranhão,11,0,4,34376,2110708,4,7,,,,,,,,,,,,,,0.0,0.0,0.034,319.99,0.0,116.36,116.36,203.63
+2020-05-08,MA,São Domingos Do Maranhão,11,0,4,34376,2110708,4,7,,,,,,,,,,,,,,0.0,0.0,,319.99,0.0,116.36,116.36,203.63
+2020-05-09,MA,São Domingos Do Maranhão,11,0,4,34376,2110708,4,7,,,,,,,,,,,,,,0.0,0.0,,319.99,0.0,116.36,116.36,203.63
+2020-05-10,MA,São Domingos Do Maranhão,18,0,7,34376,2110708,7,11,,,,,,,,,,,,,,0.0,0.0,,523.62,0.0,203.63,203.63,319.99
+2020-05-11,MA,São Domingos Do Maranhão,19,0,8,34376,2110708,8,11,,,,,,,,,,,,,,0.0,0.0,,552.71,0.0,232.72,232.72,319.99

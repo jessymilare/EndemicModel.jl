@@ -1,2 +1,2 @@
 Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
-El Salvador,,13.79,-88.8965,2020-05-10,889,293,17,310,579,,,,,,,,,,,,,,0.0548,0.0191,0.034
+El Salvador,,13.79,-88.8965,2020-05-10,889,293,17,310,579,,,,,,,,,,,,,,0.0548,0.0191,0.0548

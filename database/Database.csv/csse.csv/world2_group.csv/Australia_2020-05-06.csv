@@ -1,9 +1,9 @@
 Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
-Australia,Australian Capital Territory,-35.4735,149.01,2020-05-06,107,103,3,106,1,,,,,,,,,,,,,,0.0283,0.028,0.034
-Australia,New South Wales,-33.8688,151.21,2020-05-06,3044,2463,44,2507,537,,,,,,,,,,,,,,0.0176,0.0145,0.034
-Australia,Northern Territory,-12.4634,130.85,2020-05-06,29,27,0,27,2,,,,,,,,,,,,,,0.0,0.0,0.034
-Australia,Queensland,-28.0167,153.4,2020-05-06,1045,989,6,995,50,,,,,,,,,,,,,,0.006,0.0057,0.034
-Australia,South Australia,-34.9285,138.6,2020-05-06,438,432,4,436,2,,,,,,,,,,,,,,0.0092,0.0091,0.034
-Australia,Tasmania,-41.4545,145.97,2020-05-06,226,167,13,180,46,,,,,,,,,,,,,,0.0722,0.0575,0.034
-Australia,Victoria,-37.8136,144.96,2020-05-06,1454,1322,18,1340,114,,,,,,,,,,,,,,0.0134,0.0124,0.034
-Australia,Western Australia,-31.9505,115.86,2020-05-06,551,528,9,537,14,,,,,,,,,,,,,,0.0168,0.0163,0.034
+Australia,Australian Capital Territory,-35.4735,149.01,2020-05-06,107,103,3,106,1,,,,,,,,,,,,,,0.0283,0.028,0.0234
+Australia,New South Wales,-33.8688,151.21,2020-05-06,3044,2463,44,2507,537,,,,,,,,,,,,,,0.0176,0.0145,0.0234
+Australia,Northern Territory,-12.4634,130.85,2020-05-06,29,27,0,27,2,,,,,,,,,,,,,,0.0,0.0,0.0234
+Australia,Queensland,-28.0167,153.4,2020-05-06,1045,989,6,995,50,,,,,,,,,,,,,,0.006,0.0057,0.0234
+Australia,South Australia,-34.9285,138.6,2020-05-06,438,432,4,436,2,,,,,,,,,,,,,,0.0092,0.0091,0.0234
+Australia,Tasmania,-41.4545,145.97,2020-05-06,226,167,13,180,46,,,,,,,,,,,,,,0.0722,0.0575,0.0234
+Australia,Victoria,-37.8136,144.96,2020-05-06,1454,1322,18,1340,114,,,,,,,,,,,,,,0.0134,0.0124,0.0234
+Australia,Western Australia,-31.9505,115.86,2020-05-06,551,528,9,537,14,,,,,,,,,,,,,,0.0168,0.0163,0.0234

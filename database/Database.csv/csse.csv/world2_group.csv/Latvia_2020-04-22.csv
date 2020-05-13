@@ -1,2 +1,2 @@
 Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
-Latvia,,56.88,24.6,2020-04-22,761,133,11,144,617,,,,,,,,,,,,,,0.0764,0.0145,0.034
+Latvia,,56.88,24.6,2020-04-22,761,133,11,144,617,,,,,,,,,,,,,,0.0764,0.0145,0.0764

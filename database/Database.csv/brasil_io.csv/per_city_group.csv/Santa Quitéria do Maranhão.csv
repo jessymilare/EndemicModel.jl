@@ -1,7 +1,9 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-04,MA,Santa Quitéria Do Maranhão,7,0,3,25642,2110104,3,4,,,,,,,,,,,,,,0.0,0.0,0.034,272.99,0.0,117.0,117.0,155.99
-2020-05-05,MA,Santa Quitéria Do Maranhão,7,0,3,25642,2110104,3,4,,,,,,,,,,,,,,0.0,0.0,0.034,272.99,0.0,117.0,117.0,155.99
-2020-05-06,MA,Santa Quitéria Do Maranhão,8,0,3,25642,2110104,3,5,,,,,,,,,,,,,,0.0,0.0,0.034,311.99,0.0,117.0,117.0,194.99
-2020-05-07,MA,Santa Quitéria Do Maranhão,8,0,3,25642,2110104,3,5,,,,,,,,,,,,,,0.0,0.0,0.034,311.99,0.0,117.0,117.0,194.99
-2020-05-08,MA,Santa Quitéria Do Maranhão,8,0,3,25642,2110104,3,5,,,,,,,,,,,,,,0.0,0.0,0.034,311.99,0.0,117.0,117.0,194.99
-2020-05-09,MA,Santa Quitéria Do Maranhão,9,0,4,25642,2110104,4,5,,,,,,,,,,,,,,0.0,0.0,0.034,350.99,0.0,155.99,155.99,194.99
+2020-05-04,MA,Santa Quitéria Do Maranhão,7,0,3,25642,2110104,3,4,,,,,,,,,,,,,,0.0,0.0,,272.99,0.0,117.0,117.0,155.99
+2020-05-05,MA,Santa Quitéria Do Maranhão,7,0,3,25642,2110104,3,4,,,,,,,,,,,,,,0.0,0.0,,272.99,0.0,117.0,117.0,155.99
+2020-05-06,MA,Santa Quitéria Do Maranhão,8,0,3,25642,2110104,3,5,,,,,,,,,,,,,,0.0,0.0,,311.99,0.0,117.0,117.0,194.99
+2020-05-07,MA,Santa Quitéria Do Maranhão,8,0,3,25642,2110104,3,5,1.0,0.333,,,,,,,,,,,,0.0,0.0,,311.99,0.0,117.0,117.0,194.99
+2020-05-08,MA,Santa Quitéria Do Maranhão,8,0,3,25642,2110104,3,5,1.17,0.5,,,,,,,,,,,,0.0,0.0,,311.99,0.0,117.0,117.0,194.99
+2020-05-09,MA,Santa Quitéria Do Maranhão,9,0,4,25642,2110104,4,5,,,,,,,,,,,,,,0.0,0.0,,350.99,0.0,155.99,155.99,194.99
+2020-05-10,MA,Santa Quitéria Do Maranhão,13,0,5,25642,2110104,5,8,,,,,,,,,,,,,,0.0,0.0,,506.98,0.0,194.99,194.99,311.99
+2020-05-11,MA,Santa Quitéria Do Maranhão,14,0,6,25642,2110104,6,8,,,,,,,,,,,,,,0.0,0.0,,545.98,0.0,233.99,233.99,311.99

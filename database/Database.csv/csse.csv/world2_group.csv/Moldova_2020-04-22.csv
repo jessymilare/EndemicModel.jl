@@ -1,2 +1,2 @@
 Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
-Moldova,,47.41,28.37,2020-04-22,2778,560,75,635,2143,,,,,,,,,,,,,,0.118,0.027,0.034
+Moldova,,47.41,28.37,2020-04-22,2778,560,75,635,2143,,,,,,,,,,,,,,0.118,0.027,0.118

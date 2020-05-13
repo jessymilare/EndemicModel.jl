@@ -1,2 +1,2 @@
 Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
-Sri Lanka,,7.0,81.0,2020-05-08,835,240,9,249,586,,,,,,,,,,,,,,0.0361,0.0108,0.034
+Sri Lanka,,7.0,81.0,2020-05-08,835,240,9,249,586,,,,,,,,,,,,,,0.0361,0.0108,0.0361

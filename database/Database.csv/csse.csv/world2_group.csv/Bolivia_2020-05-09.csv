@@ -1,2 +1,2 @@
 Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
-Bolivia,,-16.2902,-63.5887,2020-05-09,2437,258,114,372,2065,,,,,,,,,,,,,,0.306,0.0468,0.034
+Bolivia,,-16.2902,-63.5887,2020-05-09,2437,258,114,372,2065,,,,,,,,,,,,,,0.306,0.0468,0.306

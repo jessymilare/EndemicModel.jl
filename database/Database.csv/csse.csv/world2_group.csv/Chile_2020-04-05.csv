@@ -1,2 +1,2 @@
 Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
-Chile,,-35.6751,-71.543,2020-04-05,4471,618,34,652,3819,,,,,,,,,,,,,,0.0521,0.0076,0.034
+Chile,,-35.6751,-71.543,2020-04-05,4471,618,34,652,3819,,,,,,,,,,,,,,0.0521,0.0076,0.0521

@@ -1,3 +1,5 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-08,PI,Fronteiras,1,0,0,11625,2204303,0,1,,,,,,,,,,,,,,,0.0,0.034,86.02,0.0,0.0,0.0,86.02
-2020-05-09,PI,Fronteiras,2,0,1,11625,2204303,1,1,,,,,,,,,,,,,,0.0,0.0,0.034,172.04,0.0,86.02,86.02,86.02
+2020-05-08,PI,Fronteiras,1,0,0,11625,2204303,0,1,,,,,,,,,,,,,,,0.0,,86.02,0.0,0.0,0.0,86.02
+2020-05-09,PI,Fronteiras,2,0,1,11625,2204303,1,1,,,,,,,,,,,,,,0.0,0.0,,172.04,0.0,86.02,86.02,86.02
+2020-05-10,PI,Fronteiras,3,0,1,11625,2204303,1,2,,,,,,,,,,,,,,0.0,0.0,,258.06,0.0,86.02,86.02,172.04
+2020-05-11,PI,Fronteiras,3,0,1,11625,2204303,1,2,,,,,,,,,,,,,,0.0,0.0,,258.06,0.0,86.02,86.02,172.04
