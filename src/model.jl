@@ -19,16 +19,8 @@ modeldata!(model::AbstractEndemicModel, value::AbstractDataFrame) =
 default_kwargs(model::AbstractEndemicModel) = model.kwargs
 default_kwargs!(model::AbstractEndemicModel, value) = model.kwargs = value
 
-function modeldata!(model::AbstractEndemicModel; kwargs...)
-    if isnothing(model.modeldata)
-        model.modeldata = to_dataframe(model; kwargs...)
-    else
-        model.modeldata
-    end
-end
-
-datadict(model::AbstractEndemicModel) = model.data
-datadict!(model::AbstractEndemicModel, value) = model.data = value
+realdata(model::AbstractEndemicModel) = model.realdata
+realdata!(model::AbstractEndemicModel, value) = model.realdata = value
 
 export_data(model::AbstractEndemicModel; kwargs...) =
     export_data(modeldata(model); kwargs...)
@@ -131,7 +123,7 @@ mutable struct SEIRModel <: AbstractEndemicModel
     parameters::SEIRParameters
     ngroups::Int
     groupnames::Vector{Symbol}
-    data::Union{Nothing, AbstractDataFrame}
+    realdata::Union{Nothing, AbstractDataFrame}
     modeldata::Union{Nothing, AbstractDataFrame}
     kwargs::Dict{Symbol, Any}
 
@@ -140,7 +132,7 @@ mutable struct SEIRModel <: AbstractEndemicModel
         params::SEIRParameters;
         ngroups::Int = length(vars[1]),
         groupnames = ("group_" .* string.(1:ngroups)),
-        data::Union{Nothing, AbstractDataFrame} = nothing,
+        realdata::Union{Nothing, AbstractDataFrame} = nothing,
         modeldata::Union{Nothing, AbstractDataFrame} = nothing,
         kwargs...,
     )
@@ -148,8 +140,9 @@ mutable struct SEIRModel <: AbstractEndemicModel
         deriv = _SEIR_derivative(vars, params)
         info = Dict(kwargs)
 
-        model = new(vars, deriv, params, ngroups, groupnames, data, modeldata, info)
-        isnothing(modeldata) && modeldata!(model)
+        model =
+            new(vars, deriv, params, ngroups, groupnames, realdata, modeldata, info)
+        isnothing(modeldata) && modeldata!(model, to_dataframe(model; kwargs...))
         model
     end
 end
@@ -171,7 +164,7 @@ function SEIRModel(
     SEIRModel(SEIRVariables(S, E, I, R), SEIRParameters(M, β, γ, α, μ); kwargs...)
 end
 
-function model_step(model::SEIRModel, n::Int = 1)
+function model_step(model::SEIRModel, n::Int = 1; kwargs...)
     (S, E, I, R) = variables(model)
     (dS, dE, dI, dR) = derivatives(model)
     params = parameters(model)
@@ -189,7 +182,7 @@ function model_step(model::SEIRModel, n::Int = 1)
             n += 1
         end
     end
-    SEIRModel(SEIRVariables(S, E, I, R), SEIRDerivatives(dS, dE, dI, dR))
+    SEIRModel(SEIRVariables(S, E, I, R), SEIRDerivatives(dS, dE, dI, dR); kwargs...)
 end
 
 function model_step!(model::SEIRModel, n::Int = 1)
@@ -416,6 +409,7 @@ function model_plot(
     title = _get_plot_title(df),
     minimum_plot_factor = option(:minimum_plot_factor),
     date_format = option(:plot_date_format),
+    new_window::Bool = true,
     kwargs...,
 )
     colnames = intersect(columns, Symbol.(names(df)))
@@ -447,12 +441,46 @@ function model_plot(
         ynstr = prettify(string(yn))
         plot!(win, X, df[!, yn] .* yfactor; label = ynstr)
     end
-    gui(win)
+    new_window && gui(win)
+    win
 end
 
-function model_plot(model::SEIRModel; kwargs...)
-    df = modeldata!(model; kwargs...)
-    model_plot(df; title = _get_plot_title(model.data) * " (model)", kwargs...)
+function model_plot(
+    model::SEIRModel;
+    columns = option(:plot_columns),
+    new_window::Bool = true,
+    kwargs...,
+)
+    modeldf, realdf = modeldata(model), realdata(model)
+    title = _get_plot_title(realdf)
+    ndays = nrow(realdf)
+    model_back = model_step(
+        model,
+        -ndays;
+        maxtime = Float64(ndays),
+        initial_date = data.date[1],
+    )
+    modelcolumns = [col * " (model)" for col ∈ columns]
+    model_back_df = rename(modeldata(model_back), (columns .=> modelcolumns)...)
+    comparisondf = leftjoin(realdf, model_back_df; on = :date)
+
+    rplot = model_plot(
+        comparisondf;
+        title = title * " (real vs model)",
+        new_window = false,
+        columns = [columns; model_columns],
+        kwargs...,
+    )
+    mplot = model_plot(
+        modeldf;
+        title = title * " (model)",
+        new_window = false,
+        columns = columns,
+        kwargs...,
+    )
+    win = plot(rplot, mplot; layout = (2, 1))
+    new_window && gui(win)
+    win
 end
 
 function model_plot(problem::ODEProblem; kwargs...)

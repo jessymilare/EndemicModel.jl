@@ -28,21 +28,21 @@ end
 function model_loss(
     model::SEIRModel;
     loss_func::Function = phuber_loss(1.0),
-    ndays = nothing,
     kwargs...,
     # diff_loss_func::Function = diff_phuber_loss(1.0),
 )
     params = parameters(model)
     ng = model.ngroups
-    data = datadict(model)
-    ndays = something(ndays, Dates.days(data.date[end] - data.date[1]))
-    model_back = model_step(model, -ndays)
+    data = realdata(model)
+    ndays = nrow(data)
+    model_back = model_step(
+        model,
+        -ndays;
+        maxtime = Float64(ndays),
+        initial_date = data.date[1],
+    )
+    mdata = modeldata(model_back)
     istart, iend = nrow(data) - ndays, nrow(data)
-    solution = model_solution(model; maxtime = ndays |> Float64)
-    days = Int.(solution.t)
-    n = length(days)
-    M = params[:M]
-    μ = params[:μ]
 
     rec_tot = loss_func(data.recovered .- mean(data.recovered))
     dth_tot = loss_func(data.deaths .- mean(data.deaths))
@@ -52,30 +52,12 @@ function model_loss(
     rec_loss = Float64[]
     act_loss = Float64[]
     dth_loss = Float64[]
-    #=
-    diff_rec_loss = Float64[]
-    diff_act_loss = Float64[]
-    diff_dth_loss = Float64[] =#
-    for i ∈ 1:(iend - istart + 1)
-        day = -Dates.days(data.date[end] - data.date[i])
-        sol = solution[i]
-        (S, E, I, R) = unpack_vars(sol)
-        push!(rec_loss, data.recovered[i - 1 + istart] - sum((1 .- μ) .* R))
-        push!(act_loss, data.active[i - 1 + istart] - sum(I))
-        push!(dth_loss, data.deaths[i - 1 + istart] - sum(μ .* R))
-        #=
-        push!(diff_rec_loss, sdata.diff_recovered[si])
-        push!(diff_act_loss, sdata.diff_active[si])
-        push!(diff_dth_loss, sdata.diff_deaths[si]) =#
+    for i ∈ 1:ndays
+        push!(rec_loss, data.recovered[i] - mdata.recovered[i])
+        push!(act_loss, data.active[i] - mdata.active[i])
+        push!(dth_loss, data.deaths[i] - mdata.deaths[i])
     end
     loss_value = loss_func(rec_loss) + loss_func(act_loss) + loss_func(dth_loss)
-    #=
-    diff_loss_value = (
-        diff_loss_func(rec_loss) .* diff_rec_loss +
-        diff_loss_func(act_loss) .* diff_act_loss +
-        diff_loss_func(dth_loss) .* diff_dth_loss
-    ) =#
-
     loss_value / max_loss
 end
 
@@ -292,7 +274,7 @@ function SEIRModel(
     initial_date = data.date[idx]
     vars, params = SEIRVariables(S, E, I, R), SEIRParameters(M, β, γ, α, μ)
 
-    SEIRModel(vars, params; data = data, initial_date = initial_date, kwargs...)
+    SEIRModel(vars, params; realdata = data, initial_date = initial_date, kwargs...)
 end
 
 function SEIRModel(data::D; kwargs...) where {D <: AbstractDict}
