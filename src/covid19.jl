@@ -7,8 +7,8 @@
 ]
 
 @deftable world3(world2, world_population, total_tests) begin
-    data = join(world2, world_population; on = :country, kind = :left)
-    data = join(data, total_tests; on = [:country, :date], kind = :left)
+    data = leftjoin(world2, world_population; on = :country)
+    data = leftjoin(data, total_tests; on = [:country, :date])
     testdict = Dict(c => _choose_test(c, data) for c ∈ Set(data.country))
     tests = [testdict[country] for country ∈ data.country]
     data = @where(data, ismissing.(:test_kind) .| (:test_kind .== tests))
@@ -48,13 +48,6 @@ end
     (date, latitude, longitude) => identity,
     (estimated_population, total_tests, test_kind) => identity,
     (confirmed, recovered, deaths) => identity,
-]
-
-@defgroup total(per_country) (date,) [
-    (latitude, longitude) => mean,
-    (estimated_population, total_tests) => sum,
-    (test_kind,) => maximum,
-    (confirmed, recovered, deaths) => sum,
 ]
 
 @deftable states2(states, Brazil) begin
@@ -124,17 +117,13 @@ function _column_diff(column, date, ndays)
             isfinite(column[i - half1]) &&
             column[i - half1] > 0
         )
-            # Geometric mean of column[i+1]/column[i] over `ndays`
-            diff_rate = abs(column[i + half2] / column[i - half1])^(1 / ndays) - 1
-            if !ismissing(diff_rate) && isfinite(diff_rate)
-                result[i] = diff_rate * column[i]
-            end
+            result[i] = (column[i + half2] - column[i - half1]) / ndays
         end
     end
     result
 end
 
-@defcolumn diff_confirmed(date, confirmed) _column_diff(confirmed, date, 7)
+@defcolumn diff_confirmed(date, confirmed) _column_diff(confirmed, date, 6)
 #= begin
     n = length(date)
     result = Vector{Union{Float64, Missing}}(missing, n)
@@ -156,15 +145,15 @@ end
 end
 =#
 
-@defcolumn diff_recovered(date, recovered) _column_diff(recovered, date, 7)
-@defcolumn diff_deaths(date, deaths) _column_diff(deaths, date, 7)
+@defcolumn diff_recovered(date, recovered) _column_diff(recovered, date, 6)
+@defcolumn diff_deaths(date, deaths) _column_diff(deaths, date, 6)
 
 @defcolumn diff_closed(diff_recovered, diff_deaths) diff_recovered .+ diff_deaths
 @defcolumn diff_active(diff_confirmed, diff_closed) diff_confirmed .- diff_closed
 
-@defcolumn diff2_confirmed(date, diff_confirmed) _column_diff(diff_confirmed, date, 5)
-@defcolumn diff2_recovered(date, diff_recovered) _column_diff(diff_recovered, date, 5)
-@defcolumn diff2_deaths(date, diff_deaths) _column_diff(diff_deaths, date, 5)
+@defcolumn diff2_confirmed(date, diff_confirmed) _column_diff(diff_confirmed, date, 6)
+@defcolumn diff2_recovered(date, diff_recovered) _column_diff(diff_recovered, date, 6)
+@defcolumn diff2_deaths(date, diff_deaths) _column_diff(diff_deaths, date, 6)
 
 @defcolumn diff2_closed(diff2_recovered, diff2_deaths) diff2_recovered .+ diff2_deaths
 @defcolumn diff2_active(diff2_confirmed, diff2_closed) diff2_confirmed .- diff2_closed
@@ -172,7 +161,7 @@ end
 @defcolumn diff3_confirmed(date, diff2_confirmed) _column_diff(
     diff2_confirmed,
     date,
-    3,
+    4,
 )
 #=
 @defcolumn diff3_recovered(date, diff2_recovered) _column_diff(
@@ -188,19 +177,19 @@ end
 @defcolumn diff4_confirmed(date, diff3_confirmed) _column_diff(
     diff3_confirmed,
     date,
-    3,
+    4,
 )
 
 @defcolumn diff5_confirmed(date, diff4_confirmed) _column_diff(
     diff4_confirmed,
     date,
-    3,
+    4,
 )
 
 @defcolumn diff6_confirmed(date, diff5_confirmed) _column_diff(
     diff5_confirmed,
     date,
-    3,
+    4,
 )
 
 const COVID_19_μ = 0.034
@@ -216,17 +205,17 @@ end
     ind = findfirst(map(
         p -> begin
             (d, r) = p
-            !ismissing(d) && !ismissing(r) && d >= 1 && r >= 1000
+            !ismissing(d) && !ismissing(r) && d >= 1 && r >= 100
         end,
         zip(deaths, recovered),
     ))
     if deaths[end] == 0 || ind == nothing
-        COVID_19_μ
+        missing
     else
         ind = max(1, length(deaths) - 14, ind)
         dth, rec = deaths[ind:end], recovered[ind:end]
         vals = filter(x -> !ismissing(x) && isfinite(x) && x > 0, dth ./ (dth .+ rec))
-        isempty(vals) ? COVID_19_μ : mean(vals)
+        isempty(vals) ? missing : mean(vals)
     end
 end
 
@@ -305,7 +294,16 @@ function copy_brazil_tables(data::AbstractDict)
     end
 end
 
-function covid_19_database(
+@defgroup total(per_country) (date,) [
+    (latitude, longitude) => mean,
+    (estimated_population, total_tests) => sum,
+    (test_kind,) => maximum,
+    (confirmed, recovered, deaths, closed, active) => sum,
+    (diff_confirmed, diff_recovered, diff_deaths, diff_closed, diff_active) => sum,
+    (diff2_confirmed, diff3_confirmed, diff4_confirmed, diff5_confirmed) => sum,
+]
+
+function covid19_database(
     sources = [:csse, :brasil_io, :world_population, :total_tests];
     kwargs...,
 )
@@ -315,7 +313,6 @@ function covid_19_database(
         copy_pop_tests_tables,
         table_world3,
         group_per_country,
-        group_total,
         copy_brazil_tables,
         table_states2,
         table_cities2,
@@ -337,6 +334,9 @@ function covid_19_database(
         column_diff3_confirmed,
         column_diff4_confirmed,
         column_diff5_confirmed,
+        # This table needs diff columns before grouping
+        group_total,
+        # More columns
         column_μ_closed,
         column_μ_confirmed,
         column_μ_closed_est,
@@ -351,9 +351,9 @@ function covid_19_database(
     db = Database{Dict{Symbol, Any}}(sources, kwargs, funcs)
 end
 
-function covid_19(; kwargs...)
+function covid19(; kwargs...)
     @info "Creating COVID-19 database."
-    db = covid_19_database(; kwargs...)
+    db = covid19_database(; kwargs...)
     @info "COVID-19 database created." summary(db)
     @info "Computing SEIR model for COVID-19 database."
     SEIRModel!(db; kwargs...)

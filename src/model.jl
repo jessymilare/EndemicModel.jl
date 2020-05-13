@@ -33,6 +33,9 @@ datadict!(model::AbstractEndemicModel, value) = model.data = value
 export_data(model::AbstractEndemicModel; kwargs...) =
     export_data(modeldata(model); kwargs...)
 
+export_data(source, model::AbstractEndemicModel; kwargs...) =
+    export_data(source, modeldata(model); kwargs...)
+
 const SEIR_VARS = (:S, :E, :I, :R)
 const SEIR_DERIV = (:dS, :dE, :dI, :dR)
 const SEIR_PARAMS = (:M, :β, :γ, :α, :μ)
@@ -349,7 +352,7 @@ function to_dataframe(model::SEIRModel; kwargs...)
     diff_recovered = zeros(Int, n)
     diff_deaths = zeros(Int, n)
 
-    _round(x) = round(Int, min(x, 1e12))
+    _round(x) = isnan(x) ? 0 : round(Int, min(x, 1e12))
 
     for i ∈ 1:n
         (S, E, I, R) = unpack_vars(solution[i])

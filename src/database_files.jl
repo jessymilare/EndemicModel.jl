@@ -45,9 +45,6 @@ function export_data(
     model_data_type = option(:model_data_type),
     model_directory = option(:model_directory),
     model_filename = option(:model_filename),
-    parameters_data_type = option(:parameters_data_type),
-    parameters_subdirectory = option(:parameters_subdirectory),
-    parameters_filename = option(:parameters_filename),
     pretty::Bool = true,
     kwargs...,
 )
@@ -61,12 +58,6 @@ function export_data(
         database_directory = model_directory,
         database_filename = database_filename,
     )
-    parameters_directory = join(model_directory, parameters_subdirectory)
-    param_output = database_path(
-        parameters_data_type,
-        database_directory = parameters_directory,
-        database_filename = parameters_filename,
-    )
     data = datadict(database)
     @info "Exporting database." path = db_output _debuginfo(data)
     dbout = export_data(
@@ -76,22 +67,13 @@ function export_data(
         output = db_output,
         kwargs...,
     )
-    data = modeldata(database)
+    data = modeldict(database)
     @info "Exporting database models." path = model_output _debuginfo(data)
     modelout = export_data(
         model_data_type,
         data;
         pretty = pretty,
         output = model_output,
-        kwargs...,
-    )
-    data = paramdict(database)
-    @info "Exporting database model parameters." path = param_output _debuginfo(data)
-    export_data(
-        parameters_data_type,
-        data;
-        pretty = pretty,
-        output = param_output,
         kwargs...,
     )
     (dbout, modelout)

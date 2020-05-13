@@ -99,14 +99,16 @@ export AbstractDataSource,
     estimate_β,
     estimate_exposed!,
 
-    covid_19_database,
-    covid_19
+    covid19_database,
+    covid19
 
 const DATA_SOURCES = Dict{Symbol, Type}()
 
 include("utils.jl")
 include("options.jl")
 include("datasources.jl")
+include("sources/general.jl")
+include("sources/covid19.jl")
 include("database.jl")
 include("database_files.jl")
 include("covid19.jl")
