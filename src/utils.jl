@@ -104,18 +104,18 @@ function prettify(obj::AbstractVector; kwargs...)
     map(elt -> prettify(elt; kwargs...), obj)
 end
 prettify(obj::Integer; kwargs...) = obj
-function prettify(obj::Real; digits = 2, kwargs...)
+function prettify(obj::Real; digits = 3, kwargs...)
     obj < 1.0 && (digits += 1)
     obj < 0.1 && (digits += 1)
     round(obj; digits = digits)
 end
-prettify(obj::Quantity{<:Integer}; digits = 2, kwargs...) = string(obj)
-prettify(obj::Quantity; digits = 2, kwargs...) =
+prettify(obj::Quantity{<:Integer}; kwargs...) = string(obj)
+prettify(obj::Quantity; digits = 3, kwargs...) =
     round(unit(obj), obj; digits = digits + 2)
 prettify(obj::Symbol; kwargs...) = Symbol(prettify(string(obj); kwargs...))
 
 function prettify(obj::AbstractString; kwargs...)
-    if all(c -> Int(c) < 255, obj)
+    if ' ' ∉ obj && all(c -> Int(c) < 255, obj)
         titlecase(replace(obj, "_" => " "); strict = false)
     else
         obj

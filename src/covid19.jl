@@ -6,8 +6,9 @@
     (confirmed, recovered, deaths) => sum,
 ]
 
-@deftable world3(world2, world_population, total_tests) begin
+@deftable world3(world2, world_population, world_gdp_per_capita, total_tests) begin
     data = leftjoin(world2, world_population; on = :country)
+    data = leftjoin(data, world_gdp_per_capita; on = [:country, :country_code])
     data = leftjoin(data, total_tests; on = [:country, :date])
     testdict = Dict(c => _choose_test(c, data) for c ∈ Set(data.country))
     tests = [testdict[country] for country ∈ data.country]
@@ -19,6 +20,7 @@
         :latitude,
         :longitude,
         :estimated_population,
+        :estimated_gdp_per_capita,
         :total_tests,
         :test_kind,
         :confirmed,
@@ -46,7 +48,8 @@ end
 
 @defgroup per_country(world3) (country,) [
     (date, latitude, longitude) => identity,
-    (estimated_population, total_tests, test_kind) => identity,
+    (estimated_population, estimated_gdp_per_capita) => identity,
+    (total_tests, test_kind) => identity,
     (confirmed, recovered, deaths) => identity,
 ]
 
@@ -224,9 +227,11 @@ end
 
 function copy_pop_tests_tables(data::AbstractDict)
     pop = get(data, :world_population, nothing)
+    gdp_pc = get(data, :world_gdp_per_capita, nothing)
     tests = get(data, :total_tests, nothing)
     csse = get(data, :csse, nothing)
     brasil_io = get(data, :brasil_io, nothing)
+    updated = false
     if brasil_io != nothing
         if pop != nothing && !haskey(brasil_io, :world_population)
             brasil_io[:world_population] = pop
@@ -234,9 +239,12 @@ function copy_pop_tests_tables(data::AbstractDict)
         end
     end
     if csse != nothing
-        updated = false
         if pop != nothing && !haskey(csse, :world_population)
             csse[:world_population] = pop
+            updated = true
+        end
+        if gdp_pc != nothing && !haskey(csse, :world_gdp_per_capita)
+            csse[:world_gdp_per_capita] = gdp_pc
             updated = true
         end
         if tests != nothing && !haskey(csse, :total_tests)
@@ -278,17 +286,17 @@ end
 
 @defgroup total(per_country) (date,) [
     (latitude, longitude) => mean,
-    (estimated_population, total_tests) => sum,
+    (estimated_population,) => sum,
+    (total_tests,) => sum,
     (test_kind,) => maximum,
     (confirmed, recovered, deaths, closed, active) => sum,
     (diff_confirmed, diff_recovered, diff_deaths, diff_closed, diff_active) => sum,
     (diff2_confirmed, diff3_confirmed, diff4_confirmed, diff5_confirmed) => sum,
 ]
 
-function covid19_database(
-    sources = [:csse, :brasil_io, :world_population, :total_tests];
-    kwargs...,
-)
+function covid19_database(; kwargs...)
+    sources =
+        [:csse, :brasil_io, :world_population, :world_gdp_per_capita, :total_tests]
     funcs = [
         # Tables
         group_world2,
@@ -329,12 +337,44 @@ function covid19_database(
         column_tests_per_confirmed,
         column_tests_per_1mi,
     ]
-    db = Database{Dict{Symbol, Any}}(sources, kwargs, funcs)
+    Database{DataDict}(sources, kwargs, funcs)
 end
 
 function covid19(; kwargs...)
     @info "Creating COVID-19 database."
     db = covid19_database(; kwargs...)
+    newdata = DataDict(
+        :world => DataDict(
+            :per_country => db.csse.per_country_group,
+            :per_date => db.csse.total_group,
+            :total => db.csse.total,
+        ),
+        :Brazil => DataDict(
+            :per_state => db.brasil_io.per_state_group,
+            :per_city => db.brasil_io.per_city_group,
+        ),
+        :sources => DataFrame(
+            :source => [
+                "CSSE at JHU (John Hopkins University)",
+                "Brasil.IO",
+                "World Bank Open Data",
+                "Our World In Data",
+            ],
+            :home_page => [
+                "https://systems.jhu.edu/",
+                "https://brasil.io/home/",
+                "https://data.worldbank.org/",
+                "https://ourworldindata.org/",
+            ],
+            :data_kind => [
+                "COVID-19 cases for several countries",
+                "COVID-19 cases per state and city in Brazil",
+                "Population and GDP per capita for several countries",
+                "Number of tests of COVID-19 for several countries",
+            ],
+        ),
+    )
+    datadict!(db, newdata)
     @info "COVID-19 database created." summary(db)
     @info "Computing SEIR model for COVID-19 database."
     SEIRModel!(db; kwargs...)

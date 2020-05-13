@@ -169,6 +169,8 @@ BrasilIo(::Nothing; kwargs...) = BrasilIo()
 
 DATA_SOURCES[:brasil_io] = BrasilIo
 
+const BRAZIL_POP_FACTOR = 1.01
+
 function import_data(source::BrasilIo; url = BRASIL_IO_URL, kwargs...)
     @debug "Importing data from Brasil.io."
     col_drop = [:confirmed_per_100k_inhabitants, :death_rate, :is_last]
@@ -184,6 +186,8 @@ function import_data(source::BrasilIo; url = BRASIL_IO_URL, kwargs...)
     sort!(raw_data, [:state, :city, :date])
 
     rename!(raw_data, "estimated_population_2019" => :estimated_population)
+    raw_data.estimated_population =
+        round.(Union{Int, Missing}, raw_data.estimated_population .* BRAZIL_POP_FACTOR)
     states = @where(raw_data, :place_type .== "state")
     cities = @where(raw_data, :place_type .== "city")
 

@@ -70,7 +70,7 @@ end
 
 @defoption(
     sources_to_update,
-    [:csse, :brasil_io, :world_population, :total_tests],
+    [:csse, :brasil_io, :world_population, :world_gdp_per_capita, :total_tests],
     "Sources to import from on update.",
     AbstractVector{Symbol}
 )
