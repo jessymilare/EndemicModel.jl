@@ -302,11 +302,12 @@ function SEIRModel(data::D; kwargs...) where {D <: AbstractDict}
         try
             model = SEIRModel(data; kwargs...)
             model isa AbstractDict && return model
+
             gnames = string.(model.groupnames)
             param_pairs = pairs(parameters(model))
             for (i, gname) ∈ enumerate(gnames)
-                params = [k => (isfinite(v[i]) ? v[i] : missing) for
-                (k, v) ∈ param_pairs]
+                params =
+                    [k => (isfinite(v[i]) ? v[i] : missing) for (k, v) ∈ param_pairs]
                 push!(paramdf, (; key = key, group_name = gname, params...))
             end
             model
