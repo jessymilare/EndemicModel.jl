@@ -169,20 +169,32 @@ function model_step(model::SEIRModel, n::Int = 1; kwargs...)
     (dS, dE, dI, dR) = derivatives(model)
     params = parameters(model)
     (M, β, γ, α, μ) = params
+    initial_date = get(default_kwargs(model), :initial_date, today()) + Day(n)
     if n > 0
         while n > 0
-            (S, E, I, R) = (S + dS, E + dE, I + dI, R + dR)
-            (dS, dE, dI, dR) = _SEIR_derivative(S, E, I, R, M, β, γ, α)
+            for i ∈ 1:10
+                (S, E, I, R) = (S + 0.1dS, E + 0.1dE, I + 0.1dI, R + 0.1dR)
+                (dS, dE, dI, dR) = _SEIR_derivative(S, E, I, R, M, β, γ, α)
+            end
             n -= 1
         end
     else
+        z = zeros(Float64, length(S))
         while n < 0
-            (S, E, I, R) = (S - dS, E - dE, I - dI, R - dR)
-            (dS, dE, dI, dR) = _SEIR_derivative(S, E, I, R, M, β, γ, α)
+            for i ∈ 1:10
+                (S, E, I, R) =
+                    max.((S - 0.1dS, E - 0.1dE, I - 0.1dI, R - 0.1dR), (z, z, z, z))
+                (dS, dE, dI, dR) = _SEIR_derivative(S, E, I, R, M, β, γ, α)
+            end
             n += 1
         end
     end
-    SEIRModel(SEIRVariables(S, E, I, R), SEIRDerivatives(dS, dE, dI, dR); kwargs...)
+    SEIRModel(
+        SEIRVariables(S, E, I, R),
+        params;
+        initial_date = initial_date,
+        kwargs...,
+    )
 end
 
 function model_step!(model::SEIRModel, n::Int = 1)
@@ -445,12 +457,7 @@ function model_plot(
     win
 end
 
-function model_plot(
-    model::SEIRModel;
-    columns = option(:plot_columns),
-    new_window::Bool = true,
-    kwargs...,
-)
+function model_validate(model::SEIRModel; columns = option(:plot_columns), kwargs...)
     modeldf, realdf = modeldata(model), realdata(model)
     title = _get_plot_title(realdf)
     ndays = nrow(realdf)
@@ -458,27 +465,42 @@ function model_plot(
         model,
         -ndays;
         maxtime = Float64(ndays),
-        initial_date = data.date[1],
+        initial_date = realdf.date[1],
     )
-    modelcolumns = [col * " (model)" for col ∈ columns]
-    model_back_df = rename(modeldata(model_back), (columns .=> modelcolumns)...)
-    comparisondf = leftjoin(realdf, model_back_df; on = :date)
+    modelcolumns = Symbol.([string(col) * "_model" for col ∈ columns])
+    model_back_df = select(modeldata(model_back), [:date, columns...])
+    model_back_df = rename!(model_back_df, (columns .=> modelcolumns)...)
 
-    rplot = model_plot(
+    realdf = select(realdf, [:date, columns...])
+    result = leftjoin(realdf, model_back_df; on = :date)
+    allcolumns = vcat([[c1, c2] for (c1, c2) ∈ zip(columns, modelcolumns)]...)
+    select(result, Symbol.([:date; allcolumns...]))
+end
+
+function model_plot(
+    model::SEIRModel;
+    columns = option(:plot_columns),
+    new_window::Bool = true,
+    kwargs...,
+)
+    modeldf, realdf = modeldata(model), realdata(model)
+    comparisondf = model_validate(model; columns = columns, kwargs...)
+
+    win = model_plot(
         comparisondf;
         title = title * " (real vs model)",
         new_window = false,
-        columns = [columns; model_columns],
+        columns = [columns; modelcolumns],
         kwargs...,
     )
-    mplot = model_plot(
-        modeldf;
-        title = title * " (model)",
-        new_window = false,
-        columns = columns,
-        kwargs...,
-    )
-    win = plot(rplot, mplot; layout = (2, 1))
+    # mplot = model_plot(
+    #     modeldf;
+    #     title = title * " (model)",
+    #     new_window = false,
+    #     columns = columns,
+    #     kwargs...,
+    # )
+    # win = plot(rplot, mplot; layout = 2)
     new_window && gui(win)
     win
 end

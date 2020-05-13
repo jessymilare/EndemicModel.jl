@@ -201,24 +201,6 @@ end
     replace(1.0 .* deaths ./ confirmed, NaN => missing)
 end
 
-@defcolumn μ_closed_est(deaths, recovered) begin
-    ind = findfirst(map(
-        p -> begin
-            (d, r) = p
-            !ismissing(d) && !ismissing(r) && d >= 1 && r >= 100
-        end,
-        zip(deaths, recovered),
-    ))
-    if deaths[end] == 0 || ind == nothing
-        missing
-    else
-        ind = max(1, length(deaths) - 14, ind)
-        dth, rec = deaths[ind:end], recovered[ind:end]
-        vals = filter(x -> !ismissing(x) && isfinite(x) && x > 0, dth ./ (dth .+ rec))
-        isempty(vals) ? missing : mean(vals)
-    end
-end
-
 @defcolumn confirmed_per_1mi(confirmed, estimated_population) begin
     1.0e6 .* confirmed ./ estimated_population
 end
@@ -339,7 +321,6 @@ function covid19_database(
         # More columns
         column_μ_closed,
         column_μ_confirmed,
-        column_μ_closed_est,
         column_confirmed_per_1mi,
         column_deaths_per_1mi,
         column_recovered_per_1mi,

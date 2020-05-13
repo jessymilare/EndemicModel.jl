@@ -107,9 +107,17 @@ function optimize_params(
     optimize(_calc_loss, lower, upper, opt_params, minbox)
 end
 
-function estimate_μ(data::AbstractDataFrame; kwargs...)
-    μ = data.μ_closed_est[1]
-    ismissing(μ) ? [NaN] : [μ]
+function estimate_μ(data::AbstractDataFrame; ndays = 14, kwargs...)
+    deaths, recovered = data.deaths, data.recovered
+    deaths[end] == 0 && return [NaN]
+    ind1 = findfirst(.!ismissing.(deaths) .& deaths .> 0)
+    ind2 = findfirst(.!ismissing.(recovered) .& recovered .>= 100)
+    (isnothing(ind1) || isnothing(ind2)) && return [NaN]
+
+    ind = max(ind1, ind2, length(deaths) - ndays)
+    dth, rec = deaths[ind:end], recovered[ind:end]
+    vals = filter(x -> !ismissing(x) && isfinite(x) && x > 0, dth ./ (dth .+ rec))
+    isempty(vals) ? [NaN] : [mean(vals)]
 end
 
 estimate_μ(model::AbstractEndemicModel; kwargs...) =
