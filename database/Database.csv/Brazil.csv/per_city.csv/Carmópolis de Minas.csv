@@ -1,0 +1,8 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-06,MG,Carmópolis de Minas,4,0,2,19549,3114501,2,2,,,,,,,,,,,,,,0.0,0.0,204.614,0.0,102.307,102.307,102.307
+2020-05-07,MG,Carmópolis de Minas,4,0,2,19549,3114501,2,2,,,,,,,,,,,,,,0.0,0.0,204.614,0.0,102.307,102.307,102.307
+2020-05-08,MG,Carmópolis de Minas,4,0,2,19549,3114501,2,2,,,,,,,,,,,,,,0.0,0.0,204.614,0.0,102.307,102.307,102.307
+2020-05-09,MG,Carmópolis de Minas,4,0,2,19549,3114501,2,2,0.0,0.0,,,,,,,,,,,,0.0,0.0,204.614,0.0,102.307,102.307,102.307
+2020-05-10,MG,Carmópolis de Minas,4,0,2,19549,3114501,2,2,,,,,,,,,,,,,,0.0,0.0,204.614,0.0,102.307,102.307,102.307
+2020-05-11,MG,Carmópolis de Minas,4,0,2,19549,3114501,2,2,,,,,,,,,,,,,,0.0,0.0,204.614,0.0,102.307,102.307,102.307
+2020-05-12,MG,Carmópolis de Minas,4,0,2,19549,3114501,2,2,,,,,,,,,,,,,,0.0,0.0,204.614,0.0,102.307,102.307,102.307

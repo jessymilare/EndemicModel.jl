@@ -1,0 +1,6 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-08,MA,Araioses,1,0,0,46904,2100907,0,1,,,,,,,,,,,,,,,0.0,21.32,0.0,0.0,0.0,21.32
+2020-05-09,MA,Araioses,1,0,0,46904,2100907,0,1,,,,,,,,,,,,,,,0.0,21.32,0.0,0.0,0.0,21.32
+2020-05-10,MA,Araioses,1,0,0,46904,2100907,0,1,,,,,,,,,,,,,,,0.0,21.32,0.0,0.0,0.0,21.32
+2020-05-11,MA,Araioses,1,0,0,46904,2100907,0,1,,,,,,,,,,,,,,,0.0,21.32,0.0,0.0,0.0,21.32
+2020-05-12,MA,Araioses,9,0,4,46904,2100907,4,5,,,,,,,,,,,,,,0.0,0.0,191.881,0.0,85.281,85.281,106.601

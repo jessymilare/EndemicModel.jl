@@ -1,0 +1,10 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-05,GO,Campos Belos,1,1,0,20086,5204904,1,0,,,,,,,,,,,,,,1.0,1.0,49.786,49.786,0.0,49.786,0.0
+2020-05-06,GO,Campos Belos,1,1,0,20086,5204904,1,0,,,,,,,,,,,,,,1.0,1.0,49.786,49.786,0.0,49.786,0.0
+2020-05-07,GO,Campos Belos,7,1,3,20086,5204904,4,3,,,,,,,,,,,,,,0.25,0.1429,348.501,49.786,149.358,199.144,149.358
+2020-05-08,GO,Campos Belos,9,1,4,20086,5204904,5,4,1.333,,0.0,,,,,,,,,,,0.2,0.1111,448.073,49.786,199.144,248.93,199.144
+2020-05-09,GO,Campos Belos,9,1,4,20086,5204904,5,4,1.333,,0.0,,,,,,,,,,,0.2,0.1111,448.073,49.786,199.144,248.93,199.144
+2020-05-10,GO,Campos Belos,9,1,4,20086,5204904,5,4,0.1667,0.0,0.0,0.0,0.1667,,,,,,,,,0.2,0.1111,448.073,49.786,199.144,248.93,199.144
+2020-05-11,GO,Campos Belos,9,1,4,20086,5204904,5,4,,,,,,,,,,,,,,0.2,0.1111,448.073,49.786,199.144,248.93,199.144
+2020-05-12,GO,Campos Belos,9,1,4,20086,5204904,5,4,,,,,,,,,,,,,,0.2,0.1111,448.073,49.786,199.144,248.93,199.144
+2020-05-13,GO,Campos Belos,8,1,3,20086,5204904,4,4,,,,,,,,,,,,,,0.25,0.125,398.287,49.786,149.358,199.144,199.144

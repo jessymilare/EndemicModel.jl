@@ -1,9 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-04,PR,Ampére,2,0,1,19152,4101002,1,1,,,,,,,,,,,,,,0.0,0.0,,104.43,0.0,52.21,52.21,52.21
-2020-05-05,PR,Ampére,2,0,1,19152,4101002,1,1,,,,,,,,,,,,,,0.0,0.0,,104.43,0.0,52.21,52.21,52.21
-2020-05-06,PR,Ampére,2,0,1,19152,4101002,1,1,,,,,,,,,,,,,,0.0,0.0,,104.43,0.0,52.21,52.21,52.21
-2020-05-07,PR,Ampére,2,0,1,19152,4101002,1,1,0.167,0.0,,,,,,,,,,,,0.0,0.0,,104.43,0.0,52.21,52.21,52.21
-2020-05-08,PR,Ampére,3,0,1,19152,4101002,1,2,0.167,0.0,,,,,,,,,,,,0.0,0.0,,156.64,0.0,52.21,52.21,104.43
-2020-05-09,PR,Ampére,3,0,1,19152,4101002,1,2,,,,,,,,,,,,,,0.0,0.0,,156.64,0.0,52.21,52.21,104.43
-2020-05-10,PR,Ampére,3,0,1,19152,4101002,1,2,,,,,,,,,,,,,,0.0,0.0,,156.64,0.0,52.21,52.21,104.43
-2020-05-11,PR,Ampére,3,1,1,19152,4101002,2,1,,,,,,,,,,,,,,0.5,0.333,,156.64,52.21,52.21,104.43,52.21

@@ -1,7 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-07,GO,Piracanjuba,1,0,0,24524,5217104,0,1,,,,,,,,,,,,,,,0.0,,40.78,0.0,0.0,0.0,40.78
-2020-05-08,GO,Piracanjuba,2,1,1,24524,5217104,2,0,,,,,,,,,,,,,,0.5,0.5,,81.55,40.78,40.78,81.55,0.0
-2020-05-09,GO,Piracanjuba,2,1,1,24524,5217104,2,0,,,,,,,,,,,,,,0.5,0.5,,81.55,40.78,40.78,81.55,0.0
-2020-05-10,GO,Piracanjuba,2,1,1,24524,5217104,2,0,,,,,,,,,,,,,,0.5,0.5,,81.55,40.78,40.78,81.55,0.0
-2020-05-11,GO,Piracanjuba,3,1,1,24524,5217104,2,1,,,,,,,,,,,,,,0.5,0.333,,122.33,40.78,40.78,81.55,40.78
-2020-05-12,GO,Piracanjuba,3,1,1,24524,5217104,2,1,,,,,,,,,,,,,,0.5,0.333,,122.33,40.78,40.78,81.55,40.78

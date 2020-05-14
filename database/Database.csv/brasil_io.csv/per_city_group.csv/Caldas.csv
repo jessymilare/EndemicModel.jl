@@ -1,5 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-09,MG,Caldas,1,0,0,14480,3110301,0,1,,,,,,,,,,,,,,,0.0,,69.06,0.0,0.0,0.0,69.06
-2020-05-10,MG,Caldas,2,0,1,14480,3110301,1,1,,,,,,,,,,,,,,0.0,0.0,,138.12,0.0,69.06,69.06,69.06
-2020-05-11,MG,Caldas,2,0,1,14480,3110301,1,1,,,,,,,,,,,,,,0.0,0.0,,138.12,0.0,69.06,69.06,69.06
-2020-05-12,MG,Caldas,3,0,1,14480,3110301,1,2,,,,,,,,,,,,,,0.0,0.0,,207.18,0.0,69.06,69.06,138.12

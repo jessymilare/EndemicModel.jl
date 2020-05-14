@@ -1,0 +1,6 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-08,MA,Santo Antônio dos Lopes,16,0,6,14673,2110302,6,10,,,,,,,,,,,,,,0.0,0.0,1090.438,0.0,408.914,408.914,681.524
+2020-05-09,MA,Santo Antônio dos Lopes,16,0,6,14673,2110302,6,10,,,,,,,,,,,,,,0.0,0.0,1090.438,0.0,408.914,408.914,681.524
+2020-05-10,MA,Santo Antônio dos Lopes,18,0,7,14673,2110302,7,11,,,,,,,,,,,,,,0.0,0.0,1226.743,0.0,477.067,477.067,749.676
+2020-05-11,MA,Santo Antônio dos Lopes,20,0,8,14673,2110302,8,12,,,,,,,,,,,,,,0.0,0.0,1363.048,0.0,545.219,545.219,817.829
+2020-05-12,MA,Santo Antônio dos Lopes,34,0,14,14673,2110302,14,20,,,,,,,,,,,,,,0.0,0.0,2317.181,0.0,954.133,954.133,1363.048

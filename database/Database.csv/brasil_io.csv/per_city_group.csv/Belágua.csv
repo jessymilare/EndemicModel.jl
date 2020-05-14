@@ -1,6 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-08,MA,Belágua,5,0,2,7469,2101731,2,3,,,,,,,,,,,,,,0.0,0.0,,669.43,0.0,267.77,267.77,401.66
-2020-05-09,MA,Belágua,6,0,2,7469,2101731,2,4,,,,,,,,,,,,,,0.0,0.0,,803.32,0.0,267.77,267.77,535.55
-2020-05-10,MA,Belágua,5,0,2,7469,2101731,2,3,,,,,,,,,,,,,,0.0,0.0,,669.43,0.0,267.77,267.77,401.66
-2020-05-11,MA,Belágua,8,0,3,7469,2101731,3,5,,,,,,,,,,,,,,0.0,0.0,,1071.09,0.0,401.66,401.66,669.43
-2020-05-12,MA,Belágua,9,0,4,7469,2101731,4,5,,,,,,,,,,,,,,0.0,0.0,,1204.98,0.0,535.55,535.55,669.43

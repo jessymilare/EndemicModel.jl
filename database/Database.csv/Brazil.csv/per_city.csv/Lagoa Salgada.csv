@@ -1,0 +1,13 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-04-28,RN,Lagoa Salgada,1,0,0,8327,2406601,0,1,,,,,,,,,,,,,,,0.0,120.091,0.0,0.0,0.0,120.091
+2020-04-29,RN,Lagoa Salgada,1,0,0,8327,2406601,0,1,,,,,,,,,,,,,,,0.0,120.091,0.0,0.0,0.0,120.091
+2020-04-30,RN,Lagoa Salgada,2,0,1,8327,2406601,1,1,,,,,,,,,,,,,,0.0,0.0,240.183,0.0,120.091,120.091,120.091
+2020-05-01,RN,Lagoa Salgada,1,0,0,8327,2406601,0,1,0.0,,,,,,,,,,,,,,0.0,120.091,0.0,0.0,0.0,120.091
+2020-05-02,RN,Lagoa Salgada,1,0,0,8327,2406601,0,1,0.0,,,,,,,,,,,,,,0.0,120.091,0.0,0.0,0.0,120.091
+2020-05-03,RN,Lagoa Salgada,1,0,0,8327,2406601,0,1,-0.16667,-0.16667,,,,,,,,,,,,,0.0,120.091,0.0,0.0,0.0,120.091
+2020-05-04,RN,Lagoa Salgada,1,0,0,8327,2406601,0,1,0.0,,,,,,,,,,,,,,0.0,120.091,0.0,0.0,0.0,120.091
+2020-05-05,RN,Lagoa Salgada,1,0,0,8327,2406601,0,1,0.0,,,,,,,,,,,,,,0.0,120.091,0.0,0.0,0.0,120.091
+2020-05-06,RN,Lagoa Salgada,1,0,0,8327,2406601,0,1,,,,,,,,,,,,,,,0.0,120.091,0.0,0.0,0.0,120.091
+2020-05-07,RN,Lagoa Salgada,1,0,0,8327,2406601,0,1,,,,,,,,,,,,,,,0.0,120.091,0.0,0.0,0.0,120.091
+2020-05-08,RN,Lagoa Salgada,1,0,0,8327,2406601,0,1,,,,,,,,,,,,,,,0.0,120.091,0.0,0.0,0.0,120.091
+2020-05-11,RN,Lagoa Salgada,2,0,1,8327,2406601,1,1,,,,,,,,,,,,,,0.0,0.0,240.183,0.0,120.091,120.091,120.091

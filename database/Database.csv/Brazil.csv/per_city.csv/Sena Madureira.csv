@@ -1,0 +1,11 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-04,AC,Sena Madureira,2,0,1,46306,1200500,1,1,,,,,,,,,,,,,,0.0,0.0,43.191,0.0,21.595,21.595,21.595
+2020-05-05,AC,Sena Madureira,2,0,1,46306,1200500,1,1,,,,,,,,,,,,,,0.0,0.0,43.191,0.0,21.595,21.595,21.595
+2020-05-06,AC,Sena Madureira,2,0,1,46306,1200500,1,1,,,,,,,,,,,,,,0.0,0.0,43.191,0.0,21.595,21.595,21.595
+2020-05-07,AC,Sena Madureira,2,0,1,46306,1200500,1,1,0.5,0.1667,,,,,,,,,,,,0.0,0.0,43.191,0.0,21.595,21.595,21.595
+2020-05-08,AC,Sena Madureira,2,0,1,46306,1200500,1,1,1.5,0.5,,,,,,,,,,,,0.0,0.0,43.191,0.0,21.595,21.595,21.595
+2020-05-09,AC,Sena Madureira,5,0,2,46306,1200500,2,3,2.5,1.0,,,,,,,,,,,,0.0,0.0,107.977,0.0,43.191,43.191,64.786
+2020-05-10,AC,Sena Madureira,5,0,2,46306,1200500,2,3,2.5,1.0,,,,,,,,,,,,0.0,0.0,107.977,0.0,43.191,43.191,64.786
+2020-05-11,AC,Sena Madureira,11,0,4,46306,1200500,4,7,,,,,,,,,,,,,,0.0,0.0,237.55,0.0,86.382,86.382,151.168
+2020-05-12,AC,Sena Madureira,17,0,7,46306,1200500,7,10,,,,,,,,,,,,,,0.0,0.0,367.123,0.0,151.168,151.168,215.955
+2020-05-13,AC,Sena Madureira,17,0,7,46306,1200500,7,10,,,,,,,,,,,,,,0.0,0.0,367.123,0.0,151.168,151.168,215.955

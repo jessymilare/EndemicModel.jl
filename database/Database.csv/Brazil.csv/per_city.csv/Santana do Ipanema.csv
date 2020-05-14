@@ -1,0 +1,13 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-01,AL,Santana do Ipanema,1,0,0,48131,2708006,0,1,,,,,,,,,,,,,,,0.0,20.777,0.0,0.0,0.0,20.777
+2020-05-02,AL,Santana do Ipanema,1,0,0,48131,2708006,0,1,,,,,,,,,,,,,,,0.0,20.777,0.0,0.0,0.0,20.777
+2020-05-03,AL,Santana do Ipanema,1,0,0,48131,2708006,0,1,,,,,,,,,,,,,,,0.0,20.777,0.0,0.0,0.0,20.777
+2020-05-04,AL,Santana do Ipanema,1,0,0,48131,2708006,0,1,1.167,,,,,,,,,,,,,,0.0,20.777,0.0,0.0,0.0,20.777
+2020-05-05,AL,Santana do Ipanema,2,0,1,48131,2708006,1,1,1.333,,,,,,,,,,,,,0.0,0.0,41.553,0.0,20.777,20.777,20.777
+2020-05-06,AL,Santana do Ipanema,2,0,1,48131,2708006,1,1,1.333,,,,,,,,,,,,,0.0,0.0,41.553,0.0,20.777,20.777,20.777
+2020-05-07,AL,Santana do Ipanema,8,0,3,48131,2708006,3,5,1.5,,,,,,,,,,,,,0.0,0.0,166.213,0.0,62.33,62.33,103.883
+2020-05-08,AL,Santana do Ipanema,9,0,4,48131,2708006,4,5,1.833,0.6667,,,,,,,,,,,,0.0,0.0,186.99,0.0,83.107,83.107,103.883
+2020-05-09,AL,Santana do Ipanema,9,0,4,48131,2708006,4,5,2.667,1.0,,,,,,,,,,,,0.0,0.0,186.99,0.0,83.107,83.107,103.883
+2020-05-10,AL,Santana do Ipanema,10,0,4,48131,2708006,4,6,,,,,,,,,,,,,,0.0,0.0,207.766,0.0,83.107,83.107,124.66
+2020-05-11,AL,Santana do Ipanema,13,1,5,48131,2708006,6,7,,,,,,,,,,,,,,0.1667,0.07692,270.096,20.777,103.883,124.66,145.436
+2020-05-12,AL,Santana do Ipanema,18,2,7,48131,2708006,9,9,,,,,,,,,,,,,,0.2222,0.1111,373.979,41.553,145.436,186.99,186.99

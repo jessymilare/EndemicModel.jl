@@ -1,9 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-05,BA,Madre De Deus,1,0,0,21093,2919926,0,1,,,,,,,,,,,,,,,0.0,,47.41,0.0,0.0,0.0,47.41
-2020-05-06,BA,Madre De Deus,1,0,0,21093,2919926,0,1,,,,,,,,,,,,,,,0.0,,47.41,0.0,0.0,0.0,47.41
-2020-05-07,BA,Madre De Deus,1,0,0,21093,2919926,0,1,,,,,,,,,,,,,,,0.0,,47.41,0.0,0.0,0.0,47.41
-2020-05-08,BA,Madre De Deus,1,0,0,21093,2919926,0,1,0.0,,,,,,,,,,,,,,0.0,,47.41,0.0,0.0,0.0,47.41
-2020-05-09,BA,Madre De Deus,1,0,0,21093,2919926,0,1,0.333,,,,,,,,,,,,,,0.0,,47.41,0.0,0.0,0.0,47.41
-2020-05-10,BA,Madre De Deus,1,0,0,21093,2919926,0,1,,,,,,,,,,,,,,,0.0,,47.41,0.0,0.0,0.0,47.41
-2020-05-11,BA,Madre De Deus,1,0,0,21093,2919926,0,1,,,,,,,,,,,,,,,0.0,,47.41,0.0,0.0,0.0,47.41
-2020-05-12,BA,Madre De Deus,3,0,1,21093,2919926,1,2,,,,,,,,,,,,,,0.0,0.0,,142.23,0.0,47.41,47.41,94.82

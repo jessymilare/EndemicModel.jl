@@ -1,0 +1,15 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-04-30,MA,Presidente Médici,1,0,0,7085,2109239,0,1,,,,,,,,,,,,,,,0.0,141.143,0.0,0.0,0.0,141.143
+2020-05-01,MA,Presidente Médici,1,0,0,7085,2109239,0,1,,,,,,,,,,,,,,,0.0,141.143,0.0,0.0,0.0,141.143
+2020-05-02,MA,Presidente Médici,1,0,0,7085,2109239,0,1,,,,,,,,,,,,,,,0.0,141.143,0.0,0.0,0.0,141.143
+2020-05-03,MA,Presidente Médici,1,0,0,7085,2109239,0,1,0.0,,,,,,,,,,,,,,0.0,141.143,0.0,0.0,0.0,141.143
+2020-05-04,MA,Presidente Médici,1,0,0,7085,2109239,0,1,0.0,,,,,,,,,,,,,,0.0,141.143,0.0,0.0,0.0,141.143
+2020-05-05,MA,Presidente Médici,1,0,0,7085,2109239,0,1,0.0,,,,,,,,,,,,,,0.0,141.143,0.0,0.0,0.0,141.143
+2020-05-06,MA,Presidente Médici,1,0,0,7085,2109239,0,1,0.0,,,,,,,,,,,,,,0.0,141.143,0.0,0.0,0.0,141.143
+2020-05-07,MA,Presidente Médici,1,0,0,7085,2109239,0,1,0.0,,,,,,,,,,,,,,0.0,141.143,0.0,0.0,0.0,141.143
+2020-05-08,MA,Presidente Médici,1,0,0,7085,2109239,0,1,0.1667,,,,,,,,,,,,,,0.0,141.143,0.0,0.0,0.0,141.143
+2020-05-09,MA,Presidente Médici,1,0,0,7085,2109239,0,1,0.1667,,,,,,,,,,,,,,0.0,141.143,0.0,0.0,0.0,141.143
+2020-05-10,MA,Presidente Médici,1,0,0,7085,2109239,0,1,,,,,,,,,,,,,,,0.0,141.143,0.0,0.0,0.0,141.143
+2020-05-11,MA,Presidente Médici,2,0,1,7085,2109239,1,1,,,,,,,,,,,,,,0.0,0.0,282.287,0.0,141.143,141.143,141.143
+2020-05-12,MA,Presidente Médici,2,0,1,7085,2109239,1,1,,,,,,,,,,,,,,0.0,0.0,282.287,0.0,141.143,141.143,141.143
+2020-05-12,RO,Presidente Médici,1,0,0,19176,1100254,0,1,,,,,,,,,,,,,,,0.0,52.149,0.0,0.0,0.0,52.149

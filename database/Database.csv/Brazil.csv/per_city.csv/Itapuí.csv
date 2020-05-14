@@ -1,0 +1,9 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-06,SP,Itapuí,1,0,0,14132,3522901,0,1,,,,,,,,,,,,,,,0.0,70.761,0.0,0.0,0.0,70.761
+2020-05-07,SP,Itapuí,3,0,1,14132,3522901,1,2,,,,,,,,,,,,,,0.0,0.0,212.284,0.0,70.761,70.761,141.523
+2020-05-08,SP,Itapuí,4,0,2,14132,3522901,2,2,,,,,,,,,,,,,,0.0,0.0,283.046,0.0,141.523,141.523,141.523
+2020-05-09,SP,Itapuí,3,0,1,14132,3522901,1,2,0.5,,,,,,,,,,,,,0.0,0.0,212.284,0.0,70.761,70.761,141.523
+2020-05-10,SP,Itapuí,3,0,1,14132,3522901,1,2,0.0,0.0,,,,,,,,,,,,0.0,0.0,212.284,0.0,70.761,70.761,141.523
+2020-05-11,SP,Itapuí,3,0,1,14132,3522901,1,2,,,,,,,,,,,,,,0.0,0.0,212.284,0.0,70.761,70.761,141.523
+2020-05-12,SP,Itapuí,4,0,2,14132,3522901,2,2,,,,,,,,,,,,,,0.0,0.0,283.046,0.0,141.523,141.523,141.523
+2020-05-13,SP,Itapuí,3,0,1,14132,3522901,1,2,,,,,,,,,,,,,,0.0,0.0,212.284,0.0,70.761,70.761,141.523

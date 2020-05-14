@@ -1,0 +1,9 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-05,MS,Guia Lopes da Laguna,1,0,0,9994,5004106,0,1,,,,,,,,,,,,,,,0.0,100.06,0.0,0.0,0.0,100.06
+2020-05-06,MS,Guia Lopes da Laguna,1,0,0,9994,5004106,0,1,,,,,,,,,,,,,,,0.0,100.06,0.0,0.0,0.0,100.06
+2020-05-07,MS,Guia Lopes da Laguna,5,0,2,9994,5004106,2,3,,,,,,,,,,,,,,0.0,0.0,500.3,0.0,200.12,200.12,300.18
+2020-05-08,MS,Guia Lopes da Laguna,12,0,5,9994,5004106,5,7,5.5,,,,,,,,,,,,,0.0,0.0,1200.72,0.0,500.3,500.3,700.42
+2020-05-09,MS,Guia Lopes da Laguna,20,0,8,9994,5004106,8,12,6.333,,,,,,,,,,,,,0.0,0.0,2001.201,0.0,800.48,800.48,1200.72
+2020-05-10,MS,Guia Lopes da Laguna,26,0,10,9994,5004106,10,16,,,,,,,,,,,,,,0.0,0.0,2601.561,0.0,1000.6,1000.6,1600.961
+2020-05-11,MS,Guia Lopes da Laguna,34,0,14,9994,5004106,14,20,,,,,,,,,,,,,,0.0,0.0,3402.041,0.0,1400.841,1400.841,2001.201
+2020-05-12,MS,Guia Lopes da Laguna,39,0,16,9994,5004106,16,23,,,,,,,,,,,,,,0.0,0.0,3902.341,0.0,1600.961,1600.961,2301.381

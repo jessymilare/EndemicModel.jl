@@ -1,0 +1,9 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-05,AP,Cutias,1,0,0,6043,1600212,0,1,,,,,,,,,,,,,,,0.0,165.481,0.0,0.0,0.0,165.481
+2020-05-06,AP,Cutias,10,0,4,6043,1600212,4,6,,,,,,,,,,,,,,0.0,0.0,1654.807,0.0,661.923,661.923,992.884
+2020-05-07,AP,Cutias,10,0,4,6043,1600212,4,6,,,,,,,,,,,,,,0.0,0.0,1654.807,0.0,661.923,661.923,992.884
+2020-05-08,AP,Cutias,11,0,4,6043,1600212,4,7,4.0,,,,,,,,,,,,,0.0,0.0,1820.288,0.0,661.923,661.923,1158.365
+2020-05-09,AP,Cutias,13,0,5,6043,1600212,5,8,3.333,1.333,,,,,,,,,,,,0.0,0.0,2151.249,0.0,827.404,827.404,1323.846
+2020-05-10,AP,Cutias,21,0,8,6043,1600212,8,13,,,,,,,,,,,,,,0.0,0.0,3475.095,0.0,1323.846,1323.846,2151.249
+2020-05-11,AP,Cutias,25,0,10,6043,1600212,10,15,,,,,,,,,,,,,,0.0,0.0,4137.018,0.0,1654.807,1654.807,2482.211
+2020-05-12,AP,Cutias,30,0,12,6043,1600212,12,18,,,,,,,,,,,,,,0.0,0.0,4964.422,0.0,1985.769,1985.769,2978.653

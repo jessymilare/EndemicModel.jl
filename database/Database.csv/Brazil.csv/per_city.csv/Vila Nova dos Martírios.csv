@@ -1,0 +1,4 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-10,MA,Vila Nova dos Martírios,3,0,1,13526,2112852,1,2,,,,,,,,,,,,,,0.0,0.0,221.795,0.0,73.932,73.932,147.863
+2020-05-11,MA,Vila Nova dos Martírios,3,0,1,13526,2112852,1,2,,,,,,,,,,,,,,0.0,0.0,221.795,0.0,73.932,73.932,147.863
+2020-05-12,MA,Vila Nova dos Martírios,4,0,2,13526,2112852,2,2,,,,,,,,,,,,,,0.0,0.0,295.727,0.0,147.863,147.863,147.863

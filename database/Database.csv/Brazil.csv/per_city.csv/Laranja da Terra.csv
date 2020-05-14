@@ -1,0 +1,16 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-04-28,ES,Laranja da Terra,0,0,0,11056,3203163,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-04-29,ES,Laranja da Terra,0,0,0,11056,3203163,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-04-30,ES,Laranja da Terra,0,0,0,11056,3203163,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-01,ES,Laranja da Terra,0,0,0,11056,3203163,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-02,ES,Laranja da Terra,0,0,0,11056,3203163,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-03,ES,Laranja da Terra,0,0,0,11056,3203163,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-04,ES,Laranja da Terra,0,0,0,11056,3203163,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-05,ES,Laranja da Terra,0,0,0,11056,3203163,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-06,ES,Laranja da Terra,0,0,0,11056,3203163,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-07,ES,Laranja da Terra,1,0,0,11056,3203163,0,1,,,,,,,,,,,,,,,0.0,90.449,0.0,0.0,0.0,90.449
+2020-05-08,ES,Laranja da Terra,1,0,0,11056,3203163,0,1,,,,,,,,,,,,,,,0.0,90.449,0.0,0.0,0.0,90.449
+2020-05-09,ES,Laranja da Terra,1,0,0,11056,3203163,0,1,,,,,,,,,,,,,,,0.0,90.449,0.0,0.0,0.0,90.449
+2020-05-10,ES,Laranja da Terra,1,0,0,11056,3203163,0,1,,,,,,,,,,,,,,,0.0,90.449,0.0,0.0,0.0,90.449
+2020-05-11,ES,Laranja da Terra,2,0,1,11056,3203163,1,1,,,,,,,,,,,,,,0.0,0.0,180.897,0.0,90.449,90.449,90.449
+2020-05-12,ES,Laranja da Terra,2,0,1,11056,3203163,1,1,,,,,,,,,,,,,,0.0,0.0,180.897,0.0,90.449,90.449,90.449

@@ -1,0 +1,11 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-03,BA,Retirolândia,1,0,0,14540,2926103,0,1,,,,,,,,,,,,,,,0.0,68.776,0.0,0.0,0.0,68.776
+2020-05-04,BA,Retirolândia,1,0,0,14540,2926103,0,1,,,,,,,,,,,,,,,0.0,68.776,0.0,0.0,0.0,68.776
+2020-05-05,BA,Retirolândia,1,0,0,14540,2926103,0,1,,,,,,,,,,,,,,,0.0,68.776,0.0,0.0,0.0,68.776
+2020-05-06,BA,Retirolândia,1,0,0,14540,2926103,0,1,0.3333,,,,,,,,,,,,,,0.0,68.776,0.0,0.0,0.0,68.776
+2020-05-07,BA,Retirolândia,3,0,1,14540,2926103,1,2,0.3333,,,,,,,,,,,,,0.0,0.0,206.327,0.0,68.776,68.776,137.552
+2020-05-08,BA,Retirolândia,3,0,1,14540,2926103,1,2,0.3333,,,,,,,,,,,,,0.0,0.0,206.327,0.0,68.776,68.776,137.552
+2020-05-09,BA,Retirolândia,3,0,1,14540,2926103,1,2,0.6667,,,,,,,,,,,,,0.0,0.0,206.327,0.0,68.776,68.776,137.552
+2020-05-10,BA,Retirolândia,3,0,1,14540,2926103,1,2,,,,,,,,,,,,,,0.0,0.0,206.327,0.0,68.776,68.776,137.552
+2020-05-11,BA,Retirolândia,3,0,1,14540,2926103,1,2,,,,,,,,,,,,,,0.0,0.0,206.327,0.0,68.776,68.776,137.552
+2020-05-12,BA,Retirolândia,5,0,2,14540,2926103,2,3,,,,,,,,,,,,,,0.0,0.0,343.879,0.0,137.552,137.552,206.327

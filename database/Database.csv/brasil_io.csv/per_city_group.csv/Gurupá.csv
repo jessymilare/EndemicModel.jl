@@ -1,5 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-09,PA,Gurupá,2,0,1,33376,1503101,1,1,,,,,,,,,,,,,,0.0,0.0,,59.92,0.0,29.96,29.96,29.96
-2020-05-10,PA,Gurupá,5,0,2,33376,1503101,2,3,,,,,,,,,,,,,,0.0,0.0,,149.81,0.0,59.92,59.92,89.88
-2020-05-11,PA,Gurupá,5,0,2,33376,1503101,2,3,,,,,,,,,,,,,,0.0,0.0,,149.81,0.0,59.92,59.92,89.88
-2020-05-12,PA,Gurupá,5,1,2,33376,1503101,3,2,,,,,,,,,,,,,,0.333,0.2,,149.81,29.96,59.92,89.88,59.92

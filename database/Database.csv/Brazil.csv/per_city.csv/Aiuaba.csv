@@ -1,0 +1,10 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-04,CE,Aiuaba,2,0,1,17573,2300408,1,1,,,,,,,,,,,,,,0.0,0.0,113.811,0.0,56.905,56.905,56.905
+2020-05-05,CE,Aiuaba,3,0,1,17573,2300408,1,2,,,,,,,,,,,,,,0.0,0.0,170.716,0.0,56.905,56.905,113.811
+2020-05-06,CE,Aiuaba,2,0,1,17573,2300408,1,1,,,,,,,,,,,,,,0.0,0.0,113.811,0.0,56.905,56.905,56.905
+2020-05-07,CE,Aiuaba,1,0,0,17573,2300408,0,1,-0.16667,-0.16667,,,,,,,,,,,,,0.0,56.905,0.0,0.0,0.0,56.905
+2020-05-08,CE,Aiuaba,1,0,0,17573,2300408,0,1,-0.16667,0.0,,,,,,,,,,,,,0.0,56.905,0.0,0.0,0.0,56.905
+2020-05-09,CE,Aiuaba,1,0,0,17573,2300408,0,1,0.1667,0.0,,,,,,,,,,,,,0.0,56.905,0.0,0.0,0.0,56.905
+2020-05-10,CE,Aiuaba,1,0,0,17573,2300408,0,1,,,,,,,,,,,,,,,0.0,56.905,0.0,0.0,0.0,56.905
+2020-05-11,CE,Aiuaba,2,0,1,17573,2300408,1,1,,,,,,,,,,,,,,0.0,0.0,113.811,0.0,56.905,56.905,56.905
+2020-05-12,CE,Aiuaba,3,0,1,17573,2300408,1,2,,,,,,,,,,,,,,0.0,0.0,170.716,0.0,56.905,56.905,113.811

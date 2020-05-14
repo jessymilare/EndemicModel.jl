@@ -1,0 +1,11 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-03,PE,Araripina,1,0,0,85262,2601102,0,1,,,,,,,,,,,,,,,0.0,11.729,0.0,0.0,0.0,11.729
+2020-05-04,PE,Araripina,1,0,0,85262,2601102,0,1,,,,,,,,,,,,,,,0.0,11.729,0.0,0.0,0.0,11.729
+2020-05-05,PE,Araripina,1,0,0,85262,2601102,0,1,,,,,,,,,,,,,,,0.0,11.729,0.0,0.0,0.0,11.729
+2020-05-06,PE,Araripina,1,0,0,85262,2601102,0,1,1.0,,,,,,,,,,,,,,0.0,11.729,0.0,0.0,0.0,11.729
+2020-05-07,PE,Araripina,1,0,0,85262,2601102,0,1,1.167,,,,,,,,,,,,,,0.0,11.729,0.0,0.0,0.0,11.729
+2020-05-08,PE,Araripina,1,0,0,85262,2601102,0,1,1.833,,,,,,,,,,,,,,0.0,11.729,0.0,0.0,0.0,11.729
+2020-05-09,PE,Araripina,7,0,3,85262,2601102,3,4,1.0,,,,,,,,,,,,,0.0,0.0,82.1,0.0,35.186,35.186,46.914
+2020-05-10,PE,Araripina,8,0,3,85262,2601102,3,5,,,,,,,,,,,,,,0.0,0.0,93.828,0.0,35.186,35.186,58.643
+2020-05-11,PE,Araripina,12,0,5,85262,2601102,5,7,,,,,,,,,,,,,,0.0,0.0,140.743,0.0,58.643,58.643,82.1
+2020-05-12,PE,Araripina,7,0,3,85262,2601102,3,4,,,,,,,,,,,,,,0.0,0.0,82.1,0.0,35.186,35.186,46.914

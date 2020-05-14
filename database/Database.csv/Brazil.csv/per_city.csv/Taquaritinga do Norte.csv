@@ -1,0 +1,15 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-04-29,PE,Taquaritinga do Norte,1,0,0,29063,2615003,0,1,,,,,,,,,,,,,,,0.0,34.408,0.0,0.0,0.0,34.408
+2020-04-30,PE,Taquaritinga do Norte,1,0,0,29063,2615003,0,1,,,,,,,,,,,,,,,0.0,34.408,0.0,0.0,0.0,34.408
+2020-05-01,PE,Taquaritinga do Norte,1,0,0,29063,2615003,0,1,,,,,,,,,,,,,,,0.0,34.408,0.0,0.0,0.0,34.408
+2020-05-02,PE,Taquaritinga do Norte,1,0,0,29063,2615003,0,1,0.0,,,,,,,,,,,,,,0.0,34.408,0.0,0.0,0.0,34.408
+2020-05-03,PE,Taquaritinga do Norte,1,0,0,29063,2615003,0,1,0.0,,,,,,,,,,,,,,0.0,34.408,0.0,0.0,0.0,34.408
+2020-05-04,PE,Taquaritinga do Norte,1,0,0,29063,2615003,0,1,0.0,,,,,,,,,,,,,,0.0,34.408,0.0,0.0,0.0,34.408
+2020-05-05,PE,Taquaritinga do Norte,1,0,0,29063,2615003,0,1,0.0,,,,,,,,,,,,,,0.0,34.408,0.0,0.0,0.0,34.408
+2020-05-06,PE,Taquaritinga do Norte,1,0,0,29063,2615003,0,1,0.0,,,,,,,,,,,,,,0.0,34.408,0.0,0.0,0.0,34.408
+2020-05-07,PE,Taquaritinga do Norte,1,1,0,29063,2615003,1,0,0.1667,,,,,,,,,,,,,1.0,1.0,34.408,34.408,0.0,34.408,0.0
+2020-05-08,PE,Taquaritinga do Norte,1,1,0,29063,2615003,1,0,0.1667,,,,,,,,,,,,,1.0,1.0,34.408,34.408,0.0,34.408,0.0
+2020-05-09,PE,Taquaritinga do Norte,1,1,0,29063,2615003,1,0,0.0,,,,,,,,,,,,,1.0,1.0,34.408,34.408,0.0,34.408,0.0
+2020-05-10,PE,Taquaritinga do Norte,2,2,1,29063,2615003,3,-1,,,,,,,,,,,,,,0.6667,1.0,68.816,68.816,34.408,103.224,-34.40801
+2020-05-11,PE,Taquaritinga do Norte,2,2,1,29063,2615003,3,-1,,,,,,,,,,,,,,0.6667,1.0,68.816,68.816,34.408,103.224,-34.40801
+2020-05-12,PE,Taquaritinga do Norte,1,1,0,29063,2615003,1,0,,,,,,,,,,,,,,1.0,1.0,34.408,34.408,0.0,34.408,0.0

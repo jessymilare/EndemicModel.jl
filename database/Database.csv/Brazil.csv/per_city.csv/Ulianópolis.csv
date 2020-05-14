@@ -1,0 +1,9 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-05,PA,Ulianópolis,2,0,1,59802,1508126,1,1,,,,,,,,,,,,,,0.0,0.0,33.444,0.0,16.722,16.722,16.722
+2020-05-06,PA,Ulianópolis,2,0,1,59802,1508126,1,1,,,,,,,,,,,,,,0.0,0.0,33.444,0.0,16.722,16.722,16.722
+2020-05-07,PA,Ulianópolis,3,0,1,59802,1508126,1,2,,,,,,,,,,,,,,0.0,0.0,50.166,0.0,16.722,16.722,33.444
+2020-05-08,PA,Ulianópolis,5,0,2,59802,1508126,2,3,3.333,1.333,,,,,,,,,,,,0.0,0.0,83.609,0.0,33.444,33.444,50.166
+2020-05-09,PA,Ulianópolis,11,0,4,59802,1508126,4,7,3.5,1.333,,,,,,,,,,,,0.0,0.0,183.94,0.0,66.887,66.887,117.053
+2020-05-10,PA,Ulianópolis,13,0,5,59802,1508126,5,8,,,,,,,,,,,,,,0.0,0.0,217.384,0.0,83.609,83.609,133.775
+2020-05-11,PA,Ulianópolis,22,0,9,59802,1508126,9,13,,,,,,,,,,,,,,0.0,0.0,367.881,0.0,150.497,150.497,217.384
+2020-05-12,PA,Ulianópolis,23,0,9,59802,1508126,9,14,,,,,,,,,,,,,,0.0,0.0,384.603,0.0,150.497,150.497,234.106

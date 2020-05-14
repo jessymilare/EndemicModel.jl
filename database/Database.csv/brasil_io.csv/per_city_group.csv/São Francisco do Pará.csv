@@ -1,4 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-10,PA,São Francisco Do Pará,2,1,1,15882,1507409,2,0,,,,,,,,,,,,,,0.5,0.5,,125.93,62.96,62.96,125.93,0.0
-2020-05-11,PA,São Francisco Do Pará,2,1,1,15882,1507409,2,0,,,,,,,,,,,,,,0.5,0.5,,125.93,62.96,62.96,125.93,0.0
-2020-05-12,PA,São Francisco Do Pará,2,1,1,15882,1507409,2,0,,,,,,,,,,,,,,0.5,0.5,,125.93,62.96,62.96,125.93,0.0

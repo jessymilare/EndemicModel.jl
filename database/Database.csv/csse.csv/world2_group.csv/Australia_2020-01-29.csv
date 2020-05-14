@@ -1,9 +1,0 @@
-Country,State,Latitude,Longitude,Date,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est
-Australia,Australian Capital Territory,-35.4735,149.01,2020-01-29,0,0,0,0,0,,,,,,,,,,,,,,,,
-Australia,New South Wales,-33.8688,151.21,2020-01-29,4,0,0,0,4,,,,,,,,,,,,,,,0.0,
-Australia,Northern Territory,-12.4634,130.85,2020-01-29,0,0,0,0,0,,,,,,,,,,,,,,,,
-Australia,Queensland,-28.0167,153.4,2020-01-29,1,0,0,0,1,,,,,,,,,,,,,,,0.0,
-Australia,South Australia,-34.9285,138.6,2020-01-29,0,0,0,0,0,,,,,,,,,,,,,,,,
-Australia,Tasmania,-41.4545,145.97,2020-01-29,0,0,0,0,0,,,,,,,,,,,,,,,,
-Australia,Victoria,-37.8136,144.96,2020-01-29,1,0,0,0,1,,,,,,,,,,,,,,,0.0,
-Australia,Western Australia,-31.9505,115.86,2020-01-29,0,0,0,0,0,,,,,,,,,,,,,,,,

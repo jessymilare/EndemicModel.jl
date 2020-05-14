@@ -1,0 +1,9 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-05,MS,Brasilândia,1,0,0,11991,5002308,0,1,,,,,,,,,,,,,,,0.0,83.396,0.0,0.0,0.0,83.396
+2020-05-06,MS,Brasilândia,2,0,1,11991,5002308,1,1,,,,,,,,,,,,,,0.0,0.0,166.792,0.0,83.396,83.396,83.396
+2020-05-07,MS,Brasilândia,7,0,3,11991,5002308,3,4,,,,,,,,,,,,,,0.0,0.0,583.771,0.0,250.188,250.188,333.584
+2020-05-08,MS,Brasilândia,7,0,3,11991,5002308,3,4,2.0,,,,,,,,,,,,,0.0,0.0,583.771,0.0,250.188,250.188,333.584
+2020-05-09,MS,Brasilândia,11,0,4,11991,5002308,4,7,1.833,0.6667,,,,,,,,,,,,0.0,0.0,917.355,0.0,333.584,333.584,583.771
+2020-05-10,MS,Brasilândia,12,0,5,11991,5002308,5,7,,,,,,,,,,,,,,0.0,0.0,1000.751,0.0,416.979,416.979,583.771
+2020-05-11,MS,Brasilândia,13,0,5,11991,5002308,5,8,,,,,,,,,,,,,,0.0,0.0,1084.146,0.0,416.979,416.979,667.167
+2020-05-12,MS,Brasilândia,13,0,5,11991,5002308,5,8,,,,,,,,,,,,,,0.0,0.0,1084.146,0.0,416.979,416.979,667.167

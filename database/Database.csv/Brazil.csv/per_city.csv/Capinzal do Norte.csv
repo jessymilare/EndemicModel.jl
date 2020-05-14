@@ -1,0 +1,6 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-08,MA,Capinzal do Norte,2,0,1,11043,2102754,1,1,,,,,,,,,,,,,,0.0,0.0,181.11,0.0,90.555,90.555,90.555
+2020-05-09,MA,Capinzal do Norte,2,0,1,11043,2102754,1,1,,,,,,,,,,,,,,0.0,0.0,181.11,0.0,90.555,90.555,90.555
+2020-05-10,MA,Capinzal do Norte,2,0,1,11043,2102754,1,1,,,,,,,,,,,,,,0.0,0.0,181.11,0.0,90.555,90.555,90.555
+2020-05-11,MA,Capinzal do Norte,2,0,1,11043,2102754,1,1,,,,,,,,,,,,,,0.0,0.0,181.11,0.0,90.555,90.555,90.555
+2020-05-12,MA,Capinzal do Norte,3,0,1,11043,2102754,1,2,,,,,,,,,,,,,,0.0,0.0,271.665,0.0,90.555,90.555,181.11

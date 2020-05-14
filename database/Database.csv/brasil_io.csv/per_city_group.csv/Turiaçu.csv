@@ -1,8 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-06,MA,Turiaçu,10,0,4,35604,2112407,4,6,,,,,,,,,,,,,,0.0,0.0,,280.87,0.0,112.35,112.35,168.52
-2020-05-07,MA,Turiaçu,10,0,4,35604,2112407,4,6,,,,,,,,,,,,,,0.0,0.0,,280.87,0.0,112.35,112.35,168.52
-2020-05-08,MA,Turiaçu,10,0,4,35604,2112407,4,6,,,,,,,,,,,,,,0.0,0.0,,280.87,0.0,112.35,112.35,168.52
-2020-05-09,MA,Turiaçu,15,0,6,35604,2112407,6,9,0.833,0.333,,,,,,,,,,,,0.0,0.0,,421.3,0.0,168.52,168.52,252.78
-2020-05-10,MA,Turiaçu,15,0,6,35604,2112407,6,9,,,,,,,,,,,,,,0.0,0.0,,421.3,0.0,168.52,168.52,252.78
-2020-05-11,MA,Turiaçu,15,0,6,35604,2112407,6,9,,,,,,,,,,,,,,0.0,0.0,,421.3,0.0,168.52,168.52,252.78
-2020-05-12,MA,Turiaçu,15,0,6,35604,2112407,6,9,,,,,,,,,,,,,,0.0,0.0,,421.3,0.0,168.52,168.52,252.78

@@ -1,8 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-06,MA,Pedro Do Rosário,1,0,0,25144,2108256,0,1,,,,,,,,,,,,,,,0.0,,39.77,0.0,0.0,0.0,39.77
-2020-05-07,MA,Pedro Do Rosário,1,0,0,25144,2108256,0,1,,,,,,,,,,,,,,,0.0,,39.77,0.0,0.0,0.0,39.77
-2020-05-08,MA,Pedro Do Rosário,1,0,0,25144,2108256,0,1,,,,,,,,,,,,,,,0.0,,39.77,0.0,0.0,0.0,39.77
-2020-05-09,MA,Pedro Do Rosário,1,0,0,25144,2108256,0,1,0.667,,,,,,,,,,,,,,0.0,,39.77,0.0,0.0,0.0,39.77
-2020-05-10,MA,Pedro Do Rosário,4,0,2,25144,2108256,2,2,,,,,,,,,,,,,,0.0,0.0,,159.08,0.0,79.54,79.54,79.54
-2020-05-11,MA,Pedro Do Rosário,5,0,2,25144,2108256,2,3,,,,,,,,,,,,,,0.0,0.0,,198.85,0.0,79.54,79.54,119.31
-2020-05-12,MA,Pedro Do Rosário,5,0,2,25144,2108256,2,3,,,,,,,,,,,,,,0.0,0.0,,198.85,0.0,79.54,79.54,119.31

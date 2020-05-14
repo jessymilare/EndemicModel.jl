@@ -1,0 +1,7 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-04,RN,Grossos,1,0,0,10487,2404408,0,1,,,,,,,,,,,,,,,0.0,95.356,0.0,0.0,0.0,95.356
+2020-05-05,RN,Grossos,1,0,0,10487,2404408,0,1,,,,,,,,,,,,,,,0.0,95.356,0.0,0.0,0.0,95.356
+2020-05-06,RN,Grossos,2,0,1,10487,2404408,1,1,,,,,,,,,,,,,,0.0,0.0,190.712,0.0,95.356,95.356,95.356
+2020-05-07,RN,Grossos,2,0,1,10487,2404408,1,1,,,,,,,,,,,,,,0.0,0.0,190.712,0.0,95.356,95.356,95.356
+2020-05-08,RN,Grossos,3,1,1,10487,2404408,2,1,,,,,,,,,,,,,,0.5,0.3333,286.068,95.356,95.356,190.712,95.356
+2020-05-11,RN,Grossos,5,0,2,10487,2404408,2,3,,,,,,,,,,,,,,0.0,0.0,476.781,0.0,190.712,190.712,286.068

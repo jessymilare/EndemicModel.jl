@@ -1,0 +1,10 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-04,MA,Santa Luzia do Paruá,2,0,1,25507,2110039,1,1,,,,,,,,,,,,,,0.0,0.0,78.41,0.0,39.205,39.205,39.205
+2020-05-05,MA,Santa Luzia do Paruá,2,0,1,25507,2110039,1,1,,,,,,,,,,,,,,0.0,0.0,78.41,0.0,39.205,39.205,39.205
+2020-05-06,MA,Santa Luzia do Paruá,3,0,1,25507,2110039,1,2,,,,,,,,,,,,,,0.0,0.0,117.615,0.0,39.205,39.205,78.41
+2020-05-07,MA,Santa Luzia do Paruá,3,0,1,25507,2110039,1,2,0.1667,0.0,,,,,,,,,,,,0.0,0.0,117.615,0.0,39.205,39.205,78.41
+2020-05-08,MA,Santa Luzia do Paruá,3,0,1,25507,2110039,1,2,0.1667,0.0,,,,,,,,,,,,0.0,0.0,117.615,0.0,39.205,39.205,78.41
+2020-05-09,MA,Santa Luzia do Paruá,3,0,1,25507,2110039,1,2,0.5,0.1667,,,,,,,,,,,,0.0,0.0,117.615,0.0,39.205,39.205,78.41
+2020-05-10,MA,Santa Luzia do Paruá,3,0,1,25507,2110039,1,2,,,,,,,,,,,,,,0.0,0.0,117.615,0.0,39.205,39.205,78.41
+2020-05-11,MA,Santa Luzia do Paruá,3,0,1,25507,2110039,1,2,,,,,,,,,,,,,,0.0,0.0,117.615,0.0,39.205,39.205,78.41
+2020-05-12,MA,Santa Luzia do Paruá,6,0,2,25507,2110039,2,4,,,,,,,,,,,,,,0.0,0.0,235.23,0.0,78.41,78.41,156.82

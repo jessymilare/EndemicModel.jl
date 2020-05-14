@@ -1,8 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-06,SP,Santo Anastácio,1,0,0,20878,3547700,0,1,,,,,,,,,,,,,,,0.0,,47.9,0.0,0.0,0.0,47.9
-2020-05-07,SP,Santo Anastácio,2,1,1,20878,3547700,2,0,,,,,,,,,,,,,,0.5,0.5,,95.79,47.9,47.9,95.79,0.0
-2020-05-08,SP,Santo Anastácio,2,1,1,20878,3547700,2,0,,,,,,,,,,,,,,0.5,0.5,,95.79,47.9,47.9,95.79,0.0
-2020-05-09,SP,Santo Anastácio,2,1,1,20878,3547700,2,0,0.167,,,,,,,,,,,,,0.5,0.5,,95.79,47.9,47.9,95.79,0.0
-2020-05-10,SP,Santo Anastácio,2,1,1,20878,3547700,2,0,,,,,,,,,,,,,,0.5,0.5,,95.79,47.9,47.9,95.79,0.0
-2020-05-11,SP,Santo Anastácio,2,1,1,20878,3547700,2,0,,,,,,,,,,,,,,0.5,0.5,,95.79,47.9,47.9,95.79,0.0
-2020-05-12,SP,Santo Anastácio,2,1,1,20878,3547700,2,0,,,,,,,,,,,,,,0.5,0.5,,95.79,47.9,47.9,95.79,0.0

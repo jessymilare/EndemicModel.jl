@@ -1,0 +1,14 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-04-30,PR,Três Barras do Paraná,1,0,0,12160,4127858,0,1,,,,,,,,,,,,,,,0.0,82.237,0.0,0.0,0.0,82.237
+2020-05-01,PR,Três Barras do Paraná,1,0,0,12160,4127858,0,1,,,,,,,,,,,,,,,0.0,82.237,0.0,0.0,0.0,82.237
+2020-05-02,PR,Três Barras do Paraná,1,0,0,12160,4127858,0,1,,,,,,,,,,,,,,,0.0,82.237,0.0,0.0,0.0,82.237
+2020-05-03,PR,Três Barras do Paraná,1,0,0,12160,4127858,0,1,0.0,,,,,,,,,,,,,,0.0,82.237,0.0,0.0,0.0,82.237
+2020-05-04,PR,Três Barras do Paraná,1,0,0,12160,4127858,0,1,0.0,,,,,,,,,,,,,,0.0,82.237,0.0,0.0,0.0,82.237
+2020-05-05,PR,Três Barras do Paraná,1,0,0,12160,4127858,0,1,0.3333,,,,,,,,,,,,,,0.0,82.237,0.0,0.0,0.0,82.237
+2020-05-06,PR,Três Barras do Paraná,1,0,0,12160,4127858,0,1,0.3333,,,,,,,,,,,,,,0.0,82.237,0.0,0.0,0.0,82.237
+2020-05-07,PR,Três Barras do Paraná,1,0,0,12160,4127858,0,1,0.5,,,,,,,,,,,,,,0.0,82.237,0.0,0.0,0.0,82.237
+2020-05-08,PR,Três Barras do Paraná,3,0,1,12160,4127858,1,2,0.5,,,,,,,,,,,,,0.0,0.0,246.711,0.0,82.237,82.237,164.474
+2020-05-09,PR,Três Barras do Paraná,3,0,1,12160,4127858,1,2,0.6667,,,,,,,,,,,,,0.0,0.0,246.711,0.0,82.237,82.237,164.474
+2020-05-10,PR,Três Barras do Paraná,4,0,2,12160,4127858,2,2,,,,,,,,,,,,,,0.0,0.0,328.947,0.0,164.474,164.474,164.474
+2020-05-11,PR,Três Barras do Paraná,4,0,2,12160,4127858,2,2,,,,,,,,,,,,,,0.0,0.0,328.947,0.0,164.474,164.474,164.474
+2020-05-12,PR,Três Barras do Paraná,5,0,2,12160,4127858,2,3,,,,,,,,,,,,,,0.0,0.0,411.184,0.0,164.474,164.474,246.711

@@ -1,0 +1,6 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-08,AM,Apuí,5,0,2,22193,1300144,2,3,,,,,,,,,,,,,,0.0,0.0,225.296,0.0,90.119,90.119,135.178
+2020-05-09,AM,Apuí,9,0,4,22193,1300144,4,5,,,,,,,,,,,,,,0.0,0.0,405.533,0.0,180.237,180.237,225.296
+2020-05-10,AM,Apuí,12,0,5,22193,1300144,5,7,,,,,,,,,,,,,,0.0,0.0,540.711,0.0,225.296,225.296,315.415
+2020-05-11,AM,Apuí,17,0,7,22193,1300144,7,10,,,,,,,,,,,,,,0.0,0.0,766.007,0.0,315.415,315.415,450.593
+2020-05-12,AM,Apuí,17,0,7,22193,1300144,7,10,,,,,,,,,,,,,,0.0,0.0,766.007,0.0,315.415,315.415,450.593

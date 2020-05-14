@@ -1,0 +1,7 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-06,TO,Formoso do Araguaia,1,0,0,18624,1708205,0,1,,,,,,,,,,,,,,,0.0,53.694,0.0,0.0,0.0,53.694
+2020-05-07,TO,Formoso do Araguaia,1,0,0,18624,1708205,0,1,,,,,,,,,,,,,,,0.0,53.694,0.0,0.0,0.0,53.694
+2020-05-08,TO,Formoso do Araguaia,2,0,1,18624,1708205,1,1,,,,,,,,,,,,,,0.0,0.0,107.388,0.0,53.694,53.694,53.694
+2020-05-09,TO,Formoso do Araguaia,3,0,1,18624,1708205,1,2,,,,,,,,,,,,,,0.0,0.0,161.082,0.0,53.694,53.694,107.388
+2020-05-10,TO,Formoso do Araguaia,3,0,1,18624,1708205,1,2,,,,,,,,,,,,,,0.0,0.0,161.082,0.0,53.694,53.694,107.388
+2020-05-11,TO,Formoso do Araguaia,3,0,1,18624,1708205,1,2,,,,,,,,,,,,,,0.0,0.0,161.082,0.0,53.694,53.694,107.388

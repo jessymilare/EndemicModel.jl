@@ -1,8 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,μ_closed_est,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-05,RR,Amajari,2,0,1,12796,1400027,1,1,,,,,,,,,,,,,,0.0,0.0,,156.3,0.0,78.15,78.15,78.15
-2020-05-06,RR,Amajari,4,0,2,12796,1400027,2,2,,,,,,,,,,,,,,0.0,0.0,,312.6,0.0,156.3,156.3,156.3
-2020-05-07,RR,Amajari,6,0,2,12796,1400027,2,4,,,,,,,,,,,,,,0.0,0.0,,468.9,0.0,156.3,156.3,312.6
-2020-05-08,RR,Amajari,5,0,2,12796,1400027,2,3,1.0,0.333,,,,,,,,,,,,0.0,0.0,,390.75,0.0,156.3,156.3,234.45
-2020-05-09,RR,Amajari,5,0,2,12796,1400027,2,3,,,,,,,,,,,,,,0.0,0.0,,390.75,0.0,156.3,156.3,234.45
-2020-05-10,RR,Amajari,8,0,3,12796,1400027,3,5,,,,,,,,,,,,,,0.0,0.0,,625.2,0.0,234.45,234.45,390.75
-2020-05-11,RR,Amajari,8,0,3,12796,1400027,3,5,,,,,,,,,,,,,,0.0,0.0,,625.2,0.0,234.45,234.45,390.75

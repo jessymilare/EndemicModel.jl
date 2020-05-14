@@ -1,0 +1,6 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-08,MT,Vale de São Domingos,2,1,1,3158,5108352,2,0,,,,,,,,,,,,,,0.5,0.5,633.312,316.656,316.656,633.312,0.0
+2020-05-09,MT,Vale de São Domingos,2,1,1,3158,5108352,2,0,,,,,,,,,,,,,,0.5,0.5,633.312,316.656,316.656,633.312,0.0
+2020-05-10,MT,Vale de São Domingos,2,1,1,3158,5108352,2,0,,,,,,,,,,,,,,0.5,0.5,633.312,316.656,316.656,633.312,0.0
+2020-05-11,MT,Vale de São Domingos,2,1,1,3158,5108352,2,0,,,,,,,,,,,,,,0.5,0.5,633.312,316.656,316.656,633.312,0.0
+2020-05-12,MT,Vale de São Domingos,2,1,1,3158,5108352,2,0,,,,,,,,,,,,,,0.5,0.5,633.312,316.656,316.656,633.312,0.0

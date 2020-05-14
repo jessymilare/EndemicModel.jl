@@ -1,0 +1,8 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-07,SP,Tapiraí,1,0,0,7885,3553500,0,1,,,,,,,,,,,,,,,0.0,126.823,0.0,0.0,0.0,126.823
+2020-05-08,SP,Tapiraí,1,0,0,7885,3553500,0,1,,,,,,,,,,,,,,,0.0,126.823,0.0,0.0,0.0,126.823
+2020-05-09,SP,Tapiraí,3,0,1,7885,3553500,1,2,,,,,,,,,,,,,,0.0,0.0,380.469,0.0,126.823,126.823,253.646
+2020-05-10,SP,Tapiraí,3,0,1,7885,3553500,1,2,0.6667,,,,,,,,,,,,,0.0,0.0,380.469,0.0,126.823,126.823,253.646
+2020-05-11,SP,Tapiraí,3,0,1,7885,3553500,1,2,,,,,,,,,,,,,,0.0,0.0,380.469,0.0,126.823,126.823,253.646
+2020-05-12,SP,Tapiraí,5,0,2,7885,3553500,2,3,,,,,,,,,,,,,,0.0,0.0,634.115,0.0,253.646,253.646,380.469
+2020-05-13,SP,Tapiraí,5,0,2,7885,3553500,2,3,,,,,,,,,,,,,,0.0,0.0,634.115,0.0,253.646,253.646,380.469

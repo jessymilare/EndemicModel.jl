@@ -1,0 +1,7 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-07,PA,Novo Repartimento,3,0,1,76678,1505064,1,2,,,,,,,,,,,,,,0.0,0.0,39.125,0.0,13.042,13.042,26.083
+2020-05-08,PA,Novo Repartimento,4,0,2,76678,1505064,2,2,,,,,,,,,,,,,,0.0,0.0,52.166,0.0,26.083,26.083,26.083
+2020-05-09,PA,Novo Repartimento,4,0,2,76678,1505064,2,2,,,,,,,,,,,,,,0.0,0.0,52.166,0.0,26.083,26.083,26.083
+2020-05-10,PA,Novo Repartimento,4,0,2,76678,1505064,2,2,,,,,,,,,,,,,,0.0,0.0,52.166,0.0,26.083,26.083,26.083
+2020-05-11,PA,Novo Repartimento,5,0,2,76678,1505064,2,3,,,,,,,,,,,,,,0.0,0.0,65.208,0.0,26.083,26.083,39.125
+2020-05-12,PA,Novo Repartimento,5,0,2,76678,1505064,2,3,,,,,,,,,,,,,,0.0,0.0,65.208,0.0,26.083,26.083,39.125

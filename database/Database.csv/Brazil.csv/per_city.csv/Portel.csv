@@ -1,0 +1,9 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-05,PA,Portel,1,0,0,62663,1505809,0,1,,,,,,,,,,,,,,,0.0,15.958,0.0,0.0,0.0,15.958
+2020-05-06,PA,Portel,6,0,2,62663,1505809,2,4,,,,,,,,,,,,,,0.0,0.0,95.75,0.0,31.917,31.917,63.834
+2020-05-07,PA,Portel,6,0,2,62663,1505809,2,4,,,,,,,,,,,,,,0.0,0.0,95.75,0.0,31.917,31.917,63.834
+2020-05-08,PA,Portel,11,1,4,62663,1505809,5,6,2.667,,,,,,,,,,,,,0.2,0.09091,175.542,15.958,63.834,79.792,95.75
+2020-05-09,PA,Portel,12,1,5,62663,1505809,6,6,2.167,1.0,,,,,,,,,,,,0.1667,0.08333,191.501,15.958,79.792,95.75,95.75
+2020-05-10,PA,Portel,16,3,6,62663,1505809,9,7,,,,,,,,,,,,,,0.3333,0.1875,255.334,47.875,95.75,143.625,111.709
+2020-05-11,PA,Portel,17,3,7,62663,1505809,10,7,,,,,,,,,,,,,,0.3,0.1765,271.292,47.875,111.709,159.584,111.709
+2020-05-12,PA,Portel,19,3,8,62663,1505809,11,8,,,,,,,,,,,,,,0.2727,0.1579,303.209,47.875,127.667,175.542,127.667

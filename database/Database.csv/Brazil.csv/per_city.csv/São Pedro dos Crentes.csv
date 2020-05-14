@@ -1,0 +1,6 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-08,MA,São Pedro dos Crentes,1,0,0,4715,2111573,0,1,,,,,,,,,,,,,,,0.0,212.089,0.0,0.0,0.0,212.089
+2020-05-09,MA,São Pedro dos Crentes,1,0,0,4715,2111573,0,1,,,,,,,,,,,,,,,0.0,212.089,0.0,0.0,0.0,212.089
+2020-05-10,MA,São Pedro dos Crentes,1,0,0,4715,2111573,0,1,,,,,,,,,,,,,,,0.0,212.089,0.0,0.0,0.0,212.089
+2020-05-11,MA,São Pedro dos Crentes,1,0,0,4715,2111573,0,1,,,,,,,,,,,,,,,0.0,212.089,0.0,0.0,0.0,212.089
+2020-05-12,MA,São Pedro dos Crentes,1,0,0,4715,2111573,0,1,,,,,,,,,,,,,,,0.0,212.089,0.0,0.0,0.0,212.089

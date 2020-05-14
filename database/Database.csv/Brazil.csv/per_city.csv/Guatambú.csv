@@ -1,0 +1,9 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-05,SC,Guatambú,1,0,0,4751,4206652,0,1,,,,,,,,,,,,,,,0.0,210.482,0.0,0.0,0.0,210.482
+2020-05-06,SC,Guatambú,1,0,0,4751,4206652,0,1,,,,,,,,,,,,,,,0.0,210.482,0.0,0.0,0.0,210.482
+2020-05-07,SC,Guatambú,4,0,2,4751,4206652,2,2,,,,,,,,,,,,,,0.0,0.0,841.928,0.0,420.964,420.964,420.964
+2020-05-08,SC,Guatambú,4,0,2,4751,4206652,2,2,1.0,,,,,,,,,,,,,0.0,0.0,841.928,0.0,420.964,420.964,420.964
+2020-05-09,SC,Guatambú,5,0,2,4751,4206652,2,3,1.0,,,,,,,,,,,,,0.0,0.0,1052.41,0.0,420.964,420.964,631.446
+2020-05-10,SC,Guatambú,6,0,2,4751,4206652,2,4,,,,,,,,,,,,,,0.0,0.0,1262.892,0.0,420.964,420.964,841.928
+2020-05-11,SC,Guatambú,7,0,3,4751,4206652,3,4,,,,,,,,,,,,,,0.0,0.0,1473.374,0.0,631.446,631.446,841.928
+2020-05-12,SC,Guatambú,7,0,3,4751,4206652,3,4,,,,,,,,,,,,,,0.0,0.0,1473.374,0.0,631.446,631.446,841.928

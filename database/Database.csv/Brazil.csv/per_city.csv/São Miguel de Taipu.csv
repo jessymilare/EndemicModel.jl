@@ -1,0 +1,7 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-07,PB,São Miguel de Taipu,1,0,0,7442,2515005,0,1,,,,,,,,,,,,,,,0.0,134.372,0.0,0.0,0.0,134.372
+2020-05-08,PB,São Miguel de Taipu,2,0,1,7442,2515005,1,1,,,,,,,,,,,,,,0.0,0.0,268.745,0.0,134.372,134.372,134.372
+2020-05-09,PB,São Miguel de Taipu,2,0,1,7442,2515005,1,1,,,,,,,,,,,,,,0.0,0.0,268.745,0.0,134.372,134.372,134.372
+2020-05-10,PB,São Miguel de Taipu,2,0,1,7442,2515005,1,1,,,,,,,,,,,,,,0.0,0.0,268.745,0.0,134.372,134.372,134.372
+2020-05-11,PB,São Miguel de Taipu,2,0,1,7442,2515005,1,1,,,,,,,,,,,,,,0.0,0.0,268.745,0.0,134.372,134.372,134.372
+2020-05-12,PB,São Miguel de Taipu,2,0,1,7442,2515005,1,1,,,,,,,,,,,,,,0.0,0.0,268.745,0.0,134.372,134.372,134.372

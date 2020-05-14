@@ -1,0 +1,14 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-04-30,RO,Governador Jorge Teixeira,3,0,1,7845,1101005,1,2,,,,,,,,,,,,,,0.0,0.0,382.409,0.0,127.47,127.47,254.939
+2020-05-01,RO,Governador Jorge Teixeira,3,0,1,7845,1101005,1,2,,,,,,,,,,,,,,0.0,0.0,382.409,0.0,127.47,127.47,254.939
+2020-05-02,RO,Governador Jorge Teixeira,3,0,1,7845,1101005,1,2,,,,,,,,,,,,,,0.0,0.0,382.409,0.0,127.47,127.47,254.939
+2020-05-03,RO,Governador Jorge Teixeira,3,0,1,7845,1101005,1,2,0.1667,0.1667,,,,,,,,,,,,0.0,0.0,382.409,0.0,127.47,127.47,254.939
+2020-05-04,RO,Governador Jorge Teixeira,4,0,2,7845,1101005,2,2,0.1667,0.1667,,,,,,,,,,,,0.0,0.0,509.879,0.0,254.939,254.939,254.939
+2020-05-05,RO,Governador Jorge Teixeira,4,0,2,7845,1101005,2,2,0.1667,0.1667,,,,,,,,,,,,0.0,0.0,509.879,0.0,254.939,254.939,254.939
+2020-05-06,RO,Governador Jorge Teixeira,4,0,2,7845,1101005,2,2,0.1667,0.1667,,,,-0.02778,-0.02778,,,,,,,0.0,0.0,509.879,0.0,254.939,254.939,254.939
+2020-05-07,RO,Governador Jorge Teixeira,4,0,2,7845,1101005,2,2,0.0,0.0,,,,,,,,,,,,0.0,0.0,509.879,0.0,254.939,254.939,254.939
+2020-05-08,RO,Governador Jorge Teixeira,4,0,2,7845,1101005,2,2,0.0,0.0,,,,,,,,,,,,0.0,0.0,509.879,0.0,254.939,254.939,254.939
+2020-05-09,RO,Governador Jorge Teixeira,4,0,2,7845,1101005,2,2,0.0,0.0,,,,,,,,,,,,0.0,0.0,509.879,0.0,254.939,254.939,254.939
+2020-05-10,RO,Governador Jorge Teixeira,4,0,2,7845,1101005,2,2,,,,,,,,,,,,,,0.0,0.0,509.879,0.0,254.939,254.939,254.939
+2020-05-11,RO,Governador Jorge Teixeira,4,0,2,7845,1101005,2,2,,,,,,,,,,,,,,0.0,0.0,509.879,0.0,254.939,254.939,254.939
+2020-05-12,RO,Governador Jorge Teixeira,4,0,2,7845,1101005,2,2,,,,,,,,,,,,,,0.0,0.0,509.879,0.0,254.939,254.939,254.939
