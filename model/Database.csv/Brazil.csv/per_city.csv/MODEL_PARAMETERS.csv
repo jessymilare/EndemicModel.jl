@@ -1,0 +1,845 @@
+Key,Group Name,M,β,γ,α,μ,R0
+Abreu e Lima,all,100990.0,0.08824,0.2314,0.06283,,1.404
+Acarape,all,15078.0,0.1842,0.5506,0.0,,Inf
+Acaraú,all,63267.0,0.2392,0.4994,0.6417,,0.3728
+Acrelândia,all,15409.0,0.1194,0.5619,0.09532,,1.253
+Adamantina,all,35419.0,,,,,NaN
+Afonso Cláudio,all,30892.0,0.1309,0.243,0.186,,0.7039
+Agudos,all,37586.0,0.04545,0.527,0.0346,,1.314
+Alagoa Grande,all,28781.0,,,,,NaN
+Alcântaras,all,11831.0,0.1014,0.3849,0.0642,,1.58
+Alenquer,all,57357.0,,,,,NaN
+Alfenas,all,80796.0,,,,,NaN
+Alfredo Chaves,all,14747.0,,,,,NaN
+Almenara,all,42315.0,,,,,NaN
+Almirante Tamandaré,all,119809.0,,,,,NaN
+Altamira,all,115740.0,0.2875,0.4863,0.1789,,1.607
+Alto Alegre do Maranhão,all,27324.0,,,,,NaN
+Alto Alegre do Pindaré,all,32238.0,,,,,NaN
+Alto Paraná,all,14918.0,,,,,NaN
+Altos,all,40929.0,,,,,NaN
+Alvorada,all,212408.0,0.0583,0.6753,0.02672,,2.182
+Amaporã,all,6320.0,,,,,NaN
+Amaraji,all,23057.0,0.01,0.01,0.2578,,0.03879
+Amarante do Maranhão,all,41849.0,,,,,NaN
+Amaturá,all,11651.0,0.2483,0.02326,0.09477,,2.62
+Americana,all,241993.0,0.02235,0.3975,0.0294,,0.7601
+Américo Brasiliense,all,40909.0,,,,,NaN
+Anajatuba,all,27071.0,0.09304,0.1673,0.1311,,0.7098
+Ananindeua,all,535904.0,0.1022,0.1078,0.08794,0.1252,1.162
+Anchieta,all,29556.0,,,,,NaN
+Andradina,all,57729.0,0.1021,0.2423,0.04343,,2.35
+Angra dos Reis,all,205823.0,0.1274,0.1822,0.08462,,1.506
+Anori,all,21220.0,0.1535,0.2245,0.06863,,2.237
+Anápolis,all,390792.0,0.02631,1.0,0.00725,,3.629
+Anísio de Abreu,all,9979.0,,,,,NaN
+Aparecida de Goiânia,all,583961.0,0.05112,0.1645,0.06785,,0.7534
+Aperibé,all,11877.0,,,,,NaN
+Apodi,all,36203.0,0.01,0.01,0.1159,,0.08626
+Apucarana,all,136346.0,0.09236,0.7199,0.01949,,4.739
+Aquiraz,all,81074.0,0.0894,0.1782,0.03301,,2.708
+Arabutã,all,4310.0,,,,,NaN
+Aracati,all,75292.0,0.179,0.1722,0.06543,,2.736
+Aracoiaba,all,26734.0,,,,,NaN
+Aracruz,all,102232.0,0.0516,0.1162,0.05767,,0.8947
+Araguari,all,118440.0,0.01,0.01,0.03611,,0.2769
+Araguaína,all,182275.0,,,,0.02285,NaN
+Arapiraca,all,234064.0,0.0883,0.2196,0.05482,,1.611
+Arapongas,all,124257.0,0.07452,0.08254,0.0,,Inf
+Araquari,all,38510.0,,,,,NaN
+Araras,all,135578.0,0.01,0.01,0.08243,,0.1213
+Araruama,all,133724.0,0.09273,0.1903,0.03121,,2.971
+Araruna,all,14110.0,0.01014,0.6359,0.03333,,0.3041
+Araxá,all,107291.0,0.2154,0.4281,0.1728,,1.246
+Araçatuba,all,198986.0,0.05348,0.3568,0.02226,,2.402
+Araçoiaba da Serra,all,34487.0,,,,,NaN
+Arcos,all,40493.0,,,,,NaN
+Arcoverde,all,75081.0,0.09682,0.2659,0.09212,,1.051
+Areia Branca,all,28052.0,,,,,NaN
+Areiópolis,all,11240.0,,,,,NaN
+Ariquemes,all,108942.0,,,,,NaN
+Armazém,all,8761.0,,,,,NaN
+Arneiroz,all,7918.0,,,,,NaN
+Arraial do Cabo,all,30652.0,0.1669,0.9159,0.05933,,2.814
+Arroio do Meio,all,21013.0,,,,,NaN
+Artur Nogueira,all,54952.0,,,,,NaN
+Arujá,all,90722.0,0.1143,0.5172,0.05725,,1.997
+Assis,all,105430.0,0.08955,0.2023,0.07226,,1.239
+Atibaia,all,144189.0,0.03179,0.2196,0.0219,,1.452
+Augustinópolis,all,18596.0,0.1025,0.05556,0.0,,Inf
+Augusto Corrêa,all,46458.0,0.1262,0.2496,0.05748,,2.197
+Aurora do Pará,all,31651.0,,,,,NaN
+Autazes,all,39961.0,0.1167,0.2276,0.104,,1.122
+Avaré,all,91562.0,0.057,0.3323,0.06774,,0.8415
+Açailândia,all,113569.0,,,,,NaN
+Açu,all,58597.0,0.07025,0.3166,0.03506,,2.004
+Bacabal,all,105998.0,0.1038,0.1108,0.06277,,1.653
+Bacabeira,all,17226.0,,,,,NaN
+Bagre,all,30980.0,,,,,NaN
+Bagé,all,122354.0,,,,,NaN
+Balneário Camboriú,all,143718.0,0.05309,0.4754,0.02556,,2.077
+Balneário Piçarras,all,23378.0,,,,,NaN
+Balsas,all,95836.0,,,,,NaN
+Banabuiú,all,18379.0,,,,,NaN
+Barbacena,all,138686.0,0.1253,0.2002,0.1,,1.253
+Barbalha,all,61389.0,,,,,NaN
+Barcarena,all,125927.0,0.1213,0.2965,0.1245,,0.974
+Barcelos,all,27777.0,0.458,0.02566,0.4465,,1.026
+Barra Mansa,all,186256.0,0.01,0.01,0.06814,,0.1467
+Barra do Choça,all,31919.0,,,,,NaN
+Barra do Garças,all,61622.0,0.01,0.01,0.2063,,0.04847
+Barra do Piraí,all,101378.0,0.01,0.01,0.04997,,0.2001
+Barras,all,47537.0,,,,,NaN
+Barreira,all,22649.0,0.4351,0.4663,0.4444,,0.979
+Barreirinhas,all,63153.0,,,,,NaN
+Barretos,all,123319.0,0.01653,0.1539,0.06994,,0.2363
+Barueri,all,276924.0,0.09484,0.4937,0.05674,0.1634,1.672
+Bauru,all,380586.0,0.01,0.01,0.04442,,0.2251
+Bayeux,all,97849.0,0.03781,0.07994,0.1049,,0.3604
+Bebedouro,all,78271.0,,,,,NaN
+Beberibe,all,54109.0,0.1037,0.4338,0.04402,,2.357
+Bela Cruz,all,32917.0,0.196,0.2572,0.1144,,1.713
+Bela Vista de Goiás,all,30275.0,,,,,NaN
+Belford Roxo,all,516015.0,0.09884,0.1099,0.05554,0.2177,1.78
+Belo Horizonte,all,2.537191e6,0.08195,0.2022,0.01612,0.06321,5.085
+Belo Jardim,all,77203.0,0.06976,0.4943,0.04722,,1.477
+Belém,all,1.507672e6,0.1278,0.2488,0.08202,0.1886,1.559
+Benevides,all,63364.0,0.09684,0.3339,0.1133,,0.8549
+Benjamin Constant,all,43414.0,0.1355,0.3472,0.07725,,1.753
+Bento Gonçalves,all,121659.0,0.1036,0.1553,0.09438,,1.097
+Beruri,all,19876.0,0.2273,0.1476,0.1397,,1.627
+Betim,all,443733.0,,,0.05,,NaN
+Bezerros,all,61406.0,,,,,NaN
+Biguaçu,all,69166.0,,,,,NaN
+Birigui,all,124874.0,,,,,NaN
+Biritiba-Mirim,all,32924.0,,,,,NaN
+Blumenau,all,360771.0,0.05804,0.3569,0.03343,0.01716,1.736
+Boa Viagem,all,55015.0,,,,,NaN
+Boa Vista,all,403205.0,,0.1446,0.08437,0.03894,NaN
+Boca da Mata,all,27554.0,,,,,NaN
+Boca do Acre,all,34651.0,,,,,NaN
+Bocaina,all,12452.0,,,,,NaN
+Bom Jardim,all,42046.0,0.07646,0.534,0.04167,,1.835
+Bom Jesus,all,2587.0,,,,,NaN
+Bom Jesus do Itabapoana,all,37467.0,0.01,0.01,0.05503,,0.1817
+Bom Jesus do Norte,all,10035.0,,,,,NaN
+Bom Retiro do Sul,all,12451.0,,,,,NaN
+Bonito,all,22196.0,0.0888,0.02778,0.2917,,0.3044
+Borba,all,41573.0,0.3031,1.0,0.1729,,1.753
+Botucatu,all,147962.0,0.01,0.01,0.04435,,0.2255
+Bragança,all,128963.0,0.1519,0.1187,0.1382,,1.099
+Bragança Paulista,all,170355.0,0.04273,0.1236,0.05409,,0.79
+Brasília,all,3.045421e6,0.01,0.01,0.03423,0.04284,0.2922
+Braço do Norte,all,33784.0,0.01,0.2506,0.119,,0.084
+Brejo,all,36761.0,,,,,NaN
+Breves,all,103728.0,0.154,0.0421,0.3008,0.2419,0.5121
+Brumado,all,67867.0,,,,,NaN
+Buerarema,all,18532.0,0.117,0.1797,0.1168,,1.001
+Bujaru,all,29423.0,0.1951,0.1592,0.1657,,1.177
+Buritama,all,17315.0,,,,,NaN
+Buriticupu,all,73082.0,,,,,NaN
+Caapiranga,all,13212.0,,,,,NaN
+Caaporã,all,22046.0,,,,,NaN
+Cabedelo,all,68413.0,0.2186,0.7481,0.09592,,2.279
+Cabo Frio,all,228790.0,0.1519,0.266,0.06791,,2.237
+Cabo de Santo Agostinho,all,209118.0,0.1493,0.3393,0.1134,0.3001,1.316
+Cabreúva,all,50204.0,,,,,NaN
+Cachoeira Grande,all,9525.0,0.01,0.3642,0.04167,,0.24
+Cachoeira do Arari,all,24005.0,0.1896,0.13,0.1141,,1.662
+Cachoeiras de Macacu,all,59526.0,0.1075,0.39,0.05926,,1.815
+Cachoeiro de Itapemirim,all,211062.0,,,,,NaN
+Caieiras,all,102485.0,0.05254,0.0461,0.05432,,0.9674
+Cajamar,all,77569.0,0.1246,0.2785,0.1433,,0.8696
+Cajazeiras,all,62613.0,0.1106,0.2739,0.1016,,1.089
+Camacan,all,32308.0,,,,,NaN
+Camaragibe,all,159406.0,0.08269,0.242,0.05582,0.1497,1.481
+Camaçari,all,302123.0,0.05651,0.3127,0.02292,,2.466
+Camboriú,all,83819.0,0.01077,0.265,0.0,,Inf
+Cambuí,all,29847.0,,,,,NaN
+Cambé,all,107598.0,0.06896,0.3726,0.03333,,2.069
+Cametá,all,139269.0,0.01,0.01,0.3761,0.1311,0.02659
+Camocim,all,64298.0,,,,,NaN
+Campina Grande,all,413828.0,0.1247,0.0935,0.05123,,2.434
+Campina Grande do Sul,all,43721.0,0.1555,0.5863,0.05556,,2.799
+Campinas,all,1.216114e6,0.0873,0.16,0.04339,0.1005,2.012
+Campo Grande,all,9654.0,0.02274,0.3241,0.01324,,1.718
+Campo Largo,all,133322.0,0.08152,1.0,0.00366,,22.267
+Campo Limpo Paulista,all,85496.0,0.05891,0.9204,0.09108,,0.6468
+Campo Maior,all,47301.0,,,,,NaN
+Campo Mourão,all,95808.0,0.01,0.07263,0.0161,,0.6211
+Campos Sales,all,27700.0,,,,,NaN
+Campos dos Goytacazes,all,512623.0,0.01,0.01,0.3156,,0.03168
+Cananéia,all,12665.0,0.1475,0.3939,0.0537,,2.746
+Canavieiras,all,31410.0,,,,,NaN
+Canaã dos Carajás,all,37456.0,0.01,0.01,0.2493,,0.04011
+Candeias,all,87947.0,,,,,NaN
+Candeias do Jamari,all,26960.0,,,,,NaN
+Canguaretama,all,34619.0,0.1103,0.01584,0.3053,,0.3614
+Canindé,all,77767.0,,,,,NaN
+Canoas,all,350082.0,0.06071,0.33,0.02805,,2.164
+Cantanhede,all,22215.0,,,,,NaN
+Canutama,all,15785.0,,,,,NaN
+Capanema,all,69717.0,0.1537,0.3236,0.08438,,1.821
+Capitão Poço,all,54846.0,,,,,NaN
+Capivari de Baixo,all,25120.0,,,,,NaN
+Caraguatatuba,all,122747.0,0.1072,0.2014,0.08716,,1.23
+Carapicuíba,all,404936.0,0.08554,0.2907,0.05234,0.1116,1.634
+Carauari,all,28577.0,0.08746,0.5469,0.0,,Inf
+Carazinho,all,62731.0,,,,,NaN
+Caraúbas,all,20698.0,,,,,NaN
+Careiro,all,38248.0,0.1129,0.1788,0.1433,0.05287,0.7881
+Careiro da Várzea,all,30527.0,,,,,NaN
+Cariacica,all,385098.0,0.06834,0.1403,0.0676,0.07645,1.011
+Cariri do Tocantins,all,4426.0,,,,,NaN
+Caririaçu,all,27235.0,,,,,NaN
+Cariré,all,18632.0,,,,,NaN
+Carlos Barbosa,all,30131.0,0.1237,0.3783,0.03947,,3.133
+Carnaubal,all,17782.0,,,,,NaN
+Carpina,all,84477.0,0.1018,0.297,0.09634,,1.057
+Caruaru,all,364729.0,0.09132,0.02316,0.09247,,0.9876
+Cascavel,all,72460.0,0.01958,1.0,0.00829,,2.362
+Casimiro de Abreu,all,44626.0,,,,,NaN
+Castanhal,all,202801.0,0.1247,0.2893,0.09734,0.2491,1.281
+Catanduva,all,123081.0,0.1503,0.3204,0.08068,,1.863
+Catanduvas,all,10970.0,,,,,NaN
+Catende,all,43321.0,0.1956,0.06476,0.2051,,0.9534
+Catu,all,55251.0,,,,,NaN
+Caucaia,all,365014.0,0.01,0.01,0.05684,0.09766,0.1759
+Caxias do Sul,all,516015.0,0.04586,0.1712,0.01351,,3.394
+Caçapava,all,95206.0,,,,,NaN
+Ceará-Mirim,all,74232.0,0.04748,0.3977,0.02222,,2.137
+Centro Novo do Maranhão,all,21838.0,0.1939,0.4636,0.125,,1.551
+Chapadão do Sul,all,25470.0,,,,,NaN
+Chapecó,all,222571.0,,,,,NaN
+Chorozinho,all,20467.0,0.238,0.2893,0.08681,,2.742
+Choró,all,13656.0,,,,,NaN
+Chã Grande,all,21915.0,0.0891,0.2105,0.09225,,0.9659
+Chã de Alegria,all,13653.0,0.1328,0.213,0.0642,,2.069
+Coaraci,all,17163.0,0.05572,0.4353,0.00505,,11.033
+Coari,all,85948.0,0.1065,0.03204,0.1292,0.1999,0.8242
+Codajás,all,28923.0,,,,,NaN
+Codó,all,124088.0,,,,,NaN
+Coelho Neto,all,49929.0,,,,,NaN
+Colatina,all,123724.0,,,,,NaN
+Colinas,all,41590.0,,,,,NaN
+Colombo,all,246163.0,,,,,NaN
+Conceição do Araguaia,all,48343.0,,,,,NaN
+Conceição do Lago-Açu,all,16399.0,,,,,NaN
+Concórdia,all,75387.0,0.06772,0.2042,0.04292,,1.578
+Concórdia do Pará,all,33651.0,,,,,NaN
+Condado,all,6721.0,0.1474,0.6127,0.08254,,1.786
+Conde,all,26095.0,0.05726,0.4266,0.07843,,0.7301
+Confresa,all,31242.0,,,,,NaN
+Conselheiro Lafaiete,all,129875.0,,,,,NaN
+Contagem,all,670494.0,0.05908,0.5853,0.02476,,2.386
+Cordeiro,all,22145.0,,,,,NaN
+Coreaú,all,23367.0,,,,,NaN
+Coronel Fabriciano,all,110954.0,,,,,NaN
+Corumbá,all,112549.0,,,,,NaN
+Cotia,all,251702.0,0.06499,0.2419,0.04913,0.1799,1.323
+Crateús,all,75825.0,0.1121,0.1495,0.06551,,1.711
+Crato,all,133444.0,,,,,NaN
+Cravinhos,all,35645.0,0.08597,0.6124,0.0,,Inf
+Criciúma,all,217338.0,0.03302,0.05984,0.05731,0.04717,0.5761
+Cruz do Espírito Santo,all,17492.0,0.01,0.01,0.1302,,0.07681
+Cruzeiro,all,83060.0,0.1393,0.4034,0.02889,,4.821
+Cruzeiro do Sul,all,89260.0,0.1803,0.04728,0.1222,,1.475
+Cubatão,all,132012.0,,,,,NaN
+Cuiabá,all,618672.0,0.0761,0.1399,0.01352,,5.629
+Curaçá,all,35047.0,,,,,NaN
+Curionópolis,all,18108.0,0.3889,0.05256,0.0,,Inf
+Curitiba,all,1.952436e6,0.03519,0.2087,0.00971,0.1117,3.623
+Curralinho,all,34792.0,,,,,NaN
+Curuçá,all,40467.0,0.1944,0.4093,0.2727,,0.7129
+Custódia,all,37482.0,0.1123,0.1427,0.1778,,0.6315
+Diadema,all,428123.0,0.05763,0.201,0.051,0.1527,1.13
+Dias d'Ávila,all,81900.0,,,,,NaN
+Divinópolis,all,240612.0,0.04509,0.0699,0.03081,,1.464
+Domingos Martins,all,34188.0,,,,,NaN
+Dourados,all,225178.0,0.07237,0.1867,0.0244,,2.966
+Dracena,all,47261.0,0.01,0.01,0.09583,,0.1043
+Duque de Caxias,all,928792.0,0.1045,0.1337,0.08546,0.2814,1.223
+Elesbão Veloso,all,14748.0,,,,,NaN
+Embu das Artes,all,276463.0,0.1127,0.2258,0.06611,0.1859,1.705
+Embu-Guaçu,all,70079.0,0.07392,0.2478,0.0828,,0.8928
+Encantado,all,22933.0,,,,,NaN
+Erechim,all,106921.0,0.09636,0.1375,0.04233,,2.277
+Escada,all,69564.0,0.1848,0.08293,0.1404,,1.316
+Esperantina,all,40134.0,,,,,NaN
+Espumoso,all,15744.0,,,,,NaN
+Esteio,all,84034.0,,,,,NaN
+Estreito,all,42365.0,,,,,NaN
+Estrela,all,34457.0,0.1214,0.1319,0.07652,,1.586
+Eunápolis,all,114514.0,,,,,NaN
+Eusébio,all,54154.0,0.231,0.8489,0.07675,0.06392,3.01
+Extrema,all,36587.0,0.08428,0.4905,0.02845,,2.962
+Extremoz,all,28869.0,,,,,NaN
+Farroupilha,all,73054.0,0.1075,0.08385,0.05513,,1.95
+Fazenda Rio Grande,all,101211.0,0.03958,0.3752,0.0293,,1.351
+Feira Nova,all,22352.0,,,,,NaN
+Feira de Santana,all,621021.0,0.0217,0.02514,0.01154,,1.881
+Fernando de Noronha,all,3092.0,,,,,NaN
+Fernandópolis,all,69807.0,,,,,NaN
+Ferraz de Vasconcelos,all,196219.0,0.08166,0.2097,0.04604,,1.774
+Ferreiros,all,12244.0,,,,,NaN
+Floriano,all,60534.0,,,,,NaN
+Fortaleza,all,2.696035e6,0.09702,0.0982,0.05556,0.152,1.746
+Foz do Iguaçu,all,261117.0,0.05812,0.2772,0.02887,,2.014
+Fraiburgo,all,36807.0,,,,,NaN
+Franca,all,356719.0,0.04224,0.4739,0.00855,,4.942
+Francisco Beltrão,all,92004.0,,,,,NaN
+Francisco Morato,all,177602.0,0.07013,0.3136,0.07079,,0.9908
+Franco da Rocha,all,156034.0,0.05843,0.4609,0.06592,,0.8864
+Fundão,all,21724.0,0.06096,0.103,0.07867,,0.7749
+Garanhuns,all,141186.0,0.1947,0.1626,0.1271,,1.533
+Garibaldi,all,35421.0,0.09478,0.3225,0.08426,,1.125
+Garrafão do Norte,all,26327.0,,,,,NaN
+Garça,all,44834.0,,,,,NaN
+Gaspar,all,70335.0,0.01,0.181,0.06819,,0.1467
+Glória do Goitá,all,30910.0,0.09203,0.1343,0.2333,,0.3944
+Goiana,all,80556.0,0.1002,0.06797,0.2546,,0.3937
+Goianésia,all,70785.0,0.01,0.5508,0.0,,Inf
+Goiânia,all,1.531274e6,0.03199,0.2762,0.02871,0.07609,1.114
+Governador Celso Ramos,all,14616.0,,,,,NaN
+Governador Valadares,all,282684.0,0.07341,0.2375,0.08645,,0.8492
+Granja,all,55295.0,,,,,NaN
+Gravatal,all,11616.0,,,,,NaN
+Gravataí,all,284334.0,0.03989,0.1815,0.004,,9.983
+Gravatá,all,84915.0,0.1288,0.1787,0.06349,,2.029
+Groaíras,all,11179.0,,,,,NaN
+Guaiúba,all,26325.0,,,,,NaN
+Guapimirim,all,61122.0,0.06126,0.08288,0.1032,,0.5938
+Guarabira,all,59421.0,,,,,NaN
+Guaramirim,all,45267.0,,,,,NaN
+Guaraniaçu,all,12597.0,,,,,NaN
+Guarapari,all,126108.0,0.04404,0.09487,0.05048,,0.8726
+Guararapes,all,33268.0,,,,,NaN
+Guararema,all,30096.0,0.3211,0.3504,0.05087,,6.313
+Guaratuba,all,37438.0,,,,,NaN
+Guarujá,all,323664.0,0.06241,0.1916,0.05194,0.1187,1.202
+Guarulhos,all,1.392974e6,0.0326,0.1052,0.05991,0.2056,0.5441
+Guaçuí,all,31176.0,,,,,NaN
+Guaíba,all,99124.0,,,,,NaN
+Guaíra,all,33450.0,,,,,NaN
+Gurinhém,all,14270.0,,,,,NaN
+Gurupi,all,87513.0,,,,,NaN
+Herval d'Oeste,all,22832.0,,,,,NaN
+Horizonte,all,68010.0,0.1643,0.1823,0.07966,,2.063
+Hortolândia,all,233160.0,0.1376,0.1808,0.08208,,1.677
+Ibimirim,all,29527.0,0.3155,0.5732,0.3333,,0.9465
+Ibiraçu,all,12604.0,,,,,NaN
+Icapuí,all,20133.0,,,,,NaN
+Igarapé-Açu,all,39195.0,0.1191,0.4071,0.07825,,1.522
+Igarapé-Miri,all,63325.0,0.1539,0.119,0.1307,,1.178
+Igarassu,all,118189.0,0.08072,0.3046,0.1024,,0.788
+Igaratá,all,9629.0,,,,,NaN
+Iguaba Grande,all,28593.0,0.143,0.2999,0.09951,,1.437
+Iguape,all,31166.0,,,,,NaN
+Iguatu,all,103523.0,0.1378,0.03586,0.06535,,2.109
+Ilha Comprida,all,11278.0,0.04685,1.0,0.00605,,7.749
+Ilha de Itamaracá,all,26521.0,,,,,NaN
+Ilhéus,all,163950.0,0.05429,0.3393,0.03533,0.09168,1.536
+Imbituba,all,45302.0,,,,,NaN
+Imperatriz,all,261269.0,0.1266,0.09232,0.0906,0.1183,1.397
+Indaiatuba,all,254143.0,0.0448,0.1832,0.083,,0.5397
+Inhangapi,all,11828.0,,,,,NaN
+Ipanguaçu,all,15646.0,0.08873,0.3386,0.3194,,0.2778
+Ipaporanga,all,11709.0,,,,,NaN
+Ipatinga,all,266044.0,,,,,NaN
+Ipojuca,all,97166.0,0.1881,1.0,0.09455,,1.989
+Ipu,all,42384.0,,,,,NaN
+Ipueiras,all,38548.0,0.03117,0.4954,0.09028,,0.3452
+Ipumirim,all,7669.0,,,,,NaN
+Iranduba,all,48779.0,0.0866,0.2708,0.08314,0.1647,1.042
+Irani,all,10523.0,,,,,NaN
+Irituia,all,32876.0,,,,,NaN
+Itabira,all,121261.0,0.04871,0.4405,0.01852,,2.63
+Itaboraí,all,242998.0,0.01,0.08431,0.0758,0.1549,0.1319
+Itabuna,all,215355.0,0.09436,0.4877,0.05561,0.05172,1.697
+Itacaré,all,28579.0,,,,,NaN
+Itacoatiara,all,102350.0,0.09292,0.08084,0.08544,0.2187,1.088
+Itaguaí,all,134349.0,0.09979,0.3513,0.1111,,0.8986
+Itaitinga,all,38360.0,0.1507,0.3097,0.09237,,1.632
+Itaituba,all,102259.0,0.1356,0.1142,0.07222,,1.877
+Itajaí,all,221731.0,0.0566,0.2959,0.03417,,1.656
+Itajobi,all,15415.0,0.1396,0.7218,0.03778,,3.697
+Itajubá,all,97838.0,,,,,NaN
+Itanhandu,all,15484.0,,,,,NaN
+Itanhaém,all,102834.0,0.03788,0.3191,0.1218,,0.311
+Itapecerica da Serra,all,177450.0,0.07496,0.3225,0.06195,,1.21
+Itapecuru Mirim,all,68885.0,,,,,NaN
+Itapema,all,65965.0,0.01001,0.1516,0.03241,,0.3088
+Itapemirim,all,34691.0,,,,,NaN
+Itaperuçu,all,28920.0,,,,,NaN
+Itapetinga,all,76908.0,0.01457,0.4462,0.04074,,0.3577
+Itapetininga,all,165540.0,0.08547,0.07118,0.06639,,1.287
+Itapeva,all,9881.0,,,,,NaN
+Itapevi,all,240077.0,0.09475,0.2347,0.08883,0.2151,1.067
+Itapipoca,all,130652.0,0.2032,0.1776,0.1367,0.1426,1.486
+Itapira,all,75521.0,0.03639,0.5057,0.0119,,3.057
+Itapiúna,all,20586.0,0.1808,0.2148,0.09505,,1.902
+Itaquaquecetuba,all,374529.0,0.09589,0.159,0.06875,0.2246,1.395
+Itaquitinga,all,17125.0,0.1938,0.5536,0.2111,,0.9181
+Itarema,all,42244.0,,,,,NaN
+Itatiba,all,122067.0,0.08051,0.3062,0.04709,,1.71
+Itaubal,all,5558.0,,,,,NaN
+Itu,all,175678.0,0.04433,0.04099,0.1134,,0.3909
+Itumbiara,all,105789.0,,,,,NaN
+Itupeva,all,61865.0,0.1338,0.2327,0.1605,,0.8338
+Itá,all,6231.0,,,,,NaN
+Ivaiporã,all,32304.0,0.01,0.3987,0.1667,,0.06
+Jaboatão dos Guararapes,all,709321.0,0.08406,0.0617,0.07843,0.1945,1.072
+Jaborá,all,3975.0,,,,,NaN
+Jaboticabal,all,78036.0,0.01,0.3039,0.1019,,0.09818
+Jacareí,all,235999.0,0.1002,0.2645,0.03141,,3.189
+Jaci,all,7138.0,,,,,NaN
+Jaguaquara,all,54967.0,,,,,NaN
+Jaguaretama,all,18344.0,,,,,NaN
+Jaguaribara,all,11515.0,0.1133,0.5426,0.02381,,4.759
+Jaguariúna,all,58063.0,,,,,NaN
+Jaguaruna,all,20224.0,,,,,NaN
+Jandira,all,126186.0,0.1466,0.281,0.07371,,1.989
+Japeri,all,105816.0,0.09473,0.4394,0.06712,,1.411
+Jaru,all,52293.0,,,,,NaN
+Jataí,all,101891.0,,,,,NaN
+Jaú,all,151755.0,,,,,NaN
+Jequié,all,157526.0,0.185,0.6054,0.1084,,1.706
+Ji-Paraná,all,130259.0,0.05414,0.2488,0.03531,,1.533
+Joaçaba,all,30419.0,,,,,NaN
+Joinville,all,596371.0,0.06135,0.3969,0.02884,0.06556,2.127
+José de Freitas,all,39600.0,,,,,NaN
+João Monlevade,all,80709.0,,,,,NaN
+João Pessoa,all,817105.0,0.1026,0.2766,0.0811,0.1104,1.265
+Juazeiro,all,218874.0,0.01,1.0,0.03333,,0.3
+Juiz de Fora,all,574562.0,0.116,0.1151,0.04574,0.09519,2.536
+Junco do Maranhão,all,3466.0,,,,,NaN
+Jundiaí,all,423152.0,0.1066,0.3099,0.06815,0.1659,1.564
+Juruti,all,58522.0,0.04681,0.0122,0.1364,,0.3433
+Lago da Pedra,all,50769.0,0.2898,0.3378,0.1881,,1.541
+Lagoa Santa,all,65172.0,,,,,NaN
+Lagoa da Prata,all,52687.0,,,,,NaN
+Lagoa do Carro,all,18252.0,0.05965,0.3719,0.1329,,0.4488
+Lajeado,all,84854.0,0.08543,0.254,0.06728,,1.27
+Laranjal do Jari,all,50914.0,0.1663,0.2067,0.1255,,1.326
+Lauro de Freitas,all,200424.0,0.09652,0.1343,0.04234,,2.28
+Lavras,all,104811.0,,,,,NaN
+Lençóis Paulista,all,69116.0,0.2903,0.4722,0.2054,,1.413
+Leopoldina,all,53113.0,,,,,NaN
+Limeira,all,309175.0,0.01,0.01,0.05718,,0.1749
+Limoeiro,all,56812.0,0.077,0.3257,0.1016,,0.7575
+Limoeiro do Ajuru,all,29224.0,0.1441,0.1665,0.2019,,0.7141
+Limoeiro do Norte,all,60135.0,0.01,0.01,0.07198,,0.1389
+Lindóia do Sul,all,4609.0,,,,,NaN
+Linhares,all,175291.0,0.06097,0.3866,0.02321,,2.627
+Lins,all,78793.0,0.02092,0.2154,0.07071,,0.2959
+Londrina,all,575430.0,0.02124,0.04834,0.001,,21.145
+Louveira,all,49374.0,0.1618,0.2131,0.067,,2.415
+Lucas do Rio Verde,all,66189.0,0.1435,0.04038,0.1281,,1.12
+Lucena,all,13211.0,,,,,NaN
+Lucélia,all,21964.0,0.2319,0.3348,0.08333,,2.783
+Luziânia,all,210382.0,0.01,0.3243,0.02685,,0.3724
+Macapá,all,508360.0,0.112,0.2977,0.05901,0.06224,1.899
+Macaé,all,259239.0,0.2182,0.5006,0.1066,,2.046
+Macaíba,all,81600.0,0.05734,0.03658,0.04233,,1.355
+Maceió,all,1.029137e6,0.08002,0.2377,0.09932,0.09428,0.8057
+Magalhães de Almeida,all,20024.0,,,,,NaN
+Magé,all,247522.0,0.1135,0.2375,0.07317,,1.552
+Mairiporã,all,101181.0,0.1241,1.0,0.08165,,1.52
+Manacapuru,all,98351.0,0.1113,0.3099,0.06495,0.1215,1.713
+Manaquiri,all,32426.0,0.1672,0.2971,0.112,,1.493
+Manaus,all,2.204591e6,0.1282,0.1629,0.06008,0.1895,2.134
+Manicoré,all,56309.0,0.1772,0.2018,0.1288,,1.375
+Marabá,all,282142.0,0.1772,0.1115,0.2293,,0.7729
+Maracanaú,all,230165.0,0.01,0.01,0.08466,0.2195,0.1181
+Maragogi,all,33031.0,0.1278,0.283,0.06429,,1.989
+Maranguape,all,130268.0,0.1199,0.2691,0.07958,,1.507
+Marapanim,all,28619.0,0.1205,0.2693,0.09344,,1.289
+Marataízes,all,38884.0,0.154,0.2927,0.06306,,2.443
+Maratá,all,2718.0,,,,,NaN
+Marau,all,44603.0,0.08761,0.3514,0.04858,,1.803
+Maraã,all,18406.0,,,,,NaN
+Marechal Deodoro,all,52420.0,0.1307,1.0,0.09104,,1.436
+Marechal Floriano,all,16861.0,,,,,NaN
+Mari,all,22055.0,0.2818,1.0,0.08333,,3.382
+Mariana,all,61331.0,0.0377,0.2951,0.02306,,1.635
+Maricá,all,162819.0,0.05122,0.0596,0.05538,,0.9248
+Maringá,all,427903.0,0.01667,0.6734,0.0,,Inf
+Marituba,all,132836.0,0.1007,0.1274,0.04472,,2.253
+Marília,all,241271.0,0.06052,0.2756,0.02116,,2.859
+Mata Roma,all,16997.0,,,,,NaN
+Matinha,all,23604.0,,,,,NaN
+Mauá,all,477641.0,0.05711,0.06195,0.06188,0.1729,0.923
+Maués,all,64544.0,0.08485,0.2908,0.06803,,1.247
+Mazagão,all,21848.0,0.1428,0.06053,0.03945,,3.621
+Melgaço,all,27931.0,0.3938,0.8492,0.227,,1.735
+Mendes,all,18800.0,,,,,NaN
+Mesquita,all,177864.0,0.08045,0.07526,0.06901,0.1696,1.166
+Miguel Alves,all,34098.0,,,,,NaN
+Miguel Pereira,all,25793.0,0.05093,0.6769,0.00556,,9.167
+Milagres do Maranhão,all,8549.0,,,,,NaN
+Mineiros,all,67469.0,,,,,NaN
+Mineiros do Tietê,all,13037.0,0.06456,0.08393,0.02137,,3.022
+Miracatu,all,19977.0,0.3065,0.03044,0.1056,,2.904
+Mirassol d'Oeste,all,28016.0,,,,,NaN
+Mirinzal,all,15112.0,0.1387,0.3617,0.1667,,0.832
+Mococa,all,69574.0,0.1858,0.1431,0.2407,,0.7718
+Mogi Guaçu,all,153407.0,0.01,0.1776,0.03393,,0.2947
+Mogi Mirim,all,94121.0,,,,,NaN
+Mogi das Cruzes,all,450300.0,0.07139,0.1161,0.0654,0.1547,1.092
+Mongaguá,all,57269.0,0.03713,0.279,0.05308,,0.6996
+Monte Alto,all,51003.0,0.06325,0.0337,0.00899,,7.032
+Montes Claros,all,413434.0,0.07571,0.1687,0.05672,,1.335
+Monção,all,33768.0,,,,,NaN
+Morada Nova,all,62509.0,,,,,NaN
+Moreno,all,63412.0,0.0693,0.214,0.09056,,0.7652
+Morro Agudo,all,33298.0,,,,,NaN
+Morungaba,all,13758.0,,,,,NaN
+Mossoró,all,300352.0,0.1445,0.5023,0.04185,0.1355,3.452
+Muaná,all,40752.0,,,,,NaN
+Mulungu,all,10931.0,,,,,NaN
+Murici,all,28518.0,0.1061,0.3114,0.05319,,1.995
+Mãe do Rio,all,30378.0,,,,,NaN
+Natal,all,892963.0,0.103,0.433,0.06012,0.0492,1.713
+Navegantes,all,82290.0,,,,,NaN
+Nazaré da Mata,all,32796.0,0.1322,0.4917,0.07531,,1.756
+Nerópolis,all,30148.0,,,,,NaN
+Nilópolis,all,164110.0,0.124,0.5106,0.06635,,1.869
+Niterói,all,518720.0,0.1228,0.4833,0.0477,0.1329,2.574
+Nova Andradina,all,54918.0,,,,,NaN
+Nova Friburgo,all,192537.0,0.08402,0.4444,0.0454,,1.851
+Nova Iguaçu,all,829339.0,0.09039,0.186,0.05478,0.2045,1.65
+Nova Ipixuna,all,16845.0,,,,,NaN
+Nova Lima,all,95838.0,,,,,NaN
+Nova Mutum,all,45832.0,0.1881,0.2776,0.04,,4.702
+Nova Odessa,all,60776.0,0.02157,0.1685,0.1424,,0.1515
+Nova Olinda do Norte,all,37752.0,,,,,NaN
+Nova Timboteua,all,15517.0,,,,,NaN
+Novo Airão,all,19649.0,0.01,0.01,0.3279,,0.0305
+Novo Aripuanã,all,25900.0,0.2017,0.1487,0.09615,,2.098
+Novo Hamburgo,all,249215.0,0.07609,0.494,0.01755,,4.336
+Novo Horizonte,all,41463.0,,,,,NaN
+Não-Me-Toque,all,17800.0,,,,,NaN
+Nísia Floresta,all,27878.0,0.02084,0.3931,0.01852,,1.125
+Ocara,all,25960.0,0.1534,0.1732,0.06586,,2.328
+Oeiras do Pará,all,32837.0,0.0873,0.2404,0.1152,,0.7578
+Oiapoque,all,27543.0,0.1307,0.2537,0.06171,,2.119
+Olinda,all,396407.0,0.09319,0.2621,0.08265,0.1463,1.128
+Orleans,all,23141.0,,,,,NaN
+Orós,all,21641.0,,,,,NaN
+Osasco,all,705402.0,0.07722,0.3082,0.07223,0.2116,1.069
+Ouricuri,all,70154.0,,,,,NaN
+Ourinhos,all,114677.0,0.01,0.01,0.02998,,0.3335
+Ourém,all,18020.0,,,,,NaN
+Pacajus,all,72925.0,0.1205,0.1273,0.05524,,2.181
+Pacaraima,all,17575.0,,,,,NaN
+Pacatuba,all,84266.0,,,,,NaN
+Pacoti,all,12384.0,0.2117,0.2519,0.3148,,0.6725
+Palhoça,all,173515.0,0.03012,0.3673,0.02398,,1.256
+Palmas,all,51496.0,0.01,0.01,0.08654,,0.1155
+Palmeira dos Índios,all,73950.0,,,,,NaN
+Paracambi,all,52780.0,0.1031,0.2919,0.07557,,1.365
+Paracatu,all,94090.0,0.01111,0.4842,0.0037,,2.999
+Paragominas,all,114276.0,0.1502,0.4448,0.09044,,1.661
+Paraipaba,all,33071.0,,,,,NaN
+Paranaguá,all,156485.0,0.01,0.4775,0.01088,,0.9195
+Paranavaí,all,89258.0,0.04159,0.1683,0.07396,,0.5623
+Parauapebas,all,210356.0,0.1119,0.3887,0.1018,,1.099
+Paraíba do Sul,all,44728.0,0.121,0.2624,0.05545,,2.181
+Paraíso do Tocantins,all,51765.0,0.375,0.4069,0.2042,,1.837
+Parintins,all,115416.0,0.1334,0.2846,0.122,0.1539,1.093
+Paripueira,all,13308.0,0.2582,0.2059,0.3333,,0.7745
+Pariquera-Açu,all,19844.0,0.07969,0.2972,0.07862,,1.014
+Parnamirim,all,264084.0,0.07944,0.3644,0.02161,,3.676
+Parnaíba,all,154609.0,0.1626,0.1935,0.09219,,1.764
+Passo Fundo,all,205308.0,0.07423,0.3392,0.05399,0.1483,1.375
+Pato Branco,all,83710.0,0.03766,0.3565,0.0,,Inf
+Patos,all,108681.0,0.2202,0.02603,0.169,,1.303
+Paty do Alferes,all,28047.0,,,,,NaN
+Pau dos Ferros,all,30698.0,,,,,NaN
+Paudalho,all,57071.0,0.05265,0.1147,0.1837,,0.2866
+Paulista,all,335092.0,0.08323,0.2064,0.07602,0.1312,1.095
+Paulínia,all,110518.0,0.09544,0.1398,0.04514,,2.114
+Paço do Lumiar,all,123419.0,0.1008,0.2568,0.06097,,1.654
+Pedra,all,22843.0,,,,,NaN
+Pedra Branca,all,43691.0,0.105,0.4479,0.05303,,1.981
+Pedra Branca do Amapari,all,16667.0,0.2814,0.4142,0.06522,,4.316
+Pedras de Fogo,all,28743.0,0.2091,0.3581,0.09832,,2.126
+Pedreiras,all,39621.0,,,,,NaN
+Pedro II,all,39129.0,0.2512,0.2021,0.09921,,2.532
+Penedo,all,64320.0,,,,,NaN
+Peritiba,all,2815.0,,,,,NaN
+Peruíbe,all,68967.0,0.07166,0.3857,0.03989,,1.797
+Pesqueira,all,68069.0,,,,,NaN
+Petrolina,all,352636.0,0.2077,0.2922,0.00641,,32.395
+Petrópolis,all,309253.0,0.1166,0.3179,0.02916,,3.998
+Piaçabuçu,all,18005.0,0.1385,0.3568,0.05556,,2.493
+Piedade,all,55901.0,0.2152,0.1335,0.05797,,3.712
+Pilar,all,35462.0,0.2275,0.1771,0.07275,,3.127
+Pilar do Sul,all,29477.0,,,,,NaN
+Pindamonhangaba,all,170011.0,0.1137,0.1084,0.05493,,2.071
+Pinheiral,all,25408.0,,,,,NaN
+Pinheiro,all,84221.0,0.1471,0.3159,0.05508,,2.67
+Piracaia,all,27576.0,0.1061,0.1754,0.06481,,1.637
+Piracicaba,all,408183.0,0.09869,0.3514,0.1013,,0.9743
+Piracuruca,all,29079.0,0.01,0.2365,0.02315,,0.432
+Piraju,all,30104.0,0.145,0.1664,0.07576,,1.915
+Piraquara,all,114166.0,,,,,NaN
+Pirassununga,all,77173.0,,,,,NaN
+Piripiri,all,64379.0,,,,,NaN
+Piúma,all,21928.0,0.07772,0.07336,0.05574,,1.394
+Plácido de Castro,all,19959.0,0.1608,0.5575,0.05711,,2.817
+Pojuca,all,39914.0,,,,,NaN
+Pombos,all,27362.0,0.1183,0.1203,0.1162,,1.018
+Pomerode,all,33781.0,,,,,NaN
+Ponta Grossa,all,355253.0,,,,,NaN
+Ponta de Pedras,all,31393.0,0.2632,0.7272,0.2751,,0.9569
+Porto Alegre,all,1.498609e6,0.0269,0.4934,0.0,0.07852,Inf
+Porto Feliz,all,53629.0,,,,,NaN
+Porto Grande,all,22191.0,0.1688,0.1792,0.1272,,1.327
+Porto Seguro,all,150173.0,,,,,NaN
+Porto Velho,all,534839.0,0.1495,0.2244,0.07405,0.07155,2.019
+Porto de Moz,all,41546.0,,,,,NaN
+Pouso Alegre,all,152244.0,0.09547,0.1545,0.03002,,3.18
+Poá,all,118627.0,0.099,0.5632,0.08692,,1.139
+Praia Grande,all,7392.0,0.125,0.3472,0.1153,0.2847,1.084
+Presidente Dutra,all,15293.0,,,,,NaN
+Presidente Figueiredo,all,36642.0,0.1558,0.3467,0.121,,1.288
+Presidente Juscelino,all,12861.0,,,,,NaN
+Presidente Prudente,all,231030.0,0.1497,0.1127,0.09597,,1.56
+Presidente Venceslau,all,39911.0,,0.1667,0.0,,Inf
+Primavera do Leste,all,62639.0,,,,,NaN
+Quaraí,all,22914.0,0.164,0.1077,0.2937,,0.5586
+Quatipuru,all,13744.0,,,,,NaN
+Queimados,all,151822.0,0.1175,0.26,0.06446,,1.823
+Querência,all,17654.0,,,,,NaN
+Quixadá,all,88605.0,0.1758,0.2039,0.1152,,1.526
+Quixeramobim,all,81893.0,0.2412,0.9557,0.07992,,3.018
+Raposa,all,31069.0,0.145,0.1966,0.07618,,1.904
+Recife,all,1.662184e6,0.08706,0.2882,0.0617,0.13,1.411
+Redenção,all,29344.0,,,,,NaN
+Registro,all,56885.0,0.2223,0.0578,0.2964,,0.7501
+Resende,all,132654.0,0.1966,1.0,0.1035,,1.9
+Ribeira do Pombal,all,54345.0,0.1784,0.4167,0.0,,Inf
+Ribeirão,all,47889.0,0.1885,0.06523,0.1639,,1.15
+Ribeirão Pires,all,124627.0,0.05448,0.3447,0.04396,,1.239
+Ribeirão Preto,all,710326.0,0.17,0.13,0.04769,0.06912,3.563
+Ribeirão das Neves,all,338207.0,,,,,NaN
+Rio Bonito,all,60803.0,0.05453,0.1419,0.03521,,1.549
+Rio Branco,all,411392.0,0.1415,0.1234,0.07184,0.08565,1.97
+Rio Claro,all,208488.0,0.0917,0.03275,0.1622,,0.5653
+Rio Formoso,all,23770.0,,,,,NaN
+Rio Grande,all,213115.0,0.09349,0.3146,0.05556,,1.683
+Rio Grande da Serra,all,51354.0,,,,,NaN
+Rio Largo,all,75871.0,0.1163,1.0,0.06247,,1.861
+Rio Preto da Eva,all,33680.0,0.1301,0.3245,0.1156,0.06034,1.125
+Rio Verde,all,238003.0,0.01,0.7572,0.00696,,1.437
+Rio das Ostras,all,152181.0,0.09398,0.278,0.07164,,1.312
+Rio de Janeiro,all,6.786092e6,0.07039,0.06562,0.05335,0.2011,1.319
+Rio do Sul,all,71772.0,,,,,NaN
+Rondon do Pará,all,52881.0,0.3392,0.5326,0.2269,,1.495
+Rondonópolis,all,234816.0,0.03491,1.0,0.01253,,2.786
+Rosário,all,43167.0,0.1202,0.123,0.05071,,2.371
+Russas,all,78976.0,0.1329,0.1588,0.06551,,2.028
+Sabará,all,137707.0,,,,,NaN
+Salesópolis,all,17310.0,0.1646,0.09591,0.125,,1.317
+Salete,all,7718.0,,,,,NaN
+Salinópolis,all,41082.0,,,,,NaN
+Salto,all,119850.0,,,,,NaN
+Salvador,all,2.90107e6,0.1044,0.2235,0.05136,0.0816,2.033
+Salvaterra,all,23990.0,0.08694,0.2775,0.03492,,2.49
+Sant'Ana do Livramento,all,77797.0,,,,,NaN
+Santa Bárbara,all,20999.0,,,,,NaN
+Santa Cruz,all,15552.0,,,,,NaN
+Santa Cruz Cabrália,all,28056.0,,,,,NaN
+Santa Cruz de Monte Castelo,all,7878.0,,,,,NaN
+Santa Cruz do Arari,all,10229.0,0.1277,0.4613,0.06914,,1.848
+Santa Cruz do Rio Pardo,all,48150.0,,,,,NaN
+Santa Inês,all,89934.0,0.01,0.01,0.1628,,0.06143
+Santa Isabel,all,57960.0,0.1049,0.03924,0.3026,,0.3467
+Santa Isabel do Rio Negro,all,25408.0,,,,,NaN
+Santa Izabel do Pará,all,71509.0,0.06603,0.3553,0.03926,,1.682
+Santa Leopoldina,all,12346.0,,,,,NaN
+Santa Luzia,all,12723.0,,,,,NaN
+Santa Maria,all,5607.0,,,,,NaN
+Santa Maria de Jetibá,all,40835.0,0.1768,0.1847,0.1296,,1.364
+Santa Maria do Pará,all,25110.0,,,,,NaN
+Santa Quitéria,all,44140.0,0.06667,0.2047,0.06565,,1.016
+Santa Rita,all,38234.0,0.1028,0.1241,0.1522,0.2536,0.6753
+Santa Rosa,all,73987.0,,,,,NaN
+Santa Teresa,all,23826.0,0.1598,0.2608,0.03448,,4.634
+Santana,all,122578.0,0.138,0.2637,0.05513,0.06232,2.503
+Santana de Parnaíba,all,140841.0,0.09618,1.0,0.04779,0.08258,2.012
+Santarém,all,307635.0,0.08155,0.1503,0.08165,,0.9988
+Santo André,all,725961.0,0.08047,0.1228,0.04871,0.1209,1.652
+Santo Antônio,all,24377.0,,,,,NaN
+Santo Antônio de Pádua,all,42904.0,0.01,0.01,0.1667,,0.06
+Santo Antônio do Aracanguá,all,8504.0,,,,,NaN
+Santo Antônio do Caiuá,all,2667.0,0.06842,0.2787,0.1964,,0.3483
+Santo Antônio do Tauá,all,31797.0,0.128,0.2669,0.07844,,1.632
+Santos,all,437644.0,0.08872,0.117,0.05197,0.1505,1.707
+Sapiranga,all,82551.0,,,,,NaN
+Sapucaia,all,5989.0,0.0206,0.3339,0.0,,Inf
+Sapucaia do Sul,all,142486.0,,,,,NaN
+Sapé,all,53151.0,0.1158,0.3146,0.09305,,1.245
+Saquarema,all,90062.0,0.01,0.01,0.03964,,0.2523
+Satuba,all,13966.0,,,,,NaN
+Seara,all,17716.0,,,,,NaN
+Senador Amaral,all,5410.0,,,,,NaN
+Senador Guiomard,all,23254.0,,,,,NaN
+Senador Pompeu,all,25751.0,,,,,NaN
+Seropédica,all,83135.0,,,,,NaN
+Serra,all,522685.0,0.04468,0.04024,0.04304,0.1335,1.038
+Serra do Navio,all,5451.0,,,,,NaN
+Sertânia,all,36266.0,0.1189,0.9799,0.0,,Inf
+Sertãozinho,all,5074.0,0.04915,0.2676,0.05556,,0.8847
+Sete Lagoas,all,242035.0,,,,,NaN
+Siderópolis,all,14147.0,0.0646,0.3364,0.0,,Inf
+Silva Jardim,all,21992.0,0.2237,0.5379,0.2278,,0.9822
+Silves,all,9263.0,0.2641,0.2137,0.0984,,2.684
+Sinop,all,144426.0,0.03658,0.432,0.0,,Inf
+Sirinhaém,all,46324.0,0.2609,0.04846,0.1389,,1.879
+Sobral,all,211024.0,0.1294,0.2338,0.06094,0.06553,2.124
+Soledade,all,15139.0,,,,,NaN
+Sombrio,all,30678.0,0.07227,0.1246,0.06126,,1.18
+Sooretama,all,30371.0,,,,,NaN
+Sorocaba,all,686172.0,0.1203,0.1025,0.1097,0.1878,1.097
+Sousa,all,70138.0,,,,,NaN
+Sumaré,all,285265.0,0.01,0.01,0.05122,,0.1953
+Suzano,all,300613.0,0.08651,0.3116,0.05442,0.1995,1.59
+São Benedito do Rio Preto,all,18850.0,0.1066,0.2542,0.08025,,1.328
+São Bento,all,45663.0,0.09444,0.1799,0.1111,,0.85
+São Bento do Sul,all,85352.0,,,,,NaN
+São Bento do Una,all,60099.0,,,,,NaN
+São Bernardo do Campo,all,847325.0,0.086,0.3131,0.05591,0.155,1.538
+São Caetano de Odivelas,all,18230.0,0.3798,1.0,0.252,,1.507
+São Caetano do Sul,all,162738.0,0.01,0.08706,0.03571,0.1386,0.28
+São Caitano,all,37617.0,,,,,NaN
+São Carlos,all,11394.0,0.179,0.3334,0.06965,,2.57
+São Domingos do Capim,all,32309.0,,,,,NaN
+São Francisco,all,56886.0,0.1373,0.0667,0.1606,,0.855
+São Francisco do Conde,all,40200.0,0.09723,0.2737,0.02778,,3.5
+São Francisco do Sul,all,53248.0,0.05911,0.2791,0.07407,,0.798
+São Gabriel da Cachoeira,all,46020.0,0.3743,0.2283,0.2493,,1.502
+São Gonçalo,all,1.095687e6,0.1079,0.3761,0.06319,0.1741,1.707
+São Gonçalo do Amarante,all,48906.0,0.08206,0.7029,0.02852,,2.878
+São José de Mipibu,all,44338.0,0.1921,0.4489,0.06277,,3.06
+São José de Ribamar,all,179464.0,0.09982,0.1633,0.04356,0.08772,2.291
+São José do Egito,all,34291.0,,,,,NaN
+São José do Rio Pardo,all,55495.0,,,,,NaN
+São José do Rio Preto,all,465278.0,0.1792,0.9311,0.04461,0.07926,4.017
+São José do Vale do Rio Preto,all,22013.0,,,,,NaN
+São José dos Campos,all,729163.0,0.08839,0.205,0.03157,0.1022,2.8
+São João Batista,all,20872.0,,,,,NaN
+São João da Boa Vista,all,92123.0,0.06602,0.278,0.01852,,3.565
+São João de Meriti,all,477130.0,0.01,0.01,0.06591,0.1924,0.1517
+São João de Pirabas,all,23275.0,,,,,NaN
+São João del Rei,all,90983.0,,,,,NaN
+São João do Caiuá,all,5914.0,0.01,0.1782,0.0719,,0.1391
+São João do Rio do Peixe,all,18214.0,,,,,NaN
+São Leopoldo,all,239203.0,0.1104,0.08824,0.05502,,2.007
+São Lourenço,all,46310.0,,,,,NaN
+São Lourenço da Mata,all,114362.0,0.07197,0.2232,0.06498,0.246,1.108
+São Lourenço da Serra,all,15983.0,0.1058,0.1784,0.09798,,1.08
+São Ludgero,all,13544.0,0.03238,0.4772,0.07448,,0.4348
+São Luís,all,1.112903e6,0.01,0.01,0.05021,0.1404,0.1992
+São Manuel,all,41364.0,0.09452,0.3683,0.05265,,1.795
+São Mateus do Maranhão,all,41944.0,,,,,NaN
+São Miguel,all,23754.0,,,,,NaN
+São Miguel do Guamá,all,59576.0,0.1498,0.381,0.04618,,3.244
+São Miguel do Tocantins,all,12260.0,,,,,NaN
+São Miguel dos Campos,all,61864.0,0.1797,0.4764,0.05952,,3.019
+São Paulo,all,1.2374543e7,0.0702,0.2305,0.03903,0.1694,1.799
+São Paulo de Olivença,all,39692.0,0.2178,1.0,0.08895,,2.449
+São Pedro,all,6031.0,,,,,NaN
+São Pedro da Aldeia,all,105521.0,0.1032,0.1477,0.03332,,3.097
+São Rafael,all,8284.0,0.1922,0.4021,0.04259,,4.513
+São Roque,all,91926.0,0.01,0.1539,0.02493,,0.4011
+São Sebastião,all,34494.0,0.1104,0.1153,0.1302,,0.8477
+São Sebastião do Caí,all,25942.0,,,,,NaN
+São Sebastião do Paraíso,all,71666.0,0.147,0.2451,0.08333,,1.763
+São Vicente,all,6488.0,0.08384,0.2824,0.05344,0.08354,1.569
+Sítio Novo do Tocantins,all,9119.0,0.01,0.01,0.4762,,0.021
+Tabatinga,all,66502.0,,0.2563,0.07377,,NaN
+Tabira,all,28819.0,,,,,NaN
+Taboão da Serra,all,292561.0,0.0586,0.144,0.03352,0.1872,1.748
+Tabuleiro do Norte,all,31004.0,0.08168,0.8644,0.1111,,0.7351
+Tailândia,all,107402.0,,,,,NaN
+Tamboara,all,5171.0,0.135,0.357,0.1111,,1.215
+Tangará da Serra,all,104788.0,,,,,NaN
+Tanguá,all,34652.0,0.1751,0.1207,0.0,,Inf
+Tapauá,all,17328.0,0.01,0.01,0.1221,,0.08189
+Tapejara,all,24352.0,,,,,NaN
+Taperoá,all,21285.0,0.3132,0.1839,0.1085,,2.887
+Taquari,all,27131.0,,,,,NaN
+Tartarugalzinho,all,17488.0,0.05311,0.5988,0.03333,,1.593
+Tatuí,all,122984.0,0.01,0.01,0.05434,,0.184
+Taubaté,all,318073.0,0.01314,0.252,0.01754,,0.7495
+Tauá,all,59448.0,0.1887,0.4071,0.0501,,3.767
+Tefé,all,60447.0,0.3835,0.9174,0.1747,0.1134,2.195
+Telêmaco Borba,all,79764.0,,,,,NaN
+Teresina,all,873493.0,0.1327,1.0,0.06376,0.06241,2.081
+Teresópolis,all,184420.0,0.09562,0.1327,0.0648,,1.476
+Terra Alta,all,11837.0,0.1446,0.2363,0.1036,,1.396
+Terra Rica,all,16957.0,,,,,NaN
+Teutônia,all,33564.0,,,,,NaN
+Timbaúba,all,53552.0,0.08739,0.04941,0.1611,,0.5424
+Timon,all,170798.0,,,,,NaN
+Timóteo,all,90740.0,,,,,NaN
+Tomé-Açu,all,64081.0,0.209,0.4307,0.2095,,0.9973
+Tonantins,all,18943.0,0.1049,0.0612,0.07406,,1.416
+Torres,all,39119.0,,,,,NaN
+Tracuateua,all,31269.0,,,,,NaN
+Trairi,all,56477.0,0.1527,0.09525,0.1899,,0.8041
+Trindade,all,128875.0,0.1528,0.35,0.1852,,0.8249
+Trizidela do Vale,all,22218.0,0.1061,0.1872,0.04676,,2.268
+Três Lagoas,all,122602.0,0.01,0.05659,0.04109,,0.2434
+Três Rios,all,82622.0,0.09419,0.4413,0.04412,,2.135
+Tucumã,all,39998.0,,,,,NaN
+Tucuruí,all,114796.0,0.2007,0.9894,0.2254,,0.8902
+Tupi Paulista,all,15650.0,,,,,NaN
+Tururu,all,16434.0,0.2732,0.1864,0.2405,,1.136
+Ubatuba,all,91707.0,,,,,NaN
+Ubatã,all,27305.0,,,,,NaN
+Uberaba,all,337121.0,0.01,0.05704,0.05631,,0.1776
+Uberlândia,all,698218.0,0.01,0.01,0.0466,0.08698,0.2146
+Ubá,all,116708.0,,,,,NaN
+Umirim,all,20023.0,0.371,0.1372,0.3611,,1.027
+União,all,44930.0,,,,,NaN
+União da Vitória,all,58092.0,,,,,NaN
+União dos Palmares,all,66267.0,0.1506,0.2856,0.07055,,2.135
+Urucará,all,16419.0,0.2157,0.4187,0.1467,,1.471
+Urucurituba,all,23296.0,,,,,NaN
+Urupá,all,11582.0,,,,,NaN
+Urussanga,all,21481.0,0.06092,0.2421,0.1018,,0.5982
+Uruçuca,all,20724.0,0.01,0.01,0.07634,,0.131
+Vacaria,all,66880.0,0.09032,0.1667,0.0,,Inf
+Valença,all,97528.0,0.2337,0.05389,0.09402,,2.485
+Valinhos,all,130485.0,0.1053,0.2688,0.05001,,2.105
+Vargem Bonita,all,4537.0,,,,,NaN
+Vargem Grande,all,57075.0,,,,,NaN
+Vazante,all,20796.0,,,,,NaN
+Venda Nova do Imigrante,all,25530.0,,,,,NaN
+Venâncio Aires,all,72270.0,0.1702,0.2573,0.09841,,1.729
+Vera Cruz,all,43655.0,0.08981,0.3912,0.0,,Inf
+Viamão,all,257776.0,,,,,NaN
+Vigia,all,54223.0,0.1309,0.417,0.05107,,2.562
+Vila Valério,all,14221.0,,,,,NaN
+Vila Velha,all,498776.0,0.05018,0.184,0.03851,0.06482,1.303
+Vinhedo,all,79515.0,0.01,0.1186,0.03485,,0.287
+Vitória,all,365718.0,0.05516,0.1499,0.03601,0.08448,1.532
+Vitória da Conquista,all,341865.0,0.07678,0.4245,0.03544,,2.166
+Vitória de Santo Antão,all,140145.0,0.01,0.01,0.116,,0.08623
+Vitória do Jari,all,16090.0,,,,,NaN
+Vitória do Mearim,all,33092.0,,,,,NaN
+Volta Redonda,all,275742.0,0.03542,0.1634,0.03854,0.09345,0.9191
+Votorantim,all,123705.0,0.1534,0.0941,0.1387,,1.106
+Votuporanga,all,95492.0,,,,,NaN
+Várzea Grande,all,287821.0,0.1856,0.4635,0.127,,1.461
+Várzea Paulista,all,123056.0,0.152,0.2318,0.0854,,1.78
+Xinguara,all,45199.0,0.1572,0.5058,0.07143,,2.201
+Zé Doca,all,52231.0,0.01,0.01,0.1508,,0.06632
+Água Branca,all,17585.0,,,,,NaN
+Água Preta,all,37139.0,0.2344,0.1115,0.68,,0.3447
+Águas Lindas de Goiás,all,214564.0,0.1185,0.449,0.04219,,2.808
+Águas de Chapecó,all,6551.0,,,,,NaN
+Águas de Lindóia,all,18892.0,0.01,0.2051,0.03571,,0.28
