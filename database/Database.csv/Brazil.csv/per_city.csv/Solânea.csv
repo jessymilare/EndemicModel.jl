@@ -1,0 +1,3 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-13,PB,Solânea,3,0,1,26671,2516003,1,2,,,,,,,,,,,,,,0.0,0.0,112.482,0.0,37.494,37.494,74.988
+2020-05-14,PB,Solânea,7,0,3,26671,2516003,3,4,,,,,,,,,,,,,,0.0,0.0,262.457,0.0,112.482,112.482,149.976
