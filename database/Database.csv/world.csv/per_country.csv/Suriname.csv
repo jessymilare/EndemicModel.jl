@@ -1,4 +1,4 @@
-Country,Date,Latitude,Longitude,Estimated Population,Estimated Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
+Country,Date,Latitude,Longitude,Estimated Population,Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
 Suriname,2020-01-22,3.919,-56.0278,589022,6234,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Suriname,2020-01-23,3.919,-56.0278,589022,6234,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Suriname,2020-01-24,3.919,-56.0278,589022,6234,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
@@ -106,9 +106,10 @@ Suriname,2020-05-04,3.919,-56.0278,589022,6234,,,10,9,1,10,0,0.0,0.1667,0.0,0.16
 Suriname,2020-05-05,3.919,-56.0278,589022,6234,,,10,9,1,10,0,0.0,0.1667,0.0,0.1667,-0.16667,,-0.02778,,,,,,,0.1,0.1,16.977,1.698,15.28,16.977,0.0,,
 Suriname,2020-05-06,3.919,-56.0278,589022,6234,,,10,9,1,10,0,0.0,0.0,0.0,0.0,0.0,,-0.02778,,,,,,,0.1,0.1,16.977,1.698,15.28,16.977,0.0,,
 Suriname,2020-05-07,3.919,-56.0278,589022,6234,,,10,9,1,10,0,0.0,0.0,0.0,0.0,0.0,,-0.02778,,,,,,,0.1,0.1,16.977,1.698,15.28,16.977,0.0,,
-Suriname,2020-05-08,3.919,-56.0278,589022,6234,,,10,9,1,10,0,0.0,0.0,0.0,0.0,0.0,,,,,,,,,0.1,0.1,16.977,1.698,15.28,16.977,0.0,,
+Suriname,2020-05-08,3.919,-56.0278,589022,6234,,,10,9,1,10,0,0.0,0.0,0.0,0.0,0.0,,-0.02778,,,,,,,0.1,0.1,16.977,1.698,15.28,16.977,0.0,,
 Suriname,2020-05-09,3.919,-56.0278,589022,6234,,,10,9,1,10,0,0.0,0.0,0.0,0.0,0.0,,,,,,,,,0.1,0.1,16.977,1.698,15.28,16.977,0.0,,
 Suriname,2020-05-10,3.919,-56.0278,589022,6234,,,10,9,1,10,0,0.0,0.0,0.0,0.0,0.0,,,,,,,,,0.1,0.1,16.977,1.698,15.28,16.977,0.0,,
-Suriname,2020-05-11,3.919,-56.0278,589022,6234,,,10,9,1,10,0,,,,,,,,,,,,,,0.1,0.1,16.977,1.698,15.28,16.977,0.0,,
+Suriname,2020-05-11,3.919,-56.0278,589022,6234,,,10,9,1,10,0,0.0,0.0,0.0,0.0,0.0,,,,,,,,,0.1,0.1,16.977,1.698,15.28,16.977,0.0,,
 Suriname,2020-05-12,3.919,-56.0278,589022,6234,,,10,9,1,10,0,,,,,,,,,,,,,,0.1,0.1,16.977,1.698,15.28,16.977,0.0,,
 Suriname,2020-05-13,3.919,-56.0278,589022,6234,,,10,9,1,10,0,,,,,,,,,,,,,,0.1,0.1,16.977,1.698,15.28,16.977,0.0,,
+Suriname,2020-05-14,3.919,-56.0278,589022,6234,,,10,9,1,10,0,,,,,,,,,,,,,,0.1,0.1,16.977,1.698,15.28,16.977,0.0,,

@@ -1,4 +1,4 @@
-Country,Date,Latitude,Longitude,Estimated Population,Estimated Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
+Country,Date,Latitude,Longitude,Estimated Population,Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
 West Bank and Gaza,2020-01-22,31.952,35.233,4801744,3199,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 West Bank and Gaza,2020-01-23,31.952,35.233,4801744,3199,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 West Bank and Gaza,2020-01-24,31.952,35.233,4801744,3199,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
@@ -106,9 +106,10 @@ West Bank and Gaza,2020-05-04,31.952,35.233,4801744,3199,,,362,102,2,104,258,3.6
 West Bank and Gaza,2020-05-05,31.952,35.233,4801744,3199,,,371,127,2,129,242,3.667,25.333,0.0,25.333,-21.66667,-0.63889,3.278,,,,-0.22917,,,0.0155,0.00539,77.264,0.4165,26.449,26.865,50.398,,
 West Bank and Gaza,2020-05-06,31.952,35.233,4801744,3199,,,374,174,2,176,198,3.667,25.167,0.0,25.167,-21.5,-0.80556,1.0,,,,,,,0.01136,0.00535,77.888,0.4165,36.237,36.653,41.235,,
 West Bank and Gaza,2020-05-07,31.952,35.233,4801744,3199,,,375,176,2,178,197,2.167,26.833,0.0,26.833,-24.66667,-0.61111,0.9444,,,,,,,0.01124,0.00533,78.097,0.4165,36.653,37.07,41.027,,
-West Bank and Gaza,2020-05-08,31.952,35.233,4801744,3199,,,375,228,2,230,145,0.6667,29.0,0.0,29.0,-28.33333,,,,,,,,,0.0087,0.00533,78.097,0.4165,47.483,47.899,30.197,,
+West Bank and Gaza,2020-05-08,31.952,35.233,4801744,3199,,,375,228,2,230,145,0.6667,29.0,0.0,29.0,-28.33333,-0.61111,-1.94444,,,,,,,0.0087,0.00533,78.097,0.4165,47.483,47.899,30.197,,
 West Bank and Gaza,2020-05-09,31.952,35.233,4801744,3199,,,375,228,2,230,145,0.1667,22.333,0.0,22.333,-22.16667,,,,,,,,,0.0087,0.00533,78.097,0.4165,47.483,47.899,30.197,,
 West Bank and Gaza,2020-05-10,31.952,35.233,4801744,3199,,,375,263,2,265,110,0.0,22.333,0.0,22.333,-22.33333,,,,,,,,,0.00755,0.00533,78.097,0.4165,54.772,55.188,22.908,,
-West Bank and Gaza,2020-05-11,31.952,35.233,4801744,3199,,,375,301,2,303,72,,,,,,,,,,,,,,0.0066,0.00533,78.097,0.4165,62.686,63.102,14.995,,
+West Bank and Gaza,2020-05-11,31.952,35.233,4801744,3199,,,375,301,2,303,72,0.0,13.667,0.0,13.667,-13.66667,,,,,,,,,0.0066,0.00533,78.097,0.4165,62.686,63.102,14.995,,
 West Bank and Gaza,2020-05-12,31.952,35.233,4801744,3199,,,375,308,2,310,65,,,,,,,,,,,,,,0.00645,0.00533,78.097,0.4165,64.143,64.56,13.537,,
 West Bank and Gaza,2020-05-13,31.952,35.233,4801744,3199,,,375,310,2,312,63,,,,,,,,,,,,,,0.00641,0.00533,78.097,0.4165,64.56,64.976,13.12,,
+West Bank and Gaza,2020-05-14,31.952,35.233,4801744,3199,,,375,310,2,312,63,,,,,,,,,,,,,,0.00641,0.00533,78.097,0.4165,64.56,64.976,13.12,,

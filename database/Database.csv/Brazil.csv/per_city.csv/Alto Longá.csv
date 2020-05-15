@@ -1,2 +1,4 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-05-12,PI,Alto Longá,1,0,0,14447,2200301,0,1,,,,,,,,,,,,,,,0.0,69.219,0.0,0.0,0.0,69.219
+2020-05-13,PI,Alto Longá,1,0,0,14447,2200301,0,1,,,,,,,,,,,,,,,0.0,69.219,0.0,0.0,0.0,69.219
+2020-05-14,PI,Alto Longá,1,0,0,14447,2200301,0,1,,,,,,,,,,,,,,,0.0,69.219,0.0,0.0,0.0,69.219

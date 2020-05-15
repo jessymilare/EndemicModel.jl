@@ -23,7 +23,12 @@ using Plots
 using StatsBase
 using Unitful
 
-export AbstractDataSource,
+export DataDict,
+    DataFrameDict,
+    AbstractDataDict,
+
+    AbstractDataSource,
+    DataSourceDesignator,
     AbstractDataPath,
     CsseSource,
     CsvDirectory,

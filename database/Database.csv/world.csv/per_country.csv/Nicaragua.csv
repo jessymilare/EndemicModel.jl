@@ -1,4 +1,4 @@
-Country,Date,Latitude,Longitude,Estimated Population,Estimated Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
+Country,Date,Latitude,Longitude,Estimated Population,Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
 Nicaragua,2020-01-22,12.865,-85.2072,6642666,2029,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Nicaragua,2020-01-23,12.865,-85.2072,6642666,2029,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Nicaragua,2020-01-24,12.865,-85.2072,6642666,2029,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
@@ -106,9 +106,10 @@ Nicaragua,2020-05-04,12.865,-85.2072,6642666,2029,,,15,7,5,12,3,0.3333,0.0,0.333
 Nicaragua,2020-05-05,12.865,-85.2072,6642666,2029,,,16,7,5,12,4,0.3333,0.0,0.3333,0.3333,0.0,-0.08333,,-0.05556,,,,,,0.4167,0.3125,2.409,0.7527,1.054,1.807,0.6022,,
 Nicaragua,2020-05-06,12.865,-85.2072,6642666,2029,,,16,7,5,12,4,0.1667,0.0,0.0,0.0,0.1667,0.1944,,0.02778,,,,,,0.4167,0.3125,2.409,0.7527,1.054,1.807,0.6022,,
 Nicaragua,2020-05-07,12.865,-85.2072,6642666,2029,,,16,7,5,12,4,0.1667,0.0,0.0,0.0,0.1667,0.1944,,0.02778,,,,,,0.4167,0.3125,2.409,0.7527,1.054,1.807,0.6022,,
-Nicaragua,2020-05-08,12.865,-85.2072,6642666,2029,,,16,7,5,12,4,0.0,0.0,0.0,0.0,0.0,,,,,,,,,0.4167,0.3125,2.409,0.7527,1.054,1.807,0.6022,,
+Nicaragua,2020-05-08,12.865,-85.2072,6642666,2029,,,16,7,5,12,4,0.0,0.0,0.0,0.0,0.0,0.1944,,0.02778,,,,,,0.4167,0.3125,2.409,0.7527,1.054,1.807,0.6022,,
 Nicaragua,2020-05-09,12.865,-85.2072,6642666,2029,,,16,7,5,12,4,1.5,0.0,0.5,0.5,1.0,,,,,,,,,0.4167,0.3125,2.409,0.7527,1.054,1.807,0.6022,,
 Nicaragua,2020-05-10,12.865,-85.2072,6642666,2029,,,16,7,5,12,4,1.5,0.0,0.5,0.5,1.0,,,,,,,,,0.4167,0.3125,2.409,0.7527,1.054,1.807,0.6022,,
-Nicaragua,2020-05-11,12.865,-85.2072,6642666,2029,,,16,7,5,12,4,,,,,,,,,,,,,,0.4167,0.3125,2.409,0.7527,1.054,1.807,0.6022,,
+Nicaragua,2020-05-11,12.865,-85.2072,6642666,2029,,,16,7,5,12,4,1.5,0.0,0.5,0.5,1.0,,,,,,,,,0.4167,0.3125,2.409,0.7527,1.054,1.807,0.6022,,
 Nicaragua,2020-05-12,12.865,-85.2072,6642666,2029,,,25,7,8,15,10,,,,,,,,,,,,,,0.5333,0.32,3.764,1.204,1.054,2.258,1.505,,
 Nicaragua,2020-05-13,12.865,-85.2072,6642666,2029,,,25,7,8,15,10,,,,,,,,,,,,,,0.5333,0.32,3.764,1.204,1.054,2.258,1.505,,
+Nicaragua,2020-05-14,12.865,-85.2072,6642666,2029,,,25,7,8,15,10,,,,,,,,,,,,,,0.5333,0.32,3.764,1.204,1.054,2.258,1.505,,

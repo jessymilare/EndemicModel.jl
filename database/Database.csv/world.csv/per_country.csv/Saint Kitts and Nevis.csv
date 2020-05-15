@@ -1,4 +1,4 @@
-Country,Date,Latitude,Longitude,Estimated Population,Estimated Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
+Country,Date,Latitude,Longitude,Estimated Population,Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
 Saint Kitts and Nevis,2020-01-22,17.358,-62.783,,,,,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,
 Saint Kitts and Nevis,2020-01-23,17.358,-62.783,,,,,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,
 Saint Kitts and Nevis,2020-01-24,17.358,-62.783,,,,,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,
@@ -106,9 +106,10 @@ Saint Kitts and Nevis,2020-05-04,17.358,-62.783,,,,,15,8,0,8,7,0.0,0.6667,,,,,0.
 Saint Kitts and Nevis,2020-05-05,17.358,-62.783,,,,,15,12,0,12,3,0.0,0.8333,,,,,-0.16667,,,,,,,0.0,0.0,,,,,,,
 Saint Kitts and Nevis,2020-05-06,17.358,-62.783,,,,,15,12,0,12,3,0.0,1.0,,,,,-0.11111,,,,,,,0.0,0.0,,,,,,,
 Saint Kitts and Nevis,2020-05-07,17.358,-62.783,,,,,15,12,0,12,3,0.0,1.0,,,,,-0.05556,,,,,,,0.0,0.0,,,,,,,
-Saint Kitts and Nevis,2020-05-08,17.358,-62.783,,,,,15,13,0,13,2,0.0,0.3333,,,,,,,,,,,,0.0,0.0,,,,,,,
+Saint Kitts and Nevis,2020-05-08,17.358,-62.783,,,,,15,13,0,13,2,0.0,0.3333,,,,,-0.11111,,,,,,,0.0,0.0,,,,,,,
 Saint Kitts and Nevis,2020-05-09,17.358,-62.783,,,,,15,14,0,14,1,0.0,0.3333,,,,,,,,,,,,0.0,0.0,,,,,,,
 Saint Kitts and Nevis,2020-05-10,17.358,-62.783,,,,,15,14,0,14,1,0.0,0.3333,,,,,,,,,,,,0.0,0.0,,,,,,,
-Saint Kitts and Nevis,2020-05-11,17.358,-62.783,,,,,15,14,0,14,1,,,,,,,,,,,,,,0.0,0.0,,,,,,,
+Saint Kitts and Nevis,2020-05-11,17.358,-62.783,,,,,15,14,0,14,1,0.0,0.1667,,,,,,,,,,,,0.0,0.0,,,,,,,
 Saint Kitts and Nevis,2020-05-12,17.358,-62.783,,,,,15,14,0,14,1,,,,,,,,,,,,,,0.0,0.0,,,,,,,
 Saint Kitts and Nevis,2020-05-13,17.358,-62.783,,,,,15,14,0,14,1,,,,,,,,,,,,,,0.0,0.0,,,,,,,
+Saint Kitts and Nevis,2020-05-14,17.358,-62.783,,,,,15,14,0,14,1,,,,,,,,,,,,,,0.0,0.0,,,,,,,

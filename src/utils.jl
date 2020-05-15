@@ -3,6 +3,21 @@
 
 const PathDesignator = Union{AbstractString, AbstractPath}
 
+const Float = Float64
+const OptFloat = Union{Missing, Float64}
+
+const DataDict = Dict{Symbol, Any}
+const OrderedDataDict = OrderedDict{Symbol, Any}
+const SortedDataDict = SortedDict{Symbol, Any}
+const WeakKeyDataDict = WeakKeyDict{Symbol, Any}
+const DataFrameDict = Dict{Symbol, DataFrame}
+const AbstractDataDict = AbstractDict{Symbol, Any}
+
+datadict(data::AbstractDict) = DataDict(data)
+datadict(data::OrderedDict) = OrderedDataDict(data)
+datadict(data::SortedDict) = SortedDataDict(data)
+datadict(data::WeakKeyDict) = WeakKeyDataDict(data)
+
 function csv_read(file::PathDesignator; kwargs...)::DataFrame
     CSV.read(string(file); kwargs...)
 end
@@ -112,10 +127,11 @@ end
 prettify(obj::Quantity{<:Integer}; kwargs...) = string(obj)
 prettify(obj::Quantity; digits = 3, kwargs...) =
     round(unit(obj), obj; digits = digits + 2)
-prettify(obj::Symbol; kwargs...) = Symbol(prettify(string(obj); kwargs...))
+prettify(obj::Symbol; kwargs...) =
+    Symbol(prettify(string(obj); title = true, kwargs...))
 
-function prettify(obj::AbstractString; kwargs...)
-    if ' ' ∉ obj && all(c -> Int(c) < 255, obj)
+function prettify(obj::AbstractString; title = false, kwargs...)
+    if title && all(c -> Int(c) < 255, obj)
         titlecase(replace(obj, "_" => " "); strict = false)
     else
         obj
@@ -124,7 +140,7 @@ end
 
 function prettify(obj::AbstractDataFrame; kwargs...)
     newcols = [prettify(col; kwargs...) for col ∈ eachcol(obj)]
-    newnames = prettify(names(obj); kwargs...)
+    newnames = prettify(names(obj); title = true, kwargs...)
     DataFrame(newcols, newnames)
 end
 

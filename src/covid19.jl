@@ -20,7 +20,7 @@
         :latitude,
         :longitude,
         :estimated_population,
-        :estimated_gdp_per_capita,
+        :gdp_per_capita,
         :total_tests,
         :test_kind,
         :confirmed,
@@ -48,7 +48,7 @@ end
 
 @defgroup per_country(world3) (country,) [
     (date, latitude, longitude) => identity,
-    (estimated_population, estimated_gdp_per_capita) => identity,
+    (estimated_population, gdp_per_capita) => identity,
     (total_tests, test_kind) => identity,
     (confirmed, recovered, deaths) => identity,
 ]
@@ -108,7 +108,7 @@ end
 
 function _column_diff(column, date, ndays)
     n = length(date)
-    result = Vector{Union{Float64, Missing}}(missing, n)
+    result = Vector{OptFloat}(missing, n)
     half2 = floor(Int, ndays / 2)
     half1 = ndays - half2
     istart = 1 + half1
@@ -129,7 +129,7 @@ end
 @defcolumn diff_confirmed(date, confirmed) _column_diff(confirmed, date, 6)
 #= begin
     n = length(date)
-    result = Vector{Union{Float64, Missing}}(missing, n)
+    result = Vector{OptFloat}(missing, n)
     for i ∈ 5:(n - 3)
         if (
             date[i - 4] + Day(7) == date[i] + Day(3) == date[i + 3] && # consistency check
@@ -286,13 +286,25 @@ end
 
 @defgroup total(per_country) (date,) [
     (latitude, longitude) => mean,
-    (estimated_population,) => sum,
-    (total_tests,) => sum,
-    (test_kind,) => maximum,
+    (estimated_population, gdp_per_capita) => sum,
+    (total_tests,) => sum ∘ skipmissing,
+    (test_kind,) => maximum ∘ skipmissing,
     (confirmed, recovered, deaths, closed, active) => sum,
     (diff_confirmed, diff_recovered, diff_deaths, diff_closed, diff_active) => sum,
     (diff2_confirmed, diff3_confirmed, diff4_confirmed, diff5_confirmed) => sum,
 ]
+
+@deftable total2(total, world_population, world_gdp_per_capita) begin
+    wpop, wgdp = world_population, world_gdp_per_capita
+    pop = wpop[wpop.country .== "World", :estimated_population]
+    gdp = wgdp[wgdp.country .== "World", :gdp_per_capita]
+    cols = [:date, :total_tests, :confirmed, :recovered, :deaths, :closed, :active]
+    data = select(total, cols)
+    insertcols!(data, 2, :estimated_population => pop[1])
+    insertcols!(data, 3, :gdp_per_capita => gdp[1])
+    insertcols!(data, 5, :test_kind => "units unclear")
+    data
+end
 
 function covid19_database(; kwargs...)
     sources =
@@ -326,6 +338,7 @@ function covid19_database(; kwargs...)
         column_diff5_confirmed,
         # This table needs diff columns before grouping
         group_total,
+        table_total2,
         # More columns
         column_μ_closed,
         column_μ_confirmed,
@@ -347,7 +360,7 @@ function covid19(; kwargs...)
         :world => DataDict(
             :per_country => db.csse.per_country_group,
             :per_date => db.csse.total_group,
-            :total => db.csse.total,
+            :total => db.csse.total2,
         ),
         :Brazil => DataDict(
             :per_state => db.brasil_io.per_state_group,

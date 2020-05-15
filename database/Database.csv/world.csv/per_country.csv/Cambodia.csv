@@ -1,4 +1,4 @@
-Country,Date,Latitude,Longitude,Estimated Population,Estimated Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
+Country,Date,Latitude,Longitude,Estimated Population,Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
 Cambodia,2020-01-22,11.55,104.917,16782527,1510,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Cambodia,2020-01-23,11.55,104.917,16782527,1510,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Cambodia,2020-01-24,11.55,104.917,16782527,1510,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
@@ -109,6 +109,7 @@ Cambodia,2020-05-07,11.55,104.917,16782527,1510,,,122,120,0,120,2,0.0,0.0,,,,,,,
 Cambodia,2020-05-08,11.55,104.917,16782527,1510,,,122,120,0,120,2,0.0,0.1667,,,,,,,,,,,,0.0,0.0,7.269,0.0,7.15,7.15,0.1192,,
 Cambodia,2020-05-09,11.55,104.917,16782527,1510,,,122,120,0,120,2,0.0,0.1667,,,,,,,,,,,,0.0,0.0,7.269,0.0,7.15,7.15,0.1192,,
 Cambodia,2020-05-10,11.55,104.917,16782527,1510,,,122,120,0,120,2,0.0,0.1667,,,,,,,,,,,,0.0,0.0,7.269,0.0,7.15,7.15,0.1192,,
-Cambodia,2020-05-11,11.55,104.917,16782527,1510,,,122,121,0,121,1,,,,,,,,,,,,,,0.0,0.0,7.269,0.0,7.21,7.21,0.05959,,
+Cambodia,2020-05-11,11.55,104.917,16782527,1510,,,122,121,0,121,1,0.0,0.1667,,,,,,,,,,,,0.0,0.0,7.269,0.0,7.21,7.21,0.05959,,
 Cambodia,2020-05-12,11.55,104.917,16782527,1510,,,122,121,0,121,1,,,,,,,,,,,,,,0.0,0.0,7.269,0.0,7.21,7.21,0.05959,,
 Cambodia,2020-05-13,11.55,104.917,16782527,1510,,,122,121,0,121,1,,,,,,,,,,,,,,0.0,0.0,7.269,0.0,7.21,7.21,0.05959,,
+Cambodia,2020-05-14,11.55,104.917,16782527,1510,,,122,121,0,121,1,,,,,,,,,,,,,,0.0,0.0,7.269,0.0,7.21,7.21,0.05959,,

@@ -1,4 +1,4 @@
-Country,Date,Latitude,Longitude,Estimated Population,Estimated Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
+Country,Date,Latitude,Longitude,Estimated Population,Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
 Afghanistan,2020-02-02,33.0,65.0,39653765,,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Albania,2020-02-02,41.153,20.168,2842650,5269,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Algeria,2020-02-02,28.034,1.66,43697354,4115,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
@@ -173,7 +173,7 @@ Uganda,2020-02-02,1.0,32.0,45624665,643,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0
 Ukraine,2020-02-02,48.379,31.166,44143362,3095,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 United Arab Emirates,2020-02-02,24.0,54.0,10910461,43005,,,5,0,0,0,5,0.1667,,,,,,,,,,,,,,0.0,0.4583,0.0,0.0,0.0,0.4583,,
 United Kingdom,2020-02-02,24.548,-43.90225,67359087,42944,266,people tested,2,0,0,0,2,,,,,,,,,,,,,,,0.0,0.02969,0.0,0.0,0.0,0.02969,133.0,3.949
-United States,2020-02-02,37.09,-95.7129,332049547,62795,1203,samples tested,8,0,0,0,8,1.0,,,,,0.0,,,,,,,,,0.0,0.02409,0.0,0.0,0.0,0.02409,150.375,3.623
+United States,2020-02-02,37.09,-95.7129,332049547,62795,,,8,0,0,0,8,1.0,,,,,0.0,,,,,,,,,0.0,0.02409,0.0,0.0,0.0,0.02409,,
 Uruguay,2020-02-02,-32.5228,-55.7658,3464003,17278,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Uzbekistan,2020-02-02,41.378,64.585,34035959,1532,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Venezuela,2020-02-02,6.424,-66.5897,29442841,4842,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,

@@ -1,4 +1,4 @@
-Country,Date,Latitude,Longitude,Estimated Population,Estimated Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
+Country,Date,Latitude,Longitude,Estimated Population,Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
 Fiji,2020-01-22,-17.7134,178.065,891926,6267,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Fiji,2020-01-23,-17.7134,178.065,891926,6267,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Fiji,2020-01-24,-17.7134,178.065,891926,6267,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
@@ -109,6 +109,7 @@ Fiji,2020-05-07,-17.7134,178.065,891926,6267,,,18,14,0,14,4,0.0,0.0,,,,,-0.05556
 Fiji,2020-05-08,-17.7134,178.065,891926,6267,,,18,14,0,14,4,0.0,0.0,,,,,,,,,,,,0.0,0.0,20.181,0.0,15.696,15.696,4.485,,
 Fiji,2020-05-09,-17.7134,178.065,891926,6267,,,18,14,0,14,4,0.0,0.0,,,,,,,,,,,,0.0,0.0,20.181,0.0,15.696,15.696,4.485,,
 Fiji,2020-05-10,-17.7134,178.065,891926,6267,,,18,14,0,14,4,0.0,0.0,,,,,,,,,,,,0.0,0.0,20.181,0.0,15.696,15.696,4.485,,
-Fiji,2020-05-11,-17.7134,178.065,891926,6267,,,18,14,0,14,4,,,,,,,,,,,,,,0.0,0.0,20.181,0.0,15.696,15.696,4.485,,
+Fiji,2020-05-11,-17.7134,178.065,891926,6267,,,18,14,0,14,4,0.0,0.0,,,,,,,,,,,,0.0,0.0,20.181,0.0,15.696,15.696,4.485,,
 Fiji,2020-05-12,-17.7134,178.065,891926,6267,,,18,14,0,14,4,,,,,,,,,,,,,,0.0,0.0,20.181,0.0,15.696,15.696,4.485,,
 Fiji,2020-05-13,-17.7134,178.065,891926,6267,,,18,14,0,14,4,,,,,,,,,,,,,,0.0,0.0,20.181,0.0,15.696,15.696,4.485,,
+Fiji,2020-05-14,-17.7134,178.065,891926,6267,,,18,14,0,14,4,,,,,,,,,,,,,,0.0,0.0,20.181,0.0,15.696,15.696,4.485,,

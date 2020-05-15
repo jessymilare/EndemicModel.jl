@@ -1,4 +1,4 @@
-Country,Date,Latitude,Longitude,Estimated Population,Estimated Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
+Country,Date,Latitude,Longitude,Estimated Population,Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
 Taiwan,2020-01-22,23.7,121.0,,,,,1,0,0,0,1,,,,,,,,,,,,,,,0.0,,,,,,,
 Taiwan,2020-01-23,23.7,121.0,,,,,1,0,0,0,1,,,,,,,,,,,,,,,0.0,,,,,,,
 Taiwan,2020-01-24,23.7,121.0,,,,,3,0,0,0,3,,,,,,,,,,,,,,,0.0,,,,,,,
@@ -106,9 +106,10 @@ Taiwan,2020-05-04,23.7,121.0,,,64958,samples tested,438,334,6,340,98,1.833,3.833
 Taiwan,2020-05-05,23.7,121.0,,,65589,samples tested,438,334,6,340,98,1.333,5.167,0.0,5.167,-3.83333,-0.19444,0.3056,,,,,,,0.01765,0.0137,,,,,,149.747,
 Taiwan,2020-05-06,23.7,121.0,,,66046,samples tested,439,339,6,345,94,0.6667,4.833,0.0,4.833,-4.16667,-0.25,0.4444,,,,,,,0.01739,0.01367,,,,,,150.446,
 Taiwan,2020-05-07,23.7,121.0,,,66460,samples tested,440,347,6,353,87,0.3333,5.333,0.0,5.333,-5.0,-0.30556,0.1389,,,,,,,0.017,0.01364,,,,,,151.045,
-Taiwan,2020-05-08,23.7,121.0,,,66861,samples tested,440,355,6,361,79,0.3333,5.667,0.1667,5.833,-5.5,,,,,,,,,0.01662,0.01364,,,,,,151.957,
+Taiwan,2020-05-08,23.7,121.0,,,66861,samples tested,440,355,6,361,79,0.3333,5.667,0.1667,5.833,-5.5,-0.22222,-0.08333,,,,,,,0.01662,0.01364,,,,,,151.957,
 Taiwan,2020-05-09,23.7,121.0,,,67133,samples tested,440,361,6,367,73,0.1667,5.5,0.1667,5.667,-5.5,,,,,,,,,0.01635,0.01364,,,,,,152.575,
 Taiwan,2020-05-10,23.7,121.0,,,67400,samples tested,440,366,6,372,68,0.0,4.667,0.1667,4.833,-4.83333,,,,,,,,,0.01613,0.01364,,,,,,153.182,
-Taiwan,2020-05-11,23.7,121.0,,,67758,samples tested,440,368,7,375,65,,,,,,,,,,,,,,0.01867,0.01591,,,,,,153.995,
-Taiwan,2020-05-12,23.7,121.0,,,67758,samples tested,440,372,7,379,61,,,,,,,,,,,,,,0.01847,0.01591,,,,,,153.995,
-Taiwan,2020-05-13,23.7,121.0,,,67758,samples tested,440,375,7,382,58,,,,,,,,,,,,,,0.01832,0.01591,,,,,,153.995,
+Taiwan,2020-05-11,23.7,121.0,,,67758,samples tested,440,368,7,375,65,0.0,4.667,0.1667,4.833,-4.83333,,,,,,,,,0.01867,0.01591,,,,,,153.995,
+Taiwan,2020-05-12,23.7,121.0,,,68107,samples tested,440,372,7,379,61,,,,,,,,,,,,,,0.01847,0.01591,,,,,,154.789,
+Taiwan,2020-05-13,23.7,121.0,,,68335,samples tested,440,375,7,382,58,,,,,,,,,,,,,,0.01832,0.01591,,,,,,155.307,
+Taiwan,2020-05-14,23.7,121.0,,,68335,samples tested,440,383,7,390,50,,,,,,,,,,,,,,0.01795,0.01591,,,,,,155.307,

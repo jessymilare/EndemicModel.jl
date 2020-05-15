@@ -1,4 +1,4 @@
-Country,Date,Latitude,Longitude,Estimated Population,Estimated Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
+Country,Date,Latitude,Longitude,Estimated Population,Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
 Burundi,2020-01-22,-3.3731,29.919,11893778,272,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Burundi,2020-01-23,-3.3731,29.919,11893778,272,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Burundi,2020-01-24,-3.3731,29.919,11893778,272,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
@@ -109,6 +109,7 @@ Burundi,2020-05-07,-3.3731,29.919,11893778,272,,,15,7,1,8,7,0.0,0.0,0.0,0.0,0.0,
 Burundi,2020-05-08,-3.3731,29.919,11893778,272,,,15,7,1,8,7,0.0,0.0,0.0,0.0,0.0,,,,,,,,,0.125,0.06667,1.261,0.08408,0.5885,0.6726,0.5885,,
 Burundi,2020-05-09,-3.3731,29.919,11893778,272,,,15,7,1,8,7,0.0,0.0,0.0,0.0,0.0,,,,,,,,,0.125,0.06667,1.261,0.08408,0.5885,0.6726,0.5885,,
 Burundi,2020-05-10,-3.3731,29.919,11893778,272,,,15,7,1,8,7,0.0,0.0,0.0,0.0,0.0,,,,,,,,,0.125,0.06667,1.261,0.08408,0.5885,0.6726,0.5885,,
-Burundi,2020-05-11,-3.3731,29.919,11893778,272,,,15,7,1,8,7,,,,,,,,,,,,,,0.125,0.06667,1.261,0.08408,0.5885,0.6726,0.5885,,
+Burundi,2020-05-11,-3.3731,29.919,11893778,272,,,15,7,1,8,7,0.0,0.0,0.0,0.0,0.0,,,,,,,,,0.125,0.06667,1.261,0.08408,0.5885,0.6726,0.5885,,
 Burundi,2020-05-12,-3.3731,29.919,11893778,272,,,15,7,1,8,7,,,,,,,,,,,,,,0.125,0.06667,1.261,0.08408,0.5885,0.6726,0.5885,,
 Burundi,2020-05-13,-3.3731,29.919,11893778,272,,,15,7,1,8,7,,,,,,,,,,,,,,0.125,0.06667,1.261,0.08408,0.5885,0.6726,0.5885,,
+Burundi,2020-05-14,-3.3731,29.919,11893778,272,,,15,7,1,8,7,,,,,,,,,,,,,,0.125,0.06667,1.261,0.08408,0.5885,0.6726,0.5885,,

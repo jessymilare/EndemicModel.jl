@@ -1,4 +1,4 @@
-Country,Date,Latitude,Longitude,Estimated Population,Estimated Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
+Country,Date,Latitude,Longitude,Estimated Population,Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
 Comoros,2020-01-22,-11.6455,43.333,872888,1415,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Comoros,2020-01-23,-11.6455,43.333,872888,1415,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Comoros,2020-01-24,-11.6455,43.333,872888,1415,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
@@ -106,9 +106,10 @@ Comoros,2020-05-04,-11.6455,43.333,872888,1415,,,3,0,0,0,3,1.167,,,,,,,,,,,,,,0.
 Comoros,2020-05-05,-11.6455,43.333,872888,1415,,,3,0,0,0,3,0.8333,,,,,,,,,,,,,,0.0,3.437,0.0,0.0,0.0,3.437,,
 Comoros,2020-05-06,-11.6455,43.333,872888,1415,,,8,0,1,1,7,1.333,,,,,-0.11111,,,,,,,,1.0,0.125,9.165,1.146,0.0,1.146,8.019,,
 Comoros,2020-05-07,-11.6455,43.333,872888,1415,,,8,0,1,1,7,1.333,,,,,-0.11111,,,,,,,,1.0,0.125,9.165,1.146,0.0,1.146,8.019,,
-Comoros,2020-05-08,-11.6455,43.333,872888,1415,,,8,0,1,1,7,1.333,,,,,,,,,,,,,1.0,0.125,9.165,1.146,0.0,1.146,8.019,,
+Comoros,2020-05-08,-11.6455,43.333,872888,1415,,,8,0,1,1,7,1.333,,,,,-0.05556,,,,,,,,1.0,0.125,9.165,1.146,0.0,1.146,8.019,,
 Comoros,2020-05-09,-11.6455,43.333,872888,1415,,,11,0,1,1,10,0.5,,0.0,,,,,,,,,,,1.0,0.09091,12.602,1.146,0.0,1.146,11.456,,
 Comoros,2020-05-10,-11.6455,43.333,872888,1415,,,11,0,1,1,10,0.5,,0.0,,,,,,,,,,,1.0,0.09091,12.602,1.146,0.0,1.146,11.456,,
-Comoros,2020-05-11,-11.6455,43.333,872888,1415,,,11,0,1,1,10,,,,,,,,,,,,,,1.0,0.09091,12.602,1.146,0.0,1.146,11.456,,
+Comoros,2020-05-11,-11.6455,43.333,872888,1415,,,11,0,1,1,10,0.5,,0.0,,,,,,,,,,,1.0,0.09091,12.602,1.146,0.0,1.146,11.456,,
 Comoros,2020-05-12,-11.6455,43.333,872888,1415,,,11,0,1,1,10,,,,,,,,,,,,,,1.0,0.09091,12.602,1.146,0.0,1.146,11.456,,
 Comoros,2020-05-13,-11.6455,43.333,872888,1415,,,11,0,1,1,10,,,,,,,,,,,,,,1.0,0.09091,12.602,1.146,0.0,1.146,11.456,,
+Comoros,2020-05-14,-11.6455,43.333,872888,1415,,,11,3,1,4,7,,,,,,,,,,,,,,0.25,0.09091,12.602,1.146,3.437,4.582,8.019,,

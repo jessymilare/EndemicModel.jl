@@ -1,4 +1,4 @@
-Country,Date,Latitude,Longitude,Estimated Population,Estimated Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
+Country,Date,Latitude,Longitude,Estimated Population,Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
 Liechtenstein,2020-01-22,47.14,9.55,38475,74854,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Liechtenstein,2020-01-23,47.14,9.55,38475,74854,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Liechtenstein,2020-01-24,47.14,9.55,38475,74854,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
@@ -109,6 +109,7 @@ Liechtenstein,2020-05-07,47.14,9.55,38475,74854,,,82,55,1,56,26,0.0,0.0,0.0,0.0,
 Liechtenstein,2020-05-08,47.14,9.55,38475,74854,,,82,55,1,56,26,0.0,0.0,0.0,0.0,0.0,,,,,,,,,0.01786,0.0122,2131.254,25.991,1429.5,1455.491,675.763,,
 Liechtenstein,2020-05-09,47.14,9.55,38475,74854,,,82,55,1,56,26,0.0,0.0,0.0,0.0,0.0,,,,,,,,,0.01786,0.0122,2131.254,25.991,1429.5,1455.491,675.763,,
 Liechtenstein,2020-05-10,47.14,9.55,38475,74854,,,82,55,1,56,26,0.0,0.0,0.0,0.0,0.0,,,,,,,,,0.01786,0.0122,2131.254,25.991,1429.5,1455.491,675.763,,
-Liechtenstein,2020-05-11,47.14,9.55,38475,74854,,,82,55,1,56,26,,,,,,,,,,,,,,0.01786,0.0122,2131.254,25.991,1429.5,1455.491,675.763,,
+Liechtenstein,2020-05-11,47.14,9.55,38475,74854,,,82,55,1,56,26,0.0,0.0,0.0,0.0,0.0,,,,,,,,,0.01786,0.0122,2131.254,25.991,1429.5,1455.491,675.763,,
 Liechtenstein,2020-05-12,47.14,9.55,38475,74854,,,82,55,1,56,26,,,,,,,,,,,,,,0.01786,0.0122,2131.254,25.991,1429.5,1455.491,675.763,,
 Liechtenstein,2020-05-13,47.14,9.55,38475,74854,,,82,55,1,56,26,,,,,,,,,,,,,,0.01786,0.0122,2131.254,25.991,1429.5,1455.491,675.763,,
+Liechtenstein,2020-05-14,47.14,9.55,38475,74854,,,82,55,1,56,26,,,,,,,,,,,,,,0.01786,0.0122,2131.254,25.991,1429.5,1455.491,675.763,,

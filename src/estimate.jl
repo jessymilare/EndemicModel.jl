@@ -28,30 +28,28 @@ end
 function model_loss(
     model::SEIRModel;
     loss_func::Function = phuber_loss(1.0),
+    ndays = 7,
     kwargs...,
     # diff_loss_func::Function = diff_phuber_loss(1.0),
 )
     params = parameters(model)
     ng = model.ngroups
     data = realdata(model)
-    ndays = nrow(data)
-    model_back = model_step(
-        model,
-        -ndays;
-        maxtime = Float64(ndays),
-        initial_date = data.date[1],
-    )
+    ini = max(1, nrow(data) - ndays)
+    ndays = nrow(data) - ini
+    data = data[ini:end, :]
+    model_back =
+        model_step(model, -ndays; maxtime = Float(ndays), initial_date = data.date[1])
     mdata = modeldata(model_back)
-    istart, iend = nrow(data) - ndays, nrow(data)
 
     rec_tot = loss_func(data.recovered .- mean(data.recovered))
     dth_tot = loss_func(data.deaths .- mean(data.deaths))
     act_tot = loss_func(data.active .- mean(data.active))
     max_loss = rec_tot + dth_tot + act_tot
 
-    rec_loss = Float64[]
-    act_loss = Float64[]
-    dth_loss = Float64[]
+    rec_loss = Float[]
+    act_loss = Float[]
+    dth_loss = Float[]
     for i ∈ 1:ndays
         push!(rec_loss, data.recovered[i] - mdata.recovered[i])
         push!(act_loss, data.active[i] - mdata.active[i])
@@ -64,7 +62,7 @@ end
 function optimize_params(
     model::SEIRModel;
     packed_params = (:β, :γ, :α, :μ),
-    ndays = 14,
+    ndays = 7,
     kwargs...,
 )
     n = model.ngroups
@@ -103,29 +101,35 @@ function optimize_params(
     minbox = Fminbox(NelderMead())
     E0 = model.vars[:E]
     opt_params = pack_params(model_params; packed_params = packed_params)
-    append!(opt_params, Float64.(E0))
+    append!(opt_params, Float.(E0))
     optimize(_calc_loss, lower, upper, opt_params, minbox)
 end
 
 function estimate_μ(data::AbstractDataFrame; ndays = 14, kwargs...)
     deaths, recovered = data.deaths, data.recovered
     deaths[end] == 0 && return [NaN]
-    ind1 = findfirst(.!ismissing.(deaths) .& deaths .> 0)
-    ind2 = findfirst(.!ismissing.(recovered) .& recovered .>= 100)
+    ind1 = findfirst(.!ismissing.(deaths) .& (deaths .> 0))
+    ind2 = findfirst(.!ismissing.(recovered) .& (recovered .>= 100))
     (isnothing(ind1) || isnothing(ind2)) && return [NaN]
 
     ind = max(ind1, ind2, length(deaths) - ndays)
     dth, rec = deaths[ind:end], recovered[ind:end]
     vals = filter(x -> !ismissing(x) && isfinite(x) && x > 0, dth ./ (dth .+ rec))
+    @debug(
+        "Estimating μ = deaths / (deaths + recovered)",
+        deaths = Tuple(dth),
+        recovered = Tuple(rec),
+        values = Tuple(vals)
+    )
     isempty(vals) ? [NaN] : [mean(vals)]
 end
 
 estimate_μ(model::AbstractEndemicModel; kwargs...) =
-    estimate_μ(datadict(model); kwargs...)
+    estimate_μ(realdata(model); kwargs...)
 
 function estimate_α(
     data::AbstractDataFrame;
-    ndays = 14,
+    ndays = 21,
     μ = estimate_μ(data),
     kwargs...,
 )
@@ -142,7 +146,7 @@ function estimate_α(
 end
 
 estimate_α(model::AbstractEndemicModel; kwargs...) =
-    estimate_α(datadict(model); kwargs...)
+    estimate_α(realdata(model); kwargs...)
 
 const MIN_γ = 0.01
 
@@ -193,7 +197,7 @@ function estimate_γ(
 end
 
 estimate_γ(model::AbstractEndemicModel; kwargs...) =
-    estimate_γ(datadict(model); kwargs...)
+    estimate_γ(realdata(model); kwargs...)
 
 const MIN_β = 0.01
 
@@ -255,9 +259,9 @@ function estimate_exposed!(data::AbstractDataFrame; kwargs...)
 end
 
 estimate_exposed(model::AbstractEndemicModel; kwargs...) =
-    estimate_exposed(datadict(model); kwargs...)
+    estimate_exposed(realdata(model); kwargs...)
 estimate_exposed!(model::AbstractEndemicModel; kwargs...) =
-    estimate_exposed!(datadict(model); kwargs...)
+    estimate_exposed!(realdata(model); kwargs...)
 
 function SEIRModel(
     data::AbstractDataFrame;
@@ -267,7 +271,7 @@ function SEIRModel(
     @debug "Computing SEIR model for data" _debuginfo(data)
     numpeople = data.estimated_population[1]
     data = data[data.confirmed .>= numpeople * minimum_confirmed_factor, :]
-    M = Float64[numpeople]
+    M = Float[numpeople]
     μ = estimate_μ(data; kwargs...)
     α = estimate_α(data; μ = μ, kwargs...)
     γ = estimate_γ(data; μ = μ, α = α, kwargs...)
@@ -275,19 +279,24 @@ function SEIRModel(
 
     exposed = estimate_exposed!(data; μ = μ, α = α, γ = γ, kwargs...)
     idx = findlast(!ismissing, exposed)
-    I = Float64[data.active[idx]]
+    I = Float[data.active[idx]]
     S = M - I
-    R = Float64[data.closed[idx]]
-    E = Float64[exposed[idx]]
+    R = Float[data.closed[idx]]
+    E = Float[exposed[idx]]
     initial_date = data.date[idx]
     vars, params = SEIRVariables(S, E, I, R), SEIRParameters(M, β, γ, α, μ)
 
     SEIRModel(vars, params; realdata = data, initial_date = initial_date, kwargs...)
 end
 
-function SEIRModel(data::D; kwargs...) where {D <: AbstractDict}
-    columns = [param => Union{Missing, Float64}[] for param ∈ SEIR_PARAMS]
-    paramdf = DataFrame(:key => String[], :group_name => String[], columns...)
+function SEIRModel!(destiny::AbstractDataDict, data::AbstractDict; kwargs...)
+    columns = [param => OptFloat[] for param ∈ SEIR_PARAMS]
+    paramdf = DataFrame(
+        :key => String[],
+        :group_name => String[],
+        columns...,
+        :R0 => OptFloat[],
+    )
     function _try(key, data)
         try
             model = SEIRModel(data; kwargs...)
@@ -298,7 +307,9 @@ function SEIRModel(data::D; kwargs...) where {D <: AbstractDict}
             for (i, gname) ∈ enumerate(gnames)
                 params =
                     [k => (isfinite(v[i]) ? v[i] : missing) for (k, v) ∈ param_pairs]
-                push!(paramdf, (; key = key, group_name = gname, params...))
+                R0 = param_pairs[:β][i] / param_pairs[:α][i]
+                @debug "Computed params for SEIR model" (; params...) R0
+                push!(paramdf, (; key = key, group_name = gname, params..., R0 = R0))
             end
             model
         catch exception
@@ -306,10 +317,16 @@ function SEIRModel(data::D; kwargs...) where {D <: AbstractDict}
             missing
         end
     end
-    result = D(key => _try(string(key), subdata) for (key, subdata) ∈ data)
-    !isempty(paramdf) && (result[:SEIR_MODEL_PARAMETERS] = sort!(paramdf, :key))
-    filter!(p -> !ismissing(p[2]), result)
+    for (key, subdata) ∈ data
+        val = _try(string(key), subdata)
+        !ismissing(val) && (destiny[key] = val)
+    end
+    !isempty(paramdf) && (destiny[:MODEL_PARAMETERS] = sort!(paramdf, :key))
+    destiny
 end
+
+SEIRModel(data::AbstractDict; kwargs...) =
+    SEIRModel!(empty(data, Symbol, Any), data; kwargs...)
 
 SEIRModel(database::AbstractDatabase; kwargs...) =
     SEIRModel(datadict(database); kwargs...)

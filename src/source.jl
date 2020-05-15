@@ -11,9 +11,6 @@ abstract type AbstractDataSource end
 abstract type AbstractDataFile <: AbstractDataSource end
 
 const DataSourceDesignator = Union{AbstractDataSource, Symbol}
-const DataDict = Dict{Symbol, Any}
-const DataFrameDict = Dict{Symbol, DataFrame}
-const AbstractDataDict = AbstractDict{Symbol, Any}
 
 """
     pathof(source::AbstractDataFile)

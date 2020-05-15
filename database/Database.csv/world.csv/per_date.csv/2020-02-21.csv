@@ -1,4 +1,4 @@
-Country,Date,Latitude,Longitude,Estimated Population,Estimated Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
+Country,Date,Latitude,Longitude,Estimated Population,Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
 Afghanistan,2020-02-21,33.0,65.0,39653765,,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Albania,2020-02-21,41.153,20.168,2842650,5269,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Algeria,2020-02-21,28.034,1.66,43697354,4115,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
@@ -109,7 +109,7 @@ Mali,2020-02-21,17.571,-3.99617,20292317,900,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,
 Malta,2020-02-21,35.938,14.375,496458,30098,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Mauritania,2020-02-21,21.008,10.941,4662786,1189,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Mauritius,2020-02-21,-20.2,57.5,1274331,11239,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
-Mexico,2020-02-21,23.634,-102.5528,129654253,9673,1632,people tested,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,Inf,12.587
+Mexico,2020-02-21,23.634,-102.5528,129654253,9673,1631,people tested,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,Inf,12.58
 Moldova,2020-02-21,47.412,28.37,2682880,3227,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Monaco,2020-02-21,43.733,7.417,39486,185741,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Mongolia,2020-02-21,46.862,103.847,3270171,4122,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
@@ -172,7 +172,7 @@ Uganda,2020-02-21,1.0,32.0,45624665,643,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0
 Ukraine,2020-02-21,48.379,31.166,44143362,3095,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 United Arab Emirates,2020-02-21,24.0,54.0,10910461,43005,,,9,4,0,4,5,0.6667,0.0,,,,0.08333,-0.02778,,,,0.00694,,,0.0,0.0,0.8249,0.0,0.3666,0.3666,0.4583,,
 United Kingdom,2020-02-21,24.548,-43.90225,67359087,42944,5885,people tested,9,8,0,8,1,0.6667,0.0,,,,,-0.19444,,,,,,,0.0,0.0,0.1336,0.0,0.1188,0.1188,0.01485,653.889,87.368
-United States,2020-02-21,37.09,-95.7129,332049547,62795,2683,samples tested,15,5,0,5,10,6.333,0.3333,,,,1.139,-0.02778,,,,,-0.125,,0.0,0.0,0.04517,0.0,0.01506,0.01506,0.03012,178.867,8.08
+United States,2020-02-21,37.09,-95.7129,332049547,62795,,,15,5,0,5,10,6.333,0.3333,,,,1.139,-0.02778,,,,,-0.125,,0.0,0.0,0.04517,0.0,0.01506,0.01506,0.03012,,
 Uruguay,2020-02-21,-32.5228,-55.7658,3464003,17278,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Uzbekistan,2020-02-21,41.378,64.585,34035959,1532,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Venezuela,2020-02-21,6.424,-66.5897,29442841,4842,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,

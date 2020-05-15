@@ -134,14 +134,15 @@ function import_data(source::TotalTestsOWID; url = TESTING_OWID_URL, kwargs...)
         end
 
         for (i, dt) ∈ enumerate((row.date + Day(1)):Day(1):dtend)
-            tests_interpolated = round(Int, row.total_tests * growth_rate^i)
+            # tests_interpolated = round(Int, row.total_tests * growth_rate^i)
             push!(
                 data,
                 (;
                     country = row.country,
                     date = dt,
                     test_kind = row.test_kind,
-                    total_tests = tests_interpolated,
+                    # total_tests = tests_interpolated,
+                    total_tests = row.total_tests,
                 ),
             )
         end

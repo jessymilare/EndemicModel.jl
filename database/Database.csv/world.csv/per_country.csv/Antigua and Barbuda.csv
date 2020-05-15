@@ -1,4 +1,4 @@
-Country,Date,Latitude,Longitude,Estimated Population,Estimated Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
+Country,Date,Latitude,Longitude,Estimated Population,Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
 Antigua and Barbuda,2020-01-22,17.061,-61.7964,98848,16727,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Antigua and Barbuda,2020-01-23,17.061,-61.7964,98848,16727,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Antigua and Barbuda,2020-01-24,17.061,-61.7964,98848,16727,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
@@ -106,9 +106,10 @@ Antigua and Barbuda,2020-05-04,17.061,-61.7964,98848,16727,,,25,15,3,18,7,0.0,0.
 Antigua and Barbuda,2020-05-05,17.061,-61.7964,98848,16727,,,25,16,3,19,6,0.0,0.1667,0.0,0.1667,-0.16667,-0.02778,-0.05556,,,,,,,0.1579,0.12,252.914,30.35,161.865,192.214,60.699,,
 Antigua and Barbuda,2020-05-06,17.061,-61.7964,98848,16727,,,25,16,3,19,6,0.0,0.6667,0.0,0.6667,-0.66667,-0.02778,-0.05556,,,,,,,0.1579,0.12,252.914,30.35,161.865,192.214,60.699,,
 Antigua and Barbuda,2020-05-07,17.061,-61.7964,98848,16727,,,25,16,3,19,6,0.0,0.6667,0.0,0.6667,-0.66667,,0.05556,,,,,,,0.1579,0.12,252.914,30.35,161.865,192.214,60.699,,
-Antigua and Barbuda,2020-05-08,17.061,-61.7964,98848,16727,,,25,16,3,19,6,0.0,0.5,0.0,0.5,-0.5,,,,,,,,,0.1579,0.12,252.914,30.35,161.865,192.214,60.699,,
+Antigua and Barbuda,2020-05-08,17.061,-61.7964,98848,16727,,,25,16,3,19,6,0.0,0.5,0.0,0.5,-0.5,,0.05556,,,,,,,0.1579,0.12,252.914,30.35,161.865,192.214,60.699,,
 Antigua and Barbuda,2020-05-09,17.061,-61.7964,98848,16727,,,25,19,3,22,3,0.0,0.5,0.0,0.5,-0.5,,,,,,,,,0.1364,0.12,252.914,30.35,192.214,222.564,30.35,,
 Antigua and Barbuda,2020-05-10,17.061,-61.7964,98848,16727,,,25,19,3,22,3,0.0,0.5,0.0,0.5,-0.5,,,,,,,,,0.1364,0.12,252.914,30.35,192.214,222.564,30.35,,
-Antigua and Barbuda,2020-05-11,17.061,-61.7964,98848,16727,,,25,19,3,22,3,,,,,,,,,,,,,,0.1364,0.12,252.914,30.35,192.214,222.564,30.35,,
+Antigua and Barbuda,2020-05-11,17.061,-61.7964,98848,16727,,,25,19,3,22,3,0.0,0.5,0.0,0.5,-0.5,,,,,,,,,0.1364,0.12,252.914,30.35,192.214,222.564,30.35,,
 Antigua and Barbuda,2020-05-12,17.061,-61.7964,98848,16727,,,25,19,3,22,3,,,,,,,,,,,,,,0.1364,0.12,252.914,30.35,192.214,222.564,30.35,,
 Antigua and Barbuda,2020-05-13,17.061,-61.7964,98848,16727,,,25,19,3,22,3,,,,,,,,,,,,,,0.1364,0.12,252.914,30.35,192.214,222.564,30.35,,
+Antigua and Barbuda,2020-05-14,17.061,-61.7964,98848,16727,,,25,19,3,22,3,,,,,,,,,,,,,,0.1364,0.12,252.914,30.35,192.214,222.564,30.35,,

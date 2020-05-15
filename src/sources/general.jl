@@ -156,19 +156,11 @@ function import_data(
     insertcols!(data, ncol(data) + 1, :avg_gdp_pc_factor => navg_factor)
 
     n = (curyear - lyear_int)
-    gdp_pc_est = (data[!, lyear] .* (data.avg_gdp_pc_factor .^ n))
-    gdp_pc_est = [
-        ismissing(val) ? data[i, myear] * (data[i, :avg_gdp_pc_factor] .^ n) : val
-        for (i, val) ∈ enumerate(gdp_pc_est)
-    ]
+    gdp_pc_est = data[!, lyear]
+    gdp_pc_est =
+        [ismissing(val) ? data[i, myear] : val for (i, val) ∈ enumerate(gdp_pc_est)]
     gdp_pc_est = gdp_pc_est .|> round .|> Int
-    insertcols!(data, ncol(data) + 1, :estimated_gdp_per_capita => gdp_pc_est)
+    insertcols!(data, ncol(data) + 1, :gdp_per_capita => gdp_pc_est)
 
-    select(
-        data,
-        :country,
-        :country_code,
-        :avg_gdp_pc_factor,
-        :estimated_gdp_per_capita,
-    )
+    select(data, :country, :country_code, :avg_gdp_pc_factor, :gdp_per_capita)
 end

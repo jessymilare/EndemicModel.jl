@@ -1,4 +1,4 @@
-Country,Date,Latitude,Longitude,Estimated Population,Estimated Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
+Country,Date,Latitude,Longitude,Estimated Population,Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
 Saint Vincent and the Grenadines,2020-01-22,12.984,-61.2872,,,,,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,
 Saint Vincent and the Grenadines,2020-01-23,12.984,-61.2872,,,,,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,
 Saint Vincent and the Grenadines,2020-01-24,12.984,-61.2872,,,,,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,
@@ -106,9 +106,10 @@ Saint Vincent and the Grenadines,2020-05-04,12.984,-61.2872,,,,,17,9,0,9,8,0.166
 Saint Vincent and the Grenadines,2020-05-05,12.984,-61.2872,,,,,17,9,0,9,8,0.1667,0.1667,,,,-0.02778,-0.02778,,,,,,,0.0,0.0,,,,,,,
 Saint Vincent and the Grenadines,2020-05-06,12.984,-61.2872,,,,,17,9,0,9,8,0.1667,0.1667,,,,-0.02778,0.05556,,,,,,,0.0,0.0,,,,,,,
 Saint Vincent and the Grenadines,2020-05-07,12.984,-61.2872,,,,,17,9,0,9,8,0.0,0.0,,,,-0.02778,0.05556,,,,,,,0.0,0.0,,,,,,,
-Saint Vincent and the Grenadines,2020-05-08,12.984,-61.2872,,,,,17,9,0,9,8,0.0,0.0,,,,,,,,,,,,0.0,0.0,,,,,,,
+Saint Vincent and the Grenadines,2020-05-08,12.984,-61.2872,,,,,17,9,0,9,8,0.0,0.0,,,,-0.02778,0.05556,,,,,,,0.0,0.0,,,,,,,
 Saint Vincent and the Grenadines,2020-05-09,12.984,-61.2872,,,,,17,9,0,9,8,0.0,0.5,,,,,,,,,,,,0.0,0.0,,,,,,,
 Saint Vincent and the Grenadines,2020-05-10,12.984,-61.2872,,,,,17,9,0,9,8,0.0,0.5,,,,,,,,,,,,0.0,0.0,,,,,,,
-Saint Vincent and the Grenadines,2020-05-11,12.984,-61.2872,,,,,17,9,0,9,8,,,,,,,,,,,,,,0.0,0.0,,,,,,,
+Saint Vincent and the Grenadines,2020-05-11,12.984,-61.2872,,,,,17,9,0,9,8,0.0,0.5,,,,,,,,,,,,0.0,0.0,,,,,,,
 Saint Vincent and the Grenadines,2020-05-12,12.984,-61.2872,,,,,17,12,0,12,5,,,,,,,,,,,,,,0.0,0.0,,,,,,,
 Saint Vincent and the Grenadines,2020-05-13,12.984,-61.2872,,,,,17,12,0,12,5,,,,,,,,,,,,,,0.0,0.0,,,,,,,
+Saint Vincent and the Grenadines,2020-05-14,12.984,-61.2872,,,,,17,12,0,12,5,,,,,,,,,,,,,,0.0,0.0,,,,,,,

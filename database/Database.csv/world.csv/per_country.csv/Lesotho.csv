@@ -1,4 +1,4 @@
-Country,Date,Latitude,Longitude,Estimated Population,Estimated Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
+Country,Date,Latitude,Longitude,Estimated Population,Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
 Lesotho,2020-01-22,-29.60999,28.234,2116672,1299,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Lesotho,2020-01-23,-29.60999,28.234,2116672,1299,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Lesotho,2020-01-24,-29.60999,28.234,2116672,1299,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
@@ -112,3 +112,4 @@ Lesotho,2020-05-10,-29.60999,28.234,2116672,1299,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,
 Lesotho,2020-05-11,-29.60999,28.234,2116672,1299,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Lesotho,2020-05-12,-29.60999,28.234,2116672,1299,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Lesotho,2020-05-13,-29.60999,28.234,2116672,1299,,,1,0,0,0,1,,,,,,,,,,,,,,,0.0,0.4724,0.0,0.0,0.0,0.4724,,
+Lesotho,2020-05-14,-29.60999,28.234,2116672,1299,,,1,0,0,0,1,,,,,,,,,,,,,,,0.0,0.4724,0.0,0.0,0.0,0.4724,,

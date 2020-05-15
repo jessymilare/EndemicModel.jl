@@ -1,4 +1,4 @@
-Country,Date,Latitude,Longitude,Estimated Population,Estimated Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
+Country,Date,Latitude,Longitude,Estimated Population,Gdp Per Capita,Total Tests,Test Kind,Confirmed,Recovered,Deaths,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi,Tests Per Confirmed,Tests Per 1Mi
 Eritrea,2020-01-22,15.179,39.782,3336933,308,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Eritrea,2020-01-23,15.179,39.782,3336933,308,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
 Eritrea,2020-01-24,15.179,39.782,3336933,308,,,0,0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0,,
@@ -106,9 +106,10 @@ Eritrea,2020-05-04,15.179,39.782,3336933,308,,,39,26,0,26,13,0.0,0.6667,,,,,0.11
 Eritrea,2020-05-05,15.179,39.782,3336933,308,,,39,30,0,30,9,0.0,1.833,,,,,-0.08333,,,,,,,0.0,0.0,11.687,0.0,8.99,8.99,2.697,,
 Eritrea,2020-05-06,15.179,39.782,3336933,308,,,39,30,0,30,9,0.0,1.833,,,,,0.1111,,,,,,,0.0,0.0,11.687,0.0,8.99,8.99,2.697,,
 Eritrea,2020-05-07,15.179,39.782,3336933,308,,,39,30,0,30,9,0.0,1.833,,,,,0.1111,,,,,,,0.0,0.0,11.687,0.0,8.99,8.99,2.697,,
-Eritrea,2020-05-08,15.179,39.782,3336933,308,,,39,37,0,37,2,0.0,1.333,,,,,,,,,,,,0.0,0.0,11.687,0.0,11.088,11.088,0.5994,,
+Eritrea,2020-05-08,15.179,39.782,3336933,308,,,39,37,0,37,2,0.0,1.333,,,,,-0.27778,,,,,,,0.0,0.0,11.687,0.0,11.088,11.088,0.5994,,
 Eritrea,2020-05-09,15.179,39.782,3336933,308,,,39,37,0,37,2,0.0,1.333,,,,,,,,,,,,0.0,0.0,11.687,0.0,11.088,11.088,0.5994,,
 Eritrea,2020-05-10,15.179,39.782,3336933,308,,,39,37,0,37,2,0.0,1.333,,,,,,,,,,,,0.0,0.0,11.687,0.0,11.088,11.088,0.5994,,
-Eritrea,2020-05-11,15.179,39.782,3336933,308,,,39,38,0,38,1,,,,,,,,,,,,,,0.0,0.0,11.687,0.0,11.388,11.388,0.2997,,
+Eritrea,2020-05-11,15.179,39.782,3336933,308,,,39,38,0,38,1,0.0,0.1667,,,,,,,,,,,,0.0,0.0,11.687,0.0,11.388,11.388,0.2997,,
 Eritrea,2020-05-12,15.179,39.782,3336933,308,,,39,38,0,38,1,,,,,,,,,,,,,,0.0,0.0,11.687,0.0,11.388,11.388,0.2997,,
 Eritrea,2020-05-13,15.179,39.782,3336933,308,,,39,38,0,38,1,,,,,,,,,,,,,,0.0,0.0,11.687,0.0,11.388,11.388,0.2997,,
+Eritrea,2020-05-14,15.179,39.782,3336933,308,,,39,38,0,38,1,,,,,,,,,,,,,,0.0,0.0,11.687,0.0,11.388,11.388,0.2997,,

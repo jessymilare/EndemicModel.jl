@@ -31,9 +31,9 @@ export_data(source, model::AbstractEndemicModel; kwargs...) =
 const SEIR_VARS = (:S, :E, :I, :R)
 const SEIR_DERIV = (:dS, :dE, :dI, :dR)
 const SEIR_PARAMS = (:M, :β, :γ, :α, :μ)
-const SEIRVariables = NamedTuple{SEIR_VARS, NTuple{4, Vector{Float64}}}
-const SEIRDerivatives = NamedTuple{SEIR_DERIV, NTuple{4, Vector{Float64}}}
-const SEIRParameters = NamedTuple{SEIR_PARAMS, NTuple{5, Vector{Float64}}}
+const SEIRVariables = NamedTuple{SEIR_VARS, NTuple{4, Vector{Float}}}
+const SEIRDerivatives = NamedTuple{SEIR_DERIV, NTuple{4, Vector{Float}}}
+const SEIRParameters = NamedTuple{SEIR_PARAMS, NTuple{5, Vector{Float}}}
 
 SEIRVariables(S, E, I, R) = SEIRVariables((S, E, I, R))
 SEIRDerivatives(dS, dE, dI, dR) = SEIRDerivatives((dS, dE, dI, dR))
@@ -62,14 +62,14 @@ dI = γ .* E - α .* I
 dR = α .* I
 """
 function _SEIR_derivative(
-    S::AbstractVector{Float64},
-    E::AbstractVector{Float64},
-    I::AbstractVector{Float64},
-    R::AbstractVector{Float64},
-    M::AbstractVector{Float64},
-    β::AbstractVector{Float64},
-    γ::AbstractVector{Float64},
-    α::AbstractVector{Float64},
+    S::AbstractVector{Float},
+    E::AbstractVector{Float},
+    I::AbstractVector{Float},
+    R::AbstractVector{Float},
+    M::AbstractVector{Float},
+    β::AbstractVector{Float},
+    γ::AbstractVector{Float},
+    α::AbstractVector{Float},
 )
     pop = sum(M)
     StoE = β .* sum(I ./ pop) .* S
@@ -87,7 +87,7 @@ end
 initial_M(kind::Symbol; kwargs...) = initial_M(Val(kind); kwargs...)
 
 function initial_M(kind::Val{:nogroup}; estimated_population = 1e6, kwargs...)
-    Float64[estimated_population]
+    Float[estimated_population]
 end
 
 """
@@ -131,11 +131,15 @@ mutable struct SEIRModel <: AbstractEndemicModel
         vars::SEIRVariables,
         params::SEIRParameters;
         ngroups::Int = length(vars[1]),
-        groupnames = ("group_" .* string.(1:ngroups)),
+        groupnames = nothing,
         realdata::Union{Nothing, AbstractDataFrame} = nothing,
         modeldata::Union{Nothing, AbstractDataFrame} = nothing,
         kwargs...,
     )
+        groupnames = something(
+            groupnames,
+            ngroups == 1 ? [:all] : "group_" .* string.(1:ngroups),
+        )
         groupnames = collect(Symbol.(groupnames))
         deriv = _SEIR_derivative(vars, params)
         info = Dict(kwargs)
@@ -150,15 +154,15 @@ end
 SEIRModel(model::SEIRModel) = model
 
 function SEIRModel(
-    S::AbstractVector{Float64},
-    E::AbstractVector{Float64},
-    I::AbstractVector{Float64},
-    R::AbstractVector{Float64},
-    M::AbstractVector{Float64},
-    β::AbstractVector{Float64},
-    γ::AbstractVector{Float64},
-    α::AbstractVector{Float64},
-    μ::AbstractVector{Float64};
+    S::AbstractVector{Float},
+    E::AbstractVector{Float},
+    I::AbstractVector{Float},
+    R::AbstractVector{Float},
+    M::AbstractVector{Float},
+    β::AbstractVector{Float},
+    γ::AbstractVector{Float},
+    α::AbstractVector{Float},
+    μ::AbstractVector{Float};
     kwargs...,
 )
     SEIRModel(SEIRVariables(S, E, I, R), SEIRParameters(M, β, γ, α, μ); kwargs...)
@@ -179,7 +183,7 @@ function model_step(model::SEIRModel, n::Int = 1; kwargs...)
             n -= 1
         end
     else
-        z = zeros(Float64, length(S))
+        z = zeros(Float, length(S))
         while n < 0
             for i ∈ 1:10
                 (S, E, I, R) =
@@ -221,7 +225,7 @@ end
 
 function pack_vars(S, E, I, R)
     vectors = zip(S, E, I, R)
-    result = Float64[]
+    result = Float[]
     for vec ∈ vectors
         append!(result, vec)
     end
@@ -235,7 +239,7 @@ end
 function pack_params(M, β, γ, α, μ)
     args = filter(!isnothing, (M, β, γ, α, μ))
     vectors = zip(args...)
-    result = Float64[]
+    result = Float[]
     for v ∈ vectors
         append!(result, v)
     end
@@ -259,7 +263,7 @@ function pack_params(tup::NamedTuple; packed_params = keys(tup))
     end
 end
 
-function unpack_vars(X::Vector{Float64})
+function unpack_vars(X::Vector{Float})
     nv = 4
     Xlen = length(X)
     S = view(X, 1:nv:Xlen)
@@ -270,7 +274,7 @@ function unpack_vars(X::Vector{Float64})
 end
 
 function unpack_params(
-    P::Vector{Float64},
+    P::Vector{Float},
     ngroups::Int;
     packed_params = SEIR_PARAMS,
     default_params = (),
@@ -464,7 +468,7 @@ function model_validate(model::SEIRModel; columns = option(:plot_columns), kwarg
     model_back = model_step(
         model,
         -ndays;
-        maxtime = Float64(ndays),
+        maxtime = Float(ndays),
         initial_date = realdf.date[1],
     )
     modelcolumns = Symbol.([string(col) * "_model" for col ∈ columns])
