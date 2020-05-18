@@ -406,9 +406,9 @@ function covid19(; kwargs...)
     @info "Computing SEIR model..."
     SEIRModel!(db; kwargs...)
     @info "SEIR model for COVID-19 database computed."
-    @info "Optimizing parameters..."
-    optimize_parameters!(db; kwargs...)
-    @info "Optimal parameters for COVID-19 database computed."
+    # @info "Optimizing parameters..."
+    # optimize_parameters!(db; kwargs...)
+    # @info "Optimal parameters for COVID-19 database computed."
     @info "Exporting..."
     paths = export_data(db; kwargs...)
     @info "COVID-19 database exported." paths

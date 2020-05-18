@@ -28,21 +28,25 @@ end
 function model_loss(
     model::SEIRModel;
     loss_func::Function = phuber_loss(1.0),
-    ndays = 7,
     kwargs...,
     # diff_loss_func::Function = diff_phuber_loss(1.0),
 )
     params = parameters(model)
     ng = model.ngroups
     data = realdata(model)
-    ini = findfirst(!ismissing, data.recovered)
-    isnothing(ini) && return Inf
-    ini = max(ini, nrow(data) - ndays)
-    ndays = nrow(data) - ini
-    data = data[ini:end, :]
-    model_back =
-        model_step(model, -ndays; maxtime = Float(ndays), initial_date = data.date[1])
-    mdata = modeldata(model_back)
+    initial_date = get(default_kwargs(model), :initial_date, today() - Day(15))
+    ini = findfirst(isequal(initial_date), data.date)
+    if isnothing(ini)
+        throw(ErrorException(
+            "Initial date not found in model data",
+            model,
+            initial_date,
+        ))
+    end
+    iend = nrow(data)
+    data = data[ini:iend, :]
+    ndays = nrow(data)
+    mdata = modeldata(model)
     nrow(mdata) < ndays && return Inf
 
     @debug(
@@ -72,7 +76,6 @@ end
 function optimize_parameters!(
     model::SEIRModel;
     packed_params = (:β, :γ, :α, :μ),
-    ndays = 7,
     kwargs...,
 )
     n = model.ngroups
@@ -91,7 +94,7 @@ function optimize_parameters!(
         parameters!(model, newparams)
         (S, E, I, R) = variables(model)
         variables!(model, SEIRVariables(S, newE, I, R))
-        model_loss(model; ndays = ndays, kwargs...)
+        model_loss(model; kwargs...)
     end
     #= function diff(params)
         if lastparams != params
@@ -101,13 +104,15 @@ function optimize_parameters!(
     end =#
 
     maxM = fill(1.01 * sum(model_params[:M]), n)
-    maxαγ = fill(1.0, n)
-    maxβ = fill(1.0, n)
-    maxp = (; M = maxM, β = maxβ, γ = maxαγ, α = maxαγ, μ = maxαγ)
+    maxα = fill(0.5, n)
+    maxβ = fill(0.5, n)
+    maxγ = fill(1.01, n)
+    maxμ = fill(0.5, n)
+    maxp = (; M = maxM, β = maxβ, γ = maxγ, α = maxα, μ = maxμ)
     maxE = maxM ./ 2
     upper = pack_params(maxp; packed_params = packed_params)
     append!(upper, maxE)
-    lower = fill(-1.0e-4, length(upper))
+    lower = fill(0.0, length(upper))
     minbox = Fminbox(NelderMead())
     E0 = variables(model)[:E]
     opt_params = pack_params(model_params; packed_params = packed_params)
@@ -146,6 +151,8 @@ end
 
 optimize_parameters(data; kwargs...) = data
 optimize_parameters!(data; kwargs...) = data
+
+function search_parameters(model::AbstractEndemicModel) end
 
 function estimate_μ(data::AbstractDataFrame; ndays = 14, kwargs...)
     deaths, recovered = data.deaths, data.recovered
@@ -308,13 +315,19 @@ estimate_exposed!(model::AbstractEndemicModel; kwargs...) =
 function SEIRModel(
     data::AbstractDataFrame;
     minimum_confirmed_factor = option(:minimum_confirmed_factor),
+    ndays = 14,
     kwargs...,
 )
     @debug "Computing SEIR model for data" _debuginfo(data)
     numpeople = data.estimated_population[1]
-    istart = findfirst(x -> x >= numpeople * minimum_confirmed_factor, data.confirmed)
+    istart = findfirst(data.confirmed .>= numpeople * minimum_confirmed_factor)
     iend = findlast(!ismissing, data.recovered)
     data = data[istart:iend, :]
+
+    idx = nrow(data) - ndays
+    idx <= 0 && return missing
+
+    initial_date = data.date[idx]
     M = Float[numpeople]
     μ = estimate_μ(data; kwargs...)
     α = estimate_α(data; μ = μ, kwargs...)
@@ -322,12 +335,10 @@ function SEIRModel(
     β = estimate_β(data; μ = μ, α = α, γ = γ, kwargs...)
 
     exposed = estimate_exposed!(data; μ = μ, α = α, γ = γ, kwargs...)
-    idx = findlast(!ismissing, exposed)
     E = Float[exposed[idx]]
     I = Float[data.active[idx]]
     R = Float[data.closed[idx]]
     S = M - E - I - R
-    initial_date = data.date[idx]
     vars, params = SEIRVariables(S, E, I, R), SEIRParameters(M, β, γ, α, μ)
 
     SEIRModel(vars, params; realdata = data, initial_date = initial_date, kwargs...)

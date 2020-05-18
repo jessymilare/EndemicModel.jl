@@ -22,6 +22,12 @@ default_kwargs!(model::AbstractEndemicModel, value) = model.kwargs = value
 realdata(model::AbstractEndemicModel) = model.realdata
 realdata!(model::AbstractEndemicModel, value) = model.realdata = value
 
+groupnames(model::AbstractEndemicModel) = model.groupnames
+groupnames!(model::AbstractEndemicModel, value) = model.groupnames = value
+
+ngroups(model::AbstractEndemicModel) = model.ngroups
+ngroups!(model::AbstractEndemicModel, value) = model.ngroups = value
+
 export_data(model::AbstractEndemicModel; kwargs...) =
     export_data(modeldata(model); kwargs...)
 
@@ -154,7 +160,7 @@ end
 function Base.copy(model::SEIRModel)
     SEIRModel(
         variables(model),
-        parameters(model),
+        parameters(model);
         ngroups = ngroups(model),
         groupnames = groupnames(model),
         realdata = realdata(model),
