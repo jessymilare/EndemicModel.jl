@@ -1,3 +1,5 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-05-13,PI,Lagoa do Piauí,1,0,0,4105,2205581,0,1,,,,,,,,,,,,,,,0.0,243.605,0.0,0.0,0.0,243.605
 2020-05-14,PI,Lagoa do Piauí,1,0,0,4105,2205581,0,1,,,,,,,,,,,,,,,0.0,243.605,0.0,0.0,0.0,243.605
+2020-05-15,PI,Lagoa do Piauí,1,0,0,4105,2205581,0,1,,,,,,,,,,,,,,,0.0,243.605,0.0,0.0,0.0,243.605
+2020-05-16,PI,Lagoa do Piauí,4,0,2,4105,2205581,2,2,,,,,,,,,,,,,,0.0,0.0,974.421,0.0,487.211,487.211,487.211

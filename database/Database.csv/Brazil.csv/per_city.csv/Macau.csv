@@ -1,5 +1,7 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-05-08,RN,Macau,1,0,0,32132,2407203,0,1,,,,,,,,,,,,,,,0.0,31.122,0.0,0.0,0.0,31.122
+2020-05-10,RN,Macau,1,0,0,32132,2407203,0,1,,,,,,,,,,,,,,,0.0,31.122,0.0,0.0,0.0,31.122
 2020-05-11,RN,Macau,2,0,1,32132,2407203,1,1,,,,,,,,,,,,,,0.0,0.0,62.243,0.0,31.122,31.122,31.122
 2020-05-12,RN,Macau,8,0,3,32132,2407203,3,5,,,,,,,,,,,,,,0.0,0.0,248.973,0.0,93.365,93.365,155.608
 2020-05-13,RN,Macau,9,0,4,32132,2407203,4,5,,,,,,,,,,,,,,0.0,0.0,280.095,0.0,124.486,124.486,155.608
+2020-05-14,RN,Macau,13,0,5,32132,2407203,5,8,,,,,,,,,,,,,,0.0,0.0,404.581,0.0,155.608,155.608,248.973

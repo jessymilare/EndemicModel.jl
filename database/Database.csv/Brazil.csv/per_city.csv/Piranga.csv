@@ -1,2 +1,5 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-05-13,MG,Piranga,1,0,0,17802,3150802,0,1,,,,,,,,,,,,,,,0.0,56.173,0.0,0.0,0.0,56.173
+2020-05-14,MG,Piranga,4,0,2,17802,3150802,2,2,,,,,,,,,,,,,,0.0,0.0,224.694,0.0,112.347,112.347,112.347
+2020-05-15,MG,Piranga,3,0,1,17802,3150802,1,2,,,,,,,,,,,,,,0.0,0.0,168.52,0.0,56.173,56.173,112.347
+2020-05-16,MG,Piranga,3,1,1,17802,3150802,2,1,,,,,,,,,,,,,,0.5,0.3333,168.52,56.173,56.173,112.347,56.173

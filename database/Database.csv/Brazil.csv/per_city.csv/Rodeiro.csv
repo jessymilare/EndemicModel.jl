@@ -1,2 +1,5 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-05-13,MG,Rodeiro,4,0,2,8190,3156304,2,2,,,,,,,,,,,,,,0.0,0.0,488.4,0.0,244.2,244.2,244.2
+2020-05-14,MG,Rodeiro,4,0,2,8190,3156304,2,2,,,,,,,,,,,,,,0.0,0.0,488.4,0.0,244.2,244.2,244.2
+2020-05-15,MG,Rodeiro,4,0,2,8190,3156304,2,2,,,,,,,,,,,,,,0.0,0.0,488.4,0.0,244.2,244.2,244.2
+2020-05-16,MG,Rodeiro,4,0,2,8190,3156304,2,2,,,,,,,,,,,,,,0.0,0.0,488.4,0.0,244.2,244.2,244.2

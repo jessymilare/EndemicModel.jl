@@ -119,8 +119,8 @@ dR = α .* I
 """
 mutable struct SEIRModel <: AbstractEndemicModel
     variables::SEIRVariables
-    derivatives::SEIRDerivatives
     parameters::SEIRParameters
+    derivatives::SEIRDerivatives
     ngroups::Int
     groupnames::Vector{Symbol}
     realdata::Union{Nothing, AbstractDataFrame}
@@ -142,13 +142,25 @@ mutable struct SEIRModel <: AbstractEndemicModel
         )
         groupnames = collect(Symbol.(groupnames))
         deriv = _SEIR_derivative(vars, params)
-        info = Dict(kwargs)
+        info = Dict{Symbol, Any}(kwargs)
 
         model =
-            new(vars, deriv, params, ngroups, groupnames, realdata, modeldata, info)
+            new(vars, params, deriv, ngroups, groupnames, realdata, modeldata, info)
         isnothing(modeldata) && modeldata!(model, to_dataframe(model; kwargs...))
         model
     end
+end
+
+function Base.copy(model::SEIRModel)
+    SEIRModel(
+        variables(model),
+        parameters(model),
+        ngroups = ngroups(model),
+        groupnames = groupnames(model),
+        realdata = realdata(model),
+        modeldata = modeldata(model),
+        default_kwargs(model)...,
+    )
 end
 
 SEIRModel(model::SEIRModel) = model

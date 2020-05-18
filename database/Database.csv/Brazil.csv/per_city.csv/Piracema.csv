@@ -1,2 +1,5 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-05-13,MG,Piracema,1,0,0,6473,3150604,0,1,,,,,,,,,,,,,,,0.0,154.488,0.0,0.0,0.0,154.488
+2020-05-14,MG,Piracema,1,0,0,6473,3150604,0,1,,,,,,,,,,,,,,,0.0,154.488,0.0,0.0,0.0,154.488
+2020-05-15,MG,Piracema,1,0,0,6473,3150604,0,1,,,,,,,,,,,,,,,0.0,154.488,0.0,0.0,0.0,154.488
+2020-05-16,MG,Piracema,2,0,1,6473,3150604,1,1,,,,,,,,,,,,,,0.0,0.0,308.976,0.0,154.488,154.488,154.488

@@ -6,14 +6,35 @@
     (confirmed, recovered, deaths) => sum,
 ]
 
-@deftable world3(world2, world_population, world_gdp_per_capita, total_tests) begin
+@deftable tests_no_duplicate(total_tests) begin
+    groups = groupby(total_tests, [:country, :date])
+    data = combine(groups) do subdf
+        testkind = _choose_test(filter(!ismissing, subdf.test_kind))
+        idx = findfirst(isequal(testkind), subdf.test_kind)
+        subdf[idx, :]
+    end
+    data = sort!(data, [:country, :date])
+end
+
+function _choose_test(tests)
+    if isempty(tests)
+        missing
+    elseif "people tested" ∈ tests
+        "people tested"
+    elseif "samples tested" ∈ tests
+        "samples tested"
+    elseif "units unclear" ∈ tests
+        "units unclear"
+    else
+        @warn "Unrecognized test kind(s)." tests
+        pop!(tests)
+    end
+end
+
+@deftable world3(world2, world_population, world_gdp_per_capita, tests_no_duplicate) begin
     data = leftjoin(world2, world_population; on = :country)
     data = leftjoin(data, world_gdp_per_capita; on = [:country, :country_code])
-    data = leftjoin(data, total_tests; on = [:country, :date])
-    testdict = Dict(c => _choose_test(c, data) for c ∈ Set(data.country))
-    tests = [testdict[country] for country ∈ data.country]
-    data = @where(data, ismissing.(:test_kind) .| (:test_kind .== tests))
-    data = sort!(data, [:country, :date])
+    data = leftjoin(data, tests_no_duplicate; on = [:country, :date])
     cols = [
         :country,
         :date,
@@ -28,22 +49,6 @@
         :deaths,
     ]
     select!(data, cols)
-end
-
-function _choose_test(country, data)
-    tests = filter(!ismissing, @where(data, :country .== country).test_kind)
-    if isempty(tests)
-        ""
-    elseif "people tested" ∈ tests
-        "people tested"
-    elseif "samples tested" ∈ tests
-        "samples tested"
-    elseif "units unclear" ∈ tests
-        "units unclear"
-    else
-        @warn "Unrecognized test kind(s)." tests
-        pop!(tests)
-    end
 end
 
 @defgroup per_country(world3) (country,) [
@@ -228,7 +233,7 @@ end
 function copy_pop_tests_tables(data::AbstractDict)
     pop = get(data, :world_population, nothing)
     gdp_pc = get(data, :world_gdp_per_capita, nothing)
-    tests = get(data, :total_tests, nothing)
+    tests = get(data, :tests_no_duplicate, nothing)
     csse = get(data, :csse, nothing)
     brasil_io = get(data, :brasil_io, nothing)
     updated = false
@@ -247,8 +252,8 @@ function copy_pop_tests_tables(data::AbstractDict)
             csse[:world_gdp_per_capita] = gdp_pc
             updated = true
         end
-        if tests != nothing && !haskey(csse, :total_tests)
-            csse[:total_tests] = tests
+        if tests != nothing && !haskey(csse, :tests_no_duplicate)
+            csse[:tests_no_duplicate] = tests
             true
         else
             updated
@@ -284,11 +289,14 @@ function copy_brazil_tables(data::AbstractDict)
     end
 end
 
+_sum(itr) = isempty(itr) ? missing : sum(itr)
+_maximum(itr) = isempty(itr) ? missing : maximum(itr)
+
 @defgroup total(per_country) (date,) [
     (latitude, longitude) => mean,
     (estimated_population, gdp_per_capita) => sum,
-    (total_tests,) => sum ∘ skipmissing,
-    (test_kind,) => maximum ∘ skipmissing,
+    (total_tests,) => _sum ∘ skipmissing,
+    (test_kind,) => _maximum ∘ skipmissing,
     (confirmed, recovered, deaths, closed, active) => sum,
     (diff_confirmed, diff_recovered, diff_deaths, diff_closed, diff_active) => sum,
     (diff2_confirmed, diff3_confirmed, diff4_confirmed, diff5_confirmed) => sum,
@@ -312,6 +320,7 @@ function covid19_database(; kwargs...)
     funcs = [
         # Tables
         group_world2,
+        table_tests_no_duplicate,
         copy_pop_tests_tables,
         table_world3,
         group_per_country,
@@ -385,6 +394,11 @@ function covid19(; kwargs...)
                 "Population and GDP per capita for several countries",
                 "Number of tests of COVID-19 for several countries",
             ],
+        ),
+        :auxiliar => DataDict(
+            :total_tests => db.total_tests,
+            :world_population => db.world_population,
+            :world_gdp_per_capita => db.world_gdp_per_capita,
         ),
     )
     datadict!(db, newdata)

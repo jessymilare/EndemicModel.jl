@@ -1,3 +1,5 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-05-13,AM,Itamarati,2,0,1,7930,1301951,1,1,,,,,,,,,,,,,,0.0,0.0,252.207,0.0,126.103,126.103,126.103
 2020-05-14,AM,Itamarati,2,0,1,7930,1301951,1,1,,,,,,,,,,,,,,0.0,0.0,252.207,0.0,126.103,126.103,126.103
+2020-05-15,AM,Itamarati,2,0,1,7930,1301951,1,1,,,,,,,,,,,,,,0.0,0.0,252.207,0.0,126.103,126.103,126.103
+2020-05-16,AM,Itamarati,2,0,1,7930,1301951,1,1,,,,,,,,,,,,,,0.0,0.0,252.207,0.0,126.103,126.103,126.103
