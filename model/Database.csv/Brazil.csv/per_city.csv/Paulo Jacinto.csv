@@ -1,5 +1,4 @@
 Date,Confirmed,Exposed,Active,Recovered,Deaths,Diff Exposed,Diff Active,Diff Recovered,Diff Deaths
-2020-05-13,0,1,0,0,0,0,0,0,0
 2020-05-14,0,1,0,0,0,0,0,0,0
 2020-05-15,0,1,0,0,0,0,0,0,0
 2020-05-16,0,1,0,0,0,0,0,0,0
@@ -71,7 +70,7 @@ Date,Confirmed,Exposed,Active,Recovered,Deaths,Diff Exposed,Diff Active,Diff Rec
 2020-07-21,0,1,0,0,0,0,0,0,0
 2020-07-22,0,1,0,0,0,0,0,0,0
 2020-07-23,0,1,0,0,0,0,0,0,0
-2020-07-24,0,0,0,0,0,0,0,0,0
+2020-07-24,0,1,0,0,0,0,0,0,0
 2020-07-25,0,0,0,0,0,0,0,0,0
 2020-07-26,0,0,0,0,0,0,0,0,0
 2020-07-27,0,0,0,0,0,0,0,0,0
@@ -360,3 +359,4 @@ Date,Confirmed,Exposed,Active,Recovered,Deaths,Diff Exposed,Diff Active,Diff Rec
 2021-05-06,0,0,0,0,0,0,0,0,0
 2021-05-07,0,0,0,0,0,0,0,0,0
 2021-05-08,0,0,0,0,0,0,0,0,0
+2021-05-09,0,0,0,0,0,0,0,0,0

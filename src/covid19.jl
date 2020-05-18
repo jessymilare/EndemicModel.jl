@@ -403,10 +403,13 @@ function covid19(; kwargs...)
     )
     datadict!(db, newdata)
     @info "COVID-19 database created." summary(db)
-    @info "Computing SEIR model for COVID-19 database."
+    @info "Computing SEIR model..."
     SEIRModel!(db; kwargs...)
     @info "SEIR model for COVID-19 database computed."
-    @info "Exporting COVID-19 database."
+    @info "Optimizing parameters..."
+    optimize_parameters!(db; kwargs...)
+    @info "Optimal parameters for COVID-19 database computed."
+    @info "Exporting..."
     paths = export_data(db; kwargs...)
     @info "COVID-19 database exported." paths
     db

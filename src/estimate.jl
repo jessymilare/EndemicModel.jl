@@ -137,8 +137,12 @@ end
 
 optimize_parameters(data::AbstractDatabase; kwargs...) =
     optimize_parameters(modeldict(data); kwargs...)
-optimize_parameters!(data::AbstractDatabase; kwargs...) =
-    optimize_parameters!(modeldict(data); kwargs...)
+
+function optimize_parameters!(data::AbstractDatabase; kwargs...)
+    result = optimize_parameters!(modeldict(data); kwargs...)
+    parameters!(data)
+    result
+end
 
 optimize_parameters(data; kwargs...) = data
 optimize_parameters!(data; kwargs...) = data
@@ -369,7 +373,6 @@ function parameters!(destiny::AbstractDict, data::AbstractDict; kwargs...)
         :R0 => OptFloat[],
         :loss_7_days => Float[],
         :loss_14_days => Float[],
-        :loss_21_days => Float[],
     )
     for (key, subdata) ∈ data
         @debug "Computing parameters." key _debuginfo(subdata)
@@ -383,16 +386,10 @@ function parameters!(destiny::AbstractDict, data::AbstractDict; kwargs...)
         param_pairs = pairs(parameters(subdata))
         loss7 = model_loss(subdata; ndays = 7, kwargs...)
         loss14 = model_loss(subdata; ndays = 14, kwargs...)
-        loss21 = model_loss(subdata; ndays = 21, kwargs...)
         for (i, gname) ∈ enumerate(gnames)
             params = [k => (isfinite(v[i]) ? v[i] : missing) for (k, v) ∈ param_pairs]
             R0 = param_pairs[:β][i] / param_pairs[:α][i]
-            moreparams = (;
-                R0 = R0,
-                loss_7_days = loss7,
-                loss_14_days = loss14,
-                loss_21_days = loss21,
-            )
+            moreparams = (; R0 = R0, loss_7_days = loss7, loss_14_days = loss14)
             row = (; key = string(key), group_name = gname, params..., moreparams...)
             @debug "Computed params for SEIR model" row
             push!(paramdf, row)
