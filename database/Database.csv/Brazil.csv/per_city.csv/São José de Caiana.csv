@@ -1,3 +1,4 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-05-16,PB,São José de Caiana,1,0,0,6423,2514305,0,1,,,,,,,,,,,,,,,0.0,155.69,0.0,0.0,0.0,155.69
 2020-05-17,PB,São José de Caiana,3,0,1,6423,2514305,1,2,,,,,,,,,,,,,,0.0,0.0,467.071,0.0,155.69,155.69,311.381
+2020-05-18,PB,São José de Caiana,5,0,2,6423,2514305,2,3,,,,,,,,,,,,,,0.0,0.0,778.452,0.0,311.381,311.381,467.071

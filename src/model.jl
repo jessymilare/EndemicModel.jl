@@ -19,6 +19,12 @@ modeldata!(model::AbstractEndemicModel, value::AbstractDataFrame) =
 default_kwargs(model::AbstractEndemicModel) = model.kwargs
 default_kwargs!(model::AbstractEndemicModel, value) = model.kwargs = value
 
+default_kwarg(model::AbstractEndemicModel, key::Symbol) = model.kwargs[key]
+default_kwarg(model::AbstractEndemicModel, key::Symbol, default) =
+    get(model.kwargs, key, default)
+default_kwarg!(model::AbstractEndemicModel, key::Symbol, value) =
+    model.kwargs[key] = value
+
 realdata(model::AbstractEndemicModel) = model.realdata
 realdata!(model::AbstractEndemicModel, value) = model.realdata = value
 
@@ -186,12 +192,15 @@ function SEIRModel(
     SEIRModel(SEIRVariables(S, E, I, R), SEIRParameters(M, β, γ, α, μ); kwargs...)
 end
 
-function model_step(model::SEIRModel, n::Int = 1; kwargs...)
+function model_step(model::SEIRModel, n::Int = 1; initial_date = nothing, kwargs...)
     (S, E, I, R) = variables(model)
     (dS, dE, dI, dR) = derivatives(model)
     params = parameters(model)
     (M, β, γ, α, μ) = params
-    initial_date = get(default_kwargs(model), :initial_date, today()) + Day(n)
+    initial_date = something(
+        initial_date,
+        default_kwarg(model, :initial_date, today() - Day(15)) + Day(n),
+    )
     if n > 0
         while n > 0
             for i ∈ 1:10
@@ -365,7 +374,7 @@ function to_dataframe(model::SEIRModel; kwargs...)
     solution = model_solution(model; kwargs...)
     (M, β, γ, α, μ) = parameters(model)
     days = solution.t
-    initial_date = get(default_kwargs(model), :initial_date, today())
+    initial_date = default_kwarg(model, :initial_date, today() - Day(15))
     date = initial_date .+ Day.(days)
     n = length(days)
     ng = model.ngroups
@@ -452,7 +461,7 @@ function model_plot(
     else
         df.confirmed[end]
     end
-    max_yvalue = max([maximum(skipmissing(df[!, col])) for col ∈ colnames]...)
+    max_yvalue = maximum([maximum(skipmissing(df[!, col])) for col ∈ colnames])
     (yfactor, ylabel) = _get_y_factor_and_label(max_yvalue)
 
     istart = findfirst(df.active .* yfactor .>= 0.1)
@@ -479,40 +488,47 @@ function model_plot(
     win
 end
 
-function model_validate(model::SEIRModel; columns = option(:plot_columns), kwargs...)
+function model_validate(
+    model::SEIRModel;
+    columns = option(:plot_columns),
+    modelcolumns = [Symbol(col, "_model") for col ∈ columns],
+    title = nothing,
+    kwargs...,
+)
     modeldf, realdf = modeldata(model), realdata(model)
-    title = _get_plot_title(realdf)
-    ndays = nrow(realdf)
-    model_back = model_step(
-        model,
-        -ndays;
-        maxtime = Float(ndays),
-        initial_date = realdf.date[1],
-    )
-    modelcolumns = Symbol.([string(col) * "_model" for col ∈ columns])
-    model_back_df = select(modeldata(model_back), [:date, columns...])
-    model_back_df = rename!(model_back_df, (columns .=> modelcolumns)...)
+    title = something(title, _get_plot_title(realdf))
+    initial_date = default_kwarg(model, :initial_date, today() - Day(15))
+    ndays = Dates.days(initial_date - realdf.date[1])
+    model = model_step(model, -ndays; initial_date = realdf.date[1])
+    modeldf = select(modeldf, [:date, columns...])
+    modeldf = rename!(modeldf, (columns .=> modelcolumns)...)
 
     realdf = select(realdf, [:date, columns...])
-    result = leftjoin(realdf, model_back_df; on = :date)
-    allcolumns = vcat([[c1, c2] for (c1, c2) ∈ zip(columns, modelcolumns)]...)
-    select(result, Symbol.([:date; allcolumns...]))
+    result = leftjoin(realdf, modeldf; on = :date)
+    allcolumns = Symbol[:date]
+    for (c1, c2) ∈ zip(columns, modelcolumns)
+        append!(allcolumns, [c1, c2])
+    end
+    select(result, allcolumns)
 end
 
 function model_plot(
     model::SEIRModel;
     columns = option(:plot_columns),
     new_window::Bool = true,
+    title = nothing,
     kwargs...,
 )
     modeldf, realdf = modeldata(model), realdata(model)
     comparisondf = model_validate(model; columns = columns, kwargs...)
+    @show comparisondf
+    title = something(title, _get_plot_title(realdf) * " (real vs model)")
 
     win = model_plot(
         comparisondf;
-        title = title * " (real vs model)",
+        title = title,
         new_window = false,
-        columns = [columns; modelcolumns],
+        columns = columns,
         kwargs...,
     )
     # mplot = model_plot(

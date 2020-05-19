@@ -1,6 +1,22 @@
 # This file is part of EndemicModel project, which is licensed under BDS-3-Clause.
 # See file LICENSE.md for more information.
 
+# Parameter limits
+
+const MIN_μ = 0.001
+const MAX_μ = 0.5
+const MIN_α = 0.01
+const MAX_α = 0.5
+const MIN_γ = 0.01
+const MAX_γ = 1.0
+const MIN_β = 0.01
+const MAX_β = 0.5
+
+const SEIR_σ_NAMES = (:σ_β, :σ_γ, :σ_α, :σ_μ, :σ_E)
+const SEIRσ = NamedTuple{SEIR_σ_NAMES, NTuple{5, Float}}
+
+SEIRσ(σ_β, σ_γ, σ_α, σ_μ, σ_E) = SEIRσ((σ_β, σ_γ, σ_α, σ_μ, σ_E))
+
 phuber_loss(a::Real, δ::Real) = δ^2 * (sqrt(1 + (a / δ)^2) - 1)
 diff_phuber_loss(a::Real, δ::Real) = (sqrt(1 + (a / δ)^2)^-1) * a
 phuber_loss(a::Vector{<:Real}, δ::Real) = δ^2 * (sqrt(1 + sum(a .* a) / δ^2) - 1)
@@ -34,7 +50,7 @@ function model_loss(
     params = parameters(model)
     ng = model.ngroups
     data = realdata(model)
-    initial_date = get(default_kwargs(model), :initial_date, today() - Day(15))
+    initial_date = default_kwarg(model, :initial_date, today() - Day(15))
     ini = findfirst(isequal(initial_date), data.date)
     if isnothing(ini)
         throw(ErrorException(
@@ -104,15 +120,13 @@ function optimize_parameters!(
     end =#
 
     maxM = fill(1.01 * sum(model_params[:M]), n)
-    maxα = fill(0.5, n)
-    maxβ = fill(0.5, n)
-    maxγ = fill(1.01, n)
-    maxμ = fill(0.5, n)
-    maxp = (; M = maxM, β = maxβ, γ = maxγ, α = maxα, μ = maxμ)
-    maxE = maxM ./ 2
+    maxp = (; M = maxM, β = MAX_β, γ = MAX_γ, α = MAX_α, μ = MAX_μ)
+    minp = (; M = 0.1 * maxM, β = MIN_β, γ = MIN_γ, α = MIN_α, μ = MIN_μ)
+    maxE, minE = maxM ./ 2, fill(0.0, n)
     upper = pack_params(maxp; packed_params = packed_params)
     append!(upper, maxE)
-    lower = fill(0.0, length(upper))
+    lower = pack_params(minp; packed_params = packed_params)
+    append!(lower, minE)
     minbox = Fminbox(NelderMead())
     E0 = variables(model)[:E]
     opt_params = pack_params(model_params; packed_params = packed_params)
@@ -170,7 +184,13 @@ function estimate_μ(data::AbstractDataFrame; ndays = 14, kwargs...)
         recovered = Tuple(rec),
         values = Tuple(vals)
     )
-    isempty(vals) ? [NaN] : [mean(vals)]
+    isempty(vals) && return (NaN, Inf)
+    val = mean(vals)
+    if val >= MAX_μ || val <= MIN_μ
+        return (NaN, Inf)
+    else
+        return (val, StatsBase.std(vals; mean = val))
+    end
 end
 
 estimate_μ(model::AbstractEndemicModel; kwargs...) =
@@ -179,9 +199,10 @@ estimate_μ(model::AbstractEndemicModel; kwargs...) =
 function estimate_α(
     data::AbstractDataFrame;
     ndays = 7,
-    μ = estimate_μ(data),
+    μ_pair = estimate_μ(data),
     kwargs...,
 )
+    (μ, σ_μ) = μ_pair
     # Get numbers from last `ndays` days
     ini = max(1, nrow(data) - ndays)
     data = data[ini:end, :]
@@ -189,15 +210,19 @@ function estimate_α(
     data = @where(data, .!ismissing.(:diff_closed) .& :active .> 0)
     dR = data.diff_closed
     I = data.active
-    isempty(I) && return [NaN]
+    isempty(I) && return (NaN, Inf)
     @debug "Estimating α = dR / I." dR = Tuple(dR) I = Tuple(I)
-    [min(max(mean(dR ./ I), 0.0), 0.5)]
+    vals = dR ./ I
+    val = mean(vals)
+    if val >= MAX_α || val <= MIN_α
+        return (NaN, Inf)
+    else
+        return (val, StatsBase.std(vals; mean = val))
+    end
 end
 
 estimate_α(model::AbstractEndemicModel; kwargs...) =
     estimate_α(realdata(model); kwargs...)
-
-const MIN_γ = 0.01
 
 function _γ_root(d1, d2, d3, I, α)
     a = -I .* d2 .+ d1 .^ 2 .- I .* α .* d1
@@ -205,8 +230,11 @@ function _γ_root(d1, d2, d3, I, α)
     c = -I .* d3
     Δ = b .^ 2 - 4 .* a .* c
 
-    root1 = mean((-sqrt.(abs.(Δ)) .- b) ./ (2a))
-    root2 = mean((sqrt.(abs.(Δ)) .- b) ./ (2a))
+    vals = [
+        ai < 0 ? (-sqrt(abs(Δi)) - bi) / (2ai) : (sqrt(abs(Δi)) - bi) / (2ai)
+        for (ai, bi, Δi) ∈ zip(a, b, Δ)
+    ]
+    root = mean(vals)
 
     @debug(
         "Estimating γ as the mean of max roots of equations `a * γ^2 + b * γ + c = 0`.",
@@ -214,22 +242,24 @@ function _γ_root(d1, d2, d3, I, α)
         b = Tuple(b),
         c = Tuple(c),
         Δ = Tuple(Δ),
-        root1,
-        root2,
+        values = Tuple(vals),
+        root = root
     )
 
-    max(root1, root2)
+    (root, StatsBase.std(vals; mean = root))
 end
 
 function estimate_γ(
     data::AbstractDataFrame;
-    ndays = 14,
-    μ = estimate_μ(data),
-    α = estimate_α(data; μ = μ),
+    ndays = 12,
+    μ_pair = estimate_μ(data),
+    α_pair = estimate_α(data; μ_pair = μ_pair),
     kwargs...,
 )
-    # Try to find at least 7 valid entries
-    ini = something(findlast(!ismissing, data.diff3_confirmed), 8) - 7
+    (μ, σ_μ) = μ_pair
+    (α, σ_α) = α_pair
+    # Try to find at least 4 valid entries
+    ini = something(findlast(!ismissing, data.diff3_confirmed), 8) - 3
     # Get numbers from last `ndays` days
     ini = min(ini, max(1, nrow(data) - ndays))
     data = data[ini:end, :]
@@ -241,23 +271,29 @@ function estimate_γ(
     d3 = data.diff3_confirmed
 
     I = data.active
-    isempty(I) && return [NaN]
-    [min(max(_γ_root(d1, d2, d3, I, α), MIN_γ), 0.5)]
+    isempty(I) && return (NaN, Inf)
+    (val, σ_γ) = _γ_root(d1, d2, d3, I, α)
+    if val >= MAX_γ
+        return (0.99 * MAX_γ, σ_γ + val - MAX_γ)
+    elseif val <= MIN_γ
+        return (1.01 * MIN_γ, σ_γ + MIN_γ - val)
+    else
+        return (val, σ_γ)
+    end
 end
 
 estimate_γ(model::AbstractEndemicModel; kwargs...) =
     estimate_γ(realdata(model); kwargs...)
 
-const MIN_β = 0.01
-
 function estimate_β(
     data::AbstractDataFrame;
     ndays = 14,
-    μ = estimate_μ(data),
-    α = estimate_α(data; μ = μ),
-    γ = estimate_γ(data; μ = μ, α = α),
+    μ_pair = estimate_μ(data),
+    α_pair = estimate_α(data; μ_pair = μ_pair),
+    γ_pair = estimate_γ(data; μ_pair = μ_pair, α_pair = α_pair),
     kwargs...,
 )
+    (γ, σ_γ) = γ_pair
     # Get numbers from last `ndays` days
     ini = max(1, nrow(data) - ndays)
     data = data[ini:end, :]
@@ -268,33 +304,41 @@ function estimate_β(
     d2 = data.diff2_confirmed
     I = data.active
 
-    # `factor` is `MIN_γ` when `γ` is `MIN_γ`
-    # and approximately 1.0 when `γ` is far from `MIN_γ`
-    factor = sqrt.(γ .^ 2 .- MIN_γ^2) ./ γ .+ MIN_γ
     @debug(
         "Estimating β = (d²(I + R) + γ * d(I + R)) / (γ * I + d(I + R)).",
         d1 = Tuple(d1),
         d2 = Tuple(d2),
         I = Tuple(I),
-        γ = Tuple(γ),
+        γ_pair = γ_pair,
     )
-    [min(max(factor .* (d2 .+ γ .* d1) ./ (γ .* I .+ d1) |> mean, MIN_β), 0.5)]
+    vals = (d2 .+ γ .* d1) ./ (γ .* I .+ d1)
+    isempty(vals) && return (NaN, Inf)
+    val = mean(vals)
+    if val >= MAX_β || val <= MIN_β
+        return (NaN, Inf)
+    else
+        return (val, StatsBase.std(vals; mean = val))
+    end
+
 end
 
 function estimate_exposed(
     data::AbstractDataFrame;
-    μ = estimate_μ(data; kwargs...),
-    α = estimate_α(data; μ = μ, kwargs...),
-    γ = estimate_γ(data; μ = μ, α = α, kwargs...),
+    μ_pair = estimate_μ(data; kwargs...),
+    α_pair = estimate_α(data; μ_pair = μ_pair, kwargs...),
+    γ_pair = estimate_γ(data; μ_pair = μ_pair, α_pair = α_pair, kwargs...),
     kwargs...,
 )
+    (μ, σ_μ) = μ_pair
+    (α, σ_α) = α_pair
+    (γ, σ_γ) = γ_pair
     d1 = data.diff_confirmed
 
-    factor = sqrt.(γ .^ 2 .- MIN_γ^2) ./ γ .+ MIN_γ
     @debug "Estimating E = d(I + R) / γ." d1 = Tuple(d1) γ = Tuple(γ)
-    E = factor .* d1 ./ γ
+    E = d1 ./ γ
     E = [ismissing(elt) ? missing : isfinite(elt) ? round(Int, elt) : 0 for elt ∈ E]
-    max.(E, 0)
+    σ_E = σ_γ .* d1 ./ γ .^ 2
+    (max.(E, 0), σ_E)
 end
 
 function estimate_exposed!(data::AbstractDataFrame; kwargs...)
@@ -329,19 +373,40 @@ function SEIRModel(
 
     initial_date = data.date[idx]
     M = Float[numpeople]
-    μ = estimate_μ(data; kwargs...)
-    α = estimate_α(data; μ = μ, kwargs...)
-    γ = estimate_γ(data; μ = μ, α = α, kwargs...)
-    β = estimate_β(data; μ = μ, α = α, γ = γ, kwargs...)
+    μ_pair = estimate_μ(data; kwargs...)
+    α_pair = estimate_α(data; μ_pair = μ_pair, kwargs...)
+    γ_pair = estimate_γ(data; μ_pair = μ_pair, α_pair = α_pair, kwargs...)
+    β_pair =
+        estimate_β(data; μ_pair = μ_pair, α_pair = α_pair, γ_pair = γ_pair, kwargs...)
 
-    exposed = estimate_exposed!(data; μ = μ, α = α, γ = γ, kwargs...)
-    E = Float[exposed[idx]]
+    (μ, σ_μ) = μ_pair
+    (α, σ_α) = α_pair
+    (γ, σ_γ) = γ_pair
+    (β, σ_β) = β_pair
+
+    (E_vec, σ_E_vec) = estimate_exposed!(
+        data;
+        μ_pair = μ_pair,
+        α_pair = α_pair,
+        γ_pair = γ_pair,
+        kwargs...,
+    )
+    E = Float[E_vec[idx]]
+    σ_E = Float(σ_E_vec[idx])
     I = Float[data.active[idx]]
     R = Float[data.closed[idx]]
     S = M - E - I - R
-    vars, params = SEIRVariables(S, E, I, R), SEIRParameters(M, β, γ, α, μ)
+    vars, params = SEIRVariables(S, E, I, R), SEIRParameters(M, [β], [γ], [α], [μ])
+    σ = SEIRσ(σ_β, σ_γ, σ_α, σ_μ, σ_E)
 
-    SEIRModel(vars, params; realdata = data, initial_date = initial_date, kwargs...)
+    SEIRModel(
+        vars,
+        params;
+        realdata = data,
+        initial_date = initial_date,
+        σ_all = σ,
+        kwargs...,
+    )
 end
 
 _SEIRModel_exceptions = []
@@ -377,14 +442,18 @@ end
 
 function parameters!(destiny::AbstractDict, data::AbstractDict; kwargs...)
     columns = [param => OptFloat[] for param ∈ SEIR_PARAMS]
+    σ_cols = [sym => OptFloat[] for sym ∈ SEIR_σ_NAMES]
     paramdf = DataFrame(
         :key => String[],
         :group_name => String[],
         columns...,
+        σ_cols...,
         :R0 => OptFloat[],
         :loss_7_days => Float[],
         :loss_14_days => Float[],
     )
+    # Auxiliar value
+    infparams = SEIRσ(Inf, Inf, Inf, Inf, Inf)
     for (key, subdata) ∈ data
         @debug "Computing parameters." key _debuginfo(subdata)
         if subdata isa AbstractDict
@@ -393,19 +462,32 @@ function parameters!(destiny::AbstractDict, data::AbstractDict; kwargs...)
             continue
         end
         !(subdata isa AbstractEndemicModel) && continue
-        gnames = string.(subdata.groupnames)
+        n = ngroups(subdata)
+        gnames = groupnames(subdata)
         param_pairs = pairs(parameters(subdata))
         loss7 = model_loss(subdata; ndays = 7, kwargs...)
         loss14 = model_loss(subdata; ndays = 14, kwargs...)
+
         for (i, gname) ∈ enumerate(gnames)
+            σ_group = Symbol("σ_", gname)
+            σ_pairs = pairs(default_kwarg(subdata, :σ, infparams))
             params = [k => (isfinite(v[i]) ? v[i] : missing) for (k, v) ∈ param_pairs]
+            σ_params = [k => (isfinite(v) ? v : missing) for (k, v) ∈ σ_pairs]
             R0 = param_pairs[:β][i] / param_pairs[:α][i]
             moreparams = (; R0 = R0, loss_7_days = loss7, loss_14_days = loss14)
-            row = (; key = string(key), group_name = gname, params..., moreparams...)
+            row = (;
+                key = string(key),
+                group_name = string(prettify(gname)),
+                params...,
+                σ_params...,
+                moreparams...,
+            )
             @debug "Computed params for SEIR model" row
             push!(paramdf, row)
         end
     end
+    new_σ_cols = [Symbol("σ(", string(sym)[4:end], ")") for sym ∈ SEIR_σ_NAMES]
+    rename!(paramdf, (SEIR_σ_NAMES .=> new_σ_cols)...)
     sort!(paramdf, :key)
     !isempty(paramdf) && (destiny[:MODEL_PARAMETERS] = paramdf)
     destiny
