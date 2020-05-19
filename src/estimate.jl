@@ -449,8 +449,8 @@ function parameters!(destiny::AbstractDict, data::AbstractDict; kwargs...)
         columns...,
         σ_cols...,
         :R0 => OptFloat[],
-        :loss_7_days => Float[],
-        :loss_14_days => Float[],
+        :loss_7_days => OptFloat[],
+        :loss_14_days => OptFloat[],
     )
     # Auxiliar value
     infparams = SEIRσ(Inf, Inf, Inf, Inf, Inf)
@@ -466,14 +466,17 @@ function parameters!(destiny::AbstractDict, data::AbstractDict; kwargs...)
         gnames = groupnames(subdata)
         param_pairs = pairs(parameters(subdata))
         loss7 = model_loss(subdata; ndays = 7, kwargs...)
+        loss7 = isfinite(loss7) ? loss7 : missing
         loss14 = model_loss(subdata; ndays = 14, kwargs...)
+        loss14 = isfinite(loss14) ? loss14 : missing
 
         for (i, gname) ∈ enumerate(gnames)
             σ_group = Symbol("σ_", gname)
-            σ_pairs = pairs(default_kwarg(subdata, :σ, infparams))
+            σ_pairs = pairs(default_kwarg(subdata, σ_group, infparams))
             params = [k => (isfinite(v[i]) ? v[i] : missing) for (k, v) ∈ param_pairs]
             σ_params = [k => (isfinite(v) ? v : missing) for (k, v) ∈ σ_pairs]
             R0 = param_pairs[:β][i] / param_pairs[:α][i]
+            R0 = isfinite(R0) ? R0 : missing
             moreparams = (; R0 = R0, loss_7_days = loss7, loss_14_days = loss14)
             row = (;
                 key = string(key),
