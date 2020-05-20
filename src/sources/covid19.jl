@@ -110,6 +110,8 @@ function import_data(source::TotalTestsOWID; url = TESTING_OWID_URL, kwargs...)
     data[!, :country] = map(row -> row[1], country_split) |> correct_countries!
     test_kinds = map(row -> row[2], country_split) |> correct_test_kind!
     insertcols!(data, 3, :test_kind => test_kinds)
+    sort!(data, [:country, :date])
+    @show data[data.country .== "Brazil", :]
 
     rows = collect(eachrow(data))
     nextrows = rows[2:end]
@@ -121,33 +123,27 @@ function import_data(source::TotalTestsOWID; url = TESTING_OWID_URL, kwargs...)
         total_tests = [lastrow.total_tests],
     )
     push!(nextrows, nlastrow[1, :])
-    growth_rate, next_growth_rate = 1.0, 1.0
+    data = copy(data)
+
     for (row, nextrow) ∈ zip(rows, nextrows)
         if row.country == nextrow.country
             dtend = nextrow.date - Day(1)
-            ndays = Dates.days(nextrow.date - row.date)
-            growth_rate = (nextrow.total_tests / row.total_tests)^(1.0 / ndays)
-            next_growth_rate = growth_rate
         else
             dtend = today() - Day(1)
-            next_growth_rate = 1.0
         end
 
-        for (i, dt) ∈ enumerate((row.date + Day(1)):Day(1):dtend)
-            # tests_interpolated = round(Int, row.total_tests * growth_rate^i)
-            push!(
-                data,
-                (;
-                    country = row.country,
-                    date = dt,
-                    test_kind = row.test_kind,
-                    # total_tests = tests_interpolated,
-                    total_tests = row.total_tests,
-                ),
+        for dt ∈ (row.date + Day(1)):Day(1):dtend
+            newrow = (;
+                country = row.country,
+                date = dt,
+                test_kind = row.test_kind,
+                total_tests = row.total_tests,
             )
+            if row.country == "Brazil"
+                @show row
+            end
+            push!(data, newrow)
         end
-
-        growth_rate = next_growth_rate
     end
     sort!(data, [:country, :test_kind, :date])
     data

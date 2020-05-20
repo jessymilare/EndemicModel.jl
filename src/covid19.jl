@@ -362,9 +362,10 @@ function covid19_database(; kwargs...)
     Database{DataDict}(sources, kwargs, funcs)
 end
 
-function covid19(; kwargs...)
+function covid19(; database = nothing, kwargs...)
+    db = database
     @info "Creating COVID-19 database."
-    db = covid19_database(; kwargs...)
+    isnothing(database) && (db = covid19_database(; kwargs...))
     newdata = DataDict(
         :world => DataDict(
             :per_country => db.csse.per_country_group,

@@ -314,10 +314,13 @@ function estimate_β(
     vals = (d2 .+ γ .* d1) ./ (γ .* I .+ d1)
     isempty(vals) && return (NaN, Inf)
     val = mean(vals)
-    if val >= MAX_β || val <= MIN_β
-        return (NaN, Inf)
+    σ_β = StatsBase.std(vals; mean = val)
+    if val >= MAX_β
+        return (0.99 * MAX_β, σ_β + val - MAX_β)
+    elseif val <= MIN_β
+        return (1.01 * MIN_β, σ_β + MIN_β - val)
     else
-        return (val, StatsBase.std(vals; mean = val))
+        return (val, σ_β)
     end
 
 end
@@ -342,13 +345,13 @@ function estimate_exposed(
 end
 
 function estimate_exposed!(data::AbstractDataFrame; kwargs...)
-    E = estimate_exposed(data; kwargs...)
+    (E, σ_E) = estimate_exposed(data; kwargs...)
     if :exposed ∉ names(data)
         insertcols!(data, ncol(data) + 1, :exposed => E)
     else
         data.exposed = E
     end
-    E
+    (E, σ_E)
 end
 
 estimate_exposed(model::AbstractEndemicModel; kwargs...) =

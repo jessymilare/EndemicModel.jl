@@ -449,40 +449,48 @@ end
 function model_plot(
     df::DataFrame;
     columns = option(:plot_columns),
+    labels = nothing,
     title = _get_plot_title(df),
     minimum_plot_factor = option(:minimum_plot_factor),
     date_format = option(:plot_date_format),
     new_window::Bool = true,
+    ylabel = nothing,
+    yfactor = nothing,
     kwargs...,
 )
     colnames = intersect(columns, Symbol.(names(df)))
+    labels = string.(something(labels, prettify.(columns)))
     numpeople = if hasproperty(df, :estimated_population)
         df.estimated_population[1]
     else
         df.confirmed[end]
     end
-    max_yvalue = maximum([maximum(skipmissing(df[!, col])) for col ∈ colnames])
-    (yfactor, ylabel) = _get_y_factor_and_label(max_yvalue)
+    max_yvalue = 0
+    for cname ∈ colnames
+        max_yvalue = max(maximum(skipmissing(df[!, cname])), max_yvalue)
+    end
+    if isnothing(yfactor)
+        (yfactor, nylabel) = _get_y_factor_and_label(max_yvalue)
+        ylabel = something(ylabel, nylabel)
+    end
 
     istart = findfirst(df.active .* yfactor .>= 0.1)
     iend = findlast(df.active .>= numpeople * minimum_plot_factor)
     df = df[istart:something(iend, nrow(df)), :]
     X = Dates.format.(df.date, date_format)
 
-    y1 = colnames[1]
     win = plot(
         X,
-        df[!, y1] .* yfactor,
+        df[!, colnames[1]] .* yfactor,
         xrotation = 45,
         xticks = 15,
-        label = prettify(string(y1)),
+        label = labels[1],
         ylabel = ylabel,
         title = title,
         legend = :right,
     )
-    for yn ∈ colnames[2:end]
-        ynstr = prettify(string(yn))
-        plot!(win, X, df[!, yn] .* yfactor; label = ynstr)
+    for (yn, label) ∈ zip(colnames[2:end], labels[2:end])
+        plot!(win, X, df[!, yn] .* yfactor; label = label)
     end
     new_window && gui(win)
     win
@@ -500,10 +508,10 @@ function model_validate(
     initial_date = default_kwarg(model, :initial_date, today() - Day(15))
     ndays = Dates.days(initial_date - realdf.date[1])
     model = model_step(model, -ndays; initial_date = realdf.date[1])
-    modeldf = select(modeldf, [:date, columns...])
-    modeldf = rename!(modeldf, (columns .=> modelcolumns)...)
 
-    realdf = select(realdf, [:date, columns...])
+    modeldf = select(modeldf, :date, (columns .=> modelcolumns)...)
+    realdf = select(realdf, :date, columns...)
+
     result = leftjoin(realdf, modeldf; on = :date)
     allcolumns = Symbol[:date]
     for (c1, c2) ∈ zip(columns, modelcolumns)
