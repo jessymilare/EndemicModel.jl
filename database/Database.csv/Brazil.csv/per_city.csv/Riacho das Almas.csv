@@ -1,2 +1,4 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-05-18,PE,Riacho das Almas,1,0,0,20751,2611705,0,1,,,,,,,,,,,,,,,0.0,48.19,0.0,0.0,0.0,48.19
+2020-05-19,PE,Riacho das Almas,2,0,1,20751,2611705,1,1,,,,,,,,,,,,,,0.0,0.0,96.381,0.0,48.19,48.19,48.19
+2020-05-20,PE,Riacho das Almas,2,0,1,20751,2611705,1,1,,,,,,,,,,,,,,0.0,0.0,96.381,0.0,48.19,48.19,48.19
