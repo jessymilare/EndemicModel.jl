@@ -1,3 +1,6 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-05-19,AL,Olho d'Água do Casado,1,0,0,9467,2705804,0,1,,,,,,,,,,,,,,,0.0,105.63,0.0,0.0,0.0,105.63
 2020-05-20,AL,Olho d'Água do Casado,1,0,0,9467,2705804,0,1,,,,,,,,,,,,,,,0.0,105.63,0.0,0.0,0.0,105.63
+2020-05-21,AL,Olho d'Água do Casado,3,0,1,9467,2705804,1,2,,,,,,,,,,,,,,0.0,0.0,316.89,0.0,105.63,105.63,211.26
+2020-05-22,AL,Olho d'Água do Casado,3,0,1,9467,2705804,1,2,,,,,,,,,,,,,,0.0,0.0,316.89,0.0,105.63,105.63,211.26
+2020-05-23,AL,Olho d'Água do Casado,5,0,2,9467,2705804,2,3,,,,,,,,,,,,,,0.0,0.0,528.15,0.0,211.26,211.26,316.89

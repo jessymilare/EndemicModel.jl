@@ -1,0 +1,3 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-22,MG,Engenheiro Navarro,1,0,0,7314,3123809,0,1,,,,,,,,,,,,,,,0.0,136.724,0.0,0.0,0.0,136.724
+2020-05-23,MG,Engenheiro Navarro,1,0,0,7314,3123809,0,1,,,,,,,,,,,,,,,0.0,136.724,0.0,0.0,0.0,136.724
