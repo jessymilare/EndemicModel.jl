@@ -417,7 +417,8 @@ _SEIRModel_exceptions = []
 function SEIRModel!(destiny::AbstractDataDict, data::AbstractDict; kwargs...)
     function _try(data)
         try
-            SEIRModel(data; kwargs...)
+            val = SEIRModel(data; kwargs...)
+            val isa AbstractDataDict && isempty(val) ? missing : val
         catch exception
             exception isa InterruptException && rethrow(exception)
             @debug "Exception during computation of SEIR model." exception

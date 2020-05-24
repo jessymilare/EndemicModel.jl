@@ -111,7 +111,6 @@ function import_data(source::TotalTestsOWID; url = TESTING_OWID_URL, kwargs...)
     test_kinds = map(row -> row[2], country_split) |> correct_test_kind!
     insertcols!(data, 3, :test_kind => test_kinds)
     sort!(data, [:country, :date])
-    @show data[data.country .== "Brazil", :]
 
     rows = collect(eachrow(data))
     nextrows = rows[2:end]
@@ -139,9 +138,6 @@ function import_data(source::TotalTestsOWID; url = TESTING_OWID_URL, kwargs...)
                 test_kind = row.test_kind,
                 total_tests = row.total_tests,
             )
-            if row.country == "Brazil"
-                @show row
-            end
             push!(data, newrow)
         end
     end

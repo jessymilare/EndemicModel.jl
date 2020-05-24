@@ -81,17 +81,25 @@ function _SEIR_derivative(
     M::AbstractVector{Float},
     β::AbstractVector{Float},
     γ::AbstractVector{Float},
-    α::AbstractVector{Float},
+    α::AbstractVector{Float};
+    backward_limit::Bool = false,
 )
     pop = sum(M)
     StoE = β .* sum(I ./ pop) .* S
     EtoI = γ .* E
     ItoR = α .* I
+    if backward_limit
+        StoE = min.(E, StoE)
+        EtoI = min.(I, EtoI)
+        ItoR = min.(R, ItoR)
+    end
 
-    dS = max.(-StoE, -S)
-    dE = max.(StoE - EtoI, -E)
-    dI = max.(EtoI - ItoR, -I)
-    dR = max.(ItoR, -R)
+    dS = -StoE
+    dE = StoE - EtoI
+    dI = EtoI - ItoR
+    dR = ItoR
+
+    @debug "Computed SEIR derivatives" (S, E, I, R) (dS, dE, dI, dR)
 
     (; dS = dS, dE = dE, dI = dI, dR = dR)
 end
@@ -203,8 +211,8 @@ function model_step(model::SEIRModel, n::Int = 1; initial_date = nothing, kwargs
     )
     if n > 0
         while n > 0
-            for i ∈ 1:10
-                (S, E, I, R) = (S + 0.1dS, E + 0.1dE, I + 0.1dI, R + 0.1dR)
+            for i ∈ 1:4
+                (S, E, I, R) = (S + 0.25dS, E + 0.25dE, I + 0.25dI, R + 0.25dR)
                 (dS, dE, dI, dR) = _SEIR_derivative(S, E, I, R, M, β, γ, α)
             end
             n -= 1
@@ -212,10 +220,10 @@ function model_step(model::SEIRModel, n::Int = 1; initial_date = nothing, kwargs
     else
         z = zeros(Float, length(S))
         while n < 0
-            for i ∈ 1:10
-                (S, E, I, R) =
-                    max.((S - 0.1dS, E - 0.1dE, I - 0.1dI, R - 0.1dR), (z, z, z, z))
-                (dS, dE, dI, dR) = _SEIR_derivative(S, E, I, R, M, β, γ, α)
+            for i ∈ 1:4
+                (S, E, I, R) = (S - 0.25dS, E - 0.25dE, I - 0.25dI, R - 0.25dR)
+                (dS, dE, dI, dR) =
+                    _SEIR_derivative(S, E, I, R, M, β, γ, α; backward_limit = true)
             end
             n += 1
         end
@@ -226,28 +234,6 @@ function model_step(model::SEIRModel, n::Int = 1; initial_date = nothing, kwargs
         initial_date = initial_date,
         kwargs...,
     )
-end
-
-function model_step!(model::SEIRModel, n::Int = 1)
-    (S, E, I, R) = variables(model)
-    (dS, dE, dI, dR) = derivatives(model)
-    (M, β, γ, α, μ) = parameters(model)
-    if n > 0
-        while n > 0
-            (S, E, I, R) = (S + dS, E + dE, I + dI, R + dR)
-            (dS, dE, dI, dR) = _SEIR_derivative(S, E, I, R, M, β, γ, α)
-            n -= 1
-        end
-    else
-        while n < 0
-            (S, E, I, R) = (S - dS, E - dE, I - dI, R - dR)
-            (dS, dE, dI, dR) = _SEIR_derivative(S, E, I, R, M, β, γ, α)
-            n += 1
-        end
-    end
-    variables!(model, SEIRVariables(S, E, I, R))
-    derivatives!(model, SEIRDerivatives(dS, dE, dI, dR))
-    model
 end
 
 function pack_vars(S, E, I, R)
@@ -388,7 +374,7 @@ function to_dataframe(model::SEIRModel; kwargs...)
     diff_recovered = zeros(Int, n)
     diff_deaths = zeros(Int, n)
 
-    _round(x) = isnan(x) ? 0 : round(Int, min(x, 1e12))
+    _round(x) = isnan(x) ? 0 : round(Int, max(-1e12, min(1e12, x)))
 
     for i ∈ 1:n
         (S, E, I, R) = unpack_vars(solution[i])
@@ -499,7 +485,6 @@ end
 function model_validate(
     model::SEIRModel;
     columns = option(:plot_columns),
-    modelcolumns = [Symbol(col, "_model") for col ∈ columns],
     title = nothing,
     kwargs...,
 )
@@ -509,44 +494,39 @@ function model_validate(
     ndays = Dates.days(initial_date - realdf.date[1])
     model = model_step(model, -ndays; initial_date = realdf.date[1])
 
-    modeldf = select(modeldf, :date, (columns .=> modelcolumns)...)
+    modeldf = select(modeldata(model), :date, columns...)
     realdf = select(realdf, :date, columns...)
 
-    result = leftjoin(realdf, modeldf; on = :date)
-    allcolumns = Symbol[:date]
-    for (c1, c2) ∈ zip(columns, modelcolumns)
-        append!(allcolumns, [c1, c2])
-    end
-    select(result, allcolumns)
+    (modeldf, realdf)
 end
 
 function model_plot(
     model::SEIRModel;
     columns = option(:plot_columns),
     new_window::Bool = true,
-    title = nothing,
+    title_realdata = nothing,
+    title_modeldata = nothing,
     kwargs...,
 )
-    modeldf, realdf = modeldata(model), realdata(model)
-    comparisondf = model_validate(model; columns = columns, kwargs...)
-    @show comparisondf
-    title = something(title, _get_plot_title(realdf) * " (real vs model)")
+    (modeldf, realdf) = model_validate(model; columns = columns, kwargs...)
+    title_realdata = something(title_realdata, _get_plot_title(realdf) * " (real)")
+    title_modeldata = something(title_modeldata, _get_plot_title(realdf) * " (model)")
 
-    win = model_plot(
-        comparisondf;
-        title = title,
+    rplot = model_plot(
+        realdf;
+        title = title_realdata,
         new_window = false,
         columns = columns,
         kwargs...,
     )
-    # mplot = model_plot(
-    #     modeldf;
-    #     title = title * " (model)",
-    #     new_window = false,
-    #     columns = columns,
-    #     kwargs...,
-    # )
-    # win = plot(rplot, mplot; layout = 2)
+    mplot = model_plot(
+        modeldf;
+        title = title_modeldata,
+        new_window = false,
+        columns = columns,
+        kwargs...,
+    )
+    win = plot(rplot, mplot; layout = 2)
     new_window && gui(win)
     win
 end

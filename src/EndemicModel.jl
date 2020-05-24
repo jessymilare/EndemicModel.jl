@@ -77,7 +77,6 @@ export DataDict,
     to_dataframe!,
     model_validate,
     model_step,
-    model_step!,
 
     datadict,
     datadict!,
