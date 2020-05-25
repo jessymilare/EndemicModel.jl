@@ -1,7 +1,9 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-17,MA,São João do Soter,1,0,0,18728,2111078,0,1,,,,,,,,,,,,,,,0.0,53.396,0.0,0.0,0.0,53.396
-2020-05-18,MA,São João do Soter,1,0,0,18728,2111078,0,1,,,,,,,,,,,,,,,0.0,53.396,0.0,0.0,0.0,53.396
-2020-05-19,MA,São João do Soter,1,0,0,18728,2111078,0,1,,,,,,,,,,,,,,,0.0,53.396,0.0,0.0,0.0,53.396
-2020-05-20,MA,São João do Soter,1,0,0,18728,2111078,0,1,,,,,,,,,,,,,,,0.0,53.396,0.0,0.0,0.0,53.396
-2020-05-21,MA,São João do Soter,1,0,0,18728,2111078,0,1,,,,,,,,,,,,,,,0.0,53.396,0.0,0.0,0.0,53.396
-2020-05-22,MA,São João do Soter,2,0,1,18728,2111078,1,1,,,,,,,,,,,,,,0.0,0.0,106.792,0.0,53.396,53.396,53.396
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-17,MA,São João do Soter,1,0,0,18728,2111078,14.03,14,0,14,,,,,,,,,,,,,,,0.0,747.544,0.0,0.0,0.0,747.544
+2020-05-18,MA,São João do Soter,1,0,0,18728,2111078,14.03,14,0,14,,,,,,,,,,,,,,,0.0,747.544,0.0,0.0,0.0,747.544
+2020-05-19,MA,São João do Soter,1,0,0,18728,2111078,14.03,14,0,14,,,,,,,,,,,,,,,0.0,747.544,0.0,0.0,0.0,747.544
+2020-05-20,MA,São João do Soter,1,0,0,18728,2111078,14.03,14,0,14,4.667,,,,,,,,,,,,,,0.0,747.544,0.0,0.0,0.0,747.544
+2020-05-21,MA,São João do Soter,1,0,0,18728,2111078,14.03,14,0,14,4.667,,,,,,,,,,,,,,0.0,747.544,0.0,0.0,0.0,747.544
+2020-05-22,MA,São João do Soter,2,0,1,18728,2111078,14.03,28,1,27,,,,,,,,,,,,,,0.0,0.0,1495.088,0.0,53.396,53.396,1441.692
+2020-05-23,MA,São João do Soter,3,1,1,18728,2111078,14.03,42,2,40,,,,,,,,,,,,,,0.5,0.02381,2242.631,53.396,53.396,106.792,2135.839
+2020-05-24,MA,São João do Soter,3,1,1,18728,2111078,14.03,42,2,40,,,,,,,,,,,,,,0.5,0.02381,2242.631,53.396,53.396,106.792,2135.839

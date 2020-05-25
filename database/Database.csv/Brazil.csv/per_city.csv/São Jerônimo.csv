@@ -1,10 +1,11 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-15,RS,São Jerônimo,1,0,0,24490,4318408,0,1,,,,,,,,,,,,,,,0.0,40.833,0.0,0.0,0.0,40.833
-2020-05-16,RS,São Jerônimo,1,0,0,24490,4318408,0,1,,,,,,,,,,,,,,,0.0,40.833,0.0,0.0,0.0,40.833
-2020-05-17,RS,São Jerônimo,1,0,0,24490,4318408,0,1,,,,,,,,,,,,,,,0.0,40.833,0.0,0.0,0.0,40.833
-2020-05-18,RS,São Jerônimo,1,0,0,24490,4318408,0,1,1.0,,,,,,,,,,,,,,0.0,40.833,0.0,0.0,0.0,40.833
-2020-05-19,RS,São Jerônimo,1,0,0,24490,4318408,0,1,1.167,,,,,,,,,,,,,,0.0,40.833,0.0,0.0,0.0,40.833
-2020-05-20,RS,São Jerônimo,6,0,2,24490,4318408,2,4,1.333,,,,,,,,,,,,,0.0,0.0,244.998,0.0,81.666,81.666,163.332
-2020-05-21,RS,São Jerônimo,7,0,3,24490,4318408,3,4,,,,,,,,,,,,,,0.0,0.0,285.831,0.0,122.499,122.499,163.332
-2020-05-22,RS,São Jerônimo,8,0,3,24490,4318408,3,5,,,,,,,,,,,,,,0.0,0.0,326.664,0.0,122.499,122.499,204.165
-2020-05-23,RS,São Jerônimo,9,0,4,24490,4318408,4,5,,,,,,,,,,,,,,0.0,0.0,367.497,0.0,163.332,163.332,204.165
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-15,RS,São Jerônimo,1,0,0,24490,4318408,12.0,12,0,12,,,,,,,,,,,,,,,0.0,489.996,0.0,0.0,0.0,489.996
+2020-05-16,RS,São Jerônimo,1,0,0,24490,4318408,12.0,12,0,12,,,,,,,,,,,,,,,0.0,489.996,0.0,0.0,0.0,489.996
+2020-05-17,RS,São Jerônimo,1,0,0,24490,4318408,12.0,12,0,12,,,,,,,,,,,,,,,0.0,489.996,0.0,0.0,0.0,489.996
+2020-05-18,RS,São Jerônimo,1,0,0,24490,4318408,12.0,12,0,12,12.0,,,,,,,,,,,,,,0.0,489.996,0.0,0.0,0.0,489.996
+2020-05-19,RS,São Jerônimo,1,0,0,24490,4318408,12.0,12,0,12,14.0,,,,,,,,,,,,,,0.0,489.996,0.0,0.0,0.0,489.996
+2020-05-20,RS,São Jerônimo,6,0,2,24490,4318408,12.0,72,2,70,16.0,,,,,,,,,,,,,0.0,0.0,2939.976,0.0,81.666,81.666,2858.31
+2020-05-21,RS,São Jerônimo,7,0,3,24490,4318408,12.0,84,3,81,16.0,,,,,,,,,,,,,0.0,0.0,3429.971,0.0,122.499,122.499,3307.472
+2020-05-22,RS,São Jerônimo,8,0,3,24490,4318408,12.0,96,3,93,,,,,,,,,,,,,,0.0,0.0,3919.967,0.0,122.499,122.499,3797.468
+2020-05-23,RS,São Jerônimo,9,0,4,24490,4318408,12.0,108,4,104,,,,,,,,,,,,,,0.0,0.0,4409.963,0.0,163.332,163.332,4246.631
+2020-05-24,RS,São Jerônimo,9,0,4,24490,4318408,12.0,108,4,104,,,,,,,,,,,,,,0.0,0.0,4409.963,0.0,163.332,163.332,4246.631

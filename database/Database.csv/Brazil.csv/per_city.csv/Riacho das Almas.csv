@@ -1,7 +1,8 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-18,PE,Riacho das Almas,1,0,0,20751,2611705,0,1,,,,,,,,,,,,,,,0.0,48.19,0.0,0.0,0.0,48.19
-2020-05-19,PE,Riacho das Almas,2,0,1,20751,2611705,1,1,,,,,,,,,,,,,,0.0,0.0,96.381,0.0,48.19,48.19,48.19
-2020-05-20,PE,Riacho das Almas,2,0,1,20751,2611705,1,1,,,,,,,,,,,,,,0.0,0.0,96.381,0.0,48.19,48.19,48.19
-2020-05-21,PE,Riacho das Almas,3,0,1,20751,2611705,1,2,,,,,,,,,,,,,,0.0,0.0,144.571,0.0,48.19,48.19,96.381
-2020-05-22,PE,Riacho das Almas,3,0,1,20751,2611705,1,2,,,,,,,,,,,,,,0.0,0.0,144.571,0.0,48.19,48.19,96.381
-2020-05-23,PE,Riacho das Almas,3,0,1,20751,2611705,1,2,,,,,,,,,,,,,,0.0,0.0,144.571,0.0,48.19,48.19,96.381
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-18,PE,Riacho das Almas,1,0,0,20751,2611705,14.03,14,0,14,,,,,,,,,,,,,,,0.0,674.666,0.0,0.0,0.0,674.666
+2020-05-19,PE,Riacho das Almas,2,0,1,20751,2611705,14.03,28,1,27,,,,,,,,,,,,,,0.0,0.0,1349.333,0.0,48.19,48.19,1301.142
+2020-05-20,PE,Riacho das Almas,2,0,1,20751,2611705,14.03,28,1,27,,,,,,,,,,,,,,0.0,0.0,1349.333,0.0,48.19,48.19,1301.142
+2020-05-21,PE,Riacho das Almas,3,0,1,20751,2611705,14.03,42,1,41,7.0,,,,,,,,,,,,,0.0,0.0,2023.999,0.0,48.19,48.19,1975.808
+2020-05-22,PE,Riacho das Almas,3,0,1,20751,2611705,14.03,42,1,41,,,,,,,,,,,,,,0.0,0.0,2023.999,0.0,48.19,48.19,1975.808
+2020-05-23,PE,Riacho das Almas,4,0,2,20751,2611705,14.03,56,2,54,,,,,,,,,,,,,,0.0,0.0,2698.665,0.0,96.381,96.381,2602.284
+2020-05-24,PE,Riacho das Almas,4,0,2,20751,2611705,14.03,56,2,54,,,,,,,,,,,,,,0.0,0.0,2698.665,0.0,96.381,96.381,2602.284

@@ -1,5 +1,6 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-20,SP,Boa Esperança do Sul,1,0,0,15072,3506706,0,1,,,,,,,,,,,,,,,0.0,66.348,0.0,0.0,0.0,66.348
-2020-05-21,SP,Boa Esperança do Sul,6,0,2,15072,3506706,2,4,,,,,,,,,,,,,,0.0,0.0,398.089,0.0,132.696,132.696,265.393
-2020-05-22,SP,Boa Esperança do Sul,7,0,3,15072,3506706,3,4,,,,,,,,,,,,,,0.0,0.0,464.437,0.0,199.045,199.045,265.393
-2020-05-23,SP,Boa Esperança do Sul,9,0,4,15072,3506706,4,5,,,,,,,,,,,,,,0.0,0.0,597.134,0.0,265.393,265.393,331.741
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-20,SP,Boa Esperança do Sul,1,0,0,15072,3506706,11.9,12,0,12,,,,,,,,,,,,,,,0.0,796.178,0.0,0.0,0.0,796.178
+2020-05-21,SP,Boa Esperança do Sul,6,0,2,15072,3506706,11.9,71,2,69,,,,,,,,,,,,,,0.0,0.0,4710.722,0.0,132.696,132.696,4578.025
+2020-05-22,SP,Boa Esperança do Sul,7,0,3,15072,3506706,11.9,83,3,80,,,,,,,,,,,,,,0.0,0.0,5506.9,0.0,199.045,199.045,5307.856
+2020-05-23,SP,Boa Esperança do Sul,9,0,4,15072,3506706,11.9,107,4,103,,,,,,,,,,,,,,0.0,0.0,7099.257,0.0,265.393,265.393,6833.864
+2020-05-24,SP,Boa Esperança do Sul,12,0,5,15072,3506706,11.9,143,5,138,,,,,,,,,,,,,,0.0,0.0,9487.792,0.0,331.741,331.741,9156.051

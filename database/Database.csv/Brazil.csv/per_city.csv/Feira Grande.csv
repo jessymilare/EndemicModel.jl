@@ -1,9 +1,10 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-16,AL,Feira Grande,2,0,1,22388,2702603,1,1,,,,,,,,,,,,,,0.0,0.0,89.334,0.0,44.667,44.667,44.667
-2020-05-17,AL,Feira Grande,2,0,1,22388,2702603,1,1,,,,,,,,,,,,,,0.0,0.0,89.334,0.0,44.667,44.667,44.667
-2020-05-18,AL,Feira Grande,2,0,1,22388,2702603,1,1,,,,,,,,,,,,,,0.0,0.0,89.334,0.0,44.667,44.667,44.667
-2020-05-19,AL,Feira Grande,3,0,1,22388,2702603,1,2,1.167,0.5,,,,,,,,,,,,0.0,0.0,134.0,0.0,44.667,44.667,89.334
-2020-05-20,AL,Feira Grande,8,0,3,22388,2702603,3,5,1.167,0.5,,,,,,,,,,,,0.0,0.0,357.334,0.0,134.0,134.0,223.334
-2020-05-21,AL,Feira Grande,8,0,3,22388,2702603,3,5,,,,,,,,,,,,,,0.0,0.0,357.334,0.0,134.0,134.0,223.334
-2020-05-22,AL,Feira Grande,9,0,4,22388,2702603,4,5,,,,,,,,,,,,,,0.0,0.0,402.001,0.0,178.667,178.667,223.334
-2020-05-23,AL,Feira Grande,9,0,4,22388,2702603,4,5,,,,,,,,,,,,,,0.0,0.0,402.001,0.0,178.667,178.667,223.334
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-16,AL,Feira Grande,2,0,1,22388,2702603,14.03,28,1,27,,,,,,,,,,,,,,0.0,0.0,1250.67,0.0,44.667,44.667,1206.003
+2020-05-17,AL,Feira Grande,2,0,1,22388,2702603,14.03,28,1,27,,,,,,,,,,,,,,0.0,0.0,1250.67,0.0,44.667,44.667,1206.003
+2020-05-18,AL,Feira Grande,2,0,1,22388,2702603,14.03,28,1,27,,,,,,,,,,,,,,0.0,0.0,1250.67,0.0,44.667,44.667,1206.003
+2020-05-19,AL,Feira Grande,3,0,1,22388,2702603,14.03,42,1,41,16.333,0.5,,,,,,,,,,,,0.0,0.0,1876.005,0.0,44.667,44.667,1831.338
+2020-05-20,AL,Feira Grande,8,0,3,22388,2702603,14.03,112,3,109,16.333,0.5,,,,,,,,,,,,0.0,0.0,5002.68,0.0,134.0,134.0,4868.68
+2020-05-21,AL,Feira Grande,8,0,3,22388,2702603,14.03,112,3,109,23.333,0.6667,,,,,,,,,,,,0.0,0.0,5002.68,0.0,134.0,134.0,4868.68
+2020-05-22,AL,Feira Grande,9,0,4,22388,2702603,14.03,126,4,122,,,,,,,,,,,,,,0.0,0.0,5628.015,0.0,178.667,178.667,5449.348
+2020-05-23,AL,Feira Grande,9,0,4,22388,2702603,14.03,126,4,122,,,,,,,,,,,,,,0.0,0.0,5628.015,0.0,178.667,178.667,5449.348
+2020-05-24,AL,Feira Grande,12,0,5,22388,2702603,14.03,168,5,163,,,,,,,,,,,,,,0.0,0.0,7504.02,0.0,223.334,223.334,7280.686

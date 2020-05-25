@@ -1,11 +1,12 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-12,RO,São Miguel do Guaporé,1,0,0,23235,1100320,0,1,,,,,,,,,,,,,,,0.0,43.039,0.0,0.0,0.0,43.039
-2020-05-13,RO,São Miguel do Guaporé,1,0,0,23235,1100320,0,1,,,,,,,,,,,,,,,0.0,43.039,0.0,0.0,0.0,43.039
-2020-05-14,RO,São Miguel do Guaporé,1,0,0,23235,1100320,0,1,,,,,,,,,,,,,,,0.0,43.039,0.0,0.0,0.0,43.039
-2020-05-15,RO,São Miguel do Guaporé,1,0,0,23235,1100320,0,1,0.0,,,,,,,,,,,,,,0.0,43.039,0.0,0.0,0.0,43.039
-2020-05-16,RO,São Miguel do Guaporé,1,0,0,23235,1100320,0,1,0.0,,,,,,,,,,,,,,0.0,43.039,0.0,0.0,0.0,43.039
-2020-05-17,RO,São Miguel do Guaporé,1,0,0,23235,1100320,0,1,1.333,,,,,,,,,,,,,,0.0,43.039,0.0,0.0,0.0,43.039
-2020-05-18,RO,São Miguel do Guaporé,1,0,0,23235,1100320,0,1,,,,,,,,,,,,,,,0.0,43.039,0.0,0.0,0.0,43.039
-2020-05-19,RO,São Miguel do Guaporé,1,0,0,23235,1100320,0,1,,,,,,,,,,,,,,,0.0,43.039,0.0,0.0,0.0,43.039
-2020-05-20,RO,São Miguel do Guaporé,9,0,4,23235,1100320,4,5,,,,,,,,,,,,,,0.0,0.0,387.347,0.0,172.154,172.154,215.193
-2020-05-22,RO,São Miguel do Guaporé,9,1,4,23235,1100320,5,4,,,,,,,,,,,,,,0.2,0.1111,387.347,43.039,172.154,215.193,172.154
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-12,RO,São Miguel do Guaporé,1,0,0,23235,1100320,14.03,14,0,14,,,,,,,,,,,,,,,0.0,602.539,0.0,0.0,0.0,602.539
+2020-05-13,RO,São Miguel do Guaporé,1,0,0,23235,1100320,14.03,14,0,14,,,,,,,,,,,,,,,0.0,602.539,0.0,0.0,0.0,602.539
+2020-05-14,RO,São Miguel do Guaporé,1,0,0,23235,1100320,14.03,14,0,14,,,,,,,,,,,,,,,0.0,602.539,0.0,0.0,0.0,602.539
+2020-05-15,RO,São Miguel do Guaporé,1,0,0,23235,1100320,14.03,14,0,14,0.0,,,,,,,,,,,,,,0.0,602.539,0.0,0.0,0.0,602.539
+2020-05-16,RO,São Miguel do Guaporé,1,0,0,23235,1100320,14.03,14,0,14,0.0,,,,,,,,,,,,,,0.0,602.539,0.0,0.0,0.0,602.539
+2020-05-17,RO,São Miguel do Guaporé,1,0,0,23235,1100320,14.03,14,0,14,18.667,,,,,,,,,,,,,,0.0,602.539,0.0,0.0,0.0,602.539
+2020-05-18,RO,São Miguel do Guaporé,1,0,0,23235,1100320,14.03,14,0,14,,,,,,,,,,,,,,,0.0,602.539,0.0,0.0,0.0,602.539
+2020-05-19,RO,São Miguel do Guaporé,1,0,0,23235,1100320,14.03,14,0,14,,,,,,,,,,,,,,,0.0,602.539,0.0,0.0,0.0,602.539
+2020-05-20,RO,São Miguel do Guaporé,9,0,4,23235,1100320,14.03,126,4,122,,,,,,,,,,,,,,0.0,0.0,5422.853,0.0,172.154,172.154,5250.699
+2020-05-22,RO,São Miguel do Guaporé,9,1,4,23235,1100320,14.03,126,5,121,,,,,,,,,,,,,,0.2,0.00794,5422.853,43.039,172.154,215.193,5207.661
+2020-05-23,RO,São Miguel do Guaporé,25,1,10,23235,1100320,14.03,351,11,340,,,,,,,,,,,,,,0.09091,0.00285,15106.52,43.039,430.385,473.424,14633.097

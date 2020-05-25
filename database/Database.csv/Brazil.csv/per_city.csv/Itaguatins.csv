@@ -1,9 +1,10 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-13,TO,Itaguatins,4,0,2,5923,1710706,2,2,,,,,,,,,,,,,,0.0,0.0,675.333,0.0,337.667,337.667,337.667
-2020-05-14,TO,Itaguatins,5,0,2,5923,1710706,2,3,,,,,,,,,,,,,,0.0,0.0,844.167,0.0,337.667,337.667,506.5
-2020-05-15,TO,Itaguatins,5,0,2,5923,1710706,2,3,,,,,,,,,,,,,,0.0,0.0,844.167,0.0,337.667,337.667,506.5
-2020-05-17,TO,Itaguatins,14,0,5,5923,1710706,5,9,,,,,,,,,,,,,,0.0,0.0,2363.667,0.0,844.167,844.167,1519.5
-2020-05-18,TO,Itaguatins,15,0,6,5923,1710706,6,9,,,,,,,,,,,,,,0.0,0.0,2532.5,0.0,1013.0,1013.0,1519.5
-2020-05-19,TO,Itaguatins,15,0,6,5923,1710706,6,9,,,,,,,,,,,,,,0.0,0.0,2532.5,0.0,1013.0,1013.0,1519.5
-2020-05-20,TO,Itaguatins,18,0,7,5923,1710706,7,11,,,,,,,,,,,,,,0.0,0.0,3039.001,0.0,1181.834,1181.834,1857.167
-2020-05-21,TO,Itaguatins,22,0,9,5923,1710706,9,13,,,,,,,,,,,,,,0.0,0.0,3714.334,0.0,1519.5,1519.5,2194.834
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-13,TO,Itaguatins,4,0,2,5923,1710706,14.03,56,2,54,,,,,,,,,,,,,,0.0,0.0,9454.668,0.0,337.667,337.667,9117.002
+2020-05-14,TO,Itaguatins,5,0,2,5923,1710706,14.03,70,2,68,,,,,,,,,,,,,,0.0,0.0,11818.335,0.0,337.667,337.667,11480.669
+2020-05-15,TO,Itaguatins,5,0,2,5923,1710706,14.03,70,2,68,,,,,,,,,,,,,,0.0,0.0,11818.335,0.0,337.667,337.667,11480.669
+2020-05-17,TO,Itaguatins,14,0,5,5923,1710706,14.03,196,5,191,,,,,,,,,,,,,,0.0,0.0,33091.339,0.0,844.167,844.167,32247.172
+2020-05-18,TO,Itaguatins,15,0,6,5923,1710706,14.03,210,6,204,,,,,,,,,,,,,,0.0,0.0,35455.006,0.0,1013.0,1013.0,34442.006
+2020-05-19,TO,Itaguatins,15,0,6,5923,1710706,14.03,210,6,204,,,,,,,,,,,,,,0.0,0.0,35455.006,0.0,1013.0,1013.0,34442.006
+2020-05-20,TO,Itaguatins,18,0,7,5923,1710706,14.03,253,7,246,,,,,,,,,,,,,,0.0,0.0,42714.84,0.0,1181.834,1181.834,41533.007
+2020-05-21,TO,Itaguatins,22,0,9,5923,1710706,14.03,309,9,300,,,,,,,,,,,,,,0.0,0.0,52169.509,0.0,1519.5,1519.5,50650.008
+2020-05-22,TO,Itaguatins,29,0,12,5923,1710706,14.03,407,12,395,,,,,,,,,,,,,,0.0,0.0,68715.178,0.0,2026.0,2026.0,66689.178

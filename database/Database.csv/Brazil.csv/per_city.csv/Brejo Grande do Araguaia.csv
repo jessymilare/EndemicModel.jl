@@ -1,6 +1,7 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-18,PA,Brejo Grande do Araguaia,1,0,0,7454,1501758,0,1,,,,,,,,,,,,,,,0.0,134.156,0.0,0.0,0.0,134.156
-2020-05-20,PA,Brejo Grande do Araguaia,5,0,2,7454,1501758,2,3,,,,,,,,,,,,,,0.0,0.0,670.781,0.0,268.312,268.312,402.468
-2020-05-21,PA,Brejo Grande do Araguaia,7,0,3,7454,1501758,3,4,,,,,,,,,,,,,,0.0,0.0,939.093,0.0,402.468,402.468,536.625
-2020-05-22,PA,Brejo Grande do Araguaia,7,0,3,7454,1501758,3,4,,,,,,,,,,,,,,0.0,0.0,939.093,0.0,402.468,402.468,536.625
-2020-05-23,PA,Brejo Grande do Araguaia,7,0,3,7454,1501758,3,4,,,,,,,,,,,,,,0.0,0.0,939.093,0.0,402.468,402.468,536.625
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-18,PA,Brejo Grande do Araguaia,1,0,0,7454,1501758,14.03,14,0,14,,,,,,,,,,,,,,,0.0,1878.186,0.0,0.0,0.0,1878.186
+2020-05-20,PA,Brejo Grande do Araguaia,5,0,2,7454,1501758,14.03,70,2,68,,,,,,,,,,,,,,0.0,0.0,9390.931,0.0,268.312,268.312,9122.619
+2020-05-21,PA,Brejo Grande do Araguaia,7,0,3,7454,1501758,14.03,98,3,95,,,,,,,,,,,,,,0.0,0.0,13147.303,0.0,402.468,402.468,12744.835
+2020-05-22,PA,Brejo Grande do Araguaia,7,0,3,7454,1501758,14.03,98,3,95,,,,,,,,,,,,,,0.0,0.0,13147.303,0.0,402.468,402.468,12744.835
+2020-05-23,PA,Brejo Grande do Araguaia,7,0,3,7454,1501758,14.03,98,3,95,,,,,,,,,,,,,,0.0,0.0,13147.303,0.0,402.468,402.468,12744.835
+2020-05-24,PA,Brejo Grande do Araguaia,7,0,3,7454,1501758,14.03,98,3,95,,,,,,,,,,,,,,0.0,0.0,13147.303,0.0,402.468,402.468,12744.835

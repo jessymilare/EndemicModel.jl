@@ -1,9 +1,11 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-15,BA,Banzaê,1,0,0,13361,2902658,0,1,,,,,,,,,,,,,,,0.0,74.845,0.0,0.0,0.0,74.845
-2020-05-16,BA,Banzaê,1,0,0,13361,2902658,0,1,,,,,,,,,,,,,,,0.0,74.845,0.0,0.0,0.0,74.845
-2020-05-17,BA,Banzaê,1,0,0,13361,2902658,0,1,,,,,,,,,,,,,,,0.0,74.845,0.0,0.0,0.0,74.845
-2020-05-18,BA,Banzaê,1,0,0,13361,2902658,0,1,0.0,,,,,,,,,,,,,,0.0,74.845,0.0,0.0,0.0,74.845
-2020-05-19,BA,Banzaê,1,0,0,13361,2902658,0,1,0.0,,,,,,,,,,,,,,0.0,74.845,0.0,0.0,0.0,74.845
-2020-05-20,BA,Banzaê,1,0,0,13361,2902658,0,1,,,,,,,,,,,,,,,0.0,74.845,0.0,0.0,0.0,74.845
-2020-05-21,BA,Banzaê,1,0,0,13361,2902658,0,1,,,,,,,,,,,,,,,0.0,74.845,0.0,0.0,0.0,74.845
-2020-05-22,BA,Banzaê,1,0,0,13361,2902658,0,1,,,,,,,,,,,,,,,0.0,74.845,0.0,0.0,0.0,74.845
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-15,BA,Banzaê,1,0,0,13361,2902658,14.03,14,0,14,,,,,,,,,,,,,,,0.0,1047.826,0.0,0.0,0.0,1047.826
+2020-05-16,BA,Banzaê,1,0,0,13361,2902658,14.03,14,0,14,,,,,,,,,,,,,,,0.0,1047.826,0.0,0.0,0.0,1047.826
+2020-05-17,BA,Banzaê,1,0,0,13361,2902658,14.03,14,0,14,,,,,,,,,,,,,,,0.0,1047.826,0.0,0.0,0.0,1047.826
+2020-05-18,BA,Banzaê,1,0,0,13361,2902658,14.03,14,0,14,0.0,,,,,,,,,,,,,,0.0,1047.826,0.0,0.0,0.0,1047.826
+2020-05-19,BA,Banzaê,1,0,0,13361,2902658,14.03,14,0,14,0.0,,,,,,,,,,,,,,0.0,1047.826,0.0,0.0,0.0,1047.826
+2020-05-20,BA,Banzaê,1,0,0,13361,2902658,14.03,14,0,14,0.0,,,,,,,,,,,,,,0.0,1047.826,0.0,0.0,0.0,1047.826
+2020-05-21,BA,Banzaê,1,0,0,13361,2902658,14.03,14,0,14,0.0,,,,,,,,,,,,,,0.0,1047.826,0.0,0.0,0.0,1047.826
+2020-05-22,BA,Banzaê,1,0,0,13361,2902658,14.03,14,0,14,,,,,,,,,,,,,,,0.0,1047.826,0.0,0.0,0.0,1047.826
+2020-05-23,BA,Banzaê,1,0,0,13361,2902658,14.03,14,0,14,,,,,,,,,,,,,,,0.0,1047.826,0.0,0.0,0.0,1047.826
+2020-05-24,BA,Banzaê,1,0,0,13361,2902658,14.03,14,0,14,,,,,,,,,,,,,,,0.0,1047.826,0.0,0.0,0.0,1047.826

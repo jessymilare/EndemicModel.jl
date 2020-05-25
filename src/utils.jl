@@ -5,6 +5,7 @@ const PathDesignator = Union{AbstractString, AbstractPath}
 
 const Float = Float64
 const OptFloat = Union{Missing, Float64}
+const OptInt = Union{Missing, Int}
 
 const DataDict = Dict{Symbol, Any}
 const OrderedDataDict = OrderedDict{Symbol, Any}
@@ -85,12 +86,21 @@ function subdict(dict::AbstractDict, keys)
     end
 end
 
+function get_input(
+    table::AbstractString;
+    directory = option(:parameter_directory),
+    kwargs...,
+)
+    file = join(Path(directory), Path(table) * ".csv")
+    csv_read(file; kwargs...)
+end
+
 function get_parameters(
     table::AbstractString;
-    parameter_directory = option(:parameter_directory),
+    directory = option(:parameter_directory),
+    kwargs...,
 )
-    file = join(Path(parameter_directory), Path(table) * ".csv")
-    df = csv_read(file)
+    df = get_input(table; directory = directory, kwargs...)
     dfkeys = strip.(df.key)
     dfvalues = strip.(df.value)
     Dict((dfkeys .=> dfvalues)...)

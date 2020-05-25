@@ -1,10 +1,12 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-14,MA,Feira Nova do Maranhão,1,0,0,8589,2104073,0,1,,,,,,,,,,,,,,,0.0,116.428,0.0,0.0,0.0,116.428
-2020-05-15,MA,Feira Nova do Maranhão,3,0,1,8589,2104073,1,2,,,,,,,,,,,,,,0.0,0.0,349.284,0.0,116.428,116.428,232.856
-2020-05-16,MA,Feira Nova do Maranhão,3,0,1,8589,2104073,1,2,,,,,,,,,,,,,,0.0,0.0,349.284,0.0,116.428,116.428,232.856
-2020-05-17,MA,Feira Nova do Maranhão,3,0,1,8589,2104073,1,2,0.3333,,,,,,,,,,,,,0.0,0.0,349.284,0.0,116.428,116.428,232.856
-2020-05-18,MA,Feira Nova do Maranhão,3,0,1,8589,2104073,1,2,0.3333,0.1667,,,,,,,,,,,,0.0,0.0,349.284,0.0,116.428,116.428,232.856
-2020-05-19,MA,Feira Nova do Maranhão,3,0,1,8589,2104073,1,2,0.3333,0.1667,,,,,,,,,,,,0.0,0.0,349.284,0.0,116.428,116.428,232.856
-2020-05-20,MA,Feira Nova do Maranhão,3,1,1,8589,2104073,2,1,,,,,,,,,,,,,,0.5,0.3333,349.284,116.428,116.428,232.856,116.428
-2020-05-21,MA,Feira Nova do Maranhão,5,1,2,8589,2104073,3,2,,,,,,,,,,,,,,0.3333,0.2,582.14,116.428,232.856,349.284,232.856
-2020-05-22,MA,Feira Nova do Maranhão,5,1,2,8589,2104073,3,2,,,,,,,,,,,,,,0.3333,0.2,582.14,116.428,232.856,349.284,232.856
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-14,MA,Feira Nova do Maranhão,1,0,0,8589,2104073,14.03,14,0,14,,,,,,,,,,,,,,,0.0,1629.992,0.0,0.0,0.0,1629.992
+2020-05-15,MA,Feira Nova do Maranhão,3,0,1,8589,2104073,14.03,42,1,41,,,,,,,,,,,,,,0.0,0.0,4889.976,0.0,116.428,116.428,4773.548
+2020-05-16,MA,Feira Nova do Maranhão,3,0,1,8589,2104073,14.03,42,1,41,,,,,,,,,,,,,,0.0,0.0,4889.976,0.0,116.428,116.428,4773.548
+2020-05-17,MA,Feira Nova do Maranhão,3,0,1,8589,2104073,14.03,42,1,41,4.667,,,,,,,,,,,,,0.0,0.0,4889.976,0.0,116.428,116.428,4773.548
+2020-05-18,MA,Feira Nova do Maranhão,3,0,1,8589,2104073,14.03,42,1,41,4.667,0.1667,,,,,,,,,,,,0.0,0.0,4889.976,0.0,116.428,116.428,4773.548
+2020-05-19,MA,Feira Nova do Maranhão,3,0,1,8589,2104073,14.03,42,1,41,4.667,0.1667,,,,,,,,,,,,0.0,0.0,4889.976,0.0,116.428,116.428,4773.548
+2020-05-20,MA,Feira Nova do Maranhão,3,1,1,8589,2104073,14.03,42,2,40,9.333,0.3333,,,,,,,,,,,,0.5,0.02381,4889.976,116.428,116.428,232.856,4657.12
+2020-05-21,MA,Feira Nova do Maranhão,5,1,2,8589,2104073,14.03,70,3,67,9.333,0.3333,,,,,,,,,,,,0.3333,0.01429,8149.959,116.428,232.856,349.284,7800.675
+2020-05-22,MA,Feira Nova do Maranhão,5,1,2,8589,2104073,14.03,70,3,67,,,,,,,,,,,,,,0.3333,0.01429,8149.959,116.428,232.856,349.284,7800.675
+2020-05-23,MA,Feira Nova do Maranhão,7,1,3,8589,2104073,14.03,98,4,94,,,,,,,,,,,,,,0.25,0.0102,11409.943,116.428,349.284,465.712,10944.231
+2020-05-24,MA,Feira Nova do Maranhão,7,1,3,8589,2104073,14.03,98,4,94,,,,,,,,,,,,,,0.25,0.0102,11409.943,116.428,349.284,465.712,10944.231

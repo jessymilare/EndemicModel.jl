@@ -1,10 +1,11 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-15,MT,Nova Ubiratã,1,0,0,12102,5106240,0,1,,,,,,,,,,,,,,,0.0,82.631,0.0,0.0,0.0,82.631
-2020-05-16,MT,Nova Ubiratã,1,0,0,12102,5106240,0,1,,,,,,,,,,,,,,,0.0,82.631,0.0,0.0,0.0,82.631
-2020-05-17,MT,Nova Ubiratã,3,0,1,12102,5106240,1,2,,,,,,,,,,,,,,0.0,0.0,247.893,0.0,82.631,82.631,165.262
-2020-05-18,MT,Nova Ubiratã,3,0,1,12102,5106240,1,2,0.6667,,,,,,,,,,,,,0.0,0.0,247.893,0.0,82.631,82.631,165.262
-2020-05-19,MT,Nova Ubiratã,3,0,1,12102,5106240,1,2,0.6667,,,,,,,,,,,,,0.0,0.0,247.893,0.0,82.631,82.631,165.262
-2020-05-20,MT,Nova Ubiratã,3,0,1,12102,5106240,1,2,0.3333,0.1667,,,,,,,,,,,,0.0,0.0,247.893,0.0,82.631,82.631,165.262
-2020-05-21,MT,Nova Ubiratã,5,0,2,12102,5106240,2,3,,,,,,,,,,,,,,0.0,0.0,413.155,0.0,165.262,165.262,247.893
-2020-05-22,MT,Nova Ubiratã,5,0,2,12102,5106240,2,3,,,,,,,,,,,,,,0.0,0.0,413.155,0.0,165.262,165.262,247.893
-2020-05-23,MT,Nova Ubiratã,5,0,2,12102,5106240,2,3,,,,,,,,,,,,,,0.0,0.0,413.155,0.0,165.262,165.262,247.893
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-15,MT,Nova Ubiratã,1,0,0,12102,5106240,10.0,10,0,10,,,,,,,,,,,,,,,0.0,826.31,0.0,0.0,0.0,826.31
+2020-05-16,MT,Nova Ubiratã,1,0,0,12102,5106240,10.0,10,0,10,,,,,,,,,,,,,,,0.0,826.31,0.0,0.0,0.0,826.31
+2020-05-17,MT,Nova Ubiratã,3,0,1,12102,5106240,10.0,30,1,29,,,,,,,,,,,,,,0.0,0.0,2478.929,0.0,82.631,82.631,2396.298
+2020-05-18,MT,Nova Ubiratã,3,0,1,12102,5106240,10.0,30,1,29,6.667,,,,,,,,,,,,,0.0,0.0,2478.929,0.0,82.631,82.631,2396.298
+2020-05-19,MT,Nova Ubiratã,3,0,1,12102,5106240,10.0,30,1,29,6.667,,,,,,,,,,,,,0.0,0.0,2478.929,0.0,82.631,82.631,2396.298
+2020-05-20,MT,Nova Ubiratã,3,0,1,12102,5106240,10.0,30,1,29,3.333,0.1667,,,,,,,,,,,,0.0,0.0,2478.929,0.0,82.631,82.631,2396.298
+2020-05-21,MT,Nova Ubiratã,5,0,2,12102,5106240,10.0,50,2,48,3.333,0.1667,,,,,,,,,,,,0.0,0.0,4131.549,0.0,165.262,165.262,3966.287
+2020-05-22,MT,Nova Ubiratã,5,0,2,12102,5106240,10.0,50,2,48,,,,,,,,,,,,,,0.0,0.0,4131.549,0.0,165.262,165.262,3966.287
+2020-05-23,MT,Nova Ubiratã,5,0,2,12102,5106240,10.0,50,2,48,,,,,,,,,,,,,,0.0,0.0,4131.549,0.0,165.262,165.262,3966.287
+2020-05-24,MT,Nova Ubiratã,5,0,2,12102,5106240,10.0,50,2,48,,,,,,,,,,,,,,0.0,0.0,4131.549,0.0,165.262,165.262,3966.287

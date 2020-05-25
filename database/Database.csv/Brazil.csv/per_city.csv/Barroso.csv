@@ -1,8 +1,9 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-17,MG,Barroso,1,0,0,21018,3105905,0,1,,,,,,,,,,,,,,,0.0,47.578,0.0,0.0,0.0,47.578
-2020-05-18,MG,Barroso,1,0,0,21018,3105905,0,1,,,,,,,,,,,,,,,0.0,47.578,0.0,0.0,0.0,47.578
-2020-05-19,MG,Barroso,1,0,0,21018,3105905,0,1,,,,,,,,,,,,,,,0.0,47.578,0.0,0.0,0.0,47.578
-2020-05-20,MG,Barroso,1,0,0,21018,3105905,0,1,0.1667,,,,,,,,,,,,,,0.0,47.578,0.0,0.0,0.0,47.578
-2020-05-21,MG,Barroso,1,0,0,21018,3105905,0,1,,,,,,,,,,,,,,,0.0,47.578,0.0,0.0,0.0,47.578
-2020-05-22,MG,Barroso,2,0,1,21018,3105905,1,1,,,,,,,,,,,,,,0.0,0.0,95.157,0.0,47.578,47.578,47.578
-2020-05-23,MG,Barroso,2,0,1,21018,3105905,1,1,,,,,,,,,,,,,,0.0,0.0,95.157,0.0,47.578,47.578,47.578
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-17,MG,Barroso,1,0,0,21018,3105905,16.5,16,0,16,,,,,,,,,,,,,,,0.0,761.252,0.0,0.0,0.0,761.252
+2020-05-18,MG,Barroso,1,0,0,21018,3105905,16.5,16,0,16,,,,,,,,,,,,,,,0.0,761.252,0.0,0.0,0.0,761.252
+2020-05-19,MG,Barroso,1,0,0,21018,3105905,16.5,16,0,16,,,,,,,,,,,,,,,0.0,761.252,0.0,0.0,0.0,761.252
+2020-05-20,MG,Barroso,1,0,0,21018,3105905,16.5,16,0,16,2.833,,,,,,,,,,,,,,0.0,761.252,0.0,0.0,0.0,761.252
+2020-05-21,MG,Barroso,1,0,0,21018,3105905,16.5,16,0,16,2.833,,,,,,,,,,,,,,0.0,761.252,0.0,0.0,0.0,761.252
+2020-05-22,MG,Barroso,2,0,1,21018,3105905,16.5,33,1,32,,,,,,,,,,,,,,0.0,0.0,1570.083,0.0,47.578,47.578,1522.505
+2020-05-23,MG,Barroso,2,0,1,21018,3105905,16.5,33,1,32,,,,,,,,,,,,,,0.0,0.0,1570.083,0.0,47.578,47.578,1522.505
+2020-05-24,MG,Barroso,2,0,1,21018,3105905,16.5,33,1,32,,,,,,,,,,,,,,0.0,0.0,1570.083,0.0,47.578,47.578,1522.505

@@ -1,10 +1,11 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-15,RS,Maximiliano de Almeida,3,0,1,4421,4312203,1,2,,,,,,,,,,,,,,0.0,0.0,678.58,0.0,226.193,226.193,452.386
-2020-05-16,RS,Maximiliano de Almeida,3,0,1,4421,4312203,1,2,,,,,,,,,,,,,,0.0,0.0,678.58,0.0,226.193,226.193,452.386
-2020-05-17,RS,Maximiliano de Almeida,3,0,1,4421,4312203,1,2,,,,,,,,,,,,,,0.0,0.0,678.58,0.0,226.193,226.193,452.386
-2020-05-18,RS,Maximiliano de Almeida,3,0,1,4421,4312203,1,2,-0.5,-0.16667,,,,,,,,,,,,0.0,0.0,678.58,0.0,226.193,226.193,452.386
-2020-05-19,RS,Maximiliano de Almeida,0,0,0,4421,4312203,0,0,-0.5,-0.16667,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-05-20,RS,Maximiliano de Almeida,0,0,0,4421,4312203,0,0,-0.5,-0.16667,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-05-21,RS,Maximiliano de Almeida,0,0,0,4421,4312203,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-05-22,RS,Maximiliano de Almeida,0,0,0,4421,4312203,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-05-23,RS,Maximiliano de Almeida,0,0,0,4421,4312203,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-15,RS,Maximiliano de Almeida,3,0,1,4421,4312203,12.0,36,1,35,,,,,,,,,,,,,,0.0,0.0,8142.954,0.0,226.193,226.193,7916.761
+2020-05-16,RS,Maximiliano de Almeida,3,0,1,4421,4312203,12.0,36,1,35,,,,,,,,,,,,,,0.0,0.0,8142.954,0.0,226.193,226.193,7916.761
+2020-05-17,RS,Maximiliano de Almeida,3,0,1,4421,4312203,12.0,36,1,35,,,,,,,,,,,,,,0.0,0.0,8142.954,0.0,226.193,226.193,7916.761
+2020-05-18,RS,Maximiliano de Almeida,3,0,1,4421,4312203,12.0,36,1,35,-6.0,-0.16667,,,,,,,,,,,,0.0,0.0,8142.954,0.0,226.193,226.193,7916.761
+2020-05-19,RS,Maximiliano de Almeida,0,0,0,4421,4312203,12.0,0,0,0,-6.0,-0.16667,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-20,RS,Maximiliano de Almeida,0,0,0,4421,4312203,12.0,0,0,0,-6.0,-0.16667,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-21,RS,Maximiliano de Almeida,0,0,0,4421,4312203,12.0,0,0,0,-6.0,-0.16667,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-22,RS,Maximiliano de Almeida,0,0,0,4421,4312203,12.0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-23,RS,Maximiliano de Almeida,0,0,0,4421,4312203,12.0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-24,RS,Maximiliano de Almeida,0,0,0,4421,4312203,12.0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0

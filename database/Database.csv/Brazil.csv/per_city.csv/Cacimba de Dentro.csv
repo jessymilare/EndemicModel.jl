@@ -1,8 +1,10 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-16,PB,Cacimba de Dentro,2,0,1,17359,2503506,1,1,,,,,,,,,,,,,,0.0,0.0,115.214,0.0,57.607,57.607,57.607
-2020-05-17,PB,Cacimba de Dentro,2,0,1,17359,2503506,1,1,,,,,,,,,,,,,,0.0,0.0,115.214,0.0,57.607,57.607,57.607
-2020-05-18,PB,Cacimba de Dentro,4,0,2,17359,2503506,2,2,,,,,,,,,,,,,,0.0,0.0,230.428,0.0,115.214,115.214,115.214
-2020-05-19,PB,Cacimba de Dentro,4,0,2,17359,2503506,2,2,1.5,0.6667,,,,,,,,,,,,0.0,0.0,230.428,0.0,115.214,115.214,115.214
-2020-05-20,PB,Cacimba de Dentro,4,0,2,17359,2503506,2,2,,,,,,,,,,,,,,0.0,0.0,230.428,0.0,115.214,115.214,115.214
-2020-05-21,PB,Cacimba de Dentro,4,0,2,17359,2503506,2,2,,,,,,,,,,,,,,0.0,0.0,230.428,0.0,115.214,115.214,115.214
-2020-05-22,PB,Cacimba de Dentro,11,0,5,17359,2503506,5,6,,,,,,,,,,,,,,0.0,0.0,633.677,0.0,288.035,288.035,345.642
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-16,PB,Cacimba de Dentro,2,0,1,17359,2503506,14.03,28,1,27,,,,,,,,,,,,,,0.0,0.0,1612.996,0.0,57.607,57.607,1555.389
+2020-05-17,PB,Cacimba de Dentro,2,0,1,17359,2503506,14.03,28,1,27,,,,,,,,,,,,,,0.0,0.0,1612.996,0.0,57.607,57.607,1555.389
+2020-05-18,PB,Cacimba de Dentro,4,0,2,17359,2503506,14.03,56,2,54,,,,,,,,,,,,,,0.0,0.0,3225.992,0.0,115.214,115.214,3110.778
+2020-05-19,PB,Cacimba de Dentro,4,0,2,17359,2503506,14.03,56,2,54,21.0,0.6667,,,,,,,,,,,,0.0,0.0,3225.992,0.0,115.214,115.214,3110.778
+2020-05-20,PB,Cacimba de Dentro,4,0,2,17359,2503506,14.03,56,2,54,21.0,0.6667,,,,,,,,,,,,0.0,0.0,3225.992,0.0,115.214,115.214,3110.778
+2020-05-21,PB,Cacimba de Dentro,4,0,2,17359,2503506,14.03,56,2,54,16.333,0.5,,,,,,,,,,,,0.0,0.0,3225.992,0.0,115.214,115.214,3110.778
+2020-05-22,PB,Cacimba de Dentro,11,0,5,17359,2503506,14.03,154,5,149,,,,,,,,,,,,,,0.0,0.0,8871.479,0.0,288.035,288.035,8583.444
+2020-05-23,PB,Cacimba de Dentro,11,0,5,17359,2503506,14.03,154,5,149,,,,,,,,,,,,,,0.0,0.0,8871.479,0.0,288.035,288.035,8583.444
+2020-05-24,PB,Cacimba de Dentro,11,0,5,17359,2503506,14.03,154,5,149,,,,,,,,,,,,,,0.0,0.0,8871.479,0.0,288.035,288.035,8583.444

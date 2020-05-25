@@ -1,7 +1,9 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-17,MA,Igarapé Grande,38,0,15,11433,2105203,15,23,,,,,,,,,,,,,,0.0,0.0,3323.712,0.0,1311.992,1311.992,2011.72
-2020-05-18,MA,Igarapé Grande,53,0,21,11433,2105203,21,32,,,,,,,,,,,,,,0.0,0.0,4635.704,0.0,1836.788,1836.788,2798.915
-2020-05-19,MA,Igarapé Grande,53,0,21,11433,2105203,21,32,,,,,,,,,,,,,,0.0,0.0,4635.704,0.0,1836.788,1836.788,2798.915
-2020-05-20,MA,Igarapé Grande,72,0,29,11433,2105203,29,43,,,,,,,,,,,,,,0.0,0.0,6297.56,0.0,2536.517,2536.517,3761.043
-2020-05-21,MA,Igarapé Grande,72,0,29,11433,2105203,29,43,,,,,,,,,,,,,,0.0,0.0,6297.56,0.0,2536.517,2536.517,3761.043
-2020-05-22,MA,Igarapé Grande,73,0,30,11433,2105203,30,43,,,,,,,,,,,,,,0.0,0.0,6385.026,0.0,2623.983,2623.983,3761.043
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-17,MA,Igarapé Grande,38,0,15,11433,2105203,14.03,533,15,518,,,,,,,,,,,,,,0.0,0.0,46619.435,0.0,1311.992,1311.992,45307.443
+2020-05-18,MA,Igarapé Grande,53,0,21,11433,2105203,14.03,744,21,723,,,,,,,,,,,,,,0.0,0.0,65074.784,0.0,1836.788,1836.788,63237.995
+2020-05-19,MA,Igarapé Grande,53,0,21,11433,2105203,14.03,744,21,723,,,,,,,,,,,,,,0.0,0.0,65074.784,0.0,1836.788,1836.788,63237.995
+2020-05-20,MA,Igarapé Grande,72,0,29,11433,2105203,14.03,1010,29,981,149.667,4.5,,,,,,,,,,,,0.0,0.0,88340.768,0.0,2536.517,2536.517,85804.251
+2020-05-21,MA,Igarapé Grande,72,0,29,11433,2105203,14.03,1010,29,981,116.833,3.667,,,,,,,,,,,,0.0,0.0,88340.768,0.0,2536.517,2536.517,85804.251
+2020-05-22,MA,Igarapé Grande,73,0,30,11433,2105203,14.03,1024,30,994,,,,,,,,,,,,,,0.0,0.0,89565.293,0.0,2623.983,2623.983,86941.31
+2020-05-23,MA,Igarapé Grande,102,0,42,11433,2105203,14.03,1431,42,1389,,,,,,,,,,,,,,0.0,0.0,125163.999,0.0,3673.576,3673.576,121490.422
+2020-05-24,MA,Igarapé Grande,103,0,43,11433,2105203,14.03,1445,43,1402,,,,,,,,,,,,,,0.0,0.0,126388.524,0.0,3761.043,3761.043,122627.482

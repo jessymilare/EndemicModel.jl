@@ -368,7 +368,7 @@ function to_dataframe(model::SEIRModel; kwargs...)
     active = zeros(Int, n)
     recovered = zeros(Int, n)
     deaths = zeros(Int, n)
-    confirmed = zeros(Int, n)
+    infected = zeros(Int, n)
     diff_exposed = zeros(Int, n)
     diff_active = zeros(Int, n)
     diff_recovered = zeros(Int, n)
@@ -383,7 +383,7 @@ function to_dataframe(model::SEIRModel; kwargs...)
         active[i] = sum(I) |> _round
         recovered[i] = sum(R .* (1.0 .- μ)) |> _round
         deaths[i] = sum(R .* μ) |> _round
-        confirmed[i] = active[i] + recovered[i] + deaths[i] |> _round
+        infected[i] = active[i] + recovered[i] + deaths[i] |> _round
         diff_exposed[i] = sum(dE) |> _round
         diff_active[i] = sum(dI) |> _round
         diff_recovered[i] = sum(dR .* (1.0 .- μ)) |> _round
@@ -391,7 +391,7 @@ function to_dataframe(model::SEIRModel; kwargs...)
     end
     DataFrame(
         date = date,
-        confirmed = confirmed,
+        infected = infected,
         exposed = exposed,
         active = active,
         recovered = recovered,
@@ -449,7 +449,7 @@ function model_plot(
     numpeople = if hasproperty(df, :estimated_population)
         df.estimated_population[1]
     else
-        df.confirmed[end]
+        df.infected[end]
     end
     max_yvalue = 0
     for cname ∈ colnames

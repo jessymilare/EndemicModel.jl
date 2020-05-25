@@ -1,6 +1,8 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-18,PB,São Mamede,4,0,2,7801,2514909,2,2,,,,,,,,,,,,,,0.0,0.0,512.755,0.0,256.377,256.377,256.377
-2020-05-19,PB,São Mamede,6,0,2,7801,2514909,2,4,,,,,,,,,,,,,,0.0,0.0,769.132,0.0,256.377,256.377,512.755
-2020-05-20,PB,São Mamede,6,0,2,7801,2514909,2,4,,,,,,,,,,,,,,0.0,0.0,769.132,0.0,256.377,256.377,512.755
-2020-05-21,PB,São Mamede,6,0,2,7801,2514909,2,4,,,,,,,,,,,,,,0.0,0.0,769.132,0.0,256.377,256.377,512.755
-2020-05-22,PB,São Mamede,6,0,2,7801,2514909,2,4,,,,,,,,,,,,,,0.0,0.0,769.132,0.0,256.377,256.377,512.755
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-18,PB,São Mamede,4,0,2,7801,2514909,14.03,56,2,54,,,,,,,,,,,,,,0.0,0.0,7178.567,0.0,256.377,256.377,6922.189
+2020-05-19,PB,São Mamede,6,0,2,7801,2514909,14.03,84,2,82,,,,,,,,,,,,,,0.0,0.0,10767.85,0.0,256.377,256.377,10511.473
+2020-05-20,PB,São Mamede,6,0,2,7801,2514909,14.03,84,2,82,,,,,,,,,,,,,,0.0,0.0,10767.85,0.0,256.377,256.377,10511.473
+2020-05-21,PB,São Mamede,6,0,2,7801,2514909,14.03,84,2,82,7.0,0.1667,,,,,,,,,,,,0.0,0.0,10767.85,0.0,256.377,256.377,10511.473
+2020-05-22,PB,São Mamede,6,0,2,7801,2514909,14.03,84,2,82,,,,,,,,,,,,,,0.0,0.0,10767.85,0.0,256.377,256.377,10511.473
+2020-05-23,PB,São Mamede,6,0,2,7801,2514909,14.03,84,2,82,,,,,,,,,,,,,,0.0,0.0,10767.85,0.0,256.377,256.377,10511.473
+2020-05-24,PB,São Mamede,7,0,3,7801,2514909,14.03,98,3,95,,,,,,,,,,,,,,0.0,0.0,12562.492,0.0,384.566,384.566,12177.926

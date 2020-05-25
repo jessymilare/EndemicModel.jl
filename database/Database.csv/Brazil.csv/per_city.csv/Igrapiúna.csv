@@ -1,9 +1,11 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-15,BA,Igrapiúna,2,0,1,13358,2913457,1,1,,,,,,,,,,,,,,0.0,0.0,149.723,0.0,74.862,74.862,74.862
-2020-05-16,BA,Igrapiúna,2,0,1,13358,2913457,1,1,,,,,,,,,,,,,,0.0,0.0,149.723,0.0,74.862,74.862,74.862
-2020-05-17,BA,Igrapiúna,0,0,0,13358,2913457,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-05-18,BA,Igrapiúna,0,0,0,13358,2913457,0,0,-0.33333,-0.16667,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-05-19,BA,Igrapiúna,0,0,0,13358,2913457,0,0,-0.33333,-0.16667,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-05-20,BA,Igrapiúna,0,0,0,13358,2913457,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-05-21,BA,Igrapiúna,0,0,0,13358,2913457,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-05-22,BA,Igrapiúna,0,0,0,13358,2913457,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-15,BA,Igrapiúna,2,0,1,13358,2913457,14.03,28,1,27,,,,,,,,,,,,,,0.0,0.0,2096.122,0.0,74.862,74.862,2021.261
+2020-05-16,BA,Igrapiúna,2,0,1,13358,2913457,14.03,28,1,27,,,,,,,,,,,,,,0.0,0.0,2096.122,0.0,74.862,74.862,2021.261
+2020-05-17,BA,Igrapiúna,0,0,0,13358,2913457,14.03,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-18,BA,Igrapiúna,0,0,0,13358,2913457,14.03,0,0,0,-4.66667,-0.16667,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-19,BA,Igrapiúna,0,0,0,13358,2913457,14.03,0,0,0,-4.66667,-0.16667,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-20,BA,Igrapiúna,0,0,0,13358,2913457,14.03,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-21,BA,Igrapiúna,0,0,0,13358,2913457,14.03,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-22,BA,Igrapiúna,0,0,0,13358,2913457,14.03,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-23,BA,Igrapiúna,3,0,1,13358,2913457,14.03,42,1,41,,,,,,,,,,,,,,0.0,0.0,3144.183,0.0,74.862,74.862,3069.322
+2020-05-24,BA,Igrapiúna,3,0,1,13358,2913457,14.03,42,1,41,,,,,,,,,,,,,,0.0,0.0,3144.183,0.0,74.862,74.862,3069.322

@@ -268,7 +268,7 @@ function group_table!(data, tblname, sourcetbls, keycols, cols_and_funcs...; kwa
     (data, updated)
 end
 
-macro defcolumn(fcall::Expr, body::Expr)
+macro defcolumn(fcall::Expr, body)
     @argcheck fcall.head == :call
     colname = fcall.args[1]
     funname = Symbol(:column_, colname)
@@ -283,7 +283,7 @@ macro defcolumn(fcall::Expr, body::Expr)
     end
 end
 
-macro deftable(fcall::Expr, body::Expr)
+macro deftable(fcall::Expr, body)
     @argcheck fcall.head == :call
     tblname = fcall.args[1]
     funname = Symbol(:table_, tblname)

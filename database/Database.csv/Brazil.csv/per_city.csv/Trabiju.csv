@@ -1,8 +1,9 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-17,SP,Trabiju,1,0,0,1741,3554755,0,1,,,,,,,,,,,,,,,0.0,574.383,0.0,0.0,0.0,574.383
-2020-05-18,SP,Trabiju,1,0,0,1741,3554755,0,1,,,,,,,,,,,,,,,0.0,574.383,0.0,0.0,0.0,574.383
-2020-05-19,SP,Trabiju,1,0,0,1741,3554755,0,1,,,,,,,,,,,,,,,0.0,574.383,0.0,0.0,0.0,574.383
-2020-05-20,SP,Trabiju,1,0,0,1741,3554755,0,1,0.0,,,,,,,,,,,,,,0.0,574.383,0.0,0.0,0.0,574.383
-2020-05-21,SP,Trabiju,1,0,0,1741,3554755,0,1,,,,,,,,,,,,,,,0.0,574.383,0.0,0.0,0.0,574.383
-2020-05-22,SP,Trabiju,1,0,0,1741,3554755,0,1,,,,,,,,,,,,,,,0.0,574.383,0.0,0.0,0.0,574.383
-2020-05-23,SP,Trabiju,1,0,0,1741,3554755,0,1,,,,,,,,,,,,,,,0.0,574.383,0.0,0.0,0.0,574.383
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-17,SP,Trabiju,1,0,0,1741,3554755,11.9,12,0,12,,,,,,,,,,,,,,,0.0,6892.59,0.0,0.0,0.0,6892.59
+2020-05-18,SP,Trabiju,1,0,0,1741,3554755,11.9,12,0,12,,,,,,,,,,,,,,,0.0,6892.59,0.0,0.0,0.0,6892.59
+2020-05-19,SP,Trabiju,1,0,0,1741,3554755,11.9,12,0,12,,,,,,,,,,,,,,,0.0,6892.59,0.0,0.0,0.0,6892.59
+2020-05-20,SP,Trabiju,1,0,0,1741,3554755,11.9,12,0,12,0.0,,,,,,,,,,,,,,0.0,6892.59,0.0,0.0,0.0,6892.59
+2020-05-21,SP,Trabiju,1,0,0,1741,3554755,11.9,12,0,12,0.0,,,,,,,,,,,,,,0.0,6892.59,0.0,0.0,0.0,6892.59
+2020-05-22,SP,Trabiju,1,0,0,1741,3554755,11.9,12,0,12,,,,,,,,,,,,,,,0.0,6892.59,0.0,0.0,0.0,6892.59
+2020-05-23,SP,Trabiju,1,0,0,1741,3554755,11.9,12,0,12,,,,,,,,,,,,,,,0.0,6892.59,0.0,0.0,0.0,6892.59
+2020-05-24,SP,Trabiju,1,0,0,1741,3554755,11.9,12,0,12,,,,,,,,,,,,,,,0.0,6892.59,0.0,0.0,0.0,6892.59

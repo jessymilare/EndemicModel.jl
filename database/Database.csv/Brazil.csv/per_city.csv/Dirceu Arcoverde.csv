@@ -1,8 +1,10 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-16,PI,Dirceu Arcoverde,1,0,0,7081,2203354,0,1,,,,,,,,,,,,,,,0.0,141.223,0.0,0.0,0.0,141.223
-2020-05-17,PI,Dirceu Arcoverde,0,0,0,7081,2203354,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-05-18,PI,Dirceu Arcoverde,1,0,0,7081,2203354,0,1,,,,,,,,,,,,,,,0.0,141.223,0.0,0.0,0.0,141.223
-2020-05-19,PI,Dirceu Arcoverde,1,0,0,7081,2203354,0,1,1.0,,,,,,,,,,,,,,0.0,141.223,0.0,0.0,0.0,141.223
-2020-05-20,PI,Dirceu Arcoverde,1,0,0,7081,2203354,0,1,,,,,,,,,,,,,,,0.0,141.223,0.0,0.0,0.0,141.223
-2020-05-21,PI,Dirceu Arcoverde,2,0,1,7081,2203354,1,1,,,,,,,,,,,,,,0.0,0.0,282.446,0.0,141.223,141.223,141.223
-2020-05-22,PI,Dirceu Arcoverde,7,0,3,7081,2203354,3,4,,,,,,,,,,,,,,0.0,0.0,988.561,0.0,423.669,423.669,564.892
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-16,PI,Dirceu Arcoverde,1,0,0,7081,2203354,36.0,36,0,36,,,,,,,,,,,,,,,0.0,5084.028,0.0,0.0,0.0,5084.028
+2020-05-17,PI,Dirceu Arcoverde,0,0,0,7081,2203354,36.0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-18,PI,Dirceu Arcoverde,1,0,0,7081,2203354,36.0,36,0,36,,,,,,,,,,,,,,,0.0,5084.028,0.0,0.0,0.0,5084.028
+2020-05-19,PI,Dirceu Arcoverde,1,0,0,7081,2203354,36.0,36,0,36,36.0,,,,,,,,,,,,,,0.0,5084.028,0.0,0.0,0.0,5084.028
+2020-05-20,PI,Dirceu Arcoverde,1,0,0,7081,2203354,36.0,36,0,36,,,,,,,,,,,,,,,0.0,5084.028,0.0,0.0,0.0,5084.028
+2020-05-21,PI,Dirceu Arcoverde,2,0,1,7081,2203354,36.0,72,1,71,54.0,,,,,,,,,,,,,0.0,0.0,10168.055,0.0,141.223,141.223,10026.832
+2020-05-22,PI,Dirceu Arcoverde,7,0,3,7081,2203354,36.0,252,3,249,,,,,,,,,,,,,,0.0,0.0,35588.194,0.0,423.669,423.669,35164.525
+2020-05-23,PI,Dirceu Arcoverde,7,0,3,7081,2203354,36.0,252,3,249,,,,,,,,,,,,,,0.0,0.0,35588.194,0.0,423.669,423.669,35164.525
+2020-05-24,PI,Dirceu Arcoverde,10,0,4,7081,2203354,36.0,360,4,356,,,,,,,,,,,,,,0.0,0.0,50840.277,0.0,564.892,564.892,50275.385

@@ -180,12 +180,36 @@ function import_data(source::BrasilIo; url = BRASIL_IO_URL, kwargs...)
 
     rename!(raw_data, "estimated_population_2019" => :estimated_population)
     raw_data.estimated_population =
-        round.(Union{Int, Missing}, raw_data.estimated_population .* BRAZIL_POP_FACTOR)
+        round.(OptInt, raw_data.estimated_population .* BRAZIL_POP_FACTOR)
+
+    researches = get_input(
+        "brazil_researches_per_state";
+        types = Dict(:infected_per_confirmed => Float),
+    )
+    researches = select(researches, :state, :infected_per_confirmed)
+    raw_data = leftjoin(raw_data, researches; on = :state)
+    indexes = .!ismissing.(raw_data.infected_per_confirmed)
+    ipc, conf = raw_data.infected_per_confirmed[indexes], raw_data.confirmed[indexes]
+    avg_ipc = sum(ipc .* conf) / sum(conf)
+    raw_data.infected_per_confirmed[.!indexes] .= avg_ipc
+
+    infec = round.(Int, raw_data.infected_per_confirmed .* raw_data.confirmed)
+    insertcols!(raw_data, :infected => infec)
+
     states = @where(raw_data, :place_type .== "state")
     cities = @where(raw_data, :place_type .== "city")
 
     select!(states, Not([:city, :place_type]))
     select!(cities, Not([:place_type]))
 
-    DataDict(:states => states, :cities => cities)
+    total = select(states, :date, :confirmed, :deaths, :infected)
+    total = combine(groupby(total, :date)) do subdf
+        (;
+            confirmed = sum(subdf.confirmed),
+            deaths = sum(subdf.deaths),
+            infected = sum(subdf.infected),
+        )
+    end
+
+    DataDict(:states => states, :cities => cities, :total => total)
 end

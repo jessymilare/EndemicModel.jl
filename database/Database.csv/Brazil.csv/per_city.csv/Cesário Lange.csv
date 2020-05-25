@@ -1,7 +1,8 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-18,SP,Cesário Lange,1,0,0,18329,3511607,0,1,,,,,,,,,,,,,,,0.0,54.558,0.0,0.0,0.0,54.558
-2020-05-19,SP,Cesário Lange,1,0,0,18329,3511607,0,1,,,,,,,,,,,,,,,0.0,54.558,0.0,0.0,0.0,54.558
-2020-05-20,SP,Cesário Lange,3,0,1,18329,3511607,1,2,,,,,,,,,,,,,,0.0,0.0,163.675,0.0,54.558,54.558,109.117
-2020-05-21,SP,Cesário Lange,3,0,1,18329,3511607,1,2,,,,,,,,,,,,,,0.0,0.0,163.675,0.0,54.558,54.558,109.117
-2020-05-22,SP,Cesário Lange,3,0,1,18329,3511607,1,2,,,,,,,,,,,,,,0.0,0.0,163.675,0.0,54.558,54.558,109.117
-2020-05-23,SP,Cesário Lange,7,1,3,18329,3511607,4,3,,,,,,,,,,,,,,0.25,0.1429,381.908,54.558,163.675,218.233,163.675
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-18,SP,Cesário Lange,1,0,0,18329,3511607,11.9,12,0,12,,,,,,,,,,,,,,,0.0,654.7,0.0,0.0,0.0,654.7
+2020-05-19,SP,Cesário Lange,1,0,0,18329,3511607,11.9,12,0,12,,,,,,,,,,,,,,,0.0,654.7,0.0,0.0,0.0,654.7
+2020-05-20,SP,Cesário Lange,3,0,1,18329,3511607,11.9,36,1,35,,,,,,,,,,,,,,0.0,0.0,1964.101,0.0,54.558,54.558,1909.542
+2020-05-21,SP,Cesário Lange,3,0,1,18329,3511607,11.9,36,1,35,11.833,,,,,,,,,,,,,0.0,0.0,1964.101,0.0,54.558,54.558,1909.542
+2020-05-22,SP,Cesário Lange,3,0,1,18329,3511607,11.9,36,1,35,,,,,,,,,,,,,,0.0,0.0,1964.101,0.0,54.558,54.558,1909.542
+2020-05-23,SP,Cesário Lange,7,1,3,18329,3511607,11.9,83,4,79,,,,,,,,,,,,,,0.25,0.01205,4528.343,54.558,163.675,218.233,4310.11
+2020-05-24,SP,Cesário Lange,7,1,3,18329,3511607,11.9,83,4,79,,,,,,,,,,,,,,0.25,0.01205,4528.343,54.558,163.675,218.233,4310.11

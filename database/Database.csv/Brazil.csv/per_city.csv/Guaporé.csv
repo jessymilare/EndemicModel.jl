@@ -1,8 +1,9 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-17,RS,Guaporé,1,0,0,25984,4309407,0,1,,,,,,,,,,,,,,,0.0,38.485,0.0,0.0,0.0,38.485
-2020-05-18,RS,Guaporé,1,0,0,25984,4309407,0,1,,,,,,,,,,,,,,,0.0,38.485,0.0,0.0,0.0,38.485
-2020-05-19,RS,Guaporé,1,0,0,25984,4309407,0,1,,,,,,,,,,,,,,,0.0,38.485,0.0,0.0,0.0,38.485
-2020-05-20,RS,Guaporé,7,0,3,25984,4309407,3,4,1.833,,,,,,,,,,,,,0.0,0.0,269.397,0.0,115.456,115.456,153.941
-2020-05-21,RS,Guaporé,8,0,3,25984,4309407,3,5,,,,,,,,,,,,,,0.0,0.0,307.882,0.0,115.456,115.456,192.426
-2020-05-22,RS,Guaporé,11,0,5,25984,4309407,5,6,,,,,,,,,,,,,,0.0,0.0,423.337,0.0,192.426,192.426,230.911
-2020-05-23,RS,Guaporé,12,0,5,25984,4309407,5,7,,,,,,,,,,,,,,0.0,0.0,461.823,0.0,192.426,192.426,269.397
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-17,RS,Guaporé,1,0,0,25984,4309407,12.0,12,0,12,,,,,,,,,,,,,,,0.0,461.823,0.0,0.0,0.0,461.823
+2020-05-18,RS,Guaporé,1,0,0,25984,4309407,12.0,12,0,12,,,,,,,,,,,,,,,0.0,461.823,0.0,0.0,0.0,461.823
+2020-05-19,RS,Guaporé,1,0,0,25984,4309407,12.0,12,0,12,,,,,,,,,,,,,,,0.0,461.823,0.0,0.0,0.0,461.823
+2020-05-20,RS,Guaporé,7,0,3,25984,4309407,12.0,84,3,81,22.0,,,,,,,,,,,,,0.0,0.0,3232.759,0.0,115.456,115.456,3117.303
+2020-05-21,RS,Guaporé,8,0,3,25984,4309407,12.0,96,3,93,24.0,,,,,,,,,,,,,0.0,0.0,3694.581,0.0,115.456,115.456,3579.126
+2020-05-22,RS,Guaporé,11,0,5,25984,4309407,12.0,132,5,127,,,,,,,,,,,,,,0.0,0.0,5080.049,0.0,192.426,192.426,4887.623
+2020-05-23,RS,Guaporé,12,0,5,25984,4309407,12.0,144,5,139,,,,,,,,,,,,,,0.0,0.0,5541.872,0.0,192.426,192.426,5349.446
+2020-05-24,RS,Guaporé,13,0,5,25984,4309407,12.0,156,5,151,,,,,,,,,,,,,,0.0,0.0,6003.695,0.0,192.426,192.426,5811.268

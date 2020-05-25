@@ -1,6 +1,8 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-18,BA,Itiúba,1,1,0,36450,2917003,1,0,,,,,,,,,,,,,,1.0,1.0,27.435,27.435,0.0,27.435,0.0
-2020-05-19,BA,Itiúba,1,1,0,36450,2917003,1,0,,,,,,,,,,,,,,1.0,1.0,27.435,27.435,0.0,27.435,0.0
-2020-05-20,BA,Itiúba,1,1,0,36450,2917003,1,0,,,,,,,,,,,,,,1.0,1.0,27.435,27.435,0.0,27.435,0.0
-2020-05-21,BA,Itiúba,1,1,0,36450,2917003,1,0,,,,,,,,,,,,,,1.0,1.0,27.435,27.435,0.0,27.435,0.0
-2020-05-22,BA,Itiúba,1,1,0,36450,2917003,1,0,,,,,,,,,,,,,,1.0,1.0,27.435,27.435,0.0,27.435,0.0
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-18,BA,Itiúba,1,1,0,36450,2917003,14.03,14,1,13,,,,,,,,,,,,,,1.0,0.07143,384.088,27.435,0.0,27.435,356.653
+2020-05-19,BA,Itiúba,1,1,0,36450,2917003,14.03,14,1,13,,,,,,,,,,,,,,1.0,0.07143,384.088,27.435,0.0,27.435,356.653
+2020-05-20,BA,Itiúba,1,1,0,36450,2917003,14.03,14,1,13,,,,,,,,,,,,,,1.0,0.07143,384.088,27.435,0.0,27.435,356.653
+2020-05-21,BA,Itiúba,1,1,0,36450,2917003,14.03,14,1,13,2.333,,0.0,,,,,,,,,,,1.0,0.07143,384.088,27.435,0.0,27.435,356.653
+2020-05-22,BA,Itiúba,1,1,0,36450,2917003,14.03,14,1,13,,,,,,,,,,,,,,1.0,0.07143,384.088,27.435,0.0,27.435,356.653
+2020-05-23,BA,Itiúba,1,1,0,36450,2917003,14.03,14,1,13,,,,,,,,,,,,,,1.0,0.07143,384.088,27.435,0.0,27.435,356.653
+2020-05-24,BA,Itiúba,2,1,1,36450,2917003,14.03,28,2,26,,,,,,,,,,,,,,0.5,0.03571,768.176,27.435,27.435,54.87,713.306

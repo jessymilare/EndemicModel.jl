@@ -1,9 +1,11 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-15,MA,Nina Rodrigues,1,0,0,14599,2107209,0,1,,,,,,,,,,,,,,,0.0,68.498,0.0,0.0,0.0,68.498
-2020-05-16,MA,Nina Rodrigues,1,0,0,14599,2107209,0,1,,,,,,,,,,,,,,,0.0,68.498,0.0,0.0,0.0,68.498
-2020-05-17,MA,Nina Rodrigues,1,0,0,14599,2107209,0,1,,,,,,,,,,,,,,,0.0,68.498,0.0,0.0,0.0,68.498
-2020-05-18,MA,Nina Rodrigues,1,0,0,14599,2107209,0,1,0.8333,,,,,,,,,,,,,,0.0,68.498,0.0,0.0,0.0,68.498
-2020-05-19,MA,Nina Rodrigues,6,0,2,14599,2107209,2,4,6.333,,,,,,,,,,,,,0.0,0.0,410.987,0.0,136.996,136.996,273.991
-2020-05-20,MA,Nina Rodrigues,6,0,2,14599,2107209,2,4,,,,,,,,,,,,,,0.0,0.0,410.987,0.0,136.996,136.996,273.991
-2020-05-21,MA,Nina Rodrigues,6,0,2,14599,2107209,2,4,,,,,,,,,,,,,,0.0,0.0,410.987,0.0,136.996,136.996,273.991
-2020-05-22,MA,Nina Rodrigues,39,0,16,14599,2107209,16,23,,,,,,,,,,,,,,0.0,0.0,2671.416,0.0,1095.965,1095.965,1575.45
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-15,MA,Nina Rodrigues,1,0,0,14599,2107209,14.03,14,0,14,,,,,,,,,,,,,,,0.0,958.97,0.0,0.0,0.0,958.97
+2020-05-16,MA,Nina Rodrigues,1,0,0,14599,2107209,14.03,14,0,14,,,,,,,,,,,,,,,0.0,958.97,0.0,0.0,0.0,958.97
+2020-05-17,MA,Nina Rodrigues,1,0,0,14599,2107209,14.03,14,0,14,,,,,,,,,,,,,,,0.0,958.97,0.0,0.0,0.0,958.97
+2020-05-18,MA,Nina Rodrigues,1,0,0,14599,2107209,14.03,14,0,14,11.667,,,,,,,,,,,,,,0.0,958.97,0.0,0.0,0.0,958.97
+2020-05-19,MA,Nina Rodrigues,6,0,2,14599,2107209,14.03,84,2,82,88.833,,,,,,,,,,,,,0.0,0.0,5753.819,0.0,136.996,136.996,5616.823
+2020-05-20,MA,Nina Rodrigues,6,0,2,14599,2107209,14.03,84,2,82,91.167,,,,,,,,,,,,,0.0,0.0,5753.819,0.0,136.996,136.996,5616.823
+2020-05-21,MA,Nina Rodrigues,6,0,2,14599,2107209,14.03,84,2,82,93.5,,,,,,,,,,,,,0.0,0.0,5753.819,0.0,136.996,136.996,5616.823
+2020-05-22,MA,Nina Rodrigues,39,0,16,14599,2107209,14.03,547,16,531,,,,,,,,,,,,,,0.0,0.0,37468.32,0.0,1095.965,1095.965,36372.354
+2020-05-23,MA,Nina Rodrigues,40,0,16,14599,2107209,14.03,561,16,545,,,,,,,,,,,,,,0.0,0.0,38427.29,0.0,1095.965,1095.965,37331.324
+2020-05-24,MA,Nina Rodrigues,41,0,17,14599,2107209,14.03,575,17,558,,,,,,,,,,,,,,0.0,0.0,39386.259,0.0,1164.463,1164.463,38221.796

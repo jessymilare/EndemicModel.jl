@@ -1,11 +1,12 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-14,MG,Passa Quatro,1,0,0,16507,3147600,0,1,,,,,,,,,,,,,,,0.0,60.58,0.0,0.0,0.0,60.58
-2020-05-15,MG,Passa Quatro,1,0,0,16507,3147600,0,1,,,,,,,,,,,,,,,0.0,60.58,0.0,0.0,0.0,60.58
-2020-05-16,MG,Passa Quatro,1,0,0,16507,3147600,0,1,,,,,,,,,,,,,,,0.0,60.58,0.0,0.0,0.0,60.58
-2020-05-17,MG,Passa Quatro,1,0,0,16507,3147600,0,1,0.1667,,,,,,,,,,,,,,0.0,60.58,0.0,0.0,0.0,60.58
-2020-05-18,MG,Passa Quatro,1,0,0,16507,3147600,0,1,0.3333,,,,,,,,,,,,,,0.0,60.58,0.0,0.0,0.0,60.58
-2020-05-19,MG,Passa Quatro,2,0,1,16507,3147600,1,1,0.3333,,,,,,,,,,,,,0.0,0.0,121.161,0.0,60.58,60.58,60.58
-2020-05-20,MG,Passa Quatro,2,0,1,16507,3147600,1,1,0.5,,,,,,,,,,,,,0.0,0.0,121.161,0.0,60.58,60.58,60.58
-2020-05-21,MG,Passa Quatro,3,0,1,16507,3147600,1,2,,,,,,,,,,,,,,0.0,0.0,181.741,0.0,60.58,60.58,121.161
-2020-05-22,MG,Passa Quatro,3,0,1,16507,3147600,1,2,,,,,,,,,,,,,,0.0,0.0,181.741,0.0,60.58,60.58,121.161
-2020-05-23,MG,Passa Quatro,4,0,2,16507,3147600,2,2,,,,,,,,,,,,,,0.0,0.0,242.321,0.0,121.161,121.161,121.161
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-14,MG,Passa Quatro,1,0,0,16507,3147600,16.5,16,0,16,,,,,,,,,,,,,,,0.0,969.286,0.0,0.0,0.0,969.286
+2020-05-15,MG,Passa Quatro,1,0,0,16507,3147600,16.5,16,0,16,,,,,,,,,,,,,,,0.0,969.286,0.0,0.0,0.0,969.286
+2020-05-16,MG,Passa Quatro,1,0,0,16507,3147600,16.5,16,0,16,,,,,,,,,,,,,,,0.0,969.286,0.0,0.0,0.0,969.286
+2020-05-17,MG,Passa Quatro,1,0,0,16507,3147600,16.5,16,0,16,2.833,,,,,,,,,,,,,,0.0,969.286,0.0,0.0,0.0,969.286
+2020-05-18,MG,Passa Quatro,1,0,0,16507,3147600,16.5,16,0,16,5.667,,,,,,,,,,,,,,0.0,969.286,0.0,0.0,0.0,969.286
+2020-05-19,MG,Passa Quatro,2,0,1,16507,3147600,16.5,33,1,32,5.667,,,,,,,,,,,,,0.0,0.0,1999.152,0.0,60.58,60.58,1938.572
+2020-05-20,MG,Passa Quatro,2,0,1,16507,3147600,16.5,33,1,32,8.333,,,,,,,,,,,,,0.0,0.0,1999.152,0.0,60.58,60.58,1938.572
+2020-05-21,MG,Passa Quatro,3,0,1,16507,3147600,16.5,50,1,49,11.0,,,,,,,,,,,,,0.0,0.0,3029.018,0.0,60.58,60.58,2968.438
+2020-05-22,MG,Passa Quatro,3,0,1,16507,3147600,16.5,50,1,49,,,,,,,,,,,,,,0.0,0.0,3029.018,0.0,60.58,60.58,2968.438
+2020-05-23,MG,Passa Quatro,4,0,2,16507,3147600,16.5,66,2,64,,,,,,,,,,,,,,0.0,0.0,3998.304,0.0,121.161,121.161,3877.143
+2020-05-24,MG,Passa Quatro,5,0,2,16507,3147600,16.5,82,2,80,,,,,,,,,,,,,,0.0,0.0,4967.59,0.0,121.161,121.161,4846.429

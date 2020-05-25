@@ -108,8 +108,9 @@ end
     (confirmed, recovered, deaths) => identity,
 ]
 
+@defcolumn infected(confirmed) confirmed
 @defcolumn closed(recovered, deaths) recovered .+ deaths
-@defcolumn active(confirmed, closed) confirmed .- closed
+@defcolumn active(infected, closed) infected .- closed
 
 function _column_diff(column, date, ndays)
     n = length(date)
@@ -131,21 +132,21 @@ function _column_diff(column, date, ndays)
     result
 end
 
-@defcolumn diff_confirmed(date, confirmed) _column_diff(confirmed, date, 6)
+@defcolumn diff_infected(date, infected) _column_diff(infected, date, 6)
 #= begin
     n = length(date)
     result = Vector{OptFloat}(missing, n)
     for i ∈ 5:(n - 3)
         if (
             date[i - 4] + Day(7) == date[i] + Day(3) == date[i + 3] && # consistency check
-            !ismissing(confirmed[i - 4]) &&
-            isfinite(confirmed[i - 4]) &&
-            confirmed[i - 4] > 0
+            !ismissing(infected[i - 4]) &&
+            isfinite(infected[i - 4]) &&
+            infected[i - 4] > 0
         )
-            # Geometric mean of confirmed[i+1]/confirmed[i] over 7 days
-            diff_rate = (confirmed[i + 3] / confirmed[i - 4])^(1 / 7)
+            # Geometric mean of infected[i+1]/infected[i] over 7 days
+            diff_rate = (infected[i + 3] / infected[i - 4])^(1 / 7)
             if !ismissing(diff_rate) && isfinite(diff_rate)
-                result[i] = diff_rate * confirmed[i]
+                result[i] = diff_rate * infected[i]
             end
         end
     end
@@ -157,20 +158,16 @@ end
 @defcolumn diff_deaths(date, deaths) _column_diff(deaths, date, 6)
 
 @defcolumn diff_closed(diff_recovered, diff_deaths) diff_recovered .+ diff_deaths
-@defcolumn diff_active(diff_confirmed, diff_closed) diff_confirmed .- diff_closed
+@defcolumn diff_active(diff_infected, diff_closed) diff_infected .- diff_closed
 
-@defcolumn diff2_confirmed(date, diff_confirmed) _column_diff(diff_confirmed, date, 6)
+@defcolumn diff2_infected(date, diff_infected) _column_diff(diff_infected, date, 6)
 @defcolumn diff2_recovered(date, diff_recovered) _column_diff(diff_recovered, date, 6)
 @defcolumn diff2_deaths(date, diff_deaths) _column_diff(diff_deaths, date, 6)
 
 @defcolumn diff2_closed(diff2_recovered, diff2_deaths) diff2_recovered .+ diff2_deaths
-@defcolumn diff2_active(diff2_confirmed, diff2_closed) diff2_confirmed .- diff2_closed
+@defcolumn diff2_active(diff2_infected, diff2_closed) diff2_infected .- diff2_closed
 
-@defcolumn diff3_confirmed(date, diff2_confirmed) _column_diff(
-    diff2_confirmed,
-    date,
-    4,
-)
+@defcolumn diff3_infected(date, diff2_infected) _column_diff(diff2_infected, date, 4)
 #=
 @defcolumn diff3_recovered(date, diff2_recovered) _column_diff(
     diff2_recovered,
@@ -180,37 +177,25 @@ end
 @defcolumn diff3_deaths(date, diff2_deaths) _column_diff(diff2_deaths, date, 3)
 
 @defcolumn diff3_closed(diff3_recovered, diff3_deaths) diff3_recovered .+ diff3_deaths
-@defcolumn diff3_active(diff3_confirmed, diff3_closed) diff3_confirmed .- diff3_closed
+@defcolumn diff3_active(diff3_infected, diff3_closed) diff3_infected .- diff3_closed
 =#
-@defcolumn diff4_confirmed(date, diff3_confirmed) _column_diff(
-    diff3_confirmed,
-    date,
-    4,
-)
+@defcolumn diff4_infected(date, diff3_infected) _column_diff(diff3_infected, date, 4)
 
-@defcolumn diff5_confirmed(date, diff4_confirmed) _column_diff(
-    diff4_confirmed,
-    date,
-    4,
-)
+@defcolumn diff5_infected(date, diff4_infected) _column_diff(diff4_infected, date, 4)
 
-@defcolumn diff6_confirmed(date, diff5_confirmed) _column_diff(
-    diff5_confirmed,
-    date,
-    4,
-)
+@defcolumn diff6_infected(date, diff5_infected) _column_diff(diff5_infected, date, 4)
 
 const COVID_19_μ = 0.034
 
 @defcolumn μ_closed(deaths, closed) begin
     replace(1.0 .* deaths ./ closed, NaN => missing)
 end
-@defcolumn μ_confirmed(deaths, confirmed) begin
-    replace(1.0 .* deaths ./ confirmed, NaN => missing)
+@defcolumn μ_infected(deaths, infected) begin
+    replace(1.0 .* deaths ./ infected, NaN => missing)
 end
 
-@defcolumn confirmed_per_1mi(confirmed, estimated_population) begin
-    1.0e6 .* confirmed ./ estimated_population
+@defcolumn infected_per_1mi(infected, estimated_population) begin
+    1.0e6 .* infected ./ estimated_population
 end
 @defcolumn deaths_per_1mi(deaths, estimated_population) begin
     1.0e6 .* deaths ./ estimated_population
@@ -226,6 +211,7 @@ end
 end
 
 @defcolumn tests_per_confirmed(total_tests, confirmed) 1.0 .* total_tests ./ confirmed
+@defcolumn tests_per_infected(total_tests, infected) 1.0 .* total_tests ./ infected
 @defcolumn tests_per_1mi(total_tests, estimated_population) begin
     1.0e6 .* total_tests ./ estimated_population
 end
@@ -297,16 +283,25 @@ _maximum(itr) = isempty(itr) ? missing : maximum(itr)
     (estimated_population, gdp_per_capita) => sum,
     (total_tests,) => _sum ∘ skipmissing,
     (test_kind,) => _maximum ∘ skipmissing,
-    (confirmed, recovered, deaths, closed, active) => sum,
-    (diff_confirmed, diff_recovered, diff_deaths, diff_closed, diff_active) => sum,
-    (diff2_confirmed, diff3_confirmed, diff4_confirmed, diff5_confirmed) => sum,
+    (confirmed, recovered, deaths, infected, closed, active) => sum,
+    (diff_infected, diff_recovered, diff_deaths, diff_closed, diff_active) => sum,
+    (diff2_infected, diff3_infected, diff4_infected, diff5_infected) => sum,
 ]
 
 @deftable total2(total, world_population, world_gdp_per_capita) begin
     wpop, wgdp = world_population, world_gdp_per_capita
     pop = wpop[wpop.country .== "World", :estimated_population]
     gdp = wgdp[wgdp.country .== "World", :gdp_per_capita]
-    cols = [:date, :total_tests, :confirmed, :recovered, :deaths, :closed, :active]
+    cols = [
+        :date,
+        :total_tests,
+        :confirmed,
+        :recovered,
+        :deaths,
+        :infected,
+        :closed,
+        :active,
+    ]
     data = select(total, cols)
     insertcols!(data, 2, :estimated_population => pop[1])
     insertcols!(data, 3, :gdp_per_capita => gdp[1])
@@ -330,28 +325,29 @@ function covid19_database(; kwargs...)
         group_per_state,
         group_per_city,
         # Columns
+        column_infected,
         column_closed,
         column_active,
-        column_diff_confirmed,
+        column_diff_infected,
         column_diff_recovered,
         column_diff_deaths,
         column_diff_closed,
         column_diff_active,
-        column_diff2_confirmed,
+        column_diff2_infected,
         column_diff2_recovered,
         column_diff2_deaths,
         column_diff2_closed,
         column_diff2_active,
-        column_diff3_confirmed,
-        column_diff4_confirmed,
-        column_diff5_confirmed,
+        column_diff3_infected,
+        column_diff4_infected,
+        column_diff5_infected,
         # This table needs diff columns before grouping
         group_total,
         table_total2,
         # More columns
         column_μ_closed,
-        column_μ_confirmed,
-        column_confirmed_per_1mi,
+        column_μ_infected,
+        column_infected_per_1mi,
         column_deaths_per_1mi,
         column_recovered_per_1mi,
         column_closed_per_1mi,
@@ -375,6 +371,7 @@ function covid19(; database = nothing, kwargs...)
         :Brazil => DataDict(
             :per_state => db.brasil_io.per_state_group,
             :per_city => db.brasil_io.per_city_group,
+            :total => db.brasil_io.total,
         ),
         :sources => DataFrame(
             :source => [

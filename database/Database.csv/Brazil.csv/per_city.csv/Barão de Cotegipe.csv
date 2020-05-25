@@ -1,10 +1,11 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-15,RS,Barão de Cotegipe,4,0,2,6689,4301701,2,2,,,,,,,,,,,,,,0.0,0.0,597.997,0.0,298.998,298.998,298.998
-2020-05-16,RS,Barão de Cotegipe,4,0,2,6689,4301701,2,2,,,,,,,,,,,,,,0.0,0.0,597.997,0.0,298.998,298.998,298.998
-2020-05-17,RS,Barão de Cotegipe,4,0,2,6689,4301701,2,2,,,,,,,,,,,,,,0.0,0.0,597.997,0.0,298.998,298.998,298.998
-2020-05-18,RS,Barão de Cotegipe,4,0,2,6689,4301701,2,2,0.0,0.0,,,,,,,,,,,,0.0,0.0,597.997,0.0,298.998,298.998,298.998
-2020-05-19,RS,Barão de Cotegipe,4,0,2,6689,4301701,2,2,0.3333,0.0,,,,,,,,,,,,0.0,0.0,597.997,0.0,298.998,298.998,298.998
-2020-05-20,RS,Barão de Cotegipe,4,0,2,6689,4301701,2,2,0.3333,0.0,,,,,,,,,,,,0.0,0.0,597.997,0.0,298.998,298.998,298.998
-2020-05-21,RS,Barão de Cotegipe,4,0,2,6689,4301701,2,2,,,,,,,,,,,,,,0.0,0.0,597.997,0.0,298.998,298.998,298.998
-2020-05-22,RS,Barão de Cotegipe,6,0,2,6689,4301701,2,4,,,,,,,,,,,,,,0.0,0.0,896.995,0.0,298.998,298.998,597.997
-2020-05-23,RS,Barão de Cotegipe,6,0,2,6689,4301701,2,4,,,,,,,,,,,,,,0.0,0.0,896.995,0.0,298.998,298.998,597.997
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-15,RS,Barão de Cotegipe,4,0,2,6689,4301701,12.0,48,2,46,,,,,,,,,,,,,,0.0,0.0,7175.961,0.0,298.998,298.998,6876.962
+2020-05-16,RS,Barão de Cotegipe,4,0,2,6689,4301701,12.0,48,2,46,,,,,,,,,,,,,,0.0,0.0,7175.961,0.0,298.998,298.998,6876.962
+2020-05-17,RS,Barão de Cotegipe,4,0,2,6689,4301701,12.0,48,2,46,,,,,,,,,,,,,,0.0,0.0,7175.961,0.0,298.998,298.998,6876.962
+2020-05-18,RS,Barão de Cotegipe,4,0,2,6689,4301701,12.0,48,2,46,0.0,0.0,,,,,,,,,,,,0.0,0.0,7175.961,0.0,298.998,298.998,6876.962
+2020-05-19,RS,Barão de Cotegipe,4,0,2,6689,4301701,12.0,48,2,46,4.0,0.0,,,,,,,,,,,,0.0,0.0,7175.961,0.0,298.998,298.998,6876.962
+2020-05-20,RS,Barão de Cotegipe,4,0,2,6689,4301701,12.0,48,2,46,4.0,0.0,,,,,,,,,,,,0.0,0.0,7175.961,0.0,298.998,298.998,6876.962
+2020-05-21,RS,Barão de Cotegipe,4,0,2,6689,4301701,12.0,48,2,46,4.0,0.0,,,,,,,,,,,,0.0,0.0,7175.961,0.0,298.998,298.998,6876.962
+2020-05-22,RS,Barão de Cotegipe,6,0,2,6689,4301701,12.0,72,2,70,,,,,,,,,,,,,,0.0,0.0,10763.941,0.0,298.998,298.998,10464.942
+2020-05-23,RS,Barão de Cotegipe,6,0,2,6689,4301701,12.0,72,2,70,,,,,,,,,,,,,,0.0,0.0,10763.941,0.0,298.998,298.998,10464.942
+2020-05-24,RS,Barão de Cotegipe,6,0,2,6689,4301701,12.0,72,2,70,,,,,,,,,,,,,,0.0,0.0,10763.941,0.0,298.998,298.998,10464.942

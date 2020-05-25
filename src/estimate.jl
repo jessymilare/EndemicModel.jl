@@ -259,16 +259,16 @@ function estimate_γ(
     (μ, σ_μ) = μ_pair
     (α, σ_α) = α_pair
     # Try to find at least 4 valid entries
-    ini = something(findlast(!ismissing, data.diff3_confirmed), 8) - 3
+    ini = something(findlast(!ismissing, data.diff3_infected), 8) - 3
     # Get numbers from last `ndays` days
     ini = min(ini, max(1, nrow(data) - ndays))
     data = data[ini:end, :]
     # Filter valid entries
-    data = @where(data, .!ismissing.(:diff3_confirmed) .& .!ismissing.(:active))
+    data = @where(data, .!ismissing.(:diff3_infected) .& .!ismissing.(:active))
 
-    d1 = data.diff_confirmed
-    d2 = data.diff2_confirmed
-    d3 = data.diff3_confirmed
+    d1 = data.diff_infected
+    d2 = data.diff2_infected
+    d3 = data.diff3_infected
 
     I = data.active
     isempty(I) && return (NaN, Inf)
@@ -298,10 +298,10 @@ function estimate_β(
     ini = max(1, nrow(data) - ndays)
     data = data[ini:end, :]
     # Filter valid entries
-    data = @where(data, .!ismissing.(:diff2_confirmed))
+    data = @where(data, .!ismissing.(:diff2_infected))
 
-    d1 = data.diff_confirmed
-    d2 = data.diff2_confirmed
+    d1 = data.diff_infected
+    d2 = data.diff2_infected
     I = data.active
 
     @debug(
@@ -335,7 +335,7 @@ function estimate_exposed(
     (μ, σ_μ) = μ_pair
     (α, σ_α) = α_pair
     (γ, σ_γ) = γ_pair
-    d1 = data.diff_confirmed
+    d1 = data.diff_infected
 
     @debug "Estimating E = d(I + R) / γ." d1 = Tuple(d1) γ = Tuple(γ)
     E = d1 ./ γ
@@ -361,13 +361,13 @@ estimate_exposed!(model::AbstractEndemicModel; kwargs...) =
 
 function SEIRModel(
     data::AbstractDataFrame;
-    minimum_confirmed_factor = option(:minimum_confirmed_factor),
+    minimum_infected_factor = option(:minimum_infected_factor),
     ndays = 14,
     kwargs...,
 )
     @debug "Computing SEIR model for data" _debuginfo(data)
     numpeople = data.estimated_population[1]
-    istart = findfirst(data.confirmed .>= numpeople * minimum_confirmed_factor)
+    istart = findfirst(data.infected .>= numpeople * minimum_infected_factor)
     iend = findlast(!ismissing, data.recovered)
     data = data[istart:iend, :]
 

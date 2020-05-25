@@ -1,3 +1,6 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-20,PR,Tamarana,1,1,0,14945,4126678,1,0,,,,,,,,,,,,,,1.0,1.0,66.912,66.912,0.0,66.912,0.0
-2020-05-21,PR,Tamarana,1,1,0,14945,4126678,1,0,,,,,,,,,,,,,,1.0,1.0,66.912,66.912,0.0,66.912,0.0
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-20,PR,Tamarana,1,1,0,14945,4126678,14.03,14,1,13,,,,,,,,,,,,,,1.0,0.07143,936.768,66.912,0.0,66.912,869.856
+2020-05-21,PR,Tamarana,1,1,0,14945,4126678,14.03,14,1,13,,,,,,,,,,,,,,1.0,0.07143,936.768,66.912,0.0,66.912,869.856
+2020-05-22,PR,Tamarana,1,1,0,14945,4126678,14.03,14,1,13,,,,,,,,,,,,,,1.0,0.07143,936.768,66.912,0.0,66.912,869.856
+2020-05-23,PR,Tamarana,1,1,0,14945,4126678,14.03,14,1,13,,,,,,,,,,,,,,1.0,0.07143,936.768,66.912,0.0,66.912,869.856
+2020-05-24,PR,Tamarana,2,1,1,14945,4126678,14.03,28,2,26,,,,,,,,,,,,,,0.5,0.03571,1873.536,66.912,66.912,133.824,1739.712

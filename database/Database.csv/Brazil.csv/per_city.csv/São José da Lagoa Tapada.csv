@@ -1,6 +1,8 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Closed,Active,Diff Confirmed,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Confirmed,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Confirmed,Diff4 Confirmed,Diff5 Confirmed,μ_closed,μ_confirmed,Confirmed Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-18,PB,São José da Lagoa Tapada,12,0,5,7706,2514206,5,7,,,,,,,,,,,,,,0.0,0.0,1557.228,0.0,648.845,648.845,908.383
-2020-05-19,PB,São José da Lagoa Tapada,12,0,5,7706,2514206,5,7,,,,,,,,,,,,,,0.0,0.0,1557.228,0.0,648.845,648.845,908.383
-2020-05-20,PB,São José da Lagoa Tapada,12,0,5,7706,2514206,5,7,,,,,,,,,,,,,,0.0,0.0,1557.228,0.0,648.845,648.845,908.383
-2020-05-21,PB,São José da Lagoa Tapada,12,0,5,7706,2514206,5,7,,,,,,,,,,,,,,0.0,0.0,1557.228,0.0,648.845,648.845,908.383
-2020-05-22,PB,São José da Lagoa Tapada,13,0,5,7706,2514206,5,8,,,,,,,,,,,,,,0.0,0.0,1686.997,0.0,648.845,648.845,1038.152
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-18,PB,São José da Lagoa Tapada,12,0,5,7706,2514206,14.03,168,5,163,,,,,,,,,,,,,,0.0,0.0,21801.194,0.0,648.845,648.845,21152.349
+2020-05-19,PB,São José da Lagoa Tapada,12,0,5,7706,2514206,14.03,168,5,163,,,,,,,,,,,,,,0.0,0.0,21801.194,0.0,648.845,648.845,21152.349
+2020-05-20,PB,São José da Lagoa Tapada,12,0,5,7706,2514206,14.03,168,5,163,,,,,,,,,,,,,,0.0,0.0,21801.194,0.0,648.845,648.845,21152.349
+2020-05-21,PB,São José da Lagoa Tapada,12,0,5,7706,2514206,14.03,168,5,163,2.333,0.0,,,,,,,,,,,,0.0,0.0,21801.194,0.0,648.845,648.845,21152.349
+2020-05-22,PB,São José da Lagoa Tapada,13,0,5,7706,2514206,14.03,182,5,177,,,,,,,,,,,,,,0.0,0.0,23617.96,0.0,648.845,648.845,22969.115
+2020-05-23,PB,São José da Lagoa Tapada,13,0,5,7706,2514206,14.03,182,5,177,,,,,,,,,,,,,,0.0,0.0,23617.96,0.0,648.845,648.845,22969.115
+2020-05-24,PB,São José da Lagoa Tapada,13,0,5,7706,2514206,14.03,182,5,177,,,,,,,,,,,,,,0.0,0.0,23617.96,0.0,648.845,648.845,22969.115
