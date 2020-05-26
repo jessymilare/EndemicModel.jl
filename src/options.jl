@@ -142,7 +142,7 @@ end
 )
 
 @defoption(
-    minimum_confirmed_factor,
+    minimum_infected_factor,
     1e-5,
     "Factor for minimum number of confirmed people to be considered in estimates.",
     Real
@@ -150,7 +150,7 @@ end
 @defoption(
     minimum_plot_factor,
     1e-2,
-    "Factor for minimum number of confirmed people to be considered in plots.",
+    "Factor for minimum number of infected people to be considered in plots relative to estimated population.",
     Real
 )
 

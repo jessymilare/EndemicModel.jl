@@ -1,3 +1,5 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-05-22,SC,São José do Cedro,1,0,0,13967,4216701,25.0,25,0,25,,,,,,,,,,,,,,,0.0,1789.933,0.0,0.0,0.0,1789.933
 2020-05-23,SC,São José do Cedro,1,0,0,13967,4216701,25.0,25,0,25,,,,,,,,,,,,,,,0.0,1789.933,0.0,0.0,0.0,1789.933
+2020-05-24,SC,São José do Cedro,1,0,0,13967,4216701,25.0,25,0,25,,,,,,,,,,,,,,,0.0,1789.933,0.0,0.0,0.0,1789.933
+2020-05-25,SC,São José do Cedro,1,0,0,13967,4216701,25.0,25,0,25,,,,,,,,,,,,,,,0.0,1789.933,0.0,0.0,0.0,1789.933

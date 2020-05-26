@@ -1,4 +1,5 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-22,GO,Araguapaz,2,1,1,7848,5202155,14.03,28,2,26,,,,,,,,,,,,,,0.5,0.03571,3567.788,127.421,127.421,254.842,3312.946
-2020-05-23,GO,Araguapaz,2,1,1,7848,5202155,14.03,28,2,26,,,,,,,,,,,,,,0.5,0.03571,3567.788,127.421,127.421,254.842,3312.946
-2020-05-24,GO,Araguapaz,2,1,1,7848,5202155,14.03,28,2,26,,,,,,,,,,,,,,0.5,0.03571,3567.788,127.421,127.421,254.842,3312.946
+2020-05-22,GO,Araguapaz,2,1,1,7848,5202155,14.047,28,2,26,,,,,,,,,,,,,,0.5,0.03571,3567.788,127.421,127.421,254.842,3312.946
+2020-05-23,GO,Araguapaz,2,1,1,7848,5202155,14.047,28,2,26,,,,,,,,,,,,,,0.5,0.03571,3567.788,127.421,127.421,254.842,3312.946
+2020-05-24,GO,Araguapaz,2,1,1,7848,5202155,14.047,28,2,26,,,,,,,,,,,,,,0.5,0.03571,3567.788,127.421,127.421,254.842,3312.946
+2020-05-25,GO,Araguapaz,2,1,1,7848,5202155,14.047,28,2,26,,,,,,,,,,,,,,0.5,0.03571,3567.788,127.421,127.421,254.842,3312.946

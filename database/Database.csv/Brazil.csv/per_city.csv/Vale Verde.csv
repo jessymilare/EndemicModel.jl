@@ -1,3 +1,4 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-05-23,RS,Vale Verde,4,0,2,3532,4322525,12.0,48,2,46,,,,,,,,,,,,,,0.0,0.0,13590.034,0.0,566.251,566.251,13023.783
 2020-05-24,RS,Vale Verde,4,0,2,3532,4322525,12.0,48,2,46,,,,,,,,,,,,,,0.0,0.0,13590.034,0.0,566.251,566.251,13023.783
+2020-05-25,RS,Vale Verde,4,0,2,3532,4322525,12.0,48,2,46,,,,,,,,,,,,,,0.0,0.0,13590.034,0.0,566.251,566.251,13023.783
