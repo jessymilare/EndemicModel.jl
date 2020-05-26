@@ -1,5 +1,5 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-22,PE,Tacaimbó,1,0,0,13003,2614709,14.047,14,0,14,,,,,,,,,,,,,,,0.0,1076.675,0.0,0.0,0.0,1076.675
-2020-05-23,PE,Tacaimbó,1,0,0,13003,2614709,14.047,14,0,14,,,,,,,,,,,,,,,0.0,1076.675,0.0,0.0,0.0,1076.675
-2020-05-24,PE,Tacaimbó,2,0,1,13003,2614709,14.047,28,1,27,,,,,,,,,,,,,,0.0,0.0,2153.349,0.0,76.905,76.905,2076.444
-2020-05-25,PE,Tacaimbó,1,0,0,13003,2614709,14.047,14,0,14,,,,,,,,,,,,,,,0.0,1076.675,0.0,0.0,0.0,1076.675
+2020-05-22,PE,Tacaimbó,1,0,2,13003,2614709,8.3,8,2,6,,,,,,,,,,,,,,0.0,0.0,615.243,0.0,153.811,153.811,461.432
+2020-05-23,PE,Tacaimbó,1,0,3,13003,2614709,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,615.243,0.0,230.716,230.716,384.527
+2020-05-24,PE,Tacaimbó,2,0,5,13003,2614709,8.3,17,5,12,,,,,,,,,,,,,,0.0,0.0,1307.391,0.0,384.527,384.527,922.864
+2020-05-25,PE,Tacaimbó,2,0,6,13003,2614709,8.3,17,6,11,,,,,,,,,,,,,,0.0,0.0,1307.391,0.0,461.432,461.432,845.959

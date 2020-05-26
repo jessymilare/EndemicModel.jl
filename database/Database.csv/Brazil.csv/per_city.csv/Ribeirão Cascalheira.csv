@@ -1,7 +1,7 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-20,MT,Ribeirão Cascalheira,1,0,0,10308,5107180,10.0,10,0,10,,,,,,,,,,,,,,,0.0,970.12,0.0,0.0,0.0,970.12
-2020-05-21,MT,Ribeirão Cascalheira,1,0,0,10308,5107180,10.0,10,0,10,,,,,,,,,,,,,,,0.0,970.12,0.0,0.0,0.0,970.12
-2020-05-22,MT,Ribeirão Cascalheira,2,0,1,10308,5107180,10.0,20,1,19,,,,,,,,,,,,,,0.0,0.0,1940.241,0.0,97.012,97.012,1843.229
-2020-05-23,MT,Ribeirão Cascalheira,4,0,2,10308,5107180,10.0,40,2,38,,,,,,,,,,,,,,0.0,0.0,3880.481,0.0,194.024,194.024,3686.457
-2020-05-24,MT,Ribeirão Cascalheira,4,0,2,10308,5107180,10.0,40,2,38,,,,,,,,,,,,,,0.0,0.0,3880.481,0.0,194.024,194.024,3686.457
-2020-05-25,MT,Ribeirão Cascalheira,5,0,2,10308,5107180,10.0,50,2,48,,,,,,,,,,,,,,0.0,0.0,4850.601,0.0,194.024,194.024,4656.577
+2020-05-20,MT,Ribeirão Cascalheira,1,0,3,10308,5107180,10.0,10,3,7,,,,,,,,,,,,,,0.0,0.0,970.12,0.0,291.036,291.036,679.084
+2020-05-21,MT,Ribeirão Cascalheira,1,0,3,10308,5107180,10.0,10,3,7,,,,,,,,,,,,,,0.0,0.0,970.12,0.0,291.036,291.036,679.084
+2020-05-22,MT,Ribeirão Cascalheira,2,0,6,10308,5107180,10.0,20,6,14,,,,,,,,,,,,,,0.0,0.0,1940.241,0.0,582.072,582.072,1358.168
+2020-05-23,MT,Ribeirão Cascalheira,4,0,13,10308,5107180,10.0,40,13,27,,,,,,,,,,,,,,0.0,0.0,3880.481,0.0,1261.156,1261.156,2619.325
+2020-05-24,MT,Ribeirão Cascalheira,4,0,12,10308,5107180,10.0,40,12,28,,,,,,,,,,,,,,0.0,0.0,3880.481,0.0,1164.144,1164.144,2716.337
+2020-05-25,MT,Ribeirão Cascalheira,5,0,19,10308,5107180,10.0,50,19,31,,,,,,,,,,,,,,0.0,0.0,4850.601,0.0,1843.229,1843.229,3007.373

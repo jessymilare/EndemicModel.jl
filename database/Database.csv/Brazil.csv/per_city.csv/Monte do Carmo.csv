@@ -1,2 +1,2 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-25,TO,Monte do Carmo,12,2,5,8026,1713601,14.047,169,7,162,,,,,,,,,,,,,,0.2857,0.01183,21056.566,249.19,622.975,872.165,20184.401
+2020-05-25,TO,Monte do Carmo,12,2,38,8026,1713601,8.3,100,40,60,,,,,,,,,,,,,,0.05,0.02,12459.507,249.19,4734.613,4983.803,7475.704

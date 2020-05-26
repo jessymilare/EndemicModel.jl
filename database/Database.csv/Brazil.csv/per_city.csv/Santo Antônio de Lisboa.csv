@@ -1,7 +1,7 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-20,PI,Santo Antônio de Lisboa,1,0,0,6479,2209401,36.0,36,0,36,,,,,,,,,,,,,,,0.0,5556.413,0.0,0.0,0.0,5556.413
-2020-05-21,PI,Santo Antônio de Lisboa,1,0,0,6479,2209401,36.0,36,0,36,,,,,,,,,,,,,,,0.0,5556.413,0.0,0.0,0.0,5556.413
-2020-05-22,PI,Santo Antônio de Lisboa,1,0,0,6479,2209401,36.0,36,0,36,,,,,,,,,,,,,,,0.0,5556.413,0.0,0.0,0.0,5556.413
-2020-05-23,PI,Santo Antônio de Lisboa,1,0,0,6479,2209401,36.0,36,0,36,,,,,,,,,,,,,,,0.0,5556.413,0.0,0.0,0.0,5556.413
-2020-05-24,PI,Santo Antônio de Lisboa,3,0,1,6479,2209401,36.0,108,1,107,,,,,,,,,,,,,,0.0,0.0,16669.239,0.0,154.345,154.345,16514.894
-2020-05-25,PI,Santo Antônio de Lisboa,3,0,1,6479,2209401,36.0,108,1,107,,,,,,,,,,,,,,0.0,0.0,16669.239,0.0,154.345,154.345,16514.894
+2020-05-20,PI,Santo Antônio de Lisboa,1,0,11,6479,2209401,36.0,36,11,25,,,,,,,,,,,,,,0.0,0.0,5556.413,0.0,1697.793,1697.793,3858.62
+2020-05-21,PI,Santo Antônio de Lisboa,1,0,11,6479,2209401,36.0,36,11,25,,,,,,,,,,,,,,0.0,0.0,5556.413,0.0,1697.793,1697.793,3858.62
+2020-05-22,PI,Santo Antônio de Lisboa,1,0,11,6479,2209401,36.0,36,11,25,,,,,,,,,,,,,,0.0,0.0,5556.413,0.0,1697.793,1697.793,3858.62
+2020-05-23,PI,Santo Antônio de Lisboa,1,0,11,6479,2209401,36.0,36,11,25,,,,,,,,,,,,,,0.0,0.0,5556.413,0.0,1697.793,1697.793,3858.62
+2020-05-24,PI,Santo Antônio de Lisboa,3,0,34,6479,2209401,36.0,108,34,74,,,,,,,,,,,,,,0.0,0.0,16669.239,0.0,5247.723,5247.723,11421.516
+2020-05-25,PI,Santo Antônio de Lisboa,3,0,41,6479,2209401,36.0,108,41,67,,,,,,,,,,,,,,0.0,0.0,16669.239,0.0,6328.137,6328.137,10341.102

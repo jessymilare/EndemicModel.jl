@@ -1,3 +1,4 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-23,PR,Janiópolis,1,0,0,5297,4112207,14.047,14,0,14,,,,,,,,,,,,,,,0.0,2643.005,0.0,0.0,0.0,2643.005
-2020-05-24,PR,Janiópolis,1,0,0,5297,4112207,14.047,14,0,14,,,,,,,,,,,,,,,0.0,2643.005,0.0,0.0,0.0,2643.005
+2020-05-23,PR,Janiópolis,1,0,3,5297,4112207,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,1510.289,0.0,566.358,566.358,943.931
+2020-05-24,PR,Janiópolis,1,0,2,5297,4112207,8.3,8,2,6,,,,,,,,,,,,,,0.0,0.0,1510.289,0.0,377.572,377.572,1132.717
+2020-05-25,PR,Janiópolis,1,0,3,5297,4112207,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,1510.289,0.0,566.358,566.358,943.931

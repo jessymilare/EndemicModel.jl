@@ -1,3 +1,4 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-23,BA,Lajedão,2,0,1,3995,2918902,14.047,28,1,27,,,,,,,,,,,,,,0.0,0.0,7008.761,0.0,250.313,250.313,6758.448
-2020-05-24,BA,Lajedão,2,0,1,3995,2918902,14.047,28,1,27,,,,,,,,,,,,,,0.0,0.0,7008.761,0.0,250.313,250.313,6758.448
+2020-05-23,BA,Lajedão,2,0,5,3995,2918902,8.3,17,5,12,,,,,,,,,,,,,,0.0,0.0,4255.319,0.0,1251.564,1251.564,3003.755
+2020-05-24,BA,Lajedão,2,0,5,3995,2918902,8.3,17,5,12,,,,,,,,,,,,,,0.0,0.0,4255.319,0.0,1251.564,1251.564,3003.755
+2020-05-25,BA,Lajedão,2,0,6,3995,2918902,8.3,17,6,11,,,,,,,,,,,,,,0.0,0.0,4255.319,0.0,1501.877,1501.877,2753.442

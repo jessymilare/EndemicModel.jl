@@ -178,23 +178,24 @@ function import_data(source::BrasilIo; url = BRASIL_IO_URL, kwargs...)
     raw_data[(raw_data.deaths .=== missing), :deaths] .= 0
     sort!(raw_data, [:state, :city, :date])
 
-    rename!(raw_data, "estimated_population_2019" => :estimated_population)
+    rename!(raw_data, :estimated_population_2019 => :estimated_population)
     raw_data.estimated_population =
         round.(OptInt, raw_data.estimated_population .* BRAZIL_POP_FACTOR)
 
-    researches = get_input(
-        "brazil_researches_per_state";
+    estimates = get_input(
+        "brazil_estimates_per_state";
         types = Dict(:infected_per_confirmed => Float),
     )
-    researches = select(researches, :state, :infected_per_confirmed)
-    raw_data = leftjoin(raw_data, researches; on = :state)
+    est_sel = select(estimates, :state, :infected_per_confirmed)
+    raw_data = leftjoin(raw_data, est_sel; on = :state)
     indexes = .!ismissing.(raw_data.infected_per_confirmed)
     ipc, conf = raw_data.infected_per_confirmed[indexes], raw_data.confirmed[indexes]
-    avg_ipc = sum(ipc .* conf) / sum(conf)
+    avg_ipc = est_sel[est_sel.state .== "total", :infected_per_confirmed][1]
     raw_data.infected_per_confirmed[.!indexes] .= avg_ipc
 
-    infec = round.(Int, raw_data.infected_per_confirmed .* raw_data.confirmed)
-    insertcols!(raw_data, :infected => infec)
+    ipc = raw_data.infected_per_confirmed
+    infected = round.(Int, ipc .* raw_data.confirmed)
+    insertcols!(raw_data, :infected => infected)
 
     states = @where(raw_data, :place_type .== "state")
     cities = @where(raw_data, :place_type .== "city")
@@ -211,5 +212,10 @@ function import_data(source::BrasilIo; url = BRASIL_IO_URL, kwargs...)
         )
     end
 
-    DataDict(:states => states, :cities => cities, :total => total)
+    DataDict(
+        :states => states,
+        :cities => cities,
+        :total => total,
+        :estimates => estimates,
+    )
 end

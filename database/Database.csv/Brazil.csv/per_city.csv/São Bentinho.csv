@@ -1,5 +1,5 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-22,PB,São Bentinho,2,0,1,4574,2513927,14.047,28,1,27,,,,,,,,,,,,,,0.0,0.0,6121.557,0.0,218.627,218.627,5902.93
-2020-05-23,PB,São Bentinho,3,0,1,4574,2513927,14.047,42,1,41,,,,,,,,,,,,,,0.0,0.0,9182.335,0.0,218.627,218.627,8963.708
-2020-05-24,PB,São Bentinho,4,0,2,4574,2513927,14.047,56,2,54,,,,,,,,,,,,,,0.0,0.0,12243.113,0.0,437.254,437.254,11805.859
-2020-05-25,PB,São Bentinho,4,0,2,4574,2513927,14.047,56,2,54,,,,,,,,,,,,,,0.0,0.0,12243.113,0.0,437.254,437.254,11805.859
+2020-05-22,PB,São Bentinho,2,0,5,4574,2513927,8.3,17,5,12,,,,,,,,,,,,,,0.0,0.0,3716.659,0.0,1093.135,1093.135,2623.524
+2020-05-23,PB,São Bentinho,3,0,8,4574,2513927,8.3,25,8,17,,,,,,,,,,,,,,0.0,0.0,5465.676,0.0,1749.016,1749.016,3716.659
+2020-05-24,PB,São Bentinho,4,0,10,4574,2513927,8.3,33,10,23,,,,,,,,,,,,,,0.0,0.0,7214.692,0.0,2186.27,2186.27,5028.422
+2020-05-25,PB,São Bentinho,4,0,13,4574,2513927,8.3,33,13,20,,,,,,,,,,,,,,0.0,0.0,7214.692,0.0,2842.151,2842.151,4372.54

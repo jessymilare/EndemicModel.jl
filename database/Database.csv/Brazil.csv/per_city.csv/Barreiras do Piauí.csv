@@ -1,4 +1,4 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-23,PI,Barreiras do Piauí,1,0,0,3381,2201309,36.0,36,0,36,,,,,,,,,,,,,,,0.0,10647.737,0.0,0.0,0.0,10647.737
-2020-05-24,PI,Barreiras do Piauí,2,0,1,3381,2201309,36.0,72,1,71,,,,,,,,,,,,,,0.0,0.0,21295.475,0.0,295.77,295.77,20999.704
-2020-05-25,PI,Barreiras do Piauí,2,0,1,3381,2201309,36.0,72,1,71,,,,,,,,,,,,,,0.0,0.0,21295.475,0.0,295.77,295.77,20999.704
+2020-05-23,PI,Barreiras do Piauí,1,0,11,3381,2201309,36.0,36,11,25,,,,,,,,,,,,,,0.0,0.0,10647.737,0.0,3253.475,3253.475,7394.262
+2020-05-24,PI,Barreiras do Piauí,2,0,22,3381,2201309,36.0,72,22,50,,,,,,,,,,,,,,0.0,0.0,21295.475,0.0,6506.951,6506.951,14788.524
+2020-05-25,PI,Barreiras do Piauí,2,0,27,3381,2201309,36.0,72,27,45,,,,,,,,,,,,,,0.0,0.0,21295.475,0.0,7985.803,7985.803,13309.672

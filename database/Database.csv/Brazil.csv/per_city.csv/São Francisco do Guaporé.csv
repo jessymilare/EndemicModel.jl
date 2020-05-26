@@ -1,5 +1,6 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-19,RO,São Francisco do Guaporé,1,0,0,20469,1101492,14.047,14,0,14,,,,,,,,,,,,,,,0.0,683.961,0.0,0.0,0.0,683.961
-2020-05-20,RO,São Francisco do Guaporé,1,0,0,20469,1101492,14.047,14,0,14,,,,,,,,,,,,,,,0.0,683.961,0.0,0.0,0.0,683.961
-2020-05-22,RO,São Francisco do Guaporé,2,0,1,20469,1101492,14.047,28,1,27,,,,,,,,,,,,,,0.0,0.0,1367.922,0.0,48.854,48.854,1319.068
-2020-05-23,RO,São Francisco do Guaporé,2,1,1,20469,1101492,14.047,28,2,26,,,,,,,,,,,,,,0.5,0.03571,1367.922,48.854,48.854,97.709,1270.213
+2020-05-19,RO,São Francisco do Guaporé,1,0,2,20469,1101492,8.3,8,2,6,,,,,,,,,,,,,,0.0,0.0,390.835,0.0,97.709,97.709,293.126
+2020-05-20,RO,São Francisco do Guaporé,1,0,2,20469,1101492,8.3,8,2,6,,,,,,,,,,,,,,0.0,0.0,390.835,0.0,97.709,97.709,293.126
+2020-05-22,RO,São Francisco do Guaporé,2,0,5,20469,1101492,8.3,17,5,12,,,,,,,,,,,,,,0.0,0.0,830.524,0.0,244.272,244.272,586.252
+2020-05-23,RO,São Francisco do Guaporé,2,1,5,20469,1101492,8.3,17,6,11,,,,,,,,,,,,,,0.1667,0.05882,830.524,48.854,244.272,293.126,537.398
+2020-05-24,RO,São Francisco do Guaporé,3,1,8,20469,1101492,8.3,25,9,16,,,,,,,,,,,,,,0.1111,0.04,1221.359,48.854,390.835,439.689,781.67

@@ -58,17 +58,27 @@ end
     (confirmed, recovered, deaths) => identity,
 ]
 
-@deftable states2(states, Brazil) begin
+@deftable Brazil2(Brazil, total, estimates) begin
+    cols = [:date, :estimated_population, :gdp_per_capita, :total_tests, :test_kind]
+    br = select(Brazil, cols)
+    avg_ipc = estimates[estimates.state .== "total", :infected_per_confirmed][1]
+    insertcols!(br, :recovered => round.(Int, avg_ipc * Brazil.recovered))
+    total = select(total, :date, :confirmed, :deaths, :infected)
+    df = leftjoin(total, br; on = :date)
+    sort!(df, :date)
+end
+
+@deftable states2(states, Brazil2) begin
     nrec = Union{Int, Missing}[]
     for row ∈ eachrow(states)
-        brrow = Brazil[Brazil.date .== row.date, :]
+        brrow = Brazil2[Brazil2.date .== row.date, :]
         push!(
             nrec,
             if !isempty(brrow)
                 brrec = brrow.recovered[1]
-                brconf = brrow.confirmed[1]
-                conf = row.confirmed
-                brconf == 0 ? 0 : round(Union{Int, Missing}, brrec * conf / brconf)
+                brinfec = brrow.infected[1]
+                infec = row.infected
+                brinfec == 0 ? 0 : round(Union{Int, Missing}, brrec * infec / brinfec)
             else
                 missing
             end,
@@ -77,17 +87,17 @@ end
     insertcols!(states, 5, :recovered => nrec)
 end
 
-@deftable cities2(cities, Brazil) begin
+@deftable cities2(cities, Brazil2) begin
     nrec = Union{Int, Missing}[]
     for row ∈ eachrow(cities)
-        brrow = Brazil[Brazil.date .== row.date, :]
+        brrow = Brazil2[Brazil2.date .== row.date, :]
         push!(
             nrec,
             if !isempty(brrow)
                 brrec = brrow.recovered[1]
-                brconf = brrow.confirmed[1]
-                conf = row.confirmed
-                brconf == 0 ? 0 : round(Union{Int, Missing}, brrec * conf / brconf)
+                brinfec = brrow.infected[1]
+                infec = row.infected
+                brinfec == 0 ? 0 : round(Union{Int, Missing}, brrec * infec / brinfec)
             else
                 missing
             end,
@@ -99,13 +109,13 @@ end
 @defgroup per_state(states2) (state,) [
     (date, city_ibge_code) => identity,
     (estimated_population,) => identity,
-    (confirmed, recovered, deaths) => identity,
+    (confirmed, recovered, deaths, infected) => identity,
 ]
 
 @defgroup per_city(cities2) (city,) [
     (state, date, city_ibge_code) => identity,
     (estimated_population,) => identity,
-    (confirmed, recovered, deaths) => identity,
+    (confirmed, recovered, deaths, infected) => identity,
 ]
 
 @defcolumn infected(confirmed) confirmed
@@ -320,6 +330,7 @@ function covid19_database(; kwargs...)
         table_world3,
         group_per_country,
         copy_brazil_tables,
+        table_Brazil2,
         table_states2,
         table_cities2,
         group_per_state,
@@ -362,6 +373,33 @@ function covid19(; database = nothing, kwargs...)
     db = database
     @info "Creating COVID-19 database."
     isnothing(database) && (db = covid19_database(; kwargs...))
+
+    sources = DataFrame(
+        :source => [
+            "CSSE at JHU (John Hopkins University)",
+            "Brasil.IO",
+            "World Bank Open Data",
+            "Our World In Data",
+        ],
+        :url => [
+            "https://systems.jhu.edu/",
+            "https://brasil.io/home/",
+            "https://data.worldbank.org/",
+            "https://ourworldindata.org/",
+        ],
+        :data_kind => [
+            "COVID-19 cases for several countries",
+            "COVID-19 cases per state and city in Brazil",
+            "Population and GDP per capita for several countries",
+            "Number of tests of COVID-19 for several countries",
+        ],
+    )
+    for row ∈ eachrow(db.brasil_io.estimates)
+        data_kind = row.state == "total" ? "Estimate for Brazil on {row.date}" :
+            "Estimate for {row.state}, Brazil on {row.date}"
+        push!(sources, (; source = row.source, url = row.url, data_kind = data_kind))
+    end
+
     newdata = DataDict(
         :world => DataDict(
             :per_country => db.csse.per_country_group,
@@ -371,28 +409,9 @@ function covid19(; database = nothing, kwargs...)
         :Brazil => DataDict(
             :per_state => db.brasil_io.per_state_group,
             :per_city => db.brasil_io.per_city_group,
-            :total => db.brasil_io.total,
+            :total => db.brasil_io.Brazil2,
         ),
-        :sources => DataFrame(
-            :source => [
-                "CSSE at JHU (John Hopkins University)",
-                "Brasil.IO",
-                "World Bank Open Data",
-                "Our World In Data",
-            ],
-            :home_page => [
-                "https://systems.jhu.edu/",
-                "https://brasil.io/home/",
-                "https://data.worldbank.org/",
-                "https://ourworldindata.org/",
-            ],
-            :data_kind => [
-                "COVID-19 cases for several countries",
-                "COVID-19 cases per state and city in Brazil",
-                "Population and GDP per capita for several countries",
-                "Number of tests of COVID-19 for several countries",
-            ],
-        ),
+        :sources => sources,
         :auxiliar => DataDict(
             :total_tests => db.total_tests,
             :world_population => db.world_population,

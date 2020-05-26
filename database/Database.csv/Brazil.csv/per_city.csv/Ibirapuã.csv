@@ -1,3 +1,4 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-23,BA,Ibirapuã,1,0,0,8723,2912806,14.047,14,0,14,,,,,,,,,,,,,,,0.0,1604.952,0.0,0.0,0.0,1604.952
-2020-05-24,BA,Ibirapuã,1,0,0,8723,2912806,14.047,14,0,14,,,,,,,,,,,,,,,0.0,1604.952,0.0,0.0,0.0,1604.952
+2020-05-23,BA,Ibirapuã,1,0,3,8723,2912806,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,917.116,0.0,343.918,343.918,573.197
+2020-05-24,BA,Ibirapuã,1,0,2,8723,2912806,8.3,8,2,6,,,,,,,,,,,,,,0.0,0.0,917.116,0.0,229.279,229.279,687.837
+2020-05-25,BA,Ibirapuã,2,0,6,8723,2912806,8.3,17,6,11,,,,,,,,,,,,,,0.0,0.0,1948.871,0.0,687.837,687.837,1261.034

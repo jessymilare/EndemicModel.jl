@@ -1,6 +1,6 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-21,RS,São João da Urtiga,1,0,0,4704,4318424,12.0,12,0,12,,,,,,,,,,,,,,,0.0,2551.02,0.0,0.0,0.0,2551.02
-2020-05-22,RS,São João da Urtiga,1,0,0,4704,4318424,12.0,12,0,12,,,,,,,,,,,,,,,0.0,2551.02,0.0,0.0,0.0,2551.02
-2020-05-23,RS,São João da Urtiga,1,0,0,4704,4318424,12.0,12,0,12,,,,,,,,,,,,,,,0.0,2551.02,0.0,0.0,0.0,2551.02
-2020-05-24,RS,São João da Urtiga,1,0,0,4704,4318424,12.0,12,0,12,,,,,,,,,,,,,,,0.0,2551.02,0.0,0.0,0.0,2551.02
-2020-05-25,RS,São João da Urtiga,1,0,0,4704,4318424,12.0,12,0,12,,,,,,,,,,,,,,,0.0,2551.02,0.0,0.0,0.0,2551.02
+2020-05-21,RS,São João da Urtiga,1,0,2,4704,4318424,8.4,8,2,6,,,,,,,,,,,,,,0.0,0.0,1700.68,0.0,425.17,425.17,1275.51
+2020-05-22,RS,São João da Urtiga,1,0,2,4704,4318424,8.4,8,2,6,,,,,,,,,,,,,,0.0,0.0,1700.68,0.0,425.17,425.17,1275.51
+2020-05-23,RS,São João da Urtiga,1,0,3,4704,4318424,8.4,8,3,5,,,,,,,,,,,,,,0.0,0.0,1700.68,0.0,637.755,637.755,1062.925
+2020-05-24,RS,São João da Urtiga,1,0,2,4704,4318424,8.4,8,2,6,,,,,,,,,,,,,,0.0,0.0,1700.68,0.0,425.17,425.17,1275.51
+2020-05-25,RS,São João da Urtiga,1,0,3,4704,4318424,8.4,8,3,5,,,,,,,,,,,,,,0.0,0.0,1700.68,0.0,637.755,637.755,1062.925

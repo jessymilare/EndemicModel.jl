@@ -1,4 +1,4 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-23,SC,Dionísio Cerqueira,1,1,0,15653,4205001,25.0,25,1,24,,,,,,,,,,,,,,1.0,0.04,1597.138,63.886,0.0,63.886,1533.252
-2020-05-24,SC,Dionísio Cerqueira,1,1,0,15653,4205001,25.0,25,1,24,,,,,,,,,,,,,,1.0,0.04,1597.138,63.886,0.0,63.886,1533.252
-2020-05-25,SC,Dionísio Cerqueira,1,1,0,15653,4205001,25.0,25,1,24,,,,,,,,,,,,,,1.0,0.04,1597.138,63.886,0.0,63.886,1533.252
+2020-05-23,SC,Dionísio Cerqueira,1,1,8,15653,4205001,25.0,25,9,16,,,,,,,,,,,,,,0.1111,0.04,1597.138,63.886,511.084,574.97,1022.168
+2020-05-24,SC,Dionísio Cerqueira,1,1,8,15653,4205001,25.0,25,9,16,,,,,,,,,,,,,,0.1111,0.04,1597.138,63.886,511.084,574.97,1022.168
+2020-05-25,SC,Dionísio Cerqueira,1,1,10,15653,4205001,25.0,25,11,14,,,,,,,,,,,,,,0.09091,0.04,1597.138,63.886,638.855,702.741,894.397

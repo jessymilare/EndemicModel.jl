@@ -1,4 +1,4 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-23,AL,Traipu,4,0,2,27992,2709202,14.047,56,2,54,,,,,,,,,,,,,,0.0,0.0,2000.572,0.0,71.449,71.449,1929.123
-2020-05-24,AL,Traipu,4,0,2,27992,2709202,14.047,56,2,54,,,,,,,,,,,,,,0.0,0.0,2000.572,0.0,71.449,71.449,1929.123
-2020-05-25,AL,Traipu,4,0,2,27992,2709202,14.047,56,2,54,,,,,,,,,,,,,,0.0,0.0,2000.572,0.0,71.449,71.449,1929.123
+2020-05-23,AL,Traipu,4,0,10,27992,2709202,8.3,33,10,23,,,,,,,,,,,,,,0.0,0.0,1178.908,0.0,357.245,357.245,821.663
+2020-05-24,AL,Traipu,4,0,10,27992,2709202,8.3,33,10,23,,,,,,,,,,,,,,0.0,0.0,1178.908,0.0,357.245,357.245,821.663
+2020-05-25,AL,Traipu,4,0,13,27992,2709202,8.3,33,13,20,,,,,,,,,,,,,,0.0,0.0,1178.908,0.0,464.418,464.418,714.49

@@ -1,5 +1,5 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-22,PE,Verdejante,1,0,0,9629,2616100,14.047,14,0,14,,,,,,,,,,,,,,,0.0,1453.941,0.0,0.0,0.0,1453.941
-2020-05-23,PE,Verdejante,1,0,0,9629,2616100,14.047,14,0,14,,,,,,,,,,,,,,,0.0,1453.941,0.0,0.0,0.0,1453.941
-2020-05-24,PE,Verdejante,1,0,0,9629,2616100,14.047,14,0,14,,,,,,,,,,,,,,,0.0,1453.941,0.0,0.0,0.0,1453.941
-2020-05-25,PE,Verdejante,1,0,0,9629,2616100,14.047,14,0,14,,,,,,,,,,,,,,,0.0,1453.941,0.0,0.0,0.0,1453.941
+2020-05-22,PE,Verdejante,1,0,2,9629,2616100,8.3,8,2,6,,,,,,,,,,,,,,0.0,0.0,830.824,0.0,207.706,207.706,623.118
+2020-05-23,PE,Verdejante,1,0,3,9629,2616100,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,830.824,0.0,311.559,311.559,519.265
+2020-05-24,PE,Verdejante,1,0,2,9629,2616100,8.3,8,2,6,,,,,,,,,,,,,,0.0,0.0,830.824,0.0,207.706,207.706,623.118
+2020-05-25,PE,Verdejante,1,0,3,9629,2616100,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,830.824,0.0,311.559,311.559,519.265

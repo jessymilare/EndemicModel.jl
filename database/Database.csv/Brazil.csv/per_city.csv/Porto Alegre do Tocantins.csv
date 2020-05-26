@@ -1,2 +1,2 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-25,TO,Porto Alegre do Tocantins,4,0,2,3170,1718006,14.047,56,2,54,,,,,,,,,,,,,,0.0,0.0,17665.615,0.0,630.915,630.915,17034.7
+2020-05-25,TO,Porto Alegre do Tocantins,4,0,13,3170,1718006,8.3,33,13,20,,,,,,,,,,,,,,0.0,0.0,10410.095,0.0,4100.946,4100.946,6309.148

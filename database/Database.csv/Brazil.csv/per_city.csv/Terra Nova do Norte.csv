@@ -1,5 +1,5 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-22,MT,Terra Nova do Norte,1,0,0,9764,5108055,10.0,10,0,10,,,,,,,,,,,,,,,0.0,1024.17,0.0,0.0,0.0,1024.17
-2020-05-23,MT,Terra Nova do Norte,1,0,0,9764,5108055,10.0,10,0,10,,,,,,,,,,,,,,,0.0,1024.17,0.0,0.0,0.0,1024.17
-2020-05-24,MT,Terra Nova do Norte,1,0,0,9764,5108055,10.0,10,0,10,,,,,,,,,,,,,,,0.0,1024.17,0.0,0.0,0.0,1024.17
-2020-05-25,MT,Terra Nova do Norte,1,0,0,9764,5108055,10.0,10,0,10,,,,,,,,,,,,,,,0.0,1024.17,0.0,0.0,0.0,1024.17
+2020-05-22,MT,Terra Nova do Norte,1,0,3,9764,5108055,10.0,10,3,7,,,,,,,,,,,,,,0.0,0.0,1024.17,0.0,307.251,307.251,716.919
+2020-05-23,MT,Terra Nova do Norte,1,0,3,9764,5108055,10.0,10,3,7,,,,,,,,,,,,,,0.0,0.0,1024.17,0.0,307.251,307.251,716.919
+2020-05-24,MT,Terra Nova do Norte,1,0,3,9764,5108055,10.0,10,3,7,,,,,,,,,,,,,,0.0,0.0,1024.17,0.0,307.251,307.251,716.919
+2020-05-25,MT,Terra Nova do Norte,1,0,4,9764,5108055,10.0,10,4,6,,,,,,,,,,,,,,0.0,0.0,1024.17,0.0,409.668,409.668,614.502
