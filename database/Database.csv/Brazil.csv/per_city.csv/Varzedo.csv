@@ -1,5 +1,5 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-22,BA,Varzedo,1,0,2,8926,2933174,8.3,8,2,6,,,,,,,,,,,,,,0.0,0.0,896.258,0.0,224.065,224.065,672.194
-2020-05-23,BA,Varzedo,2,0,5,8926,2933174,8.3,17,5,12,,,,,,,,,,,,,,0.0,0.0,1904.549,0.0,560.161,560.161,1344.387
-2020-05-24,BA,Varzedo,2,0,5,8926,2933174,8.3,17,5,12,,,,,,,,,,,,,,0.0,0.0,1904.549,0.0,560.161,560.161,1344.387
-2020-05-25,BA,Varzedo,2,0,6,8926,2933174,8.3,17,6,11,,,,,,,,,,,,,,0.0,0.0,1904.549,0.0,672.194,672.194,1232.355
+2020-05-22,BA,Varzedo,1,0,3,8926,2933174,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,896.258,0.0,336.097,336.097,560.161
+2020-05-23,BA,Varzedo,2,0,7,8926,2933174,8.3,17,7,10,,,,,,,,,,,,,,0.0,0.0,1904.549,0.0,784.226,784.226,1120.323
+2020-05-24,BA,Varzedo,2,0,7,8926,2933174,8.3,17,7,10,,,,,,,,,,,,,,0.0,0.0,1904.549,0.0,784.226,784.226,1120.323
+2020-05-25,BA,Varzedo,2,0,7,8926,2933174,8.3,17,7,10,,,,,,,,,,,,,,0.0,0.0,1904.549,0.0,784.226,784.226,1120.323

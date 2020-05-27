@@ -1,4 +1,5 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-23,AL,São Brás,8,0,21,7031,2708204,8.3,66,21,45,,,,,,,,,,,,,,0.0,0.0,9387.0,0.0,2986.773,2986.773,6400.228
-2020-05-24,AL,São Brás,8,0,21,7031,2708204,8.3,66,21,45,,,,,,,,,,,,,,0.0,0.0,9387.0,0.0,2986.773,2986.773,6400.228
-2020-05-25,AL,São Brás,9,0,29,7031,2708204,8.3,75,29,46,,,,,,,,,,,,,,0.0,0.0,10667.046,0.0,4124.591,4124.591,6542.455
+2020-05-23,AL,São Brás,8,0,27,7031,2708204,8.3,66,27,39,,,,,,,,,,,,,,0.0,0.0,9387.0,0.0,3840.137,3840.137,5546.864
+2020-05-24,AL,São Brás,8,0,27,7031,2708204,8.3,66,27,39,,,,,,,,,,,,,,0.0,0.0,9387.0,0.0,3840.137,3840.137,5546.864
+2020-05-25,AL,São Brás,9,0,31,7031,2708204,8.3,75,31,44,,,,,,,,,,,,,,0.0,0.0,10667.046,0.0,4409.046,4409.046,6258.0
+2020-05-26,AL,São Brás,9,0,30,7031,2708204,8.3,75,30,45,,,,,,,,,,,,,,0.0,0.0,10667.046,0.0,4266.818,4266.818,6400.228

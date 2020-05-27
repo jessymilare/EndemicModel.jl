@@ -1,5 +1,5 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-22,CE,Saboeiro,2,0,5,15977,2311900,8.3,17,5,12,,,,,,,,,,,,,,0.0,0.0,1064.03,0.0,312.95,312.95,751.08
-2020-05-23,CE,Saboeiro,2,0,5,15977,2311900,8.3,17,5,12,,,,,,,,,,,,,,0.0,0.0,1064.03,0.0,312.95,312.95,751.08
-2020-05-24,CE,Saboeiro,3,0,8,15977,2311900,8.3,25,8,17,,,,,,,,,,,,,,0.0,0.0,1564.749,0.0,500.72,500.72,1064.03
+2020-05-22,CE,Saboeiro,2,0,7,15977,2311900,8.3,17,7,10,,,,,,,,,,,,,,0.0,0.0,1064.03,0.0,438.13,438.13,625.9
+2020-05-23,CE,Saboeiro,2,0,7,15977,2311900,8.3,17,7,10,,,,,,,,,,,,,,0.0,0.0,1064.03,0.0,438.13,438.13,625.9
+2020-05-24,CE,Saboeiro,3,0,10,15977,2311900,8.3,25,10,15,,,,,,,,,,,,,,0.0,0.0,1564.749,0.0,625.9,625.9,938.85
 2020-05-25,CE,Saboeiro,3,0,10,15977,2311900,8.3,25,10,15,,,,,,,,,,,,,,0.0,0.0,1564.749,0.0,625.9,625.9,938.85

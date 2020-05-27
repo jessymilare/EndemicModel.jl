@@ -1,4 +1,5 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-23,SP,Bofete,1,0,4,11847,3506904,11.9,12,4,8,,,,,,,,,,,,,,0.0,0.0,1012.915,0.0,337.638,337.638,675.276
-2020-05-24,SP,Bofete,1,0,4,11847,3506904,11.9,12,4,8,,,,,,,,,,,,,,0.0,0.0,1012.915,0.0,337.638,337.638,675.276
+2020-05-23,SP,Bofete,1,0,5,11847,3506904,11.9,12,5,7,,,,,,,,,,,,,,0.0,0.0,1012.915,0.0,422.048,422.048,590.867
+2020-05-24,SP,Bofete,1,0,5,11847,3506904,11.9,12,5,7,,,,,,,,,,,,,,0.0,0.0,1012.915,0.0,422.048,422.048,590.867
 2020-05-25,SP,Bofete,1,0,5,11847,3506904,11.9,12,5,7,,,,,,,,,,,,,,0.0,0.0,1012.915,0.0,422.048,422.048,590.867
+2020-05-26,SP,Bofete,1,1,5,11847,3506904,11.9,12,6,6,,,,,,,,,,,,,,0.1667,0.08333,1012.915,84.41,422.048,506.457,506.457

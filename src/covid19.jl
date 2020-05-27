@@ -59,13 +59,14 @@ end
 ]
 
 @deftable Brazil2(Brazil, total, estimates) begin
-    cols = [:date, :estimated_population, :gdp_per_capita, :total_tests, :test_kind]
-    br = select(Brazil, cols)
+    keys = [:date, :estimated_population, :gdp_per_capita, :total_tests, :test_kind]
+    br = select(Brazil, keys)
     avg_ipc = estimates[estimates.state .== "total", :infected_per_confirmed][1]
+    insertcols!(br, :confirmed => Brazil.confirmed)
     insertcols!(br, :recovered => round.(Int, avg_ipc * Brazil.recovered))
-    total = select(total, :date, :confirmed, :deaths, :infected)
-    df = leftjoin(total, br; on = :date)
-    sort!(df, :date)
+    insertcols!(br, :deaths => Brazil.deaths)
+    insertcols!(br, :infected => round.(Int, avg_ipc * Brazil.confirmed))
+    sort!(br, :date)
 end
 
 @deftable states2(states, Brazil2) begin

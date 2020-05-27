@@ -1,4 +1,5 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-23,MT,Juara,1,0,3,35324,5105101,10.0,10,3,7,,,,,,,,,,,,,,0.0,0.0,283.094,0.0,84.928,84.928,198.166
-2020-05-24,MT,Juara,1,0,3,35324,5105101,10.0,10,3,7,,,,,,,,,,,,,,0.0,0.0,283.094,0.0,84.928,84.928,198.166
+2020-05-23,MT,Juara,1,0,4,35324,5105101,10.0,10,4,6,,,,,,,,,,,,,,0.0,0.0,283.094,0.0,113.237,113.237,169.856
+2020-05-24,MT,Juara,1,0,4,35324,5105101,10.0,10,4,6,,,,,,,,,,,,,,0.0,0.0,283.094,0.0,113.237,113.237,169.856
 2020-05-25,MT,Juara,1,0,4,35324,5105101,10.0,10,4,6,,,,,,,,,,,,,,0.0,0.0,283.094,0.0,113.237,113.237,169.856
+2020-05-26,MT,Juara,2,1,8,35324,5105101,10.0,20,9,11,,,,,,,,,,,,,,0.1111,0.05,566.187,28.309,226.475,254.784,311.403

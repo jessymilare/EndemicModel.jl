@@ -168,7 +168,7 @@ optimize_parameters!(data; kwargs...) = data
 
 function search_parameters(model::AbstractEndemicModel) end
 
-function estimate_μ(data::AbstractDataFrame; ndays = 14, kwargs...)
+function estimate_μ(data::AbstractDataFrame; ndays = 7, kwargs...)
     deaths, recovered = data.deaths, data.recovered
     deaths[end] == 0 && return [NaN]
     ind1 = findfirst(.!ismissing.(deaths) .& (deaths .> 0))
@@ -251,7 +251,7 @@ end
 
 function estimate_γ(
     data::AbstractDataFrame;
-    ndays = 12,
+    ndays = 10,
     μ_pair = estimate_μ(data),
     α_pair = estimate_α(data; μ_pair = μ_pair),
     kwargs...,
@@ -287,7 +287,7 @@ estimate_γ(model::AbstractEndemicModel; kwargs...) =
 
 function estimate_β(
     data::AbstractDataFrame;
-    ndays = 14,
+    ndays = 7,
     μ_pair = estimate_μ(data),
     α_pair = estimate_α(data; μ_pair = μ_pair),
     γ_pair = estimate_γ(data; μ_pair = μ_pair, α_pair = α_pair),
@@ -362,7 +362,7 @@ estimate_exposed!(model::AbstractEndemicModel; kwargs...) =
 function SEIRModel(
     data::AbstractDataFrame;
     minimum_infected_factor = option(:minimum_infected_factor),
-    ndays = 14,
+    ndays = 7,
     kwargs...,
 )
     @debug "Computing SEIR model for data" _debuginfo(data)

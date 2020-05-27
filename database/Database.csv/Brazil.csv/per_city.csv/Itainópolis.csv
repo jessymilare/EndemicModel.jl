@@ -1,3 +1,4 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-24,PI,Itainópolis,1,0,11,11645,2205003,36.0,36,11,25,,,,,,,,,,,,,,0.0,0.0,3091.456,0.0,944.611,944.611,2146.844
-2020-05-25,PI,Itainópolis,2,0,27,11645,2205003,36.0,72,27,45,,,,,,,,,,,,,,0.0,0.0,6182.911,0.0,2318.592,2318.592,3864.319
+2020-05-24,PI,Itainópolis,1,0,15,11645,2205003,36.0,36,15,21,,,,,,,,,,,,,,0.0,0.0,3091.456,0.0,1288.106,1288.106,1803.349
+2020-05-25,PI,Itainópolis,2,0,30,11645,2205003,36.0,72,30,42,,,,,,,,,,,,,,0.0,0.0,6182.911,0.0,2576.213,2576.213,3606.698
+2020-05-26,PI,Itainópolis,3,0,44,11645,2205003,36.0,108,44,64,,,,,,,,,,,,,,0.0,0.0,9274.367,0.0,3778.446,3778.446,5495.921

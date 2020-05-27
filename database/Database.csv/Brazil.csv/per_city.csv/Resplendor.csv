@@ -1,5 +1,5 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-22,MG,Resplendor,1,0,5,17571,3154309,16.5,16,5,11,,,,,,,,,,,,,,0.0,0.0,910.591,0.0,284.56,284.56,626.032
-2020-05-23,MG,Resplendor,1,0,5,17571,3154309,16.5,16,5,11,,,,,,,,,,,,,,0.0,0.0,910.591,0.0,284.56,284.56,626.032
-2020-05-24,MG,Resplendor,2,0,10,17571,3154309,16.5,33,10,23,,,,,,,,,,,,,,0.0,0.0,1878.095,0.0,569.12,569.12,1308.975
-2020-05-25,MG,Resplendor,2,0,13,17571,3154309,16.5,33,13,20,,,,,,,,,,,,,,0.0,0.0,1878.095,0.0,739.855,739.855,1138.239
+2020-05-22,MG,Resplendor,1,0,7,17571,3154309,16.5,16,7,9,,,,,,,,,,,,,,0.0,0.0,910.591,0.0,398.384,398.384,512.208
+2020-05-23,MG,Resplendor,1,0,7,17571,3154309,16.5,16,7,9,,,,,,,,,,,,,,0.0,0.0,910.591,0.0,398.384,398.384,512.208
+2020-05-24,MG,Resplendor,2,0,14,17571,3154309,16.5,33,14,19,,,,,,,,,,,,,,0.0,0.0,1878.095,0.0,796.767,796.767,1081.327
+2020-05-25,MG,Resplendor,2,0,14,17571,3154309,16.5,33,14,19,,,,,,,,,,,,,,0.0,0.0,1878.095,0.0,796.767,796.767,1081.327

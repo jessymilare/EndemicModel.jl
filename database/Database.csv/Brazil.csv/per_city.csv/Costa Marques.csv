@@ -1,2 +1,3 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-24,RO,Costa Marques,1,0,2,18514,1100080,8.3,8,2,6,,,,,,,,,,,,,,0.0,0.0,432.105,0.0,108.026,108.026,324.079
+2020-05-24,RO,Costa Marques,1,0,3,18514,1100080,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,432.105,0.0,162.04,162.04,270.066
+2020-05-25,RO,Costa Marques,1,0,3,18514,1100080,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,432.105,0.0,162.04,162.04,270.066

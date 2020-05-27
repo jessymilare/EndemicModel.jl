@@ -1,6 +1,7 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-21,PI,Capitão Gervásio Oliveira,1,0,11,4141,2202455,36.0,36,11,25,,,,,,,,,,,,,,0.0,0.0,8693.552,0.0,2656.363,2656.363,6037.189
-2020-05-22,PI,Capitão Gervásio Oliveira,1,0,11,4141,2202455,36.0,36,11,25,,,,,,,,,,,,,,0.0,0.0,8693.552,0.0,2656.363,2656.363,6037.189
-2020-05-23,PI,Capitão Gervásio Oliveira,1,0,11,4141,2202455,36.0,36,11,25,,,,,,,,,,,,,,0.0,0.0,8693.552,0.0,2656.363,2656.363,6037.189
-2020-05-24,PI,Capitão Gervásio Oliveira,1,0,11,4141,2202455,36.0,36,11,25,,,,,,,,,,,,,,0.0,0.0,8693.552,0.0,2656.363,2656.363,6037.189
-2020-05-25,PI,Capitão Gervásio Oliveira,1,0,14,4141,2202455,36.0,36,14,22,,,,,,,,,,,,,,0.0,0.0,8693.552,0.0,3380.826,3380.826,5312.726
+2020-05-21,PI,Capitão Gervásio Oliveira,1,0,15,4141,2202455,36.0,36,15,21,,,,,,,,,,,,,,0.0,0.0,8693.552,0.0,3622.313,3622.313,5071.239
+2020-05-22,PI,Capitão Gervásio Oliveira,1,0,15,4141,2202455,36.0,36,15,21,,,,,,,,,,,,,,0.0,0.0,8693.552,0.0,3622.313,3622.313,5071.239
+2020-05-23,PI,Capitão Gervásio Oliveira,1,0,15,4141,2202455,36.0,36,15,21,,,,,,,,,,,,,,0.0,0.0,8693.552,0.0,3622.313,3622.313,5071.239
+2020-05-24,PI,Capitão Gervásio Oliveira,1,0,15,4141,2202455,36.0,36,15,21,,,,,,,,,,,,,,0.0,0.0,8693.552,0.0,3622.313,3622.313,5071.239
+2020-05-25,PI,Capitão Gervásio Oliveira,1,0,15,4141,2202455,36.0,36,15,21,,,,,,,,,,,,,,0.0,0.0,8693.552,0.0,3622.313,3622.313,5071.239
+2020-05-26,PI,Capitão Gervásio Oliveira,1,0,15,4141,2202455,36.0,36,15,21,,,,,,,,,,,,,,0.0,0.0,8693.552,0.0,3622.313,3622.313,5071.239

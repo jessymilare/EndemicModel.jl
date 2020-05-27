@@ -442,93 +442,98 @@ function model_plot(
     new_window::Bool = true,
     ylabel = nothing,
     yfactor = nothing,
+    legend = :right,
     kwargs...,
 )
-    colnames = intersect(columns, Symbol.(names(df)))
+    columns = intersect(Symbol.(columns), Symbol.(names(df)))
     labels = string.(something(labels, prettify.(columns)))
+    max_yvalue = 0
+    for cname ∈ columns
+        max_yvalue = max(maximum(skipmissing(df[!, cname])), max_yvalue)
+    end
     numpeople = if hasproperty(df, :estimated_population)
         df.estimated_population[1]
     else
-        df.infected[end]
-    end
-    max_yvalue = 0
-    for cname ∈ colnames
-        max_yvalue = max(maximum(skipmissing(df[!, cname])), max_yvalue)
+        2 * max_yvalue
     end
     if isnothing(yfactor)
         (yfactor, nylabel) = _get_y_factor_and_label(max_yvalue)
         ylabel = something(ylabel, nylabel)
     end
 
-    istart = findfirst(df.active .* yfactor .>= 0.1)
-    iend = findlast(df.active .>= numpeople * minimum_plot_factor)
+    idx = findfirst(s -> occursin("active", s), names(df))
+    istart = findfirst(df[!, idx] .* yfactor .>= 0.1)
+    iend = findlast(df[!, idx] .>= numpeople * minimum_plot_factor)
     df = df[istart:something(iend, nrow(df)), :]
     X = Dates.format.(df.date, date_format)
 
     win = plot(
         X,
-        df[!, colnames[1]] .* yfactor,
+        df[!, columns[1]] .* yfactor,
         xrotation = 45,
         xticks = 15,
         label = labels[1],
         ylabel = ylabel,
         title = title,
-        legend = :right,
+        legend = legend,
     )
-    for (yn, label) ∈ zip(colnames[2:end], labels[2:end])
+    for (yn, label) ∈ zip(columns[2:end], labels[2:end])
         plot!(win, X, df[!, yn] .* yfactor; label = label)
     end
     new_window && gui(win)
     win
 end
 
-function model_validate(
+function model_combined_data(
     model::SEIRModel;
     columns = option(:plot_columns),
-    title = nothing,
+    plot_period = Day(10),
     kwargs...,
 )
-    modeldf, realdf = modeldata(model), realdata(model)
-    title = something(title, _get_plot_title(realdf))
-    initial_date = default_kwarg(model, :initial_date, today() - Day(15))
-    ndays = Dates.days(initial_date - realdf.date[1])
-    model = model_step(model, -ndays; initial_date = realdf.date[1])
+    columns = Symbol.(columns)
 
-    modeldf = select(modeldata(model), :date, columns...)
-    realdf = select(realdf, :date, columns...)
+    realdf = realdata(model)
+    model_initial_date = default_kwarg(model, :initial_date, today() - Day(15))
+    plot_initial_date = realdf.date[end] - plot_period
+    ndays = Dates.days(model_initial_date - plot_initial_date - Day(3))
 
-    (modeldf, realdf)
+    realdf = realdf[(end - Dates.days(plot_period)):end, :]
+    if ndays > 3
+        model = model_step(model, -ndays; initial_date = plot_initial_date)
+    end
+    modeldf = @where(
+        modeldata(model),
+        (:date .<= realdf.date[end]) .& (:date .>= plot_initial_date)
+    )
+
+    columns = intersect(columns, Symbol.(names(modeldf)), Symbol.(names(realdf)))
+    rcolumns = [Symbol(sym, " (real)") for sym ∈ columns]
+    mcolumns = [Symbol(sym, " (model)") for sym ∈ columns]
+
+    realdf = select(realdf, :date, (columns .=> rcolumns)...)
+    modeldf = select(modeldf, :date, (columns .=> mcolumns)...)
+
+    @debug "Model dataframes computed" _debuginfo(realdf) _debuginfo(modeldf)
+    (leftjoin(realdf, modeldf; on = :date), [rcolumns; mcolumns])
 end
 
 function model_plot(
     model::SEIRModel;
     columns = option(:plot_columns),
     new_window::Bool = true,
-    title_realdata = nothing,
-    title_modeldata = nothing,
+    title = nothing,
     kwargs...,
 )
-    (modeldf, realdf) = model_validate(model; columns = columns, kwargs...)
-    title_realdata = something(title_realdata, _get_plot_title(realdf) * " (real)")
-    title_modeldata = something(title_modeldata, _get_plot_title(realdf) * " (model)")
+    (df, columns) = model_combined_data(model; columns = columns, kwargs...)
+    title = something(title, _get_plot_title(realdata(model)))
 
-    rplot = model_plot(
-        realdf;
-        title = title_realdata,
-        new_window = false,
+    model_plot(
+        df;
+        title = title,
+        new_window = new_window,
         columns = columns,
         kwargs...,
     )
-    mplot = model_plot(
-        modeldf;
-        title = title_modeldata,
-        new_window = false,
-        columns = columns,
-        kwargs...,
-    )
-    win = plot(rplot, mplot; layout = 2)
-    new_window && gui(win)
-    win
 end
 
 function model_plot(problem::ODEProblem; kwargs...)

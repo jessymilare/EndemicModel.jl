@@ -1,5 +1,5 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-13,TO,Arapoema,1,0,2,6709,1702307,8.3,8,2,6,,,,,,,,,,,,,,0.0,0.0,1192.428,0.0,298.107,298.107,894.321
+2020-05-13,TO,Arapoema,1,0,3,6709,1702307,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,1192.428,0.0,447.161,447.161,745.268
 2020-05-14,TO,Arapoema,0,0,0,6709,1702307,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
 2020-05-15,TO,Arapoema,0,0,0,6709,1702307,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
 2020-05-17,TO,Arapoema,0,0,0,6709,1702307,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
@@ -9,3 +9,4 @@ Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,I
 2020-05-21,TO,Arapoema,0,0,0,6709,1702307,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
 2020-05-22,TO,Arapoema,0,0,0,6709,1702307,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
 2020-05-25,TO,Arapoema,0,0,0,6709,1702307,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-26,TO,Arapoema,0,0,0,6709,1702307,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0

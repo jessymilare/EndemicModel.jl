@@ -156,7 +156,7 @@ end
 
 @defoption(
     plot_columns,
-    [:confirmed, :exposed, :active, :recovered, :deaths],
+    [:confirmed, :infected, :exposed, :active, :recovered, :deaths],
     "Columns of data to be ploted by `model_plot`.",
     Vector{Symbol},
 )

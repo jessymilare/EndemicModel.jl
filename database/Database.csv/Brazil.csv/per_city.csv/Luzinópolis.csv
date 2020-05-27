@@ -1,3 +1,4 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-22,TO,Luzinópolis,2,0,5,3139,1712454,8.3,17,5,12,,,,,,,,,,,,,,0.0,0.0,5415.737,0.0,1592.864,1592.864,3822.874
+2020-05-22,TO,Luzinópolis,2,0,7,3139,1712454,8.3,17,7,10,,,,,,,,,,,,,,0.0,0.0,5415.737,0.0,2230.01,2230.01,3185.728
 2020-05-25,TO,Luzinópolis,1,1,3,3139,1712454,8.3,8,4,4,,,,,,,,,,,,,,0.25,0.125,2548.582,318.573,955.718,1274.291,1274.291
+2020-05-26,TO,Luzinópolis,2,0,7,3139,1712454,8.3,17,7,10,,,,,,,,,,,,,,0.0,0.0,5415.737,0.0,2230.01,2230.01,3185.728
