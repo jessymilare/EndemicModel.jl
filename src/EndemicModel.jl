@@ -6,6 +6,7 @@ module EndemicModel
 import Base.Iterators
 import CSV
 import JSON
+import Measures: mm
 import ZipFile
 
 using ArgCheck

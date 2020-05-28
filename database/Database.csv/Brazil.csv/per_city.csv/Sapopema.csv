@@ -1,6 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-21,PR,Sapopema,1,0,3,6803,4126207,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,1175.952,0.0,440.982,440.982,734.97
-2020-05-22,PR,Sapopema,1,0,3,6803,4126207,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,1175.952,0.0,440.982,440.982,734.97
-2020-05-23,PR,Sapopema,2,1,7,6803,4126207,8.3,17,8,9,,,,,,,,,,,,,,0.125,0.05882,2498.898,146.994,1028.958,1175.952,1322.946
-2020-05-24,PR,Sapopema,5,1,17,6803,4126207,8.3,42,18,24,,,,,,,,,,,,,,0.05556,0.02381,6173.747,146.994,2498.898,2645.892,3527.855
-2020-05-25,PR,Sapopema,7,1,24,6803,4126207,8.3,58,25,33,,,,,,,,,,,,,,0.04,0.01724,8525.65,146.994,3527.855,3674.849,4850.801

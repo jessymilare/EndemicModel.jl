@@ -1,0 +1,8 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-21,PE,Parnamirim,1,0,3,22230,2610400,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,359.874,0.0,134.953,134.953,224.921
+2020-05-22,PE,Parnamirim,2,0,7,22230,2610400,8.3,17,7,10,,,,,,,,,,,,,,0.0,0.0,764.732,0.0,314.89,314.89,449.843
+2020-05-23,PE,Parnamirim,2,0,7,22230,2610400,8.3,17,7,10,,,,,,,,,,,,,,0.0,0.0,764.732,0.0,314.89,314.89,449.843
+2020-05-24,PE,Parnamirim,3,0,10,22230,2610400,8.3,25,10,15,4.167,1.667,,,,,,,,,,,,0.0,0.0,1124.606,0.0,449.843,449.843,674.764
+2020-05-25,PE,Parnamirim,4,0,14,22230,2610400,8.3,33,14,19,,,,,,,,,,,,,,0.0,0.0,1484.48,0.0,629.78,629.78,854.701
+2020-05-26,PE,Parnamirim,4,0,13,22230,2610400,8.3,33,13,20,,,,,,,,,,,,,,0.0,0.0,1484.48,0.0,584.795,584.795,899.685
+2020-05-27,PE,Parnamirim,4,0,13,22230,2610400,8.3,33,13,20,,,,,,,,,,,,,,0.0,0.0,1484.48,0.0,584.795,584.795,899.685

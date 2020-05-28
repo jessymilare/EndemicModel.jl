@@ -1,0 +1,9 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-19,MA,Tasso Fragoso,1,0,3,8606,2112001,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,929.584,0.0,348.594,348.594,580.99
+2020-05-20,MA,Tasso Fragoso,1,0,3,8606,2112001,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,929.584,0.0,348.594,348.594,580.99
+2020-05-21,MA,Tasso Fragoso,1,0,3,8606,2112001,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,929.584,0.0,348.594,348.594,580.99
+2020-05-22,MA,Tasso Fragoso,1,0,3,8606,2112001,8.3,8,3,5,1.5,0.6667,,,,,,,,,,,,0.0,0.0,929.584,0.0,348.594,348.594,580.99
+2020-05-23,MA,Tasso Fragoso,1,0,3,8606,2112001,8.3,8,3,5,2.833,1.167,,,,,,,,,,,,0.0,0.0,929.584,0.0,348.594,348.594,580.99
+2020-05-24,MA,Tasso Fragoso,2,0,7,8606,2112001,8.3,17,7,10,,,,,,,,,,,,,,0.0,0.0,1975.366,0.0,813.386,813.386,1161.98
+2020-05-25,MA,Tasso Fragoso,2,0,7,8606,2112001,8.3,17,7,10,,,,,,,,,,,,,,0.0,0.0,1975.366,0.0,813.386,813.386,1161.98
+2020-05-26,MA,Tasso Fragoso,3,0,10,8606,2112001,8.3,25,10,15,,,,,,,,,,,,,,0.0,0.0,2904.95,0.0,1161.98,1161.98,1742.97

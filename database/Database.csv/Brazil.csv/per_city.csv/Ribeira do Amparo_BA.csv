@@ -1,0 +1,5 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-23,BA,Ribeira do Amparo,1,0,3,14738,2926509,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,542.814,0.0,203.555,203.555,339.259
+2020-05-24,BA,Ribeira do Amparo,1,0,3,14738,2926509,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,542.814,0.0,203.555,203.555,339.259
+2020-05-25,BA,Ribeira do Amparo,1,0,3,14738,2926509,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,542.814,0.0,203.555,203.555,339.259
+2020-05-26,BA,Ribeira do Amparo,1,0,3,14738,2926509,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,542.814,0.0,203.555,203.555,339.259

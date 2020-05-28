@@ -1,7 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-21,MT,Matupá,4,0,16,16732,5105606,10.0,40,16,24,,,,,,,,,,,,,,0.0,0.0,2390.629,0.0,956.251,956.251,1434.377
-2020-05-22,MT,Matupá,4,0,16,16732,5105606,10.0,40,16,24,,,,,,,,,,,,,,0.0,0.0,2390.629,0.0,956.251,956.251,1434.377
-2020-05-23,MT,Matupá,4,0,16,16732,5105606,10.0,40,16,24,,,,,,,,,,,,,,0.0,0.0,2390.629,0.0,956.251,956.251,1434.377
-2020-05-24,MT,Matupá,4,0,17,16732,5105606,10.0,40,17,23,,,,,,,,,,,,,,0.0,0.0,2390.629,0.0,1016.017,1016.017,1374.612
-2020-05-25,MT,Matupá,4,0,16,16732,5105606,10.0,40,16,24,,,,,,,,,,,,,,0.0,0.0,2390.629,0.0,956.251,956.251,1434.377
-2020-05-26,MT,Matupá,5,0,20,16732,5105606,10.0,50,20,30,,,,,,,,,,,,,,0.0,0.0,2988.286,0.0,1195.314,1195.314,1792.972

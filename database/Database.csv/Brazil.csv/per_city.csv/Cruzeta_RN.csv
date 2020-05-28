@@ -1,0 +1,7 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-20,RN,Cruzeta,1,0,3,8078,2403004,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,990.344,0.0,371.379,371.379,618.965
+2020-05-21,RN,Cruzeta,4,0,13,8078,2403004,8.3,33,13,20,,,,,,,,,,,,,,0.0,0.0,4085.17,0.0,1609.309,1609.309,2475.86
+2020-05-22,RN,Cruzeta,4,0,14,8078,2403004,8.3,33,14,19,,,,,,,,,,,,,,0.0,0.0,4085.17,0.0,1733.102,1733.102,2352.067
+2020-05-24,RN,Cruzeta,5,0,17,8078,2403004,8.3,42,17,25,,,,,,,,,,,,,,0.0,0.0,5199.307,0.0,2104.481,2104.481,3094.825
+2020-05-25,RN,Cruzeta,6,0,21,8078,2403004,8.3,50,21,29,,,,,,,,,,,,,,0.0,0.0,6189.651,0.0,2599.653,2599.653,3589.998
+2020-05-26,RN,Cruzeta,6,0,20,8078,2403004,8.3,50,20,30,,,,,,,,,,,,,,0.0,0.0,6189.651,0.0,2475.86,2475.86,3713.791

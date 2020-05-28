@@ -113,7 +113,7 @@ end
     (confirmed, recovered, deaths, infected) => identity,
 ]
 
-@defgroup per_city(cities2) (city,) [
+@defgroup per_city(cities2) (city, state) [
     (state, date, city_ibge_code) => identity,
     (estimated_population,) => identity,
     (confirmed, recovered, deaths, infected) => identity,

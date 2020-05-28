@@ -1,5 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-22,BA,Itaeté,16,0,54,16217,2915007,8.3,133,54,79,,,,,,,,,,,,,,0.0,0.0,8201.27,0.0,3329.839,3329.839,4871.431
-2020-05-23,BA,Itaeté,16,0,55,16217,2915007,8.3,133,55,78,,,,,,,,,,,,,,0.0,0.0,8201.27,0.0,3391.503,3391.503,4809.768
-2020-05-24,BA,Itaeté,18,0,61,16217,2915007,8.3,149,61,88,,,,,,,,,,,,,,0.0,0.0,9187.889,0.0,3761.485,3761.485,5426.404
-2020-05-25,BA,Itaeté,18,0,61,16217,2915007,8.3,149,61,88,,,,,,,,,,,,,,0.0,0.0,9187.889,0.0,3761.485,3761.485,5426.404

@@ -1,5 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-23,AL,Estrela de Alagoas,1,0,3,18387,2702553,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,435.09,0.0,163.159,163.159,271.931
-2020-05-24,AL,Estrela de Alagoas,1,0,3,18387,2702553,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,435.09,0.0,163.159,163.159,271.931
-2020-05-25,AL,Estrela de Alagoas,1,0,3,18387,2702553,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,435.09,0.0,163.159,163.159,271.931
-2020-05-26,AL,Estrela de Alagoas,2,0,7,18387,2702553,8.3,17,7,10,,,,,,,,,,,,,,0.0,0.0,924.566,0.0,380.704,380.704,543.863

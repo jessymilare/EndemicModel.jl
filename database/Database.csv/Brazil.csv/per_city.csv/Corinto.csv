@@ -1,5 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-22,MG,Corinto,1,0,7,23968,3119104,16.5,16,7,9,,,,,,,,,,,,,,0.0,0.0,667.557,0.0,292.056,292.056,375.501
-2020-05-23,MG,Corinto,1,0,7,23968,3119104,16.5,16,7,9,,,,,,,,,,,,,,0.0,0.0,667.557,0.0,292.056,292.056,375.501
-2020-05-24,MG,Corinto,2,0,14,23968,3119104,16.5,33,14,19,,,,,,,,,,,,,,0.0,0.0,1376.836,0.0,584.112,584.112,792.724
-2020-05-25,MG,Corinto,2,0,14,23968,3119104,16.5,33,14,19,,,,,,,,,,,,,,0.0,0.0,1376.836,0.0,584.112,584.112,792.724

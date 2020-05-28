@@ -1,5 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-23,PI,Cristino Castro,1,1,15,10527,2203107,36.0,36,16,20,,,,,,,,,,,,,,0.0625,0.02778,3419.778,94.994,1424.907,1519.901,1899.877
-2020-05-24,PI,Cristino Castro,1,1,15,10527,2203107,36.0,36,16,20,,,,,,,,,,,,,,0.0625,0.02778,3419.778,94.994,1424.907,1519.901,1899.877
-2020-05-25,PI,Cristino Castro,1,1,15,10527,2203107,36.0,36,16,20,,,,,,,,,,,,,,0.0625,0.02778,3419.778,94.994,1424.907,1519.901,1899.877
-2020-05-26,PI,Cristino Castro,2,1,29,10527,2203107,36.0,72,30,42,,,,,,,,,,,,,,0.03333,0.01389,6839.555,94.994,2754.821,2849.815,3989.741

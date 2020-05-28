@@ -1,0 +1,7 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-22,PI,Bocaina,2,0,29,4545,2201804,36.0,72,29,43,,,,,,,,,,,,,,0.0,0.0,15841.584,0.0,6380.638,6380.638,9460.946
+2020-05-23,PI,Bocaina,2,0,30,4545,2201804,36.0,72,30,42,,,,,,,,,,,,,,0.0,0.0,15841.584,0.0,6600.66,6600.66,9240.924
+2020-05-24,PI,Bocaina,3,0,45,4545,2201804,36.0,108,45,63,,,,,,,,,,,,,,0.0,0.0,23762.376,0.0,9900.99,9900.99,13861.386
+2020-05-25,PI,Bocaina,4,0,59,4545,2201804,36.0,144,59,85,,,,,,,,,,,,,,0.0,0.0,31683.168,0.0,12981.298,12981.298,18701.87
+2020-05-26,PI,Bocaina,4,0,58,4545,2201804,36.0,144,58,86,,,,,,,,,,,,,,0.0,0.0,31683.168,0.0,12761.276,12761.276,18921.892
+2020-05-27,PI,Bocaina,4,0,58,4545,2201804,36.0,144,58,86,,,,,,,,,,,,,,0.0,0.0,31683.168,0.0,12761.276,12761.276,18921.892

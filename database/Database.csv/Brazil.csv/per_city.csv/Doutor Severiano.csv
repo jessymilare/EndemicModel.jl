@@ -1,6 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-20,RN,Doutor Severiano,1,0,3,7147,2403202,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,1119.351,0.0,419.757,419.757,699.594
-2020-05-21,RN,Doutor Severiano,3,0,10,7147,2403202,8.3,25,10,15,,,,,,,,,,,,,,0.0,0.0,3497.971,0.0,1399.188,1399.188,2098.783
-2020-05-22,RN,Doutor Severiano,4,0,14,7147,2403202,8.3,33,14,19,,,,,,,,,,,,,,0.0,0.0,4617.322,0.0,1958.864,1958.864,2658.458
-2020-05-24,RN,Doutor Severiano,6,0,21,7147,2403202,8.3,50,21,29,,,,,,,,,,,,,,0.0,0.0,6995.942,0.0,2938.296,2938.296,4057.647
-2020-05-25,RN,Doutor Severiano,6,0,21,7147,2403202,8.3,50,21,29,,,,,,,,,,,,,,0.0,0.0,6995.942,0.0,2938.296,2938.296,4057.647

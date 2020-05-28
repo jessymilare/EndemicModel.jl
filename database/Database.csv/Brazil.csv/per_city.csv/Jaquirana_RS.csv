@@ -1,0 +1,8 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-21,RS,Jaquirana,1,0,3,3753,4311122,8.4,8,3,5,,,,,,,,,,,,,,0.0,0.0,2131.628,0.0,799.361,799.361,1332.268
+2020-05-22,RS,Jaquirana,2,0,7,3753,4311122,8.4,17,7,10,,,,,,,,,,,,,,0.0,0.0,4529.71,0.0,1865.175,1865.175,2664.535
+2020-05-23,RS,Jaquirana,2,0,7,3753,4311122,8.4,17,7,10,,,,,,,,,,,,,,0.0,0.0,4529.71,0.0,1865.175,1865.175,2664.535
+2020-05-24,RS,Jaquirana,2,0,7,3753,4311122,8.4,17,7,10,1.5,0.6667,,,,,,,,,,,,0.0,0.0,4529.71,0.0,1865.175,1865.175,2664.535
+2020-05-25,RS,Jaquirana,2,0,7,3753,4311122,8.4,17,7,10,,,,,,,,,,,,,,0.0,0.0,4529.71,0.0,1865.175,1865.175,2664.535
+2020-05-26,RS,Jaquirana,2,0,7,3753,4311122,8.4,17,7,10,,,,,,,,,,,,,,0.0,0.0,4529.71,0.0,1865.175,1865.175,2664.535
+2020-05-27,RS,Jaquirana,2,0,7,3753,4311122,8.4,17,7,10,,,,,,,,,,,,,,0.0,0.0,4529.71,0.0,1865.175,1865.175,2664.535

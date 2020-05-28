@@ -1,9 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-19,SC,Imbuia,1,0,10,6259,4207403,25.0,25,10,15,,,,,,,,,,,,,,0.0,0.0,3994.248,0.0,1597.699,1597.699,2396.549
-2020-05-20,SC,Imbuia,1,0,10,6259,4207403,25.0,25,10,15,,,,,,,,,,,,,,0.0,0.0,3994.248,0.0,1597.699,1597.699,2396.549
-2020-05-21,SC,Imbuia,1,0,10,6259,4207403,25.0,25,10,15,,,,,,,,,,,,,,0.0,0.0,3994.248,0.0,1597.699,1597.699,2396.549
-2020-05-22,SC,Imbuia,1,0,10,6259,4207403,25.0,25,10,15,-4.16667,-1.66667,,,,,,,,,,,,0.0,0.0,3994.248,0.0,1597.699,1597.699,2396.549
-2020-05-23,SC,Imbuia,0,0,0,6259,4207403,25.0,0,0,0,0.0,0.0,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-05-24,SC,Imbuia,0,0,0,6259,4207403,25.0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-05-25,SC,Imbuia,0,0,0,6259,4207403,25.0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-05-26,SC,Imbuia,1,0,10,6259,4207403,25.0,25,10,15,,,,,,,,,,,,,,0.0,0.0,3994.248,0.0,1597.699,1597.699,2396.549

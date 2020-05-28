@@ -1,5 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-22,PB,Ouro Velho,1,0,3,3069,2510600,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,2606.712,0.0,977.517,977.517,1629.195
-2020-05-23,PB,Ouro Velho,1,0,3,3069,2510600,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,2606.712,0.0,977.517,977.517,1629.195
-2020-05-24,PB,Ouro Velho,1,0,3,3069,2510600,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,2606.712,0.0,977.517,977.517,1629.195
-2020-05-25,PB,Ouro Velho,1,0,3,3069,2510600,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,2606.712,0.0,977.517,977.517,1629.195

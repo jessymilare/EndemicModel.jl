@@ -1,0 +1,9 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-20,MG,Rio Piracicaba,1,0,6,14482,3155702,16.5,16,6,10,,,,,,,,,,,,,,0.0,0.0,1104.82,0.0,414.307,414.307,690.512
+2020-05-21,MG,Rio Piracicaba,1,0,6,14482,3155702,16.5,16,6,10,,,,,,,,,,,,,,0.0,0.0,1104.82,0.0,414.307,414.307,690.512
+2020-05-22,MG,Rio Piracicaba,1,0,7,14482,3155702,16.5,16,7,9,,,,,,,,,,,,,,0.0,0.0,1104.82,0.0,483.359,483.359,621.461
+2020-05-23,MG,Rio Piracicaba,1,0,7,14482,3155702,16.5,16,7,9,8.333,3.5,,,,,,,,,,,,0.0,0.0,1104.82,0.0,483.359,483.359,621.461
+2020-05-24,MG,Rio Piracicaba,1,0,7,14482,3155702,16.5,16,7,9,22.0,9.0,,,,,,,,,,,,0.0,0.0,1104.82,0.0,483.359,483.359,621.461
+2020-05-25,MG,Rio Piracicaba,2,0,14,14482,3155702,16.5,33,14,19,,,,,,,,,,,,,,0.0,0.0,2278.691,0.0,966.717,966.717,1311.973
+2020-05-26,MG,Rio Piracicaba,4,0,27,14482,3155702,16.5,66,27,39,,,,,,,,,,,,,,0.0,0.0,4557.382,0.0,1864.383,1864.383,2692.998
+2020-05-27,MG,Rio Piracicaba,9,0,60,14482,3155702,16.5,148,60,88,,,,,,,,,,,,,,0.0,0.0,10219.583,0.0,4143.074,4143.074,6076.509

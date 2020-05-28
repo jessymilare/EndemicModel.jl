@@ -1,7 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-19,RO,Vale do Paraíso,5,0,16,6893,1101807,8.3,42,16,26,,,,,,,,,,,,,,0.0,0.0,6093.138,0.0,2321.195,2321.195,3771.943
-2020-05-20,RO,Vale do Paraíso,5,0,17,6893,1101807,8.3,42,17,25,,,,,,,,,,,,,,0.0,0.0,6093.138,0.0,2466.27,2466.27,3626.868
-2020-05-22,RO,Vale do Paraíso,5,0,17,6893,1101807,8.3,42,17,25,,,,,,,,,,,,,,0.0,0.0,6093.138,0.0,2466.27,2466.27,3626.868
-2020-05-23,RO,Vale do Paraíso,6,0,21,6893,1101807,8.3,50,21,29,,,,,,,,,,,,,,0.0,0.0,7253.736,0.0,3046.569,3046.569,4207.167
-2020-05-24,RO,Vale do Paraíso,5,0,17,6893,1101807,8.3,42,17,25,,,,,,,,,,,,,,0.0,0.0,6093.138,0.0,2466.27,2466.27,3626.868
-2020-05-25,RO,Vale do Paraíso,5,0,17,6893,1101807,8.3,42,17,25,,,,,,,,,,,,,,0.0,0.0,6093.138,0.0,2466.27,2466.27,3626.868

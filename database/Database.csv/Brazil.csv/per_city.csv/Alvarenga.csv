@@ -1,9 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-18,MG,Alvarenga,2,0,13,3946,3102209,16.5,33,13,20,,,,,,,,,,,,,,0.0,0.0,8362.899,0.0,3294.475,3294.475,5068.424
-2020-05-19,MG,Alvarenga,2,0,13,3946,3102209,16.5,33,13,20,,,,,,,,,,,,,,0.0,0.0,8362.899,0.0,3294.475,3294.475,5068.424
-2020-05-20,MG,Alvarenga,3,0,20,3946,3102209,16.5,50,20,30,,,,,,,,,,,,,,0.0,0.0,12671.059,0.0,5068.424,5068.424,7602.636
-2020-05-21,MG,Alvarenga,3,0,20,3946,3102209,16.5,50,20,30,19.167,8.0,,,,,,,,,,,,0.0,0.0,12671.059,0.0,5068.424,5068.424,7602.636
-2020-05-22,MG,Alvarenga,9,0,61,3946,3102209,16.5,148,61,87,22.0,9.167,,,,,,,,,,,,0.0,0.0,37506.336,0.0,15458.692,15458.692,22047.643
-2020-05-23,MG,Alvarenga,9,0,61,3946,3102209,16.5,148,61,87,,,,,,,,,,,,,,0.0,0.0,37506.336,0.0,15458.692,15458.692,22047.643
-2020-05-24,MG,Alvarenga,9,0,61,3946,3102209,16.5,148,61,87,,,,,,,,,,,,,,0.0,0.0,37506.336,0.0,15458.692,15458.692,22047.643
-2020-05-25,MG,Alvarenga,10,0,68,3946,3102209,16.5,165,68,97,,,,,,,,,,,,,,0.0,0.0,41814.496,0.0,17232.641,17232.641,24581.855

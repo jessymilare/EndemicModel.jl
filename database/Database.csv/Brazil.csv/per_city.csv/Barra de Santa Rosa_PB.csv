@@ -1,0 +1,7 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-21,PB,Barra de Santa Rosa,1,0,3,15538,2501609,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,514.867,0.0,193.075,193.075,321.792
+2020-05-22,PB,Barra de Santa Rosa,1,0,3,15538,2501609,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,514.867,0.0,193.075,193.075,321.792
+2020-05-23,PB,Barra de Santa Rosa,1,0,3,15538,2501609,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,514.867,0.0,193.075,193.075,321.792
+2020-05-24,PB,Barra de Santa Rosa,1,0,3,15538,2501609,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,514.867,0.0,193.075,193.075,321.792
+2020-05-25,PB,Barra de Santa Rosa,1,0,3,15538,2501609,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,514.867,0.0,193.075,193.075,321.792
+2020-05-26,PB,Barra de Santa Rosa,4,0,13,15538,2501609,8.3,33,13,20,,,,,,,,,,,,,,0.0,0.0,2123.825,0.0,836.659,836.659,1287.167

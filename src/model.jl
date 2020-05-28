@@ -443,6 +443,7 @@ function model_plot(
     ylabel = nothing,
     yfactor = nothing,
     legend = :right,
+    left_margin = 5mm,
     kwargs...,
 )
     columns = intersect(Symbol.(columns), Symbol.(names(df)))
@@ -476,6 +477,7 @@ function model_plot(
         ylabel = ylabel,
         title = title,
         legend = legend,
+        left_margin = left_margin,
     )
     for (yn, label) ∈ zip(columns[2:end], labels[2:end])
         plot!(win, X, df[!, yn] .* yfactor; label = label)
@@ -487,7 +489,7 @@ end
 function model_combined_data(
     model::SEIRModel;
     columns = option(:plot_columns),
-    plot_period = Day(10),
+    plot_period = Day(7),
     kwargs...,
 )
     columns = Symbol.(columns)
@@ -498,7 +500,7 @@ function model_combined_data(
     ndays = Dates.days(model_initial_date - plot_initial_date - Day(3))
 
     realdf = realdf[(end - Dates.days(plot_period)):end, :]
-    if ndays > 3
+    if ndays > 1
         model = model_step(model, -ndays; initial_date = plot_initial_date)
     end
     modeldf = @where(

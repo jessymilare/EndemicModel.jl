@@ -1,5 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-22,MA,Benedito Leite,2,0,7,5688,2101806,8.3,17,7,10,,,,,,,,,,,,,,0.0,0.0,2988.748,0.0,1230.661,1230.661,1758.087
-2020-05-23,MA,Benedito Leite,3,0,10,5688,2101806,8.3,25,10,15,,,,,,,,,,,,,,0.0,0.0,4395.218,0.0,1758.087,1758.087,2637.131
-2020-05-24,MA,Benedito Leite,3,0,10,5688,2101806,8.3,25,10,15,,,,,,,,,,,,,,0.0,0.0,4395.218,0.0,1758.087,1758.087,2637.131
-2020-05-25,MA,Benedito Leite,2,0,7,5688,2101806,8.3,17,7,10,,,,,,,,,,,,,,0.0,0.0,2988.748,0.0,1230.661,1230.661,1758.087

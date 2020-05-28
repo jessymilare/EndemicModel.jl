@@ -1,8 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-20,MT,Novo Mundo,1,0,4,9270,5106265,10.0,10,4,6,,,,,,,,,,,,,,0.0,0.0,1078.749,0.0,431.499,431.499,647.249
-2020-05-21,MT,Novo Mundo,1,0,4,9270,5106265,10.0,10,4,6,,,,,,,,,,,,,,0.0,0.0,1078.749,0.0,431.499,431.499,647.249
-2020-05-22,MT,Novo Mundo,1,0,4,9270,5106265,10.0,10,4,6,,,,,,,,,,,,,,0.0,0.0,1078.749,0.0,431.499,431.499,647.249
-2020-05-23,MT,Novo Mundo,1,0,4,9270,5106265,10.0,10,4,6,13.333,5.333,,,,,,,,,,,,0.0,0.0,1078.749,0.0,431.499,431.499,647.249
-2020-05-24,MT,Novo Mundo,1,0,4,9270,5106265,10.0,10,4,6,,,,,,,,,,,,,,0.0,0.0,1078.749,0.0,431.499,431.499,647.249
-2020-05-25,MT,Novo Mundo,1,0,4,9270,5106265,10.0,10,4,6,,,,,,,,,,,,,,0.0,0.0,1078.749,0.0,431.499,431.499,647.249
-2020-05-26,MT,Novo Mundo,9,0,36,9270,5106265,10.0,90,36,54,,,,,,,,,,,,,,0.0,0.0,9708.738,0.0,3883.495,3883.495,5825.243

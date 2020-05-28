@@ -1,0 +1,9 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-20,MT,Bom Jesus do Araguaia,1,0,4,6646,5101852,10.0,10,4,6,,,,,,,,,,,,,,0.0,0.0,1504.664,0.0,601.866,601.866,902.799
+2020-05-21,MT,Bom Jesus do Araguaia,1,0,4,6646,5101852,10.0,10,4,6,,,,,,,,,,,,,,0.0,0.0,1504.664,0.0,601.866,601.866,902.799
+2020-05-22,MT,Bom Jesus do Araguaia,2,0,8,6646,5101852,10.0,20,8,12,,,,,,,,,,,,,,0.0,0.0,3009.329,0.0,1203.732,1203.732,1805.597
+2020-05-23,MT,Bom Jesus do Araguaia,2,0,8,6646,5101852,10.0,20,8,12,1.667,0.6667,,,,,,,,,,,,0.0,0.0,3009.329,0.0,1203.732,1203.732,1805.597
+2020-05-24,MT,Bom Jesus do Araguaia,2,0,8,6646,5101852,10.0,20,8,12,1.667,0.6667,,,,,,,,,,,,0.0,0.0,3009.329,0.0,1203.732,1203.732,1805.597
+2020-05-25,MT,Bom Jesus do Araguaia,2,0,8,6646,5101852,10.0,20,8,12,,,,,,,,,,,,,,0.0,0.0,3009.329,0.0,1203.732,1203.732,1805.597
+2020-05-26,MT,Bom Jesus do Araguaia,2,0,8,6646,5101852,10.0,20,8,12,,,,,,,,,,,,,,0.0,0.0,3009.329,0.0,1203.732,1203.732,1805.597
+2020-05-27,MT,Bom Jesus do Araguaia,2,0,8,6646,5101852,10.0,20,8,12,,,,,,,,,,,,,,0.0,0.0,3009.329,0.0,1203.732,1203.732,1805.597

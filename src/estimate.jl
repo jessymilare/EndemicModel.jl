@@ -9,7 +9,7 @@ const MIN_α = 0.01
 const MAX_α = 0.5
 const MIN_γ = 0.01
 const MAX_γ = 1.0
-const MIN_β = 0.01
+const MIN_β = 0.001
 const MAX_β = 0.5
 
 const SEIR_σ_NAMES = (:σ_β, :σ_γ, :σ_α, :σ_μ, :σ_E)
@@ -168,7 +168,7 @@ optimize_parameters!(data; kwargs...) = data
 
 function search_parameters(model::AbstractEndemicModel) end
 
-function estimate_μ(data::AbstractDataFrame; ndays = 7, kwargs...)
+function estimate_μ(data::AbstractDataFrame; ndays = 14, kwargs...)
     deaths, recovered = data.deaths, data.recovered
     deaths[end] == 0 && return [NaN]
     ind1 = findfirst(.!ismissing.(deaths) .& (deaths .> 0))
@@ -198,7 +198,7 @@ estimate_μ(model::AbstractEndemicModel; kwargs...) =
 
 function estimate_α(
     data::AbstractDataFrame;
-    ndays = 7,
+    ndays = 14,
     μ_pair = estimate_μ(data),
     kwargs...,
 )
@@ -251,7 +251,7 @@ end
 
 function estimate_γ(
     data::AbstractDataFrame;
-    ndays = 10,
+    ndays = 14,
     μ_pair = estimate_μ(data),
     α_pair = estimate_α(data; μ_pair = μ_pair),
     kwargs...,
@@ -287,7 +287,7 @@ estimate_γ(model::AbstractEndemicModel; kwargs...) =
 
 function estimate_β(
     data::AbstractDataFrame;
-    ndays = 7,
+    ndays = 14,
     μ_pair = estimate_μ(data),
     α_pair = estimate_α(data; μ_pair = μ_pair),
     γ_pair = estimate_γ(data; μ_pair = μ_pair, α_pair = α_pair),

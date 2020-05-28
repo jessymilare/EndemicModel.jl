@@ -1,9 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-18,MA,Tufilândia,1,0,3,5898,2112274,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,1356.392,0.0,508.647,508.647,847.745
-2020-05-19,MA,Tufilândia,1,0,3,5898,2112274,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,1356.392,0.0,508.647,508.647,847.745
-2020-05-20,MA,Tufilândia,1,0,3,5898,2112274,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,1356.392,0.0,508.647,508.647,847.745
-2020-05-21,MA,Tufilândia,1,0,3,5898,2112274,8.3,8,3,5,15.333,6.333,,,,,,,,,,,,0.0,0.0,1356.392,0.0,508.647,508.647,847.745
-2020-05-22,MA,Tufilândia,1,0,3,5898,2112274,8.3,8,3,5,15.333,6.333,,,,,,,,,,,,0.0,0.0,1356.392,0.0,508.647,508.647,847.745
-2020-05-23,MA,Tufilândia,12,1,41,5898,2112274,8.3,100,42,58,,,,,,,,,,,,,,0.02381,0.01,16954.9,169.549,6951.509,7121.058,9833.842
-2020-05-24,MA,Tufilândia,12,1,41,5898,2112274,8.3,100,42,58,,,,,,,,,,,,,,0.02381,0.01,16954.9,169.549,6951.509,7121.058,9833.842
-2020-05-25,MA,Tufilândia,12,1,41,5898,2112274,8.3,100,42,58,,,,,,,,,,,,,,0.02381,0.01,16954.9,169.549,6951.509,7121.058,9833.842

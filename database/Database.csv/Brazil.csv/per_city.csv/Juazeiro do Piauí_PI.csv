@@ -1,0 +1,10 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-05-19,PI,Juazeiro do Piauí,1,0,14,5533,2205516,36.0,36,14,22,,,,,,,,,,,,,,0.0,0.0,6506.416,0.0,2530.273,2530.273,3976.143
+2020-05-20,PI,Juazeiro do Piauí,1,0,14,5533,2205516,36.0,36,14,22,,,,,,,,,,,,,,0.0,0.0,6506.416,0.0,2530.273,2530.273,3976.143
+2020-05-21,PI,Juazeiro do Piauí,3,0,44,5533,2205516,36.0,108,44,64,,,,,,,,,,,,,,0.0,0.0,19519.248,0.0,7952.286,7952.286,11566.962
+2020-05-22,PI,Juazeiro do Piauí,5,0,74,5533,2205516,36.0,180,74,106,24.0,10.0,,,,,,,,,,,,0.0,0.0,32532.08,0.0,13374.3,13374.3,19157.781
+2020-05-23,PI,Juazeiro do Piauí,5,0,74,5533,2205516,36.0,180,74,106,24.0,9.833,,,,,,,,,,,,0.0,0.0,32532.08,0.0,13374.3,13374.3,19157.781
+2020-05-24,PI,Juazeiro do Piauí,5,0,74,5533,2205516,36.0,180,74,106,12.0,4.833,,,,,,,,,,,,0.0,0.0,32532.08,0.0,13374.3,13374.3,19157.781
+2020-05-25,PI,Juazeiro do Piauí,5,0,74,5533,2205516,36.0,180,74,106,,,,,,,,,,,,,,0.0,0.0,32532.08,0.0,13374.3,13374.3,19157.781
+2020-05-26,PI,Juazeiro do Piauí,5,0,73,5533,2205516,36.0,180,73,107,,,,,,,,,,,,,,0.0,0.0,32532.08,0.0,13193.566,13193.566,19338.514
+2020-05-27,PI,Juazeiro do Piauí,5,0,73,5533,2205516,36.0,180,73,107,,,,,,,,,,,,,,0.0,0.0,32532.08,0.0,13193.566,13193.566,19338.514

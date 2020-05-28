@@ -1,6 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-22,MT,Juína,5,1,20,41407,5105150,10.0,50,21,29,,,,,,,,,,,,,,0.04762,0.02,1207.525,24.151,483.01,507.161,700.365
-2020-05-23,MT,Juína,5,1,21,41407,5105150,10.0,50,22,28,,,,,,,,,,,,,,0.04545,0.02,1207.525,24.151,507.161,531.311,676.214
-2020-05-24,MT,Juína,5,1,21,41407,5105150,10.0,50,22,28,,,,,,,,,,,,,,0.04545,0.02,1207.525,24.151,507.161,531.311,676.214
-2020-05-25,MT,Juína,6,1,25,41407,5105150,10.0,60,26,34,,,,,,,,,,,,,,0.03846,0.01667,1449.03,24.151,603.763,627.913,821.117
-2020-05-26,MT,Juína,6,1,24,41407,5105150,10.0,60,25,35,,,,,,,,,,,,,,0.04,0.01667,1449.03,24.151,579.612,603.763,845.268
