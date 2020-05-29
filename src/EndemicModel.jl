@@ -27,7 +27,6 @@ using Unitful
 export DataDict,
     DataFrameDict,
     AbstractDataDict,
-
     AbstractDataSource,
     DataSourceDesignator,
     AbstractDataPath,
@@ -35,18 +34,14 @@ export DataDict,
     CsvDirectory,
     CsvPath,
     OdsPath,
-
     option,
     option!,
     get_parameters,
     to_json,
-
     DATA_SOURCES,
     import_data,
     export_data,
-
     Database,
-
     @defcolumn,
     @deftable,
     @defgroup,
@@ -56,7 +51,6 @@ export DataDict,
     column_creator,
     table_creator,
     table_grouper,
-
     SEIR_PARAMS,
     SEIR_DERIV,
     SEIR_VARS,
@@ -71,21 +65,19 @@ export DataDict,
     unpack_params,
     SEIR_ODE_fun,
     SEIR_ODEProblem,
-    model_plot,
+    modelplot,
     model_problem,
     model_solution,
     to_dataframe,
     to_dataframe!,
     model_validate,
     model_step,
-
     datadict,
     datadict!,
     modeldict,
     modeldict!,
     paramdict,
     paramdict!,
-
     variables,
     variables!,
     derivatives,
@@ -94,7 +86,6 @@ export DataDict,
     parameters!,
     modeldata,
     modeldata!,
-
     phuber_loss,
     diff_phuber_loss,
     l2_loss,
@@ -107,11 +98,10 @@ export DataDict,
     estimate_γ,
     estimate_β,
     estimate_exposed!,
-
     covid19_database,
     covid19
 
-const DATA_SOURCES = Dict{Symbol, Type}()
+const DATA_SOURCES = Dict{Symbol,Type}()
 
 include("utils.jl")
 include("options.jl")

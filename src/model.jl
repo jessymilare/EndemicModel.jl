@@ -43,9 +43,9 @@ export_data(source, model::AbstractEndemicModel; kwargs...) =
 const SEIR_VARS = (:S, :E, :I, :R)
 const SEIR_DERIV = (:dS, :dE, :dI, :dR)
 const SEIR_PARAMS = (:M, :β, :γ, :α, :μ)
-const SEIRVariables = NamedTuple{SEIR_VARS, NTuple{4, Vector{Float}}}
-const SEIRDerivatives = NamedTuple{SEIR_DERIV, NTuple{4, Vector{Float}}}
-const SEIRParameters = NamedTuple{SEIR_PARAMS, NTuple{5, Vector{Float}}}
+const SEIRVariables = NamedTuple{SEIR_VARS,NTuple{4,Vector{Float}}}
+const SEIRDerivatives = NamedTuple{SEIR_DERIV,NTuple{4,Vector{Float}}}
+const SEIRParameters = NamedTuple{SEIR_PARAMS,NTuple{5,Vector{Float}}}
 
 SEIRVariables(S, E, I, R) = SEIRVariables((S, E, I, R))
 SEIRDerivatives(dS, dE, dI, dR) = SEIRDerivatives((dS, dE, dI, dR))
@@ -143,17 +143,17 @@ mutable struct SEIRModel <: AbstractEndemicModel
     derivatives::SEIRDerivatives
     ngroups::Int
     groupnames::Vector{Symbol}
-    realdata::Union{Nothing, AbstractDataFrame}
-    modeldata::Union{Nothing, AbstractDataFrame}
-    kwargs::Dict{Symbol, Any}
+    realdata::Union{Nothing,AbstractDataFrame}
+    modeldata::Union{Nothing,AbstractDataFrame}
+    kwargs::Dict{Symbol,Any}
 
     function SEIRModel(
         vars::SEIRVariables,
         params::SEIRParameters;
         ngroups::Int = length(vars[1]),
         groupnames = nothing,
-        realdata::Union{Nothing, AbstractDataFrame} = nothing,
-        modeldata::Union{Nothing, AbstractDataFrame} = nothing,
+        realdata::Union{Nothing,AbstractDataFrame} = nothing,
+        modeldata::Union{Nothing,AbstractDataFrame} = nothing,
         kwargs...,
     )
         groupnames = something(
@@ -162,10 +162,9 @@ mutable struct SEIRModel <: AbstractEndemicModel
         )
         groupnames = collect(Symbol.(groupnames))
         deriv = _SEIR_derivative(vars, params)
-        info = Dict{Symbol, Any}(kwargs)
+        info = Dict{Symbol,Any}(kwargs)
 
-        model =
-            new(vars, params, deriv, ngroups, groupnames, realdata, modeldata, info)
+        model = new(vars, params, deriv, ngroups, groupnames, realdata, modeldata, info)
         isnothing(modeldata) && modeldata!(model, to_dataframe(model; kwargs...))
         model
     end
@@ -228,12 +227,7 @@ function model_step(model::SEIRModel, n::Int = 1; initial_date = nothing, kwargs
             n += 1
         end
     end
-    SEIRModel(
-        SEIRVariables(S, E, I, R),
-        params;
-        initial_date = initial_date,
-        kwargs...,
-    )
+    SEIRModel(SEIRVariables(S, E, I, R), params; initial_date = initial_date, kwargs...)
 end
 
 function pack_vars(S, E, I, R)
@@ -245,7 +239,7 @@ function pack_vars(S, E, I, R)
     result
 end
 
-function pack_vars(tup::Union{Tuple, NamedTuple})
+function pack_vars(tup::Union{Tuple,NamedTuple})
     pack_vars(tup...)
 end
 
@@ -432,7 +426,7 @@ function _get_plot_title(df)
     join(location, ", ")
 end
 
-function model_plot(
+function modelplot(
     df::DataFrame;
     columns = option(:plot_columns),
     labels = nothing,
@@ -501,7 +495,7 @@ function model_combined_data(
     plot_initial_date = realdf.date[end] - plot_period
     ndays = Dates.days(model_initial_date - plot_initial_date - Day(3))
 
-    realdf = realdf[(end - Dates.days(plot_period)):end, :]
+    realdf = realdf[(end-Dates.days(plot_period)):end, :]
     if ndays > 1
         model = model_step(model, -ndays; initial_date = plot_initial_date)
     end
@@ -521,7 +515,7 @@ function model_combined_data(
     (leftjoin(realdf, modeldf; on = :date), [rcolumns; mcolumns])
 end
 
-function model_plot(
+function modelplot(
     model::SEIRModel;
     columns = option(:plot_columns),
     new_window::Bool = true,
@@ -531,16 +525,10 @@ function model_plot(
     (df, columns) = model_combined_data(model; columns = columns, kwargs...)
     title = something(title, _get_plot_title(realdata(model)))
 
-    model_plot(
-        df;
-        title = title,
-        new_window = new_window,
-        columns = columns,
-        kwargs...,
-    )
+    modelplot(df; title = title, new_window = new_window, columns = columns, kwargs...)
 end
 
-function model_plot(problem::ODEProblem; kwargs...)
+function modelplot(problem::ODEProblem; kwargs...)
     df = to_dataframe(problem; kwargs...)
-    model_plot(df; kwargs...)
+    modelplot(df; kwargs...)
 end
