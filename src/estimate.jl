@@ -13,7 +13,7 @@ const MIN_β = 0.001
 const MAX_β = 0.5
 
 const SEIR_σ_NAMES = (:σ_β, :σ_γ, :σ_α, :σ_μ, :σ_E)
-const SEIRσ = NamedTuple{SEIR_σ_NAMES, NTuple{5, Float}}
+const SEIRσ = NamedTuple{SEIR_σ_NAMES,NTuple{5,Float}}
 
 SEIRσ(σ_β, σ_γ, σ_α, σ_μ, σ_E) = SEIRσ((σ_β, σ_γ, σ_α, σ_μ, σ_E))
 
@@ -98,8 +98,8 @@ function optimize_parameters!(
     lastparams = nothing
     model_params = parameters(model)
     function _calc_loss(arg)
-        params = arg[1:(end - n)]
-        newE = arg[(end - n + 1):end]
+        params = arg[1:(end-n)]
+        newE = arg[(end-n+1):end]
         newparams = unpack_params(
             params,
             model.ngroups;
@@ -303,6 +303,8 @@ function estimate_β(
     d1 = data.diff_infected
     d2 = data.diff2_infected
     I = data.active
+    M = data.estimated_population[1]
+    R = data.closed
 
     @debug(
         "Estimating β = (d²(I + R) + γ * d(I + R)) / (γ * I + d(I + R)).",
@@ -311,7 +313,8 @@ function estimate_β(
         I = Tuple(I),
         γ_pair = γ_pair,
     )
-    vals = (d2 .+ γ .* d1) ./ (γ .* I .+ d1)
+    s_inv = M ./ (M .- I .- R)
+    vals = s_inv .* (d2 .+ γ .* d1) ./ (γ .* I .+ d1)
     isempty(vals) && return (NaN, Inf)
     val = mean(vals)
     σ_β = StatsBase.std(vals; mean = val)
@@ -505,5 +508,4 @@ parameters(data::AbstractDict; kwargs...) =
 parameters!(data::AbstractDataDict; kwargs...) = parameters!(data, data; kwargs...)
 
 parameters(data::AbstractDatabase; kwargs...) = parameters(modeldict(data); kwargs...)
-parameters!(data::AbstractDatabase; kwargs...) =
-    parameters!(modeldict(data); kwargs...)
+parameters!(data::AbstractDatabase; kwargs...) = parameters!(modeldict(data); kwargs...)
