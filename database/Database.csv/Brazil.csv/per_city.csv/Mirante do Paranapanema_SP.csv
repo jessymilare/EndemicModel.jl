@@ -1,3 +1,4 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-05-26,SP,Mirante do Paranapanema,1,0,5,18442,3530201,11.9,12,5,7,,,,,,,,,,,,,,0.0,0.0,650.689,0.0,271.12,271.12,379.568
 2020-05-27,SP,Mirante do Paranapanema,1,0,5,18442,3530201,11.9,12,5,7,,,,,,,,,,,,,,0.0,0.0,650.689,0.0,271.12,271.12,379.568
+2020-05-28,SP,Mirante do Paranapanema,0,0,0,18442,3530201,11.9,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0

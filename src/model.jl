@@ -442,7 +442,7 @@ function model_plot(
     new_window::Bool = true,
     ylabel = nothing,
     yfactor = nothing,
-    legend = :right,
+    legend = length(columns) == 1 ? false : :right,
     left_margin = 5mm,
     kwargs...,
 )
@@ -467,6 +467,8 @@ function model_plot(
     iend = findlast(df[!, idx] .>= numpeople * minimum_plot_factor)
     df = df[istart:something(iend, nrow(df)), :]
     X = Dates.format.(df.date, date_format)
+
+    left_margin isa Real && (left_margin *= mm)
 
     win = plot(
         X,

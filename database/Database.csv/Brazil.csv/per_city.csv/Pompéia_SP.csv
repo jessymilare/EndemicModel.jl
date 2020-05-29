@@ -1,3 +1,4 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-05-26,SP,Pompéia,1,0,5,22234,3540002,11.9,12,5,7,,,,,,,,,,,,,,0.0,0.0,539.714,0.0,224.881,224.881,314.833
 2020-05-27,SP,Pompéia,1,0,5,22234,3540002,11.9,12,5,7,,,,,,,,,,,,,,0.0,0.0,539.714,0.0,224.881,224.881,314.833
+2020-05-28,SP,Pompéia,1,0,5,22234,3540002,11.9,12,5,7,,,,,,,,,,,,,,0.0,0.0,539.714,0.0,224.881,224.881,314.833
