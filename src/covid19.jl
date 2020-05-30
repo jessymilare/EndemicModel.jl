@@ -61,7 +61,8 @@ end
 @deftable Brazil2(Brazil, total, estimates) begin
     keys = [:date, :estimated_population, :gdp_per_capita, :total_tests, :test_kind]
     br = select(Brazil, keys)
-    avg_ipc = estimates[estimates.state .== "total", :infected_per_confirmed][1]
+    avg_ipc = estimates[estimates.state.=="total", :infected_per_confirmed][1]
+    insertcols!(br, 1, :country => "Brazil")
     insertcols!(br, :confirmed => Brazil.confirmed)
     insertcols!(br, :recovered => round.(Int, avg_ipc * Brazil.recovered))
     insertcols!(br, :deaths => Brazil.deaths)
@@ -70,16 +71,16 @@ end
 end
 
 @deftable states2(states, Brazil2) begin
-    nrec = Union{Int, Missing}[]
+    nrec = Union{Int,Missing}[]
     for row ∈ eachrow(states)
-        brrow = Brazil2[Brazil2.date .== row.date, :]
+        brrow = Brazil2[Brazil2.date.==row.date, :]
         push!(
             nrec,
             if !isempty(brrow)
                 brrec = brrow.recovered[1]
                 brinfec = brrow.infected[1]
                 infec = row.infected
-                brinfec == 0 ? 0 : round(Union{Int, Missing}, brrec * infec / brinfec)
+                brinfec == 0 ? 0 : round(Union{Int,Missing}, brrec * infec / brinfec)
             else
                 missing
             end,
@@ -89,16 +90,16 @@ end
 end
 
 @deftable cities2(cities, Brazil2) begin
-    nrec = Union{Int, Missing}[]
+    nrec = Union{Int,Missing}[]
     for row ∈ eachrow(cities)
-        brrow = Brazil2[Brazil2.date .== row.date, :]
+        brrow = Brazil2[Brazil2.date.==row.date, :]
         push!(
             nrec,
             if !isempty(brrow)
                 brrec = brrow.recovered[1]
                 brinfec = brrow.infected[1]
                 infec = row.infected
-                brinfec == 0 ? 0 : round(Union{Int, Missing}, brrec * infec / brinfec)
+                brinfec == 0 ? 0 : round(Union{Int,Missing}, brrec * infec / brinfec)
             else
                 missing
             end,
@@ -132,12 +133,12 @@ function _column_diff(column, date, ndays)
     iend = n - half2
     for i ∈ istart:iend
         if ( # consistency check
-            date[i - half1] + Day(ndays) == date[i] + Day(half2) == date[i + half2] &&
-            !ismissing(column[i - half1]) &&
-            isfinite(column[i - half1]) &&
-            column[i - half1] > 0
+            date[i-half1] + Day(ndays) == date[i] + Day(half2) == date[i+half2] &&
+            !ismissing(column[i-half1]) &&
+            isfinite(column[i-half1]) &&
+            column[i-half1] > 0
         )
-            result[i] = (column[i + half2] - column[i - half1]) / ndays
+            result[i] = (column[i+half2] - column[i-half1]) / ndays
         end
     end
     result
@@ -301,8 +302,8 @@ _maximum(itr) = isempty(itr) ? missing : maximum(itr)
 
 @deftable total2(total, world_population, world_gdp_per_capita) begin
     wpop, wgdp = world_population, world_gdp_per_capita
-    pop = wpop[wpop.country .== "World", :estimated_population]
-    gdp = wgdp[wgdp.country .== "World", :gdp_per_capita]
+    pop = wpop[wpop.country.=="World", :estimated_population]
+    gdp = wgdp[wgdp.country.=="World", :gdp_per_capita]
     cols = [
         :date,
         :total_tests,

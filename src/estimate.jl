@@ -456,6 +456,7 @@ function parameters!(destiny::AbstractDict, data::AbstractDict; kwargs...)
         columns...,
         σ_cols...,
         :R0 => OptFloat[],
+        :σ_R0 => OptFloat[],
         :loss_7_days => OptFloat[],
         :loss_14_days => OptFloat[],
     )
@@ -484,7 +485,13 @@ function parameters!(destiny::AbstractDict, data::AbstractDict; kwargs...)
             σ_params = [k => (isfinite(v) ? v : missing) for (k, v) ∈ σ_pairs]
             R0 = param_pairs[:β][i] / param_pairs[:α][i]
             R0 = isfinite(R0) ? R0 : missing
-            moreparams = (; R0 = R0, loss_7_days = loss7, loss_14_days = loss14)
+            σ_R0 = sqrt(
+                (σ_pairs[:σ_β] / param_pairs[:α][i])^2 +
+                (σ_pairs[:σ_α] * param_pairs[:β][i] / param_pairs[:α][i]^2)^2,
+            )
+            σ_R0 = isfinite(σ_R0) ? σ_R0 : missing
+            moreparams =
+                (; R0 = R0, σ_R0 = σ_R0, loss_7_days = loss7, loss_14_days = loss14)
             row = (;
                 key = string(key),
                 group_name = string(prettify(gname)),
@@ -497,7 +504,7 @@ function parameters!(destiny::AbstractDict, data::AbstractDict; kwargs...)
         end
     end
     new_σ_cols = [Symbol("σ(", string(sym)[4:end], ")") for sym ∈ SEIR_σ_NAMES]
-    rename!(paramdf, (SEIR_σ_NAMES .=> new_σ_cols)...)
+    rename!(paramdf, :σ_R0 => Symbol("σ(R0)"), (SEIR_σ_NAMES .=> new_σ_cols)...)
     sort!(paramdf, :key)
     !isempty(paramdf) && (destiny[:MODEL_PARAMETERS] = paramdf)
     destiny
