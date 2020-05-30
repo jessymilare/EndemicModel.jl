@@ -1,3 +1,4 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-27,SP,Santana da Ponte Pensa,2,0,10,1502,3547205,11.9,24,10,14,,,,,,,,,,,,,,0.0,0.0,15978.695,0.0,6657.79,6657.79,9320.905
-2020-05-28,SP,Santana da Ponte Pensa,2,0,10,1502,3547205,11.9,24,10,14,,,,,,,,,,,,,,0.0,0.0,15978.695,0.0,6657.79,6657.79,9320.905
+2020-05-27,SP,Santana da Ponte Pensa,2,0,6,1502,3547205,7.3,15,6,9,,,,,,,,,,,,,,0.0,0.0,9986.684,0.0,3994.674,3994.674,5992.011
+2020-05-28,SP,Santana da Ponte Pensa,2,0,6,1502,3547205,7.3,15,6,9,,,,,,,,,,,,,,0.0,0.0,9986.684,0.0,3994.674,3994.674,5992.011
+2020-05-29,SP,Santana da Ponte Pensa,2,0,6,1502,3547205,7.3,15,6,9,,,,,,,,,,,,,,0.0,0.0,9986.684,0.0,3994.674,3994.674,5992.011

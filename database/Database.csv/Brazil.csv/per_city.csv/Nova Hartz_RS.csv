@@ -1,3 +1,4 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-05-27,RS,Nova Hartz,1,0,3,21831,4313060,8.4,8,3,5,,,,,,,,,,,,,,0.0,0.0,366.451,0.0,137.419,137.419,229.032
 2020-05-28,RS,Nova Hartz,1,0,3,21831,4313060,8.4,8,3,5,,,,,,,,,,,,,,0.0,0.0,366.451,0.0,137.419,137.419,229.032
+2020-05-29,RS,Nova Hartz,1,0,3,21831,4313060,8.4,8,3,5,,,,,,,,,,,,,,0.0,0.0,366.451,0.0,137.419,137.419,229.032
