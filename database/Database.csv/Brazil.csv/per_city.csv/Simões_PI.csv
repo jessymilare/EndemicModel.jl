@@ -1,3 +1,4 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-05-28,PI,Simões,1,0,15,14779,2210706,36.0,36,15,21,,,,,,,,,,,,,,0.0,0.0,2435.889,0.0,1014.954,1014.954,1420.935
 2020-05-29,PI,Simões,1,0,15,14779,2210706,36.0,36,15,21,,,,,,,,,,,,,,0.0,0.0,2435.889,0.0,1014.954,1014.954,1420.935
+2020-05-30,PI,Simões,2,0,29,14779,2210706,36.0,72,29,43,,,,,,,,,,,,,,0.0,0.0,4871.778,0.0,1962.244,1962.244,2909.534

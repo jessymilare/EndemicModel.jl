@@ -1,3 +1,4 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-05-28,RS,Balneário Pinhal,2,0,7,14209,4301636,8.4,17,7,10,,,,,,,,,,,,,,0.0,0.0,1196.425,0.0,492.646,492.646,703.779
 2020-05-29,RS,Balneário Pinhal,4,0,14,14209,4301636,8.4,34,14,20,,,,,,,,,,,,,,0.0,0.0,2392.85,0.0,985.291,985.291,1407.559
+2020-05-30,RS,Balneário Pinhal,5,0,17,14209,4301636,8.4,42,17,25,,,,,,,,,,,,,,0.0,0.0,2955.873,0.0,1196.425,1196.425,1759.448

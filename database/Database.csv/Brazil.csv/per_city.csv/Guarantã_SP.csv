@@ -1,3 +1,4 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-05-28,SP,Guarantã,1,0,3,6731,3518107,7.3,7,3,4,,,,,,,,,,,,,,0.0,0.0,1039.964,0.0,445.699,445.699,594.265
 2020-05-29,SP,Guarantã,2,0,6,6731,3518107,7.3,15,6,9,,,,,,,,,,,,,,0.0,0.0,2228.495,0.0,891.398,891.398,1337.097
+2020-05-30,SP,Guarantã,6,0,18,6731,3518107,7.3,44,18,26,,,,,,,,,,,,,,0.0,0.0,6536.919,0.0,2674.194,2674.194,3862.725

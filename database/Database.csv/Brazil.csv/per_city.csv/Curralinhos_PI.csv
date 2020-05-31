@@ -1,3 +1,4 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-05-28,PI,Curralinhos,3,0,44,4487,2203255,36.0,108,44,64,,,,,,,,,,,,,,0.0,0.0,24069.534,0.0,9806.107,9806.107,14263.428
 2020-05-29,PI,Curralinhos,3,0,44,4487,2203255,36.0,108,44,64,,,,,,,,,,,,,,0.0,0.0,24069.534,0.0,9806.107,9806.107,14263.428
+2020-05-30,PI,Curralinhos,3,0,44,4487,2203255,36.0,108,44,64,,,,,,,,,,,,,,0.0,0.0,24069.534,0.0,9806.107,9806.107,14263.428
