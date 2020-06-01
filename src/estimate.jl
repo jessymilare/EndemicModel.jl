@@ -112,12 +112,6 @@ function optimize_parameters!(
         variables!(model, SEIRVariables(S, newE, I, R))
         model_loss(model; kwargs...)
     end
-    #= function diff(params)
-        if lastparams != params
-            _calc_loss(params)
-        end
-        return diff_value
-    end =#
 
     maxM = fill(1.01 * sum(model_params[:M]), n)
     maxp = (; M = maxM, β = MAX_β, γ = MAX_γ, α = MAX_α, μ = MAX_μ)
@@ -165,6 +159,31 @@ end
 
 optimize_parameters(data; kwargs...) = data
 optimize_parameters!(data; kwargs...) = data
+
+function optimize_variables!(model::SEIRModel; kwargs...)
+    n = model.ngroups
+    lastparams = nothing
+    model_vars, model_params = variables(model), parameters(model)
+    function _calc_loss(vars)
+        newvars = unpack_vars(vars)
+
+        variables!(model, newvars)
+        model_loss(model; kwargs...)
+    end
+
+    maxS = 1.01 .* model_params[:M]
+    maxv = (; S = maxS, E = maxS, I = maxS, R = maxS)
+    minS = fill(-0.01, n)
+    minv = (; S = minS, E = minS, I = minS, R = minS)
+    upper = pack_vars(maxv)
+    lower = pack_vars(minv)
+    minbox = Fminbox(NelderMead())
+    opt_vars = pack_vars(model_vars)
+    optimize(_calc_loss, lower, upper, opt_vars, minbox)
+end
+
+optimize_variables(model::SEIRModel; kwargs...) =
+    optimize_variables!(copy(model); kwargs...)
 
 function search_parameters(model::AbstractEndemicModel) end
 

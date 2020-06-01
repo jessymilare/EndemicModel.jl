@@ -1,3 +1,6 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-05-25,TO,Brasilândia do Tocantins,0,0,0,2223,1703602,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
 2020-05-26,TO,Brasilândia do Tocantins,0,0,0,2223,1703602,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-28,TO,Brasilândia do Tocantins,0,0,0,2223,1703602,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-29,TO,Brasilândia do Tocantins,0,0,0,2223,1703602,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-30,TO,Brasilândia do Tocantins,1,0,3,2223,1703602,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,3598.74,0.0,1349.528,1349.528,2249.213

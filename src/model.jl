@@ -208,6 +208,7 @@ function model_step(model::SEIRModel, n::Int = 1; initial_date = nothing, kwargs
         initial_date,
         default_kwarg(model, :initial_date, today() - Day(15)) + Day(n),
     )
+    data = realdata(model)
     if n > 0
         while n > 0
             for i ∈ 1:4
@@ -218,6 +219,18 @@ function model_step(model::SEIRModel, n::Int = 1; initial_date = nothing, kwargs
         end
     else
         z = zeros(Float, length(S))
+        if !isnothing(data)
+            idx = Dates.days(initial_date - data.date[1]) + 1
+            if idx >= 1
+                n = 0 # skip loop below
+            else
+                n, idx = idx - 1, 1
+            end
+            E = [data.exposed[idx]]
+            I = [data.active[idx]]
+            R = [data.closed[idx]]
+            S = [data.estimated_population[idx] - E[1] - I[1] - R[1]]
+        end
         while n < 0
             for i ∈ 1:4
                 (S, E, I, R) = (S - 0.25dS, E - 0.25dE, I - 0.25dI, R - 0.25dR)
@@ -226,8 +239,17 @@ function model_step(model::SEIRModel, n::Int = 1; initial_date = nothing, kwargs
             end
             n += 1
         end
+
+        # optimize_variables!(model; kwargs...)
+        modeldata!(model, to_dataframe(model; kwargs...))
     end
-    SEIRModel(SEIRVariables(S, E, I, R), params; initial_date = initial_date, kwargs...)
+    SEIRModel(
+        SEIRVariables(S, E, I, R),
+        params;
+        initial_date = initial_date,
+        realdata = data,
+        kwargs...,
+    )
 end
 
 function pack_vars(S, E, I, R)
@@ -493,7 +515,9 @@ function model_combined_data(
     realdf = realdata(model)
     model_initial_date = default_kwarg(model, :initial_date, today() - Day(15))
     plot_initial_date = realdf.date[end] - plot_period
-    ndays = Dates.days(model_initial_date - plot_initial_date - Day(3))
+    ndays = Dates.days(model_initial_date - plot_initial_date)
+
+    @debug "Combining data" model_initial_date plot_initial_date ndays
 
     realdf = realdf[(end-Dates.days(plot_period)):end, :]
     if ndays > 1

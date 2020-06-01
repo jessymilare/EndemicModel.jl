@@ -1,2 +1,4 @@
 Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-05-29,SC,Otacílio Costa,2,0,20,18931,4211751,25.0,50,20,30,,,,,,,,,,,,,,0.0,0.0,2641.171,0.0,1056.468,1056.468,1584.702
+2020-05-30,SC,Otacílio Costa,2,0,20,18931,4211751,25.0,50,20,30,,,,,,,,,,,,,,0.0,0.0,2641.171,0.0,1056.468,1056.468,1584.702
+2020-05-31,SC,Otacílio Costa,3,0,30,18931,4211751,25.0,75,30,45,,,,,,,,,,,,,,0.0,0.0,3961.756,0.0,1584.702,1584.702,2377.054
