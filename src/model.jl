@@ -479,7 +479,8 @@ function modelplot(
     end
 
     idx = findfirst(s -> occursin("active", s), names(df))
-    istart = findfirst(df[!, idx] .* yfactor .>= 0.1)
+    # istart = findfirst(df[!, idx] .* yfactor .>= 0.1)
+    istart = 1
     iend = findlast(df[!, idx] .>= numpeople * minimum_plot_factor)
     df = df[istart:something(iend, nrow(df)), :]
     X = Dates.format.(df.date, date_format)
