@@ -1,8 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-25,MG,Capitão Enéas,1,0,7,15386,3112703,16.5,16,7,9,,,,,,,,,,,,,,0.0,0.0,1039.906,0.0,454.959,454.959,584.947
-2020-05-26,MG,Capitão Enéas,1,0,6,15386,3112703,16.5,16,6,10,,,,,,,,,,,,,,0.0,0.0,1039.906,0.0,389.965,389.965,649.942
-2020-05-27,MG,Capitão Enéas,7,0,47,15386,3112703,16.5,116,47,69,,,,,,,,,,,,,,0.0,0.0,7539.321,0.0,3054.725,3054.725,4484.596
-2020-05-28,MG,Capitão Enéas,7,0,47,15386,3112703,16.5,116,47,69,22.0,8.667,,,,,,,,,,,,0.0,0.0,7539.321,0.0,3054.725,3054.725,4484.596
-2020-05-29,MG,Capitão Enéas,8,0,54,15386,3112703,16.5,132,54,78,,,,,,,,,,,,,,0.0,0.0,8579.228,0.0,3509.684,3509.684,5069.544
-2020-05-30,MG,Capitão Enéas,8,0,53,15386,3112703,16.5,132,53,79,,,,,,,,,,,,,,0.0,0.0,8579.228,0.0,3444.69,3444.69,5134.538
-2020-05-31,MG,Capitão Enéas,9,0,59,15386,3112703,16.5,148,59,89,,,,,,,,,,,,,,0.0,0.0,9619.134,0.0,3834.655,3834.655,5784.479

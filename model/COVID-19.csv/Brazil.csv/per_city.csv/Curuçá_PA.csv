@@ -1,0 +1,2 @@
+date,infected,exposed,active,recovered,deaths,diff_exposed,diff_active,diff_recovered,diff_deaths
+2020-05-27,1569.0,0.0,542.0,1004.036,22.964,NaN,NaN,NaN,NaN

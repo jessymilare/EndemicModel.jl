@@ -1,0 +1,5 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-02,BA,Maetinga,0,0,0,3193,2919959,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-06-03,BA,Maetinga,1,0,5,3193,2919959,8.3,8,5,3,,,,,,,,,,,,,,0.0,0.0,2505.481,0.0,1565.925,1565.925,939.555
+2020-06-04,BA,Maetinga,1,0,5,3193,2919959,8.3,8,5,3,,,,,,,,,,,,,,0.0,0.0,2505.481,0.0,1565.925,1565.925,939.555
+2020-06-05,BA,Maetinga,2,0,12,3193,2919959,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,5324.147,0.0,3758.221,3758.221,1565.925

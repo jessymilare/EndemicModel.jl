@@ -1,5 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-28,PI,Isaías Coelho,1,0,15,8634,2204907,36.0,36,15,21,,,,,,,,,,,,,,0.0,0.0,4169.562,0.0,1737.318,1737.318,2432.245
-2020-05-29,PI,Isaías Coelho,1,0,15,8634,2204907,36.0,36,15,21,,,,,,,,,,,,,,0.0,0.0,4169.562,0.0,1737.318,1737.318,2432.245
-2020-05-30,PI,Isaías Coelho,1,0,15,8634,2204907,36.0,36,15,21,,,,,,,,,,,,,,0.0,0.0,4169.562,0.0,1737.318,1737.318,2432.245
-2020-05-31,PI,Isaías Coelho,1,0,14,8634,2204907,36.0,36,14,22,,,,,,,,,,,,,,0.0,0.0,4169.562,0.0,1621.496,1621.496,2548.066

@@ -1,6 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-27,MG,Crisólita,1,0,6,6771,3120151,16.5,16,6,10,,,,,,,,,,,,,,0.0,0.0,2363.019,0.0,886.132,886.132,1476.887
-2020-05-28,MG,Crisólita,1,0,6,6771,3120151,16.5,16,6,10,,,,,,,,,,,,,,0.0,0.0,2363.019,0.0,886.132,886.132,1476.887
-2020-05-29,MG,Crisólita,1,0,7,6771,3120151,16.5,16,7,9,,,,,,,,,,,,,,0.0,0.0,2363.019,0.0,1033.821,1033.821,1329.198
-2020-05-30,MG,Crisólita,1,0,6,6771,3120151,16.5,16,6,10,,,,,,,,,,,,,,0.0,0.0,2363.019,0.0,886.132,886.132,1476.887
-2020-05-31,MG,Crisólita,4,0,26,6771,3120151,16.5,66,26,40,,,,,,,,,,,,,,0.0,0.0,9747.452,0.0,3839.905,3839.905,5907.547

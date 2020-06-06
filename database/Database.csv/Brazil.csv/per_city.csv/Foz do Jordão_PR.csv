@@ -1,4 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-29,PR,Foz do Jordão,2,0,7,4696,4108452,8.3,17,7,10,,,,,,,,,,,,,,0.0,0.0,3620.102,0.0,1490.63,1490.63,2129.472
-2020-05-30,PR,Foz do Jordão,3,0,10,4696,4108452,8.3,25,10,15,,,,,,,,,,,,,,0.0,0.0,5323.68,0.0,2129.472,2129.472,3194.208
-2020-05-31,PR,Foz do Jordão,5,0,17,4696,4108452,8.3,42,17,25,,,,,,,,,,,,,,0.0,0.0,8943.782,0.0,3620.102,3620.102,5323.68

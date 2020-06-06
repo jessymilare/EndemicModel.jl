@@ -1,0 +1,7 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-05-31,BA,Santa Cruz da Vitória,1,0,5,6378,2927804,8.3,8,5,3,,,,,,,,,,,,,,0.0,0.0,1254.312,0.0,783.945,783.945,470.367
+2020-06-01,BA,Santa Cruz da Vitória,4,1,22,6378,2927804,8.3,33,23,10,,,,,,,,,,,,,,0.04348,0.0303,5174.036,156.789,3449.357,3606.146,1567.89
+2020-06-02,BA,Santa Cruz da Vitória,4,1,22,6378,2927804,8.3,33,23,10,,,,,,,,,,,,,,0.04348,0.0303,5174.036,156.789,3449.357,3606.146,1567.89
+2020-06-03,BA,Santa Cruz da Vitória,5,1,27,6378,2927804,8.3,42,28,14,,,,,,,,,,,,,,0.03571,0.02381,6585.136,156.789,4233.302,4390.091,2195.045
+2020-06-04,BA,Santa Cruz da Vitória,5,1,27,6378,2927804,8.3,42,28,14,,,,,,,,,,,,,,0.03571,0.02381,6585.136,156.789,4233.302,4390.091,2195.045
+2020-06-05,BA,Santa Cruz da Vitória,6,1,34,6378,2927804,8.3,50,35,15,,,,,,,,,,,,,,0.02857,0.02,7839.448,156.789,5330.825,5487.614,2351.834

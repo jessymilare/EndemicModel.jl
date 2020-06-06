@@ -1,0 +1,8 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-05-29,SC,Abdon Batista,1,0,16,2589,4200051,25.0,25,16,9,,,,,,,,,,,,,,0.0,0.0,9656.238,0.0,6179.992,6179.992,3476.246
+2020-05-30,SC,Abdon Batista,1,0,16,2589,4200051,25.0,25,16,9,,,,,,,,,,,,,,0.0,0.0,9656.238,0.0,6179.992,6179.992,3476.246
+2020-05-31,SC,Abdon Batista,1,0,16,2589,4200051,25.0,25,16,9,,,,,,,,,,,,,,0.0,0.0,9656.238,0.0,6179.992,6179.992,3476.246
+2020-06-01,SC,Abdon Batista,1,0,17,2589,4200051,25.0,25,17,8,4.167,2.667,,,,,,,,,,,,0.0,0.0,9656.238,0.0,6566.242,6566.242,3089.996
+2020-06-02,SC,Abdon Batista,1,0,16,2589,4200051,25.0,25,16,9,,,,,,,,,,,,,,0.0,0.0,9656.238,0.0,6179.992,6179.992,3476.246
+2020-06-03,SC,Abdon Batista,1,0,16,2589,4200051,25.0,25,16,9,,,,,,,,,,,,,,0.0,0.0,9656.238,0.0,6179.992,6179.992,3476.246
+2020-06-04,SC,Abdon Batista,2,0,32,2589,4200051,25.0,50,32,18,,,,,,,,,,,,,,0.0,0.0,19312.476,0.0,12359.985,12359.985,6952.491

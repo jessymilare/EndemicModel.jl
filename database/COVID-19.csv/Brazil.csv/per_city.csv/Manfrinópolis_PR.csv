@@ -1,0 +1,7 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-05-30,PR,Manfrinópolis,2,0,11,2597,4114351,8.3,17,11,6,,,,,,,,,,,,,,0.0,0.0,6546.015,0.0,4235.657,4235.657,2310.358
+2020-05-31,PR,Manfrinópolis,2,0,11,2597,4114351,8.3,17,11,6,,,,,,,,,,,,,,0.0,0.0,6546.015,0.0,4235.657,4235.657,2310.358
+2020-06-01,PR,Manfrinópolis,2,0,11,2597,4114351,8.3,17,11,6,,,,,,,,,,,,,,0.0,0.0,6546.015,0.0,4235.657,4235.657,2310.358
+2020-06-02,PR,Manfrinópolis,2,0,11,2597,4114351,8.3,17,11,6,,,,,,,,,,,,,,0.0,0.0,6546.015,0.0,4235.657,4235.657,2310.358
+2020-06-03,PR,Manfrinópolis,2,0,11,2597,4114351,8.3,17,11,6,,,,,,,,,,,,,,0.0,0.0,6546.015,0.0,4235.657,4235.657,2310.358
+2020-06-04,PR,Manfrinópolis,3,0,16,2597,4114351,8.3,25,16,9,,,,,,,,,,,,,,0.0,0.0,9626.492,0.0,6160.955,6160.955,3465.537

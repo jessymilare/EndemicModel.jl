@@ -1,0 +1,9 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-05-29,MG,Baependi,1,0,10,19339,3104908,16.5,16,10,6,,,,,,,,,,,,,,0.0,0.0,827.344,0.0,517.09,517.09,310.254
+2020-05-30,MG,Baependi,1,0,10,19339,3104908,16.5,16,10,6,,,,,,,,,,,,,,0.0,0.0,827.344,0.0,517.09,517.09,310.254
+2020-05-31,MG,Baependi,1,0,10,19339,3104908,16.5,16,10,6,,,,,,,,,,,,,,0.0,0.0,827.344,0.0,517.09,517.09,310.254
+2020-06-01,MG,Baependi,1,0,11,19339,3104908,16.5,16,11,5,2.833,1.833,,,,,,,,,,,,0.0,0.0,827.344,0.0,568.799,568.799,258.545
+2020-06-02,MG,Baependi,1,0,11,19339,3104908,16.5,16,11,5,2.833,2.167,,,,,,,,,,,,0.0,0.0,827.344,0.0,568.799,568.799,258.545
+2020-06-03,MG,Baependi,2,0,21,19339,3104908,16.5,33,21,12,,,,,,,,,,,,,,0.0,0.0,1706.396,0.0,1085.889,1085.889,620.508
+2020-06-04,MG,Baependi,2,0,21,19339,3104908,16.5,33,21,12,,,,,,,,,,,,,,0.0,0.0,1706.396,0.0,1085.889,1085.889,620.508
+2020-06-05,MG,Baependi,2,0,23,19339,3104908,16.5,33,23,10,,,,,,,,,,,,,,0.0,0.0,1706.396,0.0,1189.307,1189.307,517.09

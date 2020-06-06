@@ -1,7 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-26,SC,Lontras,1,0,10,12251,4209904,25.0,25,10,15,,,,,,,,,,,,,,0.0,0.0,2040.65,0.0,816.26,816.26,1224.39
-2020-05-27,SC,Lontras,2,0,20,12251,4209904,25.0,50,20,30,,,,,,,,,,,,,,0.0,0.0,4081.299,0.0,1632.52,1632.52,2448.78
-2020-05-28,SC,Lontras,2,0,20,12251,4209904,25.0,50,20,30,,,,,,,,,,,,,,0.0,0.0,4081.299,0.0,1632.52,1632.52,2448.78
-2020-05-29,SC,Lontras,2,0,20,12251,4209904,25.0,50,20,30,,,,,,,,,,,,,,0.0,0.0,4081.299,0.0,1632.52,1632.52,2448.78
-2020-05-30,SC,Lontras,2,0,20,12251,4209904,25.0,50,20,30,,,,,,,,,,,,,,0.0,0.0,4081.299,0.0,1632.52,1632.52,2448.78
-2020-05-31,SC,Lontras,2,0,20,12251,4209904,25.0,50,20,30,,,,,,,,,,,,,,0.0,0.0,4081.299,0.0,1632.52,1632.52,2448.78

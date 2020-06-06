@@ -1,8 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-25,SC,Lajeado Grande,1,0,10,1441,4209458,25.0,25,10,15,,,,,,,,,,,,,,0.0,0.0,17349.063,0.0,6939.625,6939.625,10409.438
-2020-05-26,SC,Lajeado Grande,2,0,20,1441,4209458,25.0,50,20,30,,,,,,,,,,,,,,0.0,0.0,34698.126,0.0,13879.251,13879.251,20818.876
-2020-05-27,SC,Lajeado Grande,2,0,20,1441,4209458,25.0,50,20,30,,,,,,,,,,,,,,0.0,0.0,34698.126,0.0,13879.251,13879.251,20818.876
-2020-05-28,SC,Lajeado Grande,2,0,20,1441,4209458,25.0,50,20,30,20.833,8.333,,,,,,,,,,,,0.0,0.0,34698.126,0.0,13879.251,13879.251,20818.876
-2020-05-29,SC,Lajeado Grande,2,0,20,1441,4209458,25.0,50,20,30,,,,,,,,,,,,,,0.0,0.0,34698.126,0.0,13879.251,13879.251,20818.876
-2020-05-30,SC,Lajeado Grande,3,0,30,1441,4209458,25.0,75,30,45,,,,,,,,,,,,,,0.0,0.0,52047.189,0.0,20818.876,20818.876,31228.314
-2020-05-31,SC,Lajeado Grande,6,0,60,1441,4209458,25.0,150,60,90,,,,,,,,,,,,,,0.0,0.0,104094.379,0.0,41637.752,41637.752,62456.627

@@ -1,0 +1,2 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-05,PI,Lagoinha do Piauí,2,0,49,2873,2205540,36.0,72,49,23,,,,,,,,,,,,,,0.0,0.0,25060.912,0.0,17055.343,17055.343,8005.569

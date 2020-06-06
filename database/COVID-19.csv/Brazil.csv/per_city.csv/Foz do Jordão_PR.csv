@@ -1,0 +1,8 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-05-29,PR,Foz do Jordão,2,0,11,4696,4108452,8.3,17,11,6,,,,,,,,,,,,,,0.0,0.0,3620.102,0.0,2342.419,2342.419,1277.683
+2020-05-30,PR,Foz do Jordão,3,0,16,4696,4108452,8.3,25,16,9,,,,,,,,,,,,,,0.0,0.0,5323.68,0.0,3407.155,3407.155,1916.525
+2020-05-31,PR,Foz do Jordão,5,0,27,4696,4108452,8.3,42,27,15,,,,,,,,,,,,,,0.0,0.0,8943.782,0.0,5749.574,5749.574,3194.208
+2020-06-01,PR,Foz do Jordão,5,0,28,4696,4108452,8.3,42,28,14,9.667,6.167,,,,,,,,,,,,0.0,0.0,8943.782,0.0,5962.521,5962.521,2981.261
+2020-06-02,PR,Foz do Jordão,7,0,38,4696,4108452,8.3,58,38,20,,,,,,,,,,,,,,0.0,0.0,12350.937,0.0,8091.993,8091.993,4258.944
+2020-06-03,PR,Foz do Jordão,9,0,49,4696,4108452,8.3,75,49,26,,,,,,,,,,,,,,0.0,0.0,15971.039,0.0,10434.412,10434.412,5536.627
+2020-06-04,PR,Foz do Jordão,9,0,48,4696,4108452,8.3,75,48,27,,,,,,,,,,,,,,0.0,0.0,15971.039,0.0,10221.465,10221.465,5749.574

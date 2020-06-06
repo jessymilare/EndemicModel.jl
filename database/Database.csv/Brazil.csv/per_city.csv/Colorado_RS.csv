@@ -1,8 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-25,RS,Colorado,1,0,3,3207,4305603,8.4,8,3,5,,,,,,,,,,,,,,0.0,0.0,2494.543,0.0,935.454,935.454,1559.089
-2020-05-26,RS,Colorado,1,0,3,3207,4305603,8.4,8,3,5,,,,,,,,,,,,,,0.0,0.0,2494.543,0.0,935.454,935.454,1559.089
-2020-05-27,RS,Colorado,1,0,3,3207,4305603,8.4,8,3,5,,,,,,,,,,,,,,0.0,0.0,2494.543,0.0,935.454,935.454,1559.089
-2020-05-28,RS,Colorado,2,0,7,3207,4305603,8.4,17,7,10,1.5,0.6667,,,,,,,,,,,,0.0,0.0,5300.904,0.0,2182.725,2182.725,3118.179
-2020-05-29,RS,Colorado,2,0,7,3207,4305603,8.4,17,7,10,,,,,,,,,,,,,,0.0,0.0,5300.904,0.0,2182.725,2182.725,3118.179
-2020-05-30,RS,Colorado,2,0,7,3207,4305603,8.4,17,7,10,,,,,,,,,,,,,,0.0,0.0,5300.904,0.0,2182.725,2182.725,3118.179
-2020-05-31,RS,Colorado,2,0,7,3207,4305603,8.4,17,7,10,,,,,,,,,,,,,,0.0,0.0,5300.904,0.0,2182.725,2182.725,3118.179

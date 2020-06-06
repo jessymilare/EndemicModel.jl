@@ -1,0 +1,11 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-05-26,SC,Alfredo Wagner,2,0,31,10136,4200705,25.0,50,31,19,,,,,,,,,,,,,,0.0,0.0,4932.912,0.0,3058.406,3058.406,1874.507
+2020-05-27,SC,Alfredo Wagner,0,0,0,10136,4200705,25.0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-28,SC,Alfredo Wagner,0,0,0,10136,4200705,25.0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-29,SC,Alfredo Wagner,0,0,0,10136,4200705,25.0,0,0,0,-8.33333,-5.16667,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-30,SC,Alfredo Wagner,0,0,0,10136,4200705,25.0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-31,SC,Alfredo Wagner,0,0,0,10136,4200705,25.0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-06-01,SC,Alfredo Wagner,0,0,0,10136,4200705,25.0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-06-02,SC,Alfredo Wagner,0,0,0,10136,4200705,25.0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-06-03,SC,Alfredo Wagner,0,0,0,10136,4200705,25.0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-06-04,SC,Alfredo Wagner,0,0,0,10136,4200705,25.0,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0

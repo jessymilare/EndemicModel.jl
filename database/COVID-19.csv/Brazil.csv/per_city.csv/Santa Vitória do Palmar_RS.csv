@@ -1,0 +1,9 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-05-29,RS,Santa Vitória do Palmar,1,0,5,29973,4317301,8.4,8,5,3,,,,,,,,,,,,,,0.0,0.0,266.907,0.0,166.817,166.817,100.09
+2020-05-30,RS,Santa Vitória do Palmar,3,0,16,29973,4317301,8.4,25,16,9,,,,,,,,,,,,,,0.0,0.0,834.084,0.0,533.814,533.814,300.27
+2020-05-31,RS,Santa Vitória do Palmar,4,0,22,29973,4317301,8.4,34,22,12,,,,,,,,,,,,,,0.0,0.0,1134.354,0.0,733.994,733.994,400.36
+2020-06-01,RS,Santa Vitória do Palmar,4,0,23,29973,4317301,8.4,34,23,11,5.667,3.667,,,,,,,,,,,,0.0,0.0,1134.354,0.0,767.357,767.357,366.997
+2020-06-02,RS,Santa Vitória do Palmar,5,0,28,29973,4317301,8.4,42,28,14,4.167,3.0,,,,,,,,,,,,0.0,0.0,1401.261,0.0,934.174,934.174,467.087
+2020-06-03,RS,Santa Vitória do Palmar,5,0,27,29973,4317301,8.4,42,27,15,,,,,,,,,,,,,,0.0,0.0,1401.261,0.0,900.811,900.811,500.45
+2020-06-04,RS,Santa Vitória do Palmar,5,0,27,29973,4317301,8.4,42,27,15,,,,,,,,,,,,,,0.0,0.0,1401.261,0.0,900.811,900.811,500.45
+2020-06-05,RS,Santa Vitória do Palmar,6,0,34,29973,4317301,8.4,50,34,16,,,,,,,,,,,,,,0.0,0.0,1668.168,0.0,1134.354,1134.354,533.814

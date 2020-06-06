@@ -1,0 +1,3 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-04,SP,São Francisco,1,0,5,2849,3549003,7.3,7,5,2,,,,,,,,,,,,,,0.0,0.0,2457.002,0.0,1755.002,1755.002,702.001
+2020-06-05,SP,São Francisco,1,0,5,2849,3549003,7.3,7,5,2,,,,,,,,,,,,,,0.0,0.0,2457.002,0.0,1755.002,1755.002,702.001

@@ -1,0 +1,8 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-05-30,BA,Milagres,1,0,5,11060,2921302,8.3,8,5,3,,,,,,,,,,,,,,0.0,0.0,723.327,0.0,452.08,452.08,271.248
+2020-05-31,BA,Milagres,3,0,16,11060,2921302,8.3,25,16,9,,,,,,,,,,,,,,0.0,0.0,2260.398,0.0,1446.655,1446.655,813.743
+2020-06-01,BA,Milagres,3,0,17,11060,2921302,8.3,25,17,8,,,,,,,,,,,,,,0.0,0.0,2260.398,0.0,1537.071,1537.071,723.327
+2020-06-02,BA,Milagres,3,0,16,11060,2921302,8.3,25,16,9,30.5,21.0,,,,,,,,,,,,0.0,0.0,2260.398,0.0,1446.655,1446.655,813.743
+2020-06-03,BA,Milagres,4,0,21,11060,2921302,8.3,33,21,12,,,,,,,,,,,,,,0.0,0.0,2983.725,0.0,1898.734,1898.734,1084.991
+2020-06-04,BA,Milagres,12,0,65,11060,2921302,8.3,100,65,35,,,,,,,,,,,,,,0.0,0.0,9041.591,0.0,5877.034,5877.034,3164.557
+2020-06-05,BA,Milagres,23,0,131,11060,2921302,8.3,191,131,60,,,,,,,,,,,,,,0.0,0.0,17269.439,0.0,11844.485,11844.485,5424.955

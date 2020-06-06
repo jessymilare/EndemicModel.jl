@@ -1,0 +1,9 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-05-29,BA,Casa Nova,0,0,0,72689,2907202,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-05-30,BA,Casa Nova,5,0,27,72689,2907202,8.3,42,27,15,,,,,,,,,,,,,,0.0,0.0,577.804,0.0,371.445,371.445,206.359
+2020-05-31,BA,Casa Nova,13,0,70,72689,2907202,8.3,108,70,38,,,,,,,,,,,,,,0.0,0.0,1485.782,0.0,963.007,963.007,522.775
+2020-06-01,BA,Casa Nova,13,0,72,72689,2907202,8.3,108,72,36,,,,,,,,,,,,,,0.0,0.0,1485.782,0.0,990.521,990.521,495.261
+2020-06-02,BA,Casa Nova,19,0,104,72689,2907202,8.3,158,104,54,30.333,21.0,,,,,,,,,,,,0.0,0.0,2173.644,0.0,1430.753,1430.753,742.891
+2020-06-03,BA,Casa Nova,21,0,113,72689,2907202,8.3,174,113,61,,,,,,,,,,,,,,0.0,0.0,2393.76,0.0,1554.568,1554.568,839.192
+2020-06-04,BA,Casa Nova,24,0,129,72689,2907202,8.3,199,129,70,,,,,,,,,,,,,,0.0,0.0,2737.691,0.0,1774.684,1774.684,963.007
+2020-06-05,BA,Casa Nova,27,0,153,72689,2907202,8.3,224,153,71,,,,,,,,,,,,,,0.0,0.0,3081.622,0.0,2104.858,2104.858,976.764

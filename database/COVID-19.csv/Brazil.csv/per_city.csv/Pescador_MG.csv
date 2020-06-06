@@ -1,0 +1,7 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-05-31,MG,Pescador,4,0,43,4295,3150000,16.5,66,43,23,,,,,,,,,,,,,,0.0,0.0,15366.705,0.0,10011.641,10011.641,5355.064
+2020-06-01,MG,Pescador,4,0,44,4295,3150000,16.5,66,44,22,,,,,,,,,,,,,,0.0,0.0,15366.705,0.0,10244.47,10244.47,5122.235
+2020-06-02,MG,Pescador,4,0,43,4295,3150000,16.5,66,43,23,,,,,,,,,,,,,,0.0,0.0,15366.705,0.0,10011.641,10011.641,5355.064
+2020-06-03,MG,Pescador,4,0,43,4295,3150000,16.5,66,43,23,,,,,,,,,,,,,,0.0,0.0,15366.705,0.0,10011.641,10011.641,5355.064
+2020-06-04,MG,Pescador,4,0,43,4295,3150000,16.5,66,43,23,,,,,,,,,,,,,,0.0,0.0,15366.705,0.0,10011.641,10011.641,5355.064
+2020-06-05,MG,Pescador,5,0,56,4295,3150000,16.5,82,56,26,,,,,,,,,,,,,,0.0,0.0,19091.967,0.0,13038.417,13038.417,6053.551

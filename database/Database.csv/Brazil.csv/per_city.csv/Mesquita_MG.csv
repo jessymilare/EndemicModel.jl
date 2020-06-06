@@ -1,6 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-27,MG,Mesquita,2,0,13,5661,3141702,16.5,33,13,20,,,,,,,,,,,,,,0.0,0.0,5829.359,0.0,2296.414,2296.414,3532.945
-2020-05-28,MG,Mesquita,2,0,13,5661,3141702,16.5,33,13,20,,,,,,,,,,,,,,0.0,0.0,5829.359,0.0,2296.414,2296.414,3532.945
-2020-05-29,MG,Mesquita,2,0,13,5661,3141702,16.5,33,13,20,,,,,,,,,,,,,,0.0,0.0,5829.359,0.0,2296.414,2296.414,3532.945
-2020-05-30,MG,Mesquita,4,0,27,5661,3141702,16.5,66,27,39,,,,,,,,,,,,,,0.0,0.0,11658.718,0.0,4769.475,4769.475,6889.242
-2020-05-31,MG,Mesquita,4,0,26,5661,3141702,16.5,66,26,40,,,,,,,,,,,,,,0.0,0.0,11658.718,0.0,4592.828,4592.828,7065.889

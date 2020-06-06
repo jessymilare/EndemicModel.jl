@@ -1,8 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-21,TO,Nazaré,1,0,3,3937,1714302,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,2032.004,0.0,762.002,762.002,1270.003
-2020-05-22,TO,Nazaré,1,0,3,3937,1714302,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,2032.004,0.0,762.002,762.002,1270.003
-2020-05-25,TO,Nazaré,0,0,0,3937,1714302,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-05-26,TO,Nazaré,2,0,7,3937,1714302,8.3,17,7,10,,,,,,,,,,,,,,0.0,0.0,4318.009,0.0,1778.004,1778.004,2540.005
-2020-05-28,TO,Nazaré,3,0,10,3937,1714302,8.3,25,10,15,,,,,,,,,,,,,,0.0,0.0,6350.013,0.0,2540.005,2540.005,3810.008
-2020-05-29,TO,Nazaré,3,0,10,3937,1714302,8.3,25,10,15,,,,,,,,,,,,,,0.0,0.0,6350.013,0.0,2540.005,2540.005,3810.008
-2020-05-30,TO,Nazaré,2,0,7,3937,1714302,8.3,17,7,10,,,,,,,,,,,,,,0.0,0.0,4318.009,0.0,1778.004,1778.004,2540.005

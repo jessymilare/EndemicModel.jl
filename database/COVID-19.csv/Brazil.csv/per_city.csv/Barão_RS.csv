@@ -1,0 +1,5 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-02,RS,Barão,1,0,5,6233,4301651,8.4,8,5,3,,,,,,,,,,,,,,0.0,0.0,1283.491,0.0,802.182,802.182,481.309
+2020-06-03,RS,Barão,1,0,5,6233,4301651,8.4,8,5,3,,,,,,,,,,,,,,0.0,0.0,1283.491,0.0,802.182,802.182,481.309
+2020-06-04,RS,Barão,1,0,5,6233,4301651,8.4,8,5,3,,,,,,,,,,,,,,0.0,0.0,1283.491,0.0,802.182,802.182,481.309
+2020-06-05,RS,Barão,2,0,12,6233,4301651,8.4,17,12,5,,,,,,,,,,,,,,0.0,0.0,2727.419,0.0,1925.237,1925.237,802.182

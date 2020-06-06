@@ -1,0 +1,6 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-05-31,PR,Indianópolis,4,0,22,4502,4110409,8.3,33,22,11,,,,,,,,,,,,,,0.0,0.0,7330.076,0.0,4886.717,4886.717,2443.359
+2020-06-01,PR,Indianópolis,5,0,28,4502,4110409,8.3,42,28,14,,,,,,,,,,,,,,0.0,0.0,9329.187,0.0,6219.458,6219.458,3109.729
+2020-06-02,PR,Indianópolis,7,0,38,4502,4110409,8.3,58,38,20,,,,,,,,,,,,,,0.0,0.0,12883.163,0.0,8440.693,8440.693,4442.47
+2020-06-03,PR,Indianópolis,7,0,38,4502,4110409,8.3,58,38,20,,,,,,,,,,,,,,0.0,0.0,12883.163,0.0,8440.693,8440.693,4442.47
+2020-06-04,PR,Indianópolis,8,0,43,4502,4110409,8.3,66,43,23,,,,,,,,,,,,,,0.0,0.0,14660.151,0.0,9551.311,9551.311,5108.841

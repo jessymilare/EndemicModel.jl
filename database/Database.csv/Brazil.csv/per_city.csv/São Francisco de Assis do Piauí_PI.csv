@@ -1,9 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-24,PI,São Francisco de Assis do Piauí,1,0,15,5813,2209658,36.0,36,15,21,,,,,,,,,,,,,,0.0,0.0,6193.016,0.0,2580.423,2580.423,3612.592
-2020-05-25,PI,São Francisco de Assis do Piauí,1,0,15,5813,2209658,36.0,36,15,21,,,,,,,,,,,,,,0.0,0.0,6193.016,0.0,2580.423,2580.423,3612.592
-2020-05-26,PI,São Francisco de Assis do Piauí,1,0,15,5813,2209658,36.0,36,15,21,,,,,,,,,,,,,,0.0,0.0,6193.016,0.0,2580.423,2580.423,3612.592
-2020-05-27,PI,São Francisco de Assis do Piauí,1,0,15,5813,2209658,36.0,36,15,21,0.0,0.0,,,,,,,,,,,,0.0,0.0,6193.016,0.0,2580.423,2580.423,3612.592
-2020-05-28,PI,São Francisco de Assis do Piauí,1,0,15,5813,2209658,36.0,36,15,21,0.0,-0.16667,,,,,,,,,,,,0.0,0.0,6193.016,0.0,2580.423,2580.423,3612.592
-2020-05-29,PI,São Francisco de Assis do Piauí,1,0,15,5813,2209658,36.0,36,15,21,,,,,,,,,,,,,,0.0,0.0,6193.016,0.0,2580.423,2580.423,3612.592
-2020-05-30,PI,São Francisco de Assis do Piauí,1,0,15,5813,2209658,36.0,36,15,21,,,,,,,,,,,,,,0.0,0.0,6193.016,0.0,2580.423,2580.423,3612.592
-2020-05-31,PI,São Francisco de Assis do Piauí,1,0,14,5813,2209658,36.0,36,14,22,,,,,,,,,,,,,,0.0,0.0,6193.016,0.0,2408.395,2408.395,3784.621

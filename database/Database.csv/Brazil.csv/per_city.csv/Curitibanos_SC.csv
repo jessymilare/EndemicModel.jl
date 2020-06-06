@@ -1,7 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-26,SC,Curitibanos,1,0,10,40142,4204806,25.0,25,10,15,,,,,,,,,,,,,,0.0,0.0,622.789,0.0,249.116,249.116,373.673
-2020-05-27,SC,Curitibanos,1,0,10,40142,4204806,25.0,25,10,15,,,,,,,,,,,,,,0.0,0.0,622.789,0.0,249.116,249.116,373.673
-2020-05-28,SC,Curitibanos,1,0,10,40142,4204806,25.0,25,10,15,,,,,,,,,,,,,,0.0,0.0,622.789,0.0,249.116,249.116,373.673
-2020-05-29,SC,Curitibanos,1,0,10,40142,4204806,25.0,25,10,15,,,,,,,,,,,,,,0.0,0.0,622.789,0.0,249.116,249.116,373.673
-2020-05-30,SC,Curitibanos,2,0,20,40142,4204806,25.0,50,20,30,,,,,,,,,,,,,,0.0,0.0,1245.578,0.0,498.231,498.231,747.347
-2020-05-31,SC,Curitibanos,2,0,20,40142,4204806,25.0,50,20,30,,,,,,,,,,,,,,0.0,0.0,1245.578,0.0,498.231,498.231,747.347

@@ -1,6 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-27,MG,Santana do Deserto,2,0,13,4016,3158607,16.5,33,13,20,,,,,,,,,,,,,,0.0,0.0,8217.131,0.0,3237.052,3237.052,4980.08
-2020-05-28,MG,Santana do Deserto,2,0,13,4016,3158607,16.5,33,13,20,,,,,,,,,,,,,,0.0,0.0,8217.131,0.0,3237.052,3237.052,4980.08
-2020-05-29,MG,Santana do Deserto,3,0,20,4016,3158607,16.5,50,20,30,,,,,,,,,,,,,,0.0,0.0,12450.199,0.0,4980.08,4980.08,7470.12
-2020-05-30,MG,Santana do Deserto,5,0,33,4016,3158607,16.5,82,33,49,,,,,,,,,,,,,,0.0,0.0,20418.327,0.0,8217.131,8217.131,12201.195
-2020-05-31,MG,Santana do Deserto,5,0,33,4016,3158607,16.5,82,33,49,,,,,,,,,,,,,,0.0,0.0,20418.327,0.0,8217.131,8217.131,12201.195

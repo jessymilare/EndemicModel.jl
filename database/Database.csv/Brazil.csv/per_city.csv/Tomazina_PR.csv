@@ -1,6 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-27,PR,Tomazina,1,0,3,7997,4127809,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,1000.375,0.0,375.141,375.141,625.234
-2020-05-28,PR,Tomazina,1,0,3,7997,4127809,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,1000.375,0.0,375.141,375.141,625.234
-2020-05-29,PR,Tomazina,1,0,3,7997,4127809,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,1000.375,0.0,375.141,375.141,625.234
-2020-05-30,PR,Tomazina,2,0,7,7997,4127809,8.3,17,7,10,,,,,,,,,,,,,,0.0,0.0,2125.797,0.0,875.328,875.328,1250.469
-2020-05-31,PR,Tomazina,3,0,10,7997,4127809,8.3,25,10,15,,,,,,,,,,,,,,0.0,0.0,3126.172,0.0,1250.469,1250.469,1875.703

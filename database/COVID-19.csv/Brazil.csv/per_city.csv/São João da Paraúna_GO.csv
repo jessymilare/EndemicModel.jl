@@ -1,0 +1,3 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-04,GO,São João da Paraúna,3,0,16,1395,5220058,8.3,25,16,9,,,,,,,,,,,,,,0.0,0.0,17921.147,0.0,11469.534,11469.534,6451.613
+2020-06-05,GO,São João da Paraúna,0,0,0,1395,5220058,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0

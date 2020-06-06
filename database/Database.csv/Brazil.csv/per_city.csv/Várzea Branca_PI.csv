@@ -1,7 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-26,PI,Várzea Branca,1,0,15,4996,2211357,36.0,36,15,21,,,,,,,,,,,,,,0.0,0.0,7205.765,0.0,3002.402,3002.402,4203.363
-2020-05-27,PI,Várzea Branca,2,0,29,4996,2211357,36.0,72,29,43,,,,,,,,,,,,,,0.0,0.0,14411.529,0.0,5804.644,5804.644,8606.886
-2020-05-28,PI,Várzea Branca,2,0,29,4996,2211357,36.0,72,29,43,,,,,,,,,,,,,,0.0,0.0,14411.529,0.0,5804.644,5804.644,8606.886
-2020-05-29,PI,Várzea Branca,2,0,29,4996,2211357,36.0,72,29,43,,,,,,,,,,,,,,0.0,0.0,14411.529,0.0,5804.644,5804.644,8606.886
-2020-05-30,PI,Várzea Branca,2,0,29,4996,2211357,36.0,72,29,43,,,,,,,,,,,,,,0.0,0.0,14411.529,0.0,5804.644,5804.644,8606.886
-2020-05-31,PI,Várzea Branca,2,0,29,4996,2211357,36.0,72,29,43,,,,,,,,,,,,,,0.0,0.0,14411.529,0.0,5804.644,5804.644,8606.886

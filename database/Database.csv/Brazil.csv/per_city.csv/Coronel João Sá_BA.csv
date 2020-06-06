@@ -1,6 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-27,BA,Coronel João Sá,0,0,0,16054,2909208,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-05-28,BA,Coronel João Sá,1,0,3,16054,2909208,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,498.318,0.0,186.869,186.869,311.449
-2020-05-29,BA,Coronel João Sá,3,0,10,16054,2909208,8.3,25,10,15,,,,,,,,,,,,,,0.0,0.0,1557.244,0.0,622.898,622.898,934.347
-2020-05-30,BA,Coronel João Sá,4,0,13,16054,2909208,8.3,33,13,20,,,,,,,,,,,,,,0.0,0.0,2055.562,0.0,809.767,809.767,1245.795
-2020-05-31,BA,Coronel João Sá,9,0,30,16054,2909208,8.3,75,30,45,,,,,,,,,,,,,,0.0,0.0,4671.733,0.0,1868.693,1868.693,2803.04

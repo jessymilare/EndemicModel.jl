@@ -1,0 +1,9 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-05-29,AL,Pariconha,1,0,5,10638,2706422,8.3,8,5,3,,,,,,,,,,,,,,0.0,0.0,752.021,0.0,470.013,470.013,282.008
+2020-05-30,AL,Pariconha,1,0,5,10638,2706422,8.3,8,5,3,,,,,,,,,,,,,,0.0,0.0,752.021,0.0,470.013,470.013,282.008
+2020-05-31,AL,Pariconha,1,0,5,10638,2706422,8.3,8,5,3,,,,,,,,,,,,,,0.0,0.0,752.021,0.0,470.013,470.013,282.008
+2020-06-01,AL,Pariconha,1,0,5,10638,2706422,8.3,8,5,3,2.833,1.833,,,,,,,,,,,,0.0,0.0,752.021,0.0,470.013,470.013,282.008
+2020-06-02,AL,Pariconha,3,0,16,10638,2706422,8.3,25,16,9,4.167,3.0,,,,,,,,,,,,0.0,0.0,2350.066,0.0,1504.042,1504.042,846.024
+2020-06-03,AL,Pariconha,3,0,16,10638,2706422,8.3,25,16,9,,,,,,,,,,,,,,0.0,0.0,2350.066,0.0,1504.042,1504.042,846.024
+2020-06-04,AL,Pariconha,3,0,16,10638,2706422,8.3,25,16,9,,,,,,,,,,,,,,0.0,0.0,2350.066,0.0,1504.042,1504.042,846.024
+2020-06-05,AL,Pariconha,4,0,23,10638,2706422,8.3,33,23,10,,,,,,,,,,,,,,0.0,0.0,3102.087,0.0,2162.061,2162.061,940.026

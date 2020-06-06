@@ -1,0 +1,7 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-05-31,MG,Pocrane,7,0,76,8516,3151909,16.5,116,76,40,,,,,,,,,,,,,,0.0,0.0,13621.419,0.0,8924.378,8924.378,4697.041
+2020-06-01,MG,Pocrane,7,0,77,8516,3151909,16.5,116,77,39,,,,,,,,,,,,,,0.0,0.0,13621.419,0.0,9041.804,9041.804,4579.615
+2020-06-02,MG,Pocrane,7,0,76,8516,3151909,16.5,116,76,40,,,,,,,,,,,,,,0.0,0.0,13621.419,0.0,8924.378,8924.378,4697.041
+2020-06-03,MG,Pocrane,7,0,75,8516,3151909,16.5,116,75,41,,,,,,,,,,,,,,0.0,0.0,13621.419,0.0,8806.952,8806.952,4814.467
+2020-06-04,MG,Pocrane,6,0,64,8516,3151909,16.5,99,64,35,,,,,,,,,,,,,,0.0,0.0,11625.176,0.0,7515.265,7515.265,4109.911
+2020-06-05,MG,Pocrane,7,0,79,8516,3151909,16.5,116,79,37,,,,,,,,,,,,,,0.0,0.0,13621.419,0.0,9276.656,9276.656,4344.763

@@ -1,0 +1,5 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-01,SC,Saudades,1,0,17,9842,4217303,25.0,25,17,8,,,,,,,,,,,,,,0.0,0.0,2540.134,0.0,1727.291,1727.291,812.843
+2020-06-02,SC,Saudades,6,0,99,9842,4217303,25.0,150,99,51,,,,,,,,,,,,,,0.0,0.0,15240.805,0.0,10058.931,10058.931,5181.874
+2020-06-03,SC,Saudades,7,0,114,9842,4217303,25.0,175,114,61,,,,,,,,,,,,,,0.0,0.0,17780.939,0.0,11583.012,11583.012,6197.927
+2020-06-04,SC,Saudades,8,0,129,9842,4217303,25.0,200,129,71,,,,,,,,,,,,,,0.0,0.0,20321.073,0.0,13107.092,13107.092,7213.981

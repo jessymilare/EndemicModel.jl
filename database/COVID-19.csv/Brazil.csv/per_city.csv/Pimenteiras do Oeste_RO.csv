@@ -1,0 +1,11 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-05-25,RO,Pimenteiras do Oeste,2,0,11,2191,1101468,8.3,17,11,6,,,,,,,,,,,,,,0.0,0.0,7759.014,0.0,5020.539,5020.539,2738.476
+2020-05-26,RO,Pimenteiras do Oeste,2,0,11,2191,1101468,8.3,17,11,6,,,,,,,,,,,,,,0.0,0.0,7759.014,0.0,5020.539,5020.539,2738.476
+2020-05-27,RO,Pimenteiras do Oeste,2,0,11,2191,1101468,8.3,17,11,6,,,,,,,,,,,,,,0.0,0.0,7759.014,0.0,5020.539,5020.539,2738.476
+2020-05-28,RO,Pimenteiras do Oeste,2,0,11,2191,1101468,8.3,17,11,6,4.167,2.667,,,,,,,,,,,,0.0,0.0,7759.014,0.0,5020.539,5020.539,2738.476
+2020-05-29,RO,Pimenteiras do Oeste,5,0,27,2191,1101468,8.3,42,27,15,,,,,,,,,,,,,,0.0,0.0,19169.329,0.0,12323.14,12323.14,6846.189
+2020-05-30,RO,Pimenteiras do Oeste,5,0,27,2191,1101468,8.3,42,27,15,,,,,,,,,,,,,,0.0,0.0,19169.329,0.0,12323.14,12323.14,6846.189
+2020-05-31,RO,Pimenteiras do Oeste,5,0,27,2191,1101468,8.3,42,27,15,,,,,,,,,,,,,,0.0,0.0,19169.329,0.0,12323.14,12323.14,6846.189
+2020-06-02,RO,Pimenteiras do Oeste,5,0,28,2191,1101468,8.3,42,28,14,,,,,,,,,,,,,,0.0,0.0,19169.329,0.0,12779.553,12779.553,6389.776
+2020-06-03,RO,Pimenteiras do Oeste,5,0,27,2191,1101468,8.3,42,27,15,,,,,,,,,,,,,,0.0,0.0,19169.329,0.0,12323.14,12323.14,6846.189
+2020-06-04,RO,Pimenteiras do Oeste,5,0,27,2191,1101468,8.3,42,27,15,,,,,,,,,,,,,,0.0,0.0,19169.329,0.0,12323.14,12323.14,6846.189

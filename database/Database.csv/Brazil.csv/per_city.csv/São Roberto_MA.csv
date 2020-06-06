@@ -1,9 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-24,MA,São Roberto,0,0,0,6786,2111672,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-05-25,MA,São Roberto,4,0,14,6786,2111672,8.3,33,14,19,,,,,,,,,,,,,,0.0,0.0,4862.953,0.0,2063.071,2063.071,2799.882
-2020-05-26,MA,São Roberto,4,0,13,6786,2111672,8.3,33,13,20,,,,,,,,,,,,,,0.0,0.0,4862.953,0.0,1915.709,1915.709,2947.244
-2020-05-27,MA,São Roberto,7,0,23,6786,2111672,8.3,58,23,35,,,,,,,,,,,,,,0.0,0.0,8547.009,0.0,3389.331,3389.331,5157.678
-2020-05-28,MA,São Roberto,8,0,27,6786,2111672,8.3,66,27,39,20.833,8.167,,,,,,,,,,,,0.0,0.0,9725.906,0.0,3978.78,3978.78,5747.126
-2020-05-29,MA,São Roberto,19,0,64,6786,2111672,8.3,158,64,94,,,,,,,,,,,,,,0.0,0.0,23283.23,0.0,9431.182,9431.182,13852.048
-2020-05-30,MA,São Roberto,19,0,64,6786,2111672,8.3,158,64,94,,,,,,,,,,,,,,0.0,0.0,23283.23,0.0,9431.182,9431.182,13852.048
-2020-05-31,MA,São Roberto,19,0,63,6786,2111672,8.3,158,63,95,,,,,,,,,,,,,,0.0,0.0,23283.23,0.0,9283.82,9283.82,13999.411

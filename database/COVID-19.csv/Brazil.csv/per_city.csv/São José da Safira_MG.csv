@@ -1,0 +1,8 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-05-30,MG,São José da Safira,14,0,147,4311,3163003,16.5,231,147,84,,,,,,,,,,,,,,0.0,0.0,53583.855,0.0,34098.817,34098.817,19485.038
+2020-05-31,MG,São José da Safira,14,0,151,4311,3163003,16.5,231,151,80,,,,,,,,,,,,,,0.0,0.0,53583.855,0.0,35026.676,35026.676,18557.179
+2020-06-01,MG,São José da Safira,14,0,154,4311,3163003,16.5,231,154,77,,,,,,,,,,,,,,0.0,0.0,53583.855,0.0,35722.57,35722.57,17861.285
+2020-06-02,MG,São José da Safira,14,0,152,4311,3163003,16.5,231,152,79,-2.83333,-0.16667,,,,,,,,,,,,0.0,0.0,53583.855,0.0,35258.641,35258.641,18325.215
+2020-06-03,MG,São José da Safira,13,0,139,4311,3163003,16.5,214,139,75,,,,,,,,,,,,,,0.0,0.0,49640.455,0.0,32243.099,32243.099,17397.356
+2020-06-04,MG,São José da Safira,13,0,138,4311,3163003,16.5,214,138,76,,,,,,,,,,,,,,0.0,0.0,49640.455,0.0,32011.134,32011.134,17629.32
+2020-06-05,MG,São José da Safira,13,0,146,4311,3163003,16.5,214,146,68,,,,,,,,,,,,,,0.0,0.0,49640.455,0.0,33866.852,33866.852,15773.602

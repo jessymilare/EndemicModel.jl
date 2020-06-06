@@ -1,6 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-27,PE,Santa Terezinha,2,0,7,11933,2612802,8.3,17,7,10,,,,,,,,,,,,,,0.0,0.0,1424.621,0.0,586.609,586.609,838.012
-2020-05-28,PE,Santa Terezinha,2,0,7,11933,2612802,8.3,17,7,10,,,,,,,,,,,,,,0.0,0.0,1424.621,0.0,586.609,586.609,838.012
-2020-05-29,PE,Santa Terezinha,3,0,10,11933,2612802,8.3,25,10,15,,,,,,,,,,,,,,0.0,0.0,2095.031,0.0,838.012,838.012,1257.018
-2020-05-30,PE,Santa Terezinha,4,0,13,11933,2612802,8.3,33,13,20,,,,,,,,,,,,,,0.0,0.0,2765.44,0.0,1089.416,1089.416,1676.024
-2020-05-31,PE,Santa Terezinha,4,0,13,11933,2612802,8.3,33,13,20,,,,,,,,,,,,,,0.0,0.0,2765.44,0.0,1089.416,1089.416,1676.024

@@ -1,0 +1,7 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-05-31,SP,Paraíso,1,0,5,6519,3535705,7.3,7,5,2,,,,,,,,,,,,,,0.0,0.0,1073.784,0.0,766.989,766.989,306.796
+2020-06-01,SP,Paraíso,1,0,5,6519,3535705,7.3,7,5,2,,,,,,,,,,,,,,0.0,0.0,1073.784,0.0,766.989,766.989,306.796
+2020-06-02,SP,Paraíso,3,0,14,6519,3535705,7.3,22,14,8,,,,,,,,,,,,,,0.0,0.0,3374.751,0.0,2147.569,2147.569,1227.182
+2020-06-03,SP,Paraíso,3,0,14,6519,3535705,7.3,22,14,8,,,,,,,,,,,,,,0.0,0.0,3374.751,0.0,2147.569,2147.569,1227.182
+2020-06-04,SP,Paraíso,4,0,19,6519,3535705,7.3,29,19,10,,,,,,,,,,,,,,0.0,0.0,4448.535,0.0,2914.557,2914.557,1533.978
+2020-06-05,SP,Paraíso,4,0,20,6519,3535705,7.3,29,20,9,,,,,,,,,,,,,,0.0,0.0,4448.535,0.0,3067.955,3067.955,1380.58

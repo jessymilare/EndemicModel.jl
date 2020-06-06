@@ -1,5 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-28,PI,Alagoinha do Piauí,1,0,15,7728,2200251,36.0,36,15,21,,,,,,,,,,,,,,0.0,0.0,4658.385,0.0,1940.994,1940.994,2717.391
-2020-05-29,PI,Alagoinha do Piauí,1,0,15,7728,2200251,36.0,36,15,21,,,,,,,,,,,,,,0.0,0.0,4658.385,0.0,1940.994,1940.994,2717.391
-2020-05-30,PI,Alagoinha do Piauí,1,0,15,7728,2200251,36.0,36,15,21,,,,,,,,,,,,,,0.0,0.0,4658.385,0.0,1940.994,1940.994,2717.391
-2020-05-31,PI,Alagoinha do Piauí,1,0,14,7728,2200251,36.0,36,14,22,,,,,,,,,,,,,,0.0,0.0,4658.385,0.0,1811.594,1811.594,2846.791

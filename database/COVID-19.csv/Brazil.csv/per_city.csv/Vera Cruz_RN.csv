@@ -1,0 +1,7 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-05-28,RN,Vera Cruz,3,0,16,12606,2414803,8.3,25,16,9,,,,,,,,,,,,,,0.0,0.0,1983.183,0.0,1269.237,1269.237,713.946
+2020-05-29,RN,Vera Cruz,5,0,27,12606,2414803,8.3,42,27,15,,,,,,,,,,,,,,0.0,0.0,3331.747,0.0,2141.837,2141.837,1189.91
+2020-05-31,RN,Vera Cruz,5,0,27,12606,2414803,8.3,42,27,15,,,,,,,,,,,,,,0.0,0.0,3331.747,0.0,2141.837,2141.837,1189.91
+2020-06-01,RN,Vera Cruz,5,0,28,12606,2414803,8.3,42,28,14,,,,,,,,,,,,,,0.0,0.0,3331.747,0.0,2221.165,2221.165,1110.582
+2020-06-02,RN,Vera Cruz,5,0,28,12606,2414803,8.3,42,28,14,,,,,,,,,,,,,,0.0,0.0,3331.747,0.0,2221.165,2221.165,1110.582
+2020-06-03,RN,Vera Cruz,5,0,27,12606,2414803,8.3,42,27,15,,,,,,,,,,,,,,0.0,0.0,3331.747,0.0,2141.837,2141.837,1189.91

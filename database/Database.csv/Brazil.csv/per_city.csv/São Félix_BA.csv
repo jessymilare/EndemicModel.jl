@@ -1,5 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-28,BA,São Félix,0,0,0,14887,2929008,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-05-29,BA,São Félix,1,0,3,14887,2929008,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,537.382,0.0,201.518,201.518,335.864
-2020-05-30,BA,São Félix,1,0,3,14887,2929008,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,537.382,0.0,201.518,201.518,335.864
-2020-05-31,BA,São Félix,2,0,7,14887,2929008,8.3,17,7,10,,,,,,,,,,,,,,0.0,0.0,1141.936,0.0,470.209,470.209,671.727

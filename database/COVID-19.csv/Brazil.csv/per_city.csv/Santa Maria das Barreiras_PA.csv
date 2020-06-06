@@ -1,0 +1,14 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-05-22,PA,Santa Maria das Barreiras,1,0,5,21663,1506583,8.3,8,5,3,,,,,,,,,,,,,,0.0,0.0,369.293,0.0,230.808,230.808,138.485
+2020-05-23,PA,Santa Maria das Barreiras,1,0,5,21663,1506583,8.3,8,5,3,,,,,,,,,,,,,,0.0,0.0,369.293,0.0,230.808,230.808,138.485
+2020-05-24,PA,Santa Maria das Barreiras,1,0,5,21663,1506583,8.3,8,5,3,,,,,,,,,,,,,,0.0,0.0,369.293,0.0,230.808,230.808,138.485
+2020-05-25,PA,Santa Maria das Barreiras,1,0,5,21663,1506583,8.3,8,5,3,0.0,0.0,,,,,,,,,,,,0.0,0.0,369.293,0.0,230.808,230.808,138.485
+2020-05-26,PA,Santa Maria das Barreiras,1,0,5,21663,1506583,8.3,8,5,3,0.0,0.0,,,,,,,,,,,,0.0,0.0,369.293,0.0,230.808,230.808,138.485
+2020-05-27,PA,Santa Maria das Barreiras,1,0,5,21663,1506583,8.3,8,5,3,0.0,0.0,,,,,,,,,,,,0.0,0.0,369.293,0.0,230.808,230.808,138.485
+2020-05-28,PA,Santa Maria das Barreiras,1,0,5,21663,1506583,8.3,8,5,3,0.0,0.0,,,,,,,,,,,,0.0,0.0,369.293,0.0,230.808,230.808,138.485
+2020-05-29,PA,Santa Maria das Barreiras,1,0,5,21663,1506583,8.3,8,5,3,0.0,0.0,,,,,,,,,,,,0.0,0.0,369.293,0.0,230.808,230.808,138.485
+2020-05-30,PA,Santa Maria das Barreiras,1,0,5,21663,1506583,8.3,8,5,3,0.0,0.0,,,,,,,,,,,,0.0,0.0,369.293,0.0,230.808,230.808,138.485
+2020-05-31,PA,Santa Maria das Barreiras,1,0,5,21663,1506583,8.3,8,5,3,9.667,6.333,,,,,,,,,,,,0.0,0.0,369.293,0.0,230.808,230.808,138.485
+2020-06-01,PA,Santa Maria das Barreiras,1,0,5,21663,1506583,8.3,8,5,3,,,,,,,,,,,,,,0.0,0.0,369.293,0.0,230.808,230.808,138.485
+2020-06-02,PA,Santa Maria das Barreiras,1,0,5,21663,1506583,8.3,8,5,3,,,,,,,,,,,,,,0.0,0.0,369.293,0.0,230.808,230.808,138.485
+2020-06-03,PA,Santa Maria das Barreiras,8,0,43,21663,1506583,8.3,66,43,23,,,,,,,,,,,,,,0.0,0.0,3046.669,0.0,1984.951,1984.951,1061.718

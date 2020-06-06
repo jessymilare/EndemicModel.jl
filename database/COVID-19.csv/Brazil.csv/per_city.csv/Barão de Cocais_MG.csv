@@ -1,0 +1,9 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-05-29,MG,Barão de Cocais,2,0,21,32810,3105400,16.5,33,21,12,,,,,,,,,,,,,,0.0,0.0,1005.791,0.0,640.049,640.049,365.742
+2020-05-30,MG,Barão de Cocais,2,0,21,32810,3105400,16.5,33,21,12,,,,,,,,,,,,,,0.0,0.0,1005.791,0.0,640.049,640.049,365.742
+2020-05-31,MG,Barão de Cocais,2,0,22,32810,3105400,16.5,33,22,11,,,,,,,,,,,,,,0.0,0.0,1005.791,0.0,670.527,670.527,335.264
+2020-06-01,MG,Barão de Cocais,29,0,319,32810,3105400,16.5,478,319,159,74.167,48.0,,,,,,,,,,,,0.0,0.0,14568.729,0.0,9722.646,9722.646,4846.084
+2020-06-02,MG,Barão de Cocais,29,0,314,32810,3105400,16.5,478,314,164,115.5,79.333,,,,,,,,,,,,0.0,0.0,14568.729,0.0,9570.253,9570.253,4998.476
+2020-06-03,MG,Barão de Cocais,29,0,310,32810,3105400,16.5,478,310,168,,,,,,,,,,,,,,0.0,0.0,14568.729,0.0,9448.339,9448.339,5120.39
+2020-06-04,MG,Barão de Cocais,29,0,309,32810,3105400,16.5,478,309,169,,,,,,,,,,,,,,0.0,0.0,14568.729,0.0,9417.86,9417.86,5150.869
+2020-06-05,MG,Barão de Cocais,44,0,497,32810,3105400,16.5,726,497,229,,,,,,,,,,,,,,0.0,0.0,22127.4,0.0,15147.821,15147.821,6979.579

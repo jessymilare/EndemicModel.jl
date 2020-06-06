@@ -1,7 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-26,MG,São Tiago,1,0,6,11050,3165008,16.5,16,6,10,,,,,,,,,,,,,,0.0,0.0,1447.964,0.0,542.986,542.986,904.977
-2020-05-27,MG,São Tiago,1,0,6,11050,3165008,16.5,16,6,10,,,,,,,,,,,,,,0.0,0.0,1447.964,0.0,542.986,542.986,904.977
-2020-05-28,MG,São Tiago,0,0,0,11050,3165008,16.5,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-05-29,MG,São Tiago,0,0,0,11050,3165008,16.5,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-05-30,MG,São Tiago,0,0,0,11050,3165008,16.5,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-05-31,MG,São Tiago,0,0,0,11050,3165008,16.5,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0

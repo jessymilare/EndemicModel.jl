@@ -1,7 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ_closed,μ_infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-05-26,PR,São Tomé,1,0,3,5779,4126108,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,1384.323,0.0,519.121,519.121,865.202
-2020-05-27,PR,São Tomé,1,0,3,5779,4126108,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,1384.323,0.0,519.121,519.121,865.202
-2020-05-28,PR,São Tomé,1,0,3,5779,4126108,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,1384.323,0.0,519.121,519.121,865.202
-2020-05-29,PR,São Tomé,1,0,3,5779,4126108,8.3,8,3,5,,,,,,,,,,,,,,0.0,0.0,1384.323,0.0,519.121,519.121,865.202
-2020-05-30,PR,São Tomé,2,0,7,5779,4126108,8.3,17,7,10,,,,,,,,,,,,,,0.0,0.0,2941.685,0.0,1211.282,1211.282,1730.403
-2020-05-31,PR,São Tomé,2,0,7,5779,4126108,8.3,17,7,10,,,,,,,,,,,,,,0.0,0.0,2941.685,0.0,1211.282,1211.282,1730.403

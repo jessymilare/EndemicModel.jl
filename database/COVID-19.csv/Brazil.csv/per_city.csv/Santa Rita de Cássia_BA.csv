@@ -1,0 +1,9 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-05-29,BA,Santa Rita de Cássia,1,0,5,28621,2928406,8.3,8,5,3,,,,,,,,,,,,,,0.0,0.0,279.515,0.0,174.697,174.697,104.818
+2020-05-30,BA,Santa Rita de Cássia,1,0,5,28621,2928406,8.3,8,5,3,,,,,,,,,,,,,,0.0,0.0,279.515,0.0,174.697,174.697,104.818
+2020-05-31,BA,Santa Rita de Cássia,1,0,5,28621,2928406,8.3,8,5,3,,,,,,,,,,,,,,0.0,0.0,279.515,0.0,174.697,174.697,104.818
+2020-06-01,BA,Santa Rita de Cássia,1,0,5,28621,2928406,8.3,8,5,3,1.5,1.0,,,,,,,,,,,,0.0,0.0,279.515,0.0,174.697,174.697,104.818
+2020-06-02,BA,Santa Rita de Cássia,2,0,11,28621,2928406,8.3,17,11,6,5.667,4.0,,,,,,,,,,,,0.0,0.0,593.969,0.0,384.333,384.333,209.636
+2020-06-03,BA,Santa Rita de Cássia,2,0,11,28621,2928406,8.3,17,11,6,,,,,,,,,,,,,,0.0,0.0,593.969,0.0,384.333,384.333,209.636
+2020-06-04,BA,Santa Rita de Cássia,2,0,11,28621,2928406,8.3,17,11,6,,,,,,,,,,,,,,0.0,0.0,593.969,0.0,384.333,384.333,209.636
+2020-06-05,BA,Santa Rita de Cássia,5,0,29,28621,2928406,8.3,42,29,13,,,,,,,,,,,,,,0.0,0.0,1467.454,0.0,1013.242,1013.242,454.212
