@@ -1,8 +1,8 @@
 # This file is part of EndemicModel project, which is licensed under BDS-3-Clause.
 # See file LICENSE.md for more information.
 
-abstract type AbstractDatabase{D <: AbstractDict} end
-abstract type AbstractSubDatabase{D <: AbstractDict} <: AbstractDatabase{D} end
+abstract type AbstractDatabase{D<:AbstractDict} end
+abstract type AbstractSubDatabase{D<:AbstractDict} <: AbstractDatabase{D} end
 
 sources(database::AbstractDatabase) = database.sources
 sources!(database::AbstractDatabase, value) = database.sources = value
@@ -20,6 +20,9 @@ datadict!(database::AbstractDatabase, value) = database.datadict = value
 modeldict(database::AbstractDatabase) = database.modeldict
 modeldict!(database::AbstractDatabase, value) = database.modeldict = value
 
+name(database::AbstractDatabase) = database.name
+name!(database::AbstractDatabase, value) = database.name = value
+
 Base.iterate(database::AbstractDatabase) = iterate(datadict(database))
 Base.keys(database::AbstractDatabase) = keys(datadict(database))
 Base.values(database::AbstractDatabase) = values(datadict(database))
@@ -34,26 +37,28 @@ function Base.summary(database::AbstractDatabase{D}) where {D}
     "$(len)-element $(type) [$(ntables) table(s), $(nsubdata) subdatabase(s)]"
 end
 
-mutable struct Database{D <: AbstractDict} <: AbstractDatabase{D}
+mutable struct Database{D<:AbstractDict} <: AbstractDatabase{D}
     sources::Vector{Symbol}
-    kwargs::Dict{Symbol, Any}
+    kwargs::Dict{Symbol,Any}
     computing_functions::Vector{Function}
     datadict::D
     modeldict::D
     paramdict::D
+    name::String
     function Database{D}(
         sources::Vector{Symbol},
-        kwargs::Dict{Symbol, Any},
+        kwargs::Dict{Symbol,Any},
         computing_functions::Vector{Function},
-        datadict::Union{D, Nothing},
-    ) where {D <: AbstractDict}
+        datadict::Union{D,Nothing},
+        name::String = "Database",
+    ) where {D<:AbstractDict}
         data = something(datadict, D())
         modeldict, paramdict = D(), D()
-        db = new(sources, kwargs, computing_functions, data, modeldict, paramdict)
+        db = new(sources, kwargs, computing_functions, data, modeldict, paramdict, name)
         if isnothing(datadict)
-            data = import_data(db; kwargs...)
-            eltdata = length(data) == 1 ? collect(values(data))[1] : data
-            db.datadict = eltdata isa AbstractDict ? eltdata : data
+            data = import_data!(db; kwargs...)
+            eltdata = length(data) == 1 ? first(data)[2] : data
+            eltdata isa D && (db.datadict = data)
         end
         db
     end
@@ -62,29 +67,36 @@ end
 root(database::Database) = database
 Base.parent(database::Database) = database
 
-function Database{D}(sources, kwargs, computing_functions) where {D <: AbstractDict}
+function Database{D}(
+    sources,
+    kwargs,
+    computing_functions;
+    name::String = "Database",
+) where {D<:AbstractDict}
     sources = collect(Symbol.(sources))
-    kwargs, cmp = Dict{Symbol, Any}(kwargs), Vector{Function}(computing_functions)
-    Database{D}(sources, kwargs, cmp, nothing)
+    kwargs, cmp = Dict{Symbol,Any}(kwargs), Vector{Function}(computing_functions)
+    Database{D}(sources, kwargs, cmp, nothing, name)
 end
 
-Database(args...) = Database{Dict{Symbol, Any}}(args...)
+Database(args...) = Database{Dict{Symbol,Any}}(args...)
 
 function Database{D}(
-    sources::Union{AbstractVector, Tuple},
+    sources::Union{AbstractVector,Tuple},
     computing_functions::Vector{Function} = Function[];
+    name::String = "Database",
     kwargs...,
-) where {D <: AbstractDict}
+) where {D<:AbstractDict}
     sources = collect(Symbol.(sources))
-    Database{D}(sources, Dict{Symbol, Any}(kwargs), computing_functions)
+    Database{D}(sources, Dict{Symbol,Any}(kwargs), computing_functions; name = name)
 end
 
 function Database{D}(
-    source::Union{Symbol, AbstractString},
+    source::Union{Symbol,AbstractString},
     args...;
+    name::String = "Database",
     kwargs...,
 ) where {D}
-    Database{D}(Vector{Symbol}([Symbol(source)]), args...; kwargs...)
+    Database{D}(Vector{Symbol}([Symbol(source)]), args...; name = name, kwargs...)
 end
 
 function Base.show(io::IO, database::AbstractDatabase{D}) where {D}
@@ -197,7 +209,7 @@ function group_table!(
             append!(combargs, vcol .=> (col -> (; vcol => gfunc(col))))
         end
         groupdf = groupby(df, keycols; sort = true)
-        groupdict = Dict{Symbol, Any}()
+        groupdict = Dict{Symbol,Any}()
         for (gkey, df) ∈ pairs(groupdf)
             key = Symbol(gkey[1], map(k -> "_" * string(k), Tuple(gkey)[2:end])...)
             key = ensure_unique(groupdict, key)

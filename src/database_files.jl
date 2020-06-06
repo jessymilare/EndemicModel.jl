@@ -2,7 +2,7 @@
 # See file LICENSE.md for more information.
 
 function database_path(
-    ext::Union{Nothing, AbstractString} = data_extension(option(:database_data_type));
+    ext::Union{Nothing,AbstractString} = data_extension(option(:database_data_type));
     database_directory = option(:database_directory),
     database_filename = option(:database_filename),
     kwargs...,
@@ -15,22 +15,65 @@ function database_path(sourcesym::Symbol; kwargs...)
     database_path(data_extension(source); kwargs...)
 end
 
-function import_data(database::AbstractDatabase; kw...)
-    imp_kwargs = merge(default_kwargs(database), kw)
-    @debug "Importing data."
-    data = import_data(sources(database); imp_kwargs...)
-    funcs = computing_functions(database)
+function import_data(
+    database::AbstractDatabase;
+    database_data_type = option(:database_data_type),
+    database_directory = option(:database_directory),
+    database_filename = name(database),
+    model_data_type = option(:model_data_type),
+    model_directory = option(:model_directory),
+    model_filename = name(database),
+    notpretty::Bool = true,
+    force_update::Bool = false,
+    kwargs...,
+)
+    @debug "Creating database."
+    imported = false
+    if !force_update
+        db_input = database_path(
+            database_data_type;
+            database_directory = database_directory,
+            database_filename = database_filename,
+        )
+        model_input = database_path(
+            model_data_type;
+            database_directory = model_directory,
+            database_filename = database_filename,
+        )
+        if (
+            exists(db_input) &&
+            exists(model_input) &&
+            modified(db_input) >= today() &&
+            modified(model_input) >= today()
+        )
+            @debug "Importing data from cache." db_input model_input
+            data = import_data(db_input; notpretty = notpretty, kwargs...)
+            model = import_data(model_input; notpretty = notpretty, kwargs...)
+            imported = true
+            @debug "Data imported from cache."
+        end
+    end
+    if !imported
+        @debug "Importing data from sources."
+        imp_kwargs = merge(default_kwargs(database), kwargs...)
+        data = import_data(sources(database); imp_kwargs...)
+        model = nothing
+        funcs = computing_functions(database)
 
-    @debug "Data imported." _debuginfo(data)
-    @debug "Computing database."
-    while any(func(data) for func ∈ funcs)
+        @debug "Data imported from sources." _debuginfo(data)
+        @debug "Computing database."
+        while any(func(data) for func ∈ funcs)
+        end
     end
     @debug "Database created."
-    data
+    (data, model)
 end
 
 function import_data!(database::AbstractDatabase; kwargs...)
-    datadict!(database, import_data(database; kwargs...))
+    (data, model) = import_data(database; kwargs...)
+    datadict!(database, data)
+    !isnothing(model) && modeldict!(database, model)
+    (data, model)
 end
 
 function export_data(source::AbstractDataSource, database::AbstractDatabase; kwargs...)
@@ -41,10 +84,10 @@ function export_data(
     database::AbstractDatabase;
     database_data_type = option(:database_data_type),
     database_directory = option(:database_directory),
-    database_filename = option(:database_filename),
+    database_filename = name(database),
     model_data_type = option(:model_data_type),
     model_directory = option(:model_directory),
-    model_filename = option(:model_filename),
+    model_filename = name(database),
     pretty::Bool = true,
     kwargs...,
 )

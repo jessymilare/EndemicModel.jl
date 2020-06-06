@@ -62,11 +62,18 @@ end
     keys = [:date, :estimated_population, :gdp_per_capita, :total_tests, :test_kind]
     br = select(Brazil, keys)
     avg_ipc = estimates[estimates.state.=="total", :infected_per_confirmed][1]
+    infected = round.(Int, avg_ipc * Brazil.confirmed)
+    # Source: https://journals.lww.com/cmj/Fulltext/2020/05050/Persistence_and_clearance_of_viral_RNA_in_2019.6.aspx
+    # Average infeccious period of 9.5 (6.0 to 11.0) days
+    closed = 0.5 .* (vcat(infected, [0.0]) .+ vcat([0.0], infected))
+    closed = [zeros(Int, 8); round.(Int, closed[1:end-9])]
+
     insertcols!(br, 1, :country => "Brazil")
     insertcols!(br, :confirmed => Brazil.confirmed)
-    insertcols!(br, :recovered => round.(Int, avg_ipc * Brazil.recovered))
+    insertcols!(br, :recovered_confirmed => Brazil.recovered)
+    insertcols!(br, :recovered => closed .- Brazil.deaths)
     insertcols!(br, :deaths => Brazil.deaths)
-    insertcols!(br, :infected => round.(Int, avg_ipc * Brazil.confirmed))
+    insertcols!(br, :infected => infected)
     sort!(br, :date)
 end
 
@@ -368,7 +375,7 @@ function covid19_database(; kwargs...)
         column_tests_per_confirmed,
         column_tests_per_1mi,
     ]
-    Database{DataDict}(sources, kwargs, funcs)
+    Database{DataDict}(sources, kwargs, funcs; name = "COVID-19")
 end
 
 function covid19(; database = nothing, kwargs...)
@@ -376,60 +383,67 @@ function covid19(; database = nothing, kwargs...)
     @info "Creating COVID-19 database."
     isnothing(database) && (db = covid19_database(; kwargs...))
 
-    sources = DataFrame(
-        :source => [
-            "CSSE at JHU (John Hopkins University)",
-            "Brasil.IO",
-            "World Bank Open Data",
-            "Our World In Data",
-        ],
-        :url => [
-            "https://systems.jhu.edu/",
-            "https://brasil.io/home/",
-            "https://data.worldbank.org/",
-            "https://ourworldindata.org/",
-        ],
-        :data_kind => [
-            "COVID-19 cases for several countries",
-            "COVID-19 cases per state and city in Brazil",
-            "Population and GDP per capita for several countries",
-            "Number of tests of COVID-19 for several countries",
-        ],
-    )
-    for row ∈ eachrow(db.brasil_io.estimates)
-        data_kind = row.state == "total" ? "Estimate for Brazil on {row.date}" :
-            "Estimate for {row.state}, Brazil on {row.date}"
-        push!(sources, (; source = row.source, url = row.url, data_kind = data_kind))
-    end
+    if hasproperty(db, :csse)
+        sources = DataFrame(
+            :source => [
+                "CSSE at JHU (John Hopkins University)",
+                "Brasil.IO",
+                "World Bank Open Data",
+                "Our World In Data",
+            ],
+            :url => [
+                "https://systems.jhu.edu/",
+                "https://brasil.io/home/",
+                "https://data.worldbank.org/",
+                "https://ourworldindata.org/",
+            ],
+            :data_kind => [
+                "COVID-19 cases for several countries",
+                "COVID-19 cases per state and city in Brazil",
+                "Population and GDP per capita for several countries",
+                "Number of tests of COVID-19 for several countries",
+            ],
+        )
+        for row ∈ eachrow(db.brasil_io.estimates)
+            data_kind = row.state == "total" ? "Estimate for Brazil on $(row.date)" :
+                "Estimate for $(row.state), Brazil on $(row.date)"
+            push!(
+                sources,
+                (; source = row.source, url = row.url, data_kind = data_kind),
+            )
+        end
 
-    newdata = DataDict(
-        :world => DataDict(
-            :per_country => db.csse.per_country_group,
-            :per_date => db.csse.total_group,
-            :total => db.csse.total2,
-        ),
-        :Brazil => DataDict(
-            :per_state => db.brasil_io.per_state_group,
-            :per_city => db.brasil_io.per_city_group,
-            :total => db.brasil_io.Brazil2,
-        ),
-        :sources => sources,
-        :auxiliar => DataDict(
-            :total_tests => db.total_tests,
-            :world_population => db.world_population,
-            :world_gdp_per_capita => db.world_gdp_per_capita,
-        ),
-    )
-    datadict!(db, newdata)
-    @info "COVID-19 database created." summary(db)
-    @info "Computing SEIR model..."
-    SEIRModel!(db; kwargs...)
-    @info "SEIR model for COVID-19 database computed."
-    # @info "Optimizing parameters..."
-    # optimize_parameters!(db; kwargs...)
-    # @info "Optimal parameters for COVID-19 database computed."
-    @info "Exporting..."
-    paths = export_data(db; kwargs...)
-    @info "COVID-19 database exported." paths
+        newdata = DataDict(
+            :world => DataDict(
+                :per_country => db.csse.per_country_group,
+                :per_date => db.csse.total_group,
+                :total => db.csse.total2,
+            ),
+            :Brazil => DataDict(
+                :per_state => db.brasil_io.per_state_group,
+                :per_city => db.brasil_io.per_city_group,
+                :total => db.brasil_io.Brazil2,
+            ),
+            :sources => sources,
+            :auxiliar => DataDict(
+                :total_tests => db.total_tests,
+                :world_population => db.world_population,
+                :world_gdp_per_capita => db.world_gdp_per_capita,
+            ),
+        )
+        datadict!(db, newdata)
+        @info "COVID-19 database created." summary(db)
+        @info "Computing SEIR model..."
+        SEIRModel!(db; kwargs...)
+        @info "SEIR model for COVID-19 database computed."
+        # @info "Optimizing parameters..."
+        # optimize_parameters!(db; kwargs...)
+        # @info "Optimal parameters for COVID-19 database computed."
+        @info "Exporting..."
+        paths = export_data(db; kwargs...)
+        @info "COVID-19 database exported." paths
+    else
+        @info "COVID-19 database imported from cache."
+    end
     db
 end

@@ -368,29 +368,31 @@ function model_problem(model::SEIRModel; kwargs...)
     SEIR_ODEProblem(variables(model), parameters(model); kwargs...)
 end
 
-function model_solution(model::SEIRModel; kwargs...)
-    solve(model_problem(model; kwargs...), Euler(); dt = 1.0)
+function model_solution(model::SEIRModel; dt = 1.0, kwargs...)
+    solve(model_problem(model; kwargs...), Euler(); dt = dt)
 end
 
 function to_dataframe(model::SEIRModel; kwargs...)
-    solution = model_solution(model; kwargs...)
+    solution = model_solution(model; dt = 0.25, kwargs...)
     (M, β, γ, α, μ) = parameters(model)
-    days = solution.t
+    days = solution.t[1:4:end]
+    solution = solution[1:4:end]
     initial_date = default_kwarg(model, :initial_date, today() - Day(15))
     date = initial_date .+ Day.(days)
     n = length(days)
     ng = model.ngroups
-    exposed = zeros(Int, n)
-    active = zeros(Int, n)
-    recovered = zeros(Int, n)
-    deaths = zeros(Int, n)
-    infected = zeros(Int, n)
-    diff_exposed = zeros(Int, n)
-    diff_active = zeros(Int, n)
-    diff_recovered = zeros(Int, n)
-    diff_deaths = zeros(Int, n)
+    exposed = zeros(Float, n)
+    active = zeros(Float, n)
+    recovered = zeros(Float, n)
+    deaths = zeros(Float, n)
+    infected = zeros(Float, n)
+    diff_exposed = zeros(Float, n)
+    diff_active = zeros(Float, n)
+    diff_recovered = zeros(Float, n)
+    diff_deaths = zeros(Float, n)
 
-    _round(x) = isnan(x) ? 0 : round(Int, max(-1e12, min(1e12, x)))
+    # _round(x) = isnan(x) ? 0 : round(Int, max(-1e12, min(1e12, x)))
+    _round(x) = x
 
     for i ∈ 1:n
         (S, E, I, R) = unpack_vars(solution[i])
@@ -448,22 +450,25 @@ function _get_plot_title(df)
     join(location, ", ")
 end
 
-function modelplot(
+function Plots.plot(
+    ::AbstractEndemicModel,
     df::DataFrame;
     columns = option(:plot_columns),
+    plot_period = Day(nrow(df)),
     labels = nothing,
     title = _get_plot_title(df),
-    minimum_plot_factor = option(:minimum_plot_factor),
     date_format = option(:plot_date_format),
     new_window::Bool = true,
     ylabel = nothing,
     yfactor = nothing,
-    legend = length(columns) == 1 ? false : :right,
+    legend = length(columns) == 1 ? false : :topleft,
     left_margin = 5mm,
     kwargs...,
 )
-    columns = intersect(Symbol.(columns), Symbol.(names(df)))
-    labels = string.(something(labels, prettify.(columns)))
+    ndays = Dates.days(plot_period)
+    df = df[1:ndays, :]
+    columns = intersect(string.(columns), names(df))
+    labels = string.(something(labels, prettify.(Symbol.(columns))))
     max_yvalue = 0
     for cname ∈ columns
         max_yvalue = max(maximum(skipmissing(df[!, cname])), max_yvalue)
@@ -479,15 +484,11 @@ function modelplot(
     end
 
     idx = findfirst(s -> occursin("active", s), names(df))
-    # istart = findfirst(df[!, idx] .* yfactor .>= 0.1)
-    istart = 1
-    iend = findlast(df[!, idx] .>= numpeople * minimum_plot_factor)
-    df = df[istart:something(iend, nrow(df)), :]
     X = Dates.format.(df.date, date_format)
 
     left_margin isa Real && (left_margin *= mm)
 
-    win = plot(
+    win = Plots.plot(
         X,
         df[!, columns[1]] .* yfactor,
         xrotation = 45,
@@ -499,19 +500,19 @@ function modelplot(
         left_margin = left_margin,
     )
     for (yn, label) ∈ zip(columns[2:end], labels[2:end])
-        plot!(win, X, df[!, yn] .* yfactor; label = label)
+        Plots.plot!(win, X, df[!, yn] .* yfactor; label = label)
     end
     new_window && gui(win)
     win
 end
 
 function model_combined_data(
-    model::SEIRModel;
+    model::AbstractEndemicModel;
     columns = option(:plot_columns),
     plot_period = Day(7),
     kwargs...,
 )
-    columns = Symbol.(columns)
+    columns = string.(columns)
 
     realdf = realdata(model)
     model_initial_date = default_kwarg(model, :initial_date, today() - Day(15))
@@ -529,7 +530,7 @@ function model_combined_data(
         (:date .<= realdf.date[end]) .& (:date .>= plot_initial_date)
     )
 
-    columns = intersect(columns, Symbol.(names(modeldf)), Symbol.(names(realdf)))
+    columns = intersect(columns, names(modeldf), names(realdf))
     rcolumns = [Symbol(sym, " (real)") for sym ∈ columns]
     mcolumns = [Symbol(sym, " (model)") for sym ∈ columns]
 
@@ -540,20 +541,32 @@ function model_combined_data(
     (leftjoin(realdf, modeldf; on = :date), [rcolumns; mcolumns])
 end
 
-function modelplot(
-    model::SEIRModel;
+function Plots.plot(
+    model::AbstractEndemicModel,
+    kind = :combined_data;
     columns = option(:plot_columns),
     new_window::Bool = true,
     title = nothing,
     kwargs...,
 )
-    (df, columns) = model_combined_data(model; columns = columns, kwargs...)
+    kind = Symbol(kind)
+    if kind == :combined_data
+        (df, columns) = model_combined_data(model; columns = columns, kwargs...)
+    elseif kind == :realdata
+        df = realdata(model)
+    elseif kind == :modeldata
+        df = modeldata(model)
+    else
+        throw(ArgumentError("Unrecognized plot kind: $(kind)"))
+    end
     title = something(title, _get_plot_title(realdata(model)))
 
-    modelplot(df; title = title, new_window = new_window, columns = columns, kwargs...)
-end
-
-function modelplot(problem::ODEProblem; kwargs...)
-    df = to_dataframe(problem; kwargs...)
-    modelplot(df; kwargs...)
+    Plots.plot(
+        model,
+        df;
+        title = title,
+        new_window = new_window,
+        columns = columns,
+        kwargs...,
+    )
 end

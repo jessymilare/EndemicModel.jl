@@ -72,28 +72,30 @@ function model_loss(
         deaths = Tuple(data.deaths),
         active = Tuple(data.active),
     )
-    rec_tot = loss_func(data.recovered .- mean(data.recovered))
+    #rec_tot = loss_func(data.recovered .- mean(data.recovered))
     dth_tot = loss_func(data.deaths .- mean(data.deaths))
     act_tot = loss_func(data.active .- mean(data.active))
-    max_loss = rec_tot + dth_tot + act_tot
+    max_loss = act_tot + dth_tot # + rec_tot
 
-    rec_loss = Float[]
-    act_loss = Float[]
-    dth_loss = Float[]
-    for i ∈ 1:ndays
-        push!(rec_loss, data.recovered[i] - mdata.recovered[i])
-        push!(act_loss, data.active[i] - mdata.active[i])
-        push!(dth_loss, data.deaths[i] - mdata.deaths[i])
-    end
-    loss_value = loss_func(rec_loss) + loss_func(act_loss) + loss_func(dth_loss)
+    #rec_loss = Float[]
+    act_loss_vec = data.active .- mdata.active[1:ndays]
+    dth_loss_vec = data.deaths .- mdata.deaths[1:ndays]
+    #rec_loss_vec = data.recovered .- mdata.recovered[1:ndays]
+
+    act_loss, dth_loss = loss_func(act_loss_vec), loss_func(dth_loss_vec)
+    @debug(
+        "Computing loss",
+        Tuple(act_loss_vec),
+        Tuple(dth_loss_vec),
+        act_loss,
+        dth_loss,
+        max_loss
+    )
+    loss_value = act_loss + dth_loss
     loss_value / max_loss
 end
 
-function optimize_parameters!(
-    model::SEIRModel;
-    packed_params = (:β, :γ, :α, :μ),
-    kwargs...,
-)
+function optimize_parameters!(model::SEIRModel; packed_params = (:β,), kwargs...)
     n = model.ngroups
     lastparams = nothing
     model_params = parameters(model)
@@ -110,6 +112,7 @@ function optimize_parameters!(
         parameters!(model, newparams)
         (S, E, I, R) = variables(model)
         variables!(model, SEIRVariables(S, newE, I, R))
+        modeldata!(model, to_dataframe(model; kwargs...))
         model_loss(model; kwargs...)
     end
 
@@ -125,7 +128,10 @@ function optimize_parameters!(
     E0 = variables(model)[:E]
     opt_params = pack_params(model_params; packed_params = packed_params)
     append!(opt_params, Float.(E0))
-    optimize(_calc_loss, lower, upper, opt_params, minbox)
+
+    opt = optimize(_calc_loss, lower, upper, opt_params, minbox)
+    modeldata!(model, to_dataframe(model))
+    opt
 end
 
 optimize_parameters(model::SEIRModel; kwargs...) =
@@ -187,7 +193,7 @@ optimize_variables(model::SEIRModel; kwargs...) =
 
 function search_parameters(model::AbstractEndemicModel) end
 
-function estimate_μ(data::AbstractDataFrame; ndays = 10, kwargs...)
+function estimate_μ(data::AbstractDataFrame; ndays = 7, kwargs...)
     deaths, recovered = data.deaths, data.recovered
     deaths[end] == 0 && return [NaN]
     ind1 = findfirst(.!ismissing.(deaths) .& (deaths .> 0))
@@ -215,98 +221,90 @@ end
 estimate_μ(model::AbstractEndemicModel; kwargs...) =
     estimate_μ(realdata(model); kwargs...)
 
-function estimate_α(
-    data::AbstractDataFrame;
-    ndays = 10,
-    μ_pair = estimate_μ(data),
-    kwargs...,
-)
-    # (μ, σ_μ) = μ_pair
-    # # Get numbers from last `ndays` days
-    # ini = max(1, nrow(data) - ndays)
-    # data = data[ini:end, :]
-    # # Filter valid entries
-    # data = @where(data, .!ismissing.(:diff_closed) .& :active .> 0)
-    # dR = data.diff_closed
-    # I = data.active
-    # isempty(I) && return (NaN, Inf)
-    # @debug "Estimating α = dR / I." dR = Tuple(dR) I = Tuple(I)
-    # vals = dR ./ I
-    # val = mean(vals)
-    # if val >= MAX_α || val <= MIN_α
-    #     return (NaN, Inf)
-    # else
-    #     return (val, StatsBase.std(vals; mean = val))
-    # end
+function estimate_α(data::AbstractDataFrame; ndays = 7, kwargs...)
+    # Get numbers from last `ndays` days
+    ini = max(1, nrow(data) - ndays)
+    data = data[ini:end, :]
+    # Filter valid entries
+    data = @where(data, .!ismissing.(:diff_closed) .& :active .> 0)
+    dR = data.diff_closed
+    I = data.active
+    isempty(I) && return (NaN, Inf)
+    @debug "Estimating α = dR / I." dR = Tuple(dR) I = Tuple(I)
+    vals = dR ./ I
+    if any(val -> val >= MAX_α || val <= MIN_α, vals)
+        return (NaN, Inf)
+    else
+        val = geomean(vals .+ 1) - 1
+        return (val, StatsBase.std(vals; mean = val))
+    end
 
     # Source: https://journals.lww.com/cmj/Fulltext/2020/05050/Persistence_and_clearance_of_viral_RNA_in_2019.6.aspx
     # Average infeccious period of 9.5 (6.0 to 11.0) days
-    (1 / 9.5, 1 / 6.0 - 1 / 9.5)
+    # (1 / 9.5, 1 / 6.0 - 1 / 9.5)
 end
 
 estimate_α(model::AbstractEndemicModel; kwargs...) =
     estimate_α(realdata(model); kwargs...)
 
-# function _γ_root(d1, d2, d3, I, α)
-#     a = -I .* d2 .+ d1 .^ 2 .- I .* α .* d1
-#     b = d1 .* d2 .- I .* α .* d2
-#     c = -I .* d3
-#     Δ = b .^ 2 - 4 .* a .* c
-#
-#     vals = [
-#         ai < 0 ? (-sqrt(abs(Δi)) - bi) / (2ai) : (sqrt(abs(Δi)) - bi) / (2ai)
-#         for (ai, bi, Δi) ∈ zip(a, b, Δ)
-#     ]
-#     root = mean(vals)
-#
-#     @debug(
-#         "Estimating γ as the mean of max roots of equations `a * γ^2 + b * γ + c = 0`.",
-#         a = Tuple(a),
-#         b = Tuple(b),
-#         c = Tuple(c),
-#         Δ = Tuple(Δ),
-#         values = Tuple(vals),
-#         root = root
-#     )
-#
-#     (root, StatsBase.std(vals; mean = root))
-# end
+function _γ_root(d1, d2, d3, I, α)
+    a = -I .* d2 .+ d1 .^ 2 .- I .* α .* d1
+    b = d1 .* d2 .- I .* α .* d2
+    c = -I .* d3
+    Δ = b .^ 2 - 4 .* a .* c
+
+    vals = [
+        ai < 0 ? (-sqrt(abs(Δi)) - bi) / (2ai) : (sqrt(abs(Δi)) - bi) / (2ai)
+        for (ai, bi, Δi) ∈ zip(a, b, Δ)
+    ]
+
+    @debug(
+        "Estimating γ as the mean of max roots of equations `a * γ^2 + b * γ + c = 0`.",
+        a = Tuple(a),
+        b = Tuple(b),
+        c = Tuple(c),
+        Δ = Tuple(Δ),
+        values = Tuple(vals),
+    )
+
+    vals
+end
 
 function estimate_γ(
     data::AbstractDataFrame;
-    ndays = 10,
-    μ_pair = estimate_μ(data),
-    α_pair = estimate_α(data; μ_pair = μ_pair),
+    ndays = 7,
+    α_pair = estimate_α(data; kwargs...),
     kwargs...,
 )
-    # (μ, σ_μ) = μ_pair
-    # (α, σ_α) = α_pair
-    # # Try to find at least 4 valid entries
-    # ini = something(findlast(!ismissing, data.diff3_infected), 8) - 3
-    # # Get numbers from last `ndays` days
-    # ini = min(ini, max(1, nrow(data) - ndays))
-    # data = data[ini:end, :]
-    # # Filter valid entries
-    # data = @where(data, .!ismissing.(:diff3_infected) .& .!ismissing.(:active))
-    #
-    # d1 = data.diff_infected
-    # d2 = data.diff2_infected
-    # d3 = data.diff3_infected
-    #
-    # I = data.active
-    # isempty(I) && return (NaN, Inf)
-    # (val, σ_γ) = _γ_root(d1, d2, d3, I, α)
-    # if val >= MAX_γ
-    #     return (0.99 * MAX_γ, σ_γ + val - MAX_γ)
-    # elseif val <= MIN_γ
-    #     return (1.01 * MIN_γ, σ_γ + MIN_γ - val)
-    # else
-    #     return (val, σ_γ)
-    # end
+    (α, σ_α) = α_pair
+    # Try to find at least 4 valid entries
+    ini = something(findlast(!ismissing, data.diff3_infected), 8) - 3
+    # Get numbers from last `ndays` days
+    ini = min(ini, max(1, nrow(data) - ndays))
+    data = data[ini:end, :]
+    # Filter valid entries
+    data = @where(data, .!ismissing.(:diff3_infected) .& .!ismissing.(:active))
+
+    d1 = data.diff_infected
+    d2 = data.diff2_infected
+    d3 = data.diff3_infected
+
+    I = data.active
+    isempty(I) && return (NaN, Inf)
+    vals = _γ_root(d1, d2, d3, I, α)
+
+    if any(val -> val >= MAX_γ, vals)
+        return (0.99 * MAX_γ, StatsBase.std(vals; mean = MAX_γ))
+    elseif any(val -> val <= MIN_γ, vals)
+        return (1.01 * MIN_γ, StatsBase.std(vals; mean = MIN_γ))
+    else
+        val = geomean(vals .+ 1) - 1
+        return (val, StatsBase.std(vals; mean = val))
+    end
 
     # Source: https://www.acpjournals.org/doi/10.7326/M20-0504
     # Incubation period 5.1 (4.5 to 5.8) days
-    (1 / 5.1, 1 / 4.5 - 1 / 5.1)
+    # (1 / 5.1, 1 / 4.5 - 1 / 5.1)
 end
 
 estimate_γ(model::AbstractEndemicModel; kwargs...) =
@@ -314,10 +312,9 @@ estimate_γ(model::AbstractEndemicModel; kwargs...) =
 
 function estimate_β(
     data::AbstractDataFrame;
-    ndays = 10,
-    μ_pair = estimate_μ(data),
-    α_pair = estimate_α(data; μ_pair = μ_pair),
-    γ_pair = estimate_γ(data; μ_pair = μ_pair, α_pair = α_pair),
+    ndays = 7,
+    α_pair = estimate_α(data; kwargs...),
+    γ_pair = estimate_γ(data; α_pair = α_pair, kwargs...),
     kwargs...,
 )
     (γ, σ_γ) = γ_pair
@@ -343,14 +340,14 @@ function estimate_β(
     s_inv = M ./ (M .- I .- R)
     vals = s_inv .* (d2 .+ γ .* d1) ./ (γ .* I .+ d1)
     isempty(vals) && return (NaN, Inf)
-    val = mean(vals)
-    σ_β = StatsBase.std(vals; mean = val)
-    if val >= MAX_β
-        return (0.99 * MAX_β, σ_β + val - MAX_β)
-    elseif val <= MIN_β
-        return (1.01 * MIN_β, σ_β + MIN_β - val)
+
+    if any(val -> val >= MAX_β, vals)
+        return (0.99 * MAX_β, StatsBase.std(vals; mean = MAX_β))
+    elseif any(val -> val <= MIN_β, vals)
+        return (1.01 * MIN_β, StatsBase.std(vals; mean = MIN_β))
     else
-        return (val, σ_β)
+        val = geomean(vals .+ 1) - 1
+        return (val, StatsBase.std(vals; mean = val))
     end
 
 end
@@ -358,8 +355,8 @@ end
 function estimate_exposed(
     data::AbstractDataFrame;
     μ_pair = estimate_μ(data; kwargs...),
-    α_pair = estimate_α(data; μ_pair = μ_pair, kwargs...),
-    γ_pair = estimate_γ(data; μ_pair = μ_pair, α_pair = α_pair, kwargs...),
+    α_pair = estimate_α(data; kwargs...),
+    γ_pair = estimate_γ(data; α_pair = α_pair, kwargs...),
     kwargs...,
 )
     (μ, σ_μ) = μ_pair
@@ -391,7 +388,7 @@ estimate_exposed!(model::AbstractEndemicModel; kwargs...) =
 
 function SEIRModel(
     data::AbstractDataFrame;
-    minimum_infected = option(:minimum_infected_factor),
+    minimum_infected = option(:minimum_infected),
     ndays = 7,
     kwargs...,
 )

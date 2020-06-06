@@ -1,18 +1,18 @@
 # This file is part of EndemicModel project, which is licensed under BDS-3-Clause.
 # See file LICENSE.md for more information.
 
-const PathDesignator = Union{AbstractString, AbstractPath}
+const PathDesignator = Union{AbstractString,AbstractPath}
 
 const Float = Float64
-const OptFloat = Union{Missing, Float64}
-const OptInt = Union{Missing, Int}
+const OptFloat = Union{Missing,Float64}
+const OptInt = Union{Missing,Int}
 
-const DataDict = Dict{Symbol, Any}
-const OrderedDataDict = OrderedDict{Symbol, Any}
-const SortedDataDict = SortedDict{Symbol, Any}
-const WeakKeyDataDict = WeakKeyDict{Symbol, Any}
-const DataFrameDict = Dict{Symbol, DataFrame}
-const AbstractDataDict = AbstractDict{Symbol, Any}
+const DataDict = Dict{Symbol,Any}
+const OrderedDataDict = OrderedDict{Symbol,Any}
+const SortedDataDict = SortedDict{Symbol,Any}
+const WeakKeyDataDict = WeakKeyDict{Symbol,Any}
+const DataFrameDict = Dict{Symbol,DataFrame}
+const AbstractDataDict = AbstractDict{Symbol,Any}
 
 datadict(data::AbstractDict) = DataDict(data)
 datadict(data::OrderedDict) = OrderedDataDict(data)
@@ -35,10 +35,10 @@ end
 function ods_read(io; kwargs...)::DataFrame
     OdsIO.ods_read(io; innerType = "DataFrame", kwargs...)
 end
-function ods_readall(file::PathDesignator; kwargs...)::Dict{String, DataFrame}
+function ods_readall(file::PathDesignator; kwargs...)::Dict{String,DataFrame}
     OdsIO.ods_readall(string(file); innerType = "DataFrame", kwargs...)
 end
-function ods_readall(io; kwargs...)::Dict{String, DataFrame}
+function ods_readall(io; kwargs...)::Dict{String,DataFrame}
     OdsIO.ods_readall(io; innerType = "DataFrame", kwargs...)
 end
 ods_write(file::PathDesignator, data; kwargs...) = OdsIO.ods_write(string(file), data)
@@ -137,12 +137,25 @@ end
 prettify(obj::Quantity{<:Integer}; kwargs...) = string(obj)
 prettify(obj::Quantity; digits = 3, kwargs...) =
     round(unit(obj), obj; digits = digits + 2)
-prettify(obj::Symbol; kwargs...) =
-    Symbol(prettify(string(obj); title = true, kwargs...))
 
-function prettify(obj::AbstractString; title = false, kwargs...)
-    if title && all(c -> Int(c) < 255, obj)
-        titlecase(replace(obj, "_" => " "); strict = false)
+function prettify(
+    obj::Symbol;
+    case = titlecase,
+    replace_pairs = ["_" => " "],
+    kwargs...,
+)
+    Symbol(prettify(string(obj); case = case, replace_pairs = replace_pairs, kwargs...))
+end
+
+function prettify(
+    obj::AbstractString;
+    case = nothing,
+    replace_pairs = nothing,
+    kwargs...,
+)
+    !isnothing(replace_pairs) && (obj = replace(obj, replace_pairs...))
+    if !isnothing(case) && all(c -> Int(c) < 255, obj)
+        case(obj; strict = false)
     else
         obj
     end
