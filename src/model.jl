@@ -16,6 +16,9 @@ modeldata(model::AbstractEndemicModel) = model.modeldata
 modeldata!(model::AbstractEndemicModel, value::AbstractDataFrame) =
     model.modeldata = value
 
+modeldata!(model::AbstractEndemicModel; kwargs...) =
+    modeldata!(model::AbstractEndemicModel, to_dataframe(model; kwargs...))
+
 default_kwargs(model::AbstractEndemicModel) = model.kwargs
 default_kwargs!(model::AbstractEndemicModel, value) = model.kwargs = value
 
@@ -40,12 +43,12 @@ export_data(model::AbstractEndemicModel; kwargs...) =
 export_data(source, model::AbstractEndemicModel; kwargs...) =
     export_data(source, modeldata(model); kwargs...)
 
-const SEIR_VARS = (:S, :E, :I, :R)
-const SEIR_DERIV = (:dS, :dE, :dI, :dR)
-const SEIR_PARAMS = (:M, :β, :γ, :α, :μ)
-const SEIRVariables = NamedTuple{SEIR_VARS,NTuple{4,Vector{Float}}}
-const SEIRDerivatives = NamedTuple{SEIR_DERIV,NTuple{4,Vector{Float}}}
-const SEIRParameters = NamedTuple{SEIR_PARAMS,NTuple{5,Vector{Float}}}
+const SEIR_VARIABLES = (:S, :E, :I, :R)
+const SEIR_DERIVATIVES = (:dS, :dE, :dI, :dR)
+const SEIR_PARAMETERS = (:M, :β, :γ, :α, :μ)
+const SEIRVariables = NamedTuple{SEIR_VARIABLES,NTuple{4,Vector{Float}}}
+const SEIRDerivatives = NamedTuple{SEIR_DERIVATIVES,NTuple{4,Vector{Float}}}
+const SEIRParameters = NamedTuple{SEIR_PARAMETERS,NTuple{5,Vector{Float}}}
 
 SEIRVariables(S, E, I, R) = SEIRVariables((S, E, I, R))
 SEIRDerivatives(dS, dE, dI, dR) = SEIRDerivatives((dS, dE, dI, dR))
@@ -280,7 +283,7 @@ function pack_params(tup::Tuple)
 end
 
 function pack_params(tup::NamedTuple; packed_params = keys(tup))
-    if packed_params == SEIR_PARAMS
+    if packed_params == SEIR_PARAMETERS
         pack_params(tup...)
     else
         M = :M ∈ packed_params ? tup[:M] : nothing
@@ -305,7 +308,7 @@ end
 function unpack_params(
     P::Vector{Float},
     ngroups::Int;
-    packed_params = SEIR_PARAMS,
+    packed_params = SEIR_PARAMETERS,
     default_params = (),
 )
     vecvars = [:M, :β, :γ, :α, :μ] ∩ packed_params
@@ -509,7 +512,7 @@ end
 function model_combined_data(
     model::AbstractEndemicModel;
     columns = option(:plot_columns),
-    plot_period = Day(7),
+    plot_period = Day(14),
     kwargs...,
 )
     columns = string.(columns)

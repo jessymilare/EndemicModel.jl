@@ -4,13 +4,22 @@
 # Parameter limits
 
 const MIN_μ = 0.001
-const MAX_μ = 0.5
-const MIN_α = 0.01
-const MAX_α = 0.5
-const MIN_γ = 0.01
-const MAX_γ = 1.0
+const MAX_μ = 0.1
+
+# Source: https://journals.lww.com/cmj/Fulltext/2020/05050/Persistence_and_clearance_of_viral_RNA_in_2019.6.aspx
+# Average infeccious period of 9.5 (6.0 to 11.0) days
+const MIN_α = 1 / 11.0
+const MAX_α = 1 / 6.0
+
+# Source: https://www.acpjournals.org/doi/10.7326/M20-0504
+# Incubation period 5.1 (4.5 to 5.8) days
+const MIN_γ = 1 / 5.8
+const MAX_γ = 1 / 4.5
+
 const MIN_β = 0.001
 const MAX_β = 0.5
+
+const ε = 1e-2
 
 const SEIR_σ_NAMES = (:σ_β, :σ_γ, :σ_α, :σ_μ, :σ_E)
 const SEIRσ = NamedTuple{SEIR_σ_NAMES,NTuple{5,Float}}
@@ -95,13 +104,19 @@ function model_loss(
     loss_value / max_loss
 end
 
-function optimize_parameters!(model::SEIRModel; packed_params = (:β,), kwargs...)
+function optimize_parameters!(model::SEIRModel, params = (:β, :E); kwargs...)
+    packed_params = intersect(SEIR_PARAMETERS, params)
     n = model.ngroups
     lastparams = nothing
     model_params = parameters(model)
+
     function _calc_loss(arg)
-        params = arg[1:(end-n)]
-        newE = arg[(end-n+1):end]
+        if :E ∈ params
+            params = arg[1:(end-n)]
+            newE = arg[(end-n+1):end]
+        else
+            params = arg
+        end
         newparams = unpack_params(
             params,
             model.ngroups;
@@ -110,8 +125,10 @@ function optimize_parameters!(model::SEIRModel; packed_params = (:β,), kwargs..
         )
 
         parameters!(model, newparams)
-        (S, E, I, R) = variables(model)
-        variables!(model, SEIRVariables(S, newE, I, R))
+        if :E ∈ params
+            (S, E, I, R) = variables(model)
+            variables!(model, SEIRVariables(S, newE, I, R))
+        end
         modeldata!(model, to_dataframe(model; kwargs...))
         model_loss(model; kwargs...)
     end
@@ -119,17 +136,20 @@ function optimize_parameters!(model::SEIRModel; packed_params = (:β,), kwargs..
     maxM = fill(1.01 * sum(model_params[:M]), n)
     maxp = (; M = maxM, β = MAX_β, γ = MAX_γ, α = MAX_α, μ = MAX_μ)
     minp = (; M = 0.1 * maxM, β = MIN_β, γ = MIN_γ, α = MIN_α, μ = MIN_μ)
-    maxE, minE = maxM ./ 2, fill(0.0, n)
-    upper = pack_params(maxp; packed_params = packed_params)
-    append!(upper, maxE)
-    lower = pack_params(minp; packed_params = packed_params)
-    append!(lower, minE)
-    minbox = Fminbox(NelderMead())
-    E0 = variables(model)[:E]
-    opt_params = pack_params(model_params; packed_params = packed_params)
-    append!(opt_params, Float.(E0))
 
-    opt = optimize(_calc_loss, lower, upper, opt_params, minbox)
+    upper = pack_params(maxp; packed_params = packed_params)
+    lower = pack_params(minp; packed_params = packed_params)
+    opt_params = pack_params(model_params; packed_params = packed_params)
+
+    if :E ∈ params
+        maxE, minE = maxM ./ 2, fill(0.0, n)
+        append!(upper, maxE)
+        append!(lower, minE)
+        E0 = variables(model)[:E]
+        append!(opt_params, Float.(E0))
+    end
+
+    opt = optimize(_calc_loss, lower, upper, opt_params, Fminbox(NelderMead()))
     modeldata!(model, to_dataframe(model))
     opt
 end
@@ -138,11 +158,12 @@ optimize_parameters(model::SEIRModel; kwargs...) =
     optimize_parameters!(copy(model); kwargs...)
 
 function optimize_parameters!(data::AbstractDict; kwargs...)
+    result = empty(data)
     for (key, subdata) ∈ data
         @debug "Optimizing parameters." key _debuginfo(subdata)
-        optimize_parameters!(subdata; kwargs...)
+        result[key] = optimize_parameters!(subdata; kwargs...)
     end
-    data
+    result
 end
 
 function optimize_parameters(data::AbstractDict; kwargs...)
@@ -232,16 +253,15 @@ function estimate_α(data::AbstractDataFrame; ndays = 7, kwargs...)
     isempty(I) && return (NaN, Inf)
     @debug "Estimating α = dR / I." dR = Tuple(dR) I = Tuple(I)
     vals = dR ./ I
-    if any(val -> val >= MAX_α || val <= MIN_α, vals)
-        return (NaN, Inf)
+
+    if any(val -> val >= 1 - ε, vals)
+        return (MAX_α, StatsBase.std(vals; mean = MAX_α))
+    elseif any(val -> val <= ε, vals)
+        return (MIN_α, StatsBase.std(vals; mean = MIN_α))
     else
-        val = geomean(vals .+ 1) - 1
+        val = min(MAX_α, max(MIN_α, geomean(vals .+ 1) - 1))
         return (val, StatsBase.std(vals; mean = val))
     end
-
-    # Source: https://journals.lww.com/cmj/Fulltext/2020/05050/Persistence_and_clearance_of_viral_RNA_in_2019.6.aspx
-    # Average infeccious period of 9.5 (6.0 to 11.0) days
-    # (1 / 9.5, 1 / 6.0 - 1 / 9.5)
 end
 
 estimate_α(model::AbstractEndemicModel; kwargs...) =
@@ -293,18 +313,14 @@ function estimate_γ(
     isempty(I) && return (NaN, Inf)
     vals = _γ_root(d1, d2, d3, I, α)
 
-    if any(val -> val >= MAX_γ, vals)
-        return (0.99 * MAX_γ, StatsBase.std(vals; mean = MAX_γ))
-    elseif any(val -> val <= MIN_γ, vals)
-        return (1.01 * MIN_γ, StatsBase.std(vals; mean = MIN_γ))
+    if any(val -> val >= 1 - ε, vals)
+        return (MAX_γ, StatsBase.std(vals; mean = MAX_γ))
+    elseif any(val -> val <= ε, vals)
+        return (MIN_γ, StatsBase.std(vals; mean = MIN_γ))
     else
-        val = geomean(vals .+ 1) - 1
+        val = min(MAX_γ, max(MIN_γ, geomean(vals .+ 1) - 1))
         return (val, StatsBase.std(vals; mean = val))
     end
-
-    # Source: https://www.acpjournals.org/doi/10.7326/M20-0504
-    # Incubation period 5.1 (4.5 to 5.8) days
-    # (1 / 5.1, 1 / 4.5 - 1 / 5.1)
 end
 
 estimate_γ(model::AbstractEndemicModel; kwargs...) =
@@ -341,12 +357,12 @@ function estimate_β(
     vals = s_inv .* (d2 .+ γ .* d1) ./ (γ .* I .+ d1)
     isempty(vals) && return (NaN, Inf)
 
-    if any(val -> val >= MAX_β, vals)
-        return (0.99 * MAX_β, StatsBase.std(vals; mean = MAX_β))
-    elseif any(val -> val <= MIN_β, vals)
-        return (1.01 * MIN_β, StatsBase.std(vals; mean = MIN_β))
+    if any(val -> val >= 1 - ε, vals)
+        return (MAX_β, StatsBase.std(vals; mean = MAX_β))
+    elseif any(val -> val <= ε, vals)
+        return (MIN_β, StatsBase.std(vals; mean = MIN_β))
     else
-        val = geomean(vals .+ 1) - 1
+        val = min(MAX_β, max(MIN_β, geomean(vals .+ 1) - 1))
         return (val, StatsBase.std(vals; mean = val))
     end
 
@@ -389,7 +405,7 @@ estimate_exposed!(model::AbstractEndemicModel; kwargs...) =
 function SEIRModel(
     data::AbstractDataFrame;
     minimum_infected = option(:minimum_infected),
-    ndays = 7,
+    ndays = 14,
     kwargs...,
 )
     @debug "Computing SEIR model for data" _debuginfo(data)
@@ -472,7 +488,7 @@ function SEIRModel!(database::AbstractDatabase; kwargs...)
 end
 
 function parameters!(destiny::AbstractDict, data::AbstractDict; kwargs...)
-    columns = [param => OptFloat[] for param ∈ SEIR_PARAMS]
+    columns = [param => OptFloat[] for param ∈ SEIR_PARAMETERS]
     σ_cols = [sym => OptFloat[] for sym ∈ SEIR_σ_NAMES]
     paramdf = DataFrame(
         :key => String[],
