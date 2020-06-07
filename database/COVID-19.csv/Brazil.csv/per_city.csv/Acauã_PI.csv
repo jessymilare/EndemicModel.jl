@@ -1,4 +1,5 @@
 date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
 2020-06-03,PI,Acauã,1,0,23,7155,2200053,36.0,36,23,13,,,,,,,,,,,,,,0.0,0.0,5031.447,0.0,3214.535,3214.535,1816.911
 2020-06-04,PI,Acauã,2,0,47,7155,2200053,36.0,72,47,25,,,,,,,,,,,,,,0.0,0.0,10062.893,0.0,6568.833,6568.833,3494.06
-2020-06-05,PI,Acauã,2,0,49,7155,2200053,36.0,72,49,23,,,,,,,,,,,,,,0.0,0.0,10062.893,0.0,6848.358,6848.358,3214.535
+2020-06-05,PI,Acauã,2,0,47,7155,2200053,36.0,72,47,25,,,,,,,,,,,,,,0.0,0.0,10062.893,0.0,6568.833,6568.833,3494.06
+2020-06-06,PI,Acauã,2,0,48,7155,2200053,36.0,72,48,24,,,,,,,,,,,,,,0.0,0.0,10062.893,0.0,6708.595,6708.595,3354.298

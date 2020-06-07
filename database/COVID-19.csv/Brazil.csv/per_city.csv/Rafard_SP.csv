@@ -1,2 +1,3 @@
 date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-05,SP,Rafard,3,0,15,9167,3542107,7.3,22,15,7,,,,,,,,,,,,,,0.0,0.0,2399.913,0.0,1636.304,1636.304,763.609
+2020-06-05,SP,Rafard,3,0,14,9167,3542107,7.3,22,14,8,,,,,,,,,,,,,,0.0,0.0,2399.913,0.0,1527.217,1527.217,872.696
+2020-06-06,SP,Rafard,6,0,29,9167,3542107,7.3,44,29,15,,,,,,,,,,,,,,0.0,0.0,4799.825,0.0,3163.521,3163.521,1636.304

@@ -73,4 +73,5 @@ date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,i
 2020-06-01,CE,Importados/Indefinidos,1313,0,7281,,,8.3,10898,7281,3617,,,,,,,,,,,,,,0.0,0.0,,,,,
 2020-06-02,CE,Importados/Indefinidos,1388,0,7577,,,8.3,11520,7577,3943,,,,,,,,,,,,,,0.0,0.0,,,,,
 2020-06-03,CE,Importados/Indefinidos,1547,0,8336,,,8.3,12840,8336,4504,,,,,,,,,,,,,,0.0,0.0,,,,,
-2020-06-05,CE,Importados/Indefinidos,1732,0,9840,,,8.3,14376,9840,4536,,,,,,,,,,,,,,0.0,0.0,,,,,
+2020-06-05,CE,Importados/Indefinidos,1732,0,9368,,,8.3,14376,9368,5008,,,,,,,,,,,,,,0.0,0.0,,,,,
+2020-06-06,CE,Importados/Indefinidos,1715,0,9465,,,8.3,14235,9465,4770,,,,,,,,,,,,,,0.0,0.0,,,,,

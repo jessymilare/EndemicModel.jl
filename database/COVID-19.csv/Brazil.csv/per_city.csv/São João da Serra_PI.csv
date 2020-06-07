@@ -1,3 +1,4 @@
 date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
 2020-06-04,PI,São João da Serra,1,0,23,6200,2209906,36.0,36,23,13,,,,,,,,,,,,,,0.0,0.0,5806.452,0.0,3709.677,3709.677,2096.774
-2020-06-05,PI,São João da Serra,1,0,25,6200,2209906,36.0,36,25,11,,,,,,,,,,,,,,0.0,0.0,5806.452,0.0,4032.258,4032.258,1774.194
+2020-06-05,PI,São João da Serra,1,0,23,6200,2209906,36.0,36,23,13,,,,,,,,,,,,,,0.0,0.0,5806.452,0.0,3709.677,3709.677,2096.774
+2020-06-06,PI,São João da Serra,4,0,96,6200,2209906,36.0,144,96,48,,,,,,,,,,,,,,0.0,0.0,23225.806,0.0,15483.871,15483.871,7741.935
