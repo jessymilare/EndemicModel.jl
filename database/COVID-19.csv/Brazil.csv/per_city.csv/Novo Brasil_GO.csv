@@ -1,0 +1,4 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-10,GO,Novo Brasil,2,0,12,2942,5215207,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,5778.382,0.0,4078.858,4078.858,1699.524
+2020-06-11,GO,Novo Brasil,1,0,6,2942,5215207,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,2719.239,0.0,2039.429,2039.429,679.81
+2020-06-12,GO,Novo Brasil,1,0,6,2942,5215207,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,2719.239,0.0,2039.429,2039.429,679.81

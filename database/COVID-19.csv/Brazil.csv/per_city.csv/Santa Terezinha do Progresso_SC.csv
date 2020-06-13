@@ -1,0 +1,6 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-08,SC,Santa Terezinha do Progresso,1,0,18,2452,4215687,25.0,25,18,7,,,,,,,,,,,,,,0.0,0.0,10195.759,0.0,7340.946,7340.946,2854.812
+2020-06-09,SC,Santa Terezinha do Progresso,3,0,53,2452,4215687,25.0,75,53,22,,,,,,,,,,,,,,0.0,0.0,30587.276,0.0,21615.008,21615.008,8972.268
+2020-06-10,SC,Santa Terezinha do Progresso,4,0,70,2452,4215687,25.0,100,70,30,,,,,,,,,,,,,,0.0,0.0,40783.034,0.0,28548.124,28548.124,12234.91
+2020-06-11,SC,Santa Terezinha do Progresso,4,0,70,2452,4215687,25.0,100,70,30,,,,,,,,,,,,,,0.0,0.0,40783.034,0.0,28548.124,28548.124,12234.91
+2020-06-12,SC,Santa Terezinha do Progresso,4,0,71,2452,4215687,25.0,100,71,29,,,,,,,,,,,,,,0.0,0.0,40783.034,0.0,28955.954,28955.954,11827.08

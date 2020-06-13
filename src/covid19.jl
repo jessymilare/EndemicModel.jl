@@ -35,6 +35,23 @@ end
     data = leftjoin(world2, world_population; on = :country)
     data = leftjoin(data, world_gdp_per_capita; on = [:country, :country_code])
     data = leftjoin(data, tests_no_duplicate; on = [:country, :date])
+    rename!(data, :recovered => :recovered_confirmed)
+
+    # Estimate recovered
+    # Source: https://journals.lww.com/cmj/Fulltext/2020/05050/Persistence_and_clearance_of_viral_RNA_in_2019.6.aspx
+    # Average infeccious period of 9.5 (6.0 to 11.0) days
+    infected_vec = data.confirmed
+    active, closed, last_infected = 0, 0, 0
+    closed_vec = []
+    for infected ∈ infected_vec
+        new_closed, new_active = active / 9.5, infected - last_infected
+        closed += new_closed
+        active += new_active - new_closed
+        last_infected = infected
+        push!(closed_vec, closed)
+    end
+    insertcols!(data, :recovered => closed_vec .- data.deaths)
+
     cols = [
         :country,
         :date,
@@ -45,6 +62,7 @@ end
         :total_tests,
         :test_kind,
         :confirmed,
+        :recovered_confirmed,
         :recovered,
         :deaths,
     ]
@@ -62,18 +80,27 @@ end
     keys = [:date, :estimated_population, :gdp_per_capita, :total_tests, :test_kind]
     br = select(Brazil, keys)
     avg_ipc = estimates[estimates.state.=="total", :infected_per_confirmed][1]
-    infected = round.(Int, avg_ipc * Brazil.confirmed)
+
+    # Estimate recovered
     # Source: https://journals.lww.com/cmj/Fulltext/2020/05050/Persistence_and_clearance_of_viral_RNA_in_2019.6.aspx
     # Average infeccious period of 9.5 (6.0 to 11.0) days
-    closed = 0.5 .* (vcat(infected, [0.0]) .+ vcat([0.0], infected))
-    closed = [zeros(Int, 8); round.(Int, closed[1:end-9])]
+    infected_vec = round.(Int, avg_ipc * Brazil.confirmed)
+    active, closed, last_infected = 0, 0, 0
+    closed_vec = []
+    for infected ∈ infected_vec
+        new_closed, new_active = active / 9.5, infected - last_infected
+        closed += new_closed
+        active += new_active - new_closed
+        last_infected = infected
+        push!(closed_vec, closed)
+    end
 
     insertcols!(br, 1, :country => "Brazil")
     insertcols!(br, :confirmed => Brazil.confirmed)
     insertcols!(br, :recovered_confirmed => Brazil.recovered)
-    insertcols!(br, :recovered => closed .- Brazil.deaths)
+    insertcols!(br, :recovered => closed_vec .- Brazil.deaths)
     insertcols!(br, :deaths => Brazil.deaths)
-    insertcols!(br, :infected => infected)
+    insertcols!(br, :infected => infected_vec)
     sort!(br, :date)
 end
 

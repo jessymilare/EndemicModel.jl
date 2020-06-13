@@ -102,7 +102,7 @@ function _SEIR_derivative(
     dI = EtoI - ItoR
     dR = ItoR
 
-    @debug "Computed SEIR derivatives" (S, E, I, R) (dS, dE, dI, dR)
+    # @debug "Computed SEIR derivatives" (S, E, I, R) (dS, dE, dI, dR)
 
     (; dS = dS, dE = dE, dI = dI, dR = dR)
 end

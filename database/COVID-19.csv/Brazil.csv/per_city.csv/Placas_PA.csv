@@ -1,0 +1,8 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-06,PA,Placas,34,0,190,31292,1505650,8.3,282,190,92,,,,,,,,,,,,,,0.0,0.0,9011.888,0.0,6071.839,6071.839,2940.049
+2020-06-07,PA,Placas,34,0,194,31292,1505650,8.3,282,194,88,,,,,,,,,,,,,,0.0,0.0,9011.888,0.0,6199.668,6199.668,2812.22
+2020-06-08,PA,Placas,38,0,222,31292,1505650,8.3,315,222,93,,,,,,,,,,,,,,0.0,0.0,10066.471,0.0,7094.465,7094.465,2972.006
+2020-06-09,PA,Placas,39,0,228,31292,1505650,8.3,324,228,96,12.5,10.667,,,,,,,,,,,,0.0,0.0,10354.084,0.0,7286.207,7286.207,3067.877
+2020-06-10,PA,Placas,40,0,233,31292,1505650,8.3,332,233,99,,,,,,,,,,,,,,0.0,0.0,10609.741,0.0,7445.993,7445.993,3163.748
+2020-06-11,PA,Placas,40,0,234,31292,1505650,8.3,332,234,98,,,,,,,,,,,,,,0.0,0.0,10609.741,0.0,7477.95,7477.95,3131.791
+2020-06-12,PA,Placas,43,0,254,31292,1505650,8.3,357,254,103,,,,,,,,,,,,,,0.0,0.0,11408.667,0.0,8117.091,8117.091,3291.576

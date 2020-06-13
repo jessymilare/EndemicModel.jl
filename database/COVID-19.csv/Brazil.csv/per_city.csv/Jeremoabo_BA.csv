@@ -1,0 +1,5 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-09,BA,Jeremoabo,0,0,0,40868,2918100,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-06-10,BA,Jeremoabo,2,0,12,40868,2918100,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,415.973,0.0,293.628,293.628,122.345
+2020-06-11,BA,Jeremoabo,3,0,18,40868,2918100,8.3,25,18,7,,,,,,,,,,,,,,0.0,0.0,611.726,0.0,440.442,440.442,171.283
+2020-06-12,BA,Jeremoabo,3,0,18,40868,2918100,8.3,25,18,7,,,,,,,,,,,,,,0.0,0.0,611.726,0.0,440.442,440.442,171.283

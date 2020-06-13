@@ -1,0 +1,8 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-06,RS,Passo do Sobrado,1,0,5,6600,4314076,8.4,8,5,3,,,,,,,,,,,,,,0.0,0.0,1212.121,0.0,757.576,757.576,454.545
+2020-06-07,RS,Passo do Sobrado,1,0,6,6600,4314076,8.4,8,6,2,,,,,,,,,,,,,,0.0,0.0,1212.121,0.0,909.091,909.091,303.03
+2020-06-08,RS,Passo do Sobrado,1,0,6,6600,4314076,8.4,8,6,2,,,,,,,,,,,,,,0.0,0.0,1212.121,0.0,909.091,909.091,303.03
+2020-06-09,RS,Passo do Sobrado,1,0,6,6600,4314076,8.4,8,6,2,0.0,0.1667,,,,,,,,,,,,0.0,0.0,1212.121,0.0,909.091,909.091,303.03
+2020-06-10,RS,Passo do Sobrado,1,0,6,6600,4314076,8.4,8,6,2,,,,,,,,,,,,,,0.0,0.0,1212.121,0.0,909.091,909.091,303.03
+2020-06-11,RS,Passo do Sobrado,1,0,6,6600,4314076,8.4,8,6,2,,,,,,,,,,,,,,0.0,0.0,1212.121,0.0,909.091,909.091,303.03
+2020-06-12,RS,Passo do Sobrado,1,0,6,6600,4314076,8.4,8,6,2,,,,,,,,,,,,,,0.0,0.0,1212.121,0.0,909.091,909.091,303.03

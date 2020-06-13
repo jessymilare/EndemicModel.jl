@@ -1,0 +1,7 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-07,MT,Nova Marilândia,1,0,7,3311,5108857,10.0,10,7,3,,,,,,,,,,,,,,0.0,0.0,3020.236,0.0,2114.165,2114.165,906.071
+2020-06-08,MT,Nova Marilândia,2,0,14,3311,5108857,10.0,20,14,6,,,,,,,,,,,,,,0.0,0.0,6040.471,0.0,4228.33,4228.33,1812.141
+2020-06-09,MT,Nova Marilândia,2,0,14,3311,5108857,10.0,20,14,6,,,,,,,,,,,,,,0.0,0.0,6040.471,0.0,4228.33,4228.33,1812.141
+2020-06-10,MT,Nova Marilândia,2,0,14,3311,5108857,10.0,20,14,6,,,,,,,,,,,,,,0.0,0.0,6040.471,0.0,4228.33,4228.33,1812.141
+2020-06-11,MT,Nova Marilândia,2,0,14,3311,5108857,10.0,20,14,6,,,,,,,,,,,,,,0.0,0.0,6040.471,0.0,4228.33,4228.33,1812.141
+2020-06-12,MT,Nova Marilândia,4,0,28,3311,5108857,10.0,40,28,12,,,,,,,,,,,,,,0.0,0.0,12080.942,0.0,8456.66,8456.66,3624.283

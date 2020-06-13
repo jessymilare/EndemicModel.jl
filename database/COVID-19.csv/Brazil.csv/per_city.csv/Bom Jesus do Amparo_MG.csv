@@ -1,0 +1,8 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-06,MG,Bom Jesus do Amparo,3,0,34,6144,3107703,16.5,50,34,16,,,,,,,,,,,,,,0.0,0.0,8138.021,0.0,5533.854,5533.854,2604.167
+2020-06-07,MG,Bom Jesus do Amparo,3,0,34,6144,3107703,16.5,50,34,16,,,,,,,,,,,,,,0.0,0.0,8138.021,0.0,5533.854,5533.854,2604.167
+2020-06-08,MG,Bom Jesus do Amparo,3,0,35,6144,3107703,16.5,50,35,15,,,,,,,,,,,,,,0.0,0.0,8138.021,0.0,5696.615,5696.615,2441.406
+2020-06-09,MG,Bom Jesus do Amparo,3,0,35,6144,3107703,16.5,50,35,15,2.667,2.167,,,,,,,,,,,,0.0,0.0,8138.021,0.0,5696.615,5696.615,2441.406
+2020-06-10,MG,Bom Jesus do Amparo,3,0,35,6144,3107703,16.5,50,35,15,,,,,,,,,,,,,,0.0,0.0,8138.021,0.0,5696.615,5696.615,2441.406
+2020-06-11,MG,Bom Jesus do Amparo,3,0,35,6144,3107703,16.5,50,35,15,,,,,,,,,,,,,,0.0,0.0,8138.021,0.0,5696.615,5696.615,2441.406
+2020-06-12,MG,Bom Jesus do Amparo,4,0,47,6144,3107703,16.5,66,47,19,,,,,,,,,,,,,,0.0,0.0,10742.188,0.0,7649.74,7649.74,3092.448

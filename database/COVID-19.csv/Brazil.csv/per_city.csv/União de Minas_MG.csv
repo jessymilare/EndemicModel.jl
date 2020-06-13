@@ -1,0 +1,8 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-06,MG,União de Minas,1,0,11,4347,3170438,16.5,16,11,5,,,,,,,,,,,,,,0.0,0.0,3680.699,0.0,2530.481,2530.481,1150.219
+2020-06-07,MG,União de Minas,1,0,11,4347,3170438,16.5,16,11,5,,,,,,,,,,,,,,0.0,0.0,3680.699,0.0,2530.481,2530.481,1150.219
+2020-06-08,MG,União de Minas,1,0,11,4347,3170438,16.5,16,11,5,,,,,,,,,,,,,,0.0,0.0,3680.699,0.0,2530.481,2530.481,1150.219
+2020-06-09,MG,União de Minas,1,0,11,4347,3170438,16.5,16,11,5,55.0,39.167,,,,,,,,,,,,0.0,0.0,3680.699,0.0,2530.481,2530.481,1150.219
+2020-06-10,MG,União de Minas,11,0,128,4347,3170438,16.5,182,128,54,,,,,,,,,,,,,,0.0,0.0,41867.955,0.0,29445.595,29445.595,12422.36
+2020-06-11,MG,União de Minas,21,0,244,4347,3170438,16.5,346,244,102,,,,,,,,,,,,,,0.0,0.0,79595.123,0.0,56130.665,56130.665,23464.458
+2020-06-12,MG,União de Minas,21,0,246,4347,3170438,16.5,346,246,100,,,,,,,,,,,,,,0.0,0.0,79595.123,0.0,56590.752,56590.752,23004.371

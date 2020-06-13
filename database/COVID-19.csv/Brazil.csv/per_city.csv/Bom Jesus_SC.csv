@@ -1,0 +1,5 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-09,SC,Bom Jesus,2,0,35,3040,4202537,25.0,50,35,15,,,,,,,,,,,,,,0.0,0.0,16447.368,0.0,11513.158,11513.158,4934.211
+2020-06-10,SC,Bom Jesus,2,0,35,3040,4202537,25.0,50,35,15,,,,,,,,,,,,,,0.0,0.0,16447.368,0.0,11513.158,11513.158,4934.211
+2020-06-11,SC,Bom Jesus,2,0,35,3040,4202537,25.0,50,35,15,,,,,,,,,,,,,,0.0,0.0,16447.368,0.0,11513.158,11513.158,4934.211
+2020-06-12,SC,Bom Jesus,5,0,89,3040,4202537,25.0,125,89,36,,,,,,,,,,,,,,0.0,0.0,41118.421,0.0,29276.316,29276.316,11842.105

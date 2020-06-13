@@ -1,0 +1,7 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-07,PR,Virmond,2,0,12,4063,4128658,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,4184.1,0.0,2953.483,2953.483,1230.618
+2020-06-08,PR,Virmond,2,0,12,4063,4128658,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,4184.1,0.0,2953.483,2953.483,1230.618
+2020-06-09,PR,Virmond,2,0,12,4063,4128658,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,4184.1,0.0,2953.483,2953.483,1230.618
+2020-06-10,PR,Virmond,2,0,12,4063,4128658,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,4184.1,0.0,2953.483,2953.483,1230.618
+2020-06-11,PR,Virmond,3,0,18,4063,4128658,8.3,25,18,7,,,,,,,,,,,,,,0.0,0.0,6153.089,0.0,4430.224,4430.224,1722.865
+2020-06-12,PR,Virmond,3,0,18,4063,4128658,8.3,25,18,7,,,,,,,,,,,,,,0.0,0.0,6153.089,0.0,4430.224,4430.224,1722.865

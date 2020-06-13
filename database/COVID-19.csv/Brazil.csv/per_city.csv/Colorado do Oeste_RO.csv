@@ -1,0 +1,8 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-06,RO,Colorado do Oeste,2,0,11,16041,1100064,8.3,17,11,6,,,,,,,,,,,,,,0.0,0.0,1059.784,0.0,685.743,685.743,374.042
+2020-06-07,RO,Colorado do Oeste,2,0,12,16041,1100064,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,1059.784,0.0,748.083,748.083,311.701
+2020-06-08,RO,Colorado do Oeste,2,0,12,16041,1100064,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,1059.784,0.0,748.083,748.083,311.701
+2020-06-09,RO,Colorado do Oeste,2,0,12,16041,1100064,8.3,17,12,5,19.333,14.0,,,,,,,,,,,,0.0,0.0,1059.784,0.0,748.083,748.083,311.701
+2020-06-10,RO,Colorado do Oeste,2,0,12,16041,1100064,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,1059.784,0.0,748.083,748.083,311.701
+2020-06-11,RO,Colorado do Oeste,16,0,94,16041,1100064,8.3,133,94,39,,,,,,,,,,,,,,0.0,0.0,8291.254,0.0,5859.984,5859.984,2431.27
+2020-06-12,RO,Colorado do Oeste,16,0,95,16041,1100064,8.3,133,95,38,,,,,,,,,,,,,,0.0,0.0,8291.254,0.0,5922.324,5922.324,2368.93

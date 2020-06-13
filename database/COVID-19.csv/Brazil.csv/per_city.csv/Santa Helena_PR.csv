@@ -1,0 +1,5 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-09,PR,Santa Helena,6,0,35,26755,4123501,8.3,50,35,15,,,,,,,,,,,,,,0.0,0.0,1868.81,0.0,1308.167,1308.167,560.643
+2020-06-10,PR,Santa Helena,8,0,46,26755,4123501,8.3,66,46,20,,,,,,,,,,,,,,0.0,0.0,2466.829,0.0,1719.305,1719.305,747.524
+2020-06-11,PR,Santa Helena,9,0,53,26755,4123501,8.3,75,53,22,,,,,,,,,,,,,,0.0,0.0,2803.214,0.0,1980.938,1980.938,822.276
+2020-06-12,PR,Santa Helena,9,0,53,26755,4123501,8.3,75,53,22,,,,,,,,,,,,,,0.0,0.0,2803.214,0.0,1980.938,1980.938,822.276

@@ -1,0 +1,8 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-06,BA,Muquém de São Francisco,1,0,5,11461,2922250,8.3,8,5,3,,,,,,,,,,,,,,0.0,0.0,698.019,0.0,436.262,436.262,261.757
+2020-06-07,BA,Muquém de São Francisco,1,0,6,11461,2922250,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,698.019,0.0,523.515,523.515,174.505
+2020-06-08,BA,Muquém de São Francisco,1,0,6,11461,2922250,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,698.019,0.0,523.515,523.515,174.505
+2020-06-09,BA,Muquém de São Francisco,1,0,6,11461,2922250,8.3,8,6,2,1.5,1.167,,,,,,,,,,,,0.0,0.0,698.019,0.0,523.515,523.515,174.505
+2020-06-10,BA,Muquém de São Francisco,1,0,6,11461,2922250,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,698.019,0.0,523.515,523.515,174.505
+2020-06-11,BA,Muquém de São Francisco,2,0,12,11461,2922250,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,1483.291,0.0,1047.029,1047.029,436.262
+2020-06-12,BA,Muquém de São Francisco,2,0,12,11461,2922250,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,1483.291,0.0,1047.029,1047.029,436.262

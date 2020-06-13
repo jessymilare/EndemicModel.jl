@@ -1,2 +1,8 @@
 date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
 2020-06-06,PI,Boqueirão do Piauí,1,0,24,6471,2201945,36.0,36,24,12,,,,,,,,,,,,,,0.0,0.0,5563.282,0.0,3708.855,3708.855,1854.427
+2020-06-07,PI,Boqueirão do Piauí,1,0,25,6471,2201945,36.0,36,25,11,,,,,,,,,,,,,,0.0,0.0,5563.282,0.0,3863.391,3863.391,1699.892
+2020-06-08,PI,Boqueirão do Piauí,1,0,25,6471,2201945,36.0,36,25,11,,,,,,,,,,,,,,0.0,0.0,5563.282,0.0,3863.391,3863.391,1699.892
+2020-06-09,PI,Boqueirão do Piauí,2,0,51,6471,2201945,36.0,72,51,21,6.0,4.5,,,,,,,,,,,,0.0,0.0,11126.565,0.0,7881.317,7881.317,3245.248
+2020-06-10,PI,Boqueirão do Piauí,2,0,51,6471,2201945,36.0,72,51,21,,,,,,,,,,,,,,0.0,0.0,11126.565,0.0,7881.317,7881.317,3245.248
+2020-06-11,PI,Boqueirão do Piauí,2,0,51,6471,2201945,36.0,72,51,21,,,,,,,,,,,,,,0.0,0.0,11126.565,0.0,7881.317,7881.317,3245.248
+2020-06-12,PI,Boqueirão do Piauí,2,0,51,6471,2201945,36.0,72,51,21,,,,,,,,,,,,,,0.0,0.0,11126.565,0.0,7881.317,7881.317,3245.248

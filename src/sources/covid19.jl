@@ -131,7 +131,7 @@ function import_data(source::TotalTestsOWID; url = TESTING_OWID_URL, kwargs...)
             dtend = today() - Day(1)
         end
 
-        for dt ∈ (row.date + Day(1)):Day(1):dtend
+        for dt ∈ (row.date+Day(1)):Day(1):dtend
             newrow = (;
                 country = row.country,
                 date = dt,
@@ -175,7 +175,7 @@ function import_data(source::BrasilIo; url = BRASIL_IO_URL, kwargs...)
         falsestrings = ["False"],
         drop = col_drop,
     )
-    raw_data[(raw_data.deaths .=== missing), :deaths] .= 0
+    raw_data[(raw_data.deaths.===missing), :deaths] .= 0
     sort!(raw_data, [:state, :city, :date])
 
     rename!(raw_data, :estimated_population_2019 => :estimated_population)
@@ -190,7 +190,7 @@ function import_data(source::BrasilIo; url = BRASIL_IO_URL, kwargs...)
     raw_data = leftjoin(raw_data, est_sel; on = :state)
     indexes = .!ismissing.(raw_data.infected_per_confirmed)
     ipc, conf = raw_data.infected_per_confirmed[indexes], raw_data.confirmed[indexes]
-    avg_ipc = est_sel[est_sel.state .== "total", :infected_per_confirmed][1]
+    avg_ipc = est_sel[est_sel.state.=="total", :infected_per_confirmed][1]
     raw_data.infected_per_confirmed[.!indexes] .= avg_ipc
 
     ipc = raw_data.infected_per_confirmed

@@ -148,6 +148,7 @@ function optimize_parameters!(model::SEIRModel, params = (:β, :E); kwargs...)
         E0 = variables(model)[:E]
         append!(opt_params, Float.(E0))
     end
+    @debug "Initial parameter values:" opt_params, lower, upper
 
     opt = optimize(_calc_loss, lower, upper, opt_params, Fminbox(NelderMead()))
     modeldata!(model, to_dataframe(model))
@@ -247,7 +248,7 @@ function estimate_α(data::AbstractDataFrame; ndays = 7, kwargs...)
     ini = max(1, nrow(data) - ndays)
     data = data[ini:end, :]
     # Filter valid entries
-    data = @where(data, .!ismissing.(:diff_closed) .& :active .> 0)
+    data = @where(data, (.!ismissing.(:diff_closed)) .& (:active .> 0))
     dR = data.diff_closed
     I = data.active
     isempty(I) && return (NaN, Inf)
