@@ -1,4 +1,6 @@
 date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
 2020-06-10,BA,Brejões,0,0,0,14438,2904308,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-06-11,BA,Brejões,3,0,18,14438,2904308,8.3,25,18,7,,,,,,,,,,,,,,0.0,0.0,1731.542,0.0,1246.71,1246.71,484.832
-2020-06-12,BA,Brejões,3,0,18,14438,2904308,8.3,25,18,7,,,,,,,,,,,,,,0.0,0.0,1731.542,0.0,1246.71,1246.71,484.832
+2020-06-11,BA,Brejões,3,0,17,14438,2904308,8.3,25,17,8,,,,,,,,,,,,,,0.0,0.0,1731.542,0.0,1177.448,1177.448,554.093
+2020-06-12,BA,Brejões,5,0,28,14438,2904308,8.3,42,28,14,,,,,,,,,,,,,,0.0,0.0,2908.99,0.0,1939.327,1939.327,969.663
+2020-06-13,BA,Brejões,8,0,45,14438,2904308,8.3,66,45,21,,,,,,,,,,,,,,0.0,0.0,4571.27,0.0,3116.775,3116.775,1454.495
+2020-06-14,BA,Brejões,8,0,46,14438,2904308,8.3,66,46,20,,,,,,,,,,,,,,0.0,0.0,4571.27,0.0,3186.037,3186.037,1385.233

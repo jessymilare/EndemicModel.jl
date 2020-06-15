@@ -1,4 +1,6 @@
 date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-09,MS,Angélica,1,0,6,10888,5000856,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,734.754,0.0,551.065,551.065,183.688
-2020-06-10,MS,Angélica,1,0,6,10888,5000856,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,734.754,0.0,551.065,551.065,183.688
-2020-06-11,MS,Angélica,3,0,18,10888,5000856,8.3,25,18,7,,,,,,,,,,,,,,0.0,0.0,2296.106,0.0,1653.196,1653.196,642.91
+2020-06-09,MS,Angélica,1,0,5,10888,5000856,8.3,8,5,3,,,,,,,,,,,,,,0.0,0.0,734.754,0.0,459.221,459.221,275.533
+2020-06-10,MS,Angélica,1,0,5,10888,5000856,8.3,8,5,3,,,,,,,,,,,,,,0.0,0.0,734.754,0.0,459.221,459.221,275.533
+2020-06-11,MS,Angélica,3,0,17,10888,5000856,8.3,25,17,8,,,,,,,,,,,,,,0.0,0.0,2296.106,0.0,1561.352,1561.352,734.754
+2020-06-12,MS,Angélica,4,0,22,10888,5000856,8.3,33,22,11,,,,,,,,,,,,,,0.0,0.0,3030.86,0.0,2020.573,2020.573,1010.287
+2020-06-13,MS,Angélica,4,0,23,10888,5000856,8.3,33,23,10,,,,,,,,,,,,,,0.0,0.0,3030.86,0.0,2112.417,2112.417,918.442

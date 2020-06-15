@@ -1,3 +1,5 @@
 date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-11,RO,Castanheiras,3,0,18,3083,1100908,8.3,25,18,7,,,,,,,,,,,,,,0.0,0.0,8108.985,0.0,5838.469,5838.469,2270.516
-2020-06-12,RO,Castanheiras,7,0,41,3083,1100908,8.3,58,41,17,,,,,,,,,,,,,,0.0,0.0,18812.845,0.0,13298.735,13298.735,5514.11
+2020-06-11,RO,Castanheiras,3,0,17,3083,1100908,8.3,25,17,8,,,,,,,,,,,,,,0.0,0.0,8108.985,0.0,5514.11,5514.11,2594.875
+2020-06-12,RO,Castanheiras,7,0,39,3083,1100908,8.3,58,39,19,,,,,,,,,,,,,,0.0,0.0,18812.845,0.0,12650.016,12650.016,6162.828
+2020-06-13,RO,Castanheiras,11,0,63,3083,1100908,8.3,91,63,28,,,,,,,,,,,,,,0.0,0.0,29516.705,0.0,20434.642,20434.642,9082.063
+2020-06-14,RO,Castanheiras,12,0,70,3083,1100908,8.3,100,70,30,,,,,,,,,,,,,,0.0,0.0,32435.939,0.0,22705.157,22705.157,9730.782

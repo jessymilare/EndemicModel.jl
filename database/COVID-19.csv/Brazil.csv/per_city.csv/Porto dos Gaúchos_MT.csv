@@ -1,2 +1,4 @@
 date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-12,MT,Porto dos Gaúchos,5,0,36,5464,5106802,10.0,50,36,14,,,,,,,,,,,,,,0.0,0.0,9150.805,0.0,6588.58,6588.58,2562.225
+2020-06-12,MT,Porto dos Gaúchos,5,0,34,5464,5106802,10.0,50,34,16,,,,,,,,,,,,,,0.0,0.0,9150.805,0.0,6222.548,6222.548,2928.258
+2020-06-13,MT,Porto dos Gaúchos,5,0,34,5464,5106802,10.0,50,34,16,,,,,,,,,,,,,,0.0,0.0,9150.805,0.0,6222.548,6222.548,2928.258
+2020-06-14,MT,Porto dos Gaúchos,5,0,35,5464,5106802,10.0,50,35,15,,,,,,,,,,,,,,0.0,0.0,9150.805,0.0,6405.564,6405.564,2745.242

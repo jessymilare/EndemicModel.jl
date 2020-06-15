@@ -1,5 +1,5 @@
 date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-05-25,TO,Recursolândia,5,0,27,4336,1718501,8.3,42,27,15,,,,,,,,,,,,,,0.0,0.0,9686.347,0.0,6226.937,6226.937,3459.41
+2020-05-25,TO,Recursolândia,5,0,26,4336,1718501,8.3,42,26,16,,,,,,,,,,,,,,0.0,0.0,9686.347,0.0,5996.31,5996.31,3690.037
 2020-05-26,TO,Recursolândia,0,0,0,4336,1718501,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
 2020-05-28,TO,Recursolândia,0,0,0,4336,1718501,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
 2020-05-29,TO,Recursolândia,0,0,0,4336,1718501,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
@@ -15,3 +15,5 @@ date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,i
 2020-06-09,TO,Recursolândia,0,0,0,4336,1718501,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
 2020-06-10,TO,Recursolândia,0,0,0,4336,1718501,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
 2020-06-11,TO,Recursolândia,0,0,0,4336,1718501,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-06-12,TO,Recursolândia,0,0,0,4336,1718501,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-06-13,TO,Recursolândia,0,0,0,4336,1718501,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0

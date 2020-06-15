@@ -1,4 +1,6 @@
 date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-10,MT,Cláudia,2,0,14,12270,5103056,10.0,20,14,6,,,,,,,,,,,,,,0.0,0.0,1629.992,0.0,1140.994,1140.994,488.998
-2020-06-11,MT,Cláudia,2,0,14,12270,5103056,10.0,20,14,6,,,,,,,,,,,,,,0.0,0.0,1629.992,0.0,1140.994,1140.994,488.998
+2020-06-10,MT,Cláudia,2,0,13,12270,5103056,10.0,20,13,7,,,,,,,,,,,,,,0.0,0.0,1629.992,0.0,1059.495,1059.495,570.497
+2020-06-11,MT,Cláudia,2,0,13,12270,5103056,10.0,20,13,7,,,,,,,,,,,,,,0.0,0.0,1629.992,0.0,1059.495,1059.495,570.497
 2020-06-12,MT,Cláudia,2,0,14,12270,5103056,10.0,20,14,6,,,,,,,,,,,,,,0.0,0.0,1629.992,0.0,1140.994,1140.994,488.998
+2020-06-13,MT,Cláudia,2,0,14,12270,5103056,10.0,20,14,6,,,,,,,,,,,,,,0.0,0.0,1629.992,0.0,1140.994,1140.994,488.998
+2020-06-14,MT,Cláudia,2,0,14,12270,5103056,10.0,20,14,6,,,,,,,,,,,,,,0.0,0.0,1629.992,0.0,1140.994,1140.994,488.998
