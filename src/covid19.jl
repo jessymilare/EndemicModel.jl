@@ -40,11 +40,13 @@ end
     # Estimate recovered
     # Source: https://journals.lww.com/cmj/Fulltext/2020/05050/Persistence_and_clearance_of_viral_RNA_in_2019.6.aspx
     # Average infeccious period of 9.5 (6.0 to 11.0) days
+    # Source: https://www.sciencedirect.com/science/article/pii/S0163445320301195
+    # Average infeccious period of 11.0 (10.0 to 12.0) days
     infected_vec = data.confirmed
     active, closed, last_infected = 0, 0, 0
     closed_vec = []
     for infected ∈ infected_vec
-        new_closed, new_active = active / 9.5, infected - last_infected
+        new_closed, new_active = active / 11.0, infected - last_infected
         closed += new_closed
         active += new_active - new_closed
         last_infected = infected
@@ -84,11 +86,13 @@ end
     # Estimate recovered
     # Source: https://journals.lww.com/cmj/Fulltext/2020/05050/Persistence_and_clearance_of_viral_RNA_in_2019.6.aspx
     # Average infeccious period of 9.5 (6.0 to 11.0) days
+    # Source: https://www.sciencedirect.com/science/article/pii/S0163445320301195
+    # Average infeccious period of 11.0 (10.0 to 12.0) days
     infected_vec = round.(Int, avg_ipc * Brazil.confirmed)
     active, closed, last_infected = 0, 0, 0
     closed_vec = []
     for infected ∈ infected_vec
-        new_closed, new_active = active / 9.5, infected - last_infected
+        new_closed, new_active = active / 11.0, infected - last_infected
         closed += new_closed
         active += new_active - new_closed
         last_infected = infected
@@ -459,13 +463,22 @@ function covid19(; database = nothing, kwargs...)
             ),
         )
         datadict!(db, newdata)
+        br = db.Brazil.total
+        db.world.per_country.datadict[:Brazil] = br
         @info "COVID-19 database created." summary(db)
+
         @info "Computing SEIR model..."
         SEIRModel!(db; kwargs...)
+        mbr = db.model.Brazil.total
+        optimize_parameters!(mbr; kwargs...)
+        db.model.world.per_country.datadict[:Brazil] = mbr
+        parameters!(db; kwargs...)
         @info "SEIR model for COVID-19 database computed."
+
         # @info "Optimizing parameters..."
         # optimize_parameters!(db; kwargs...)
         # @info "Optimal parameters for COVID-19 database computed."
+
         @info "Exporting..."
         paths = export_data(db; kwargs...)
         @info "COVID-19 database exported." paths
