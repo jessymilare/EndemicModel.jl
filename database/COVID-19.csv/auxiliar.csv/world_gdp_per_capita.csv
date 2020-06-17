@@ -188,6 +188,9 @@ Qatar,QAT,1.047,68794
 Romania,ROU,1.118,12306
 Russia,RUS,1.108,11289
 Rwanda,RWA,1.073,773
+Saint Kitts and Nevis,KNA,1.038,19275
+Saint Lucia,LCA,1.039,10566
+Saint Vincent and the Grenadines,VCT,1.039,7361
 Samoa,WSM,1.057,4183
 San Marino,SMR,1.0,40124
 Saudi Arabia,SAU,1.053,23339
@@ -206,9 +209,6 @@ South Asia (IDA & IBRD),TSA,1.084,1903
 South Korea,KOR,1.055,31380
 Spain,ESP,1.041,30324
 Sri Lanka,LKA,1.09,4102
-St. Kitts and Nevis,KNA,1.038,19275
-St. Lucia,LCA,1.039,10566
-St. Vincent and the Grenadines,VCT,1.039,7361
 Sub-Saharan Africa,SSF,1.056,1589
 Sub-Saharan Africa (IDA & IBRD countries),TSS,1.056,1589
 Sub-Saharan Africa (excluding high income),SSA,1.056,1588
@@ -241,6 +241,6 @@ Venezuela,VEN,1.0,4842
 Vietnam,VNM,1.11,2567
 West Bank and Gaza,PSE,1.044,3199
 World,WLD,1.041,11317
-"Yemen, Rep.",YEM,1.03,944
+Yemen,YEM,1.03,944
 Zambia,ZMB,1.087,1540
 Zimbabwe,ZWE,1.077,2147

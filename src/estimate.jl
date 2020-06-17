@@ -341,6 +341,10 @@ function estimate_β(
     # Filter valid entries
     data = @where(data, .!ismissing.(:diff2_infected))
 
+    if nrow(data) == 0
+        return (mean([MIN_β, MAX_β]), (MAX_β - MIN_β) / 2)
+    end
+
     d1 = data.diff_infected
     d2 = data.diff2_infected
     I = data.active

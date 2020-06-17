@@ -44,13 +44,13 @@ end
     # Average infeccious period of 11.0 (10.0 to 12.0) days
     infected_vec = data.confirmed
     active, closed, last_infected = 0, 0, 0
-    closed_vec = []
+    closed_vec = Int[]
     for infected ∈ infected_vec
         new_closed, new_active = active / 11.0, infected - last_infected
         closed += new_closed
         active += new_active - new_closed
         last_infected = infected
-        push!(closed_vec, closed)
+        push!(closed_vec, round(Int, closed))
     end
     insertcols!(data, :recovered => closed_vec .- data.deaths)
 
@@ -90,13 +90,13 @@ end
     # Average infeccious period of 11.0 (10.0 to 12.0) days
     infected_vec = round.(Int, avg_ipc * Brazil.confirmed)
     active, closed, last_infected = 0, 0, 0
-    closed_vec = []
+    closed_vec = Int[]
     for infected ∈ infected_vec
         new_closed, new_active = active / 11.0, infected - last_infected
         closed += new_closed
         active += new_active - new_closed
         last_infected = infected
-        push!(closed_vec, closed)
+        push!(closed_vec, round(Int, closed))
     end
 
     insertcols!(br, 1, :country => "Brazil")

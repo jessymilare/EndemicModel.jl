@@ -199,6 +199,10 @@ Qatar,QAT,1.09,3303190
 Romania,ROU,0.9921,19160783
 Russia,RUS,0.9992,144244558
 Rwanda,RWA,1.025,12916359
+Saint Kitts and Nevis,KNA,1.01,53464
+Saint Lucia,LCA,1.008,184923
+Saint Martin,MAF,1.014,38326
+Saint Vincent and the Grenadines,VCT,1.001,110483
 Samoa,WSM,1.007,198699
 San Marino,SMR,1.012,34572
 Sao Tome and Principe,STP,1.022,220479
@@ -221,10 +225,6 @@ South Korea,KOR,1.005,52144578
 South Sudan,SSD,1.032,11695174
 Spain,ESP,1.008,47545141
 Sri Lanka,LKA,1.008,22017708
-St. Kitts and Nevis,KNA,1.01,53464
-St. Lucia,LCA,1.008,184923
-St. Martin (French part),MAF,1.014,38326
-St. Vincent and the Grenadines,VCT,1.001,110483
 Sub-Saharan Africa,SSF,1.027,1137739866
 Sub-Saharan Africa (IDA & IBRD countries),TSS,1.027,1137739866
 Sub-Saharan Africa (excluding high income),SSA,1.027,1137641843
@@ -259,6 +259,6 @@ Vietnam,VNM,1.01,97455744
 Virgin Islands (U.S.),VIR,0.9991,106794
 West Bank and Gaza,PSE,1.025,4801744
 World,WLD,1.012,7777809927
-"Yemen, Rep.",YEM,1.028,30102884
+Yemen,YEM,1.028,30102884
 Zambia,ZMB,1.029,18364219
 Zimbabwe,ZWE,1.011,14755201

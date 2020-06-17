@@ -1,3 +1,5 @@
 date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
 2020-06-13,BA,Andorinha,1,0,6,14741,2901353,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,542.704,0.0,407.028,407.028,135.676
 2020-06-14,BA,Andorinha,2,0,12,14741,2901353,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,1153.246,0.0,814.056,814.056,339.19
+2020-06-15,BA,Andorinha,2,0,12,14741,2901353,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,1153.246,0.0,814.056,814.056,339.19
+2020-06-16,BA,Andorinha,2,0,12,14741,2901353,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,1153.246,0.0,814.056,814.056,339.19
