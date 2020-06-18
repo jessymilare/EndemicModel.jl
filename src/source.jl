@@ -310,7 +310,7 @@ function export_data(
     destiny = pathof(source)
     @debug "Exporting DataFrame to CSV file." destiny _debuginfo(data)
     if pretty
-        data = prettify(data)
+        data = prettify(data; kwargs...)
     end
     exists(destiny) && rm(destiny; recursive = true)
     csv_write(destiny, data; transform = (col, val) -> something(val, missing))

@@ -140,11 +140,15 @@ prettify(obj::Quantity; digits = 3, kwargs...) =
 
 function prettify(
     obj::Symbol;
-    case = titlecase,
-    replace_pairs = ["_" => " "],
+    case = nothing,
+    replace_pairs = nothing,
     kwargs...,
 )
-    Symbol(prettify(string(obj); case = case, replace_pairs = replace_pairs, kwargs...))
+    if isnothing(case) && isnothing(replace_pairs)
+        obj
+    else
+        Symbol(prettify(string(obj); case = case, replace_pairs = replace_pairs, kwargs...))
+    end
 end
 
 function prettify(
