@@ -1,8 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-10,SC,Apiúna,1,0,17,10850,4201257,25.0,25,17,8,,,,,,,,,,,,,,0.0,0.0,2304.147,0.0,1566.82,1566.82,737.327
-2020-06-11,SC,Apiúna,1,0,17,10850,4201257,25.0,25,17,8,,,,,,,,,,,,,,0.0,0.0,2304.147,0.0,1566.82,1566.82,737.327
-2020-06-12,SC,Apiúna,1,0,17,10850,4201257,25.0,25,17,8,,,,,,,,,,,,,,0.0,0.0,2304.147,0.0,1566.82,1566.82,737.327
-2020-06-13,SC,Apiúna,1,0,17,10850,4201257,25.0,25,17,8,0.0,0.1667,,,,,,,,,,,,0.0,0.0,2304.147,0.0,1566.82,1566.82,737.327
-2020-06-14,SC,Apiúna,1,0,18,10850,4201257,25.0,25,18,7,,,,,,,,,,,,,,0.0,0.0,2304.147,0.0,1658.986,1658.986,645.161
-2020-06-15,SC,Apiúna,1,0,18,10850,4201257,25.0,25,18,7,,,,,,,,,,,,,,0.0,0.0,2304.147,0.0,1658.986,1658.986,645.161
-2020-06-16,SC,Apiúna,1,0,18,10850,4201257,25.0,25,18,7,,,,,,,,,,,,,,0.0,0.0,2304.147,0.0,1658.986,1658.986,645.161

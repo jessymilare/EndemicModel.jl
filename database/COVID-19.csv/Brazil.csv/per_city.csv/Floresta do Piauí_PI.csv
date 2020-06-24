@@ -1,8 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-10,PI,Floresta do Piauí,3,0,72,2584,2203859,36.0,108,72,36,,,,,,,,,,,,,,0.0,0.0,41795.666,0.0,27863.777,27863.777,13931.889
-2020-06-11,PI,Floresta do Piauí,3,0,72,2584,2203859,36.0,108,72,36,,,,,,,,,,,,,,0.0,0.0,41795.666,0.0,27863.777,27863.777,13931.889
-2020-06-12,PI,Floresta do Piauí,3,0,73,2584,2203859,36.0,108,73,35,,,,,,,,,,,,,,0.0,0.0,41795.666,0.0,28250.774,28250.774,13544.892
-2020-06-13,PI,Floresta do Piauí,3,0,74,2584,2203859,36.0,108,74,34,12.0,9.333,,,,,,,,,,,,0.0,0.0,41795.666,0.0,28637.771,28637.771,13157.895
-2020-06-14,PI,Floresta do Piauí,3,0,76,2584,2203859,36.0,108,76,32,,,,,,,,,,,,,,0.0,0.0,41795.666,0.0,29411.765,29411.765,12383.901
-2020-06-15,PI,Floresta do Piauí,4,0,102,2584,2203859,36.0,144,102,42,,,,,,,,,,,,,,0.0,0.0,55727.554,0.0,39473.684,39473.684,16253.87
-2020-06-16,PI,Floresta do Piauí,5,0,128,2584,2203859,36.0,180,128,52,,,,,,,,,,,,,,0.0,0.0,69659.443,0.0,49535.604,49535.604,20123.839

@@ -1,5 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-13,RS,Santa Maria do Herval,1,0,6,6394,4316956,8.4,8,6,2,,,,,,,,,,,,,,0.0,0.0,1251.173,0.0,938.38,938.38,312.793
-2020-06-14,RS,Santa Maria do Herval,1,0,6,6394,4316956,8.4,8,6,2,,,,,,,,,,,,,,0.0,0.0,1251.173,0.0,938.38,938.38,312.793
-2020-06-15,RS,Santa Maria do Herval,2,0,12,6394,4316956,8.4,17,12,5,,,,,,,,,,,,,,0.0,0.0,2658.743,0.0,1876.759,1876.759,781.983
-2020-06-16,RS,Santa Maria do Herval,3,0,18,6394,4316956,8.4,25,18,7,,,,,,,,,,,,,,0.0,0.0,3909.916,0.0,2815.139,2815.139,1094.776

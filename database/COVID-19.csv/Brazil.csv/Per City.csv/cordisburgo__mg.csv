@@ -1,0 +1,4 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-21,MG,Cordisburgo,4,0,48,8979,3118908,16.5,66,48,18,,,,,,,,,,,,,,0.0,0.0,7350.484463748747,0.0,5345.806882726361,5345.806882726361,2004.6775810223855
+2020-06-22,MG,Cordisburgo,4,0,48,8979,3118908,16.5,66,48,18,,,,,,,,,,,,,,0.0,0.0,7350.484463748747,0.0,5345.806882726361,5345.806882726361,2004.6775810223855
+2020-06-23,MG,Cordisburgo,4,0,48,8979,3118908,16.5,66,48,18,,,,,,,,,,,,,,0.0,0.0,7350.484463748747,0.0,5345.806882726361,5345.806882726361,2004.6775810223855

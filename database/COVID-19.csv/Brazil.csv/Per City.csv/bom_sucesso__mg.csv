@@ -1,0 +1,5 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-20,MG,Bom Sucesso,2,0,23,17779,3108008,16.5,33,23,10,,,,,,,,,,,,,,0.0,0.0,1856.1223915855785,0.0,1293.6610608020699,1293.6610608020699,562.4613307835086
+2020-06-21,MG,Bom Sucesso,2,0,24,17779,3108008,16.5,33,24,9,,,,,,,,,,,,,,0.0,0.0,1856.1223915855785,0.0,1349.9071938804207,1349.9071938804207,506.2151977051578
+2020-06-22,MG,Bom Sucesso,3,0,37,17779,3108008,16.5,50,37,13,,,,,,,,,,,,,,0.0,0.0,2812.3066539175434,0.0,2081.106923898982,2081.106923898982,731.1997300185612
+2020-06-23,MG,Bom Sucesso,3,0,36,17779,3108008,16.5,50,36,14,,,,,,,,,,,,,,0.0,0.0,2812.3066539175434,0.0,2024.860790820631,2024.860790820631,787.445863096912

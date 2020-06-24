@@ -1,7 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-11,PR,São Pedro do Iguaçu,2,0,11,5956,4125753,8.3,17,11,6,,,,,,,,,,,,,,0.0,0.0,2854.265,0.0,1846.877,1846.877,1007.388
-2020-06-12,PR,São Pedro do Iguaçu,2,0,12,5956,4125753,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,2854.265,0.0,2014.775,2014.775,839.49
-2020-06-13,PR,São Pedro do Iguaçu,5,0,29,5956,4125753,8.3,42,29,13,,,,,,,,,,,,,,0.0,0.0,7051.713,0.0,4869.04,4869.04,2182.673
-2020-06-14,PR,São Pedro do Iguaçu,5,0,29,5956,4125753,8.3,42,29,13,,,,,,,,,,,,,,0.0,0.0,7051.713,0.0,4869.04,4869.04,2182.673
-2020-06-15,PR,São Pedro do Iguaçu,5,0,30,5956,4125753,8.3,42,30,12,,,,,,,,,,,,,,0.0,0.0,7051.713,0.0,5036.938,5036.938,2014.775
-2020-06-16,PR,São Pedro do Iguaçu,5,0,30,5956,4125753,8.3,42,30,12,,,,,,,,,,,,,,0.0,0.0,7051.713,0.0,5036.938,5036.938,2014.775

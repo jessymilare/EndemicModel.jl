@@ -1,9 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-09,SC,Braço do Trombudo,1,0,17,3780,4202859,25.0,25,17,8,,,,,,,,,,,,,,0.0,0.0,6613.757,0.0,4497.354,4497.354,2116.402
-2020-06-10,SC,Braço do Trombudo,1,0,17,3780,4202859,25.0,25,17,8,,,,,,,,,,,,,,0.0,0.0,6613.757,0.0,4497.354,4497.354,2116.402
-2020-06-11,SC,Braço do Trombudo,2,0,34,3780,4202859,25.0,50,34,16,,,,,,,,,,,,,,0.0,0.0,13227.513,0.0,8994.709,8994.709,4232.804
-2020-06-12,SC,Braço do Trombudo,2,0,34,3780,4202859,25.0,50,34,16,4.167,3.167,,,,,,,,,,,,0.0,0.0,13227.513,0.0,8994.709,8994.709,4232.804
-2020-06-13,SC,Braço do Trombudo,2,0,34,3780,4202859,25.0,50,34,16,0.0,0.1667,,,,,,,,,,,,0.0,0.0,13227.513,0.0,8994.709,8994.709,4232.804
-2020-06-14,SC,Braço do Trombudo,2,0,35,3780,4202859,25.0,50,35,15,,,,,,,,,,,,,,0.0,0.0,13227.513,0.0,9259.259,9259.259,3968.254
-2020-06-15,SC,Braço do Trombudo,2,0,36,3780,4202859,25.0,50,36,14,,,,,,,,,,,,,,0.0,0.0,13227.513,0.0,9523.81,9523.81,3703.704
-2020-06-16,SC,Braço do Trombudo,1,0,18,3780,4202859,25.0,25,18,7,,,,,,,,,,,,,,0.0,0.0,6613.757,0.0,4761.905,4761.905,1851.852

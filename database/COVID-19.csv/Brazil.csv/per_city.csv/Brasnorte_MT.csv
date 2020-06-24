@@ -1,8 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-10,MT,Brasnorte,2,0,13,19892,5101902,10.0,20,13,7,,,,,,,,,,,,,,0.0,0.0,1005.429,0.0,653.529,653.529,351.9
-2020-06-11,MT,Brasnorte,2,0,13,19892,5101902,10.0,20,13,7,,,,,,,,,,,,,,0.0,0.0,1005.429,0.0,653.529,653.529,351.9
-2020-06-12,MT,Brasnorte,2,0,14,19892,5101902,10.0,20,14,6,,,,,,,,,,,,,,0.0,0.0,1005.429,0.0,703.801,703.801,301.629
-2020-06-13,MT,Brasnorte,2,0,14,19892,5101902,10.0,20,14,6,1.667,1.333,,,,,,,,,,,,0.0,0.0,1005.429,0.0,703.801,703.801,301.629
-2020-06-14,MT,Brasnorte,2,0,14,19892,5101902,10.0,20,14,6,,,,,,,,,,,,,,0.0,0.0,1005.429,0.0,703.801,703.801,301.629
-2020-06-15,MT,Brasnorte,2,0,14,19892,5101902,10.0,20,14,6,,,,,,,,,,,,,,0.0,0.0,1005.429,0.0,703.801,703.801,301.629
-2020-06-16,MT,Brasnorte,3,0,21,19892,5101902,10.0,30,21,9,,,,,,,,,,,,,,0.0,0.0,1508.144,0.0,1055.701,1055.701,452.443

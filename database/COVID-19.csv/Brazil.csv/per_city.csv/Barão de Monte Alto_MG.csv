@@ -1,8 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-10,MG,Barão de Monte Alto,1,0,11,5451,3105509,16.5,16,11,5,,,,,,,,,,,,,,0.0,0.0,2935.241,0.0,2017.978,2017.978,917.263
-2020-06-11,MG,Barão de Monte Alto,1,0,11,5451,3105509,16.5,16,11,5,,,,,,,,,,,,,,0.0,0.0,2935.241,0.0,2017.978,2017.978,917.263
-2020-06-12,MG,Barão de Monte Alto,1,0,11,5451,3105509,16.5,16,11,5,,,,,,,,,,,,,,0.0,0.0,2935.241,0.0,2017.978,2017.978,917.263
-2020-06-13,MG,Barão de Monte Alto,2,0,23,5451,3105509,16.5,33,23,10,11.0,7.833,,,,,,,,,,,,0.0,0.0,6053.935,0.0,4219.409,4219.409,1834.526
-2020-06-14,MG,Barão de Monte Alto,5,0,58,5451,3105509,16.5,82,58,24,,,,,,,,,,,,,,0.0,0.0,15043.111,0.0,10640.249,10640.249,4402.862
-2020-06-15,MG,Barão de Monte Alto,5,0,58,5451,3105509,16.5,82,58,24,,,,,,,,,,,,,,0.0,0.0,15043.111,0.0,10640.249,10640.249,4402.862
-2020-06-16,MG,Barão de Monte Alto,5,0,58,5451,3105509,16.5,82,58,24,,,,,,,,,,,,,,0.0,0.0,15043.111,0.0,10640.249,10640.249,4402.862

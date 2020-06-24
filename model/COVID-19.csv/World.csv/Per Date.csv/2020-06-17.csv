@@ -1,0 +1,2 @@
+date,infected,exposed,active,recovered,deaths,diff_exposed,diff_active,diff_recovered,diff_deaths
+2020-06-17,182727.0,0.0,13505.0,154374.86191549545,14847.138084504562,NaN,NaN,1120.030937854893,107.71996027663863

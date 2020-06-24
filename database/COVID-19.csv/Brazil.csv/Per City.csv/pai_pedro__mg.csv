@@ -1,0 +1,6 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-19,MG,Pai Pedro,2,0,23,6150,3146552,16.5,33,23,10,,,,,,,,,,,,,,0.0,0.0,5365.8536585365855,0.0,3739.837398373984,3739.837398373984,1626.0162601626016
+2020-06-20,MG,Pai Pedro,2,0,23,6150,3146552,16.5,33,23,10,,,,,,,,,,,,,,0.0,0.0,5365.8536585365855,0.0,3739.837398373984,3739.837398373984,1626.0162601626016
+2020-06-21,MG,Pai Pedro,2,0,24,6150,3146552,16.5,33,24,9,,,,,,,,,,,,,,0.0,0.0,5365.8536585365855,0.0,3902.439024390244,3902.439024390244,1463.4146341463415
+2020-06-22,MG,Pai Pedro,2,0,24,6150,3146552,16.5,33,24,9,,,,,,,,,,,,,,0.0,0.0,5365.8536585365855,0.0,3902.439024390244,3902.439024390244,1463.4146341463415
+2020-06-23,MG,Pai Pedro,2,0,24,6150,3146552,16.5,33,24,9,,,,,,,,,,,,,,0.0,0.0,5365.8536585365855,0.0,3902.439024390244,3902.439024390244,1463.4146341463415

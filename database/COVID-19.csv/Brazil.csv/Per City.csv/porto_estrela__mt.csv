@@ -1,0 +1,6 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-19,MT,Porto Estrela,1,0,7,2993,5106851,10.0,10,7,3,,,,,,,,,,,,,,0.0,0.0,3341.129301703976,0.0,2338.790511192783,2338.790511192783,1002.3387905111928
+2020-06-20,MT,Porto Estrela,1,0,7,2993,5106851,10.0,10,7,3,,,,,,,,,,,,,,0.0,0.0,3341.129301703976,0.0,2338.790511192783,2338.790511192783,1002.3387905111928
+2020-06-21,MT,Porto Estrela,1,0,7,2993,5106851,10.0,10,7,3,,,,,,,,,,,,,,0.0,0.0,3341.129301703976,0.0,2338.790511192783,2338.790511192783,1002.3387905111928
+2020-06-22,MT,Porto Estrela,1,0,7,2993,5106851,10.0,10,7,3,,,,,,,,,,,,,,0.0,0.0,3341.129301703976,0.0,2338.790511192783,2338.790511192783,1002.3387905111928
+2020-06-23,MT,Porto Estrela,3,0,22,2993,5106851,10.0,30,22,8,,,,,,,,,,,,,,0.0,0.0,10023.387905111927,0.0,7350.484463748747,7350.484463748747,2672.9034413631807

@@ -1,0 +1,6 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-19,GO,Petrolina de Goiás,1,0,6,10384,5216809,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,770.4160246533128,0.0,577.8120184899846,577.8120184899846,192.6040061633282
+2020-06-20,GO,Petrolina de Goiás,2,0,12,10384,5216809,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,1637.1340523882898,0.0,1155.624036979969,1155.624036979969,481.5100154083205
+2020-06-21,GO,Petrolina de Goiás,2,0,12,10384,5216809,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,1637.1340523882898,0.0,1155.624036979969,1155.624036979969,481.5100154083205
+2020-06-22,GO,Petrolina de Goiás,2,0,12,10384,5216809,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,1637.1340523882898,0.0,1155.624036979969,1155.624036979969,481.5100154083205
+2020-06-23,GO,Petrolina de Goiás,2,0,12,10384,5216809,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,1637.1340523882898,0.0,1155.624036979969,1155.624036979969,481.5100154083205

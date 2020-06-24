@@ -1,7 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-11,PR,Marquinho,2,0,11,4449,4115457,8.3,17,11,6,,,,,,,,,,,,,,0.0,0.0,3821.083,0.0,2472.466,2472.466,1348.618
-2020-06-12,PR,Marquinho,2,0,12,4449,4115457,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,3821.083,0.0,2697.235,2697.235,1123.848
-2020-06-13,PR,Marquinho,2,0,12,4449,4115457,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,3821.083,0.0,2697.235,2697.235,1123.848
-2020-06-14,PR,Marquinho,2,0,12,4449,4115457,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,3821.083,0.0,2697.235,2697.235,1123.848
-2020-06-15,PR,Marquinho,2,0,12,4449,4115457,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,3821.083,0.0,2697.235,2697.235,1123.848
-2020-06-16,PR,Marquinho,2,0,12,4449,4115457,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,3821.083,0.0,2697.235,2697.235,1123.848

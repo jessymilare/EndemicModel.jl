@@ -1,7 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-11,SP,Itaju,2,0,10,3873,3522000,7.3,15,10,5,,,,,,,,,,,,,,0.0,0.0,3872.967,0.0,2581.978,2581.978,1290.989
-2020-06-12,SP,Itaju,3,0,15,3873,3522000,7.3,22,15,7,,,,,,,,,,,,,,0.0,0.0,5680.351,0.0,3872.967,3872.967,1807.384
-2020-06-13,SP,Itaju,3,0,15,3873,3522000,7.3,22,15,7,,,,,,,,,,,,,,0.0,0.0,5680.351,0.0,3872.967,3872.967,1807.384
-2020-06-14,SP,Itaju,5,0,25,3873,3522000,7.3,36,25,11,,,,,,,,,,,,,,0.0,0.0,9295.12,0.0,6454.944,6454.944,2840.176
-2020-06-15,SP,Itaju,5,0,26,3873,3522000,7.3,36,26,10,,,,,,,,,,,,,,0.0,0.0,9295.12,0.0,6713.142,6713.142,2581.978
-2020-06-16,SP,Itaju,5,0,26,3873,3522000,7.3,36,26,10,,,,,,,,,,,,,,0.0,0.0,9295.12,0.0,6713.142,6713.142,2581.978

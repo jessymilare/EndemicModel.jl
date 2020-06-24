@@ -1,0 +1,7 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-18,GO,Americano do Brasil,2,0,12,6172,5200852,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,2754.3745949449126,0.0,1944.2644199611148,1944.2644199611148,810.1101749837978
+2020-06-19,GO,Americano do Brasil,4,0,23,6172,5200852,8.3,33,23,10,,,,,,,,,,,,,,0.0,0.0,5346.727154893066,0.0,3726.50680492547,3726.50680492547,1620.2203499675957
+2020-06-20,GO,Americano do Brasil,8,0,47,6172,5200852,8.3,66,47,19,,,,,,,,,,,,,,0.0,0.0,10693.454309786131,0.0,7615.0356448477,7615.0356448477,3078.4186649384314
+2020-06-21,GO,Americano do Brasil,8,0,48,6172,5200852,8.3,66,48,18,,,,,,,,,,,,,,0.0,0.0,10693.454309786131,0.0,7777.057679844459,7777.057679844459,2916.396629941672
+2020-06-22,GO,Americano do Brasil,8,0,48,6172,5200852,8.3,66,48,18,,,,,,,,,,,,,,0.0,0.0,10693.454309786131,0.0,7777.057679844459,7777.057679844459,2916.396629941672
+2020-06-23,GO,Americano do Brasil,10,0,61,6172,5200852,8.3,83,61,22,,,,,,,,,,,,,,0.0,0.0,13447.828904731043,0.0,9883.344134802333,9883.344134802333,3564.48476992871
