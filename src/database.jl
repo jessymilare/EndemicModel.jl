@@ -211,7 +211,8 @@ function group_table!(
         groupdf = groupby(df, keycols; sort = true)
         groupdict = Dict{Symbol,Any}()
         for (gkey, df) ∈ pairs(groupdf)
-            key = Symbol(gkey[1], map(k -> "_" * string(k), Tuple(gkey)[2:end])...)
+            strs = map(string ∘ simplify ∘ Symbol, gkey) |> collect
+            key = Symbol(join(strs, "__"))
             key = ensure_unique(groupdict, key)
             groupdict[key] = DataFrame(df)
         end

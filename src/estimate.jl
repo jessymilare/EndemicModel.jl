@@ -159,7 +159,7 @@ optimize_parameters(model::SEIRModel; kwargs...) =
     optimize_parameters!(copy(model); kwargs...)
 
 function optimize_parameters!(data::AbstractDict; kwargs...)
-    result = empty(data)
+    result = DataDict()
     for (key, subdata) ∈ data
         @debug "Optimizing parameters." key _debuginfo(subdata)
         result[key] = optimize_parameters!(subdata; kwargs...)
@@ -168,7 +168,7 @@ function optimize_parameters!(data::AbstractDict; kwargs...)
 end
 
 function optimize_parameters(data::AbstractDict; kwargs...)
-    result = empty(data)
+    result = DataDict()
     for (key, subdata) ∈ data
         @debug "Optimizing parameters." key _debuginfo(subdata)
         result[key] = optimize_parameters(subdata; kwargs...)
@@ -409,10 +409,20 @@ estimate_exposed!(model::AbstractEndemicModel; kwargs...) =
 
 function SEIRModel(
     data::AbstractDataFrame;
+    modeldata = nothing,
     minimum_infected = option(:minimum_infected),
     ndays = 14,
     kwargs...,
 )
+    if !isnothing(modeldata)
+        return SEIRModel(
+            data,
+            modeldata;
+            minimum_infected = minimum_infected,
+            ndays = ndays,
+            kwargs...,
+        )
+    end
     @debug "Computing SEIR model for data" _debuginfo(data)
     numpeople = data.estimated_population[1]
     istart = findfirst(data.infected .>= minimum_infected)
@@ -460,12 +470,57 @@ function SEIRModel(
     )
 end
 
+function SEIRModel(
+    data::AbstractDataFrame,
+    modeldata::AbstractDataFrame;
+    minimum_infected = option(:minimum_infected),
+    kwargs...,
+)
+    initial_date = data.date[1]
+    M = data.estimated_population[1]
+
+    E, I = modeldata.exposed, modeldata.active
+    R = modeldata.recovered .+ modeldata.deaths
+    S = M .- (E .+ I .+ R)
+
+    dS = S[30] - S[30-1]
+    dE = E[30] - E[30-1]
+    dI = I[30] - I[30-1]
+    dR = R[30] - R[30-1]
+
+    β = mean(-dS / (I[30-1] * S[30-1] / M))
+    γ = mean((dI + dR) / E[30-1])
+    α = mean(dR / I[30-1])
+    μ = modeldata.deaths[end] / (modeldata.recovered[end] + modeldata.deaths[end])
+
+    SEIRModel(
+        [S[1]],
+        [E[1]],
+        [I[1]],
+        [R[1]],
+        Float[M],
+        [β],
+        [γ],
+        [α],
+        [μ];
+        initial_date = initial_date,
+        realdata = data,
+        modeldata = modeldata,
+    )
+end
+
 _SEIRModel_exceptions = []
 
-function SEIRModel!(destiny::AbstractDataDict, data::AbstractDict; kwargs...)
-    function _try(data)
+function SEIRModel!(
+    destiny::AbstractDataDict,
+    data::AbstractDict;
+    modeldata = nothing,
+    kwargs...,
+)
+    function _try(key, data)
         try
-            val = SEIRModel(data; kwargs...)
+            submodel = isnothing(modeldata) ? nothing : get(modeldata, key, nothing)
+            val = SEIRModel(data; modeldata = submodel, kwargs...)
             val isa AbstractDataDict && isempty(val) ? missing : val
         catch exception
             exception isa InterruptException && rethrow(exception)
@@ -475,7 +530,7 @@ function SEIRModel!(destiny::AbstractDataDict, data::AbstractDict; kwargs...)
         end
     end
     for (key, subdata) ∈ data
-        val = _try(subdata)
+        val = _try(key, subdata)
         !ismissing(val) && (destiny[key] = val)
     end
     destiny

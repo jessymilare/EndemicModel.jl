@@ -23,7 +23,7 @@ function import_data(
     model_data_type = option(:model_data_type),
     model_directory = option(:model_directory),
     model_filename = name(database),
-    notpretty::Bool = true,
+    simple::Bool = true,
     force_update::Bool = false,
     kwargs...,
 )
@@ -50,15 +50,16 @@ function import_data(
             data = import_data(
                 database_data_type;
                 path = db_input,
-                notpretty = notpretty,
+                simple = simple,
                 kwargs...,
             )
-            model = import_data(
+            modeldata = import_data(
                 database_data_type;
                 path = model_input,
-                notpretty = notpretty,
+                simple = simple,
                 kwargs...,
             )
+            model = SEIRModel(data; modeldata = modeldata, kwargs...)
             imported = true
             @debug "Data imported from cache."
         end

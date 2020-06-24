@@ -168,7 +168,9 @@ mutable struct SEIRModel <: AbstractEndemicModel
         info = Dict{Symbol,Any}(kwargs)
 
         model = new(vars, params, deriv, ngroups, groupnames, realdata, modeldata, info)
-        isnothing(modeldata) && modeldata!(model, to_dataframe(model; kwargs...))
+        if isnothing(modeldata)
+            modeldata!(model, to_dataframe(model; kwargs...))
+        end
         model
     end
 end
@@ -457,7 +459,8 @@ function Plots.plot(
     ::AbstractEndemicModel,
     df::DataFrame;
     columns = option(:plot_columns),
-    plot_period = Day(nrow(df)),
+    plot_begin::Union{Integer,Date,Period} = 1,
+    plot_end::Union{Integer,Date,Period} = nrow(df),
     labels = nothing,
     title = _get_plot_title(df),
     date_format = option(:plot_date_format),
@@ -465,11 +468,37 @@ function Plots.plot(
     ylabel = nothing,
     yfactor = nothing,
     legend = length(columns) == 1 ? false : :topleft,
-    left_margin = 5mm,
+    left_margin = 1mm,
     kwargs...,
 )
-    ndays = Dates.days(plot_period)
-    df = df[1:ndays, :]
+    if plot_begin isa Date
+        ini = findfirst(isequal(plot_begin), df.date)
+        if isnothing(ini)
+            throw(ArgumentError("plot_begin not found in DataFrame: $(plot_begin)"))
+        end
+    elseif plot_begin isa Period
+        ini = Dates.days(plot_begin) + 1
+    elseif plot_begin <= 0
+        ini = max(1, nrow(df) + plot_begin)
+    else
+        ini = min(plot_begin, nrow(df))
+    end
+
+    if plot_end isa Date
+        iend = findfirst(isequal(plot_end), df.date)
+        if isnothing(ini)
+            throw(ArgumentError("plot_end not found in DataFrame: $(plot_end)"))
+        end
+    elseif plot_end isa Period
+        iend = nrow(df) - Dates.days(plot_end)
+    elseif plot_end <= 0
+        iend = max(1, nrow(df) + plot_end)
+    else
+        iend = min(plot_end, nrow(df))
+    end
+    @argcheck ini <= iend
+
+    df = df[ini:iend, :]
     columns = intersect(string.(columns), names(df))
     labels = string.(something(labels, prettify.(Symbol.(columns))))
     max_yvalue = 0

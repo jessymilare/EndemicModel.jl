@@ -129,25 +129,30 @@ function prettify(obj::AbstractVector; kwargs...)
     map(elt -> prettify(elt; kwargs...), obj)
 end
 prettify(obj::Integer; kwargs...) = obj
-function prettify(obj::Real; digits = 3, kwargs...)
+function prettify(obj::Real; digits = 2, kwargs...)
     obj < 1.0 && (digits += 1)
     obj < 0.1 && (digits += 1)
     round(obj; digits = digits)
 end
 prettify(obj::Quantity{<:Integer}; kwargs...) = string(obj)
-prettify(obj::Quantity; digits = 3, kwargs...) =
+prettify(obj::Quantity; digits = 2, kwargs...) =
     round(unit(obj), obj; digits = digits + 2)
 
 function prettify(
     obj::Symbol;
-    case = nothing,
-    replace_pairs = nothing,
+    case = titlecase,
+    replace_pairs = ["_" => " "],
     kwargs...,
 )
     if isnothing(case) && isnothing(replace_pairs)
         obj
     else
-        Symbol(prettify(string(obj); case = case, replace_pairs = replace_pairs, kwargs...))
+        Symbol(prettify(
+            string(obj);
+            case = case,
+            replace_pairs = replace_pairs,
+            kwargs...,
+        ))
     end
 end
 
@@ -159,7 +164,7 @@ function prettify(
 )
     !isnothing(replace_pairs) && (obj = replace(obj, replace_pairs...))
     if !isnothing(case) && all(c -> Int(c) < 255, obj)
-        case(obj; strict = false)
+        case(obj)
     else
         obj
     end
@@ -171,8 +176,71 @@ function prettify(obj::AbstractDataFrame; kwargs...)
     DataFrame(newcols, newnames)
 end
 
+function prettify(obj::AbstractDict; kwargs...)
+    result = empty(obj)
+    for (key, value) ∈ obj
+        result[prettify(key)] = prettify(value)
+    end
+    result
+end
+
 function prettify(obj::Missing; kwargs...)
     nothing
+end
+
+simplify(obj::Any; kwargs...) = obj
+function simplify(obj::AbstractVector; kwargs...)
+    map(elt -> simplify(elt; kwargs...), obj)
+end
+
+function simplify(
+    obj::Symbol;
+    case = lowercase,
+    replace_pairs = [" " => "_"],
+    kwargs...,
+)
+    if isnothing(case) && isnothing(replace_pairs)
+        obj
+    else
+        Symbol(simplify(
+            string(obj);
+            case = case,
+            replace_pairs = replace_pairs,
+            kwargs...,
+        ))
+    end
+end
+
+function simplify(
+    obj::AbstractString;
+    case = nothing,
+    replace_pairs = nothing,
+    kwargs...,
+)
+    !isnothing(replace_pairs) && (obj = replace(obj, replace_pairs...))
+    if !isnothing(case) && all(c -> Int(c) < 255, obj)
+        case(obj)
+    else
+        obj
+    end
+end
+
+function simplify(obj::AbstractDataFrame; kwargs...)
+    newcols = [simplify(col; kwargs...) for col ∈ eachcol(obj)]
+    newnames = simplify(names(obj); title = true, kwargs...)
+    DataFrame(newcols, newnames)
+end
+
+function simplify(obj::Nothing; kwargs...)
+    missing
+end
+
+function simplify(obj::AbstractDict; kwargs...)
+    result = empty(obj)
+    for (key, value) ∈ obj
+        result[simplify(key)] = simplify(value)
+    end
+    result
 end
 
 nonmissing(value, default) = ismissing(value) ? default : value

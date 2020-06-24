@@ -42,15 +42,23 @@ end
     # Average infeccious period of 9.5 (6.0 to 11.0) days
     # Source: https://www.sciencedirect.com/science/article/pii/S0163445320301195
     # Average infeccious period of 11.0 (10.0 to 12.0) days
-    infected_vec = data.confirmed
+    infected_vec, countries = data.confirmed, data.country
     active, closed, last_infected = 0, 0, 0
     closed_vec = Int[]
-    for infected ∈ infected_vec
-        new_closed, new_active = active / 11.0, infected - last_infected
-        closed += new_closed
-        active += new_active - new_closed
-        last_infected = infected
-        push!(closed_vec, round(Int, closed))
+    last_country = "VOID"
+
+    for (infected, country) ∈ zip(infected_vec, countries)
+        if country == last_country
+            new_closed, new_active = active / 11.0, infected - last_infected
+            closed += new_closed
+            active += new_active - new_closed
+            last_infected = infected
+            push!(closed_vec, round(Int, closed))
+        else
+            active, closed, last_infected = 0, 0, 0
+            last_country = country
+            push!(closed_vec, 0)
+        end
     end
     insertcols!(data, :recovered => closed_vec .- data.deaths)
 
@@ -78,9 +86,9 @@ end
     (confirmed, recovered, deaths) => identity,
 ]
 
-@deftable Brazil2(Brazil, total, estimates) begin
+@deftable brazil2(brazil, total, estimates) begin
     keys = [:date, :estimated_population, :gdp_per_capita, :total_tests, :test_kind]
-    br = select(Brazil, keys)
+    br = select(brazil, keys)
     avg_ipc = estimates[estimates.state.=="total", :infected_per_confirmed][1]
 
     # Estimate recovered
@@ -88,7 +96,7 @@ end
     # Average infeccious period of 9.5 (6.0 to 11.0) days
     # Source: https://www.sciencedirect.com/science/article/pii/S0163445320301195
     # Average infeccious period of 11.0 (10.0 to 12.0) days
-    infected_vec = round.(Int, avg_ipc * Brazil.confirmed)
+    infected_vec = round.(Int, avg_ipc * brazil.confirmed)
     active, closed, last_infected = 0, 0, 0
     closed_vec = Int[]
     for infected ∈ infected_vec
@@ -99,19 +107,19 @@ end
         push!(closed_vec, round(Int, closed))
     end
 
-    insertcols!(br, 1, :country => "Brazil")
-    insertcols!(br, :confirmed => Brazil.confirmed)
-    insertcols!(br, :recovered_confirmed => Brazil.recovered)
-    insertcols!(br, :recovered => closed_vec .- Brazil.deaths)
-    insertcols!(br, :deaths => Brazil.deaths)
+    insertcols!(br, 1, :country => "brazil")
+    insertcols!(br, :confirmed => brazil.confirmed)
+    insertcols!(br, :recovered_confirmed => brazil.recovered)
+    insertcols!(br, :recovered => closed_vec .- brazil.deaths)
+    insertcols!(br, :deaths => brazil.deaths)
     insertcols!(br, :infected => infected_vec)
     sort!(br, :date)
 end
 
-@deftable states2(states, Brazil2) begin
+@deftable states2(states, brazil2) begin
     nrec = Union{Int,Missing}[]
     for row ∈ eachrow(states)
-        brrow = Brazil2[Brazil2.date.==row.date, :]
+        brrow = brazil2[brazil2.date.==row.date, :]
         push!(
             nrec,
             if !isempty(brrow)
@@ -127,10 +135,10 @@ end
     insertcols!(states, 5, :recovered => nrec)
 end
 
-@deftable cities2(cities, Brazil2) begin
+@deftable cities2(cities, brazil2) begin
     nrec = Union{Int,Missing}[]
     for row ∈ eachrow(cities)
-        brrow = Brazil2[Brazil2.date.==row.date, :]
+        brrow = brazil2[brazil2.date.==row.date, :]
         push!(
             nrec,
             if !isempty(brrow)
@@ -310,10 +318,10 @@ function copy_brazil_tables(data::AbstractDict)
     if (
         csse != nothing &&
         brasil_io != nothing &&
-        !haskey(brasil_io, :Brazil) &&
+        !haskey(brasil_io, :brazil) &&
         haskey(csse, :per_country_group)
     )
-        brasil_io[:Brazil] = csse[:per_country_group][:Brazil]
+        brasil_io[:brazil] = csse[:per_country_group][:brazil]
         true
     else
         for (_, subdata) ∈ data
@@ -370,7 +378,7 @@ function covid19_database(; kwargs...)
         table_world3,
         group_per_country,
         copy_brazil_tables,
-        table_Brazil2,
+        table_brazil2,
         table_states2,
         table_cities2,
         group_per_state,
@@ -409,7 +417,7 @@ function covid19_database(; kwargs...)
     Database{DataDict}(sources, kwargs, funcs; name = "COVID-19")
 end
 
-function covid19(; database = nothing, kwargs...)
+function covid19(; database = nothing, optimize::Bool = false, kwargs...)
     db = database
     @info "Creating COVID-19 database."
     isnothing(database) && (db = covid19_database(; kwargs...))
@@ -430,14 +438,14 @@ function covid19(; database = nothing, kwargs...)
             ],
             :data_kind => [
                 "COVID-19 cases for several countries",
-                "COVID-19 cases per state and city in Brazil",
+                "COVID-19 cases per state and city in brazil",
                 "Population and GDP per capita for several countries",
                 "Number of tests of COVID-19 for several countries",
             ],
         )
         for row ∈ eachrow(db.brasil_io.estimates)
-            data_kind = row.state == "total" ? "Estimate for Brazil on $(row.date)" :
-                "Estimate for $(row.state), Brazil on $(row.date)"
+            data_kind = row.state == "total" ? "Estimate for brazil on $(row.date)" :
+                "Estimate for $(row.state), brazil on $(row.date)"
             push!(
                 sources,
                 (; source = row.source, url = row.url, data_kind = data_kind),
@@ -450,10 +458,10 @@ function covid19(; database = nothing, kwargs...)
                 :per_date => db.csse.total_group,
                 :total => db.csse.total2,
             ),
-            :Brazil => DataDict(
+            :brazil => DataDict(
                 :per_state => db.brasil_io.per_state_group,
                 :per_city => db.brasil_io.per_city_group,
-                :total => db.brasil_io.Brazil2,
+                :total => db.brasil_io.brazil2,
             ),
             :sources => sources,
             :auxiliar => DataDict(
@@ -463,22 +471,22 @@ function covid19(; database = nothing, kwargs...)
             ),
         )
         datadict!(db, newdata)
-        br = db.Brazil.total
-        db.world.per_country.datadict[:Brazil] = br
+        br = db.brazil.total
+        db.world.per_country.datadict[:brazil] = br
         @info "COVID-19 database created." summary(db)
 
         @info "Computing SEIR model..."
         SEIRModel!(db; kwargs...)
-        mbr = db.model.Brazil.total
+        mbr = db.model.brazil.total
         optimize_parameters!(mbr; kwargs...)
-        db.model.world.per_country.datadict[:Brazil] = mbr
-        parameters!(db; kwargs...)
+        db.model.world.per_country.datadict[:brazil] = mbr
         @info "SEIR model for COVID-19 database computed."
 
-        # @info "Optimizing parameters..."
-        # optimize_parameters!(db; kwargs...)
-        # @info "Optimal parameters for COVID-19 database computed."
-
+        if optimize
+            @info "Optimizing parameters..."
+            optimize_parameters!(db; kwargs...)
+            @info "Optimal parameters for COVID-19 database computed."
+        end
         @info "Exporting..."
         paths = export_data(db; kwargs...)
         @info "COVID-19 database exported." paths

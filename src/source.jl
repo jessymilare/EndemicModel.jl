@@ -10,7 +10,7 @@ The method `pathof` should return the path to the database file or directory.
 abstract type AbstractDataSource end
 abstract type AbstractDataFile <: AbstractDataSource end
 
-const DataSourceDesignator = Union{AbstractDataSource, Symbol}
+const DataSourceDesignator = Union{AbstractDataSource,Symbol}
 
 """
     pathof(source::AbstractDataFile)
@@ -163,7 +163,7 @@ Returns the default cache file path with the given `ext`ension, or no extension 
 is `nothing`.
 """
 function cache_path(
-    ext::Union{Nothing, AbstractString} = data_extension(option(:cache_data_type));
+    ext::Union{Nothing,AbstractString} = data_extension(option(:cache_data_type));
     directory = option(:cache_directory),
     update_period::Period = option(:update_period),
     subpath = option(:cache_filename),
@@ -203,7 +203,7 @@ function _cache_subpath(directory::AbstractPath, update_period::Period)
     (period_directory, lastdir)
 end
 
-function cache_path(sourcetype::Type{T}; kwargs...) where {T <: AbstractDataFile}
+function cache_path(sourcetype::Type{T}; kwargs...) where {T<:AbstractDataFile}
     cache_path(data_extension(T); kwargs...)
 end
 function cache_path(sourcesym::Symbol; kwargs...)
@@ -220,10 +220,9 @@ _dateformat_aux(per::Day) =
     Dates.value(per) >= 31 ? dateformat"yyyy-mm" : dateformat"yyyy-mm-dd"
 _dateformat_aux(per::Hour) =
     Dates.value(per) >= 24 ? dateformat"yyyy-mm-dd" : dateformat"yyyy-mm-dd HHh"
-_dateformat_aux(per::Minute) = Dates.value(per) >= 60 ? dateformat"yyyy-mm-dd HHh" :
-    dateformat"yyyy-mm-dd HHhMM\m"
-_dateformat_aux(per::Second) =
-    Dates.value(per) >= 60 ? dateformat"yyyy-mm-dd HHhMM\m" :
+_dateformat_aux(per::Minute) =
+    Dates.value(per) >= 60 ? dateformat"yyyy-mm-dd HHh" : dateformat"yyyy-mm-dd HHhMM\m"
+_dateformat_aux(per::Second) = Dates.value(per) >= 60 ? dateformat"yyyy-mm-dd HHhMM\m" :
     dateformat"yyyy-mm-dd HHhMM\mSS\s"
 
 _dateformat_aux(period::Period) = dateformat"yyyy-mm-dd HHhMM\mSS\s"
@@ -286,19 +285,24 @@ end
 DATA_SOURCES[:csv] = CsvPath
 data_extension(::Type{CsvPath}) = "csv"
 
-function import_data(source::CsvPath; kwargs...)
+function import_data(source::CsvPath; simple::Bool = false, kwargs...)
     path = pathof(source)
     @argcheck exists(path)
     if isfile(path)
         @debug "Importing DataFrame from CSV file." path
-        csv_read(path; copycols = true)
+        data = csv_read(path; copycols = true)
     else
         @debug "Importing Dict from CSV directory." path
-        DataDict(
+        data = DataDict(
+            # Parameter `simple` don't need to be passed on
             Symbol(filename(elt)) => import_data(CsvPath(elt); kwargs...)
             for elt ∈ readpath(path)
         )
     end
+    if simple
+        data = simplify(data; kwargs...)
+    end
+    data
 end
 
 function export_data(
@@ -317,14 +321,23 @@ function export_data(
     destiny
 end
 
-function export_data(source::CsvPath, data::AbstractDict; kwargs...)
+function export_data(
+    source::CsvPath,
+    data::AbstractDict;
+    pretty::Bool = false,
+    kwargs...,
+)
     destiny = pathof(source)
     @debug "Exporting Dict to CSV directory." destiny _debuginfo(data)
+    if pretty
+        data = prettify(data; kwargs...)
+    end
     exists(destiny) && rm(destiny; recursive = true)
     mkdir(destiny; recursive = true)
     for (fname, fdata) ∈ data
         fname = replace(string(fname), '/' => '_')
         fpath = join(destiny, Path(fname * ".csv"))
+        # Parameter `pretty` don't need to be passed on
         export_data(CsvPath(fpath), fdata; kwargs...)
     end
     destiny
@@ -343,12 +356,11 @@ end
 DATA_SOURCES[:ods] = OdsPath
 data_extension(::Type{OdsPath}) = "ods"
 
-function import_data(source::OdsPath; kwargs...)
+function import_data(source::OdsPath; simple::Bool = false, kwargs...)
     path = pathof(source)
     @argcheck exists(path)
     if isfile(path)
-        data = ods_readall(path)
-        DataDict(Symbol(k) => v for (k, v) ∈ data)
+        data = DataDict(Symbol(k) => v for (k, v) ∈ ods_readall(path))
     else
         data = DataDict(
             Symbol(filename(elt)) => import_data(OdsPath(elt); kwargs...)
@@ -361,14 +373,21 @@ function import_data(source::OdsPath; kwargs...)
         end
         data
     end
+    if simple
+        data = simplify(data; kwargs...)
+    end
 end
 
 function export_data(
     source::OdsPath,
     data::AbstractDataFrame;
+    pretty::Bool = false,
     table_name = option(:cache_table_name),
     kwargs...,
 )
+    if pretty
+        data = prettify(data; kwargs...)
+    end
     export_data(source, DataFrameDict(Symbol(table_name) => data); kwargs...)
 end
 
@@ -380,7 +399,7 @@ function export_data(
 )
     destiny = pathof(source)
     rm(destiny; recursive = true, force = true)
-    sheetdict = SortedDict{Tuple, DataFrame}()
+    sheetdict = SortedDict{Tuple,DataFrame}()
     for (tname, tbl) ∈ data
         tname = string(tname)
         if pretty
@@ -393,12 +412,20 @@ function export_data(
     destiny
 end
 
-function export_data(source::OdsPath, data::AbstractDataDict; kwargs...)
+function export_data(
+    source::OdsPath,
+    data::AbstractDataDict;
+    pretty::Bool = false,
+    kwargs...,
+)
+    if pretty
+        data = prettify(data; kwargs...)
+    end
     destiny = pathof(source)
     rm(destiny; recursive = true, force = true)
     subdata = filter(p -> p[2] isa AbstractDict, data)
     dataframes = filter(p -> !(p[2] isa AbstractDict), data)
-    dataframes = Dict{Symbol, DataFrame}(k => DataFrame(v) for (k, v) ∈ dataframes)
+    dataframes = Dict{Symbol,DataFrame}(k => DataFrame(v) for (k, v) ∈ dataframes)
     if isempty(subdata)
         dfsource = source
     else
