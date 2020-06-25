@@ -1,0 +1,9 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-16,PI,Massapê do Piauí,1,0,26,6505,2206050,36.0,36,26,10,,,,,,,,,,,,,,0.0,0.0,5534.2,0.0,3996.93,3996.93,1537.28
+2020-06-17,PI,Massapê do Piauí,1,0,26,6505,2206050,36.0,36,26,10,,,,,,,,,,,,,,0.0,0.0,5534.2,0.0,3996.93,3996.93,1537.28
+2020-06-18,PI,Massapê do Piauí,1,0,26,6505,2206050,36.0,36,26,10,,,,,,,,,,,,,,0.0,0.0,5534.2,0.0,3996.93,3996.93,1537.28
+2020-06-19,PI,Massapê do Piauí,1,0,25,6505,2206050,36.0,36,25,11,0.0,0.0,,,,,,,,,,,,0.0,0.0,5534.2,0.0,3843.2,3843.2,1691.01
+2020-06-20,PI,Massapê do Piauí,1,0,25,6505,2206050,36.0,36,25,11,0.0,0.0,,,,,,,,,,,,0.0,0.0,5534.2,0.0,3843.2,3843.2,1691.01
+2020-06-21,PI,Massapê do Piauí,1,0,26,6505,2206050,36.0,36,26,10,,,,,,,,,,,,,,0.0,0.0,5534.2,0.0,3996.93,3996.93,1537.28
+2020-06-22,PI,Massapê do Piauí,1,0,26,6505,2206050,36.0,36,26,10,,,,,,,,,,,,,,0.0,0.0,5534.2,0.0,3996.93,3996.93,1537.28
+2020-06-23,PI,Massapê do Piauí,1,0,26,6505,2206050,36.0,36,26,10,,,,,,,,,,,,,,0.0,0.0,5534.2,0.0,3996.93,3996.93,1537.28

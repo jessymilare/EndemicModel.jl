@@ -1,0 +1,8 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-17,PI,Lagoa Alegre,1,0,26,8627,2205557,36.0,36,26,10,,,,,,,,,,,,,,0.0,0.0,4172.95,0.0,3013.79,3013.79,1159.15
+2020-06-18,PI,Lagoa Alegre,1,0,26,8627,2205557,36.0,36,26,10,,,,,,,,,,,,,,0.0,0.0,4172.95,0.0,3013.79,3013.79,1159.15
+2020-06-19,PI,Lagoa Alegre,2,0,51,8627,2205557,36.0,72,51,21,,,,,,,,,,,,,,0.0,0.0,8345.89,0.0,5911.67,5911.67,2434.22
+2020-06-20,PI,Lagoa Alegre,3,0,76,8627,2205557,36.0,108,76,32,12.0,8.83,,,,,,,,,,,,0.0,0.0,12518.84,0.0,8809.55,8809.55,3709.28
+2020-06-21,PI,Lagoa Alegre,3,0,78,8627,2205557,36.0,108,78,30,,,,,,,,,,,,,,0.0,0.0,12518.84,0.0,9041.38,9041.38,3477.45
+2020-06-22,PI,Lagoa Alegre,3,0,79,8627,2205557,36.0,108,79,29,,,,,,,,,,,,,,0.0,0.0,12518.84,0.0,9157.3,9157.3,3361.54
+2020-06-23,PI,Lagoa Alegre,3,0,79,8627,2205557,36.0,108,79,29,,,,,,,,,,,,,,0.0,0.0,12518.84,0.0,9157.3,9157.3,3361.54

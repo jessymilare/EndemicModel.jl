@@ -1,0 +1,8 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-17,PR,Bom Sucesso,2,0,12,7102,4103206,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,2393.69,0.0,1689.66,1689.66,704.03
+2020-06-18,PR,Bom Sucesso,2,0,12,7102,4103206,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,2393.69,0.0,1689.66,1689.66,704.03
+2020-06-19,PR,Bom Sucesso,1,0,6,7102,4103206,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,1126.44,0.0,844.83,844.83,281.61
+2020-06-20,PR,Bom Sucesso,1,0,6,7102,4103206,8.3,8,6,2,0.0,0.0,,,,,,,,,,,,0.0,0.0,1126.44,0.0,844.83,844.83,281.61
+2020-06-21,PR,Bom Sucesso,1,0,6,7102,4103206,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,1126.44,0.0,844.83,844.83,281.61
+2020-06-22,PR,Bom Sucesso,2,0,12,7102,4103206,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,2393.69,0.0,1689.66,1689.66,704.03
+2020-06-23,PR,Bom Sucesso,2,0,12,7102,4103206,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,2393.69,0.0,1689.66,1689.66,704.03

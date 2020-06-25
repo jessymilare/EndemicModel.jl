@@ -1,0 +1,10 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-15,GO,Ouro Verde de Goiás,1,0,6,3797,5215405,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,2106.93,0.0,1580.19,1580.19,526.73
+2020-06-16,GO,Ouro Verde de Goiás,1,0,6,3797,5215405,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,2106.93,0.0,1580.19,1580.19,526.73
+2020-06-17,GO,Ouro Verde de Goiás,1,0,6,3797,5215405,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,2106.93,0.0,1580.19,1580.19,526.73
+2020-06-18,GO,Ouro Verde de Goiás,2,0,12,3797,5215405,8.3,17,12,5,2.83,2.0,,,,,,,,,,,,0.0,0.0,4477.22,0.0,3160.39,3160.39,1316.83
+2020-06-19,GO,Ouro Verde de Goiás,2,0,12,3797,5215405,8.3,17,12,5,2.83,2.0,,,,,,,,,,,,0.0,0.0,4477.22,0.0,3160.39,3160.39,1316.83
+2020-06-20,GO,Ouro Verde de Goiás,2,0,12,3797,5215405,8.3,17,12,5,1.5,1.0,,,,,,,,,,,,0.0,0.0,4477.22,0.0,3160.39,3160.39,1316.83
+2020-06-21,GO,Ouro Verde de Goiás,3,0,18,3797,5215405,8.3,25,18,7,,,,,,,,,,,,,,0.0,0.0,6584.15,0.0,4740.58,4740.58,1843.56
+2020-06-22,GO,Ouro Verde de Goiás,3,0,18,3797,5215405,8.3,25,18,7,,,,,,,,,,,,,,0.0,0.0,6584.15,0.0,4740.58,4740.58,1843.56
+2020-06-23,GO,Ouro Verde de Goiás,2,0,12,3797,5215405,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,4477.22,0.0,3160.39,3160.39,1316.83

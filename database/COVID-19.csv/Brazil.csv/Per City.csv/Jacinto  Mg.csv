@@ -1,0 +1,8 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-17,MG,Jacinto,3,0,36,12449,3134707,16.5,50,36,14,,,,,,,,,,,,,,0.0,0.0,4016.39,0.0,2891.8,2891.8,1124.59
+2020-06-18,MG,Jacinto,3,0,36,12449,3134707,16.5,50,36,14,,,,,,,,,,,,,,0.0,0.0,4016.39,0.0,2891.8,2891.8,1124.59
+2020-06-19,MG,Jacinto,6,0,70,12449,3134707,16.5,99,70,29,,,,,,,,,,,,,,0.0,0.0,7952.45,0.0,5622.94,5622.94,2329.5
+2020-06-20,MG,Jacinto,3,0,35,12449,3134707,16.5,50,35,15,0.0,0.0,,,,,,,,,,,,0.0,0.0,4016.39,0.0,2811.47,2811.47,1204.92
+2020-06-21,MG,Jacinto,3,0,36,12449,3134707,16.5,50,36,14,,,,,,,,,,,,,,0.0,0.0,4016.39,0.0,2891.8,2891.8,1124.59
+2020-06-22,MG,Jacinto,3,0,37,12449,3134707,16.5,50,37,13,,,,,,,,,,,,,,0.0,0.0,4016.39,0.0,2972.13,2972.13,1044.26
+2020-06-23,MG,Jacinto,3,0,36,12449,3134707,16.5,50,36,14,,,,,,,,,,,,,,0.0,0.0,4016.39,0.0,2891.8,2891.8,1124.59

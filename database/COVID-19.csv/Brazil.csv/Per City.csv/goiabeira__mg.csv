@@ -1,5 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-20,MG,Goiabeira,1,0,11,3387,3127370,16.5,16,11,5,,,,,,,,,,,,,,0.0,0.0,4723.9444936521995,0.0,3247.7118393858873,3247.7118393858873,1476.2326542663125
-2020-06-21,MG,Goiabeira,1,0,12,3387,3127370,16.5,16,12,4,,,,,,,,,,,,,,0.0,0.0,4723.9444936521995,0.0,3542.9583702391496,3542.9583702391496,1180.9861234130499
-2020-06-22,MG,Goiabeira,1,0,12,3387,3127370,16.5,16,12,4,,,,,,,,,,,,,,0.0,0.0,4723.9444936521995,0.0,3542.9583702391496,3542.9583702391496,1180.9861234130499
-2020-06-23,MG,Goiabeira,1,1,12,3387,3127370,16.5,16,13,3,,,,,,,,,,,,,,0.07692307692307693,0.0625,4723.9444936521995,295.24653085326247,3542.9583702391496,3838.204901092412,885.7395925597874

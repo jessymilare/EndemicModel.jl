@@ -1,5 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-19,SP,Maracaí,21,0,108,14142,3528809,7.3,153,108,45,,,,,,,,,,,,,,0.0,0.0,10818.837505303352,0.0,7636.826474331778,7636.826474331778,3182.011030971574
-2020-06-20,SP,Maracaí,24,0,124,14142,3528809,7.3,175,124,51,,,,,,,,,,,,,,0.0,0.0,12374.487342667233,0.0,8768.208174232781,8768.208174232781,3606.2791684344506
-2020-06-21,SP,Maracaí,24,0,126,14142,3528809,7.3,175,126,49,,,,,,,,,,,,,,0.0,0.0,12374.487342667233,0.0,8909.630886720408,8909.630886720408,3464.856455946825
-2020-06-22,SP,Maracaí,26,0,139,14142,3528809,7.3,190,139,51,,,,,,,,,,,,,,0.0,0.0,13435.157686324425,0.0,9828.878517889972,9828.878517889972,3606.2791684344506

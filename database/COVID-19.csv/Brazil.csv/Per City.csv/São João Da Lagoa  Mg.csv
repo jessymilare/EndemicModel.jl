@@ -1,0 +1,7 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-18,MG,São João da Lagoa,1,0,12,4964,3162252,16.5,16,12,4,,,,,,,,,,,,,,0.0,0.0,3223.21,0.0,2417.41,2417.41,805.8
+2020-06-19,MG,São João da Lagoa,1,0,11,4964,3162252,16.5,16,11,5,,,,,,,,,,,,,,0.0,0.0,3223.21,0.0,2215.95,2215.95,1007.25
+2020-06-20,MG,São João da Lagoa,2,0,23,4964,3162252,16.5,33,23,10,,,,,,,,,,,,,,0.0,0.0,6647.86,0.0,4633.36,4633.36,2014.5
+2020-06-21,MG,São João da Lagoa,2,0,24,4964,3162252,16.5,33,24,9,,,,,,,,,,,,,,0.0,0.0,6647.86,0.0,4834.81,4834.81,1813.05
+2020-06-22,MG,São João da Lagoa,2,0,24,4964,3162252,16.5,33,24,9,,,,,,,,,,,,,,0.0,0.0,6647.86,0.0,4834.81,4834.81,1813.05
+2020-06-23,MG,São João da Lagoa,2,0,24,4964,3162252,16.5,33,24,9,,,,,,,,,,,,,,0.0,0.0,6647.86,0.0,4834.81,4834.81,1813.05

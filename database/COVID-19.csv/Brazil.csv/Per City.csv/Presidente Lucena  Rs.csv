@@ -1,0 +1,10 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-15,RS,Presidente Lucena,1,0,6,2930,4315149,8.4,8,6,2,,,,,,,,,,,,,,0.0,0.0,2730.38,0.0,2047.78,2047.78,682.59
+2020-06-16,RS,Presidente Lucena,2,0,12,2930,4315149,8.4,17,12,5,,,,,,,,,,,,,,0.0,0.0,5802.05,0.0,4095.56,4095.56,1706.48
+2020-06-17,RS,Presidente Lucena,3,0,18,2930,4315149,8.4,25,18,7,,,,,,,,,,,,,,0.0,0.0,8532.42,0.0,6143.34,6143.34,2389.08
+2020-06-18,RS,Presidente Lucena,6,0,36,2930,4315149,8.4,50,36,14,14.0,10.0,,,,,,,,,,,,0.0,0.0,17064.85,0.0,12286.69,12286.69,4778.16
+2020-06-19,RS,Presidente Lucena,6,0,35,2930,4315149,8.4,50,35,15,14.0,10.33,,,,,,,,,,,,0.0,0.0,17064.85,0.0,11945.39,11945.39,5119.45
+2020-06-20,RS,Presidente Lucena,10,0,59,2930,4315149,8.4,84,59,25,18.17,13.33,,,,,,,,,,,,0.0,0.0,28668.94,0.0,20136.52,20136.52,8532.42
+2020-06-21,RS,Presidente Lucena,11,0,66,2930,4315149,8.4,92,66,26,,,,,,,,,,,,,,0.0,0.0,31399.32,0.0,22525.6,22525.6,8873.72
+2020-06-22,RS,Presidente Lucena,12,0,74,2930,4315149,8.4,101,74,27,,,,,,,,,,,,,,0.0,0.0,34470.99,0.0,25255.97,25255.97,9215.02
+2020-06-23,RS,Presidente Lucena,16,0,98,2930,4315149,8.4,134,98,36,,,,,,,,,,,,,,0.0,0.0,45733.79,0.0,33447.1,33447.1,12286.69

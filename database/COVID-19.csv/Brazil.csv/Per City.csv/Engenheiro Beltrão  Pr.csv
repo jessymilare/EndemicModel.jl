@@ -1,0 +1,12 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-13,PR,Engenheiro Beltrão,1,0,6,14140,4107504,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,565.77,0.0,424.33,424.33,141.44
+2020-06-14,PR,Engenheiro Beltrão,1,0,6,14140,4107504,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,565.77,0.0,424.33,424.33,141.44
+2020-06-15,PR,Engenheiro Beltrão,1,0,6,14140,4107504,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,565.77,0.0,424.33,424.33,141.44
+2020-06-16,PR,Engenheiro Beltrão,1,0,6,14140,4107504,8.3,8,6,2,1.5,1.0,,,,,,,,,,,,0.0,0.0,565.77,0.0,424.33,424.33,141.44
+2020-06-17,PR,Engenheiro Beltrão,1,0,6,14140,4107504,8.3,8,6,2,1.5,1.0,,,,,,,,,,,,0.0,0.0,565.77,0.0,424.33,424.33,141.44
+2020-06-18,PR,Engenheiro Beltrão,2,0,12,14140,4107504,8.3,17,12,5,2.83,2.0,,,,,,,,,,,,0.0,0.0,1202.26,0.0,848.66,848.66,353.61
+2020-06-19,PR,Engenheiro Beltrão,2,0,12,14140,4107504,8.3,17,12,5,2.83,2.0,,,,,,,,,,,,0.0,0.0,1202.26,0.0,848.66,848.66,353.61
+2020-06-20,PR,Engenheiro Beltrão,2,0,12,14140,4107504,8.3,17,12,5,4.17,3.0,,,,,,,,,,,,0.0,0.0,1202.26,0.0,848.66,848.66,353.61
+2020-06-21,PR,Engenheiro Beltrão,3,0,18,14140,4107504,8.3,25,18,7,,,,,,,,,,,,,,0.0,0.0,1768.03,0.0,1272.98,1272.98,495.05
+2020-06-22,PR,Engenheiro Beltrão,3,0,18,14140,4107504,8.3,25,18,7,,,,,,,,,,,,,,0.0,0.0,1768.03,0.0,1272.98,1272.98,495.05
+2020-06-23,PR,Engenheiro Beltrão,4,0,24,14140,4107504,8.3,33,24,9,,,,,,,,,,,,,,0.0,0.0,2333.8,0.0,1697.31,1697.31,636.49

@@ -1,5 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-20,MG,Bom Jardim de Minas,1,0,11,6539,3107505,16.5,16,11,5,,,,,,,,,,,,,,0.0,0.0,2446.8573176326654,0.0,1682.2144058724575,1682.2144058724575,764.642911760208
-2020-06-21,MG,Bom Jardim de Minas,1,0,12,6539,3107505,16.5,16,12,4,,,,,,,,,,,,,,0.0,0.0,2446.8573176326654,0.0,1835.142988224499,1835.142988224499,611.7143294081663
-2020-06-22,MG,Bom Jardim de Minas,2,0,24,6539,3107505,16.5,33,24,9,,,,,,,,,,,,,,0.0,0.0,5046.643217617373,0.0,3670.285976448998,3670.285976448998,1376.3572411683745
-2020-06-23,MG,Bom Jardim de Minas,2,0,24,6539,3107505,16.5,33,24,9,,,,,,,,,,,,,,0.0,0.0,5046.643217617373,0.0,3670.285976448998,3670.285976448998,1376.3572411683745

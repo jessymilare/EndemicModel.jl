@@ -1,3 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-21,SP,Vitória Brasil,1,0,5,1858,3556958,7.3,7,5,2,,,,,,,,,,,,,,0.0,0.0,3767.491926803014,0.0,2691.0656620021527,2691.0656620021527,1076.4262648008612
-2020-06-22,SP,Vitória Brasil,1,0,5,1858,3556958,7.3,7,5,2,,,,,,,,,,,,,,0.0,0.0,3767.491926803014,0.0,2691.0656620021527,2691.0656620021527,1076.4262648008612

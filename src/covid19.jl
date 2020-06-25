@@ -107,7 +107,7 @@ end
         push!(closed_vec, round(Int, closed))
     end
 
-    insertcols!(br, 1, :country => "brazil")
+    insertcols!(br, 1, :country => "Brazil")
     insertcols!(br, :confirmed => brazil.confirmed)
     insertcols!(br, :recovered_confirmed => brazil.recovered)
     insertcols!(br, :recovered => closed_vec .- brazil.deaths)
@@ -417,7 +417,12 @@ function covid19_database(; kwargs...)
     Database{DataDict}(sources, kwargs, funcs; name = "COVID-19")
 end
 
-function covid19(; database = nothing, optimize::Bool = false, kwargs...)
+function covid19(;
+    database = nothing,
+    compute_model::Bool = true,
+    optimize::Bool = false,
+    kwargs...,
+)
     db = database
     @info "Creating COVID-19 database."
     isnothing(database) && (db = covid19_database(; kwargs...))
@@ -438,14 +443,14 @@ function covid19(; database = nothing, optimize::Bool = false, kwargs...)
             ],
             :data_kind => [
                 "COVID-19 cases for several countries",
-                "COVID-19 cases per state and city in brazil",
+                "COVID-19 cases per state and city in Brazil",
                 "Population and GDP per capita for several countries",
                 "Number of tests of COVID-19 for several countries",
             ],
         )
         for row ∈ eachrow(db.brasil_io.estimates)
-            data_kind = row.state == "total" ? "Estimate for brazil on $(row.date)" :
-                "Estimate for $(row.state), brazil on $(row.date)"
+            data_kind = row.state == "total" ? "Estimate for Brazil on $(row.date)" :
+                "Estimate for $(row.state), Brazil on $(row.date)"
             push!(
                 sources,
                 (; source = row.source, url = row.url, data_kind = data_kind),
@@ -475,23 +480,23 @@ function covid19(; database = nothing, optimize::Bool = false, kwargs...)
         db.world.per_country.datadict[:brazil] = br
         @info "COVID-19 database created." summary(db)
 
-        @info "Computing SEIR model..."
-        SEIRModel!(db; kwargs...)
-        mbr = db.model.brazil.total
-        optimize_parameters!(mbr; kwargs...)
-        db.model.world.per_country.datadict[:brazil] = mbr
-        @info "SEIR model for COVID-19 database computed."
-
-        if optimize
-            @info "Optimizing parameters..."
-            optimize_parameters!(db; kwargs...)
-            @info "Optimal parameters for COVID-19 database computed."
-        end
-        @info "Exporting..."
-        paths = export_data(db; kwargs...)
-        @info "COVID-19 database exported." paths
     else
         @info "COVID-19 database imported from cache."
     end
+
+    if compute_model || optimize
+        @info "Computing SEIR model..."
+        SEIRModel!(db; kwargs...)
+        @info "SEIR model for COVID-19 database computed."
+    end
+
+    if optimize
+        @info "Optimizing parameters..."
+        optimize_parameters!(db; kwargs...)
+        @info "Optimal parameters for COVID-19 database computed."
+    end
+    @info "Exporting..."
+    paths = export_data(db; kwargs...)
+    @info "COVID-19 database exported." paths
     db
 end

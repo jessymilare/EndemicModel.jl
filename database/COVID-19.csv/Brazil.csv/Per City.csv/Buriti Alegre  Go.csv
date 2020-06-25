@@ -1,0 +1,10 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-15,GO,Buriti Alegre,1,0,6,9554,5203906,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,837.35,0.0,628.01,628.01,209.34
+2020-06-16,GO,Buriti Alegre,2,0,12,9554,5203906,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,1779.36,0.0,1256.02,1256.02,523.34
+2020-06-17,GO,Buriti Alegre,10,0,59,9554,5203906,8.3,83,59,24,,,,,,,,,,,,,,0.0,0.0,8687.46,0.0,6175.42,6175.42,2512.04
+2020-06-18,GO,Buriti Alegre,10,0,60,9554,5203906,8.3,83,60,23,12.5,9.0,,,,,,,,,,,,0.0,0.0,8687.46,0.0,6280.09,6280.09,2407.37
+2020-06-19,GO,Buriti Alegre,10,0,58,9554,5203906,8.3,83,58,25,22.0,16.17,,,,,,,,,,,,0.0,0.0,8687.46,0.0,6070.76,6070.76,2616.71
+2020-06-20,GO,Buriti Alegre,10,0,59,9554,5203906,8.3,83,59,24,13.83,10.33,,,,,,,,,,,,0.0,0.0,8687.46,0.0,6175.42,6175.42,2512.04
+2020-06-21,GO,Buriti Alegre,10,0,60,9554,5203906,8.3,83,60,23,,,,,,,,,,,,,,0.0,0.0,8687.46,0.0,6280.09,6280.09,2407.37
+2020-06-22,GO,Buriti Alegre,18,0,109,9554,5203906,8.3,149,109,40,,,,,,,,,,,,,,0.0,0.0,15595.56,0.0,11408.83,11408.83,4186.73
+2020-06-23,GO,Buriti Alegre,20,0,121,9554,5203906,8.3,166,121,45,,,,,,,,,,,,,,0.0,0.0,17374.92,0.0,12664.85,12664.85,4710.07
