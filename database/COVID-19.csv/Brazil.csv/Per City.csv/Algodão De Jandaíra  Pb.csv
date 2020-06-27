@@ -1,3 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-20,PB,Algodão de Jandaíra,1,0,6,2593,2500577,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,3085.23,0.0,2313.92,2313.92,771.31
-2020-06-21,PB,Algodão de Jandaíra,2,0,12,2593,2500577,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,6556.11,0.0,4627.84,4627.84,1928.27

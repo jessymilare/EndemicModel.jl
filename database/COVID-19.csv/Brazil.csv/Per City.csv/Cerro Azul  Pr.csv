@@ -1,7 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-18,PR,Cerro Azul,2,0,12,17957,4105201,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,946.71,0.0,668.26,668.26,278.44
-2020-06-19,PR,Cerro Azul,2,0,12,17957,4105201,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,946.71,0.0,668.26,668.26,278.44
-2020-06-20,PR,Cerro Azul,3,0,18,17957,4105201,8.3,25,18,7,,,,,,,,,,,,,,0.0,0.0,1392.21,0.0,1002.39,1002.39,389.82
-2020-06-21,PR,Cerro Azul,4,0,24,17957,4105201,8.3,33,24,9,,,,,,,,,,,,,,0.0,0.0,1837.72,0.0,1336.53,1336.53,501.2
-2020-06-22,PR,Cerro Azul,4,0,24,17957,4105201,8.3,33,24,9,,,,,,,,,,,,,,0.0,0.0,1837.72,0.0,1336.53,1336.53,501.2
-2020-06-23,PR,Cerro Azul,4,0,24,17957,4105201,8.3,33,24,9,,,,,,,,,,,,,,0.0,0.0,1837.72,0.0,1336.53,1336.53,501.2

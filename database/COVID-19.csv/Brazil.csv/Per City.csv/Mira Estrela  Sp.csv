@@ -1,5 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-19,SP,Mira Estrela,1,0,5,3117,3530003,7.3,7,5,2,,,,,,,,,,,,,,0.0,0.0,2245.75,0.0,1604.11,1604.11,641.64
-2020-06-20,SP,Mira Estrela,1,0,5,3117,3530003,7.3,7,5,2,,,,,,,,,,,,,,0.0,0.0,2245.75,0.0,1604.11,1604.11,641.64
-2020-06-21,SP,Mira Estrela,1,0,5,3117,3530003,7.3,7,5,2,,,,,,,,,,,,,,0.0,0.0,2245.75,0.0,1604.11,1604.11,641.64
-2020-06-22,SP,Mira Estrela,1,0,5,3117,3530003,7.3,7,5,2,,,,,,,,,,,,,,0.0,0.0,2245.75,0.0,1604.11,1604.11,641.64

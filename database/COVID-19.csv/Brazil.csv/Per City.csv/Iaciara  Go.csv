@@ -1,9 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-16,GO,Iaciara,2,0,12,14086,5209903,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,1206.87,0.0,851.91,851.91,354.96
-2020-06-17,GO,Iaciara,9,0,53,14086,5209903,8.3,75,53,22,,,,,,,,,,,,,,0.0,0.0,5324.44,0.0,3762.6,3762.6,1561.83
-2020-06-18,GO,Iaciara,9,0,54,14086,5209903,8.3,75,54,21,,,,,,,,,,,,,,0.0,0.0,5324.44,0.0,3833.59,3833.59,1490.84
-2020-06-19,GO,Iaciara,10,0,58,14086,5209903,8.3,83,58,25,12.33,9.17,,,,,,,,,,,,0.0,0.0,5892.38,0.0,4117.56,4117.56,1774.81
-2020-06-20,GO,Iaciara,9,0,53,14086,5209903,8.3,75,53,22,2.67,2.17,,,,,,,,,,,,0.0,0.0,5324.44,0.0,3762.6,3762.6,1561.83
-2020-06-21,GO,Iaciara,9,0,54,14086,5209903,8.3,75,54,21,,,,,,,,,,,,,,0.0,0.0,5324.44,0.0,3833.59,3833.59,1490.84
-2020-06-22,GO,Iaciara,11,0,67,14086,5209903,8.3,91,67,24,,,,,,,,,,,,,,0.0,0.0,6460.32,0.0,4756.5,4756.5,1703.82
-2020-06-23,GO,Iaciara,11,0,66,14086,5209903,8.3,91,66,25,,,,,,,,,,,,,,0.0,0.0,6460.32,0.0,4685.5,4685.5,1774.81

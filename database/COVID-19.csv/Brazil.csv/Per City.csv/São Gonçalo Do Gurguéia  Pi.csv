@@ -1,6 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-19,PI,São Gonçalo do Gurguéia,4,0,101,3071,2209757,36.0,144,101,43,,,,,,,,,,,,,,0.0,0.0,46890.26,0.0,32888.31,32888.31,14001.95
-2020-06-20,PI,São Gonçalo do Gurguéia,4,0,102,3071,2209757,36.0,144,102,42,,,,,,,,,,,,,,0.0,0.0,46890.26,0.0,33213.94,33213.94,13676.33
-2020-06-21,PI,São Gonçalo do Gurguéia,4,0,104,3071,2209757,36.0,144,104,40,,,,,,,,,,,,,,0.0,0.0,46890.26,0.0,33865.19,33865.19,13025.07
-2020-06-22,PI,São Gonçalo do Gurguéia,4,0,105,3071,2209757,36.0,144,105,39,,,,,,,,,,,,,,0.0,0.0,46890.26,0.0,34190.82,34190.82,12699.45
-2020-06-23,PI,São Gonçalo do Gurguéia,4,0,105,3071,2209757,36.0,144,105,39,,,,,,,,,,,,,,0.0,0.0,46890.26,0.0,34190.82,34190.82,12699.45

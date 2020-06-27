@@ -1,8 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-17,GO,Santa Tereza de Goiás,1,0,6,3389,5219605,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,2360.58,0.0,1770.43,1770.43,590.14
-2020-06-18,GO,Santa Tereza de Goiás,1,0,6,3389,5219605,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,2360.58,0.0,1770.43,1770.43,590.14
-2020-06-19,GO,Santa Tereza de Goiás,2,0,12,3389,5219605,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,5016.23,0.0,3540.87,3540.87,1475.36
-2020-06-20,GO,Santa Tereza de Goiás,2,0,12,3389,5219605,8.3,17,12,5,1.5,1.0,,,,,,,,,,,,0.0,0.0,5016.23,0.0,3540.87,3540.87,1475.36
-2020-06-21,GO,Santa Tereza de Goiás,2,0,12,3389,5219605,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,5016.23,0.0,3540.87,3540.87,1475.36
-2020-06-22,GO,Santa Tereza de Goiás,2,0,12,3389,5219605,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,5016.23,0.0,3540.87,3540.87,1475.36
-2020-06-23,GO,Santa Tereza de Goiás,2,0,12,3389,5219605,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,5016.23,0.0,3540.87,3540.87,1475.36

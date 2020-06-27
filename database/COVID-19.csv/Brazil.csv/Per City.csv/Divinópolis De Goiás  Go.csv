@@ -1,3 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-22,GO,Divinópolis de Goiás,1,0,6,4852,5208301,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,1648.8,0.0,1236.6,1236.6,412.2
-2020-06-23,GO,Divinópolis de Goiás,1,0,6,4852,5208301,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,1648.8,0.0,1236.6,1236.6,412.2

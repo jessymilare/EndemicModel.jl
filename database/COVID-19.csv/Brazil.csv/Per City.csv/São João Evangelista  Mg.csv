@@ -1,4 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-21,MG,São João Evangelista,1,0,12,15932,3162807,16.5,16,12,4,,,,,,,,,,,,,,0.0,0.0,1004.27,0.0,753.2,753.2,251.07
-2020-06-22,MG,São João Evangelista,2,0,24,15932,3162807,16.5,33,24,9,,,,,,,,,,,,,,0.0,0.0,2071.3,0.0,1506.4,1506.4,564.9
-2020-06-23,MG,São João Evangelista,2,0,24,15932,3162807,16.5,33,24,9,,,,,,,,,,,,,,0.0,0.0,2071.3,0.0,1506.4,1506.4,564.9

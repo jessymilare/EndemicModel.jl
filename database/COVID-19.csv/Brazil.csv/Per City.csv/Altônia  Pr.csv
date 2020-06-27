@@ -1,9 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-16,PR,Altônia,1,0,6,22277,4100509,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,359.11,0.0,269.34,269.34,89.78
-2020-06-17,PR,Altônia,2,0,12,22277,4100509,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,763.12,0.0,538.67,538.67,224.45
-2020-06-18,PR,Altônia,2,0,12,22277,4100509,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,763.12,0.0,538.67,538.67,224.45
-2020-06-19,PR,Altônia,2,0,12,22277,4100509,8.3,17,12,5,1.5,1.0,,,,,,,,,,,,0.0,0.0,763.12,0.0,538.67,538.67,224.45
-2020-06-20,PR,Altônia,2,0,12,22277,4100509,8.3,17,12,5,1.33,1.0,,,,,,,,,,,,0.0,0.0,763.12,0.0,538.67,538.67,224.45
-2020-06-21,PR,Altônia,2,0,12,22277,4100509,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,763.12,0.0,538.67,538.67,224.45
-2020-06-22,PR,Altônia,2,0,12,22277,4100509,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,763.12,0.0,538.67,538.67,224.45
-2020-06-23,PR,Altônia,3,0,18,22277,4100509,8.3,25,18,7,,,,,,,,,,,,,,0.0,0.0,1122.23,0.0,808.01,808.01,314.23

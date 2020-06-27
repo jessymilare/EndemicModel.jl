@@ -1,8 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-17,MG,Lamim,1,0,11,3425,3137908,16.5,16,11,5,,,,,,,,,,,,,,0.0,0.0,4671.53,0.0,3211.68,3211.68,1459.85
-2020-06-18,MG,Lamim,1,0,12,3425,3137908,16.5,16,12,4,,,,,,,,,,,,,,0.0,0.0,4671.53,0.0,3503.65,3503.65,1167.88
-2020-06-19,MG,Lamim,2,0,23,3425,3137908,16.5,33,23,10,,,,,,,,,,,,,,0.0,0.0,9635.04,0.0,6715.33,6715.33,2919.71
-2020-06-20,MG,Lamim,1,0,11,3425,3137908,16.5,16,11,5,0.0,0.167,,,,,,,,,,,,0.0,0.0,4671.53,0.0,3211.68,3211.68,1459.85
-2020-06-21,MG,Lamim,1,0,12,3425,3137908,16.5,16,12,4,,,,,,,,,,,,,,0.0,0.0,4671.53,0.0,3503.65,3503.65,1167.88
-2020-06-22,MG,Lamim,1,0,12,3425,3137908,16.5,16,12,4,,,,,,,,,,,,,,0.0,0.0,4671.53,0.0,3503.65,3503.65,1167.88
-2020-06-23,MG,Lamim,1,0,12,3425,3137908,16.5,16,12,4,,,,,,,,,,,,,,0.0,0.0,4671.53,0.0,3503.65,3503.65,1167.88

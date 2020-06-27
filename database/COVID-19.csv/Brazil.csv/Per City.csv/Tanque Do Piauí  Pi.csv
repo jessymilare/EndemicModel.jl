@@ -1,7 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-18,PI,Tanque do Piauí,1,0,26,2793,2210979,36.0,36,26,10,,,,,,,,,,,,,,0.0,0.0,12889.37,0.0,9308.99,9308.99,3580.38
-2020-06-19,PI,Tanque do Piauí,1,0,25,2793,2210979,36.0,36,25,11,,,,,,,,,,,,,,0.0,0.0,12889.37,0.0,8950.95,8950.95,3938.42
-2020-06-20,PI,Tanque do Piauí,1,0,25,2793,2210979,36.0,36,25,11,,,,,,,,,,,,,,0.0,0.0,12889.37,0.0,8950.95,8950.95,3938.42
-2020-06-21,PI,Tanque do Piauí,1,0,26,2793,2210979,36.0,36,26,10,,,,,,,,,,,,,,0.0,0.0,12889.37,0.0,9308.99,9308.99,3580.38
-2020-06-22,PI,Tanque do Piauí,1,0,26,2793,2210979,36.0,36,26,10,,,,,,,,,,,,,,0.0,0.0,12889.37,0.0,9308.99,9308.99,3580.38
-2020-06-23,PI,Tanque do Piauí,1,0,26,2793,2210979,36.0,36,26,10,,,,,,,,,,,,,,0.0,0.0,12889.37,0.0,9308.99,9308.99,3580.38
