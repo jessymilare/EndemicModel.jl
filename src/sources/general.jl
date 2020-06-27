@@ -47,7 +47,7 @@ function import_data(
     for nr ∈ ncols:-1:1
         if !all(ismissing.(data[!, nr]))
             if nr < ncols
-                select!(data, Not((nr + 1):ncols))
+                select!(data, Not((nr+1):ncols))
             end
             break
         end
@@ -112,25 +112,40 @@ function import_data(
     years = [string(y) for y ∈ WORLD_GDP_PER_CAPITA_YEAR_0:curyear]
     keycols = ["Country Name", "Country Code"]
     col_select = [keycols; years]
+    metacols = ["Country Code", "Region", "IncomeGroup"]
 
     file = import_data(DownloadSource(url); update_period = update_period, kwargs...)
     global r = ZipFile.Reader(file)
     zipfiles = r.files
     file = zipfiles[findfirst(f -> f.name[1:15] == "API_NY.GDP.PCAP", zipfiles)]
+    metafile = zipfiles[findfirst(f -> f.name[1:16] == "Metadata_Country", zipfiles)]
 
     data = csv_read(file; copycols = true, header = 5, select = col_select)
+    metadata = csv_read(metafile; copycols = true, select = metacols)
+
     close(file)
+    close(metafile)
     global r = nothing
 
-    rename!(data, "Country Name" => :country, "Country Code" => :country_code)
-    data[!, :country] = correct_countries!(data.country)
+    @debug "Joining data and metadata." _debuginfo(data) _debuginfo(metadata)
+    data = leftjoin(data, metadata; on = "Country Code")
+    data = select!(data, "Country Name", metacols..., intersect(years, names(data))...)
+
+    rename!(
+        data,
+        "Country Name" => :country,
+        "Country Code" => :country_code,
+        "Region" => :region,
+        "IncomeGroup" => :income_group,
+    )
+    data.country = correct_countries!(data.country)
     sort!(data, :country)
 
     ncols = ncol(data)
     for nr ∈ ncols:-1:1
         if !all(ismissing.(data[!, nr]))
             if nr < ncols
-                select!(data, Not((nr + 1):ncols))
+                select!(data, Not((nr+1):ncols))
             end
             break
         end
@@ -162,5 +177,13 @@ function import_data(
     gdp_pc_est = gdp_pc_est .|> round .|> Int
     insertcols!(data, ncol(data) + 1, :gdp_per_capita => gdp_pc_est)
 
-    select(data, :country, :country_code, :avg_gdp_pc_factor, :gdp_per_capita)
+    select!(
+        data,
+        :country,
+        :country_code,
+        :region,
+        :income_group,
+        :avg_gdp_pc_factor,
+        :gdp_per_capita,
+    )
 end

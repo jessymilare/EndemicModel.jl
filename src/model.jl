@@ -159,10 +159,8 @@ mutable struct SEIRModel <: AbstractEndemicModel
         modeldata::Union{Nothing,AbstractDataFrame} = nothing,
         kwargs...,
     )
-        groupnames = something(
-            groupnames,
-            ngroups == 1 ? [:all] : "group_" .* string.(1:ngroups),
-        )
+        groupnames =
+            something(groupnames, ngroups == 1 ? [:all] : "group_" .* string.(1:ngroups))
         groupnames = collect(Symbol.(groupnames))
         deriv = _SEIR_derivative(vars, params)
         info = Dict{Symbol,Any}(kwargs)
@@ -363,10 +361,15 @@ end
 function SEIR_ODEProblem(
     inivars::SEIRVariables,
     params::SEIRParameters;
-    maxtime = 360.0,
+    maxtime = 360,
     kwargs...,
 )
-    ODEProblem(SEIR_ODE_fun, pack_vars(inivars), (0.0, maxtime), pack_params(params))
+    ODEProblem(
+        SEIR_ODE_fun,
+        pack_vars(inivars),
+        (0.0, Float(maxtime)),
+        pack_params(params),
+    )
 end
 
 function model_problem(model::SEIRModel; kwargs...)
@@ -377,7 +380,7 @@ function model_solution(model::SEIRModel; dt = 1.0, kwargs...)
     solve(model_problem(model; kwargs...), Euler(); dt = dt)
 end
 
-function to_dataframe(model::SEIRModel; kwargs...)
+function to_dataframe(model::SEIRModel; diff_columns::Bool = true, kwargs...)
     solution = model_solution(model; dt = 0.25, kwargs...)
     (M, β, γ, α, μ) = parameters(model)
     days = solution.t[1:4:end]
@@ -386,18 +389,19 @@ function to_dataframe(model::SEIRModel; kwargs...)
     date = initial_date .+ Day.(days)
     n = length(days)
     ng = model.ngroups
-    exposed = zeros(Float, n)
-    active = zeros(Float, n)
-    recovered = zeros(Float, n)
-    deaths = zeros(Float, n)
-    infected = zeros(Float, n)
-    diff_exposed = zeros(Float, n)
-    diff_active = zeros(Float, n)
-    diff_recovered = zeros(Float, n)
-    diff_deaths = zeros(Float, n)
+    exposed = zeros(Int, n)
+    active = zeros(Int, n)
+    recovered = zeros(Int, n)
+    deaths = zeros(Int, n)
+    infected = zeros(Int, n)
+    if diff_columns
+        diff_exposed = zeros(Int, n)
+        diff_active = zeros(Int, n)
+        diff_recovered = zeros(Int, n)
+        diff_deaths = zeros(Int, n)
+    end
 
-    # _round(x) = isnan(x) ? 0 : round(Int, max(-1e12, min(1e12, x)))
-    _round(x) = x
+    _round(x) = isnan(x) ? 0 : round(Int, max(0, min(1e12, x)))
 
     for i ∈ 1:n
         (S, E, I, R) = unpack_vars(solution[i])
@@ -407,22 +411,32 @@ function to_dataframe(model::SEIRModel; kwargs...)
         recovered[i] = sum(R .* (1.0 .- μ)) |> _round
         deaths[i] = sum(R .* μ) |> _round
         infected[i] = active[i] + recovered[i] + deaths[i] |> _round
-        diff_exposed[i] = sum(dE) |> _round
-        diff_active[i] = sum(dI) |> _round
-        diff_recovered[i] = sum(dR .* (1.0 .- μ)) |> _round
-        diff_deaths[i] = sum(dR .* μ) |> _round
+        if diff_columns
+            diff_exposed[i] = sum(dE) |> _round
+            diff_active[i] = sum(dI) |> _round
+            diff_recovered[i] = sum(dR .* (1.0 .- μ)) |> _round
+            diff_deaths[i] = sum(dR .* μ) |> _round
+        end
+    end
+    dcols = if diff_columns
+        [
+            :diff_exposed => diff_exposed,
+            :diff_active => diff_active,
+            :diff_recovered => diff_recovered,
+            :diff_deaths => diff_deaths,
+        ]
+    else
+        []
     end
     DataFrame(
-        date = date,
-        infected = infected,
-        exposed = exposed,
-        active = active,
-        recovered = recovered,
-        deaths = deaths,
-        diff_exposed = diff_exposed,
-        diff_active = diff_active,
-        diff_recovered = diff_recovered,
-        diff_deaths = diff_deaths,
+        :date => date,
+        :infected => infected,
+        :exposed => exposed,
+        :active => active,
+        :recovered => recovered,
+        :deaths => deaths,
+        dcols...;
+        copycols = false,
     )
 end
 

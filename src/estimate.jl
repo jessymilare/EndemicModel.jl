@@ -62,11 +62,7 @@ function model_loss(
     initial_date = default_kwarg(model, :initial_date, today() - Day(15))
     ini = findfirst(isequal(initial_date), data.date)
     if isnothing(ini)
-        throw(ErrorException(
-            "Initial date not found in model data",
-            model,
-            initial_date,
-        ))
+        throw(ErrorException("Initial date not found in model data", model, initial_date))
     end
     iend = nrow(data)
     data = data[ini:iend, :]
@@ -129,7 +125,10 @@ function optimize_parameters!(model::SEIRModel, params = (:β, :E); kwargs...)
             (S, E, I, R) = variables(model)
             variables!(model, SEIRVariables(S, newE, I, R))
         end
-        modeldata!(model, to_dataframe(model; kwargs...))
+        modeldata!(
+            model,
+            to_dataframe(model; diff_columns = false, maxtime = 20, kwargs...),
+        )
         model_loss(model; kwargs...)
     end
 
@@ -150,7 +149,14 @@ function optimize_parameters!(model::SEIRModel, params = (:β, :E); kwargs...)
     end
     @debug "Initial parameter values:" opt_params, lower, upper
 
-    opt = optimize(_calc_loss, lower, upper, opt_params, Fminbox(NelderMead()))
+    opt = optimize(
+        _calc_loss,
+        lower,
+        upper,
+        opt_params,
+        Fminbox(NelderMead()),
+        Optim.Options(x_tol = 1 / 256),
+    )
     modeldata!(model, to_dataframe(model))
     opt
 end

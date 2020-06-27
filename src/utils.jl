@@ -172,14 +172,14 @@ end
 
 function prettify(obj::AbstractDataFrame; kwargs...)
     newcols = [prettify(col; kwargs...) for col ∈ eachcol(obj)]
-    newnames = prettify(names(obj); title = true, kwargs...)
+    newnames = prettify(Symbol.(names(obj)); kwargs...)
     DataFrame(newcols, newnames)
 end
 
 function prettify(obj::AbstractDict; kwargs...)
     result = empty(obj)
     for (key, value) ∈ obj
-        result[prettify(key)] = prettify(value)
+        result[prettify(key; kwargs...)] = prettify(value; kwargs...)
     end
     result
 end
@@ -227,7 +227,7 @@ end
 
 function simplify(obj::AbstractDataFrame; kwargs...)
     newcols = [simplify(col; kwargs...) for col ∈ eachcol(obj)]
-    newnames = simplify(names(obj); title = true, kwargs...)
+    newnames = simplify(Symbol.(names(obj)); kwargs...)
     DataFrame(newcols, newnames)
 end
 
@@ -238,7 +238,7 @@ end
 function simplify(obj::AbstractDict; kwargs...)
     result = empty(obj)
     for (key, value) ∈ obj
-        result[simplify(key)] = simplify(value)
+        result[simplify(key; kwargs...)] = simplify(value; kwargs...)
     end
     result
 end
