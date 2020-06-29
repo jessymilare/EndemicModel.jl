@@ -1,0 +1,4 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-25,MG,São Félix de Minas,2,0,24,3403,3161056,16.5,33,24,9,,,,,,,,,,,,,,0.0,0.0,9697.32588892154,0.0,7052.600646488392,7052.600646488392,2644.7252424331473
+2020-06-26,MG,São Félix de Minas,7,0,84,3403,3161056,16.5,116,84,32,,,,,,,,,,,,,,0.0,0.0,34087.56979136056,0.0,24684.102262709373,24684.102262709373,9403.46752865119
+2020-06-27,MG,São Félix de Minas,7,0,84,3403,3161056,16.5,116,84,32,,,,,,,,,,,,,,0.0,0.0,34087.56979136056,0.0,24684.102262709373,24684.102262709373,9403.46752865119

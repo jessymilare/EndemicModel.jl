@@ -1,0 +1,6 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-24,SP,Suzanápolis,1,0,5,4003,3552551,7.3,7,5,2,,,,,,,,,,,,,,0.0,0.0,1748.6884836372722,0.0,1249.0632025980515,1249.0632025980515,499.62528103922057
+2020-06-25,SP,Suzanápolis,1,0,5,4003,3552551,7.3,7,5,2,,,,,,,,,,,,,,0.0,0.0,1748.6884836372722,0.0,1249.0632025980515,1249.0632025980515,499.62528103922057
+2020-06-26,SP,Suzanápolis,1,0,5,4003,3552551,7.3,7,5,2,,,,,,,,,,,,,,0.0,0.0,1748.6884836372722,0.0,1249.0632025980515,1249.0632025980515,499.62528103922057
+2020-06-27,SP,Suzanápolis,1,0,5,4003,3552551,7.3,7,5,2,,,,,,,,,,,,,,0.0,0.0,1748.6884836372722,0.0,1249.0632025980515,1249.0632025980515,499.62528103922057
+2020-06-28,SP,Suzanápolis,1,0,5,4003,3552551,7.3,7,5,2,,,,,,,,,,,,,,0.0,0.0,1748.6884836372722,0.0,1249.0632025980515,1249.0632025980515,499.62528103922057

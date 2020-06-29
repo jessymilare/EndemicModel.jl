@@ -1,0 +1,2 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-28,PI,Antônio Almeida,1,0,26,3196,2200806,36.0,36,26,10,,,,,,,,,,,,,,0.0,0.0,11264.080100125157,0.0,8135.168961201502,8135.168961201502,3128.9111389236546

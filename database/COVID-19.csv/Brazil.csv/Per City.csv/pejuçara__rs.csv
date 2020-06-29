@@ -1,0 +1,4 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-26,RS,Pejuçara,1,0,6,3913,4314308,8.4,8,6,2,,,,,,,,,,,,,,0.0,0.0,2044.4671607462305,0.0,1533.350370559673,1533.350370559673,511.11679018655764
+2020-06-27,RS,Pejuçara,1,0,6,3913,4314308,8.4,8,6,2,,,,,,,,,,,,,,0.0,0.0,2044.4671607462305,0.0,1533.350370559673,1533.350370559673,511.11679018655764
+2020-06-28,RS,Pejuçara,1,0,6,3913,4314308,8.4,8,6,2,,,,,,,,,,,,,,0.0,0.0,2044.4671607462305,0.0,1533.350370559673,1533.350370559673,511.11679018655764

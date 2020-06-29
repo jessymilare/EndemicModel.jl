@@ -1,0 +1,5 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-24,MG,Santa Rita do Itueto,1,0,12,5544,3159506,16.5,16,12,4,,,,,,,,,,,,,,0.0,0.0,2886.002886002886,0.0,2164.5021645021643,2164.5021645021643,721.5007215007215
+2020-06-25,MG,Santa Rita do Itueto,1,0,12,5544,3159506,16.5,16,12,4,,,,,,,,,,,,,,0.0,0.0,2886.002886002886,0.0,2164.5021645021643,2164.5021645021643,721.5007215007215
+2020-06-26,MG,Santa Rita do Itueto,1,0,12,5544,3159506,16.5,16,12,4,,,,,,,,,,,,,,0.0,0.0,2886.002886002886,0.0,2164.5021645021643,2164.5021645021643,721.5007215007215
+2020-06-27,MG,Santa Rita do Itueto,8,0,96,5544,3159506,16.5,132,96,36,,,,,,,,,,,,,,0.0,0.0,23809.52380952381,0.0,17316.017316017314,17316.017316017314,6493.506493506494

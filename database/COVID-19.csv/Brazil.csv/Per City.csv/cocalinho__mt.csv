@@ -1,0 +1,6 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-24,MT,Cocalinho,2,0,15,5757,5103106,10.0,20,15,5,,,,,,,,,,,,,,0.0,0.0,3474.0316136876845,0.0,2605.5237102657634,2605.5237102657634,868.5079034219211
+2020-06-25,MT,Cocalinho,3,0,22,5757,5103106,10.0,30,22,8,,,,,,,,,,,,,,0.0,0.0,5211.047420531527,0.0,3821.434775056453,3821.434775056453,1389.6126454750738
+2020-06-26,MT,Cocalinho,5,0,36,5757,5103106,10.0,50,36,14,,,,,,,,,,,,,,0.0,0.0,8685.079034219212,0.0,6253.256904637832,6253.256904637832,2431.822129581379
+2020-06-27,MT,Cocalinho,5,0,36,5757,5103106,10.0,50,36,14,,,,,,,,,,,,,,0.0,0.0,8685.079034219212,0.0,6253.256904637832,6253.256904637832,2431.822129581379
+2020-06-28,MT,Cocalinho,5,0,37,5757,5103106,10.0,50,37,13,,,,,,,,,,,,,,0.0,0.0,8685.079034219212,0.0,6426.958485322217,6426.958485322217,2258.120548896995

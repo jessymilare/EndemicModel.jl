@@ -1,0 +1,6 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-23,PB,Poço Dantas,1,0,6,3927,2512036,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,2037.178507766743,0.0,1527.8838808250573,1527.8838808250573,509.29462694168575
+2020-06-24,PB,Poço Dantas,1,0,6,3927,2512036,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,2037.178507766743,0.0,1527.8838808250573,1527.8838808250573,509.29462694168575
+2020-06-25,PB,Poço Dantas,1,0,6,3927,2512036,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,2037.178507766743,0.0,1527.8838808250573,1527.8838808250573,509.29462694168575
+2020-06-26,PB,Poço Dantas,1,0,6,3927,2512036,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,2037.178507766743,0.0,1527.8838808250573,1527.8838808250573,509.29462694168575
+2020-06-27,PB,Poço Dantas,1,0,6,3927,2512036,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,2037.178507766743,0.0,1527.8838808250573,1527.8838808250573,509.29462694168575

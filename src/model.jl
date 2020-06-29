@@ -441,20 +441,20 @@ function to_dataframe(model::SEIRModel; diff_columns::Bool = true, kwargs...)
 end
 
 const FACTOR_LABEL_MAP = OrderedDict(
-    1e-8 => "People (hundreds of millions)",
-    1e-7 => "People (tens of millions)",
+    #1e-8 => "People (hundreds of millions)",
+    #1e-7 => "People (tens of millions)",
     1e-6 => "People (millions)",
-    1e-5 => "People (hundreds of thousands)",
-    1e-4 => "People (tens of thousands)",
+    #1e-5 => "People (hundreds of thousands)",
+    #1e-4 => "People (tens of thousands)",
     1e-3 => "People (thousands)",
-    1e-2 => "People (hundreds)",
-    1e-1 => "People (tens)",
+    #1e-2 => "People (hundreds)",
+    #1e-1 => "People (tens)",
     1.0 => "People",
 )
 
 function _get_y_factor_and_label(max_yvalue)
     for (yfactor, ylabel) ∈ FACTOR_LABEL_MAP
-        if max_yvalue * yfactor >= 10.0
+        if max_yvalue * yfactor >= 2.0
             return (yfactor, ylabel)
         end
     end

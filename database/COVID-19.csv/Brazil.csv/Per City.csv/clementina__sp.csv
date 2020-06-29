@@ -1,0 +1,6 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-24,SP,Clementina,1,0,5,8703,3511904,7.3,7,5,2,,,,,,,,,,,,,,0.0,0.0,804.3203493048375,0.0,574.514535217741,574.514535217741,229.8058140870964
+2020-06-25,SP,Clementina,1,0,5,8703,3511904,7.3,7,5,2,,,,,,,,,,,,,,0.0,0.0,804.3203493048375,0.0,574.514535217741,574.514535217741,229.8058140870964
+2020-06-26,SP,Clementina,1,0,5,8703,3511904,7.3,7,5,2,,,,,,,,,,,,,,0.0,0.0,804.3203493048375,0.0,574.514535217741,574.514535217741,229.8058140870964
+2020-06-27,SP,Clementina,2,0,11,8703,3511904,7.3,15,11,4,,,,,,,,,,,,,,0.0,0.0,1723.543605653223,0.0,1263.9319774790301,1263.9319774790301,459.6116281741928
+2020-06-28,SP,Clementina,2,0,11,8703,3511904,7.3,15,11,4,,,,,,,,,,,,,,0.0,0.0,1723.543605653223,0.0,1263.9319774790301,1263.9319774790301,459.6116281741928

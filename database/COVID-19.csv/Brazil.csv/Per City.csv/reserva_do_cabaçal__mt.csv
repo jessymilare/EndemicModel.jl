@@ -1,0 +1,4 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-26,MT,Reserva do Cabaçal,1,0,7,2759,5107156,10.0,10,7,3,,,,,,,,,,,,,,0.0,0.0,3624.501631025734,0.0,2537.1511417180136,2537.1511417180136,1087.3504893077202
+2020-06-27,MT,Reserva do Cabaçal,1,0,7,2759,5107156,10.0,10,7,3,,,,,,,,,,,,,,0.0,0.0,3624.501631025734,0.0,2537.1511417180136,2537.1511417180136,1087.3504893077202
+2020-06-28,MT,Reserva do Cabaçal,1,0,7,2759,5107156,10.0,10,7,3,,,,,,,,,,,,,,0.0,0.0,3624.501631025734,0.0,2537.1511417180136,2537.1511417180136,1087.3504893077202
