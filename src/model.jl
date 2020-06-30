@@ -441,24 +441,24 @@ function to_dataframe(model::SEIRModel; diff_columns::Bool = true, kwargs...)
 end
 
 const FACTOR_LABEL_MAP = OrderedDict(
-    #1e-8 => "People (hundreds of millions)",
-    #1e-7 => "People (tens of millions)",
-    1e-6 => "People (millions)",
-    #1e-5 => "People (hundreds of thousands)",
-    #1e-4 => "People (tens of thousands)",
-    1e-3 => "People (thousands)",
-    #1e-2 => "People (hundreds)",
-    #1e-1 => "People (tens)",
-    1.0 => "People",
+    #1e8 => "hundreds of millions",
+    #1e7 => "tens of millions",
+    1e6 => "millions",
+    #1e5 => "hundreds of thousands",
+    #1e4 => "tens of thousands",
+    1e3 => "thousands",
+    #1e2 => "hundreds",
+    #1e1 => "tens",
+    1.0 => "",
 )
 
-function _get_y_factor_and_label(max_yvalue)
-    for (yfactor, ylabel) ∈ FACTOR_LABEL_MAP
-        if max_yvalue * yfactor >= 2.0
-            return (yfactor, ylabel)
+function _get_yscale(max_yvalue)
+    for (yscale, ylabel) ∈ FACTOR_LABEL_MAP
+        if max_yvalue / yscale >= 2.0
+            return (yscale, ylabel)
         end
     end
-    (1.0, "People")
+    (1.0, "")
 end
 
 function _get_plot_title(df)
@@ -479,8 +479,8 @@ function Plots.plot(
     title = _get_plot_title(df),
     date_format = option(:plot_date_format),
     new_window::Bool = true,
-    ylabel = nothing,
-    yfactor = nothing,
+    ylabel = "People",
+    yscale = nothing,
     legend = length(columns) == 1 ? false : :topleft,
     left_margin = 1mm,
     kwargs...,
@@ -524,19 +524,18 @@ function Plots.plot(
     else
         2 * max_yvalue
     end
-    if isnothing(yfactor)
-        (yfactor, nylabel) = _get_y_factor_and_label(max_yvalue)
-        ylabel = something(ylabel, nylabel)
+    if isnothing(yscale)
+        (yscale, scalestr) = _get_yscale(max_yvalue)
+        !isempty(scalestr) && (ylabel *= " ($(scalestr))")
     end
 
-    idx = findfirst(s -> occursin("active", s), names(df))
     X = Dates.format.(df.date, date_format)
 
     left_margin isa Real && (left_margin *= mm)
 
     win = Plots.plot(
         X,
-        df[!, columns[1]] .* yfactor,
+        df[!, columns[1]] ./ yscale,
         xrotation = 45,
         xticks = 15,
         label = labels[1],
@@ -546,7 +545,7 @@ function Plots.plot(
         left_margin = left_margin,
     )
     for (yn, label) ∈ zip(columns[2:end], labels[2:end])
-        Plots.plot!(win, X, df[!, yn] .* yfactor; label = label)
+        Plots.plot!(win, X, df[!, yn] ./ yscale; label = label)
     end
     new_window && gui(win)
     win

@@ -1,0 +1,2 @@
+date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
+2020-06-29,GO,Alto Horizonte,1,0,6,6478,5200555,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,1234.949058351343,0.0,926.2117937635072,926.2117937635072,308.73726458783574

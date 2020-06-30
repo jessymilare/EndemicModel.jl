@@ -1,2 +1,5 @@
 date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
 2020-06-25,PR,Palmital,2,0,12,13304,4117800,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,1277.8111846061336,0.0,901.9843656043295,901.9843656043295,375.826819001804
+2020-06-26,PR,Palmital,3,0,18,13304,4117800,8.3,25,18,7,,,,,,,,,,,,,,0.0,0.0,1879.1340950090198,0.0,1352.9765484064942,1352.9765484064942,526.1575466025256
+2020-06-27,PR,Palmital,3,0,18,13304,4117800,8.3,25,18,7,,,,,,,,,,,,,,0.0,0.0,1879.1340950090198,0.0,1352.9765484064942,1352.9765484064942,526.1575466025256
+2020-06-28,PR,Palmital,3,0,18,13304,4117800,8.3,25,18,7,,,,,,,,,,,,,,0.0,0.0,1879.1340950090198,0.0,1352.9765484064942,1352.9765484064942,526.1575466025256

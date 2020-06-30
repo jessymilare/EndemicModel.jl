@@ -460,7 +460,7 @@ end
 function covid19(;
     database = nothing,
     compute_model::Bool = true,
-    optimize::Bool = false,
+    optimize::Bool = true,
     pretty::Bool = true,
     do_export::Bool = true,
     kwargs...,
@@ -537,10 +537,14 @@ function covid19(;
         @info "Optimal parameters for COVID-19 database computed."
     end
 
-    if do_export
-        @info "Exporting..."
-        paths = export_data(db; pretty = pretty, kwargs...)
-        @info "COVID-19 database exported." paths
+    try
+        if do_export
+            @info "Exporting..."
+            paths = export_data(db; pretty = pretty, kwargs...)
+            @info "COVID-19 database exported." paths
+        end
+    catch exception
+        @warn "Failed exporting data." exception
     end
 
     db

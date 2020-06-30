@@ -1,3 +1,4 @@
 date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
 2020-06-26,MG,Taquaraçu de Minas,1,0,12,4118,3168309,16.5,16,12,4,,,,,,,,,,,,,,0.0,0.0,3885.381253035454,0.0,2914.0359397765906,2914.0359397765906,971.3453132588635
 2020-06-27,MG,Taquaraçu de Minas,1,0,12,4118,3168309,16.5,16,12,4,,,,,,,,,,,,,,0.0,0.0,3885.381253035454,0.0,2914.0359397765906,2914.0359397765906,971.3453132588635
+2020-06-28,MG,Taquaraçu de Minas,2,0,24,4118,3168309,16.5,33,24,9,,,,,,,,,,,,,,0.0,0.0,8013.598834385624,0.0,5828.071879553181,5828.071879553181,2185.526954832443
