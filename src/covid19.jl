@@ -90,7 +90,7 @@ end
 ]
 
 @defgroup per_country(per_country_aux) (country,) [
-    (income_group,) => identity,
+    (region, income_group) => identity,
     (date, latitude, longitude) => identity,
     (estimated_population, gdp_per_capita) => identity,
     (total_tests, test_kind) => identity,
@@ -257,7 +257,8 @@ function _column_diff(column, date, ndays)
     result
 end
 
-@defcolumn diff_infected(date, infected) _column_diff(infected, date, 6)
+@defcolumn diff_confirmed(date, confirmed) _column_diff(confirmed, date, 7)
+@defcolumn diff_infected(date, infected) _column_diff(infected, date, 7)
 #= begin
     n = length(date)
     result = Vector{OptFloat}(missing, n)
@@ -279,20 +280,20 @@ end
 end
 =#
 
-@defcolumn diff_recovered(date, recovered) _column_diff(recovered, date, 6)
-@defcolumn diff_deaths(date, deaths) _column_diff(deaths, date, 6)
+@defcolumn diff_recovered(date, recovered) _column_diff(recovered, date, 7)
+@defcolumn diff_deaths(date, deaths) _column_diff(deaths, date, 7)
 
 @defcolumn diff_closed(diff_recovered, diff_deaths) diff_recovered .+ diff_deaths
 @defcolumn diff_active(diff_infected, diff_closed) diff_infected .- diff_closed
 
-@defcolumn diff2_infected(date, diff_infected) _column_diff(diff_infected, date, 6)
-@defcolumn diff2_recovered(date, diff_recovered) _column_diff(diff_recovered, date, 6)
-@defcolumn diff2_deaths(date, diff_deaths) _column_diff(diff_deaths, date, 6)
+@defcolumn diff2_infected(date, diff_infected) _column_diff(diff_infected, date, 5)
+@defcolumn diff2_recovered(date, diff_recovered) _column_diff(diff_recovered, date, 5)
+@defcolumn diff2_deaths(date, diff_deaths) _column_diff(diff_deaths, date, 5)
 
 @defcolumn diff2_closed(diff2_recovered, diff2_deaths) diff2_recovered .+ diff2_deaths
 @defcolumn diff2_active(diff2_infected, diff2_closed) diff2_infected .- diff2_closed
 
-@defcolumn diff3_infected(date, diff2_infected) _column_diff(diff2_infected, date, 4)
+@defcolumn diff3_infected(date, diff2_infected) _column_diff(diff2_infected, date, 5)
 #=
 @defcolumn diff3_recovered(date, diff2_recovered) _column_diff(
     diff2_recovered,
@@ -304,11 +305,11 @@ end
 @defcolumn diff3_closed(diff3_recovered, diff3_deaths) diff3_recovered .+ diff3_deaths
 @defcolumn diff3_active(diff3_infected, diff3_closed) diff3_infected .- diff3_closed
 =#
-@defcolumn diff4_infected(date, diff3_infected) _column_diff(diff3_infected, date, 4)
+@defcolumn diff4_infected(date, diff3_infected) _column_diff(diff3_infected, date, 5)
 
-@defcolumn diff5_infected(date, diff4_infected) _column_diff(diff4_infected, date, 4)
+@defcolumn diff5_infected(date, diff4_infected) _column_diff(diff4_infected, date, 5)
 
-@defcolumn diff6_infected(date, diff5_infected) _column_diff(diff5_infected, date, 4)
+@defcolumn diff6_infected(date, diff5_infected) _column_diff(diff5_infected, date, 5)
 
 const COVID_19_μ = 0.034
 
@@ -427,6 +428,7 @@ function covid19_database(; kwargs...)
         column_infected,
         column_closed,
         column_active,
+        column_diff_confirmed,
         column_diff_infected,
         column_diff_recovered,
         column_diff_deaths,
@@ -460,7 +462,6 @@ end
 function covid19(;
     database = nothing,
     compute_model::Bool = true,
-    optimize::Bool = true,
     pretty::Bool = true,
     do_export::Bool = true,
     kwargs...,
@@ -529,12 +530,6 @@ function covid19(;
         @info "Computing SEIR model..."
         SEIRModel!(db; kwargs...)
         @info "SEIR model for COVID-19 database computed."
-    end
-
-    if optimize
-        @info "Optimizing parameters..."
-        optimize_parameters!(db; kwargs...)
-        @info "Optimal parameters for COVID-19 database computed."
     end
 
     try

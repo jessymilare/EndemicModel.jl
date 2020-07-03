@@ -65,12 +65,8 @@ function import_data(
 
     result = DataDict()
     for (source, sourcesym) ∈ zip(sources, source_keys)
-        data = import_data(
-            source;
-            cache_data_type = nothing,
-            force_update = true,
-            kwargs...,
-        )
+        data =
+            import_data(source; cache_data_type = nothing, force_update = true, kwargs...)
         result[sourcesym] = data
     end
     if cache_data_type != nothing
@@ -105,8 +101,7 @@ function import_data(
     end
 
     source = DATA_SOURCES[sourcesym](nothing; path = path, kwargs...)
-    data =
-        import_data(source; cache_data_type = nothing, force_update = true, kwargs...)
+    data = import_data(source; cache_data_type = nothing, force_update = true, kwargs...)
     if cache_data_type != nothing
         export_data(cache_data_type, Dict(sourcesym => data); kwargs...)
     end
@@ -321,24 +316,18 @@ function export_data(
     destiny
 end
 
-function export_data(
-    source::CsvPath,
-    data::AbstractDict;
-    pretty::Bool = false,
-    kwargs...,
-)
+function export_data(source::CsvPath, data::AbstractDict; pretty::Bool = false, kwargs...)
     destiny = pathof(source)
     @debug "Exporting Dict to CSV directory." destiny _debuginfo(data)
     if pretty
         data = prettify(data; kwargs...)
     end
-    exists(destiny) && rm(destiny; recursive = true)
+    exists(destiny) && rm(destiny; recursive = true, force = true)
     mkdir(destiny; recursive = true)
     for (fname, fdata) ∈ data
         fname = replace(string(fname), '/' => '_')
         fpath = join(destiny, Path(fname * ".csv"))
-        # Parameter `pretty` don't need to be passed on
-        export_data(CsvPath(fpath), fdata; kwargs...)
+        export_data(CsvPath(fpath), fdata; pretty = pretty, kwargs...)
     end
     destiny
 end
@@ -388,7 +377,12 @@ function export_data(
     if pretty
         data = prettify(data; kwargs...)
     end
-    export_data(source, DataFrameDict(Symbol(table_name) => data); kwargs...)
+    export_data(
+        source,
+        DataFrameDict(Symbol(table_name) => data);
+        pretty = pretty,
+        kwargs...,
+    )
 end
 
 function export_data(
@@ -435,7 +429,7 @@ function export_data(
         for (fname, fdata) ∈ subdata
             fname = replace(string(fname), '/' => '_')
             fpath = join(destiny, Path(fname * ".ods"))
-            export_data(OdsPath(fpath), fdata; kwargs...)
+            export_data(OdsPath(fpath), fdata; pretty = pretty, kwargs...)
         end
     end
     export_data(dfsource::OdsPath, dataframes; kwargs...)

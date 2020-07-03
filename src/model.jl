@@ -604,7 +604,7 @@ function Plots.plot(
     else
         throw(ArgumentError("Unrecognized plot kind: $(kind)"))
     end
-    title = something(title, _get_plot_title(realdata(model)))
+    isnothing(title) && (title = _get_plot_title(realdata(model)))
 
     Plots.plot(
         model,
