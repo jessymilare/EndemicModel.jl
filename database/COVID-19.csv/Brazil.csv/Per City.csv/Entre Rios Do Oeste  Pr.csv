@@ -1,0 +1,12 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-20,PR,Entre Rios do Oeste,1,0,6,4584,4107538,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1745.2,0.0,1308.9,1308.9,436.3
+2020-06-21,PR,Entre Rios do Oeste,1,0,6,4584,4107538,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1745.2,0.0,1308.9,1308.9,436.3
+2020-06-22,PR,Entre Rios do Oeste,1,0,6,4584,4107538,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1745.2,0.0,1308.9,1308.9,436.3
+2020-06-23,PR,Entre Rios do Oeste,1,0,6,4584,4107538,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1745.2,0.0,1308.9,1308.9,436.3
+2020-06-24,PR,Entre Rios do Oeste,1,0,6,4584,4107538,8.3,8,6,2,0.0,0.0,0.0,,,,,,,,,,,,0.0,0.0,1745.2,0.0,1308.9,1308.9,436.3
+2020-06-25,PR,Entre Rios do Oeste,1,0,6,4584,4107538,8.3,8,6,2,0.286,2.43,1.71,,,,,,,,,,,,0.0,0.0,1745.2,0.0,1308.9,1308.9,436.3
+2020-06-26,PR,Entre Rios do Oeste,1,0,6,4584,4107538,8.3,8,6,2,0.286,2.43,1.86,,,,,,,,,,,,0.0,0.0,1745.2,0.0,1308.9,1308.9,436.3
+2020-06-27,PR,Entre Rios do Oeste,1,0,6,4584,4107538,8.3,8,6,2,0.286,2.43,1.86,,,,,,,,,,,,0.0,0.0,1745.2,0.0,1308.9,1308.9,436.3
+2020-06-28,PR,Entre Rios do Oeste,3,0,18,4584,4107538,8.3,25,18,7,,,,,,,,,,,,,,,0.0,0.0,5453.75,0.0,3926.7,3926.7,1527.05
+2020-06-29,PR,Entre Rios do Oeste,3,0,19,4584,4107538,8.3,25,19,6,,,,,,,,,,,,,,,0.0,0.0,5453.75,0.0,4144.85,4144.85,1308.9
+2020-06-30,PR,Entre Rios do Oeste,3,0,19,4584,4107538,8.3,25,19,6,,,,,,,,,,,,,,,0.0,0.0,5453.75,0.0,4144.85,4144.85,1308.9

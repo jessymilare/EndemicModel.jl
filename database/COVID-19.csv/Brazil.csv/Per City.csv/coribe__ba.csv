@@ -1,4 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-26,BA,Coribe,1,0,6,14336,2909109,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,558.0357142857143,0.0,418.5267857142857,418.5267857142857,139.50892857142858
-2020-06-27,BA,Coribe,2,0,12,14336,2909109,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,1185.825892857143,0.0,837.0535714285714,837.0535714285714,348.77232142857144
-2020-06-28,BA,Coribe,3,0,18,14336,2909109,8.3,25,18,7,,,,,,,,,,,,,,0.0,0.0,1743.861607142857,0.0,1255.580357142857,1255.580357142857,488.28125

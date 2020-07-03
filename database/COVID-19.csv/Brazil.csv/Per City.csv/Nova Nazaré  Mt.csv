@@ -1,0 +1,10 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-22,MT,Nova Nazaré,1,0,7,3887,5106174,10.0,10,7,3,,,,,,,,,,,,,,,0.0,0.0,2572.68,0.0,1800.87,1800.87,771.8
+2020-06-23,MT,Nova Nazaré,1,0,7,3887,5106174,10.0,10,7,3,,,,,,,,,,,,,,,0.0,0.0,2572.68,0.0,1800.87,1800.87,771.8
+2020-06-24,MT,Nova Nazaré,1,0,7,3887,5106174,10.0,10,7,3,,,,,,,,,,,,,,,0.0,0.0,2572.68,0.0,1800.87,1800.87,771.8
+2020-06-25,MT,Nova Nazaré,1,0,7,3887,5106174,10.0,10,7,3,,,,,,,,,,,,,,,0.0,0.0,2572.68,0.0,1800.87,1800.87,771.8
+2020-06-26,MT,Nova Nazaré,1,0,7,3887,5106174,10.0,10,7,3,0.286,2.86,2.14,,,,,,,,,,,,0.0,0.0,2572.68,0.0,1800.87,1800.87,771.8
+2020-06-27,MT,Nova Nazaré,3,0,22,3887,5106174,10.0,30,22,8,0.286,2.86,2.14,,,,,,,,,,,,0.0,0.0,7718.03,0.0,5659.89,5659.89,2058.14
+2020-06-28,MT,Nova Nazaré,3,0,22,3887,5106174,10.0,30,22,8,,,,,,,,,,,,,,,0.0,0.0,7718.03,0.0,5659.89,5659.89,2058.14
+2020-06-29,MT,Nova Nazaré,3,0,22,3887,5106174,10.0,30,22,8,,,,,,,,,,,,,,,0.0,0.0,7718.03,0.0,5659.89,5659.89,2058.14
+2020-06-30,MT,Nova Nazaré,3,0,22,3887,5106174,10.0,30,22,8,,,,,,,,,,,,,,,0.0,0.0,7718.03,0.0,5659.89,5659.89,2058.14

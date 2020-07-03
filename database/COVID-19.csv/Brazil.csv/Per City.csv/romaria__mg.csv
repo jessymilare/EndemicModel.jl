@@ -1,4 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-26,MG,Romaria,3,0,36,3568,3156403,16.5,50,36,14,,,,,,,,,,,,,,0.0,0.0,14013.452914798207,0.0,10089.686098654709,10089.686098654709,3923.7668161434976
-2020-06-27,MG,Romaria,4,0,48,3568,3156403,16.5,66,48,18,,,,,,,,,,,,,,0.0,0.0,18497.757847533634,0.0,13452.914798206279,13452.914798206279,5044.8430493273545
-2020-06-28,MG,Romaria,4,0,48,3568,3156403,16.5,66,48,18,,,,,,,,,,,,,,0.0,0.0,18497.757847533634,0.0,13452.914798206279,13452.914798206279,5044.8430493273545

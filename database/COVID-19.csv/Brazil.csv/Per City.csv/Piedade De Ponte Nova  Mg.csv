@@ -1,0 +1,6 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-27,MG,Piedade de Ponte Nova,0,0,0,4181,3150208,16.5,0,0,0,,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-06-28,MG,Piedade de Ponte Nova,7,0,85,4181,3150208,16.5,116,85,31,,,,,,,,,,,,,,,0.0,0.0,27744.56,0.0,20330.06,20330.06,7414.49
+2020-06-29,MG,Piedade de Ponte Nova,7,0,86,4181,3150208,16.5,116,86,30,,,,,,,,,,,,,,,0.0,0.0,27744.56,0.0,20569.24,20569.24,7175.32
+2020-06-30,MG,Piedade de Ponte Nova,7,0,87,4181,3150208,16.5,116,87,29,,,,,,,,,,,,,,,0.0,0.0,27744.56,0.0,20808.42,20808.42,6936.14
+2020-07-01,MG,Piedade de Ponte Nova,10,0,123,4181,3150208,16.5,165,123,42,,,,,,,,,,,,,,,0.0,0.0,39464.24,0.0,29418.8,29418.8,10045.44

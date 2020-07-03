@@ -1,7 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-23,SP,Itapirapuã Paulista,4,0,21,4283,3522653,7.3,29,21,8,,,,,,,,,,,,,,0.0,0.0,6770.954938127481,0.0,4903.105300023348,4903.105300023348,1867.8496381041325
-2020-06-24,SP,Itapirapuã Paulista,4,0,21,4283,3522653,7.3,29,21,8,,,,,,,,,,,,,,0.0,0.0,6770.954938127481,0.0,4903.105300023348,4903.105300023348,1867.8496381041325
-2020-06-25,SP,Itapirapuã Paulista,4,0,21,4283,3522653,7.3,29,21,8,,,,,,,,,,,,,,0.0,0.0,6770.954938127481,0.0,4903.105300023348,4903.105300023348,1867.8496381041325
-2020-06-26,SP,Itapirapuã Paulista,4,0,21,4283,3522653,7.3,29,21,8,,,,,,,,,,,,,,0.0,0.0,6770.954938127481,0.0,4903.105300023348,4903.105300023348,1867.8496381041325
-2020-06-27,SP,Itapirapuã Paulista,10,0,53,4283,3522653,7.3,73,53,20,,,,,,,,,,,,,,0.0,0.0,17044.12794770021,0.0,12374.503852439879,12374.503852439879,4669.624095260331
-2020-06-28,SP,Itapirapuã Paulista,10,0,54,4283,3522653,7.3,73,54,19,,,,,,,,,,,,,,0.0,0.0,17044.12794770021,0.0,12607.985057202895,12607.985057202895,4436.142890497315

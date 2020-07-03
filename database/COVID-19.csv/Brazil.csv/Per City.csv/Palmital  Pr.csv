@@ -1,0 +1,7 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-25,PR,Palmital,2,0,12,13304,4117800,8.3,17,12,5,,,,,,,,,,,,,,,0.0,0.0,1277.81,0.0,901.98,901.98,375.83
+2020-06-26,PR,Palmital,3,0,18,13304,4117800,8.3,25,18,7,,,,,,,,,,,,,,,0.0,0.0,1879.13,0.0,1352.98,1352.98,526.16
+2020-06-27,PR,Palmital,3,0,18,13304,4117800,8.3,25,18,7,,,,,,,,,,,,,,,0.0,0.0,1879.13,0.0,1352.98,1352.98,526.16
+2020-06-28,PR,Palmital,3,0,18,13304,4117800,8.3,25,18,7,,,,,,,,,,,,,,,0.0,0.0,1879.13,0.0,1352.98,1352.98,526.16
+2020-06-29,PR,Palmital,3,0,19,13304,4117800,8.3,25,19,6,,,,,,,,,,,,,,,0.0,0.0,1879.13,0.0,1428.14,1428.14,450.99
+2020-06-30,PR,Palmital,3,0,19,13304,4117800,8.3,25,19,6,,,,,,,,,,,,,,,0.0,0.0,1879.13,0.0,1428.14,1428.14,450.99

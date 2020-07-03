@@ -1,5 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-25,BA,Tapiramutá,1,0,6,17180,2931301,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,465.6577415599534,0.0,349.2433061699651,349.2433061699651,116.41443538998836
-2020-06-26,BA,Tapiramutá,2,0,12,17180,2931301,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,989.5227008149011,0.0,698.4866123399302,698.4866123399302,291.0360884749709
-2020-06-27,BA,Tapiramutá,2,0,12,17180,2931301,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,989.5227008149011,0.0,698.4866123399302,698.4866123399302,291.0360884749709
-2020-06-28,BA,Tapiramutá,2,0,12,17180,2931301,8.3,17,12,5,,,,,,,,,,,,,,0.0,0.0,989.5227008149011,0.0,698.4866123399302,698.4866123399302,291.0360884749709

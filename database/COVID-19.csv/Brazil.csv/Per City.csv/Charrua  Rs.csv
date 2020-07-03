@@ -1,0 +1,6 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-27,RS,Charrua,1,0,6,3312,4305371,8.4,8,6,2,,,,,,,,,,,,,,,0.0,0.0,2415.46,0.0,1811.59,1811.59,603.86
+2020-06-28,RS,Charrua,1,0,6,3312,4305371,8.4,8,6,2,,,,,,,,,,,,,,,0.0,0.0,2415.46,0.0,1811.59,1811.59,603.86
+2020-06-29,RS,Charrua,1,0,6,3312,4305371,8.4,8,6,2,,,,,,,,,,,,,,,0.0,0.0,2415.46,0.0,1811.59,1811.59,603.86
+2020-06-30,RS,Charrua,2,0,13,3312,4305371,8.4,17,13,4,,,,,,,,,,,,,,,0.0,0.0,5132.85,0.0,3925.12,3925.12,1207.73
+2020-07-01,RS,Charrua,3,0,19,3312,4305371,8.4,25,19,6,,,,,,,,,,,,,,,0.0,0.0,7548.31,0.0,5736.71,5736.71,1811.59

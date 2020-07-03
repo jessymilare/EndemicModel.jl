@@ -1,0 +1,9 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-23,BA,Itaju do Colônia,1,0,6,6749,2915403,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1185.36,0.0,889.02,889.02,296.34
+2020-06-24,BA,Itaju do Colônia,1,0,6,6749,2915403,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1185.36,0.0,889.02,889.02,296.34
+2020-06-25,BA,Itaju do Colônia,1,0,6,6749,2915403,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1185.36,0.0,889.02,889.02,296.34
+2020-06-26,BA,Itaju do Colônia,1,0,6,6749,2915403,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1185.36,0.0,889.02,889.02,296.34
+2020-06-27,BA,Itaju do Colônia,4,0,24,6749,2915403,8.3,33,24,9,2.29,19.0,14.14,,,,,,,,,,,,0.0,0.0,4889.61,0.0,3556.08,3556.08,1333.53
+2020-06-28,BA,Itaju do Colônia,16,0,97,6749,2915403,8.3,133,97,36,,,,,,,,,,,,,,,0.0,0.0,19706.62,0.0,14372.5,14372.5,5334.12
+2020-06-29,BA,Itaju do Colônia,16,0,99,6749,2915403,8.3,133,99,34,,,,,,,,,,,,,,,0.0,0.0,19706.62,0.0,14668.84,14668.84,5037.78
+2020-06-30,BA,Itaju do Colônia,17,0,105,6749,2915403,8.3,141,105,36,,,,,,,,,,,,,,,0.0,0.0,20891.98,0.0,15557.86,15557.86,5334.12

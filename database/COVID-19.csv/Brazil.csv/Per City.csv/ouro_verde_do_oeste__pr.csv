@@ -1,7 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-23,PR,Ouro Verde do Oeste,4,0,24,6056,4117453,8.3,33,24,9,,,,,,,,,,,,,,0.0,0.0,5449.141347424043,0.0,3963.011889035667,3963.011889035667,1486.1294583883753
-2020-06-24,PR,Ouro Verde do Oeste,5,0,30,6056,4117453,8.3,42,30,12,,,,,,,,,,,,,,0.0,0.0,6935.270805812417,0.0,4953.764861294584,4953.764861294584,1981.5059445178335
-2020-06-25,PR,Ouro Verde do Oeste,10,0,60,6056,4117453,8.3,83,60,23,,,,,,,,,,,,,,0.0,0.0,13705.416116248349,0.0,9907.529722589168,9907.529722589168,3797.886393659181
-2020-06-26,PR,Ouro Verde do Oeste,10,0,60,6056,4117453,8.3,83,60,23,,,,,,,,,,,,,,0.0,0.0,13705.416116248349,0.0,9907.529722589168,9907.529722589168,3797.886393659181
-2020-06-27,PR,Ouro Verde do Oeste,11,0,66,6056,4117453,8.3,91,66,25,,,,,,,,,,,,,,0.0,0.0,15026.420079260237,0.0,10898.282694848085,10898.282694848085,4128.137384412154
-2020-06-28,PR,Ouro Verde do Oeste,12,0,73,6056,4117453,8.3,100,73,27,,,,,,,,,,,,,,0.0,0.0,16512.549537648614,0.0,12054.161162483488,12054.161162483488,4458.388375165126

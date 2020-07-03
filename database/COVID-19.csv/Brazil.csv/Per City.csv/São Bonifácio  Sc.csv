@@ -1,0 +1,6 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-26,SC,São Bonifácio,1,0,18,2866,4215901,25.0,25,18,7,,,,,,,,,,,,,,,0.0,0.0,8722.96,0.0,6280.53,6280.53,2442.43
+2020-06-27,SC,São Bonifácio,1,0,18,2866,4215901,25.0,25,18,7,,,,,,,,,,,,,,,0.0,0.0,8722.96,0.0,6280.53,6280.53,2442.43
+2020-06-28,SC,São Bonifácio,1,0,18,2866,4215901,25.0,25,18,7,,,,,,,,,,,,,,,0.0,0.0,8722.96,0.0,6280.53,6280.53,2442.43
+2020-06-29,SC,São Bonifácio,1,0,19,2866,4215901,25.0,25,19,6,,,,,,,,,,,,,,,0.0,0.0,8722.96,0.0,6629.45,6629.45,2093.51
+2020-06-30,SC,São Bonifácio,1,0,19,2866,4215901,25.0,25,19,6,,,,,,,,,,,,,,,0.0,0.0,8722.96,0.0,6629.45,6629.45,2093.51

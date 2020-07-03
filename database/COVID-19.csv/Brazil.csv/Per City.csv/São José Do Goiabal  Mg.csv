@@ -1,0 +1,7 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-26,MG,São José do Goiabal,3,0,36,5474,3163409,16.5,50,36,14,,,,,,,,,,,,,,,0.0,0.0,9134.09,0.0,6576.54,6576.54,2557.54
+2020-06-27,MG,São José do Goiabal,3,0,36,5474,3163409,16.5,50,36,14,,,,,,,,,,,,,,,0.0,0.0,9134.09,0.0,6576.54,6576.54,2557.54
+2020-06-28,MG,São José do Goiabal,3,0,37,5474,3163409,16.5,50,37,13,,,,,,,,,,,,,,,0.0,0.0,9134.09,0.0,6759.23,6759.23,2374.86
+2020-06-29,MG,São José do Goiabal,3,0,37,5474,3163409,16.5,50,37,13,,,,,,,,,,,,,,,0.0,0.0,9134.09,0.0,6759.23,6759.23,2374.86
+2020-06-30,MG,São José do Goiabal,3,0,37,5474,3163409,16.5,50,37,13,,,,,,,,,,,,,,,0.0,0.0,9134.09,0.0,6759.23,6759.23,2374.86
+2020-07-01,MG,São José do Goiabal,4,0,49,5474,3163409,16.5,66,49,17,,,,,,,,,,,,,,,0.0,0.0,12057.0,0.0,8951.41,8951.41,3105.59

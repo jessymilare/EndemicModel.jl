@@ -1,0 +1,6 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-27,RS,Três Coroas,1,0,6,28502,4321709,8.4,8,6,2,,,,,,,,,,,,,,,0.0,0.0,280.68,0.0,210.51,210.51,70.17
+2020-06-28,RS,Três Coroas,1,0,6,28502,4321709,8.4,8,6,2,,,,,,,,,,,,,,,0.0,0.0,280.68,0.0,210.51,210.51,70.17
+2020-06-29,RS,Três Coroas,1,0,6,28502,4321709,8.4,8,6,2,,,,,,,,,,,,,,,0.0,0.0,280.68,0.0,210.51,210.51,70.17
+2020-06-30,RS,Três Coroas,2,0,13,28502,4321709,8.4,17,13,4,,,,,,,,,,,,,,,0.0,0.0,596.45,0.0,456.11,456.11,140.34
+2020-07-01,RS,Três Coroas,2,0,13,28502,4321709,8.4,17,13,4,,,,,,,,,,,,,,,0.0,0.0,596.45,0.0,456.11,456.11,140.34

@@ -1,0 +1,10 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-22,GO,Sanclerlândia,1,0,6,7713,5219001,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1037.21,0.0,777.91,777.91,259.3
+2020-06-23,GO,Sanclerlândia,1,0,6,7713,5219001,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1037.21,0.0,777.91,777.91,259.3
+2020-06-24,GO,Sanclerlândia,1,0,6,7713,5219001,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1037.21,0.0,777.91,777.91,259.3
+2020-06-25,GO,Sanclerlândia,2,0,12,7713,5219001,8.3,17,12,5,,,,,,,,,,,,,,,0.0,0.0,2204.07,0.0,1555.81,1555.81,648.26
+2020-06-26,GO,Sanclerlândia,2,1,12,7713,5219001,8.3,17,13,4,0.143,1.29,1.0,,,,,,,,,,,,0.0769,0.0588,2204.07,129.65,1555.81,1685.47,518.6
+2020-06-27,GO,Sanclerlândia,2,1,12,7713,5219001,8.3,17,13,4,0.143,1.29,1.0,,,,,,,,,,,,0.0769,0.0588,2204.07,129.65,1555.81,1685.47,518.6
+2020-06-28,GO,Sanclerlândia,2,1,12,7713,5219001,8.3,17,13,4,,,,,,,,,,,,,,,0.0769,0.0588,2204.07,129.65,1555.81,1685.47,518.6
+2020-06-29,GO,Sanclerlândia,2,1,13,7713,5219001,8.3,17,14,3,,,,,,,,,,,,,,,0.0714,0.0588,2204.07,129.65,1685.47,1815.12,388.95
+2020-06-30,GO,Sanclerlândia,2,1,13,7713,5219001,8.3,17,14,3,,,,,,,,,,,,,,,0.0714,0.0588,2204.07,129.65,1685.47,1815.12,388.95

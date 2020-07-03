@@ -1,0 +1,10 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-22,GO,Divinópolis de Goiás,1,0,6,4852,5208301,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1648.8,0.0,1236.6,1236.6,412.2
+2020-06-23,GO,Divinópolis de Goiás,1,0,6,4852,5208301,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1648.8,0.0,1236.6,1236.6,412.2
+2020-06-24,GO,Divinópolis de Goiás,1,0,6,4852,5208301,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1648.8,0.0,1236.6,1236.6,412.2
+2020-06-25,GO,Divinópolis de Goiás,1,0,6,4852,5208301,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1648.8,0.0,1236.6,1236.6,412.2
+2020-06-26,GO,Divinópolis de Goiás,1,0,6,4852,5208301,8.3,8,6,2,0.143,1.29,1.0,,,,,,,,,,,,0.0,0.0,1648.8,0.0,1236.6,1236.6,412.2
+2020-06-27,GO,Divinópolis de Goiás,1,0,6,4852,5208301,8.3,8,6,2,0.429,3.57,2.71,,,,,,,,,,,,0.0,0.0,1648.8,0.0,1236.6,1236.6,412.2
+2020-06-28,GO,Divinópolis de Goiás,1,0,6,4852,5208301,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1648.8,0.0,1236.6,1236.6,412.2
+2020-06-29,GO,Divinópolis de Goiás,2,0,13,4852,5208301,8.3,17,13,4,,,,,,,,,,,,,,,0.0,0.0,3503.71,0.0,2679.31,2679.31,824.4
+2020-06-30,GO,Divinópolis de Goiás,4,0,25,4852,5208301,8.3,33,25,8,,,,,,,,,,,,,,,0.0,0.0,6801.32,0.0,5152.51,5152.51,1648.8

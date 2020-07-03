@@ -1,0 +1,5 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-27,BA,Santana,2,0,12,26880,2928208,8.3,17,12,5,,,,,,,,,,,,,,,0.0,0.0,632.44,0.0,446.43,446.43,186.01
+2020-06-28,BA,Santana,3,0,18,26880,2928208,8.3,25,18,7,,,,,,,,,,,,,,,0.0,0.0,930.06,0.0,669.64,669.64,260.42
+2020-06-29,BA,Santana,2,0,13,26880,2928208,8.3,17,13,4,,,,,,,,,,,,,,,0.0,0.0,632.44,0.0,483.63,483.63,148.81
+2020-06-30,BA,Santana,0,0,0,26880,2928208,8.3,0,0,0,,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0

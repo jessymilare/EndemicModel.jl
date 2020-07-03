@@ -1,7 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-23,BA,Itaju do Colônia,1,0,6,6749,2915403,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,1185.360794191732,0.0,889.0205956437991,889.0205956437991,296.340198547933
-2020-06-24,BA,Itaju do Colônia,1,0,6,6749,2915403,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,1185.360794191732,0.0,889.0205956437991,889.0205956437991,296.340198547933
-2020-06-25,BA,Itaju do Colônia,1,0,6,6749,2915403,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,1185.360794191732,0.0,889.0205956437991,889.0205956437991,296.340198547933
-2020-06-26,BA,Itaju do Colônia,1,0,6,6749,2915403,8.3,8,6,2,,,,,,,,,,,,,,0.0,0.0,1185.360794191732,0.0,889.0205956437991,889.0205956437991,296.340198547933
-2020-06-27,BA,Itaju do Colônia,4,0,24,6749,2915403,8.3,33,24,9,,,,,,,,,,,,,,0.0,0.0,4889.613276040895,0.0,3556.0823825751963,3556.0823825751963,1333.5308934656987
-2020-06-28,BA,Itaju do Colônia,16,0,97,6749,2915403,8.3,133,97,36,,,,,,,,,,,,,,0.0,0.0,19706.623203437546,0.0,14372.499629574751,14372.499629574751,5334.123573862795

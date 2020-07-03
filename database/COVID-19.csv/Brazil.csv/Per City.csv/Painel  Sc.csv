@@ -1,0 +1,5 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-27,SC,Painel,1,0,18,2383,4211892,25.0,25,18,7,,,,,,,,,,,,,,,0.0,0.0,10490.98,0.0,7553.5,7553.5,2937.47
+2020-06-28,SC,Painel,1,0,18,2383,4211892,25.0,25,18,7,,,,,,,,,,,,,,,0.0,0.0,10490.98,0.0,7553.5,7553.5,2937.47
+2020-06-29,SC,Painel,1,0,19,2383,4211892,25.0,25,19,6,,,,,,,,,,,,,,,0.0,0.0,10490.98,0.0,7973.14,7973.14,2517.83
+2020-06-30,SC,Painel,1,0,19,2383,4211892,25.0,25,19,6,,,,,,,,,,,,,,,0.0,0.0,10490.98,0.0,7973.14,7973.14,2517.83

@@ -1,0 +1,6 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-27,MG,Santa Rita de Minas,0,0,0,7284,3159357,16.5,0,0,0,,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-06-28,MG,Santa Rita de Minas,6,0,73,7284,3159357,16.5,99,73,26,,,,,,,,,,,,,,,0.0,0.0,13591.43,0.0,10021.97,10021.97,3569.47
+2020-06-29,MG,Santa Rita de Minas,6,0,74,7284,3159357,16.5,99,74,25,,,,,,,,,,,,,,,0.0,0.0,13591.43,0.0,10159.25,10159.25,3432.18
+2020-06-30,MG,Santa Rita de Minas,7,0,87,7284,3159357,16.5,116,87,29,,,,,,,,,,,,,,,0.0,0.0,15925.32,0.0,11943.99,11943.99,3981.33
+2020-07-01,MG,Santa Rita de Minas,7,0,86,7284,3159357,16.5,116,86,30,,,,,,,,,,,,,,,0.0,0.0,15925.32,0.0,11806.7,11806.7,4118.62

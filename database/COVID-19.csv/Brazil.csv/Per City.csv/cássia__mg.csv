@@ -1,5 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-25,MG,Cássia,3,0,36,17917,3115102,16.5,50,36,14,,,,,,,,,,,,,,0.0,0.0,2790.645755427806,0.0,2009.2649439080203,2009.2649439080203,781.3808115197857
-2020-06-26,MG,Cássia,5,0,59,17917,3115102,16.5,82,59,23,,,,,,,,,,,,,,0.0,0.0,4576.659038901602,0.0,3292.961991404811,3292.961991404811,1283.6970474967907
-2020-06-27,MG,Cássia,6,0,72,17917,3115102,16.5,99,72,27,,,,,,,,,,,,,,0.0,0.0,5525.478595747056,0.0,4018.5298878160406,4018.5298878160406,1506.9487079310152
-2020-06-28,MG,Cássia,8,0,97,17917,3115102,16.5,132,97,35,,,,,,,,,,,,,,0.0,0.0,7367.304794329408,0.0,5413.852765529944,5413.852765529944,1953.4520287994642

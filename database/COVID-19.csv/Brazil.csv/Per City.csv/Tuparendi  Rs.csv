@@ -1,0 +1,6 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-27,RS,Tuparendi,1,0,6,7972,4322301,8.4,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1003.51,0.0,752.63,752.63,250.88
+2020-06-28,RS,Tuparendi,1,0,6,7972,4322301,8.4,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1003.51,0.0,752.63,752.63,250.88
+2020-06-29,RS,Tuparendi,1,0,6,7972,4322301,8.4,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1003.51,0.0,752.63,752.63,250.88
+2020-06-30,RS,Tuparendi,1,0,6,7972,4322301,8.4,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1003.51,0.0,752.63,752.63,250.88
+2020-07-01,RS,Tuparendi,1,0,6,7972,4322301,8.4,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1003.51,0.0,752.63,752.63,250.88

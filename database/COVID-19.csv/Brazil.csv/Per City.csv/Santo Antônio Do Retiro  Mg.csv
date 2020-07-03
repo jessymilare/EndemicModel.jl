@@ -1,0 +1,6 @@
+Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-27,MG,Santo Antônio do Retiro,3,0,36,7350,3160454,16.5,50,36,14,,,,,,,,,,,,,,,0.0,0.0,6802.72,0.0,4897.96,4897.96,1904.76
+2020-06-28,MG,Santo Antônio do Retiro,3,0,37,7350,3160454,16.5,50,37,13,,,,,,,,,,,,,,,0.0,0.0,6802.72,0.0,5034.01,5034.01,1768.71
+2020-06-29,MG,Santo Antônio do Retiro,3,0,37,7350,3160454,16.5,50,37,13,,,,,,,,,,,,,,,0.0,0.0,6802.72,0.0,5034.01,5034.01,1768.71
+2020-06-30,MG,Santo Antônio do Retiro,7,0,87,7350,3160454,16.5,116,87,29,,,,,,,,,,,,,,,0.0,0.0,15782.31,0.0,11836.73,11836.73,3945.58
+2020-07-01,MG,Santo Antônio do Retiro,7,0,86,7350,3160454,16.5,116,86,30,,,,,,,,,,,,,,,0.0,0.0,15782.31,0.0,11700.68,11700.68,4081.63

@@ -1,4 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-26,MT,Salto do Céu,2,0,14,3399,5107750,10.0,20,14,6,,,,,,,,,,,,,,0.0,0.0,5884.0835539864665,0.0,4118.858487790527,4118.858487790527,1765.22506619594
-2020-06-27,MT,Salto do Céu,2,0,15,3399,5107750,10.0,20,15,5,,,,,,,,,,,,,,0.0,0.0,5884.0835539864665,0.0,4413.06266548985,4413.06266548985,1471.0208884966166
-2020-06-28,MT,Salto do Céu,2,0,15,3399,5107750,10.0,20,15,5,,,,,,,,,,,,,,0.0,0.0,5884.0835539864665,0.0,4413.06266548985,4413.06266548985,1471.0208884966166

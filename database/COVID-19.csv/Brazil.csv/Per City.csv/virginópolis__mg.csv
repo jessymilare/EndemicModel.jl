@@ -1,8 +1,0 @@
-date,state,city,confirmed,deaths,recovered,estimated_population,city_ibge_code,infected_per_confirmed,infected,closed,active,diff_infected,diff_recovered,diff_deaths,diff_closed,diff_active,diff2_infected,diff2_recovered,diff2_deaths,diff2_closed,diff2_active,diff3_infected,diff4_infected,diff5_infected,μ_closed,μ_infected,infected_per_1mi,deaths_per_1mi,recovered_per_1mi,closed_per_1mi,active_per_1mi
-2020-06-22,MG,Virginópolis,1,0,12,10615,3171808,16.5,16,12,4,,,,,,,,,,,,,,0.0,0.0,1507.3009891662741,0.0,1130.4757418747056,1130.4757418747056,376.82524729156853
-2020-06-23,MG,Virginópolis,1,0,12,10615,3171808,16.5,16,12,4,,,,,,,,,,,,,,0.0,0.0,1507.3009891662741,0.0,1130.4757418747056,1130.4757418747056,376.82524729156853
-2020-06-24,MG,Virginópolis,0,0,0,10615,3171808,16.5,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-06-25,MG,Virginópolis,0,0,0,10615,3171808,16.5,0,0,0,-2.6666666666666665,-2.0,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-06-26,MG,Virginópolis,0,0,0,10615,3171808,16.5,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-06-27,MG,Virginópolis,0,0,0,10615,3171808,16.5,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-06-28,MG,Virginópolis,0,0,0,10615,3171808,16.5,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
