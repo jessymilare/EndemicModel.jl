@@ -18,6 +18,7 @@ using DataFramesMeta
 using DataStructures
 using DifferentialEquations
 using FilePaths
+using GZip
 using Interpolations
 using Optim
 using Plots

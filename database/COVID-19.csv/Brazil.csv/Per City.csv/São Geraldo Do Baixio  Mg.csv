@@ -1,7 +1,9 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-26,MG,São Geraldo do Baixio,2,0,24,4052,3161650,16.5,33,24,9,,,,,,,,,,,,,,,0.0,0.0,8144.13,0.0,5923.0,5923.0,2221.13
-2020-06-27,MG,São Geraldo do Baixio,2,0,24,4052,3161650,16.5,33,24,9,,,,,,,,,,,,,,,0.0,0.0,8144.13,0.0,5923.0,5923.0,2221.13
-2020-06-28,MG,São Geraldo do Baixio,2,0,24,4052,3161650,16.5,33,24,9,,,,,,,,,,,,,,,0.0,0.0,8144.13,0.0,5923.0,5923.0,2221.13
-2020-06-29,MG,São Geraldo do Baixio,2,0,25,4052,3161650,16.5,33,25,8,,,,,,,,,,,,,,,0.0,0.0,8144.13,0.0,6169.79,6169.79,1974.33
-2020-06-30,MG,São Geraldo do Baixio,2,0,25,4052,3161650,16.5,33,25,8,,,,,,,,,,,,,,,0.0,0.0,8144.13,0.0,6169.79,6169.79,1974.33
-2020-07-01,MG,São Geraldo do Baixio,2,0,25,4052,3161650,16.5,33,25,8,,,,,,,,,,,,,,,0.0,0.0,8144.13,0.0,6169.79,6169.79,1974.33
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-26,MG,São Geraldo do Baixio,2,0,24,1,4052,3161650,16.5,33,24,9,,,,,,,,,,,,,,,0.0,0.0,8144.13,0.0,5923.0,5923.0,2221.13
+2020-06-27,MG,São Geraldo do Baixio,2,0,24,2,4052,3161650,16.5,33,24,9,,,,,,,,,,,,,,,0.0,0.0,8144.13,0.0,5923.0,5923.0,2221.13
+2020-06-28,MG,São Geraldo do Baixio,2,0,24,3,4052,3161650,16.5,33,24,9,,,,,,,,,,,,,,,0.0,0.0,8144.13,0.0,5923.0,5923.0,2221.13
+2020-06-29,MG,São Geraldo do Baixio,2,0,25,4,4052,3161650,16.5,33,25,8,,,,,,,,,,,,,,,0.0,0.0,8144.13,0.0,6169.79,6169.79,1974.33
+2020-06-30,MG,São Geraldo do Baixio,2,0,25,5,4052,3161650,16.5,33,25,8,0.429,7.0,,,,,,,,,,,,,0.0,0.0,8144.13,0.0,6169.79,6169.79,1974.33
+2020-07-01,MG,São Geraldo do Baixio,2,0,25,6,4052,3161650,16.5,33,25,8,,,,,,,,,,,,,,,0.0,0.0,8144.13,0.0,6169.79,6169.79,1974.33
+2020-07-02,MG,São Geraldo do Baixio,2,0,25,7,4052,3161650,16.5,33,25,8,,,,,,,,,,,,,,,0.0,0.0,8144.13,0.0,6169.79,6169.79,1974.33
+2020-07-03,MG,São Geraldo do Baixio,5,0,,8,4052,3161650,16.5,82,,,,,,,,,,,,,,,,,,0.0,20236.92,0.0,,,

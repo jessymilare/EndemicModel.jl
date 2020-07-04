@@ -1,7 +1,9 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-26,MG,Datas,1,0,12,5464,3121001,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,2928.26,0.0,2196.19,2196.19,732.06
-2020-06-27,MG,Datas,1,0,12,5464,3121001,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,2928.26,0.0,2196.19,2196.19,732.06
-2020-06-28,MG,Datas,1,0,12,5464,3121001,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,2928.26,0.0,2196.19,2196.19,732.06
-2020-06-29,MG,Datas,1,0,12,5464,3121001,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,2928.26,0.0,2196.19,2196.19,732.06
-2020-06-30,MG,Datas,1,0,12,5464,3121001,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,2928.26,0.0,2196.19,2196.19,732.06
-2020-07-01,MG,Datas,1,0,12,5464,3121001,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,2928.26,0.0,2196.19,2196.19,732.06
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-26,MG,Datas,1,0,12,1,5464,3121001,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,2928.26,0.0,2196.19,2196.19,732.06
+2020-06-27,MG,Datas,1,0,12,2,5464,3121001,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,2928.26,0.0,2196.19,2196.19,732.06
+2020-06-28,MG,Datas,1,0,12,3,5464,3121001,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,2928.26,0.0,2196.19,2196.19,732.06
+2020-06-29,MG,Datas,1,0,12,4,5464,3121001,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,2928.26,0.0,2196.19,2196.19,732.06
+2020-06-30,MG,Datas,1,0,12,5,5464,3121001,16.5,16,12,4,0.0,0.0,,,,,,,,,,,,,0.0,0.0,2928.26,0.0,2196.19,2196.19,732.06
+2020-07-01,MG,Datas,1,0,12,6,5464,3121001,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,2928.26,0.0,2196.19,2196.19,732.06
+2020-07-02,MG,Datas,1,0,12,7,5464,3121001,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,2928.26,0.0,2196.19,2196.19,732.06
+2020-07-03,MG,Datas,1,0,,8,5464,3121001,16.5,16,,,,,,,,,,,,,,,,,,0.0,2928.26,0.0,,,

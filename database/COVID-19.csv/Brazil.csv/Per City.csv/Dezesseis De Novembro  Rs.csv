@@ -1,4 +1,6 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-29,RS,Dezesseis de Novembro,2,0,13,2451,4306353,8.4,17,13,4,,,,,,,,,,,,,,,0.0,0.0,6935.94,0.0,5303.96,5303.96,1631.99
-2020-06-30,RS,Dezesseis de Novembro,3,0,19,2451,4306353,8.4,25,19,6,,,,,,,,,,,,,,,0.0,0.0,10199.92,0.0,7751.94,7751.94,2447.98
-2020-07-01,RS,Dezesseis de Novembro,3,0,19,2451,4306353,8.4,25,19,6,,,,,,,,,,,,,,,0.0,0.0,10199.92,0.0,7751.94,7751.94,2447.98
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-29,RS,Dezesseis de Novembro,2,0,13,1,2451,4306353,8.4,17,13,4,,,,,,,,,,,,,,,0.0,0.0,6935.94,0.0,5303.96,5303.96,1631.99
+2020-06-30,RS,Dezesseis de Novembro,3,0,19,2,2451,4306353,8.4,25,19,6,,,,,,,,,,,,,,,0.0,0.0,10199.92,0.0,7751.94,7751.94,2447.98
+2020-07-01,RS,Dezesseis de Novembro,3,0,19,3,2451,4306353,8.4,25,19,6,,,,,,,,,,,,,,,0.0,0.0,10199.92,0.0,7751.94,7751.94,2447.98
+2020-07-02,RS,Dezesseis de Novembro,3,0,19,4,2451,4306353,8.4,25,19,6,,,,,,,,,,,,,,,0.0,0.0,10199.92,0.0,7751.94,7751.94,2447.98
+2020-07-03,RS,Dezesseis de Novembro,3,0,,5,2451,4306353,8.4,25,,,,,,,,,,,,,,,,,,0.0,10199.92,0.0,,,

@@ -1,5 +1,7 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-27,PR,Rio Branco do Ivaí,1,0,6,4137,4122172,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1933.77,0.0,1450.33,1450.33,483.44
-2020-06-28,PR,Rio Branco do Ivaí,1,0,6,4137,4122172,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1933.77,0.0,1450.33,1450.33,483.44
-2020-06-29,PR,Rio Branco do Ivaí,1,0,6,4137,4122172,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1933.77,0.0,1450.33,1450.33,483.44
-2020-06-30,PR,Rio Branco do Ivaí,1,0,6,4137,4122172,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1933.77,0.0,1450.33,1450.33,483.44
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-27,PR,Rio Branco do Ivaí,1,0,6,1,4137,4122172,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1933.77,0.0,1450.33,1450.33,483.44
+2020-06-28,PR,Rio Branco do Ivaí,1,0,6,2,4137,4122172,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1933.77,0.0,1450.33,1450.33,483.44
+2020-06-29,PR,Rio Branco do Ivaí,1,0,6,3,4137,4122172,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1933.77,0.0,1450.33,1450.33,483.44
+2020-06-30,PR,Rio Branco do Ivaí,1,0,6,4,4137,4122172,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1933.77,0.0,1450.33,1450.33,483.44
+2020-07-01,PR,Rio Branco do Ivaí,1,0,6,5,4137,4122172,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1933.77,0.0,1450.33,1450.33,483.44
+2020-07-02,PR,Rio Branco do Ivaí,1,0,6,6,4137,4122172,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1933.77,0.0,1450.33,1450.33,483.44

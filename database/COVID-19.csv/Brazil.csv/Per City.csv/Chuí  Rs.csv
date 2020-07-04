@@ -1,7 +1,9 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-26,RS,Chuí,2,0,12,6771,4305439,8.4,17,12,5,,,,,,,,,,,,,,,0.0,0.0,2510.71,0.0,1772.26,1772.26,738.44
-2020-06-27,RS,Chuí,2,0,12,6771,4305439,8.4,17,12,5,,,,,,,,,,,,,,,0.0,0.0,2510.71,0.0,1772.26,1772.26,738.44
-2020-06-28,RS,Chuí,2,0,12,6771,4305439,8.4,17,12,5,,,,,,,,,,,,,,,0.0,0.0,2510.71,0.0,1772.26,1772.26,738.44
-2020-06-29,RS,Chuí,2,0,13,6771,4305439,8.4,17,13,4,,,,,,,,,,,,,,,0.0,0.0,2510.71,0.0,1919.95,1919.95,590.75
-2020-06-30,RS,Chuí,2,0,13,6771,4305439,8.4,17,13,4,,,,,,,,,,,,,,,0.0,0.0,2510.71,0.0,1919.95,1919.95,590.75
-2020-07-01,RS,Chuí,2,0,13,6771,4305439,8.4,17,13,4,,,,,,,,,,,,,,,0.0,0.0,2510.71,0.0,1919.95,1919.95,590.75
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-26,RS,Chuí,2,0,12,1,6771,4305439,8.4,17,12,5,,,,,,,,,,,,,,,0.0,0.0,2510.71,0.0,1772.26,1772.26,738.44
+2020-06-27,RS,Chuí,2,0,12,2,6771,4305439,8.4,17,12,5,,,,,,,,,,,,,,,0.0,0.0,2510.71,0.0,1772.26,1772.26,738.44
+2020-06-28,RS,Chuí,2,0,12,3,6771,4305439,8.4,17,12,5,,,,,,,,,,,,,,,0.0,0.0,2510.71,0.0,1772.26,1772.26,738.44
+2020-06-29,RS,Chuí,2,0,13,4,6771,4305439,8.4,17,13,4,,,,,,,,,,,,,,,0.0,0.0,2510.71,0.0,1919.95,1919.95,590.75
+2020-06-30,RS,Chuí,2,0,13,5,6771,4305439,8.4,17,13,4,0.0,0.0,,,,,,,,,,,,,0.0,0.0,2510.71,0.0,1919.95,1919.95,590.75
+2020-07-01,RS,Chuí,2,0,13,6,6771,4305439,8.4,17,13,4,,,,,,,,,,,,,,,0.0,0.0,2510.71,0.0,1919.95,1919.95,590.75
+2020-07-02,RS,Chuí,2,0,13,7,6771,4305439,8.4,17,13,4,,,,,,,,,,,,,,,0.0,0.0,2510.71,0.0,1919.95,1919.95,590.75
+2020-07-03,RS,Chuí,2,0,,8,6771,4305439,8.4,17,,,,,,,,,,,,,,,,,,0.0,2510.71,0.0,,,

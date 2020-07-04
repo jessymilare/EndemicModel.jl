@@ -1,6 +1,8 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-27,MG,Comendador Gomes,1,0,12,3142,3116902,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,5092.3,0.0,3819.22,3819.22,1273.07
-2020-06-28,MG,Comendador Gomes,2,0,24,3142,3116902,16.5,33,24,9,,,,,,,,,,,,,,,0.0,0.0,10502.86,0.0,7638.45,7638.45,2864.42
-2020-06-29,MG,Comendador Gomes,2,0,25,3142,3116902,16.5,33,25,8,,,,,,,,,,,,,,,0.0,0.0,10502.86,0.0,7956.72,7956.72,2546.15
-2020-06-30,MG,Comendador Gomes,2,0,25,3142,3116902,16.5,33,25,8,,,,,,,,,,,,,,,0.0,0.0,10502.86,0.0,7956.72,7956.72,2546.15
-2020-07-01,MG,Comendador Gomes,3,0,37,3142,3116902,16.5,50,37,13,,,,,,,,,,,,,,,0.0,0.0,15913.43,0.0,11775.94,11775.94,4137.49
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-27,MG,Comendador Gomes,1,0,12,1,3142,3116902,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,5092.3,0.0,3819.22,3819.22,1273.07
+2020-06-28,MG,Comendador Gomes,2,0,24,2,3142,3116902,16.5,33,24,9,,,,,,,,,,,,,,,0.0,0.0,10502.86,0.0,7638.45,7638.45,2864.42
+2020-06-29,MG,Comendador Gomes,2,0,25,3,3142,3116902,16.5,33,25,8,,,,,,,,,,,,,,,0.0,0.0,10502.86,0.0,7956.72,7956.72,2546.15
+2020-06-30,MG,Comendador Gomes,2,0,25,4,3142,3116902,16.5,33,25,8,,,,,,,,,,,,,,,0.0,0.0,10502.86,0.0,7956.72,7956.72,2546.15
+2020-07-01,MG,Comendador Gomes,3,0,37,5,3142,3116902,16.5,50,37,13,,,,,,,,,,,,,,,0.0,0.0,15913.43,0.0,11775.94,11775.94,4137.49
+2020-07-02,MG,Comendador Gomes,3,0,37,6,3142,3116902,16.5,50,37,13,,,,,,,,,,,,,,,0.0,0.0,15913.43,0.0,11775.94,11775.94,4137.49
+2020-07-03,MG,Comendador Gomes,3,0,,7,3142,3116902,16.5,50,,,,,,,,,,,,,,,,,,0.0,15913.43,0.0,,,

@@ -1,8 +1,10 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-24,MT,Cocalinho,2,0,15,5757,5103106,10.0,20,15,5,,,,,,,,,,,,,,,0.0,0.0,3474.03,0.0,2605.52,2605.52,868.51
-2020-06-25,MT,Cocalinho,3,0,22,5757,5103106,10.0,30,22,8,,,,,,,,,,,,,,,0.0,0.0,5211.05,0.0,3821.43,3821.43,1389.61
-2020-06-26,MT,Cocalinho,5,0,36,5757,5103106,10.0,50,36,14,,,,,,,,,,,,,,,0.0,0.0,8685.08,0.0,6253.26,6253.26,2431.82
-2020-06-27,MT,Cocalinho,5,0,36,5757,5103106,10.0,50,36,14,,,,,,,,,,,,,,,0.0,0.0,8685.08,0.0,6253.26,6253.26,2431.82
-2020-06-28,MT,Cocalinho,5,0,37,5757,5103106,10.0,50,37,13,,,,,,,,,,,,,,,0.0,0.0,8685.08,0.0,6426.96,6426.96,2258.12
-2020-06-29,MT,Cocalinho,5,0,37,5757,5103106,10.0,50,37,13,,,,,,,,,,,,,,,0.0,0.0,8685.08,0.0,6426.96,6426.96,2258.12
-2020-06-30,MT,Cocalinho,8,0,60,5757,5103106,10.0,80,60,20,,,,,,,,,,,,,,,0.0,0.0,13896.13,0.0,10422.09,10422.09,3474.03
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-24,MT,Cocalinho,2,0,15,1,5757,5103106,10.0,20,15,5,,,,,,,,,,,,,,,0.0,0.0,3474.03,0.0,2605.52,2605.52,868.51
+2020-06-25,MT,Cocalinho,3,0,22,2,5757,5103106,10.0,30,22,8,,,,,,,,,,,,,,,0.0,0.0,5211.05,0.0,3821.43,3821.43,1389.61
+2020-06-26,MT,Cocalinho,5,0,36,3,5757,5103106,10.0,50,36,14,,,,,,,,,,,,,,,0.0,0.0,8685.08,0.0,6253.26,6253.26,2431.82
+2020-06-27,MT,Cocalinho,5,0,36,4,5757,5103106,10.0,50,36,14,,,,,,,,,,,,,,,0.0,0.0,8685.08,0.0,6253.26,6253.26,2431.82
+2020-06-28,MT,Cocalinho,5,0,37,5,5757,5103106,10.0,50,37,13,0.857,8.57,6.43,,,,,,,,,,,,0.0,0.0,8685.08,0.0,6426.96,6426.96,2258.12
+2020-06-29,MT,Cocalinho,5,0,37,6,5757,5103106,10.0,50,37,13,0.714,7.14,5.29,,,,,,,,,,,,0.0,0.0,8685.08,0.0,6426.96,6426.96,2258.12
+2020-06-30,MT,Cocalinho,8,0,60,7,5757,5103106,10.0,80,60,20,,,,,,,,,,,,,,,0.0,0.0,13896.13,0.0,10422.09,10422.09,3474.03
+2020-07-01,MT,Cocalinho,8,0,60,8,5757,5103106,10.0,80,60,20,,,,,,,,,,,,,,,0.0,0.0,13896.13,0.0,10422.09,10422.09,3474.03
+2020-07-02,MT,Cocalinho,8,0,59,9,5757,5103106,10.0,80,59,21,,,,,,,,,,,,,,,0.0,0.0,13896.13,0.0,10248.39,10248.39,3647.73

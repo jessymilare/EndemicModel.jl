@@ -1,7 +1,9 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-26,MG,Morro do Pilar,2,0,24,3214,3143708,16.5,33,24,9,,,,,,,,,,,,,,,0.0,0.0,10267.58,0.0,7467.33,7467.33,2800.25
-2020-06-27,MG,Morro do Pilar,2,0,24,3214,3143708,16.5,33,24,9,,,,,,,,,,,,,,,0.0,0.0,10267.58,0.0,7467.33,7467.33,2800.25
-2020-06-28,MG,Morro do Pilar,2,0,24,3214,3143708,16.5,33,24,9,,,,,,,,,,,,,,,0.0,0.0,10267.58,0.0,7467.33,7467.33,2800.25
-2020-06-29,MG,Morro do Pilar,3,0,37,3214,3143708,16.5,50,37,13,,,,,,,,,,,,,,,0.0,0.0,15556.94,0.0,11512.13,11512.13,4044.8
-2020-06-30,MG,Morro do Pilar,3,0,37,3214,3143708,16.5,50,37,13,,,,,,,,,,,,,,,0.0,0.0,15556.94,0.0,11512.13,11512.13,4044.8
-2020-07-01,MG,Morro do Pilar,3,0,37,3214,3143708,16.5,50,37,13,,,,,,,,,,,,,,,0.0,0.0,15556.94,0.0,11512.13,11512.13,4044.8
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-26,MG,Morro do Pilar,2,0,24,1,3214,3143708,16.5,33,24,9,,,,,,,,,,,,,,,0.0,0.0,10267.58,0.0,7467.33,7467.33,2800.25
+2020-06-27,MG,Morro do Pilar,2,0,24,2,3214,3143708,16.5,33,24,9,,,,,,,,,,,,,,,0.0,0.0,10267.58,0.0,7467.33,7467.33,2800.25
+2020-06-28,MG,Morro do Pilar,2,0,24,3,3214,3143708,16.5,33,24,9,,,,,,,,,,,,,,,0.0,0.0,10267.58,0.0,7467.33,7467.33,2800.25
+2020-06-29,MG,Morro do Pilar,3,0,37,4,3214,3143708,16.5,50,37,13,,,,,,,,,,,,,,,0.0,0.0,15556.94,0.0,11512.13,11512.13,4044.8
+2020-06-30,MG,Morro do Pilar,3,0,37,5,3214,3143708,16.5,50,37,13,0.143,2.43,,,,,,,,,,,,,0.0,0.0,15556.94,0.0,11512.13,11512.13,4044.8
+2020-07-01,MG,Morro do Pilar,3,0,37,6,3214,3143708,16.5,50,37,13,,,,,,,,,,,,,,,0.0,0.0,15556.94,0.0,11512.13,11512.13,4044.8
+2020-07-02,MG,Morro do Pilar,3,0,37,7,3214,3143708,16.5,50,37,13,,,,,,,,,,,,,,,0.0,0.0,15556.94,0.0,11512.13,11512.13,4044.8
+2020-07-03,MG,Morro do Pilar,3,0,,8,3214,3143708,16.5,50,,,,,,,,,,,,,,,,,,0.0,15556.94,0.0,,,

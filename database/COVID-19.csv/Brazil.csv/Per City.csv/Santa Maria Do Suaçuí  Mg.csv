@@ -1,7 +1,9 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-26,MG,Santa Maria do Suaçuí,1,0,12,14761,3158201,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,1083.94,0.0,812.95,812.95,270.98
-2020-06-27,MG,Santa Maria do Suaçuí,1,1,12,14761,3158201,16.5,16,13,3,,,,,,,,,,,,,,,0.0769,0.0625,1083.94,67.75,812.95,880.7,203.24
-2020-06-28,MG,Santa Maria do Suaçuí,1,1,12,14761,3158201,16.5,16,13,3,,,,,,,,,,,,,,,0.0769,0.0625,1083.94,67.75,812.95,880.7,203.24
-2020-06-29,MG,Santa Maria do Suaçuí,1,1,12,14761,3158201,16.5,16,13,3,,,,,,,,,,,,,,,0.0769,0.0625,1083.94,67.75,812.95,880.7,203.24
-2020-06-30,MG,Santa Maria do Suaçuí,1,1,12,14761,3158201,16.5,16,13,3,,,,,,,,,,,,,,,0.0769,0.0625,1083.94,67.75,812.95,880.7,203.24
-2020-07-01,MG,Santa Maria do Suaçuí,2,1,25,14761,3158201,16.5,33,26,7,,,,,,,,,,,,,,,0.0385,0.0303,2235.62,67.75,1693.65,1761.4,474.22
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-26,MG,Santa Maria do Suaçuí,1,0,12,1,14761,3158201,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,1083.94,0.0,812.95,812.95,270.98
+2020-06-27,MG,Santa Maria do Suaçuí,1,1,12,2,14761,3158201,16.5,16,13,3,,,,,,,,,,,,,,,0.0769,0.0625,1083.94,67.75,812.95,880.7,203.24
+2020-06-28,MG,Santa Maria do Suaçuí,1,1,12,3,14761,3158201,16.5,16,13,3,,,,,,,,,,,,,,,0.0769,0.0625,1083.94,67.75,812.95,880.7,203.24
+2020-06-29,MG,Santa Maria do Suaçuí,1,1,12,4,14761,3158201,16.5,16,13,3,,,,,,,,,,,,,,,0.0769,0.0625,1083.94,67.75,812.95,880.7,203.24
+2020-06-30,MG,Santa Maria do Suaçuí,1,1,12,5,14761,3158201,16.5,16,13,3,0.286,4.86,,,,,,,,,,,,,0.0769,0.0625,1083.94,67.75,812.95,880.7,203.24
+2020-07-01,MG,Santa Maria do Suaçuí,2,1,25,6,14761,3158201,16.5,33,26,7,,,,,,,,,,,,,,,0.0385,0.0303,2235.62,67.75,1693.65,1761.4,474.22
+2020-07-02,MG,Santa Maria do Suaçuí,2,1,25,7,14761,3158201,16.5,33,26,7,,,,,,,,,,,,,,,0.0385,0.0303,2235.62,67.75,1693.65,1761.4,474.22
+2020-07-03,MG,Santa Maria do Suaçuí,3,1,,8,14761,3158201,16.5,50,,,,,,,,,,,,,,,,,,0.02,3387.3,67.75,,,

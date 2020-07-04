@@ -1,7 +1,9 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-25,PR,Sabáudia,1,0,6,6895,4122701,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1160.26,0.0,870.2,870.2,290.07
-2020-06-26,PR,Sabáudia,1,0,6,6895,4122701,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1160.26,0.0,870.2,870.2,290.07
-2020-06-27,PR,Sabáudia,2,0,12,6895,4122701,8.3,17,12,5,,,,,,,,,,,,,,,0.0,0.0,2465.55,0.0,1740.39,1740.39,725.16
-2020-06-28,PR,Sabáudia,2,0,12,6895,4122701,8.3,17,12,5,,,,,,,,,,,,,,,0.0,0.0,2465.55,0.0,1740.39,1740.39,725.16
-2020-06-29,PR,Sabáudia,2,0,13,6895,4122701,8.3,17,13,4,,,,,,,,,,,,,,,0.0,0.0,2465.55,0.0,1885.42,1885.42,580.13
-2020-06-30,PR,Sabáudia,4,0,25,6895,4122701,8.3,33,25,8,,,,,,,,,,,,,,,0.0,0.0,4786.08,0.0,3625.82,3625.82,1160.26
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-25,PR,Sabáudia,1,0,6,1,6895,4122701,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1160.26,0.0,870.2,870.2,290.07
+2020-06-26,PR,Sabáudia,1,0,6,2,6895,4122701,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1160.26,0.0,870.2,870.2,290.07
+2020-06-27,PR,Sabáudia,2,0,12,3,6895,4122701,8.3,17,12,5,,,,,,,,,,,,,,,0.0,0.0,2465.55,0.0,1740.39,1740.39,725.16
+2020-06-28,PR,Sabáudia,2,0,12,4,6895,4122701,8.3,17,12,5,,,,,,,,,,,,,,,0.0,0.0,2465.55,0.0,1740.39,1740.39,725.16
+2020-06-29,PR,Sabáudia,2,0,13,5,6895,4122701,8.3,17,13,4,0.571,4.86,3.57,,,,,,,,,,,,0.0,0.0,2465.55,0.0,1885.42,1885.42,580.13
+2020-06-30,PR,Sabáudia,4,0,25,6,6895,4122701,8.3,33,25,8,,,,,,,,,,,,,,,0.0,0.0,4786.08,0.0,3625.82,3625.82,1160.26
+2020-07-01,PR,Sabáudia,4,0,25,7,6895,4122701,8.3,33,25,8,,,,,,,,,,,,,,,0.0,0.0,4786.08,0.0,3625.82,3625.82,1160.26
+2020-07-02,PR,Sabáudia,5,0,31,8,6895,4122701,8.3,42,31,11,,,,,,,,,,,,,,,0.0,0.0,6091.37,0.0,4496.01,4496.01,1595.36

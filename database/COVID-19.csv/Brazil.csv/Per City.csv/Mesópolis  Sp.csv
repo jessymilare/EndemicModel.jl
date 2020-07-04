@@ -1,5 +1,7 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-27,SP,Mesópolis,1,0,7,1927,3529658,9.7,10,7,3,,,,,,,,,,,,,,,0.0,0.0,5189.41,0.0,3632.59,3632.59,1556.82
-2020-06-28,SP,Mesópolis,1,0,7,1927,3529658,9.7,10,7,3,,,,,,,,,,,,,,,0.0,0.0,5189.41,0.0,3632.59,3632.59,1556.82
-2020-06-29,SP,Mesópolis,1,0,7,1927,3529658,9.7,10,7,3,,,,,,,,,,,,,,,0.0,0.0,5189.41,0.0,3632.59,3632.59,1556.82
-2020-06-30,SP,Mesópolis,1,0,7,1927,3529658,9.7,10,7,3,,,,,,,,,,,,,,,0.0,0.0,5189.41,0.0,3632.59,3632.59,1556.82
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-27,SP,Mesópolis,1,0,7,1,1927,3529658,9.7,10,7,3,,,,,,,,,,,,,,,0.0,0.0,5189.41,0.0,3632.59,3632.59,1556.82
+2020-06-28,SP,Mesópolis,1,0,7,2,1927,3529658,9.7,10,7,3,,,,,,,,,,,,,,,0.0,0.0,5189.41,0.0,3632.59,3632.59,1556.82
+2020-06-29,SP,Mesópolis,1,0,7,3,1927,3529658,9.7,10,7,3,,,,,,,,,,,,,,,0.0,0.0,5189.41,0.0,3632.59,3632.59,1556.82
+2020-06-30,SP,Mesópolis,1,0,7,4,1927,3529658,9.7,10,7,3,,,,,,,,,,,,,,,0.0,0.0,5189.41,0.0,3632.59,3632.59,1556.82
+2020-07-01,SP,Mesópolis,1,0,7,5,1927,3529658,9.7,10,7,3,,,,,,,,,,,,,,,0.0,0.0,5189.41,0.0,3632.59,3632.59,1556.82
+2020-07-02,SP,Mesópolis,1,0,7,6,1927,3529658,9.7,10,7,3,,,,,,,,,,,,,,,0.0,0.0,5189.41,0.0,3632.59,3632.59,1556.82

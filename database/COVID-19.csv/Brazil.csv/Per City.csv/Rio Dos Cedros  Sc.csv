@@ -1,8 +1,10 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-24,SC,Rio dos Cedros,1,0,18,11793,4214706,25.0,25,18,7,,,,,,,,,,,,,,,0.0,0.0,2119.9,0.0,1526.33,1526.33,593.57
-2020-06-25,SC,Rio dos Cedros,1,0,18,11793,4214706,25.0,25,18,7,,,,,,,,,,,,,,,0.0,0.0,2119.9,0.0,1526.33,1526.33,593.57
-2020-06-26,SC,Rio dos Cedros,1,0,18,11793,4214706,25.0,25,18,7,,,,,,,,,,,,,,,0.0,0.0,2119.9,0.0,1526.33,1526.33,593.57
-2020-06-27,SC,Rio dos Cedros,1,0,18,11793,4214706,25.0,25,18,7,,,,,,,,,,,,,,,0.0,0.0,2119.9,0.0,1526.33,1526.33,593.57
-2020-06-28,SC,Rio dos Cedros,1,0,18,11793,4214706,25.0,25,18,7,,,,,,,,,,,,,,,0.0,0.0,2119.9,0.0,1526.33,1526.33,593.57
-2020-06-29,SC,Rio dos Cedros,3,0,56,11793,4214706,25.0,75,56,19,,,,,,,,,,,,,,,0.0,0.0,6359.7,0.0,4748.58,4748.58,1611.13
-2020-06-30,SC,Rio dos Cedros,3,0,56,11793,4214706,25.0,75,56,19,,,,,,,,,,,,,,,0.0,0.0,6359.7,0.0,4748.58,4748.58,1611.13
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-24,SC,Rio dos Cedros,1,0,18,1,11793,4214706,25.0,25,18,7,,,,,,,,,,,,,,,0.0,0.0,2119.9,0.0,1526.33,1526.33,593.57
+2020-06-25,SC,Rio dos Cedros,1,0,18,2,11793,4214706,25.0,25,18,7,,,,,,,,,,,,,,,0.0,0.0,2119.9,0.0,1526.33,1526.33,593.57
+2020-06-26,SC,Rio dos Cedros,1,0,18,3,11793,4214706,25.0,25,18,7,,,,,,,,,,,,,,,0.0,0.0,2119.9,0.0,1526.33,1526.33,593.57
+2020-06-27,SC,Rio dos Cedros,1,0,18,4,11793,4214706,25.0,25,18,7,,,,,,,,,,,,,,,0.0,0.0,2119.9,0.0,1526.33,1526.33,593.57
+2020-06-28,SC,Rio dos Cedros,1,0,18,5,11793,4214706,25.0,25,18,7,0.286,7.14,5.43,,,,,,,,,,,,0.0,0.0,2119.9,0.0,1526.33,1526.33,593.57
+2020-06-29,SC,Rio dos Cedros,3,0,56,6,11793,4214706,25.0,75,56,19,0.286,7.14,5.43,,,,,,,,,,,,0.0,0.0,6359.7,0.0,4748.58,4748.58,1611.13
+2020-06-30,SC,Rio dos Cedros,3,0,56,7,11793,4214706,25.0,75,56,19,,,,,,,,,,,,,,,0.0,0.0,6359.7,0.0,4748.58,4748.58,1611.13
+2020-07-01,SC,Rio dos Cedros,3,0,56,8,11793,4214706,25.0,75,56,19,,,,,,,,,,,,,,,0.0,0.0,6359.7,0.0,4748.58,4748.58,1611.13
+2020-07-02,SC,Rio dos Cedros,3,0,56,9,11793,4214706,25.0,75,56,19,,,,,,,,,,,,,,,0.0,0.0,6359.7,0.0,4748.58,4748.58,1611.13

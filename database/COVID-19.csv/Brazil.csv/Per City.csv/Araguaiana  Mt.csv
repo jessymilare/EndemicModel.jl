@@ -1,6 +1,8 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-26,MT,Araguaiana,5,0,36,3131,5101001,10.0,50,36,14,,,,,,,,,,,,,,,0.0,0.0,15969.34,0.0,11497.92,11497.92,4471.41
-2020-06-27,MT,Araguaiana,5,0,36,3131,5101001,10.0,50,36,14,,,,,,,,,,,,,,,0.0,0.0,15969.34,0.0,11497.92,11497.92,4471.41
-2020-06-28,MT,Araguaiana,5,0,37,3131,5101001,10.0,50,37,13,,,,,,,,,,,,,,,0.0,0.0,15969.34,0.0,11817.31,11817.31,4152.03
-2020-06-29,MT,Araguaiana,5,0,37,3131,5101001,10.0,50,37,13,,,,,,,,,,,,,,,0.0,0.0,15969.34,0.0,11817.31,11817.31,4152.03
-2020-06-30,MT,Araguaiana,5,0,37,3131,5101001,10.0,50,37,13,,,,,,,,,,,,,,,0.0,0.0,15969.34,0.0,11817.31,11817.31,4152.03
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-26,MT,Araguaiana,5,0,36,1,3131,5101001,10.0,50,36,14,,,,,,,,,,,,,,,0.0,0.0,15969.34,0.0,11497.92,11497.92,4471.41
+2020-06-27,MT,Araguaiana,5,0,36,2,3131,5101001,10.0,50,36,14,,,,,,,,,,,,,,,0.0,0.0,15969.34,0.0,11497.92,11497.92,4471.41
+2020-06-28,MT,Araguaiana,5,0,37,3,3131,5101001,10.0,50,37,13,,,,,,,,,,,,,,,0.0,0.0,15969.34,0.0,11817.31,11817.31,4152.03
+2020-06-29,MT,Araguaiana,5,0,37,4,3131,5101001,10.0,50,37,13,,,,,,,,,,,,,,,0.0,0.0,15969.34,0.0,11817.31,11817.31,4152.03
+2020-06-30,MT,Araguaiana,5,0,37,5,3131,5101001,10.0,50,37,13,,,,,,,,,,,,,,,0.0,0.0,15969.34,0.0,11817.31,11817.31,4152.03
+2020-07-01,MT,Araguaiana,5,0,37,6,3131,5101001,10.0,50,37,13,,,,,,,,,,,,,,,0.0,0.0,15969.34,0.0,11817.31,11817.31,4152.03
+2020-07-02,MT,Araguaiana,5,0,37,7,3131,5101001,10.0,50,37,13,,,,,,,,,,,,,,,0.0,0.0,15969.34,0.0,11817.31,11817.31,4152.03

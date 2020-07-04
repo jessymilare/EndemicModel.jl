@@ -1,5 +1,7 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-27,BA,Ichu,1,0,6,6268,2913309,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1276.32,0.0,957.24,957.24,319.08
-2020-06-28,BA,Ichu,2,0,12,6268,2913309,8.3,17,12,5,,,,,,,,,,,,,,,0.0,0.0,2712.19,0.0,1914.49,1914.49,797.7
-2020-06-29,BA,Ichu,2,0,13,6268,2913309,8.3,17,13,4,,,,,,,,,,,,,,,0.0,0.0,2712.19,0.0,2074.03,2074.03,638.16
-2020-06-30,BA,Ichu,2,0,13,6268,2913309,8.3,17,13,4,,,,,,,,,,,,,,,0.0,0.0,2712.19,0.0,2074.03,2074.03,638.16
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-27,BA,Ichu,1,0,6,1,6268,2913309,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1276.32,0.0,957.24,957.24,319.08
+2020-06-28,BA,Ichu,2,0,12,2,6268,2913309,8.3,17,12,5,,,,,,,,,,,,,,,0.0,0.0,2712.19,0.0,1914.49,1914.49,797.7
+2020-06-29,BA,Ichu,2,0,13,3,6268,2913309,8.3,17,13,4,,,,,,,,,,,,,,,0.0,0.0,2712.19,0.0,2074.03,2074.03,638.16
+2020-06-30,BA,Ichu,2,0,13,4,6268,2913309,8.3,17,13,4,,,,,,,,,,,,,,,0.0,0.0,2712.19,0.0,2074.03,2074.03,638.16
+2020-07-01,BA,Ichu,2,0,13,5,6268,2913309,8.3,17,13,4,,,,,,,,,,,,,,,0.0,0.0,2712.19,0.0,2074.03,2074.03,638.16
+2020-07-02,BA,Ichu,2,0,13,6,6268,2913309,8.3,17,13,4,,,,,,,,,,,,,,,0.0,0.0,2712.19,0.0,2074.03,2074.03,638.16

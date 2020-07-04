@@ -1,0 +1,8 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-27,MG,Veríssimo,0,0,0,1,4039,3171105,16.5,0,0,0,,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-06-28,MG,Veríssimo,0,0,0,2,4039,3171105,16.5,0,0,0,,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-06-29,MG,Veríssimo,0,0,0,3,4039,3171105,16.5,0,0,0,,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-06-30,MG,Veríssimo,0,0,0,4,4039,3171105,16.5,0,0,0,,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-07-01,MG,Veríssimo,0,0,0,5,4039,3171105,16.5,0,0,0,,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-07-02,MG,Veríssimo,2,0,25,6,4039,3171105,16.5,33,25,8,,,,,,,,,,,,,,,0.0,0.0,8170.34,0.0,6189.65,6189.65,1980.69
+2020-07-03,MG,Veríssimo,3,0,,7,4039,3171105,16.5,50,,,,,,,,,,,,,,,,,,0.0,12379.3,0.0,,,

@@ -1,7 +1,9 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-25,PR,Ribeirão Claro,1,0,6,10775,4121802,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,742.46,0.0,556.84,556.84,185.61
-2020-06-26,PR,Ribeirão Claro,1,0,6,10775,4121802,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,742.46,0.0,556.84,556.84,185.61
-2020-06-27,PR,Ribeirão Claro,1,0,6,10775,4121802,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,742.46,0.0,556.84,556.84,185.61
-2020-06-28,PR,Ribeirão Claro,1,0,6,10775,4121802,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,742.46,0.0,556.84,556.84,185.61
-2020-06-29,PR,Ribeirão Claro,1,0,6,10775,4121802,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,742.46,0.0,556.84,556.84,185.61
-2020-06-30,PR,Ribeirão Claro,1,0,6,10775,4121802,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,742.46,0.0,556.84,556.84,185.61
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-25,PR,Ribeirão Claro,1,0,6,1,10775,4121802,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,742.46,0.0,556.84,556.84,185.61
+2020-06-26,PR,Ribeirão Claro,1,0,6,2,10775,4121802,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,742.46,0.0,556.84,556.84,185.61
+2020-06-27,PR,Ribeirão Claro,1,0,6,3,10775,4121802,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,742.46,0.0,556.84,556.84,185.61
+2020-06-28,PR,Ribeirão Claro,1,0,6,4,10775,4121802,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,742.46,0.0,556.84,556.84,185.61
+2020-06-29,PR,Ribeirão Claro,1,0,6,5,10775,4121802,8.3,8,6,2,0.0,0.0,0.0,,,,,,,,,,,,0.0,0.0,742.46,0.0,556.84,556.84,185.61
+2020-06-30,PR,Ribeirão Claro,1,0,6,6,10775,4121802,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,742.46,0.0,556.84,556.84,185.61
+2020-07-01,PR,Ribeirão Claro,1,0,6,7,10775,4121802,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,742.46,0.0,556.84,556.84,185.61
+2020-07-02,PR,Ribeirão Claro,1,0,6,8,10775,4121802,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,742.46,0.0,556.84,556.84,185.61

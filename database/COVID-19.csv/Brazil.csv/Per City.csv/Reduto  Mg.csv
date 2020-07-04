@@ -1,7 +1,9 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-26,MG,Reduto,1,0,12,7226,3154150,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,2214.23,0.0,1660.67,1660.67,553.56
-2020-06-27,MG,Reduto,3,0,36,7226,3154150,16.5,50,36,14,,,,,,,,,,,,,,,0.0,0.0,6919.46,0.0,4982.01,4982.01,1937.45
-2020-06-28,MG,Reduto,3,0,37,7226,3154150,16.5,50,37,13,,,,,,,,,,,,,,,0.0,0.0,6919.46,0.0,5120.4,5120.4,1799.06
-2020-06-29,MG,Reduto,3,0,37,7226,3154150,16.5,50,37,13,,,,,,,,,,,,,,,0.0,0.0,6919.46,0.0,5120.4,5120.4,1799.06
-2020-06-30,MG,Reduto,3,0,37,7226,3154150,16.5,50,37,13,,,,,,,,,,,,,,,0.0,0.0,6919.46,0.0,5120.4,5120.4,1799.06
-2020-07-01,MG,Reduto,3,0,37,7226,3154150,16.5,50,37,13,,,,,,,,,,,,,,,0.0,0.0,6919.46,0.0,5120.4,5120.4,1799.06
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-26,MG,Reduto,1,0,12,1,7226,3154150,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,2214.23,0.0,1660.67,1660.67,553.56
+2020-06-27,MG,Reduto,3,0,36,2,7226,3154150,16.5,50,36,14,,,,,,,,,,,,,,,0.0,0.0,6919.46,0.0,4982.01,4982.01,1937.45
+2020-06-28,MG,Reduto,3,0,37,3,7226,3154150,16.5,50,37,13,,,,,,,,,,,,,,,0.0,0.0,6919.46,0.0,5120.4,5120.4,1799.06
+2020-06-29,MG,Reduto,3,0,37,4,7226,3154150,16.5,50,37,13,,,,,,,,,,,,,,,0.0,0.0,6919.46,0.0,5120.4,5120.4,1799.06
+2020-06-30,MG,Reduto,3,0,37,5,7226,3154150,16.5,50,37,13,0.429,7.14,,,,,,,,,,,,,0.0,0.0,6919.46,0.0,5120.4,5120.4,1799.06
+2020-07-01,MG,Reduto,3,0,37,6,7226,3154150,16.5,50,37,13,,,,,,,,,,,,,,,0.0,0.0,6919.46,0.0,5120.4,5120.4,1799.06
+2020-07-02,MG,Reduto,1,0,12,7,7226,3154150,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,2214.23,0.0,1660.67,1660.67,553.56
+2020-07-03,MG,Reduto,4,0,,8,7226,3154150,16.5,66,,,,,,,,,,,,,,,,,,0.0,9133.68,0.0,,,

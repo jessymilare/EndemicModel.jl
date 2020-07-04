@@ -1,3 +1,5 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-29,MS,Coronel Sapucaia,1,0,6,15406,5003157,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,519.28,0.0,389.46,389.46,129.82
-2020-06-30,MS,Coronel Sapucaia,1,0,6,15406,5003157,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,519.28,0.0,389.46,389.46,129.82
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-29,MS,Coronel Sapucaia,1,0,6,1,15406,5003157,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,519.28,0.0,389.46,389.46,129.82
+2020-06-30,MS,Coronel Sapucaia,1,0,6,2,15406,5003157,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,519.28,0.0,389.46,389.46,129.82
+2020-07-01,MS,Coronel Sapucaia,2,0,13,3,15406,5003157,8.3,17,13,4,,,,,,,,,,,,,,,0.0,0.0,1103.47,0.0,843.83,843.83,259.64
+2020-07-02,MS,Coronel Sapucaia,2,0,13,4,15406,5003157,8.3,17,13,4,,,,,,,,,,,,,,,0.0,0.0,1103.47,0.0,843.83,843.83,259.64

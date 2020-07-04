@@ -1,3 +1,5 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-29,SC,Celso Ramos,1,0,19,2755,4204152,25.0,25,19,6,,,,,,,,,,,,,,,0.0,0.0,9074.41,0.0,6896.55,6896.55,2177.86
-2020-06-30,SC,Celso Ramos,4,0,75,2755,4204152,25.0,100,75,25,,,,,,,,,,,,,,,0.0,0.0,36297.64,0.0,27223.23,27223.23,9074.41
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-29,SC,Celso Ramos,1,0,19,1,2755,4204152,25.0,25,19,6,,,,,,,,,,,,,,,0.0,0.0,9074.41,0.0,6896.55,6896.55,2177.86
+2020-06-30,SC,Celso Ramos,4,0,75,2,2755,4204152,25.0,100,75,25,,,,,,,,,,,,,,,0.0,0.0,36297.64,0.0,27223.23,27223.23,9074.41
+2020-07-01,SC,Celso Ramos,4,0,75,3,2755,4204152,25.0,100,75,25,,,,,,,,,,,,,,,0.0,0.0,36297.64,0.0,27223.23,27223.23,9074.41
+2020-07-02,SC,Celso Ramos,4,0,74,4,2755,4204152,25.0,100,74,26,,,,,,,,,,,,,,,0.0,0.0,36297.64,0.0,26860.25,26860.25,9437.39

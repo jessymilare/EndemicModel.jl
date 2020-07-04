@@ -1,8 +1,10 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-25,MG,Uruana de Minas,1,0,12,3297,3170479,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,4852.9,0.0,3639.67,3639.67,1213.22
-2020-06-26,MG,Uruana de Minas,1,0,12,3297,3170479,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,4852.9,0.0,3639.67,3639.67,1213.22
-2020-06-27,MG,Uruana de Minas,1,0,12,3297,3170479,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,4852.9,0.0,3639.67,3639.67,1213.22
-2020-06-28,MG,Uruana de Minas,1,0,12,3297,3170479,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,4852.9,0.0,3639.67,3639.67,1213.22
-2020-06-29,MG,Uruana de Minas,1,0,12,3297,3170479,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,4852.9,0.0,3639.67,3639.67,1213.22
-2020-06-30,MG,Uruana de Minas,1,0,12,3297,3170479,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,4852.9,0.0,3639.67,3639.67,1213.22
-2020-07-01,MG,Uruana de Minas,1,0,12,3297,3170479,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,4852.9,0.0,3639.67,3639.67,1213.22
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-25,MG,Uruana de Minas,1,0,12,1,3297,3170479,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,4852.9,0.0,3639.67,3639.67,1213.22
+2020-06-26,MG,Uruana de Minas,1,0,12,2,3297,3170479,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,4852.9,0.0,3639.67,3639.67,1213.22
+2020-06-27,MG,Uruana de Minas,1,0,12,3,3297,3170479,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,4852.9,0.0,3639.67,3639.67,1213.22
+2020-06-28,MG,Uruana de Minas,1,0,12,4,3297,3170479,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,4852.9,0.0,3639.67,3639.67,1213.22
+2020-06-29,MG,Uruana de Minas,1,0,12,5,3297,3170479,16.5,16,12,4,0.0,0.0,0.0,,,,,,,,,,,,0.0,0.0,4852.9,0.0,3639.67,3639.67,1213.22
+2020-06-30,MG,Uruana de Minas,1,0,12,6,3297,3170479,16.5,16,12,4,0.0,0.0,,,,,,,,,,,,,0.0,0.0,4852.9,0.0,3639.67,3639.67,1213.22
+2020-07-01,MG,Uruana de Minas,1,0,12,7,3297,3170479,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,4852.9,0.0,3639.67,3639.67,1213.22
+2020-07-02,MG,Uruana de Minas,1,0,12,8,3297,3170479,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,4852.9,0.0,3639.67,3639.67,1213.22
+2020-07-03,MG,Uruana de Minas,1,0,,9,3297,3170479,16.5,16,,,,,,,,,,,,,,,,,,0.0,4852.9,0.0,,,

@@ -1,5 +1,7 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-27,BA,Feira da Mata,4,0,24,5722,2910776,8.3,33,24,9,,,,,,,,,,,,,,,0.0,0.0,5767.21,0.0,4194.34,4194.34,1572.88
-2020-06-28,BA,Feira da Mata,4,0,24,5722,2910776,8.3,33,24,9,,,,,,,,,,,,,,,0.0,0.0,5767.21,0.0,4194.34,4194.34,1572.88
-2020-06-29,BA,Feira da Mata,4,0,25,5722,2910776,8.3,33,25,8,,,,,,,,,,,,,,,0.0,0.0,5767.21,0.0,4369.1,4369.1,1398.11
-2020-06-30,BA,Feira da Mata,4,0,25,5722,2910776,8.3,33,25,8,,,,,,,,,,,,,,,0.0,0.0,5767.21,0.0,4369.1,4369.1,1398.11
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-27,BA,Feira da Mata,4,0,24,1,5722,2910776,8.3,33,24,9,,,,,,,,,,,,,,,0.0,0.0,5767.21,0.0,4194.34,4194.34,1572.88
+2020-06-28,BA,Feira da Mata,4,0,24,2,5722,2910776,8.3,33,24,9,,,,,,,,,,,,,,,0.0,0.0,5767.21,0.0,4194.34,4194.34,1572.88
+2020-06-29,BA,Feira da Mata,4,0,25,3,5722,2910776,8.3,33,25,8,,,,,,,,,,,,,,,0.0,0.0,5767.21,0.0,4369.1,4369.1,1398.11
+2020-06-30,BA,Feira da Mata,4,0,25,4,5722,2910776,8.3,33,25,8,,,,,,,,,,,,,,,0.0,0.0,5767.21,0.0,4369.1,4369.1,1398.11
+2020-07-01,BA,Feira da Mata,4,0,25,5,5722,2910776,8.3,33,25,8,,,,,,,,,,,,,,,0.0,0.0,5767.21,0.0,4369.1,4369.1,1398.11
+2020-07-02,BA,Feira da Mata,4,0,25,6,5722,2910776,8.3,33,25,8,,,,,,,,,,,,,,,0.0,0.0,5767.21,0.0,4369.1,4369.1,1398.11

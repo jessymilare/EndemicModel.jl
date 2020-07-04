@@ -1,4 +1,6 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-29,RS,Barra do Rio Azul,2,0,13,1707,4301925,8.4,17,13,4,,,,,,,,,,,,,,,0.0,0.0,9958.99,0.0,7615.7,7615.7,2343.29
-2020-06-30,RS,Barra do Rio Azul,2,0,13,1707,4301925,8.4,17,13,4,,,,,,,,,,,,,,,0.0,0.0,9958.99,0.0,7615.7,7615.7,2343.29
-2020-07-01,RS,Barra do Rio Azul,2,0,13,1707,4301925,8.4,17,13,4,,,,,,,,,,,,,,,0.0,0.0,9958.99,0.0,7615.7,7615.7,2343.29
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-29,RS,Barra do Rio Azul,2,0,13,1,1707,4301925,8.4,17,13,4,,,,,,,,,,,,,,,0.0,0.0,9958.99,0.0,7615.7,7615.7,2343.29
+2020-06-30,RS,Barra do Rio Azul,2,0,13,2,1707,4301925,8.4,17,13,4,,,,,,,,,,,,,,,0.0,0.0,9958.99,0.0,7615.7,7615.7,2343.29
+2020-07-01,RS,Barra do Rio Azul,2,0,13,3,1707,4301925,8.4,17,13,4,,,,,,,,,,,,,,,0.0,0.0,9958.99,0.0,7615.7,7615.7,2343.29
+2020-07-02,RS,Barra do Rio Azul,2,0,13,4,1707,4301925,8.4,17,13,4,,,,,,,,,,,,,,,0.0,0.0,9958.99,0.0,7615.7,7615.7,2343.29
+2020-07-03,RS,Barra do Rio Azul,2,0,,5,1707,4301925,8.4,17,,,,,,,,,,,,,,,,,,0.0,9958.99,0.0,,,

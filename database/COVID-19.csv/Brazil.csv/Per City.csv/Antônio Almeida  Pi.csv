@@ -1,4 +1,6 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-28,PI,Antônio Almeida,1,0,26,3196,2200806,36.0,36,26,10,,,,,,,,,,,,,,,0.0,0.0,11264.08,0.0,8135.17,8135.17,3128.91
-2020-06-29,PI,Antônio Almeida,3,0,80,3196,2200806,36.0,108,80,28,,,,,,,,,,,,,,,0.0,0.0,33792.24,0.0,25031.29,25031.29,8760.95
-2020-06-30,PI,Antônio Almeida,3,0,81,3196,2200806,36.0,108,81,27,,,,,,,,,,,,,,,0.0,0.0,33792.24,0.0,25344.18,25344.18,8448.06
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-28,PI,Antônio Almeida,1,0,26,1,3196,2200806,36.0,36,26,10,,,,,,,,,,,,,,,0.0,0.0,11264.08,0.0,8135.17,8135.17,3128.91
+2020-06-29,PI,Antônio Almeida,3,0,80,2,3196,2200806,36.0,108,80,28,,,,,,,,,,,,,,,0.0,0.0,33792.24,0.0,25031.29,25031.29,8760.95
+2020-06-30,PI,Antônio Almeida,3,0,81,3,3196,2200806,36.0,108,81,27,,,,,,,,,,,,,,,0.0,0.0,33792.24,0.0,25344.18,25344.18,8448.06
+2020-07-01,PI,Antônio Almeida,4,0,107,4,3196,2200806,36.0,144,107,37,,,,,,,,,,,,,,,0.0,0.0,45056.32,0.0,33479.35,33479.35,11576.97
+2020-07-02,PI,Antônio Almeida,4,0,107,5,3196,2200806,36.0,144,107,37,,,,,,,,,,,,,,,0.0,0.0,45056.32,0.0,33479.35,33479.35,11576.97

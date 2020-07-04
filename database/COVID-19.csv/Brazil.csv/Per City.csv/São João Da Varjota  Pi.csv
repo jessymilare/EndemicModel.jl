@@ -1,5 +1,7 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-27,PI,São João da Varjota,1,1,26,4888,2209955,36.0,36,27,9,,,,,,,,,,,,,,,0.037,0.0278,7364.98,204.58,5319.15,5523.73,1841.24
-2020-06-28,PI,São João da Varjota,2,1,53,4888,2209955,36.0,72,54,18,,,,,,,,,,,,,,,0.0185,0.0139,14729.95,204.58,10842.88,11047.46,3682.49
-2020-06-29,PI,São João da Varjota,2,1,54,4888,2209955,36.0,72,55,17,,,,,,,,,,,,,,,0.0182,0.0139,14729.95,204.58,11047.46,11252.05,3477.91
-2020-06-30,PI,São João da Varjota,3,1,81,4888,2209955,36.0,108,82,26,,,,,,,,,,,,,,,0.0122,0.0093,22094.93,204.58,16571.19,16775.78,5319.15
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-27,PI,São João da Varjota,1,1,26,1,4888,2209955,36.0,36,27,9,,,,,,,,,,,,,,,0.037,0.0278,7364.98,204.58,5319.15,5523.73,1841.24
+2020-06-28,PI,São João da Varjota,2,1,53,2,4888,2209955,36.0,72,54,18,,,,,,,,,,,,,,,0.0185,0.0139,14729.95,204.58,10842.88,11047.46,3682.49
+2020-06-29,PI,São João da Varjota,2,1,54,3,4888,2209955,36.0,72,55,17,,,,,,,,,,,,,,,0.0182,0.0139,14729.95,204.58,11047.46,11252.05,3477.91
+2020-06-30,PI,São João da Varjota,3,1,81,4,4888,2209955,36.0,108,82,26,,,,,,,,,,,,,,,0.0122,0.0093,22094.93,204.58,16571.19,16775.78,5319.15
+2020-07-01,PI,São João da Varjota,3,1,80,5,4888,2209955,36.0,108,81,27,,,,,,,,,,,,,,,0.0123,0.0093,22094.93,204.58,16366.61,16571.19,5523.73
+2020-07-02,PI,São João da Varjota,3,1,80,6,4888,2209955,36.0,108,81,27,,,,,,,,,,,,,,,0.0123,0.0093,22094.93,204.58,16366.61,16571.19,5523.73

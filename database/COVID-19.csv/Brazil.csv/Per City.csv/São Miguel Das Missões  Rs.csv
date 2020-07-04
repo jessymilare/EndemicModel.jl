@@ -1,7 +1,9 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-26,RS,São Miguel das Missões,3,0,18,7750,4319158,8.4,25,18,7,,,,,,,,,,,,,,,0.0,0.0,3225.81,0.0,2322.58,2322.58,903.23
-2020-06-27,RS,São Miguel das Missões,4,0,25,7750,4319158,8.4,34,25,9,,,,,,,,,,,,,,,0.0,0.0,4387.1,0.0,3225.81,3225.81,1161.29
-2020-06-28,RS,São Miguel das Missões,8,0,49,7750,4319158,8.4,67,49,18,,,,,,,,,,,,,,,0.0,0.0,8645.16,0.0,6322.58,6322.58,2322.58
-2020-06-29,RS,São Miguel das Missões,8,0,50,7750,4319158,8.4,67,50,17,,,,,,,,,,,,,,,0.0,0.0,8645.16,0.0,6451.61,6451.61,2193.55
-2020-06-30,RS,São Miguel das Missões,8,0,50,7750,4319158,8.4,67,50,17,,,,,,,,,,,,,,,0.0,0.0,8645.16,0.0,6451.61,6451.61,2193.55
-2020-07-01,RS,São Miguel das Missões,11,0,69,7750,4319158,8.4,92,69,23,,,,,,,,,,,,,,,0.0,0.0,11870.97,0.0,8903.23,8903.23,2967.74
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-26,RS,São Miguel das Missões,3,0,18,1,7750,4319158,8.4,25,18,7,,,,,,,,,,,,,,,0.0,0.0,3225.81,0.0,2322.58,2322.58,903.23
+2020-06-27,RS,São Miguel das Missões,4,0,25,2,7750,4319158,8.4,34,25,9,,,,,,,,,,,,,,,0.0,0.0,4387.1,0.0,3225.81,3225.81,1161.29
+2020-06-28,RS,São Miguel das Missões,8,0,49,3,7750,4319158,8.4,67,49,18,,,,,,,,,,,,,,,0.0,0.0,8645.16,0.0,6322.58,6322.58,2322.58
+2020-06-29,RS,São Miguel das Missões,8,0,50,4,7750,4319158,8.4,67,50,17,,,,,,,,,,,,,,,0.0,0.0,8645.16,0.0,6451.61,6451.61,2193.55
+2020-06-30,RS,São Miguel das Missões,8,0,50,5,7750,4319158,8.4,67,50,17,1.14,9.57,,,,,,,,,,,,,0.0,0.0,8645.16,0.0,6451.61,6451.61,2193.55
+2020-07-01,RS,São Miguel das Missões,11,0,69,6,7750,4319158,8.4,92,69,23,,,,,,,,,,,,,,,0.0,0.0,11870.97,0.0,8903.23,8903.23,2967.74
+2020-07-02,RS,São Miguel das Missões,11,0,68,7,7750,4319158,8.4,92,68,24,,,,,,,,,,,,,,,0.0,0.0,11870.97,0.0,8774.19,8774.19,3096.77
+2020-07-03,RS,São Miguel das Missões,11,0,,8,7750,4319158,8.4,92,,,,,,,,,,,,,,,,,,0.0,11870.97,0.0,,,

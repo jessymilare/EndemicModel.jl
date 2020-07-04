@@ -1,7 +1,9 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-26,MG,Itueta,3,0,36,6112,3134103,16.5,50,36,14,,,,,,,,,,,,,,,0.0,0.0,8180.63,0.0,5890.05,5890.05,2290.58
-2020-06-27,MG,Itueta,3,0,36,6112,3134103,16.5,50,36,14,,,,,,,,,,,,,,,0.0,0.0,8180.63,0.0,5890.05,5890.05,2290.58
-2020-06-28,MG,Itueta,3,0,37,6112,3134103,16.5,50,37,13,,,,,,,,,,,,,,,0.0,0.0,8180.63,0.0,6053.66,6053.66,2126.96
-2020-06-29,MG,Itueta,3,0,37,6112,3134103,16.5,50,37,13,,,,,,,,,,,,,,,0.0,0.0,8180.63,0.0,6053.66,6053.66,2126.96
-2020-06-30,MG,Itueta,4,0,49,6112,3134103,16.5,66,49,17,,,,,,,,,,,,,,,0.0,0.0,10798.43,0.0,8017.02,8017.02,2781.41
-2020-07-01,MG,Itueta,4,0,49,6112,3134103,16.5,66,49,17,,,,,,,,,,,,,,,0.0,0.0,10798.43,0.0,8017.02,8017.02,2781.41
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-26,MG,Itueta,3,0,36,1,6112,3134103,16.5,50,36,14,,,,,,,,,,,,,,,0.0,0.0,8180.63,0.0,5890.05,5890.05,2290.58
+2020-06-27,MG,Itueta,3,0,36,2,6112,3134103,16.5,50,36,14,,,,,,,,,,,,,,,0.0,0.0,8180.63,0.0,5890.05,5890.05,2290.58
+2020-06-28,MG,Itueta,3,0,37,3,6112,3134103,16.5,50,37,13,,,,,,,,,,,,,,,0.0,0.0,8180.63,0.0,6053.66,6053.66,2126.96
+2020-06-29,MG,Itueta,3,0,37,4,6112,3134103,16.5,50,37,13,,,,,,,,,,,,,,,0.0,0.0,8180.63,0.0,6053.66,6053.66,2126.96
+2020-06-30,MG,Itueta,4,0,49,5,6112,3134103,16.5,66,49,17,0.143,2.29,,,,,,,,,,,,,0.0,0.0,10798.43,0.0,8017.02,8017.02,2781.41
+2020-07-01,MG,Itueta,4,0,49,6,6112,3134103,16.5,66,49,17,,,,,,,,,,,,,,,0.0,0.0,10798.43,0.0,8017.02,8017.02,2781.41
+2020-07-02,MG,Itueta,4,0,49,7,6112,3134103,16.5,66,49,17,,,,,,,,,,,,,,,0.0,0.0,10798.43,0.0,8017.02,8017.02,2781.41
+2020-07-03,MG,Itueta,4,0,,8,6112,3134103,16.5,66,,,,,,,,,,,,,,,,,,0.0,10798.43,0.0,,,

@@ -147,10 +147,10 @@ end
 
 # Brasil.io COVID-19 database
 
-const BRASIL_IO_URL = "https://brasil.io/dataset/covid19/caso?format=csv"
+const BRASIL_IO_URL = "https://data.brasil.io/dataset/covid19/caso.csv.gz"
 
 """
-Novel Coronavirus (COVID-19) Cases in Brasil, provided by Brasil.io
+Novel Coronavirus (COVID-19) Cases in Brazil, provided by Brasil.io
 https://brasil.io/dataset/covid19/caso_full/
 """
 struct BrasilIo <: AbstractDataSource
@@ -167,7 +167,8 @@ const BRAZIL_POP_FACTOR = 1.01
 function import_data(source::BrasilIo; url = BRASIL_IO_URL, kwargs...)
     @debug "Importing data from Brasil.io."
     col_drop = [:confirmed_per_100k_inhabitants, :death_rate, :is_last]
-    file = import_data(DownloadSource(url))
+    gzfile = import_data(DownloadSource(url))
+    file = gzopen(gzfile)
     raw_data::DataFrame = csv_read(
         file;
         copycols = true,

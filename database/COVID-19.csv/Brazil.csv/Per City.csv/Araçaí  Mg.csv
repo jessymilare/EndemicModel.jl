@@ -1,6 +1,8 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-27,MG,Araçaí,0,0,0,2370,3103207,16.5,0,0,0,,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-06-28,MG,Araçaí,1,0,12,2370,3103207,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,6751.05,0.0,5063.29,5063.29,1687.76
-2020-06-29,MG,Araçaí,1,0,12,2370,3103207,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,6751.05,0.0,5063.29,5063.29,1687.76
-2020-06-30,MG,Araçaí,1,0,12,2370,3103207,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,6751.05,0.0,5063.29,5063.29,1687.76
-2020-07-01,MG,Araçaí,1,0,12,2370,3103207,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,6751.05,0.0,5063.29,5063.29,1687.76
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-27,MG,Araçaí,0,0,0,1,2370,3103207,16.5,0,0,0,,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-06-28,MG,Araçaí,1,0,12,2,2370,3103207,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,6751.05,0.0,5063.29,5063.29,1687.76
+2020-06-29,MG,Araçaí,1,0,12,3,2370,3103207,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,6751.05,0.0,5063.29,5063.29,1687.76
+2020-06-30,MG,Araçaí,1,0,12,4,2370,3103207,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,6751.05,0.0,5063.29,5063.29,1687.76
+2020-07-01,MG,Araçaí,1,0,12,5,2370,3103207,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,6751.05,0.0,5063.29,5063.29,1687.76
+2020-07-02,MG,Araçaí,1,0,12,6,2370,3103207,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,6751.05,0.0,5063.29,5063.29,1687.76
+2020-07-03,MG,Araçaí,1,0,,7,2370,3103207,16.5,16,,,,,,,,,,,,,,,,,,0.0,6751.05,0.0,,,

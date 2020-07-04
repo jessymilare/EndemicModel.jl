@@ -1,7 +1,9 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-25,PR,Mercedes,2,0,12,5591,4115853,8.3,17,12,5,,,,,,,,,,,,,,,0.0,0.0,3040.6,0.0,2146.31,2146.31,894.29
-2020-06-26,PR,Mercedes,2,0,12,5591,4115853,8.3,17,12,5,,,,,,,,,,,,,,,0.0,0.0,3040.6,0.0,2146.31,2146.31,894.29
-2020-06-27,PR,Mercedes,2,0,12,5591,4115853,8.3,17,12,5,,,,,,,,,,,,,,,0.0,0.0,3040.6,0.0,2146.31,2146.31,894.29
-2020-06-28,PR,Mercedes,3,0,18,5591,4115853,8.3,25,18,7,,,,,,,,,,,,,,,0.0,0.0,4471.47,0.0,3219.46,3219.46,1252.01
-2020-06-29,PR,Mercedes,3,0,19,5591,4115853,8.3,25,19,6,,,,,,,,,,,,,,,0.0,0.0,4471.47,0.0,3398.32,3398.32,1073.15
-2020-06-30,PR,Mercedes,4,0,25,5591,4115853,8.3,33,25,8,,,,,,,,,,,,,,,0.0,0.0,5902.34,0.0,4471.47,4471.47,1430.87
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-25,PR,Mercedes,2,0,12,1,5591,4115853,8.3,17,12,5,,,,,,,,,,,,,,,0.0,0.0,3040.6,0.0,2146.31,2146.31,894.29
+2020-06-26,PR,Mercedes,2,0,12,2,5591,4115853,8.3,17,12,5,,,,,,,,,,,,,,,0.0,0.0,3040.6,0.0,2146.31,2146.31,894.29
+2020-06-27,PR,Mercedes,2,0,12,3,5591,4115853,8.3,17,12,5,,,,,,,,,,,,,,,0.0,0.0,3040.6,0.0,2146.31,2146.31,894.29
+2020-06-28,PR,Mercedes,3,0,18,4,5591,4115853,8.3,25,18,7,,,,,,,,,,,,,,,0.0,0.0,4471.47,0.0,3219.46,3219.46,1252.01
+2020-06-29,PR,Mercedes,3,0,19,5,5591,4115853,8.3,25,19,6,0.571,4.71,3.57,,,,,,,,,,,,0.0,0.0,4471.47,0.0,3398.32,3398.32,1073.15
+2020-06-30,PR,Mercedes,4,0,25,6,5591,4115853,8.3,33,25,8,,,,,,,,,,,,,,,0.0,0.0,5902.34,0.0,4471.47,4471.47,1430.87
+2020-07-01,PR,Mercedes,6,0,37,7,5591,4115853,8.3,50,37,13,,,,,,,,,,,,,,,0.0,0.0,8942.94,0.0,6617.78,6617.78,2325.17
+2020-07-02,PR,Mercedes,6,0,37,8,5591,4115853,8.3,50,37,13,,,,,,,,,,,,,,,0.0,0.0,8942.94,0.0,6617.78,6617.78,2325.17

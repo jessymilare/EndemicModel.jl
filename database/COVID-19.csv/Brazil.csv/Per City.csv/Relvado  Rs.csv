@@ -1,6 +1,8 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-27,RS,Relvado,1,0,6,2111,4315453,8.4,8,6,2,,,,,,,,,,,,,,,0.0,0.0,3789.67,0.0,2842.25,2842.25,947.42
-2020-06-28,RS,Relvado,1,0,6,2111,4315453,8.4,8,6,2,,,,,,,,,,,,,,,0.0,0.0,3789.67,0.0,2842.25,2842.25,947.42
-2020-06-29,RS,Relvado,1,0,6,2111,4315453,8.4,8,6,2,,,,,,,,,,,,,,,0.0,0.0,3789.67,0.0,2842.25,2842.25,947.42
-2020-06-30,RS,Relvado,1,0,6,2111,4315453,8.4,8,6,2,,,,,,,,,,,,,,,0.0,0.0,3789.67,0.0,2842.25,2842.25,947.42
-2020-07-01,RS,Relvado,1,0,6,2111,4315453,8.4,8,6,2,,,,,,,,,,,,,,,0.0,0.0,3789.67,0.0,2842.25,2842.25,947.42
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-27,RS,Relvado,1,0,6,1,2111,4315453,8.4,8,6,2,,,,,,,,,,,,,,,0.0,0.0,3789.67,0.0,2842.25,2842.25,947.42
+2020-06-28,RS,Relvado,1,0,6,2,2111,4315453,8.4,8,6,2,,,,,,,,,,,,,,,0.0,0.0,3789.67,0.0,2842.25,2842.25,947.42
+2020-06-29,RS,Relvado,1,0,6,3,2111,4315453,8.4,8,6,2,,,,,,,,,,,,,,,0.0,0.0,3789.67,0.0,2842.25,2842.25,947.42
+2020-06-30,RS,Relvado,1,0,6,4,2111,4315453,8.4,8,6,2,,,,,,,,,,,,,,,0.0,0.0,3789.67,0.0,2842.25,2842.25,947.42
+2020-07-01,RS,Relvado,1,0,6,5,2111,4315453,8.4,8,6,2,,,,,,,,,,,,,,,0.0,0.0,3789.67,0.0,2842.25,2842.25,947.42
+2020-07-02,RS,Relvado,1,0,6,6,2111,4315453,8.4,8,6,2,,,,,,,,,,,,,,,0.0,0.0,3789.67,0.0,2842.25,2842.25,947.42
+2020-07-03,RS,Relvado,1,0,,7,2111,4315453,8.4,8,,,,,,,,,,,,,,,,,,0.0,3789.67,0.0,,,

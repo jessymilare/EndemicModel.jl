@@ -1,7 +1,10 @@
-Date,State,City,Confirmed,Deaths,Recovered,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-25,GO,Itarumã,1,0,6,7250,5211305,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1103.45,0.0,827.59,827.59,275.86
-2020-06-26,GO,Itarumã,1,0,6,7250,5211305,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1103.45,0.0,827.59,827.59,275.86
-2020-06-27,GO,Itarumã,1,0,6,7250,5211305,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1103.45,0.0,827.59,827.59,275.86
-2020-06-28,GO,Itarumã,1,0,6,7250,5211305,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1103.45,0.0,827.59,827.59,275.86
-2020-06-29,GO,Itarumã,1,0,6,7250,5211305,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1103.45,0.0,827.59,827.59,275.86
-2020-06-30,GO,Itarumã,2,0,13,7250,5211305,8.3,17,13,4,,,,,,,,,,,,,,,0.0,0.0,2344.83,0.0,1793.1,1793.1,551.72
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-25,GO,Itarumã,1,0,6,1,7250,5211305,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1103.45,0.0,827.59,827.59,275.86
+2020-06-26,GO,Itarumã,1,0,6,2,7250,5211305,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1103.45,0.0,827.59,827.59,275.86
+2020-06-27,GO,Itarumã,1,0,6,3,7250,5211305,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1103.45,0.0,827.59,827.59,275.86
+2020-06-28,GO,Itarumã,1,0,6,4,7250,5211305,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1103.45,0.0,827.59,827.59,275.86
+2020-06-29,GO,Itarumã,1,0,6,5,7250,5211305,8.3,8,6,2,0.143,1.29,1.0,,,,,,,,,,,,0.0,0.0,1103.45,0.0,827.59,827.59,275.86
+2020-06-30,GO,Itarumã,2,0,13,6,7250,5211305,8.3,17,13,4,0.143,1.29,,,,,,,,,,,,,0.0,0.0,2344.83,0.0,1793.1,1793.1,551.72
+2020-07-01,GO,Itarumã,2,0,13,7,7250,5211305,8.3,17,13,4,,,,,,,,,,,,,,,0.0,0.0,2344.83,0.0,1793.1,1793.1,551.72
+2020-07-02,GO,Itarumã,2,0,13,8,7250,5211305,8.3,17,13,4,,,,,,,,,,,,,,,0.0,0.0,2344.83,0.0,1793.1,1793.1,551.72
+2020-07-03,GO,Itarumã,2,0,,9,7250,5211305,8.3,17,,,,,,,,,,,,,,,,,,0.0,2344.83,0.0,,,
