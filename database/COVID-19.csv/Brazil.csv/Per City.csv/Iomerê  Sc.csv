@@ -1,9 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-27,SC,Iomerê,1,0,18,1,2974,4207577,25.0,25,18,7,,,,,,,,,,,,,,,0.0,0.0,8406.19,0.0,6052.45,6052.45,2353.73
-2020-06-28,SC,Iomerê,1,0,18,2,2974,4207577,25.0,25,18,7,,,,,,,,,,,,,,,0.0,0.0,8406.19,0.0,6052.45,6052.45,2353.73
-2020-06-29,SC,Iomerê,1,0,19,3,2974,4207577,25.0,25,19,6,,,,,,,,,,,,,,,0.0,0.0,8406.19,0.0,6388.7,6388.7,2017.48
-2020-06-30,SC,Iomerê,1,0,19,4,2974,4207577,25.0,25,19,6,,,,,,,,,,,,,,,0.0,0.0,8406.19,0.0,6388.7,6388.7,2017.48
-2020-07-01,SC,Iomerê,1,0,19,5,2974,4207577,25.0,25,19,6,0.0,0.0,0.143,,,,,,,,,,,,0.0,0.0,8406.19,0.0,6388.7,6388.7,2017.48
-2020-07-02,SC,Iomerê,1,0,19,6,2974,4207577,25.0,25,19,6,,,,,,,,,,,,,,,0.0,0.0,8406.19,0.0,6388.7,6388.7,2017.48
-2020-07-03,SC,Iomerê,1,0,19,7,2974,4207577,25.0,25,19,6,,,,,,,,,,,,,,,0.0,0.0,8406.19,0.0,6388.7,6388.7,2017.48
-2020-07-04,SC,Iomerê,1,0,19,8,2974,4207577,25.0,25,19,6,,,,,,,,,,,,,,,0.0,0.0,8406.19,0.0,6388.7,6388.7,2017.48

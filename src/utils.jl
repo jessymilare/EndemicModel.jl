@@ -275,19 +275,18 @@ end
 
 _debuginfo(object) = summary(object)
 
-function ensure_load_language(; force::Bool = false)
+function maybe_load_language(; force::Bool = false)
     if Sys.iswindows() && (force || isnothing(get(ENV, "LANGUAGE", nothing)))
         try
             txt = read(
                 `reg query "HKCU\Control Panel\Desktop" /v PreferredUILanguages`,
                 String,
             )
-            @info "text" txt
             txt = filter(!isequal('\r'), txt)
             lines = filter(!isempty, split(txt, '\n'))
-            @info "lines" lines
             if lines[1] == "HKEY_CURRENT_USER\\Control Panel\\Desktop"
                 langs = filter(!isempty, _win_get_lang.(lines[2:end]))
+                get!(ENV, "LANG", langs[1])
                 ENV["LANGUAGE"] = join(langs, ':')
             end
         catch exc
@@ -298,7 +297,6 @@ end
 
 function _win_get_lang(line)
     tokens = filter(!isempty, split(line, ' '))
-    @info "tokens" tokens
     if tokens[1] == "PreferredUILanguages"
         return replace(tokens[end], '-' => '_')
     end

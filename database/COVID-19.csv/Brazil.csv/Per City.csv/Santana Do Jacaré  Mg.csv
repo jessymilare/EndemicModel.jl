@@ -1,9 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-27,MG,Santana do Jacaré,0,0,0,1,4869,3158805,16.5,0,0,0,,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-06-28,MG,Santana do Jacaré,0,0,0,2,4869,3158805,16.5,0,0,0,,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-06-29,MG,Santana do Jacaré,0,0,0,3,4869,3158805,16.5,0,0,0,,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-06-30,MG,Santana do Jacaré,0,0,0,4,4869,3158805,16.5,0,0,0,,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-07-01,MG,Santana do Jacaré,0,0,0,5,4869,3158805,16.5,0,0,0,,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-07-02,MG,Santana do Jacaré,0,0,0,6,4869,3158805,16.5,0,0,0,,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-07-03,MG,Santana do Jacaré,0,0,0,7,4869,3158805,16.5,0,0,0,,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-07-04,MG,Santana do Jacaré,1,0,12,8,4869,3158805,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,3286.1,0.0,2464.57,2464.57,821.52

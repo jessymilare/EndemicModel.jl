@@ -1,6 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-30,SP,Sandovalina,1,0,7,1,4345,3545506,9.7,10,7,3,,,,,,,,,,,,,,,0.0,0.0,2301.5,0.0,1611.05,1611.05,690.45
-2020-07-01,SP,Sandovalina,1,0,7,2,4345,3545506,9.7,10,7,3,,,,,,,,,,,,,,,0.0,0.0,2301.5,0.0,1611.05,1611.05,690.45
-2020-07-02,SP,Sandovalina,1,0,7,3,4345,3545506,9.7,10,7,3,,,,,,,,,,,,,,,0.0,0.0,2301.5,0.0,1611.05,1611.05,690.45
-2020-07-03,SP,Sandovalina,1,0,7,4,4345,3545506,9.7,10,7,3,,,,,,,,,,,,,,,0.0,0.0,2301.5,0.0,1611.05,1611.05,690.45
-2020-07-05,SP,Sandovalina,1,0,,5,4345,3545506,9.7,10,,,,,,,,,,,,,,,,,,0.0,2301.5,0.0,,,
