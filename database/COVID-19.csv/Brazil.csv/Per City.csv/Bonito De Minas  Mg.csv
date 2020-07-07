@@ -1,8 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-27,MG,Bonito de Minas,1,0,12,1,11342,3108255,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,1410.69,0.0,1058.01,1058.01,352.67
-2020-06-28,MG,Bonito de Minas,2,0,24,2,11342,3108255,16.5,33,24,9,,,,,,,,,,,,,,,0.0,0.0,2909.54,0.0,2116.03,2116.03,793.51
-2020-06-29,MG,Bonito de Minas,2,0,25,3,11342,3108255,16.5,33,25,8,,,,,,,,,,,,,,,0.0,0.0,2909.54,0.0,2204.2,2204.2,705.34
-2020-06-30,MG,Bonito de Minas,2,0,25,4,11342,3108255,16.5,33,25,8,,,,,,,,,,,,,,,0.0,0.0,2909.54,0.0,2204.2,2204.2,705.34
-2020-07-01,MG,Bonito de Minas,3,0,37,5,11342,3108255,16.5,50,37,13,,,,,,,,,,,,,,,0.0,0.0,4408.39,0.0,3262.21,3262.21,1146.18
-2020-07-02,MG,Bonito de Minas,3,0,37,6,11342,3108255,16.5,50,37,13,,,,,,,,,,,,,,,0.0,0.0,4408.39,0.0,3262.21,3262.21,1146.18
-2020-07-03,MG,Bonito de Minas,3,0,,7,11342,3108255,16.5,50,,,,,,,,,,,,,,,,,,0.0,4408.39,0.0,,,

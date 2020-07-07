@@ -27,7 +27,7 @@ function _choose_test(tests)
         "units unclear"
     else
         @warn "Unrecognized test kind(s)." tests
-        pop!(tests)
+        collect(tests)[1]
     end
 end
 

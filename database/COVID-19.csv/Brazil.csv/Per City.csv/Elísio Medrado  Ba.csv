@@ -1,8 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-26,BA,Elísio Medrado,1,0,6,1,8203,2910305,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,975.25,0.0,731.44,731.44,243.81
-2020-06-27,BA,Elísio Medrado,1,0,6,2,8203,2910305,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,975.25,0.0,731.44,731.44,243.81
-2020-06-28,BA,Elísio Medrado,2,0,12,3,8203,2910305,8.3,17,12,5,,,,,,,,,,,,,,,0.0,0.0,2072.41,0.0,1462.88,1462.88,609.53
-2020-06-29,BA,Elísio Medrado,2,0,13,4,8203,2910305,8.3,17,13,4,,,,,,,,,,,,,,,0.0,0.0,2072.41,0.0,1584.79,1584.79,487.63
-2020-06-30,BA,Elísio Medrado,2,0,13,5,8203,2910305,8.3,17,13,4,,,,,,,,,,,,,,,0.0,0.0,2072.41,0.0,1584.79,1584.79,487.63
-2020-07-01,BA,Elísio Medrado,2,0,13,6,8203,2910305,8.3,17,13,4,,,,,,,,,,,,,,,0.0,0.0,2072.41,0.0,1584.79,1584.79,487.63
-2020-07-02,BA,Elísio Medrado,2,0,13,7,8203,2910305,8.3,17,13,4,,,,,,,,,,,,,,,0.0,0.0,2072.41,0.0,1584.79,1584.79,487.63

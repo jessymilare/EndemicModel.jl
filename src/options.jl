@@ -1,7 +1,7 @@
 # This file is part of EndemicModel project, which is licensed under BDS-3-Clause.
 # See file LICENSE.md for more information.
 
-const _OPTIONS = Dict{Symbol, Any}()
+const _OPTIONS = Dict{Symbol,Any}()
 
 """
     option(key::Symbol)
@@ -143,7 +143,7 @@ end
 
 @defoption(
     minimum_infected,
-    1000.0,
+    1.0,
     "Minimum number of confirmed people to be considered in estimates.",
     Real
 )

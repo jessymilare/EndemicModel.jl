@@ -1,7 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-27,BA,Cafarnaum,2,0,12,1,18621,2905305,8.3,17,12,5,,,,,,,,,,,,,,,0.0,0.0,912.95,0.0,644.43,644.43,268.51
-2020-06-28,BA,Cafarnaum,3,0,18,2,18621,2905305,8.3,25,18,7,,,,,,,,,,,,,,,0.0,0.0,1342.57,0.0,966.65,966.65,375.92
-2020-06-29,BA,Cafarnaum,3,0,19,3,18621,2905305,8.3,25,19,6,,,,,,,,,,,,,,,0.0,0.0,1342.57,0.0,1020.35,1020.35,322.22
-2020-06-30,BA,Cafarnaum,3,0,19,4,18621,2905305,8.3,25,19,6,,,,,,,,,,,,,,,0.0,0.0,1342.57,0.0,1020.35,1020.35,322.22
-2020-07-01,BA,Cafarnaum,3,0,19,5,18621,2905305,8.3,25,19,6,,,,,,,,,,,,,,,0.0,0.0,1342.57,0.0,1020.35,1020.35,322.22
-2020-07-02,BA,Cafarnaum,3,0,19,6,18621,2905305,8.3,25,19,6,,,,,,,,,,,,,,,0.0,0.0,1342.57,0.0,1020.35,1020.35,322.22

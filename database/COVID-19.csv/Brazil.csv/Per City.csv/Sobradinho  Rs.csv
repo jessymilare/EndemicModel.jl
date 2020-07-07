@@ -1,2 +1,4 @@
 Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-07-03,RS,Sobradinho,1,0,,1,15117,4320701,8.4,8,,,,,,,,,,,,,,,,,,0.0,529.21,0.0,,,
+2020-07-03,RS,Sobradinho,1,0,6,1,15117,4320701,8.4,8,6,2,,,,,,,,,,,,,,,0.0,0.0,529.21,0.0,396.9,396.9,132.3
+2020-07-04,RS,Sobradinho,2,0,13,2,15117,4320701,8.4,17,13,4,,,,,,,,,,,,,,,0.0,0.0,1124.56,0.0,859.96,859.96,264.6
+2020-07-05,RS,Sobradinho,2,0,,3,15117,4320701,8.4,17,,,,,,,,,,,,,,,,,,0.0,1124.56,0.0,,,

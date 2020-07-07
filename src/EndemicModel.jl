@@ -7,6 +7,7 @@ import Base.Iterators
 import CSV
 import JSON
 import Measures: mm
+import Plots
 import ZipFile
 
 using ArgCheck
@@ -18,10 +19,10 @@ using DataFramesMeta
 using DataStructures
 using DifferentialEquations
 using FilePaths
+using Gettext
 using GZip
 using Interpolations
 using Optim
-using Plots
 using StatsBase
 using Unitful
 
@@ -118,6 +119,7 @@ include("subdatabase.jl")
 include("database_files.jl")
 include("covid19.jl")
 include("model.jl")
+include("plot.jl")
 include("estimate.jl")
 
 end # module

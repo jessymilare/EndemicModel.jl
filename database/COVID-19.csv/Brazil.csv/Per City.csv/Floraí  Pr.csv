@@ -1,8 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-26,PR,Floraí,1,0,6,1,4978,4107801,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1607.07,0.0,1205.3,1205.3,401.77
-2020-06-27,PR,Floraí,1,0,6,2,4978,4107801,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1607.07,0.0,1205.3,1205.3,401.77
-2020-06-28,PR,Floraí,1,0,6,3,4978,4107801,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1607.07,0.0,1205.3,1205.3,401.77
-2020-06-29,PR,Floraí,1,0,6,4,4978,4107801,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1607.07,0.0,1205.3,1205.3,401.77
-2020-06-30,PR,Floraí,1,0,6,5,4978,4107801,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1607.07,0.0,1205.3,1205.3,401.77
-2020-07-01,PR,Floraí,1,0,6,6,4978,4107801,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,1607.07,0.0,1205.3,1205.3,401.77
-2020-07-02,PR,Floraí,2,0,13,7,4978,4107801,8.3,17,13,4,,,,,,,,,,,,,,,0.0,0.0,3415.03,0.0,2611.49,2611.49,803.54

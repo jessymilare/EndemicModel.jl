@@ -1,8 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-27,MG,Desterro do Melo,0,0,0,1,2930,3121506,16.5,0,0,0,,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
-2020-06-28,MG,Desterro do Melo,2,0,24,2,2930,3121506,16.5,33,24,9,,,,,,,,,,,,,,,0.0,0.0,11262.8,0.0,8191.13,8191.13,3071.67
-2020-06-29,MG,Desterro do Melo,2,0,25,3,2930,3121506,16.5,33,25,8,,,,,,,,,,,,,,,0.0,0.0,11262.8,0.0,8532.42,8532.42,2730.38
-2020-06-30,MG,Desterro do Melo,2,0,25,4,2930,3121506,16.5,33,25,8,,,,,,,,,,,,,,,0.0,0.0,11262.8,0.0,8532.42,8532.42,2730.38
-2020-07-01,MG,Desterro do Melo,2,0,25,5,2930,3121506,16.5,33,25,8,,,,,,,,,,,,,,,0.0,0.0,11262.8,0.0,8532.42,8532.42,2730.38
-2020-07-02,MG,Desterro do Melo,2,0,25,6,2930,3121506,16.5,33,25,8,,,,,,,,,,,,,,,0.0,0.0,11262.8,0.0,8532.42,8532.42,2730.38
-2020-07-03,MG,Desterro do Melo,2,0,,7,2930,3121506,16.5,33,,,,,,,,,,,,,,,,,,0.0,11262.8,0.0,,,

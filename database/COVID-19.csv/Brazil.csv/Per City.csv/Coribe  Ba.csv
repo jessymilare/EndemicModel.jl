@@ -1,8 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-26,BA,Coribe,1,0,6,1,14336,2909109,8.3,8,6,2,,,,,,,,,,,,,,,0.0,0.0,558.04,0.0,418.53,418.53,139.51
-2020-06-27,BA,Coribe,2,0,12,2,14336,2909109,8.3,17,12,5,,,,,,,,,,,,,,,0.0,0.0,1185.83,0.0,837.05,837.05,348.77
-2020-06-28,BA,Coribe,3,0,18,3,14336,2909109,8.3,25,18,7,,,,,,,,,,,,,,,0.0,0.0,1743.86,0.0,1255.58,1255.58,488.28
-2020-06-29,BA,Coribe,3,0,19,4,14336,2909109,8.3,25,19,6,,,,,,,,,,,,,,,0.0,0.0,1743.86,0.0,1325.33,1325.33,418.53
-2020-06-30,BA,Coribe,3,0,19,5,14336,2909109,8.3,25,19,6,,,,,,,,,,,,,,,0.0,0.0,1743.86,0.0,1325.33,1325.33,418.53
-2020-07-01,BA,Coribe,2,0,13,6,14336,2909109,8.3,17,13,4,,,,,,,,,,,,,,,0.0,0.0,1185.83,0.0,906.81,906.81,279.02
-2020-07-02,BA,Coribe,2,0,13,7,14336,2909109,8.3,17,13,4,,,,,,,,,,,,,,,0.0,0.0,1185.83,0.0,906.81,906.81,279.02

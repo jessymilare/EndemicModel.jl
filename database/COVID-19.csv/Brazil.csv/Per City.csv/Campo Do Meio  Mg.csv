@@ -1,8 +1,0 @@
-Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,μ infected,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
-2020-06-27,MG,Campo do Meio,1,0,12,1,11772,3111309,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,1359.16,0.0,1019.37,1019.37,339.79
-2020-06-28,MG,Campo do Meio,1,0,12,2,11772,3111309,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,1359.16,0.0,1019.37,1019.37,339.79
-2020-06-29,MG,Campo do Meio,1,0,12,3,11772,3111309,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,1359.16,0.0,1019.37,1019.37,339.79
-2020-06-30,MG,Campo do Meio,1,0,12,4,11772,3111309,16.5,16,12,4,,,,,,,,,,,,,,,0.0,0.0,1359.16,0.0,1019.37,1019.37,339.79
-2020-07-01,MG,Campo do Meio,2,0,25,5,11772,3111309,16.5,33,25,8,,,,,,,,,,,,,,,0.0,0.0,2803.26,0.0,2123.68,2123.68,679.58
-2020-07-02,MG,Campo do Meio,2,0,25,6,11772,3111309,16.5,33,25,8,,,,,,,,,,,,,,,0.0,0.0,2803.26,0.0,2123.68,2123.68,679.58
-2020-07-03,MG,Campo do Meio,2,0,,7,11772,3111309,16.5,33,,,,,,,,,,,,,,,,,,0.0,2803.26,0.0,,,

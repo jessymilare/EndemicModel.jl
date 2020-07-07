@@ -73,9 +73,7 @@ end
 ensure_unique(key_collection) = ensure_unique(key_collection, nothing, :_)
 
 function make_symbols(vec::AbstractVector)
-    ensure_unique(Symbol[
-        sym = obj isa Symbol ? obj : Symbol(string(obj)) for obj ∈ vec
-    ])
+    ensure_unique(Symbol[sym = obj isa Symbol ? obj : Symbol(string(obj)) for obj ∈ vec])
 end
 
 function subdict(dict::AbstractDict, keys)
@@ -138,12 +136,7 @@ prettify(obj::Quantity{<:Integer}; kwargs...) = string(obj)
 prettify(obj::Quantity; digits = 2, kwargs...) =
     round(unit(obj), obj; digits = digits + 2)
 
-function prettify(
-    obj::Symbol;
-    case = titlecase,
-    replace_pairs = ["_" => " "],
-    kwargs...,
-)
+function prettify(obj::Symbol; case = titlecase, replace_pairs = ["_" => " "], kwargs...)
     if isnothing(case) && isnothing(replace_pairs)
         obj
     else
@@ -156,12 +149,7 @@ function prettify(
     end
 end
 
-function prettify(
-    obj::AbstractString;
-    case = nothing,
-    replace_pairs = nothing,
-    kwargs...,
-)
+function prettify(obj::AbstractString; case = nothing, replace_pairs = nothing, kwargs...)
     !isnothing(replace_pairs) && (obj = replace(obj, replace_pairs...))
     if !isnothing(case) && all(c -> Int(c) < 255, obj)
         case(obj)
@@ -193,12 +181,7 @@ function simplify(obj::AbstractVector; kwargs...)
     map(elt -> simplify(elt; kwargs...), obj)
 end
 
-function simplify(
-    obj::Symbol;
-    case = lowercase,
-    replace_pairs = [" " => "_"],
-    kwargs...,
-)
+function simplify(obj::Symbol; case = lowercase, replace_pairs = [" " => "_"], kwargs...)
     if isnothing(case) && isnothing(replace_pairs)
         obj
     else
@@ -211,12 +194,7 @@ function simplify(
     end
 end
 
-function simplify(
-    obj::AbstractString;
-    case = nothing,
-    replace_pairs = nothing,
-    kwargs...,
-)
+function simplify(obj::AbstractString; case = nothing, replace_pairs = nothing, kwargs...)
     !isnothing(replace_pairs) && (obj = replace(obj, replace_pairs...))
     if !isnothing(case) && all(c -> Int(c) < 255, obj)
         case(obj)
@@ -296,3 +274,33 @@ function _debuginfo(dict::AbstractDict)
 end
 
 _debuginfo(object) = summary(object)
+
+function ensure_load_language(; force::Bool = false)
+    if Sys.iswindows() && (force || isnothing(get(ENV, "LANGUAGE", nothing)))
+        try
+            txt = read(
+                `reg query "HKCU\Control Panel\Desktop" /v PreferredUILanguages`,
+                String,
+            )
+            @info "text" txt
+            txt = filter(!isequal('\r'), txt)
+            lines = filter(!isempty, split(txt, '\n'))
+            @info "lines" lines
+            if lines[1] == "HKEY_CURRENT_USER\\Control Panel\\Desktop"
+                langs = filter(!isempty, _win_get_lang.(lines[2:end]))
+                ENV["LANGUAGE"] = join(langs, ':')
+            end
+        catch exc
+            ENV["LANGUAGE"] = "en"
+        end
+    end
+end
+
+function _win_get_lang(line)
+    tokens = filter(!isempty, split(line, ' '))
+    @info "tokens" tokens
+    if tokens[1] == "PreferredUILanguages"
+        return replace(tokens[end], '-' => '_')
+    end
+    ""
+end
