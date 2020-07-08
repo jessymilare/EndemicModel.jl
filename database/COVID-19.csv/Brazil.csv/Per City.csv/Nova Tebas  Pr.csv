@@ -1,0 +1,8 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-30,PR,Nova Tebas,1,0,6,1,5705,4117271,8.3,8,6,2,,,,,,,,,,,,,,,0.0,1402.28,0.0,1051.71,1051.71,350.57
+2020-07-01,PR,Nova Tebas,1,0,6,2,5705,4117271,8.3,8,6,2,,,,,,,,,,,,,,,0.0,1402.28,0.0,1051.71,1051.71,350.57
+2020-07-02,PR,Nova Tebas,1,0,6,3,5705,4117271,8.3,8,6,2,,,,,,,,,,,,,,,0.0,1402.28,0.0,1051.71,1051.71,350.57
+2020-07-03,PR,Nova Tebas,1,0,6,4,5705,4117271,8.3,8,6,2,,,,,,,,,,,,,,,0.0,1402.28,0.0,1051.71,1051.71,350.57
+2020-07-04,PR,Nova Tebas,1,0,6,5,5705,4117271,8.3,8,6,2,,,,,,,,,,,,,,,0.0,1402.28,0.0,1051.71,1051.71,350.57
+2020-07-06,PR,Nova Tebas,1,0,6,6,5705,4117271,8.3,8,6,2,,,,,,,,,,,,,,,0.0,1402.28,0.0,1051.71,1051.71,350.57
+2020-07-07,PR,Nova Tebas,3,0,19,7,5705,4117271,8.3,25,19,6,,,,,,,,,,,,,,,0.0,4382.12,0.0,3330.41,3330.41,1051.71

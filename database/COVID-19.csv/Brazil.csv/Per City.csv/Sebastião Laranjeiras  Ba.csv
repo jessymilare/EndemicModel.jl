@@ -1,0 +1,6 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-03,BA,Sebastião Laranjeiras,0,0,0,1,11548,2930006,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-07-04,BA,Sebastião Laranjeiras,2,0,13,2,11548,2930006,8.3,17,13,4,,,,,,,,,,,,,,,0.0,1472.12,0.0,1125.74,1125.74,346.38
+2020-07-05,BA,Sebastião Laranjeiras,2,0,13,3,11548,2930006,8.3,17,13,4,,,,,,,,,,,,,,,0.0,1472.12,0.0,1125.74,1125.74,346.38
+2020-07-06,BA,Sebastião Laranjeiras,2,0,13,4,11548,2930006,8.3,17,13,4,,,,,,,,,,,,,,,0.0,1472.12,0.0,1125.74,1125.74,346.38
+2020-07-07,BA,Sebastião Laranjeiras,2,0,13,5,11548,2930006,8.3,17,13,4,,,,,,,,,,,,,,,0.0,1472.12,0.0,1125.74,1125.74,346.38

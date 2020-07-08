@@ -1,0 +1,9 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-30,SC,Princesa,5,0,93,1,2953,4214151,25.0,125,93,32,,,,,,,,,,,,,,,0.0,42329.83,0.0,31493.4,31493.4,10836.44
+2020-07-01,SC,Princesa,5,0,93,2,2953,4214151,25.0,125,93,32,,,,,,,,,,,,,,,0.0,42329.83,0.0,31493.4,31493.4,10836.44
+2020-07-02,SC,Princesa,5,0,93,3,2953,4214151,25.0,125,93,32,,,,,,,,,,,,,,,0.0,42329.83,0.0,31493.4,31493.4,10836.44
+2020-07-03,SC,Princesa,5,0,93,4,2953,4214151,25.0,125,93,32,,,,,,,,,,,,,,,0.0,42329.83,0.0,31493.4,31493.4,10836.44
+2020-07-04,SC,Princesa,5,0,94,5,2953,4214151,25.0,125,94,31,0.571,14.29,11.43,0.0,11.43,2.86,,,,,,,,,0.0,42329.83,0.0,31832.04,31832.04,10497.8
+2020-07-05,SC,Princesa,5,0,95,6,2953,4214151,25.0,125,95,30,,,,,,,,,,,,,,,0.0,42329.83,0.0,32170.67,32170.67,10159.16
+2020-07-06,SC,Princesa,5,0,96,7,2953,4214151,25.0,125,96,29,,,,,,,,,,,,,,,0.0,42329.83,0.0,32509.31,32509.31,9820.52
+2020-07-07,SC,Princesa,9,0,173,8,2953,4214151,25.0,225,173,52,,,,,,,,,,,,,,,0.0,76193.7,0.0,58584.49,58584.49,17609.21

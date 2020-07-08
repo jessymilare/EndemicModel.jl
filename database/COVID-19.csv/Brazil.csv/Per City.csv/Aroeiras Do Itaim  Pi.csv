@@ -1,0 +1,6 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-03,PI,Aroeiras do Itaim,1,0,27,1,2577,2200954,36.0,36,27,9,,,,,,,,,,,,,,,0.0,13969.73,0.0,10477.3,10477.3,3492.43
+2020-07-04,PI,Aroeiras do Itaim,2,0,54,2,2577,2200954,36.0,72,54,18,,,,,,,,,,,,,,,0.0,27939.46,0.0,20954.6,20954.6,6984.87
+2020-07-05,PI,Aroeiras do Itaim,2,0,55,3,2577,2200954,36.0,72,55,17,,,,,,,,,,,,,,,0.0,27939.46,0.0,21342.65,21342.65,6596.82
+2020-07-06,PI,Aroeiras do Itaim,2,0,55,4,2577,2200954,36.0,72,55,17,,,,,,,,,,,,,,,0.0,27939.46,0.0,21342.65,21342.65,6596.82
+2020-07-07,PI,Aroeiras do Itaim,2,0,55,5,2577,2200954,36.0,72,55,17,,,,,,,,,,,,,,,0.0,27939.46,0.0,21342.65,21342.65,6596.82

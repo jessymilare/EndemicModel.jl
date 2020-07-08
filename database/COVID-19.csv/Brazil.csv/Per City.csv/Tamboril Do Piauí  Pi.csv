@@ -1,0 +1,7 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-02,PI,Tamboril do Piauí,5,0,134,1,2948,2210953,36.0,180,134,46,,,,,,,,,,,,,,,0.0,61058.34,0.0,45454.55,45454.55,15603.8
+2020-07-03,PI,Tamboril do Piauí,5,0,134,2,2948,2210953,36.0,180,134,46,,,,,,,,,,,,,,,0.0,61058.34,0.0,45454.55,45454.55,15603.8
+2020-07-04,PI,Tamboril do Piauí,5,0,135,3,2948,2210953,36.0,180,135,45,,,,,,,,,,,,,,,0.0,61058.34,0.0,45793.76,45793.76,15264.59
+2020-07-05,PI,Tamboril do Piauí,5,0,137,4,2948,2210953,36.0,180,137,43,,,,,,,,,,,,,,,0.0,61058.34,0.0,46472.18,46472.18,14586.16
+2020-07-06,PI,Tamboril do Piauí,5,0,139,5,2948,2210953,36.0,180,139,41,,,,,,,,,,,,,,,0.0,61058.34,0.0,47150.61,47150.61,13907.73
+2020-07-07,PI,Tamboril do Piauí,5,0,138,6,2948,2210953,36.0,180,138,42,,,,,,,,,,,,,,,0.0,61058.34,0.0,46811.4,46811.4,14246.95

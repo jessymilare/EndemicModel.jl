@@ -1,0 +1,5 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-03,PR,Nova Laranjeiras,1,0,6,1,11670,4117057,8.3,8,6,2,,,,,,,,,,,,,,,0.0,685.52,0.0,514.14,514.14,171.38
+2020-07-04,PR,Nova Laranjeiras,3,0,19,2,11670,4117057,8.3,25,19,6,,,,,,,,,,,,,,,0.0,2142.25,0.0,1628.11,1628.11,514.14
+2020-07-06,PR,Nova Laranjeiras,5,0,32,3,11670,4117057,8.3,42,32,10,,,,,,,,,,,,,,,0.0,3598.97,0.0,2742.07,2742.07,856.9
+2020-07-07,PR,Nova Laranjeiras,6,0,38,4,11670,4117057,8.3,50,38,12,,,,,,,,,,,,,,,0.0,4284.49,0.0,3256.21,3256.21,1028.28

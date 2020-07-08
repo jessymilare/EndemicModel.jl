@@ -1,0 +1,9 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-30,PI,Paquetá,1,0,27,1,3984,2207553,36.0,36,27,9,,,,,,,,,,,,,,,0.0,9036.14,0.0,6777.11,6777.11,2259.04
+2020-07-01,PI,Paquetá,1,0,27,2,3984,2207553,36.0,36,27,9,,,,,,,,,,,,,,,0.0,9036.14,0.0,6777.11,6777.11,2259.04
+2020-07-02,PI,Paquetá,1,0,27,3,3984,2207553,36.0,36,27,9,,,,,,,,,,,,,,,0.0,9036.14,0.0,6777.11,6777.11,2259.04
+2020-07-03,PI,Paquetá,1,0,27,4,3984,2207553,36.0,36,27,9,,,,,,,,,,,,,,,0.0,9036.14,0.0,6777.11,6777.11,2259.04
+2020-07-04,PI,Paquetá,1,0,27,5,3984,2207553,36.0,36,27,9,0.0,0.0,0.143,0.0,0.143,-0.1429,,,,,,,,,0.0,9036.14,0.0,6777.11,6777.11,2259.04
+2020-07-05,PI,Paquetá,1,0,27,6,3984,2207553,36.0,36,27,9,,,,,,,,,,,,,,,0.0,9036.14,0.0,6777.11,6777.11,2259.04
+2020-07-06,PI,Paquetá,1,0,28,7,3984,2207553,36.0,36,28,8,,,,,,,,,,,,,,,0.0,9036.14,0.0,7028.11,7028.11,2008.03
+2020-07-07,PI,Paquetá,1,0,28,8,3984,2207553,36.0,36,28,8,,,,,,,,,,,,,,,0.0,9036.14,0.0,7028.11,7028.11,2008.03

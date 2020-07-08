@@ -1,0 +1,10 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-29,BA,Itagimirim,3,0,19,1,6938,2915304,8.3,25,19,6,,,,,,,,,,,,,,,0.0,3603.34,0.0,2738.54,2738.54,864.8
+2020-06-30,BA,Itagimirim,5,0,31,2,6938,2915304,8.3,42,31,11,,,,,,,,,,,,,,,0.0,6053.62,0.0,4468.15,4468.15,1585.47
+2020-07-01,BA,Itagimirim,5,0,31,3,6938,2915304,8.3,42,31,11,,,,,,,,,,,,,,,0.0,6053.62,0.0,4468.15,4468.15,1585.47
+2020-07-02,BA,Itagimirim,5,0,31,4,6938,2915304,8.3,42,31,11,,,,,,,,,,,,,,,0.0,6053.62,0.0,4468.15,4468.15,1585.47
+2020-07-03,BA,Itagimirim,6,0,37,5,6938,2915304,8.3,50,37,13,0.857,7.14,5.57,0.0,5.57,1.57,,,,,,,,,0.0,7206.69,0.0,5332.95,5332.95,1873.74
+2020-07-04,BA,Itagimirim,7,0,43,6,6938,2915304,8.3,58,43,15,0.571,4.71,3.86,0.0,3.86,0.857,,,,,,,,,0.0,8359.76,0.0,6197.75,6197.75,2162.01
+2020-07-05,BA,Itagimirim,9,0,57,7,6938,2915304,8.3,75,57,18,,,,,,,,,,,,,,,0.0,10810.03,0.0,8215.62,8215.62,2594.41
+2020-07-06,BA,Itagimirim,9,0,58,8,6938,2915304,8.3,75,58,17,,,,,,,,,,,,,,,0.0,10810.03,0.0,8359.76,8359.76,2450.27
+2020-07-07,BA,Itagimirim,9,0,58,9,6938,2915304,8.3,75,58,17,,,,,,,,,,,,,,,0.0,10810.03,0.0,8359.76,8359.76,2450.27

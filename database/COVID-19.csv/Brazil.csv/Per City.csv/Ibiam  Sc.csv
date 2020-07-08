@@ -1,0 +1,5 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-04,SC,Ibiam,1,0,19,1,1977,4206751,25.0,25,19,6,,,,,,,,,,,,,,,0.0,12645.42,0.0,9610.52,9610.52,3034.9
+2020-07-05,SC,Ibiam,1,0,19,2,1977,4206751,25.0,25,19,6,,,,,,,,,,,,,,,0.0,12645.42,0.0,9610.52,9610.52,3034.9
+2020-07-06,SC,Ibiam,1,0,19,3,1977,4206751,25.0,25,19,6,,,,,,,,,,,,,,,0.0,12645.42,0.0,9610.52,9610.52,3034.9
+2020-07-07,SC,Ibiam,2,0,38,4,1977,4206751,25.0,50,38,12,,,,,,,,,,,,,,,0.0,25290.84,0.0,19221.04,19221.04,6069.8

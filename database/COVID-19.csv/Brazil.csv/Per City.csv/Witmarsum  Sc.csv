@@ -1,0 +1,7 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-02,SC,Witmarsum,1,0,19,1,4005,4219408,25.0,25,19,6,,,,,,,,,,,,,,,0.0,6242.2,0.0,4744.07,4744.07,1498.13
+2020-07-03,SC,Witmarsum,1,0,19,2,4005,4219408,25.0,25,19,6,,,,,,,,,,,,,,,0.0,6242.2,0.0,4744.07,4744.07,1498.13
+2020-07-04,SC,Witmarsum,2,0,37,3,4005,4219408,25.0,50,37,13,,,,,,,,,,,,,,,0.0,12484.39,0.0,9238.45,9238.45,3245.94
+2020-07-05,SC,Witmarsum,3,0,57,4,4005,4219408,25.0,75,57,18,,,,,,,,,,,,,,,0.0,18726.59,0.0,14232.21,14232.21,4494.38
+2020-07-06,SC,Witmarsum,3,0,58,5,4005,4219408,25.0,75,58,17,,,,,,,,,,,,,,,0.0,18726.59,0.0,14481.9,14481.9,4244.69
+2020-07-07,SC,Witmarsum,3,0,58,6,4005,4219408,25.0,75,58,17,,,,,,,,,,,,,,,0.0,18726.59,0.0,14481.9,14481.9,4244.69

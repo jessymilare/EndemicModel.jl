@@ -1,0 +1,12 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-27,MG,São Francisco de Sales,1,0,12,1,6300,3161304,16.5,16,12,4,,,,,,,,,,,,,,,0.0,2539.68,0.0,1904.76,1904.76,634.92
+2020-06-28,MG,São Francisco de Sales,2,0,24,2,6300,3161304,16.5,33,24,9,,,,,,,,,,,,,,,0.0,5238.1,0.0,3809.52,3809.52,1428.57
+2020-06-29,MG,São Francisco de Sales,2,0,25,3,6300,3161304,16.5,33,25,8,,,,,,,,,,,,,,,0.0,5238.1,0.0,3968.25,3968.25,1269.84
+2020-06-30,MG,São Francisco de Sales,2,0,25,4,6300,3161304,16.5,33,25,8,,,,,,,,,,,,,,,0.0,5238.1,0.0,3968.25,3968.25,1269.84
+2020-07-01,MG,São Francisco de Sales,2,0,25,5,6300,3161304,16.5,33,25,8,0.429,7.14,5.29,0.0,5.29,1.86,,,,,,,,,0.0,5238.1,0.0,3968.25,3968.25,1269.84
+2020-07-02,MG,São Francisco de Sales,2,0,25,6,6300,3161304,16.5,33,25,8,0.286,4.71,3.71,0.0,3.71,1.0,,,,,,,,,0.0,5238.1,0.0,3968.25,3968.25,1269.84
+2020-07-03,MG,São Francisco de Sales,4,0,49,7,6300,3161304,16.5,66,49,17,0.286,4.71,3.71,0.0,3.71,1.0,,,,,,,,,0.0,10476.19,0.0,7777.78,7777.78,2698.41
+2020-07-04,MG,São Francisco de Sales,4,0,49,8,6300,3161304,16.5,66,49,17,0.714,11.86,9.14,0.0,9.14,2.71,,,,,,,,,0.0,10476.19,0.0,7777.78,7777.78,2698.41
+2020-07-05,MG,São Francisco de Sales,4,0,50,9,6300,3161304,16.5,66,50,16,,,,,,,,,,,,,,,0.0,10476.19,0.0,7936.51,7936.51,2539.68
+2020-07-06,MG,São Francisco de Sales,4,0,51,10,6300,3161304,16.5,66,51,15,,,,,,,,,,,,,,,0.0,10476.19,0.0,8095.24,8095.24,2380.95
+2020-07-07,MG,São Francisco de Sales,7,0,89,11,6300,3161304,16.5,116,89,27,,,,,,,,,,,,,,,0.0,18412.7,0.0,14126.98,14126.98,4285.71

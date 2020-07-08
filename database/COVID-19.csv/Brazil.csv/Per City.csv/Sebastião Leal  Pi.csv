@@ -1,0 +1,6 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-03,PI,Sebastião Leal,18,0,483,1,4337,2210631,36.0,648,483,165,,,,,,,,,,,,,,,0.0,149412.04,0.0,111367.3,111367.3,38044.73
+2020-07-04,PI,Sebastião Leal,18,0,485,2,4337,2210631,36.0,648,485,163,,,,,,,,,,,,,,,0.0,149412.04,0.0,111828.45,111828.45,37583.58
+2020-07-05,PI,Sebastião Leal,18,0,492,3,4337,2210631,36.0,648,492,156,,,,,,,,,,,,,,,0.0,149412.04,0.0,113442.47,113442.47,35969.56
+2020-07-06,PI,Sebastião Leal,20,0,555,4,4337,2210631,36.0,720,555,165,,,,,,,,,,,,,,,0.0,166013.37,0.0,127968.64,127968.64,38044.73
+2020-07-07,PI,Sebastião Leal,20,0,554,5,4337,2210631,36.0,720,554,166,,,,,,,,,,,,,,,0.0,166013.37,0.0,127738.07,127738.07,38275.31

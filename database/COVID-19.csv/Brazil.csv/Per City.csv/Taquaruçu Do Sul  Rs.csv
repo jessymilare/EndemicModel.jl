@@ -1,0 +1,5 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-04,RS,Taquaruçu do Sul,3,0,19,1,3103,4321329,8.4,25,19,6,,,,,,,,,,,,,,,0.0,8056.72,0.0,6123.11,6123.11,1933.61
+2020-07-05,RS,Taquaruçu do Sul,3,0,19,2,3103,4321329,8.4,25,19,6,,,,,,,,,,,,,,,0.0,8056.72,0.0,6123.11,6123.11,1933.61
+2020-07-06,RS,Taquaruçu do Sul,3,0,19,3,3103,4321329,8.4,25,19,6,,,,,,,,,,,,,,,0.0,8056.72,0.0,6123.11,6123.11,1933.61
+2020-07-07,RS,Taquaruçu do Sul,3,0,19,4,3103,4321329,8.4,25,19,6,,,,,,,,,,,,,,,0.0,8056.72,0.0,6123.11,6123.11,1933.61

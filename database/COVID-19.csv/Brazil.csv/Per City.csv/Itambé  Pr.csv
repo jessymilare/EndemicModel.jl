@@ -1,0 +1,8 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-30,PR,Itambé,3,0,19,1,6169,4111100,8.3,25,19,6,,,,,,,,,,,,,,,0.0,4052.52,0.0,3079.92,3079.92,972.6
+2020-07-01,PR,Itambé,5,0,31,2,6169,4111100,8.3,42,31,11,,,,,,,,,,,,,,,0.0,6808.23,0.0,5025.13,5025.13,1783.11
+2020-07-02,PR,Itambé,16,0,99,3,6169,4111100,8.3,133,99,34,,,,,,,,,,,,,,,0.0,21559.41,0.0,16047.98,16047.98,5511.43
+2020-07-03,PR,Itambé,16,0,99,4,6169,4111100,8.3,133,99,34,,,,,,,,,,,,,,,0.0,21559.41,0.0,16047.98,16047.98,5511.43
+2020-07-04,PR,Itambé,16,0,100,5,6169,4111100,8.3,133,100,33,,,,,,,,,,,,,,,0.0,21559.41,0.0,16210.08,16210.08,5349.33
+2020-07-06,PR,Itambé,19,0,122,6,6169,4111100,8.3,158,122,36,,,,,,,,,,,,,,,0.0,25611.93,0.0,19776.3,19776.3,5835.63
+2020-07-07,PR,Itambé,28,0,179,7,6169,4111100,8.3,232,179,53,,,,,,,,,,,,,,,0.0,37607.39,0.0,29016.05,29016.05,8591.34

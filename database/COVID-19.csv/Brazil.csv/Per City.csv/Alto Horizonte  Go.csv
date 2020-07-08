@@ -1,0 +1,10 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-29,GO,Alto Horizonte,1,0,6,1,6478,5200555,8.3,8,6,2,,,,,,,,,,,,,,,0.0,1234.95,0.0,926.21,926.21,308.74
+2020-06-30,GO,Alto Horizonte,1,0,6,2,6478,5200555,8.3,8,6,2,,,,,,,,,,,,,,,0.0,1234.95,0.0,926.21,926.21,308.74
+2020-07-01,GO,Alto Horizonte,2,0,13,3,6478,5200555,8.3,17,13,4,,,,,,,,,,,,,,,0.0,2624.27,0.0,2006.79,2006.79,617.47
+2020-07-02,GO,Alto Horizonte,2,0,13,4,6478,5200555,8.3,17,13,4,,,,,,,,,,,,,,,0.0,2624.27,0.0,2006.79,2006.79,617.47
+2020-07-03,GO,Alto Horizonte,24,0,148,5,6478,5200555,8.3,199,148,51,3.86,32.0,24.71,0.0,24.71,7.29,,,,,,,,,0.0,30719.36,0.0,22846.56,22846.56,7872.8
+2020-07-04,GO,Alto Horizonte,26,0,162,6,6478,5200555,8.3,216,162,54,3.86,32.0,24.71,0.0,24.71,7.29,,,,,,,,,0.0,33343.62,0.0,25007.72,25007.72,8335.91
+2020-07-05,GO,Alto Horizonte,26,0,164,7,6478,5200555,8.3,216,164,52,,,,,,,,,,,,,,,0.0,33343.62,0.0,25316.46,25316.46,8027.17
+2020-07-06,GO,Alto Horizonte,28,0,179,8,6478,5200555,8.3,232,179,53,,,,,,,,,,,,,,,0.0,35813.52,0.0,27631.99,27631.99,8181.54
+2020-07-07,GO,Alto Horizonte,28,0,179,9,6478,5200555,8.3,232,179,53,,,,,,,,,,,,,,,0.0,35813.52,0.0,27631.99,27631.99,8181.54

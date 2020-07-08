@@ -1,0 +1,6 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-03,SP,Canitar,1,0,7,1,5268,3510153,9.7,10,7,3,,,,,,,,,,,,,,,0.0,1898.25,0.0,1328.78,1328.78,569.48
+2020-07-04,SP,Canitar,1,0,7,2,5268,3510153,9.7,10,7,3,,,,,,,,,,,,,,,0.0,1898.25,0.0,1328.78,1328.78,569.48
+2020-07-05,SP,Canitar,1,0,8,3,5268,3510153,9.7,10,8,2,,,,,,,,,,,,,,,0.0,1898.25,0.0,1518.6,1518.6,379.65
+2020-07-06,SP,Canitar,2,0,15,4,5268,3510153,9.7,19,15,4,,,,,,,,,,,,,,,0.0,3606.68,0.0,2847.38,2847.38,759.3
+2020-07-07,SP,Canitar,3,0,22,5,5268,3510153,9.7,29,22,7,,,,,,,,,,,,,,,0.0,5504.94,0.0,4176.16,4176.16,1328.78

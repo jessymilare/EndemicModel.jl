@@ -1,0 +1,10 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-28,PR,Boa Esperança,1,0,6,1,4146,4103008,8.3,8,6,2,,,,,,,,,,,,,,,0.0,1929.57,0.0,1447.18,1447.18,482.39
+2020-06-29,PR,Boa Esperança,7,0,43,2,4146,4103008,8.3,58,43,15,,,,,,,,,,,,,,,0.0,13989.39,0.0,10371.44,10371.44,3617.95
+2020-06-30,PR,Boa Esperança,7,0,43,3,4146,4103008,8.3,58,43,15,,,,,,,,,,,,,,,0.0,13989.39,0.0,10371.44,10371.44,3617.95
+2020-07-01,PR,Boa Esperança,7,0,43,4,4146,4103008,8.3,58,43,15,,,,,,,,,,,,,,,0.0,13989.39,0.0,10371.44,10371.44,3617.95
+2020-07-02,PR,Boa Esperança,8,0,49,5,4146,4103008,8.3,66,49,17,,,,,,,,,,,,,,,0.0,15918.96,0.0,11818.62,11818.62,4100.34
+2020-07-03,PR,Boa Esperança,9,0,56,6,4146,4103008,8.3,75,56,19,,,,,,,,,,,,,,,0.0,18089.73,0.0,13506.99,13506.99,4582.73
+2020-07-04,PR,Boa Esperança,11,0,68,7,4146,4103008,8.3,91,68,23,,,,,,,,,,,,,,,0.0,21948.87,0.0,16401.35,16401.35,5547.52
+2020-07-06,PR,Boa Esperança,12,0,77,8,4146,4103008,8.3,100,77,23,,,,,,,,,,,,,,,0.0,24119.63,0.0,18572.12,18572.12,5547.52
+2020-07-07,PR,Boa Esperança,12,0,77,9,4146,4103008,8.3,100,77,23,,,,,,,,,,,,,,,0.0,24119.63,0.0,18572.12,18572.12,5547.52

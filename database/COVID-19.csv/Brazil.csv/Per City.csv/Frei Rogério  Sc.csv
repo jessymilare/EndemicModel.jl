@@ -1,0 +1,5 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-04,SC,Frei Rogério,1,0,19,1,2043,4205555,25.0,25,19,6,,,,,,,,,,,,,,,0.0,12236.91,0.0,9300.05,9300.05,2936.86
+2020-07-05,SC,Frei Rogério,1,0,19,2,2043,4205555,25.0,25,19,6,,,,,,,,,,,,,,,0.0,12236.91,0.0,9300.05,9300.05,2936.86
+2020-07-06,SC,Frei Rogério,1,0,19,3,2043,4205555,25.0,25,19,6,,,,,,,,,,,,,,,0.0,12236.91,0.0,9300.05,9300.05,2936.86
+2020-07-07,SC,Frei Rogério,2,0,38,4,2043,4205555,25.0,50,38,12,,,,,,,,,,,,,,,0.0,24473.81,0.0,18600.1,18600.1,5873.72

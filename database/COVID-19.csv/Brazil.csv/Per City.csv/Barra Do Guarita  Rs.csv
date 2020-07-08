@@ -1,0 +1,7 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-02,RS,Barra do Guarita,2,0,13,1,3280,4301859,8.4,17,13,4,,,,,,,,,,,,,,,0.0,5182.93,0.0,3963.41,3963.41,1219.51
+2020-07-03,RS,Barra do Guarita,9,0,57,2,3280,4301859,8.4,76,57,19,,,,,,,,,,,,,,,0.0,23170.73,0.0,17378.05,17378.05,5792.68
+2020-07-04,RS,Barra do Guarita,9,0,57,3,3280,4301859,8.4,76,57,19,,,,,,,,,,,,,,,0.0,23170.73,0.0,17378.05,17378.05,5792.68
+2020-07-05,RS,Barra do Guarita,9,0,58,4,3280,4301859,8.4,76,58,18,,,,,,,,,,,,,,,0.0,23170.73,0.0,17682.93,17682.93,5487.8
+2020-07-06,RS,Barra do Guarita,9,0,59,5,3280,4301859,8.4,76,59,17,,,,,,,,,,,,,,,0.0,23170.73,0.0,17987.8,17987.8,5182.93
+2020-07-07,RS,Barra do Guarita,9,0,58,6,3280,4301859,8.4,76,58,18,,,,,,,,,,,,,,,0.0,23170.73,0.0,17682.93,17682.93,5487.8

@@ -1,0 +1,7 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-02,SP,Orindiúva,1,0,7,1,7137,3534203,9.7,10,7,3,,,,,,,,,,,,,,,0.0,1401.15,0.0,980.8,980.8,420.34
+2020-07-03,SP,Orindiúva,3,0,22,2,7137,3534203,9.7,29,22,7,,,,,,,,,,,,,,,0.0,4063.33,0.0,3082.53,3082.53,980.8
+2020-07-04,SP,Orindiúva,3,0,22,3,7137,3534203,9.7,29,22,7,,,,,,,,,,,,,,,0.0,4063.33,0.0,3082.53,3082.53,980.8
+2020-07-05,SP,Orindiúva,5,0,36,4,7137,3534203,9.7,48,36,12,,,,,,,,,,,,,,,0.0,6725.51,0.0,5044.14,5044.14,1681.38
+2020-07-06,SP,Orindiúva,8,0,60,5,7137,3534203,9.7,78,60,18,,,,,,,,,,,,,,,0.0,10928.96,0.0,8406.89,8406.89,2522.07
+2020-07-07,SP,Orindiúva,8,0,60,6,7137,3534203,9.7,78,60,18,,,,,,,,,,,,,,,0.0,10928.96,0.0,8406.89,8406.89,2522.07

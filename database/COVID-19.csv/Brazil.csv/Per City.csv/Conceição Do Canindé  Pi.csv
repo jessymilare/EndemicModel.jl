@@ -1,0 +1,7 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-02,PI,Conceição do Canindé,1,0,27,1,4851,2202802,36.0,36,27,9,,,,,,,,,,,,,,,0.0,7421.15,0.0,5565.86,5565.86,1855.29
+2020-07-03,PI,Conceição do Canindé,1,0,27,2,4851,2202802,36.0,36,27,9,,,,,,,,,,,,,,,0.0,7421.15,0.0,5565.86,5565.86,1855.29
+2020-07-04,PI,Conceição do Canindé,2,0,54,3,4851,2202802,36.0,72,54,18,,,,,,,,,,,,,,,0.0,14842.3,0.0,11131.73,11131.73,3710.58
+2020-07-05,PI,Conceição do Canindé,2,0,55,4,4851,2202802,36.0,72,55,17,,,,,,,,,,,,,,,0.0,14842.3,0.0,11337.87,11337.87,3504.43
+2020-07-06,PI,Conceição do Canindé,2,0,55,5,4851,2202802,36.0,72,55,17,,,,,,,,,,,,,,,0.0,14842.3,0.0,11337.87,11337.87,3504.43
+2020-07-07,PI,Conceição do Canindé,2,0,55,6,4851,2202802,36.0,72,55,17,,,,,,,,,,,,,,,0.0,14842.3,0.0,11337.87,11337.87,3504.43

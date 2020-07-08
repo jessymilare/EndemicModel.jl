@@ -1,0 +1,10 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-29,RS,São Pedro das Missões,1,0,6,1,2029,4319364,8.4,8,6,2,,,,,,,,,,,,,,,0.0,3942.83,0.0,2957.12,2957.12,985.71
+2020-06-30,RS,São Pedro das Missões,4,0,25,2,2029,4319364,8.4,34,25,9,,,,,,,,,,,,,,,0.0,16757.02,0.0,12321.34,12321.34,4435.68
+2020-07-01,RS,São Pedro das Missões,4,0,25,3,2029,4319364,8.4,34,25,9,,,,,,,,,,,,,,,0.0,16757.02,0.0,12321.34,12321.34,4435.68
+2020-07-02,RS,São Pedro das Missões,4,0,25,4,2029,4319364,8.4,34,25,9,,,,,,,,,,,,,,,0.0,16757.02,0.0,12321.34,12321.34,4435.68
+2020-07-03,RS,São Pedro das Missões,4,0,25,5,2029,4319364,8.4,34,25,9,0.429,3.71,2.86,0.0,2.86,0.857,,,,,,,,,0.0,16757.02,0.0,12321.34,12321.34,4435.68
+2020-07-04,RS,São Pedro das Missões,4,0,25,6,2029,4319364,8.4,34,25,9,0.0,0.0,0.143,0.0,0.143,-0.1429,,,,,,,,,0.0,16757.02,0.0,12321.34,12321.34,4435.68
+2020-07-05,RS,São Pedro das Missões,4,0,26,7,2029,4319364,8.4,34,26,8,,,,,,,,,,,,,,,0.0,16757.02,0.0,12814.19,12814.19,3942.83
+2020-07-06,RS,São Pedro das Missões,4,0,26,8,2029,4319364,8.4,34,26,8,,,,,,,,,,,,,,,0.0,16757.02,0.0,12814.19,12814.19,3942.83
+2020-07-07,RS,São Pedro das Missões,4,0,26,9,2029,4319364,8.4,34,26,8,,,,,,,,,,,,,,,0.0,16757.02,0.0,12814.19,12814.19,3942.83

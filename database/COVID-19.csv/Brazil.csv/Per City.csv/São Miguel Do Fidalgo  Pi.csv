@@ -1,0 +1,9 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-30,PI,São Miguel do Fidalgo,1,0,27,1,3069,2210391,36.0,36,27,9,,,,,,,,,,,,,,,0.0,11730.21,0.0,8797.65,8797.65,2932.55
+2020-07-01,PI,São Miguel do Fidalgo,1,0,27,2,3069,2210391,36.0,36,27,9,,,,,,,,,,,,,,,0.0,11730.21,0.0,8797.65,8797.65,2932.55
+2020-07-02,PI,São Miguel do Fidalgo,1,0,27,3,3069,2210391,36.0,36,27,9,,,,,,,,,,,,,,,0.0,11730.21,0.0,8797.65,8797.65,2932.55
+2020-07-03,PI,São Miguel do Fidalgo,1,0,27,4,3069,2210391,36.0,36,27,9,,,,,,,,,,,,,,,0.0,11730.21,0.0,8797.65,8797.65,2932.55
+2020-07-04,PI,São Miguel do Fidalgo,1,0,27,5,3069,2210391,36.0,36,27,9,0.0,0.0,0.143,0.0,0.143,-0.1429,,,,,,,,,0.0,11730.21,0.0,8797.65,8797.65,2932.55
+2020-07-05,PI,São Miguel do Fidalgo,1,0,27,6,3069,2210391,36.0,36,27,9,,,,,,,,,,,,,,,0.0,11730.21,0.0,8797.65,8797.65,2932.55
+2020-07-06,PI,São Miguel do Fidalgo,1,0,28,7,3069,2210391,36.0,36,28,8,,,,,,,,,,,,,,,0.0,11730.21,0.0,9123.49,9123.49,2606.71
+2020-07-07,PI,São Miguel do Fidalgo,1,0,28,8,3069,2210391,36.0,36,28,8,,,,,,,,,,,,,,,0.0,11730.21,0.0,9123.49,9123.49,2606.71

@@ -1,0 +1,12 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-27,MG,Santo Antônio do Grama,0,0,0,1,3950,3160108,16.5,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-06-28,MG,Santo Antônio do Grama,2,0,24,2,3950,3160108,16.5,33,24,9,,,,,,,,,,,,,,,0.0,8354.43,0.0,6075.95,6075.95,2278.48
+2020-06-29,MG,Santo Antônio do Grama,2,0,25,3,3950,3160108,16.5,33,25,8,,,,,,,,,,,,,,,0.0,8354.43,0.0,6329.11,6329.11,2025.32
+2020-06-30,MG,Santo Antônio do Grama,2,0,25,4,3950,3160108,16.5,33,25,8,,,,,,,,,,,,,,,0.0,8354.43,0.0,6329.11,6329.11,2025.32
+2020-07-01,MG,Santo Antônio do Grama,2,0,25,5,3950,3160108,16.5,33,25,8,0.429,7.14,5.29,0.0,5.29,1.86,,,,,,,,,0.0,8354.43,0.0,6329.11,6329.11,2025.32
+2020-07-02,MG,Santo Antônio do Grama,2,0,25,6,3950,3160108,16.5,33,25,8,0.143,2.43,2.0,0.0,2.0,0.429,,,,,,,,,0.0,8354.43,0.0,6329.11,6329.11,2025.32
+2020-07-03,MG,Santo Antônio do Grama,3,0,37,7,3950,3160108,16.5,50,37,13,0.143,2.43,2.0,0.0,2.0,0.429,,,,,,,,,0.0,12658.23,0.0,9367.09,9367.09,3291.14
+2020-07-04,MG,Santo Antônio do Grama,3,0,37,8,3950,3160108,16.5,50,37,13,0.143,2.43,1.86,0.0,1.86,0.571,,,,,,,,,0.0,12658.23,0.0,9367.09,9367.09,3291.14
+2020-07-05,MG,Santo Antônio do Grama,3,0,38,9,3950,3160108,16.5,50,38,12,,,,,,,,,,,,,,,0.0,12658.23,0.0,9620.25,9620.25,3037.97
+2020-07-06,MG,Santo Antônio do Grama,3,0,39,10,3950,3160108,16.5,50,39,11,,,,,,,,,,,,,,,0.0,12658.23,0.0,9873.42,9873.42,2784.81
+2020-07-07,MG,Santo Antônio do Grama,3,0,38,11,3950,3160108,16.5,50,38,12,,,,,,,,,,,,,,,0.0,12658.23,0.0,9620.25,9620.25,3037.97

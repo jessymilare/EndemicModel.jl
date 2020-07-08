@@ -1,0 +1,10 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-25,MS,Aral Moreira,5,0,30,1,12270,5001243,8.3,42,30,12,,,,,,,,,,,,,,,0.0,3422.98,0.0,2444.99,2444.99,978.0
+2020-06-26,MS,Aral Moreira,9,0,54,2,12270,5001243,8.3,75,54,21,,,,,,,,,,,,,,,0.0,6112.47,0.0,4400.98,4400.98,1711.49
+2020-06-28,MS,Aral Moreira,9,0,55,3,12270,5001243,8.3,75,55,20,,,,,,,,,,,,,,,0.0,6112.47,0.0,4482.48,4482.48,1629.99
+2020-06-29,MS,Aral Moreira,9,0,56,4,12270,5001243,8.3,75,56,19,,,,,,,,,,,,,,,0.0,6112.47,0.0,4563.98,4563.98,1548.49
+2020-06-30,MS,Aral Moreira,9,0,56,5,12270,5001243,8.3,75,56,19,,,,,,,,,,,,,,,0.0,6112.47,0.0,4563.98,4563.98,1548.49
+2020-07-01,MS,Aral Moreira,9,0,56,6,12270,5001243,8.3,75,56,19,,,,,,,,,,,,,,,0.0,6112.47,0.0,4563.98,4563.98,1548.49
+2020-07-02,MS,Aral Moreira,9,0,56,7,12270,5001243,8.3,75,56,19,,,,,,,,,,,,,,,0.0,6112.47,0.0,4563.98,4563.98,1548.49
+2020-07-04,MS,Aral Moreira,15,0,94,8,12270,5001243,8.3,125,94,31,,,,,,,,,,,,,,,0.0,10187.45,0.0,7660.96,7660.96,2526.49
+2020-07-05,MS,Aral Moreira,15,0,95,9,12270,5001243,8.3,125,95,30,,,,,,,,,,,,,,,0.0,10187.45,0.0,7742.46,7742.46,2444.99

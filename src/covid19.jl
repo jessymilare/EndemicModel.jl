@@ -238,6 +238,7 @@ end
 @defcolumn active(infected, closed) infected .- closed
 
 function _column_diff(column, date, ndays)
+    @argcheck ndays >= 1
     n = length(date)
     result = Vector{OptFloat}(missing, n)
     half2 = floor(Int, ndays / 2)
@@ -248,8 +249,7 @@ function _column_diff(column, date, ndays)
         if ( # consistency check
             date[i-half1] + Day(ndays) == date[i] + Day(half2) == date[i+half2] &&
             !ismissing(column[i-half1]) &&
-            isfinite(column[i-half1]) &&
-            column[i-half1] > 0
+            isfinite(column[i-half1])
         )
             result[i] = (column[i+half2] - column[i-half1]) / ndays
         end
@@ -315,9 +315,6 @@ const COVID_19_μ = 0.034
 
 @defcolumn μ_closed(deaths, closed) begin
     replace(1.0 .* deaths ./ closed, NaN => missing)
-end
-@defcolumn μ_infected(deaths, infected) begin
-    replace(1.0 .* deaths ./ infected, NaN => missing)
 end
 
 @defcolumn infected_per_1mi(infected, estimated_population) begin
@@ -447,7 +444,6 @@ function covid19_database(; kwargs...)
         table_per_date2,
         # More columns
         column_μ_closed,
-        column_μ_infected,
         column_infected_per_1mi,
         column_deaths_per_1mi,
         column_recovered_per_1mi,
@@ -464,6 +460,7 @@ function covid19(;
     compute_model::Bool = true,
     pretty::Bool = true,
     do_export::Bool = true,
+    export_trials = 3,
     kwargs...,
 )
     db = database
@@ -532,15 +529,18 @@ function covid19(;
         @info "SEIR model for COVID-19 database computed."
     end
 
-    try
-        if do_export
-            @info "Exporting..."
-            paths = export_data(db; pretty = pretty, kwargs...)
-            @info "COVID-19 database exported." paths
+    if do_export
+        for trial ∈ 1:export_trials
+            try
+                @info "Exporting..."
+                paths = export_data(db; pretty = pretty, kwargs...)
+                break
+                @info "COVID-19 database exported." paths
+            catch exception
+                @warn "Failed exporting data." exception trial = "$trial of $export_trials"
+                sleep(1)
+            end
         end
-    catch exception
-        @warn "Failed exporting data." exception
     end
-
     db
 end

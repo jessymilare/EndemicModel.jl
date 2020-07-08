@@ -1,0 +1,9 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-30,GO,Campos Verdes,1,0,6,1,2162,5204953,8.3,8,6,2,,,,,,,,,,,,,,,0.0,3700.28,0.0,2775.21,2775.21,925.07
+2020-07-01,GO,Campos Verdes,2,0,13,2,2162,5204953,8.3,17,13,4,,,,,,,,,,,,,,,0.0,7863.09,0.0,6012.95,6012.95,1850.14
+2020-07-02,GO,Campos Verdes,2,0,13,3,2162,5204953,8.3,17,13,4,,,,,,,,,,,,,,,0.0,7863.09,0.0,6012.95,6012.95,1850.14
+2020-07-03,GO,Campos Verdes,2,0,13,4,2162,5204953,8.3,17,13,4,,,,,,,,,,,,,,,0.0,7863.09,0.0,6012.95,6012.95,1850.14
+2020-07-04,GO,Campos Verdes,2,0,13,5,2162,5204953,8.3,17,13,4,0.571,4.86,3.71,0.0,3.71,1.14,,,,,,,,,0.0,7863.09,0.0,6012.95,6012.95,1850.14
+2020-07-05,GO,Campos Verdes,2,0,13,6,2162,5204953,8.3,17,13,4,,,,,,,,,,,,,,,0.0,7863.09,0.0,6012.95,6012.95,1850.14
+2020-07-06,GO,Campos Verdes,5,0,32,7,2162,5204953,8.3,42,32,10,,,,,,,,,,,,,,,0.0,19426.46,0.0,14801.11,14801.11,4625.35
+2020-07-07,GO,Campos Verdes,5,0,32,8,2162,5204953,8.3,42,32,10,,,,,,,,,,,,,,,0.0,19426.46,0.0,14801.11,14801.11,4625.35

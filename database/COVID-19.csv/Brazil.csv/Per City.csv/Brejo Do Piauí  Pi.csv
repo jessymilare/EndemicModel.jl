@@ -1,0 +1,5 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-04,PI,Brejo do Piauí,1,0,27,1,3914,2201988,36.0,36,27,9,,,,,,,,,,,,,,,0.0,9197.75,0.0,6898.31,6898.31,2299.44
+2020-07-05,PI,Brejo do Piauí,1,0,27,2,3914,2201988,36.0,36,27,9,,,,,,,,,,,,,,,0.0,9197.75,0.0,6898.31,6898.31,2299.44
+2020-07-06,PI,Brejo do Piauí,3,0,83,3,3914,2201988,36.0,108,83,25,,,,,,,,,,,,,,,0.0,27593.25,0.0,21205.93,21205.93,6387.33
+2020-07-07,PI,Brejo do Piauí,3,0,83,4,3914,2201988,36.0,108,83,25,,,,,,,,,,,,,,,0.0,27593.25,0.0,21205.93,21205.93,6387.33
