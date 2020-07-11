@@ -1,5 +1,4 @@
 Date,Infected,Exposed,Active,Recovered,Deaths,Diff Exposed,Diff Active,Diff Recovered,Diff Deaths
-2020-06-25,855,0,12,791,52,0,0,1,0
 2020-06-26,855,0,11,792,52,0,0,1,0
 2020-06-27,855,0,10,793,52,0,0,1,0
 2020-06-28,855,0,9,794,52,0,0,1,0
@@ -360,3 +359,4 @@ Date,Infected,Exposed,Active,Recovered,Deaths,Diff Exposed,Diff Active,Diff Reco
 2021-06-18,855,0,0,803,52,0,0,0,0
 2021-06-19,855,0,0,803,52,0,0,0,0
 2021-06-20,855,0,0,803,52,0,0,0,0
+2021-06-21,855,0,0,803,52,0,0,0,0
