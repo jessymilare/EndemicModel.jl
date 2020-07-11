@@ -1,0 +1,14 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-06-27,MG,Morada Nova de Minas,0,0,0,1,8952,3143500,16.5,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-06-28,MG,Morada Nova de Minas,0,0,0,2,8952,3143500,16.5,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-06-29,MG,Morada Nova de Minas,0,0,0,3,8952,3143500,16.5,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-06-30,MG,Morada Nova de Minas,0,0,0,4,8952,3143500,16.5,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-07-01,MG,Morada Nova de Minas,0,0,0,5,8952,3143500,16.5,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-07-02,MG,Morada Nova de Minas,0,0,0,6,8952,3143500,16.5,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-07-03,MG,Morada Nova de Minas,0,0,0,7,8952,3143500,16.5,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-07-04,MG,Morada Nova de Minas,0,0,0,8,8952,3143500,16.5,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,7.09,5.46,0.0,5.46,1.63,,,,,0.0,0.0,0.0,0.0,0.0
+2020-07-05,MG,Morada Nova de Minas,0,0,0,9,8952,3143500,16.5,0,0,0,2.14,35.43,27.29,0.0,27.29,8.14,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-07-06,MG,Morada Nova de Minas,0,0,0,10,8952,3143500,16.5,0,0,0,2.14,35.43,27.29,0.0,27.29,8.14,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-07-07,MG,Morada Nova de Minas,0,0,0,11,8952,3143500,16.5,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-07-08,MG,Morada Nova de Minas,15,0,191,12,8952,3143500,16.5,248,191,57,,,,,,,,,,,,,,,0.0,27703.31,0.0,21336.01,21336.01,6367.29
+2020-07-09,MG,Morada Nova de Minas,15,0,191,13,8952,3143500,16.5,248,191,57,,,,,,,,,,,,,,,0.0,27703.31,0.0,21336.01,21336.01,6367.29

@@ -293,6 +293,13 @@ function maybe_load_language(; force::Bool = false)
             ENV["LANGUAGE"] = "en"
         end
     end
+    if force || textdomain() != "endemicmodel"
+        bindtextdomain(
+            "endemicmodel",
+            realpath(joinpath(dirname(Base.pathof(EndemicModel)), "..", "languages")),
+        )
+        textdomain("endemicmodel")
+    end
 end
 
 function _win_get_lang(line)

@@ -34,54 +34,64 @@ plot(args...; kwargs...) = Plots.plot(args...; kwargs...)
 
 function plot(
     df::DataFrame;
-    columns = option(:plot_columns),
-    plot_begin::Union{Integer,Date,Period} = 1,
-    plot_end::Union{Integer,Date,Period} = nrow(df),
+    keycolumn = :date,
+    columns = intersect(string.(option(:plot_columns)), names(df)),
+    plot_begin = 1,
+    plot_end = nrow(df),
     labels = nothing,
     title = _get_plot_title(df),
     date_format = option(:plot_date_format),
     new_window::Bool = true,
     ylabel = _"People",
     yscale = nothing,
-    legend = length(columns) == 1 ? false : :topleft,
+    legend = :topleft,
     left_margin = 1mm,
+    seriestype = :line,
+    #fillcolors = :red,
     kwargs...,
 )
     maybe_load_language()
 
-    if plot_begin isa Date
-        ini = findfirst(isequal(plot_begin), df.date)
-        if isnothing(ini)
-            throw(ArgumentError("plot_begin not found in DataFrame: $(plot_begin)"))
+    if plot_begin isa Integer
+        if plot_begin <= 0
+            ini = max(1, nrow(df) + plot_begin)
+        else
+            ini = min(plot_begin, nrow(df))
         end
     elseif plot_begin isa Period
         ini = Dates.days(plot_begin) + 1
-    elseif plot_begin <= 0
-        ini = max(1, nrow(df) + plot_begin)
     else
-        ini = min(plot_begin, nrow(df))
+        column = plot_begin isa Date ? df.date : df[!, keycolumn]
+        ini = findfirst(isequal(plot_begin), column)
+        if isnothing(ini)
+            throw(ArgumentError("plot_begin not found in DataFrame: $(plot_begin)"))
+        end
     end
 
-    if plot_end isa Date
-        iend = findfirst(isequal(plot_end), df.date)
-        if isnothing(ini)
-            throw(ArgumentError("plot_end not found in DataFrame: $(plot_end)"))
+    if plot_end isa Integer
+        if plot_end <= 0
+            iend = max(1, nrow(df) + plot_end)
+        else
+            iend = min(plot_end, nrow(df))
         end
     elseif plot_end isa Period
         iend = nrow(df) - Dates.days(plot_end)
-    elseif plot_end <= 0
-        iend = max(1, nrow(df) + plot_end)
     else
-        iend = min(plot_end, nrow(df))
+        column = plot_end isa Date ? df.date : df[!, keycolumn]
+        iend = findfirst(isequal(plot_end), column)
+        if isnothing(ini)
+            throw(ArgumentError("plot_end not found in DataFrame: $(plot_end)"))
+        end
     end
     @argcheck ini <= iend
 
     if isa(columns, String) || isa(columns, Symbol)
         columns = [columns]
+        #fillcolors = [fillcolors]
     end
 
     df = df[ini:iend, :]
-    columns = intersect(string.(columns), names(df))
+    columns = string.(columns)
     if isnothing(labels)
         labels = gettext.(string.(prettify.(Symbol.(columns))))
     end
@@ -99,7 +109,12 @@ function plot(
         !isempty(scalestr) && (ylabel *= " ($(scalestr))")
     end
 
-    X = Dates.format.(df.date, date_format)
+    if keycolumn == :date
+        X = Dates.format.(df.date, date_format)
+    else
+        X = string.(df[!, keycolumn])
+        seriestype == :pie && (labels = [X])
+    end
 
     left_margin isa Real && (left_margin *= mm)
 
@@ -108,16 +123,26 @@ function plot(
         df[!, columns[1]] ./ yscale,
         xrotation = 45,
         xticks = 15,
-        label = labels[1],
+        #label = labels[1],
         ylabel = ylabel,
         title = title,
         legend = legend,
         left_margin = left_margin,
+        seriestype = seriestype,
+        #fillcolor = fillcolors[1],
     )
+    #for (yn, label, fillcolor) ∈ zip(columns[2:end], labels[2:end], fillcolors[2:end])
     for (yn, label) ∈ zip(columns[2:end], labels[2:end])
-        Plots.plot!(win, X, df[!, yn] ./ yscale; label = label)
+        Plots.plot!(
+            win,
+            X,
+            df[!, yn] ./ yscale;
+            label = label,
+            seriestype = seriestype,
+            #fillcolor = fillcolor,
+        )
     end
-    new_window && gui(win)
+    new_window && Plots.gui(win)
     win
 end
 

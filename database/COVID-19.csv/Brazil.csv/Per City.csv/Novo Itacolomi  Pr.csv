@@ -1,4 +1,6 @@
 Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-07-04,PR,Novo Itacolomi,1,0,6,1,2872,4117297,8.3,8,6,2,,,,,,,,,,,,,,,0.0,2785.52,0.0,2089.14,2089.14,696.38
-2020-07-06,PR,Novo Itacolomi,2,0,13,2,2872,4117297,8.3,17,13,4,,,,,,,,,,,,,,,0.0,5919.22,0.0,4526.46,4526.46,1392.76
-2020-07-07,PR,Novo Itacolomi,2,0,13,3,2872,4117297,8.3,17,13,4,,,,,,,,,,,,,,,0.0,5919.22,0.0,4526.46,4526.46,1392.76
+2020-07-05,PR,Novo Itacolomi,1,0,6,2,2872,4117297,8.3,8,6,2,,,,,,,,,,,,,,,0.0,2785.52,0.0,2089.14,2089.14,696.38
+2020-07-06,PR,Novo Itacolomi,2,0,13,3,2872,4117297,8.3,17,13,4,,,,,,,,,,,,,,,0.0,5919.22,0.0,4526.46,4526.46,1392.76
+2020-07-07,PR,Novo Itacolomi,2,0,13,4,2872,4117297,8.3,17,13,4,,,,,,,,,,,,,,,0.0,5919.22,0.0,4526.46,4526.46,1392.76
+2020-07-08,PR,Novo Itacolomi,2,0,13,5,2872,4117297,8.3,17,13,4,,,,,,,,,,,,,,,0.0,5919.22,0.0,4526.46,4526.46,1392.76

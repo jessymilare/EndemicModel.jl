@@ -1,4 +1,6 @@
 Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-07-04,PR,Nova Santa Rosa,2,0,13,1,8301,4117222,8.3,17,13,4,,,,,,,,,,,,,,,0.0,2047.95,0.0,1566.08,1566.08,481.87
-2020-07-06,PR,Nova Santa Rosa,2,0,13,2,8301,4117222,8.3,17,13,4,,,,,,,,,,,,,,,0.0,2047.95,0.0,1566.08,1566.08,481.87
-2020-07-07,PR,Nova Santa Rosa,2,0,13,3,8301,4117222,8.3,17,13,4,,,,,,,,,,,,,,,0.0,2047.95,0.0,1566.08,1566.08,481.87
+2020-07-05,PR,Nova Santa Rosa,2,0,13,2,8301,4117222,8.3,17,13,4,,,,,,,,,,,,,,,0.0,2047.95,0.0,1566.08,1566.08,481.87
+2020-07-06,PR,Nova Santa Rosa,2,0,13,3,8301,4117222,8.3,17,13,4,,,,,,,,,,,,,,,0.0,2047.95,0.0,1566.08,1566.08,481.87
+2020-07-07,PR,Nova Santa Rosa,2,0,13,4,8301,4117222,8.3,17,13,4,,,,,,,,,,,,,,,0.0,2047.95,0.0,1566.08,1566.08,481.87
+2020-07-08,PR,Nova Santa Rosa,2,0,13,5,8301,4117222,8.3,17,13,4,,,,,,,,,,,,,,,0.0,2047.95,0.0,1566.08,1566.08,481.87

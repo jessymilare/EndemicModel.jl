@@ -1,3 +1,5 @@
 Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-07-06,GO,Uirapuru,1,0,6,1,2883,5221577,8.3,8,6,2,,,,,,,,,,,,,,,0.0,2774.89,0.0,2081.17,2081.17,693.72
 2020-07-07,GO,Uirapuru,1,0,6,2,2883,5221577,8.3,8,6,2,,,,,,,,,,,,,,,0.0,2774.89,0.0,2081.17,2081.17,693.72
+2020-07-08,GO,Uirapuru,1,0,6,3,2883,5221577,8.3,8,6,2,,,,,,,,,,,,,,,0.0,2774.89,0.0,2081.17,2081.17,693.72
+2020-07-09,GO,Uirapuru,1,0,6,4,2883,5221577,8.3,8,6,2,,,,,,,,,,,,,,,0.0,2774.89,0.0,2081.17,2081.17,693.72
