@@ -322,8 +322,7 @@ function export_data(source::CsvPath, data::AbstractDict; pretty::Bool = false, 
     if pretty
         data = prettify(data; kwargs...)
     end
-    exists(destiny) && rm(destiny; recursive = true, force = true)
-    mkdir(destiny; recursive = true)
+    !exists(destiny) && mkdir(destiny; recursive = true)
     for (fname, fdata) ∈ data
         fname = replace(string(fname), '/' => '_')
         fpath = join(destiny, Path(fname * ".csv"))
@@ -416,14 +415,14 @@ function export_data(
         data = prettify(data; kwargs...)
     end
     destiny = pathof(source)
-    rm(destiny; recursive = true, force = true)
+    #rm(destiny; recursive = true, force = true)
     subdata = filter(p -> p[2] isa AbstractDict, data)
     dataframes = filter(p -> !(p[2] isa AbstractDict), data)
     dataframes = Dict{Symbol,DataFrame}(k => DataFrame(v) for (k, v) ∈ dataframes)
     if isempty(subdata)
         dfsource = source
     else
-        mkdir(destiny; recursive = true)
+        !exists(destiny) && mkdir(destiny; recursive = true)
         dfsource = OdsPath(join(destiny, p"_DEFAULT_.ods"))
 
         for (fname, fdata) ∈ subdata
