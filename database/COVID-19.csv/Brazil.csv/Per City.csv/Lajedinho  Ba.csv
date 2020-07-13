@@ -1,3 +1,6 @@
 Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-07-08,BA,Lajedinho,1,0,6,1,3821,2919009,8.3,8,6,2,,,,,,,,,,,,,,,0.0,2093.69,0.0,1570.27,1570.27,523.42
 2020-07-09,BA,Lajedinho,1,0,6,2,3821,2919009,8.3,8,6,2,,,,,,,,,,,,,,,0.0,2093.69,0.0,1570.27,1570.27,523.42
+2020-07-10,BA,Lajedinho,2,0,13,3,3821,2919009,8.3,17,13,4,,,,,,,,,,,,,,,0.0,4449.1,0.0,3402.25,3402.25,1046.85
+2020-07-11,BA,Lajedinho,2,0,13,4,3821,2919009,8.3,17,13,4,,,,,,,,,,,,,,,0.0,4449.1,0.0,3402.25,3402.25,1046.85
+2020-07-12,BA,Lajedinho,2,0,13,5,3821,2919009,8.3,17,13,4,,,,,,,,,,,,,,,0.0,4449.1,0.0,3402.25,3402.25,1046.85

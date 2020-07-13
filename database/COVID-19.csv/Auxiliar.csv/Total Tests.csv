@@ -92,7 +92,10 @@ Argentina,2020-07-06,samples tested,406210
 Argentina,2020-07-07,samples tested,414697
 Argentina,2020-07-08,samples tested,423782
 Argentina,2020-07-09,samples tested,434692
-Argentina,2020-07-10,samples tested,434692
+Argentina,2020-07-10,samples tested,445733
+Argentina,2020-07-11,samples tested,456042
+Argentina,2020-07-12,samples tested,466308
+Argentina,2020-07-13,samples tested,474422
 Australia,2020-03-22,samples tested,143056
 Australia,2020-03-23,samples tested,
 Australia,2020-03-24,samples tested,
@@ -203,7 +206,9 @@ Australia,2020-07-06,samples tested,2759165
 Australia,2020-07-07,samples tested,2801107
 Australia,2020-07-08,samples tested,2856406
 Australia,2020-07-09,samples tested,2910831
-Australia,2020-07-10,samples tested,2910831
+Australia,2020-07-10,samples tested,2970268
+Australia,2020-07-11,samples tested,3021493
+Australia,2020-07-12,samples tested,3021493
 Austria,2020-02-25,samples tested,218
 Austria,2020-02-26,samples tested,321
 Austria,2020-02-27,samples tested,447
@@ -340,7 +345,10 @@ Austria,2020-07-06,samples tested,654105
 Austria,2020-07-07,samples tested,660149
 Austria,2020-07-08,samples tested,668220
 Austria,2020-07-09,samples tested,675727
-Austria,2020-07-10,samples tested,675727
+Austria,2020-07-10,samples tested,683484
+Austria,2020-07-11,samples tested,691709
+Austria,2020-07-12,samples tested,696740
+Austria,2020-07-13,samples tested,700616
 Bahrain,2020-03-05,units unclear,5334
 Bahrain,2020-03-06,units unclear,
 Bahrain,2020-03-07,units unclear,6420
@@ -467,8 +475,11 @@ Bahrain,2020-07-05,units unclear,602151
 Bahrain,2020-07-06,units unclear,612096
 Bahrain,2020-07-07,units unclear,
 Bahrain,2020-07-08,units unclear,630753
-Bahrain,2020-07-09,units unclear,630753
-Bahrain,2020-07-10,units unclear,630753
+Bahrain,2020-07-09,units unclear,
+Bahrain,2020-07-10,units unclear,640219
+Bahrain,2020-07-11,units unclear,649020
+Bahrain,2020-07-12,units unclear,656659
+Bahrain,2020-07-13,units unclear,666248
 Bangladesh,2020-03-04,samples tested,108
 Bangladesh,2020-03-05,samples tested,111
 Bangladesh,2020-03-06,samples tested,
@@ -597,7 +608,9 @@ Bangladesh,2020-07-06,samples tested,863307
 Bangladesh,2020-07-07,samples tested,876480
 Bangladesh,2020-07-08,samples tested,892152
 Bangladesh,2020-07-09,samples tested,907784
-Bangladesh,2020-07-10,samples tested,907784
+Bangladesh,2020-07-10,samples tested,921272
+Bangladesh,2020-07-11,samples tested,932456
+Bangladesh,2020-07-12,samples tested,932456
 Belarus,2020-03-03,samples tested,5000
 Belarus,2020-03-04,samples tested,
 Belarus,2020-03-05,samples tested,
@@ -724,10 +737,12 @@ Belarus,2020-07-03,samples tested,1043876
 Belarus,2020-07-04,samples tested,
 Belarus,2020-07-05,samples tested,
 Belarus,2020-07-06,samples tested,1074240
-Belarus,2020-07-07,samples tested,1074240
-Belarus,2020-07-08,samples tested,1074240
-Belarus,2020-07-09,samples tested,1074240
-Belarus,2020-07-10,samples tested,1074240
+Belarus,2020-07-07,samples tested,
+Belarus,2020-07-08,samples tested,
+Belarus,2020-07-09,samples tested,
+Belarus,2020-07-10,samples tested,
+Belarus,2020-07-11,samples tested,
+Belarus,2020-07-12,samples tested,1134653
 Belgium,2020-03-01,units unclear,56
 Belgium,2020-03-02,units unclear,324
 Belgium,2020-03-03,units unclear,796
@@ -739,127 +754,129 @@ Belgium,2020-03-08,units unclear,3978
 Belgium,2020-03-09,units unclear,4488
 Belgium,2020-03-10,units unclear,5164
 Belgium,2020-03-11,units unclear,6073
-Belgium,2020-03-12,units unclear,7333
-Belgium,2020-03-13,units unclear,9432
-Belgium,2020-03-14,units unclear,11129
-Belgium,2020-03-15,units unclear,12157
-Belgium,2020-03-16,units unclear,13585
-Belgium,2020-03-17,units unclear,15353
-Belgium,2020-03-18,units unclear,17429
-Belgium,2020-03-19,units unclear,19933
-Belgium,2020-03-20,units unclear,22383
-Belgium,2020-03-21,units unclear,24131
-Belgium,2020-03-22,units unclear,25198
-Belgium,2020-03-23,units unclear,27626
-Belgium,2020-03-24,units unclear,30588
-Belgium,2020-03-25,units unclear,33827
-Belgium,2020-03-26,units unclear,36946
-Belgium,2020-03-27,units unclear,40606
-Belgium,2020-03-28,units unclear,43510
-Belgium,2020-03-29,units unclear,45322
-Belgium,2020-03-30,units unclear,48303
-Belgium,2020-03-31,units unclear,52884
-Belgium,2020-04-01,units unclear,56913
-Belgium,2020-04-02,units unclear,61092
-Belgium,2020-04-03,units unclear,65556
-Belgium,2020-04-04,units unclear,69260
-Belgium,2020-04-05,units unclear,71507
-Belgium,2020-04-06,units unclear,75261
-Belgium,2020-04-07,units unclear,80254
-Belgium,2020-04-08,units unclear,85325
-Belgium,2020-04-09,units unclear,90412
-Belgium,2020-04-10,units unclear,96045
-Belgium,2020-04-11,units unclear,101793
-Belgium,2020-04-12,units unclear,107318
-Belgium,2020-04-13,units unclear,112460
-Belgium,2020-04-14,units unclear,117943
-Belgium,2020-04-15,units unclear,124981
-Belgium,2020-04-16,units unclear,131699
-Belgium,2020-04-17,units unclear,139584
-Belgium,2020-04-18,units unclear,147463
-Belgium,2020-04-19,units unclear,153009
-Belgium,2020-04-20,units unclear,161643
-Belgium,2020-04-21,units unclear,168624
-Belgium,2020-04-22,units unclear,180922
-Belgium,2020-04-23,units unclear,194345
-Belgium,2020-04-24,units unclear,209545
-Belgium,2020-04-25,units unclear,223660
-Belgium,2020-04-26,units unclear,235534
-Belgium,2020-04-27,units unclear,250069
-Belgium,2020-04-28,units unclear,266589
-Belgium,2020-04-29,units unclear,286002
-Belgium,2020-04-30,units unclear,307275
-Belgium,2020-05-01,units unclear,328492
-Belgium,2020-05-02,units unclear,343135
-Belgium,2020-05-03,units unclear,355062
-Belgium,2020-05-04,units unclear,375589
-Belgium,2020-05-05,units unclear,392978
-Belgium,2020-05-06,units unclear,410108
-Belgium,2020-05-07,units unclear,428176
-Belgium,2020-05-08,units unclear,450123
-Belgium,2020-05-09,units unclear,467857
-Belgium,2020-05-10,units unclear,478101
-Belgium,2020-05-11,units unclear,486076
-Belgium,2020-05-12,units unclear,502244
-Belgium,2020-05-13,units unclear,521476
-Belgium,2020-05-14,units unclear,537760
-Belgium,2020-05-15,units unclear,554368
-Belgium,2020-05-16,units unclear,565883
-Belgium,2020-05-17,units unclear,574146
-Belgium,2020-05-18,units unclear,581248
-Belgium,2020-05-19,units unclear,593920
-Belgium,2020-05-20,units unclear,608073
-Belgium,2020-05-21,units unclear,615551
-Belgium,2020-05-22,units unclear,625260
-Belgium,2020-05-23,units unclear,631768
-Belgium,2020-05-24,units unclear,637065
-Belgium,2020-05-25,units unclear,643766
-Belgium,2020-05-26,units unclear,655801
-Belgium,2020-05-27,units unclear,669433
-Belgium,2020-05-28,units unclear,678717
-Belgium,2020-05-29,units unclear,689070
-Belgium,2020-05-30,units unclear,696325
-Belgium,2020-05-31,units unclear,701474
-Belgium,2020-06-01,units unclear,705381
-Belgium,2020-06-02,units unclear,712764
-Belgium,2020-06-03,units unclear,723507
-Belgium,2020-06-04,units unclear,732345
-Belgium,2020-06-05,units unclear,741803
-Belgium,2020-06-06,units unclear,750656
-Belgium,2020-06-07,units unclear,756067
-Belgium,2020-06-08,units unclear,764029
-Belgium,2020-06-09,units unclear,775119
-Belgium,2020-06-10,units unclear,785697
-Belgium,2020-06-11,units unclear,796098
-Belgium,2020-06-12,units unclear,806293
-Belgium,2020-06-13,units unclear,815706
-Belgium,2020-06-14,units unclear,820051
-Belgium,2020-06-15,units unclear,828831
-Belgium,2020-06-16,units unclear,839995
-Belgium,2020-06-17,units unclear,851607
-Belgium,2020-06-18,units unclear,861953
-Belgium,2020-06-19,units unclear,872238
-Belgium,2020-06-20,units unclear,881983
-Belgium,2020-06-21,units unclear,886835
-Belgium,2020-06-22,units unclear,895047
-Belgium,2020-06-23,units unclear,908254
-Belgium,2020-06-24,units unclear,922632
-Belgium,2020-06-25,units unclear,934138
-Belgium,2020-06-26,units unclear,945172
-Belgium,2020-06-27,units unclear,953393
-Belgium,2020-06-28,units unclear,957599
-Belgium,2020-06-29,units unclear,966195
-Belgium,2020-06-30,units unclear,978257
-Belgium,2020-07-01,units unclear,989243
-Belgium,2020-07-02,units unclear,999243
-Belgium,2020-07-03,units unclear,1008448
-Belgium,2020-07-04,units unclear,1015639
-Belgium,2020-07-05,units unclear,1019145
-Belgium,2020-07-06,units unclear,1025924
-Belgium,2020-07-07,units unclear,1034005
-Belgium,2020-07-08,units unclear,1034005
-Belgium,2020-07-09,units unclear,1034005
-Belgium,2020-07-10,units unclear,1034005
+Belgium,2020-03-12,units unclear,7332
+Belgium,2020-03-13,units unclear,9428
+Belgium,2020-03-14,units unclear,11123
+Belgium,2020-03-15,units unclear,12150
+Belgium,2020-03-16,units unclear,13577
+Belgium,2020-03-17,units unclear,15345
+Belgium,2020-03-18,units unclear,17421
+Belgium,2020-03-19,units unclear,19922
+Belgium,2020-03-20,units unclear,22371
+Belgium,2020-03-21,units unclear,24118
+Belgium,2020-03-22,units unclear,25185
+Belgium,2020-03-23,units unclear,27612
+Belgium,2020-03-24,units unclear,30572
+Belgium,2020-03-25,units unclear,33809
+Belgium,2020-03-26,units unclear,36927
+Belgium,2020-03-27,units unclear,40586
+Belgium,2020-03-28,units unclear,43488
+Belgium,2020-03-29,units unclear,45299
+Belgium,2020-03-30,units unclear,48279
+Belgium,2020-03-31,units unclear,52853
+Belgium,2020-04-01,units unclear,56881
+Belgium,2020-04-02,units unclear,61056
+Belgium,2020-04-03,units unclear,65511
+Belgium,2020-04-04,units unclear,69214
+Belgium,2020-04-05,units unclear,71460
+Belgium,2020-04-06,units unclear,75208
+Belgium,2020-04-07,units unclear,80200
+Belgium,2020-04-08,units unclear,85271
+Belgium,2020-04-09,units unclear,90354
+Belgium,2020-04-10,units unclear,95986
+Belgium,2020-04-11,units unclear,101733
+Belgium,2020-04-12,units unclear,107257
+Belgium,2020-04-13,units unclear,112398
+Belgium,2020-04-14,units unclear,117880
+Belgium,2020-04-15,units unclear,124914
+Belgium,2020-04-16,units unclear,131631
+Belgium,2020-04-17,units unclear,139512
+Belgium,2020-04-18,units unclear,147389
+Belgium,2020-04-19,units unclear,152935
+Belgium,2020-04-20,units unclear,161567
+Belgium,2020-04-21,units unclear,168566
+Belgium,2020-04-22,units unclear,180877
+Belgium,2020-04-23,units unclear,194307
+Belgium,2020-04-24,units unclear,209515
+Belgium,2020-04-25,units unclear,223651
+Belgium,2020-04-26,units unclear,235520
+Belgium,2020-04-27,units unclear,250072
+Belgium,2020-04-28,units unclear,266598
+Belgium,2020-04-29,units unclear,286014
+Belgium,2020-04-30,units unclear,307316
+Belgium,2020-05-01,units unclear,328532
+Belgium,2020-05-02,units unclear,343170
+Belgium,2020-05-03,units unclear,355090
+Belgium,2020-05-04,units unclear,375608
+Belgium,2020-05-05,units unclear,392990
+Belgium,2020-05-06,units unclear,410112
+Belgium,2020-05-07,units unclear,428171
+Belgium,2020-05-08,units unclear,450110
+Belgium,2020-05-09,units unclear,467841
+Belgium,2020-05-10,units unclear,478080
+Belgium,2020-05-11,units unclear,486051
+Belgium,2020-05-12,units unclear,502215
+Belgium,2020-05-13,units unclear,521439
+Belgium,2020-05-14,units unclear,537718
+Belgium,2020-05-15,units unclear,554319
+Belgium,2020-05-16,units unclear,565830
+Belgium,2020-05-17,units unclear,574091
+Belgium,2020-05-18,units unclear,581189
+Belgium,2020-05-19,units unclear,593858
+Belgium,2020-05-20,units unclear,608007
+Belgium,2020-05-21,units unclear,615482
+Belgium,2020-05-22,units unclear,625186
+Belgium,2020-05-23,units unclear,631692
+Belgium,2020-05-24,units unclear,636989
+Belgium,2020-05-25,units unclear,643687
+Belgium,2020-05-26,units unclear,655718
+Belgium,2020-05-27,units unclear,669346
+Belgium,2020-05-28,units unclear,678620
+Belgium,2020-05-29,units unclear,688967
+Belgium,2020-05-30,units unclear,696216
+Belgium,2020-05-31,units unclear,701363
+Belgium,2020-06-01,units unclear,705267
+Belgium,2020-06-02,units unclear,712642
+Belgium,2020-06-03,units unclear,723382
+Belgium,2020-06-04,units unclear,732217
+Belgium,2020-06-05,units unclear,741674
+Belgium,2020-06-06,units unclear,750523
+Belgium,2020-06-07,units unclear,755932
+Belgium,2020-06-08,units unclear,763897
+Belgium,2020-06-09,units unclear,775007
+Belgium,2020-06-10,units unclear,785582
+Belgium,2020-06-11,units unclear,795975
+Belgium,2020-06-12,units unclear,806164
+Belgium,2020-06-13,units unclear,815572
+Belgium,2020-06-14,units unclear,819915
+Belgium,2020-06-15,units unclear,828689
+Belgium,2020-06-16,units unclear,839864
+Belgium,2020-06-17,units unclear,851473
+Belgium,2020-06-18,units unclear,861816
+Belgium,2020-06-19,units unclear,872095
+Belgium,2020-06-20,units unclear,881839
+Belgium,2020-06-21,units unclear,886690
+Belgium,2020-06-22,units unclear,894899
+Belgium,2020-06-23,units unclear,908102
+Belgium,2020-06-24,units unclear,922473
+Belgium,2020-06-25,units unclear,933971
+Belgium,2020-06-26,units unclear,944997
+Belgium,2020-06-27,units unclear,953216
+Belgium,2020-06-28,units unclear,957422
+Belgium,2020-06-29,units unclear,966014
+Belgium,2020-06-30,units unclear,978072
+Belgium,2020-07-01,units unclear,989052
+Belgium,2020-07-02,units unclear,999048
+Belgium,2020-07-03,units unclear,1008249
+Belgium,2020-07-04,units unclear,1015436
+Belgium,2020-07-05,units unclear,1018940
+Belgium,2020-07-06,units unclear,1026045
+Belgium,2020-07-07,units unclear,1035785
+Belgium,2020-07-08,units unclear,1045273
+Belgium,2020-07-09,units unclear,1052518
+Belgium,2020-07-10,units unclear,1052518
+Belgium,2020-07-11,units unclear,1052518
+Belgium,2020-07-12,units unclear,1052518
 Bolivia,2020-03-14,units unclear,26
 Bolivia,2020-03-15,units unclear,33
 Bolivia,2020-03-16,units unclear,45
@@ -976,9 +993,11 @@ Bolivia,2020-07-04,units unclear,83958
 Bolivia,2020-07-05,units unclear,86878
 Bolivia,2020-07-06,units unclear,88818
 Bolivia,2020-07-07,units unclear,90651
-Bolivia,2020-07-08,units unclear,90651
-Bolivia,2020-07-09,units unclear,90651
-Bolivia,2020-07-10,units unclear,90651
+Bolivia,2020-07-08,units unclear,92828
+Bolivia,2020-07-09,units unclear,94859
+Bolivia,2020-07-10,units unclear,97055
+Bolivia,2020-07-11,units unclear,99754
+Bolivia,2020-07-12,units unclear,101623
 Brazil,2020-04-07,samples tested,62985
 Brazil,2020-04-08,samples tested,
 Brazil,2020-04-09,samples tested,
@@ -1074,6 +1093,8 @@ Brazil,2020-07-07,samples tested,1478671
 Brazil,2020-07-08,samples tested,1478671
 Brazil,2020-07-09,samples tested,1478671
 Brazil,2020-07-10,samples tested,1478671
+Brazil,2020-07-11,samples tested,1478671
+Brazil,2020-07-12,samples tested,1478671
 Bulgaria,2020-04-11,samples tested,18502
 Bulgaria,2020-04-12,samples tested,
 Bulgaria,2020-04-13,samples tested,
@@ -1164,7 +1185,9 @@ Bulgaria,2020-07-06,samples tested,156351
 Bulgaria,2020-07-07,samples tested,
 Bulgaria,2020-07-08,samples tested,159818
 Bulgaria,2020-07-09,samples tested,164104
-Bulgaria,2020-07-10,samples tested,164104
+Bulgaria,2020-07-10,samples tested,167790
+Bulgaria,2020-07-11,samples tested,172330
+Bulgaria,2020-07-12,samples tested,175136
 Canada,2020-03-18,people tested,53975
 Canada,2020-03-19,people tested,54956
 Canada,2020-03-20,people tested,76814
@@ -1279,7 +1302,10 @@ Canada,2020-07-06,people tested,2940849
 Canada,2020-07-07,people tested,2975635
 Canada,2020-07-08,people tested,3020096
 Canada,2020-07-09,people tested,3055265
-Canada,2020-07-10,people tested,3055265
+Canada,2020-07-10,people tested,3098117
+Canada,2020-07-11,people tested,3142626
+Canada,2020-07-12,people tested,3183440
+Canada,2020-07-13,people tested,3212803
 Chile,2020-04-01,samples tested,38040
 Chile,2020-04-02,samples tested,40725
 Chile,2020-04-03,samples tested,44130
@@ -1379,8 +1405,11 @@ Chile,2020-07-05,samples tested,1181884
 Chile,2020-07-06,samples tested,1198261
 Chile,2020-07-07,samples tested,1210326
 Chile,2020-07-08,samples tested,1220790
-Chile,2020-07-09,samples tested,1220790
-Chile,2020-07-10,samples tested,1220790
+Chile,2020-07-09,samples tested,1237632
+Chile,2020-07-10,samples tested,1255359
+Chile,2020-07-11,samples tested,1273627
+Chile,2020-07-12,samples tested,1292798
+Chile,2020-07-13,samples tested,1310265
 Colombia,2020-03-05,samples tested,636
 Colombia,2020-03-06,samples tested,739
 Colombia,2020-03-07,samples tested,810
@@ -1411,7 +1440,7 @@ Colombia,2020-03-31,samples tested,17863
 Colombia,2020-04-01,samples tested,20253
 Colombia,2020-04-02,samples tested,21412
 Colombia,2020-04-03,samples tested,22752
-Colombia,2020-04-04,samples tested,23989
+Colombia,2020-04-04,samples tested,
 Colombia,2020-04-05,samples tested,25547
 Colombia,2020-04-06,samples tested,27968
 Colombia,2020-04-07,samples tested,30728
@@ -1506,9 +1535,11 @@ Colombia,2020-07-04,samples tested,839731
 Colombia,2020-07-05,samples tested,860731
 Colombia,2020-07-06,samples tested,881190
 Colombia,2020-07-07,samples tested,902305
-Colombia,2020-07-08,samples tested,902305
-Colombia,2020-07-09,samples tested,902305
-Colombia,2020-07-10,samples tested,902305
+Colombia,2020-07-08,samples tested,923714
+Colombia,2020-07-09,samples tested,945240
+Colombia,2020-07-10,samples tested,968465
+Colombia,2020-07-11,samples tested,1006093
+Colombia,2020-07-12,samples tested,1031230
 Costa Rica,2020-03-11,people tested,68
 Costa Rica,2020-03-12,people tested,157
 Costa Rica,2020-03-13,people tested,243
@@ -1628,9 +1659,11 @@ Costa Rica,2020-07-04,people tested,36591
 Costa Rica,2020-07-05,people tested,37788
 Costa Rica,2020-07-06,people tested,38788
 Costa Rica,2020-07-07,people tested,40010
-Costa Rica,2020-07-08,people tested,40010
-Costa Rica,2020-07-09,people tested,40010
-Costa Rica,2020-07-10,people tested,40010
+Costa Rica,2020-07-08,people tested,41138
+Costa Rica,2020-07-09,people tested,42888
+Costa Rica,2020-07-10,people tested,44255
+Costa Rica,2020-07-11,people tested,45850
+Costa Rica,2020-07-12,people tested,45850
 Croatia,2020-03-03,people tested,247
 Croatia,2020-03-04,people tested,255
 Croatia,2020-03-05,people tested,273
@@ -1760,7 +1793,10 @@ Croatia,2020-07-06,people tested,85997
 Croatia,2020-07-07,people tested,86860
 Croatia,2020-07-08,people tested,88235
 Croatia,2020-07-09,people tested,89764
-Croatia,2020-07-10,people tested,89764
+Croatia,2020-07-10,people tested,91486
+Croatia,2020-07-11,people tested,92808
+Croatia,2020-07-12,people tested,93571
+Croatia,2020-07-13,people tested,94175
 Cuba,2020-03-22,samples tested,518
 Cuba,2020-03-23,samples tested,625
 Cuba,2020-03-24,samples tested,738
@@ -1870,8 +1906,10 @@ Cuba,2020-07-05,samples tested,186518
 Cuba,2020-07-06,samples tested,189599
 Cuba,2020-07-07,samples tested,192443
 Cuba,2020-07-08,samples tested,195534
-Cuba,2020-07-09,samples tested,195534
-Cuba,2020-07-10,samples tested,195534
+Cuba,2020-07-09,samples tested,198675
+Cuba,2020-07-10,samples tested,202014
+Cuba,2020-07-11,samples tested,205120
+Cuba,2020-07-12,samples tested,208098
 Czech Republic,2020-01-27,samples tested,20
 Czech Republic,2020-01-28,samples tested,28
 Czech Republic,2020-01-29,samples tested,33
@@ -2034,10 +2072,12 @@ Czech Republic,2020-07-03,samples tested,570456
 Czech Republic,2020-07-04,samples tested,572143
 Czech Republic,2020-07-05,samples tested,573667
 Czech Republic,2020-07-06,samples tested,575381
-Czech Republic,2020-07-07,samples tested,579400
-Czech Republic,2020-07-08,samples tested,579400
-Czech Republic,2020-07-09,samples tested,579400
-Czech Republic,2020-07-10,samples tested,579400
+Czech Republic,2020-07-07,samples tested,579540
+Czech Republic,2020-07-08,samples tested,584946
+Czech Republic,2020-07-09,samples tested,589628
+Czech Republic,2020-07-10,samples tested,594994
+Czech Republic,2020-07-11,samples tested,597201
+Czech Republic,2020-07-12,samples tested,598642
 Denmark,2020-01-27,samples tested,1
 Denmark,2020-01-28,samples tested,
 Denmark,2020-01-29,samples tested,
@@ -2173,37 +2213,39 @@ Denmark,2020-06-06,samples tested,697184
 Denmark,2020-06-07,samples tested,704929
 Denmark,2020-06-08,samples tested,721788
 Denmark,2020-06-09,samples tested,737435
-Denmark,2020-06-10,samples tested,752393
-Denmark,2020-06-11,samples tested,766940
-Denmark,2020-06-12,samples tested,781805
-Denmark,2020-06-13,samples tested,791813
-Denmark,2020-06-14,samples tested,800876
-Denmark,2020-06-15,samples tested,818588
-Denmark,2020-06-16,samples tested,836786
-Denmark,2020-06-17,samples tested,856010
-Denmark,2020-06-18,samples tested,873526
-Denmark,2020-06-19,samples tested,890511
-Denmark,2020-06-20,samples tested,902609
-Denmark,2020-06-21,samples tested,914022
-Denmark,2020-06-22,samples tested,935477
-Denmark,2020-06-23,samples tested,956388
-Denmark,2020-06-24,samples tested,976464
-Denmark,2020-06-25,samples tested,993292
-Denmark,2020-06-26,samples tested,1009082
-Denmark,2020-06-27,samples tested,1018563
-Denmark,2020-06-28,samples tested,1028023
-Denmark,2020-06-29,samples tested,1046738
-Denmark,2020-06-30,samples tested,1064623
-Denmark,2020-07-01,samples tested,1082233
-Denmark,2020-07-02,samples tested,1097580
-Denmark,2020-07-03,samples tested,1111885
-Denmark,2020-07-04,samples tested,1121507
-Denmark,2020-07-05,samples tested,1131242
-Denmark,2020-07-06,samples tested,1149061
-Denmark,2020-07-07,samples tested,1164371
-Denmark,2020-07-08,samples tested,1169208
-Denmark,2020-07-09,samples tested,1169208
-Denmark,2020-07-10,samples tested,1169208
+Denmark,2020-06-10,samples tested,752394
+Denmark,2020-06-11,samples tested,766941
+Denmark,2020-06-12,samples tested,781807
+Denmark,2020-06-13,samples tested,791815
+Denmark,2020-06-14,samples tested,800878
+Denmark,2020-06-15,samples tested,818591
+Denmark,2020-06-16,samples tested,836789
+Denmark,2020-06-17,samples tested,856013
+Denmark,2020-06-18,samples tested,873529
+Denmark,2020-06-19,samples tested,890515
+Denmark,2020-06-20,samples tested,902613
+Denmark,2020-06-21,samples tested,914027
+Denmark,2020-06-22,samples tested,935482
+Denmark,2020-06-23,samples tested,956394
+Denmark,2020-06-24,samples tested,976471
+Denmark,2020-06-25,samples tested,993299
+Denmark,2020-06-26,samples tested,1009127
+Denmark,2020-06-27,samples tested,1018608
+Denmark,2020-06-28,samples tested,1028068
+Denmark,2020-06-29,samples tested,1046783
+Denmark,2020-06-30,samples tested,1064668
+Denmark,2020-07-01,samples tested,1082280
+Denmark,2020-07-02,samples tested,1097636
+Denmark,2020-07-03,samples tested,1111948
+Denmark,2020-07-04,samples tested,1121571
+Denmark,2020-07-05,samples tested,1131306
+Denmark,2020-07-06,samples tested,1149140
+Denmark,2020-07-07,samples tested,1165640
+Denmark,2020-07-08,samples tested,1181513
+Denmark,2020-07-09,samples tested,1195581
+Denmark,2020-07-10,samples tested,1209623
+Denmark,2020-07-11,samples tested,1218876
+Denmark,2020-07-12,samples tested,1222188
 Ecuador,2020-03-18,units unclear,480
 Ecuador,2020-03-19,units unclear,672
 Ecuador,2020-03-20,units unclear,959
@@ -2316,9 +2358,11 @@ Ecuador,2020-07-04,units unclear,124735
 Ecuador,2020-07-05,units unclear,125734
 Ecuador,2020-07-06,units unclear,126699
 Ecuador,2020-07-07,units unclear,128825
-Ecuador,2020-07-08,units unclear,128825
-Ecuador,2020-07-09,units unclear,128825
-Ecuador,2020-07-10,units unclear,128825
+Ecuador,2020-07-08,units unclear,131222
+Ecuador,2020-07-09,units unclear,133207
+Ecuador,2020-07-10,units unclear,134811
+Ecuador,2020-07-11,units unclear,
+Ecuador,2020-07-12,units unclear,139271
 El Salvador,2020-04-10,samples tested,5760
 El Salvador,2020-04-11,samples tested,6272
 El Salvador,2020-04-12,samples tested,6729
@@ -2409,8 +2453,10 @@ El Salvador,2020-07-05,samples tested,177366
 El Salvador,2020-07-06,samples tested,179862
 El Salvador,2020-07-07,samples tested,182361
 El Salvador,2020-07-08,samples tested,184831
-El Salvador,2020-07-09,samples tested,184831
-El Salvador,2020-07-10,samples tested,184831
+El Salvador,2020-07-09,samples tested,187316
+El Salvador,2020-07-10,samples tested,189746
+El Salvador,2020-07-11,samples tested,189746
+El Salvador,2020-07-12,samples tested,189746
 Estonia,2020-02-25,samples tested,5
 Estonia,2020-02-26,samples tested,13
 Estonia,2020-02-27,samples tested,23
@@ -2543,11 +2589,13 @@ Estonia,2020-07-02,samples tested,108535
 Estonia,2020-07-03,samples tested,108799
 Estonia,2020-07-04,samples tested,109086
 Estonia,2020-07-05,samples tested,109377
-Estonia,2020-07-06,samples tested,109970
-Estonia,2020-07-07,samples tested,110547
-Estonia,2020-07-08,samples tested,111028
-Estonia,2020-07-09,samples tested,111028
-Estonia,2020-07-10,samples tested,111028
+Estonia,2020-07-06,samples tested,109969
+Estonia,2020-07-07,samples tested,110544
+Estonia,2020-07-08,samples tested,111020
+Estonia,2020-07-09,samples tested,111463
+Estonia,2020-07-10,samples tested,111802
+Estonia,2020-07-11,samples tested,111955
+Estonia,2020-07-12,samples tested,112175
 Ethiopia,2020-03-17,samples tested,79
 Ethiopia,2020-03-18,samples tested,
 Ethiopia,2020-03-19,samples tested,
@@ -2664,6 +2712,8 @@ Ethiopia,2020-07-07,samples tested,250604
 Ethiopia,2020-07-08,samples tested,250604
 Ethiopia,2020-07-09,samples tested,250604
 Ethiopia,2020-07-10,samples tested,250604
+Ethiopia,2020-07-11,samples tested,250604
+Ethiopia,2020-07-12,samples tested,250604
 Fiji,2020-01-30,samples tested,3
 Fiji,2020-01-31,samples tested,
 Fiji,2020-02-01,samples tested,
@@ -2816,17 +2866,19 @@ Fiji,2020-06-26,samples tested,4816
 Fiji,2020-06-27,samples tested,4827
 Fiji,2020-06-28,samples tested,4853
 Fiji,2020-06-29,samples tested,5015
-Fiji,2020-06-30,samples tested,5015
-Fiji,2020-07-01,samples tested,5015
-Fiji,2020-07-02,samples tested,5015
-Fiji,2020-07-03,samples tested,5015
-Fiji,2020-07-04,samples tested,5015
-Fiji,2020-07-05,samples tested,5015
-Fiji,2020-07-06,samples tested,5015
-Fiji,2020-07-07,samples tested,5015
-Fiji,2020-07-08,samples tested,5015
-Fiji,2020-07-09,samples tested,5015
-Fiji,2020-07-10,samples tested,5015
+Fiji,2020-06-30,samples tested,5060
+Fiji,2020-07-01,samples tested,5105
+Fiji,2020-07-02,samples tested,5156
+Fiji,2020-07-03,samples tested,5242
+Fiji,2020-07-04,samples tested,5268
+Fiji,2020-07-05,samples tested,5311
+Fiji,2020-07-06,samples tested,
+Fiji,2020-07-07,samples tested,5371
+Fiji,2020-07-08,samples tested,5486
+Fiji,2020-07-09,samples tested,5621
+Fiji,2020-07-10,samples tested,5621
+Fiji,2020-07-11,samples tested,5621
+Fiji,2020-07-12,samples tested,5621
 Finland,2020-01-30,samples tested,73
 Finland,2020-01-31,samples tested,73
 Finland,2020-02-01,samples tested,73
@@ -2986,10 +3038,12 @@ Finland,2020-07-03,samples tested,260468
 Finland,2020-07-04,samples tested,262997
 Finland,2020-07-05,samples tested,264280
 Finland,2020-07-06,samples tested,266395
-Finland,2020-07-07,samples tested,270195
-Finland,2020-07-08,samples tested,270195
-Finland,2020-07-09,samples tested,270195
-Finland,2020-07-10,samples tested,270195
+Finland,2020-07-07,samples tested,270588
+Finland,2020-07-08,samples tested,274483
+Finland,2020-07-09,samples tested,278618
+Finland,2020-07-10,samples tested,278781
+Finland,2020-07-11,samples tested,278862
+Finland,2020-07-12,samples tested,278862
 France,2020-05-18,people tested,
 France,2020-05-19,people tested,
 France,2020-05-20,people tested,
@@ -3044,6 +3098,8 @@ France,2020-07-07,people tested,
 France,2020-07-08,people tested,
 France,2020-07-09,people tested,
 France,2020-07-10,people tested,
+France,2020-07-11,people tested,
+France,2020-07-12,people tested,
 France,2020-02-24,samples tested,31
 France,2020-02-25,samples tested,146
 France,2020-02-26,samples tested,412
@@ -3253,6 +3309,8 @@ Germany,2020-07-07,samples tested,6376054
 Germany,2020-07-08,samples tested,6376054
 Germany,2020-07-09,samples tested,6376054
 Germany,2020-07-10,samples tested,6376054
+Germany,2020-07-11,samples tested,6376054
+Germany,2020-07-12,samples tested,6376054
 Ghana,2020-03-17,people tested,143
 Ghana,2020-03-18,people tested,
 Ghana,2020-03-19,people tested,
@@ -3412,11 +3470,13 @@ Ghana,2020-07-02,samples tested,310159
 Ghana,2020-07-03,samples tested,313457
 Ghana,2020-07-04,samples tested,316798
 Ghana,2020-07-05,samples tested,320071
-Ghana,2020-07-06,samples tested,320071
-Ghana,2020-07-07,samples tested,320071
-Ghana,2020-07-08,samples tested,320071
-Ghana,2020-07-09,samples tested,320071
-Ghana,2020-07-10,samples tested,320071
+Ghana,2020-07-06,samples tested,322910
+Ghana,2020-07-07,samples tested,325450
+Ghana,2020-07-08,samples tested,327009
+Ghana,2020-07-09,samples tested,328383
+Ghana,2020-07-10,samples tested,328383
+Ghana,2020-07-11,samples tested,328383
+Ghana,2020-07-12,samples tested,328383
 Greece,2020-03-03,samples tested,570
 Greece,2020-03-04,samples tested,
 Greece,2020-03-05,samples tested,
@@ -3545,8 +3605,11 @@ Greece,2020-07-05,samples tested,337154
 Greece,2020-07-06,samples tested,340328
 Greece,2020-07-07,samples tested,349084
 Greece,2020-07-08,samples tested,355190
-Greece,2020-07-09,samples tested,355190
-Greece,2020-07-10,samples tested,355190
+Greece,2020-07-09,samples tested,358725
+Greece,2020-07-10,samples tested,363412
+Greece,2020-07-11,samples tested,371167
+Greece,2020-07-12,samples tested,373932
+Greece,2020-07-13,samples tested,382452
 Hong Kong,2020-01-31,samples tested,3610
 Hong Kong,2020-02-01,samples tested,3610
 Hong Kong,2020-02-02,samples tested,3610
@@ -3709,6 +3772,8 @@ Hong Kong,2020-07-07,samples tested,376645
 Hong Kong,2020-07-08,samples tested,376645
 Hong Kong,2020-07-09,samples tested,376645
 Hong Kong,2020-07-10,samples tested,376645
+Hong Kong,2020-07-11,samples tested,376645
+Hong Kong,2020-07-12,samples tested,376645
 Hungary,2020-03-04,samples tested,230
 Hungary,2020-03-05,samples tested,
 Hungary,2020-03-06,samples tested,269
@@ -3834,10 +3899,13 @@ Hungary,2020-07-03,samples tested,281628
 Hungary,2020-07-04,samples tested,283508
 Hungary,2020-07-05,samples tested,285590
 Hungary,2020-07-06,samples tested,286083
-Hungary,2020-07-07,samples tested,
+Hungary,2020-07-07,samples tested,286983
 Hungary,2020-07-08,samples tested,288693
-Hungary,2020-07-09,samples tested,288693
-Hungary,2020-07-10,samples tested,288693
+Hungary,2020-07-09,samples tested,289602
+Hungary,2020-07-10,samples tested,292037
+Hungary,2020-07-11,samples tested,293220
+Hungary,2020-07-12,samples tested,294425
+Hungary,2020-07-13,samples tested,295561
 Iceland,2020-02-27,samples tested,23
 Iceland,2020-02-28,samples tested,36
 Iceland,2020-02-29,samples tested,68
@@ -3971,8 +4039,10 @@ Iceland,2020-07-05,samples tested,66837
 Iceland,2020-07-06,samples tested,67022
 Iceland,2020-07-07,samples tested,67246
 Iceland,2020-07-08,samples tested,67377
-Iceland,2020-07-09,samples tested,67377
-Iceland,2020-07-10,samples tested,67377
+Iceland,2020-07-09,samples tested,67518
+Iceland,2020-07-10,samples tested,67729
+Iceland,2020-07-11,samples tested,67792
+Iceland,2020-07-12,samples tested,67792
 India,2020-03-13,people tested,5900
 India,2020-03-14,people tested,
 India,2020-03-15,people tested,
@@ -4135,7 +4205,10 @@ India,2020-07-06,samples tested,9969662
 India,2020-07-07,samples tested,10211092
 India,2020-07-08,samples tested,10473771
 India,2020-07-09,samples tested,10740832
-India,2020-07-10,samples tested,10740832
+India,2020-07-10,samples tested,11024491
+India,2020-07-11,samples tested,11307002
+India,2020-07-12,samples tested,11587153
+India,2020-07-13,samples tested,11806256
 Indonesia,2020-03-16,people tested,1230
 Indonesia,2020-03-17,people tested,1255
 Indonesia,2020-03-18,people tested,
@@ -4252,7 +4325,10 @@ Indonesia,2020-07-06,people tested,552084
 Indonesia,2020-07-07,people tested,562759
 Indonesia,2020-07-08,people tested,
 Indonesia,2020-07-09,people tested,588080
-Indonesia,2020-07-10,people tested,588080
+Indonesia,2020-07-10,people tested,597468
+Indonesia,2020-07-11,people tested,610093
+Indonesia,2020-07-12,people tested,621087
+Indonesia,2020-07-13,people tested,630149
 Iran,2020-04-05,samples tested,189790
 Iran,2020-04-06,samples tested,
 Iran,2020-04-07,samples tested,
@@ -4349,7 +4425,10 @@ Iran,2020-07-06,samples tested,1820003
 Iran,2020-07-07,samples tested,1846793
 Iran,2020-07-08,samples tested,1872391
 Iran,2020-07-09,samples tested,1897803
-Iran,2020-07-10,samples tested,1897803
+Iran,2020-07-10,samples tested,1922501
+Iran,2020-07-11,samples tested,1947114
+Iran,2020-07-12,samples tested,1972207
+Iran,2020-07-13,samples tested,1997967
 Ireland,2020-03-18,samples tested,6457
 Ireland,2020-03-19,samples tested,7403
 Ireland,2020-03-20,samples tested,8872
@@ -4461,10 +4540,13 @@ Ireland,2020-07-03,samples tested,446011
 Ireland,2020-07-04,samples tested,454323
 Ireland,2020-07-05,samples tested,461323
 Ireland,2020-07-06,samples tested,467852
-Ireland,2020-07-07,samples tested,473978
-Ireland,2020-07-08,samples tested,478339
-Ireland,2020-07-09,samples tested,478339
-Ireland,2020-07-10,samples tested,478339
+Ireland,2020-07-07,samples tested,474013
+Ireland,2020-07-08,samples tested,478374
+Ireland,2020-07-09,samples tested,482319
+Ireland,2020-07-10,samples tested,491649
+Ireland,2020-07-11,samples tested,500578
+Ireland,2020-07-12,samples tested,509295
+Ireland,2020-07-13,samples tested,516958
 Israel,2020-01-26,samples tested,3
 Israel,2020-01-27,samples tested,4
 Israel,2020-01-28,samples tested,
@@ -4533,9 +4615,9 @@ Israel,2020-03-30,samples tested,69715
 Israel,2020-03-31,samples tested,77704
 Israel,2020-04-01,samples tested,86714
 Israel,2020-04-02,samples tested,96937
-Israel,2020-04-03,samples tested,107266
-Israel,2020-04-04,samples tested,113617
-Israel,2020-04-05,samples tested,123012
+Israel,2020-04-03,samples tested,107265
+Israel,2020-04-04,samples tested,113618
+Israel,2020-04-05,samples tested,123013
 Israel,2020-04-06,samples tested,130506
 Israel,2020-04-07,samples tested,137474
 Israel,2020-04-08,samples tested,143352
@@ -4557,81 +4639,83 @@ Israel,2020-04-23,samples tested,309743
 Israel,2020-04-24,samples tested,322368
 Israel,2020-04-25,samples tested,331446
 Israel,2020-04-26,samples tested,339908
-Israel,2020-04-27,samples tested,351275
-Israel,2020-04-28,samples tested,361915
-Israel,2020-04-29,samples tested,370911
-Israel,2020-04-30,samples tested,380840
-Israel,2020-05-01,samples tested,391890
-Israel,2020-05-02,samples tested,397458
-Israel,2020-05-03,samples tested,405486
-Israel,2020-05-04,samples tested,414743
-Israel,2020-05-05,samples tested,423699
-Israel,2020-05-06,samples tested,433164
-Israel,2020-05-07,samples tested,443282
-Israel,2020-05-08,samples tested,451439
-Israel,2020-05-09,samples tested,455307
-Israel,2020-05-10,samples tested,460251
-Israel,2020-05-11,samples tested,469468
-Israel,2020-05-12,samples tested,477004
-Israel,2020-05-13,samples tested,485274
-Israel,2020-05-14,samples tested,493689
-Israel,2020-05-15,samples tested,499383
-Israel,2020-05-16,samples tested,500885
-Israel,2020-05-17,samples tested,505518
-Israel,2020-05-18,samples tested,513210
-Israel,2020-05-19,samples tested,520351
-Israel,2020-05-20,samples tested,526319
-Israel,2020-05-21,samples tested,532483
-Israel,2020-05-22,samples tested,537479
-Israel,2020-05-23,samples tested,538196
-Israel,2020-05-24,samples tested,542004
-Israel,2020-05-25,samples tested,547335
-Israel,2020-05-26,samples tested,554153
-Israel,2020-05-27,samples tested,560881
-Israel,2020-05-28,samples tested,566233
-Israel,2020-05-29,samples tested,568096
-Israel,2020-05-30,samples tested,569154
-Israel,2020-05-31,samples tested,574794
-Israel,2020-06-01,samples tested,582949
-Israel,2020-06-02,samples tested,594706
-Israel,2020-06-03,samples tested,607915
-Israel,2020-06-04,samples tested,622813
-Israel,2020-06-05,samples tested,639286
-Israel,2020-06-06,samples tested,650823
-Israel,2020-06-07,samples tested,665920
-Israel,2020-06-08,samples tested,680564
-Israel,2020-06-09,samples tested,695621
-Israel,2020-06-10,samples tested,714089
-Israel,2020-06-11,samples tested,729899
-Israel,2020-06-12,samples tested,743030
-Israel,2020-06-13,samples tested,750013
-Israel,2020-06-14,samples tested,758852
-Israel,2020-06-15,samples tested,773285
-Israel,2020-06-16,samples tested,789518
-Israel,2020-06-17,samples tested,805537
-Israel,2020-06-18,samples tested,822906
-Israel,2020-06-19,samples tested,835692
-Israel,2020-06-20,samples tested,841701
-Israel,2020-06-21,samples tested,850849
-Israel,2020-06-22,samples tested,864855
-Israel,2020-06-23,samples tested,884697
-Israel,2020-06-24,samples tested,903088
+Israel,2020-04-27,samples tested,351313
+Israel,2020-04-28,samples tested,361953
+Israel,2020-04-29,samples tested,370949
+Israel,2020-04-30,samples tested,380878
+Israel,2020-05-01,samples tested,391928
+Israel,2020-05-02,samples tested,397496
+Israel,2020-05-03,samples tested,405524
+Israel,2020-05-04,samples tested,414781
+Israel,2020-05-05,samples tested,423737
+Israel,2020-05-06,samples tested,433202
+Israel,2020-05-07,samples tested,443320
+Israel,2020-05-08,samples tested,451477
+Israel,2020-05-09,samples tested,455345
+Israel,2020-05-10,samples tested,460289
+Israel,2020-05-11,samples tested,469506
+Israel,2020-05-12,samples tested,477042
+Israel,2020-05-13,samples tested,485312
+Israel,2020-05-14,samples tested,493727
+Israel,2020-05-15,samples tested,499421
+Israel,2020-05-16,samples tested,500923
+Israel,2020-05-17,samples tested,505556
+Israel,2020-05-18,samples tested,513248
+Israel,2020-05-19,samples tested,520389
+Israel,2020-05-20,samples tested,526357
+Israel,2020-05-21,samples tested,532521
+Israel,2020-05-22,samples tested,537517
+Israel,2020-05-23,samples tested,538234
+Israel,2020-05-24,samples tested,542042
+Israel,2020-05-25,samples tested,547373
+Israel,2020-05-26,samples tested,554191
+Israel,2020-05-27,samples tested,560919
+Israel,2020-05-28,samples tested,566271
+Israel,2020-05-29,samples tested,568134
+Israel,2020-05-30,samples tested,569192
+Israel,2020-05-31,samples tested,574832
+Israel,2020-06-01,samples tested,582987
+Israel,2020-06-02,samples tested,594744
+Israel,2020-06-03,samples tested,607953
+Israel,2020-06-04,samples tested,622851
+Israel,2020-06-05,samples tested,639324
+Israel,2020-06-06,samples tested,650861
+Israel,2020-06-07,samples tested,665958
+Israel,2020-06-08,samples tested,680602
+Israel,2020-06-09,samples tested,695659
+Israel,2020-06-10,samples tested,714127
+Israel,2020-06-11,samples tested,729935
+Israel,2020-06-12,samples tested,743066
+Israel,2020-06-13,samples tested,750049
+Israel,2020-06-14,samples tested,758887
+Israel,2020-06-15,samples tested,773287
+Israel,2020-06-16,samples tested,789520
+Israel,2020-06-17,samples tested,805539
+Israel,2020-06-18,samples tested,822908
+Israel,2020-06-19,samples tested,835694
+Israel,2020-06-20,samples tested,841702
+Israel,2020-06-21,samples tested,850850
+Israel,2020-06-22,samples tested,864856
+Israel,2020-06-23,samples tested,884698
+Israel,2020-06-24,samples tested,903089
 Israel,2020-06-25,samples tested,921750
-Israel,2020-06-26,samples tested,938279
-Israel,2020-06-27,samples tested,948766
-Israel,2020-06-28,samples tested,959152
-Israel,2020-06-29,samples tested,980163
-Israel,2020-06-30,samples tested,1001001
-Israel,2020-07-01,samples tested,1022461
-Israel,2020-07-02,samples tested,1047501
-Israel,2020-07-03,samples tested,1047501
-Israel,2020-07-04,samples tested,1047501
-Israel,2020-07-05,samples tested,1047501
-Israel,2020-07-06,samples tested,1047501
-Israel,2020-07-07,samples tested,1047501
-Israel,2020-07-08,samples tested,1047501
-Israel,2020-07-09,samples tested,1047501
-Israel,2020-07-10,samples tested,1047501
+Israel,2020-06-26,samples tested,938276
+Israel,2020-06-27,samples tested,948763
+Israel,2020-06-28,samples tested,959149
+Israel,2020-06-29,samples tested,980160
+Israel,2020-06-30,samples tested,1000996
+Israel,2020-07-01,samples tested,1022456
+Israel,2020-07-02,samples tested,1047496
+Israel,2020-07-03,samples tested,1068444
+Israel,2020-07-04,samples tested,1085751
+Israel,2020-07-05,samples tested,1106807
+Israel,2020-07-06,samples tested,1106807
+Israel,2020-07-07,samples tested,1106807
+Israel,2020-07-08,samples tested,1106807
+Israel,2020-07-09,samples tested,1106807
+Israel,2020-07-10,samples tested,1106807
+Israel,2020-07-11,samples tested,1106807
+Israel,2020-07-12,samples tested,1106807
 Italy,2020-04-19,people tested,935310
 Italy,2020-04-20,people tested,943151
 Italy,2020-04-21,people tested,971246
@@ -4714,6 +4798,10 @@ Italy,2020-07-06,people tested,3412010
 Italy,2020-07-07,people tested,3434500
 Italy,2020-07-08,people tested,3463179
 Italy,2020-07-09,people tested,3493126
+Italy,2020-07-10,people tested,3520377
+Italy,2020-07-11,people tested,3545826
+Italy,2020-07-12,people tested,3568887
+Italy,2020-07-13,people tested,3582893
 Italy,2020-02-24,samples tested,4324
 Italy,2020-02-25,samples tested,8623
 Italy,2020-02-26,samples tested,9587
@@ -4851,7 +4939,10 @@ Italy,2020-07-06,samples tested,5660454
 Italy,2020-07-07,samples tested,5703673
 Italy,2020-07-08,samples tested,5754116
 Italy,2020-07-09,samples tested,5806668
-Italy,2020-07-10,samples tested,5806668
+Italy,2020-07-10,samples tested,5854621
+Italy,2020-07-11,samples tested,5900552
+Italy,2020-07-12,samples tested,5938811
+Italy,2020-07-13,samples tested,5962744
 Japan,2020-02-10,people tested,938
 Japan,2020-02-11,people tested,
 Japan,2020-02-12,people tested,954
@@ -5002,8 +5093,11 @@ Japan,2020-07-05,people tested,495164
 Japan,2020-07-06,people tested,499898
 Japan,2020-07-07,people tested,509993
 Japan,2020-07-08,people tested,518210
-Japan,2020-07-09,people tested,518210
-Japan,2020-07-10,people tested,518210
+Japan,2020-07-09,people tested,527546
+Japan,2020-07-10,people tested,540411
+Japan,2020-07-11,people tested,551658
+Japan,2020-07-12,people tested,558622
+Japan,2020-07-13,people tested,562105
 Japan,2020-02-22,samples tested,5266
 Japan,2020-02-23,samples tested,
 Japan,2020-02-24,samples tested,
@@ -5018,128 +5112,133 @@ Japan,2020-03-03,samples tested,
 Japan,2020-03-04,samples tested,
 Japan,2020-03-05,samples tested,
 Japan,2020-03-06,samples tested,
-Japan,2020-03-07,samples tested,23540
+Japan,2020-03-07,samples tested,23535
 Japan,2020-03-08,samples tested,
 Japan,2020-03-09,samples tested,
 Japan,2020-03-10,samples tested,
 Japan,2020-03-11,samples tested,
 Japan,2020-03-12,samples tested,
 Japan,2020-03-13,samples tested,
-Japan,2020-03-14,samples tested,34246
+Japan,2020-03-14,samples tested,34226
 Japan,2020-03-15,samples tested,
 Japan,2020-03-16,samples tested,
 Japan,2020-03-17,samples tested,
 Japan,2020-03-18,samples tested,
 Japan,2020-03-19,samples tested,
 Japan,2020-03-20,samples tested,
-Japan,2020-03-21,samples tested,43643
+Japan,2020-03-21,samples tested,43600
 Japan,2020-03-22,samples tested,
 Japan,2020-03-23,samples tested,
 Japan,2020-03-24,samples tested,
 Japan,2020-03-25,samples tested,
 Japan,2020-03-26,samples tested,
 Japan,2020-03-27,samples tested,
-Japan,2020-03-28,samples tested,57140
+Japan,2020-03-28,samples tested,57032
 Japan,2020-03-29,samples tested,
 Japan,2020-03-30,samples tested,
 Japan,2020-03-31,samples tested,
 Japan,2020-04-01,samples tested,
 Japan,2020-04-02,samples tested,
 Japan,2020-04-03,samples tested,
-Japan,2020-04-04,samples tested,87466
+Japan,2020-04-04,samples tested,87253
 Japan,2020-04-05,samples tested,
 Japan,2020-04-06,samples tested,
 Japan,2020-04-07,samples tested,
 Japan,2020-04-08,samples tested,
 Japan,2020-04-09,samples tested,
 Japan,2020-04-10,samples tested,
-Japan,2020-04-11,samples tested,136526
+Japan,2020-04-11,samples tested,136146
 Japan,2020-04-12,samples tested,
 Japan,2020-04-13,samples tested,
 Japan,2020-04-14,samples tested,
 Japan,2020-04-15,samples tested,
 Japan,2020-04-16,samples tested,
 Japan,2020-04-17,samples tested,
-Japan,2020-04-18,samples tested,193956
+Japan,2020-04-18,samples tested,193350
 Japan,2020-04-19,samples tested,
 Japan,2020-04-20,samples tested,
 Japan,2020-04-21,samples tested,
 Japan,2020-04-22,samples tested,
 Japan,2020-04-23,samples tested,
 Japan,2020-04-24,samples tested,
-Japan,2020-04-25,samples tested,252471
+Japan,2020-04-25,samples tested,251673
 Japan,2020-04-26,samples tested,
 Japan,2020-04-27,samples tested,
 Japan,2020-04-28,samples tested,
 Japan,2020-04-29,samples tested,
 Japan,2020-04-30,samples tested,
 Japan,2020-05-01,samples tested,
-Japan,2020-05-02,samples tested,308706
+Japan,2020-05-02,samples tested,307744
 Japan,2020-05-03,samples tested,
 Japan,2020-05-04,samples tested,
 Japan,2020-05-05,samples tested,
 Japan,2020-05-06,samples tested,
 Japan,2020-05-07,samples tested,
 Japan,2020-05-08,samples tested,
-Japan,2020-05-09,samples tested,355536
+Japan,2020-05-09,samples tested,354446
 Japan,2020-05-10,samples tested,
 Japan,2020-05-11,samples tested,
 Japan,2020-05-12,samples tested,
 Japan,2020-05-13,samples tested,
 Japan,2020-05-14,samples tested,
 Japan,2020-05-15,samples tested,
-Japan,2020-05-16,samples tested,398107
+Japan,2020-05-16,samples tested,396935
 Japan,2020-05-17,samples tested,
 Japan,2020-05-18,samples tested,
 Japan,2020-05-19,samples tested,
 Japan,2020-05-20,samples tested,
 Japan,2020-05-21,samples tested,
 Japan,2020-05-22,samples tested,
-Japan,2020-05-23,samples tested,438874
+Japan,2020-05-23,samples tested,437675
 Japan,2020-05-24,samples tested,
 Japan,2020-05-25,samples tested,
 Japan,2020-05-26,samples tested,
 Japan,2020-05-27,samples tested,
 Japan,2020-05-28,samples tested,
 Japan,2020-05-29,samples tested,
-Japan,2020-05-30,samples tested,476385
+Japan,2020-05-30,samples tested,475172
 Japan,2020-05-31,samples tested,
 Japan,2020-06-01,samples tested,
 Japan,2020-06-02,samples tested,
 Japan,2020-06-03,samples tested,
 Japan,2020-06-04,samples tested,
 Japan,2020-06-05,samples tested,
-Japan,2020-06-06,samples tested,520766
+Japan,2020-06-06,samples tested,519497
 Japan,2020-06-07,samples tested,
 Japan,2020-06-08,samples tested,
 Japan,2020-06-09,samples tested,
 Japan,2020-06-10,samples tested,
 Japan,2020-06-11,samples tested,
 Japan,2020-06-12,samples tested,
-Japan,2020-06-13,samples tested,568136
+Japan,2020-06-13,samples tested,566847
 Japan,2020-06-14,samples tested,
 Japan,2020-06-15,samples tested,
 Japan,2020-06-16,samples tested,
 Japan,2020-06-17,samples tested,
 Japan,2020-06-18,samples tested,
 Japan,2020-06-19,samples tested,
-Japan,2020-06-20,samples tested,614229
-Japan,2020-06-21,samples tested,617928
-Japan,2020-06-22,samples tested,626167
-Japan,2020-06-23,samples tested,633469
-Japan,2020-06-24,samples tested,641783
-Japan,2020-06-25,samples tested,649247
-Japan,2020-06-26,samples tested,657041
-Japan,2020-06-27,samples tested,663846
-Japan,2020-06-28,samples tested,667314
-Japan,2020-06-29,samples tested,674442
-Japan,2020-06-30,samples tested,682729
-Japan,2020-07-01,samples tested,692284
-Japan,2020-07-02,samples tested,701222
-Japan,2020-07-03,samples tested,712058
-Japan,2020-07-04,samples tested,722906
-Japan,2020-07-05,samples tested,727486
-Japan,2020-07-06,samples tested,734568
+Japan,2020-06-20,samples tested,612927
+Japan,2020-06-21,samples tested,616627
+Japan,2020-06-22,samples tested,624868
+Japan,2020-06-23,samples tested,632171
+Japan,2020-06-24,samples tested,640485
+Japan,2020-06-25,samples tested,647950
+Japan,2020-06-26,samples tested,655745
+Japan,2020-06-27,samples tested,662552
+Japan,2020-06-28,samples tested,666022
+Japan,2020-06-29,samples tested,673169
+Japan,2020-06-30,samples tested,681477
+Japan,2020-07-01,samples tested,691004
+Japan,2020-07-02,samples tested,699971
+Japan,2020-07-03,samples tested,710317
+Japan,2020-07-04,samples tested,720370
+Japan,2020-07-05,samples tested,725004
+Japan,2020-07-06,samples tested,735595
+Japan,2020-07-07,samples tested,748672
+Japan,2020-07-08,samples tested,760569
+Japan,2020-07-09,samples tested,768069
+Japan,2020-07-10,samples tested,771179
+Japan,2020-07-11,samples tested,774017
 Kazakhstan,2020-03-13,samples tested,126
 Kazakhstan,2020-03-14,samples tested,445
 Kazakhstan,2020-03-15,samples tested,652
@@ -5254,12 +5353,14 @@ Kazakhstan,2020-07-01,samples tested,1536607
 Kazakhstan,2020-07-02,samples tested,1555858
 Kazakhstan,2020-07-03,samples tested,1590144
 Kazakhstan,2020-07-04,samples tested,1606422
-Kazakhstan,2020-07-05,samples tested,
-Kazakhstan,2020-07-06,samples tested,1620252
-Kazakhstan,2020-07-07,samples tested,1620252
-Kazakhstan,2020-07-08,samples tested,1620252
-Kazakhstan,2020-07-09,samples tested,1620252
-Kazakhstan,2020-07-10,samples tested,1620252
+Kazakhstan,2020-07-05,samples tested,1620252
+Kazakhstan,2020-07-06,samples tested,1630669
+Kazakhstan,2020-07-07,samples tested,1643116
+Kazakhstan,2020-07-08,samples tested,1659543
+Kazakhstan,2020-07-09,samples tested,1676317
+Kazakhstan,2020-07-10,samples tested,1694586
+Kazakhstan,2020-07-11,samples tested,1694586
+Kazakhstan,2020-07-12,samples tested,1694586
 Kenya,2020-03-06,units unclear,31
 Kenya,2020-03-07,units unclear,
 Kenya,2020-03-08,units unclear,
@@ -5386,7 +5487,9 @@ Kenya,2020-07-06,units unclear,191394
 Kenya,2020-07-07,units unclear,193455
 Kenya,2020-07-08,units unclear,196508
 Kenya,2020-07-09,units unclear,200311
-Kenya,2020-07-10,units unclear,200311
+Kenya,2020-07-10,units unclear,206584
+Kenya,2020-07-11,units unclear,206584
+Kenya,2020-07-12,units unclear,206584
 Kuwait,2020-05-13,samples tested,227000
 Kuwait,2020-05-14,samples tested,231930
 Kuwait,2020-05-15,samples tested,236004
@@ -5444,8 +5547,11 @@ Kuwait,2020-07-05,samples tested,405984
 Kuwait,2020-07-06,samples tested,409335
 Kuwait,2020-07-07,samples tested,413530
 Kuwait,2020-07-08,samples tested,417874
-Kuwait,2020-07-09,samples tested,417874
-Kuwait,2020-07-10,samples tested,417874
+Kuwait,2020-07-09,samples tested,422885
+Kuwait,2020-07-10,samples tested,427006
+Kuwait,2020-07-11,samples tested,429501
+Kuwait,2020-07-12,samples tested,433336
+Kuwait,2020-07-13,samples tested,437422
 Latvia,2020-02-29,samples tested,116
 Latvia,2020-03-01,samples tested,126
 Latvia,2020-03-02,samples tested,163
@@ -5578,7 +5684,10 @@ Latvia,2020-07-06,samples tested,158518
 Latvia,2020-07-07,samples tested,160281
 Latvia,2020-07-08,samples tested,162054
 Latvia,2020-07-09,samples tested,163769
-Latvia,2020-07-10,samples tested,163769
+Latvia,2020-07-10,samples tested,165610
+Latvia,2020-07-11,samples tested,167480
+Latvia,2020-07-12,samples tested,168947
+Latvia,2020-07-13,samples tested,169943
 Lithuania,2020-02-28,samples tested,76
 Lithuania,2020-02-29,samples tested,
 Lithuania,2020-03-01,samples tested,
@@ -5712,7 +5821,10 @@ Lithuania,2020-07-06,samples tested,
 Lithuania,2020-07-07,samples tested,444407
 Lithuania,2020-07-08,samples tested,447994
 Lithuania,2020-07-09,samples tested,451987
-Lithuania,2020-07-10,samples tested,451987
+Lithuania,2020-07-10,samples tested,455833
+Lithuania,2020-07-11,samples tested,
+Lithuania,2020-07-12,samples tested,
+Lithuania,2020-07-13,samples tested,461666
 Luxembourg,2020-04-01,people tested,18690
 Luxembourg,2020-04-02,people tested,
 Luxembourg,2020-04-03,people tested,21463
@@ -5812,8 +5924,11 @@ Luxembourg,2020-07-05,people tested,224953
 Luxembourg,2020-07-06,people tested,226761
 Luxembourg,2020-07-07,people tested,237755
 Luxembourg,2020-07-08,people tested,246856
-Luxembourg,2020-07-09,people tested,246856
-Luxembourg,2020-07-10,people tested,246856
+Luxembourg,2020-07-09,people tested,255709
+Luxembourg,2020-07-10,people tested,266437
+Luxembourg,2020-07-11,people tested,273866
+Luxembourg,2020-07-12,people tested,278388
+Luxembourg,2020-07-13,people tested,281431
 Malaysia,2020-02-14,people tested,653
 Malaysia,2020-02-15,people tested,
 Malaysia,2020-02-16,people tested,656
@@ -5960,8 +6075,11 @@ Malaysia,2020-07-05,people tested,804518
 Malaysia,2020-07-06,people tested,810057
 Malaysia,2020-07-07,people tested,816118
 Malaysia,2020-07-08,people tested,822646
-Malaysia,2020-07-09,people tested,822646
-Malaysia,2020-07-10,people tested,822646
+Malaysia,2020-07-09,people tested,829988
+Malaysia,2020-07-10,people tested,836255
+Malaysia,2020-07-11,people tested,842476
+Malaysia,2020-07-12,people tested,847510
+Malaysia,2020-07-13,people tested,850423
 Maldives,2020-03-16,samples tested,221
 Maldives,2020-03-17,samples tested,254
 Maldives,2020-03-18,samples tested,463
@@ -6077,8 +6195,11 @@ Maldives,2020-07-05,samples tested,56138
 Maldives,2020-07-06,samples tested,56916
 Maldives,2020-07-07,samples tested,57611
 Maldives,2020-07-08,samples tested,58583
-Maldives,2020-07-09,samples tested,58583
-Maldives,2020-07-10,samples tested,58583
+Maldives,2020-07-09,samples tested,59530
+Maldives,2020-07-10,samples tested,59981
+Maldives,2020-07-11,samples tested,60217
+Maldives,2020-07-12,samples tested,61819
+Maldives,2020-07-13,samples tested,62767
 Malta,2020-02-06,samples tested,1
 Malta,2020-02-07,samples tested,
 Malta,2020-02-08,samples tested,
@@ -6235,6 +6356,8 @@ Malta,2020-07-07,samples tested,104099
 Malta,2020-07-08,samples tested,104099
 Malta,2020-07-09,samples tested,104099
 Malta,2020-07-10,samples tested,104099
+Malta,2020-07-11,samples tested,104099
+Malta,2020-07-12,samples tested,104099
 Mexico,2020-01-01,people tested,5
 Mexico,2020-01-02,people tested,21
 Mexico,2020-01-03,people tested,39
@@ -6270,163 +6393,165 @@ Mexico,2020-02-01,people tested,1025
 Mexico,2020-02-02,people tested,1037
 Mexico,2020-02-03,people tested,1051
 Mexico,2020-02-04,people tested,1102
-Mexico,2020-02-05,people tested,1148
-Mexico,2020-02-06,people tested,1193
-Mexico,2020-02-07,people tested,1221
-Mexico,2020-02-08,people tested,1229
-Mexico,2020-02-09,people tested,1245
-Mexico,2020-02-10,people tested,1316
-Mexico,2020-02-11,people tested,1365
-Mexico,2020-02-12,people tested,1406
-Mexico,2020-02-13,people tested,1442
-Mexico,2020-02-14,people tested,1474
-Mexico,2020-02-15,people tested,1483
-Mexico,2020-02-16,people tested,1500
-Mexico,2020-02-17,people tested,1528
-Mexico,2020-02-18,people tested,1558
-Mexico,2020-02-19,people tested,1588
-Mexico,2020-02-20,people tested,1611
-Mexico,2020-02-21,people tested,1637
-Mexico,2020-02-22,people tested,1649
-Mexico,2020-02-23,people tested,1658
-Mexico,2020-02-24,people tested,1690
-Mexico,2020-02-25,people tested,1721
-Mexico,2020-02-26,people tested,1760
-Mexico,2020-02-27,people tested,1805
-Mexico,2020-02-28,people tested,1870
-Mexico,2020-02-29,people tested,1895
-Mexico,2020-03-01,people tested,1922
-Mexico,2020-03-02,people tested,2001
-Mexico,2020-03-03,people tested,2076
-Mexico,2020-03-04,people tested,2146
-Mexico,2020-03-05,people tested,2212
-Mexico,2020-03-06,people tested,2266
-Mexico,2020-03-07,people tested,2291
-Mexico,2020-03-08,people tested,2326
-Mexico,2020-03-09,people tested,2405
-Mexico,2020-03-10,people tested,2512
-Mexico,2020-03-11,people tested,2646
-Mexico,2020-03-12,people tested,2850
-Mexico,2020-03-13,people tested,3134
-Mexico,2020-03-14,people tested,3297
-Mexico,2020-03-15,people tested,3468
-Mexico,2020-03-16,people tested,3731
-Mexico,2020-03-17,people tested,4189
-Mexico,2020-03-18,people tested,4695
-Mexico,2020-03-19,people tested,5284
-Mexico,2020-03-20,people tested,5854
-Mexico,2020-03-21,people tested,6251
-Mexico,2020-03-22,people tested,6564
-Mexico,2020-03-23,people tested,7398
-Mexico,2020-03-24,people tested,8525
-Mexico,2020-03-25,people tested,9755
+Mexico,2020-02-05,people tested,1147
+Mexico,2020-02-06,people tested,1192
+Mexico,2020-02-07,people tested,1220
+Mexico,2020-02-08,people tested,1228
+Mexico,2020-02-09,people tested,1244
+Mexico,2020-02-10,people tested,1315
+Mexico,2020-02-11,people tested,1364
+Mexico,2020-02-12,people tested,1405
+Mexico,2020-02-13,people tested,1441
+Mexico,2020-02-14,people tested,1473
+Mexico,2020-02-15,people tested,1482
+Mexico,2020-02-16,people tested,1499
+Mexico,2020-02-17,people tested,1527
+Mexico,2020-02-18,people tested,1557
+Mexico,2020-02-19,people tested,1587
+Mexico,2020-02-20,people tested,1610
+Mexico,2020-02-21,people tested,1636
+Mexico,2020-02-22,people tested,1648
+Mexico,2020-02-23,people tested,1657
+Mexico,2020-02-24,people tested,1689
+Mexico,2020-02-25,people tested,1720
+Mexico,2020-02-26,people tested,1759
+Mexico,2020-02-27,people tested,1804
+Mexico,2020-02-28,people tested,1869
+Mexico,2020-02-29,people tested,1894
+Mexico,2020-03-01,people tested,1921
+Mexico,2020-03-02,people tested,2000
+Mexico,2020-03-03,people tested,2075
+Mexico,2020-03-04,people tested,2145
+Mexico,2020-03-05,people tested,2211
+Mexico,2020-03-06,people tested,2265
+Mexico,2020-03-07,people tested,2290
+Mexico,2020-03-08,people tested,2325
+Mexico,2020-03-09,people tested,2404
+Mexico,2020-03-10,people tested,2511
+Mexico,2020-03-11,people tested,2645
+Mexico,2020-03-12,people tested,2849
+Mexico,2020-03-13,people tested,3133
+Mexico,2020-03-14,people tested,3296
+Mexico,2020-03-15,people tested,3467
+Mexico,2020-03-16,people tested,3729
+Mexico,2020-03-17,people tested,4187
+Mexico,2020-03-18,people tested,4693
+Mexico,2020-03-19,people tested,5282
+Mexico,2020-03-20,people tested,5852
+Mexico,2020-03-21,people tested,6250
+Mexico,2020-03-22,people tested,6563
+Mexico,2020-03-23,people tested,7397
+Mexico,2020-03-24,people tested,8524
+Mexico,2020-03-25,people tested,9754
 Mexico,2020-03-26,people tested,10976
-Mexico,2020-03-27,people tested,12433
-Mexico,2020-03-28,people tested,13199
-Mexico,2020-03-29,people tested,13942
-Mexico,2020-03-30,people tested,15611
-Mexico,2020-03-31,people tested,17098
-Mexico,2020-04-01,people tested,18682
-Mexico,2020-04-02,people tested,20370
+Mexico,2020-03-27,people tested,12432
+Mexico,2020-03-28,people tested,13198
+Mexico,2020-03-29,people tested,13941
+Mexico,2020-03-30,people tested,15610
+Mexico,2020-03-31,people tested,17097
+Mexico,2020-04-01,people tested,18681
+Mexico,2020-04-02,people tested,20369
 Mexico,2020-04-03,people tested,22091
 Mexico,2020-04-04,people tested,23164
 Mexico,2020-04-05,people tested,23969
-Mexico,2020-04-06,people tested,25957
-Mexico,2020-04-07,people tested,27933
-Mexico,2020-04-08,people tested,30101
-Mexico,2020-04-09,people tested,31731
-Mexico,2020-04-10,people tested,33650
-Mexico,2020-04-11,people tested,35023
-Mexico,2020-04-12,people tested,36212
-Mexico,2020-04-13,people tested,39007
-Mexico,2020-04-14,people tested,41879
-Mexico,2020-04-15,people tested,44643
-Mexico,2020-04-16,people tested,47305
-Mexico,2020-04-17,people tested,50300
-Mexico,2020-04-18,people tested,51908
-Mexico,2020-04-19,people tested,53375
-Mexico,2020-04-20,people tested,56927
-Mexico,2020-04-21,people tested,60208
-Mexico,2020-04-22,people tested,63372
-Mexico,2020-04-23,people tested,66819
-Mexico,2020-04-24,people tested,70698
-Mexico,2020-04-25,people tested,72855
-Mexico,2020-04-26,people tested,74743
-Mexico,2020-04-27,people tested,78960
-Mexico,2020-04-28,people tested,83282
-Mexico,2020-04-29,people tested,87940
-Mexico,2020-04-30,people tested,92946
-Mexico,2020-05-01,people tested,95973
-Mexico,2020-05-02,people tested,98731
-Mexico,2020-05-03,people tested,101440
-Mexico,2020-05-04,people tested,107270
-Mexico,2020-05-05,people tested,112189
-Mexico,2020-05-06,people tested,117778
-Mexico,2020-05-07,people tested,123456
-Mexico,2020-05-08,people tested,129486
-Mexico,2020-05-09,people tested,132867
-Mexico,2020-05-10,people tested,135534
-Mexico,2020-05-11,people tested,142233
-Mexico,2020-05-12,people tested,149070
-Mexico,2020-05-13,people tested,155879
-Mexico,2020-05-14,people tested,162942
-Mexico,2020-05-15,people tested,170522
-Mexico,2020-05-16,people tested,174627
-Mexico,2020-05-17,people tested,177424
-Mexico,2020-05-18,people tested,185742
-Mexico,2020-05-19,people tested,193207
-Mexico,2020-05-20,people tested,201255
-Mexico,2020-05-21,people tested,209238
-Mexico,2020-05-22,people tested,217578
-Mexico,2020-05-23,people tested,221812
-Mexico,2020-05-24,people tested,225210
-Mexico,2020-05-25,people tested,234403
-Mexico,2020-05-26,people tested,243236
-Mexico,2020-05-27,people tested,252393
-Mexico,2020-05-28,people tested,261059
-Mexico,2020-05-29,people tested,270034
-Mexico,2020-05-30,people tested,275151
-Mexico,2020-05-31,people tested,278865
-Mexico,2020-06-01,people tested,289139
-Mexico,2020-06-02,people tested,298761
-Mexico,2020-06-03,people tested,308857
-Mexico,2020-06-04,people tested,318784
-Mexico,2020-06-05,people tested,329149
-Mexico,2020-06-06,people tested,334513
-Mexico,2020-06-07,people tested,338476
-Mexico,2020-06-08,people tested,349875
-Mexico,2020-06-09,people tested,361181
-Mexico,2020-06-10,people tested,372543
-Mexico,2020-06-11,people tested,383583
-Mexico,2020-06-12,people tested,395122
-Mexico,2020-06-13,people tested,400452
-Mexico,2020-06-14,people tested,404836
-Mexico,2020-06-15,people tested,417409
-Mexico,2020-06-16,people tested,429625
-Mexico,2020-06-17,people tested,441295
-Mexico,2020-06-18,people tested,452514
-Mexico,2020-06-19,people tested,463767
-Mexico,2020-06-20,people tested,469517
-Mexico,2020-06-21,people tested,473249
-Mexico,2020-06-22,people tested,484920
-Mexico,2020-06-23,people tested,496941
-Mexico,2020-06-24,people tested,508248
-Mexico,2020-06-25,people tested,519830
-Mexico,2020-06-26,people tested,531739
-Mexico,2020-06-27,people tested,537637
-Mexico,2020-06-28,people tested,541906
-Mexico,2020-06-29,people tested,554682
-Mexico,2020-06-30,people tested,566406
-Mexico,2020-07-01,people tested,577523
-Mexico,2020-07-02,people tested,586706
-Mexico,2020-07-03,people tested,595050
-Mexico,2020-07-04,people tested,595050
-Mexico,2020-07-05,people tested,595050
-Mexico,2020-07-06,people tested,595050
-Mexico,2020-07-07,people tested,595050
-Mexico,2020-07-08,people tested,595050
-Mexico,2020-07-09,people tested,595050
-Mexico,2020-07-10,people tested,595050
+Mexico,2020-04-06,people tested,25959
+Mexico,2020-04-07,people tested,27941
+Mexico,2020-04-08,people tested,30112
+Mexico,2020-04-09,people tested,31742
+Mexico,2020-04-10,people tested,33662
+Mexico,2020-04-11,people tested,35036
+Mexico,2020-04-12,people tested,36225
+Mexico,2020-04-13,people tested,39021
+Mexico,2020-04-14,people tested,41893
+Mexico,2020-04-15,people tested,44657
+Mexico,2020-04-16,people tested,47322
+Mexico,2020-04-17,people tested,50319
+Mexico,2020-04-18,people tested,51927
+Mexico,2020-04-19,people tested,53395
+Mexico,2020-04-20,people tested,56949
+Mexico,2020-04-21,people tested,60231
+Mexico,2020-04-22,people tested,63395
+Mexico,2020-04-23,people tested,66842
+Mexico,2020-04-24,people tested,70721
+Mexico,2020-04-25,people tested,72877
+Mexico,2020-04-26,people tested,74765
+Mexico,2020-04-27,people tested,78986
+Mexico,2020-04-28,people tested,83308
+Mexico,2020-04-29,people tested,87969
+Mexico,2020-04-30,people tested,92978
+Mexico,2020-05-01,people tested,96007
+Mexico,2020-05-02,people tested,98765
+Mexico,2020-05-03,people tested,101475
+Mexico,2020-05-04,people tested,107311
+Mexico,2020-05-05,people tested,112240
+Mexico,2020-05-06,people tested,117829
+Mexico,2020-05-07,people tested,123509
+Mexico,2020-05-08,people tested,129542
+Mexico,2020-05-09,people tested,132925
+Mexico,2020-05-10,people tested,135597
+Mexico,2020-05-11,people tested,142307
+Mexico,2020-05-12,people tested,149148
+Mexico,2020-05-13,people tested,155962
+Mexico,2020-05-14,people tested,163036
+Mexico,2020-05-15,people tested,170627
+Mexico,2020-05-16,people tested,174742
+Mexico,2020-05-17,people tested,177545
+Mexico,2020-05-18,people tested,185880
+Mexico,2020-05-19,people tested,193394
+Mexico,2020-05-20,people tested,201471
+Mexico,2020-05-21,people tested,209484
+Mexico,2020-05-22,people tested,217867
+Mexico,2020-05-23,people tested,222124
+Mexico,2020-05-24,people tested,225536
+Mexico,2020-05-25,people tested,234764
+Mexico,2020-05-26,people tested,243625
+Mexico,2020-05-27,people tested,252810
+Mexico,2020-05-28,people tested,261495
+Mexico,2020-05-29,people tested,270492
+Mexico,2020-05-30,people tested,275626
+Mexico,2020-05-31,people tested,279346
+Mexico,2020-06-01,people tested,289645
+Mexico,2020-06-02,people tested,299297
+Mexico,2020-06-03,people tested,309423
+Mexico,2020-06-04,people tested,319388
+Mexico,2020-06-05,people tested,329807
+Mexico,2020-06-06,people tested,335209
+Mexico,2020-06-07,people tested,339189
+Mexico,2020-06-08,people tested,350639
+Mexico,2020-06-09,people tested,362019
+Mexico,2020-06-10,people tested,373440
+Mexico,2020-06-11,people tested,384541
+Mexico,2020-06-12,people tested,396131
+Mexico,2020-06-13,people tested,401500
+Mexico,2020-06-14,people tested,405903
+Mexico,2020-06-15,people tested,418588
+Mexico,2020-06-16,people tested,430898
+Mexico,2020-06-17,people tested,442698
+Mexico,2020-06-18,people tested,454056
+Mexico,2020-06-19,people tested,465447
+Mexico,2020-06-20,people tested,471307
+Mexico,2020-06-21,people tested,475100
+Mexico,2020-06-22,people tested,486998
+Mexico,2020-06-23,people tested,499200
+Mexico,2020-06-24,people tested,510653
+Mexico,2020-06-25,people tested,522402
+Mexico,2020-06-26,people tested,534489
+Mexico,2020-06-27,people tested,540525
+Mexico,2020-06-28,people tested,544931
+Mexico,2020-06-29,people tested,558123
+Mexico,2020-06-30,people tested,570595
+Mexico,2020-07-01,people tested,582951
+Mexico,2020-07-02,people tested,594012
+Mexico,2020-07-03,people tested,605164
+Mexico,2020-07-04,people tested,609836
+Mexico,2020-07-05,people tested,613183
+Mexico,2020-07-06,people tested,622450
+Mexico,2020-07-07,people tested,622450
+Mexico,2020-07-08,people tested,622450
+Mexico,2020-07-09,people tested,622450
+Mexico,2020-07-10,people tested,622450
+Mexico,2020-07-11,people tested,622450
+Mexico,2020-07-12,people tested,622450
 Morocco,2020-02-07,people tested,9
 Morocco,2020-02-08,people tested,
 Morocco,2020-02-09,people tested,
@@ -6580,8 +6705,10 @@ Morocco,2020-07-05,people tested,765580
 Morocco,2020-07-06,people tested,783639
 Morocco,2020-07-07,people tested,801329
 Morocco,2020-07-08,people tested,819124
-Morocco,2020-07-09,people tested,819124
-Morocco,2020-07-10,people tested,819124
+Morocco,2020-07-09,people tested,835264
+Morocco,2020-07-10,people tested,849097
+Morocco,2020-07-11,people tested,864594
+Morocco,2020-07-12,people tested,878626
 Myanmar,2020-04-03,samples tested,1183
 Myanmar,2020-04-04,samples tested,1246
 Myanmar,2020-04-05,samples tested,
@@ -6679,8 +6806,10 @@ Myanmar,2020-07-05,samples tested,84473
 Myanmar,2020-07-06,samples tested,
 Myanmar,2020-07-07,samples tested,86821
 Myanmar,2020-07-08,samples tested,88234
-Myanmar,2020-07-09,samples tested,88234
-Myanmar,2020-07-10,samples tested,88234
+Myanmar,2020-07-09,samples tested,89913
+Myanmar,2020-07-10,samples tested,89913
+Myanmar,2020-07-11,samples tested,89913
+Myanmar,2020-07-12,samples tested,89913
 Nepal,2020-01-28,people tested,3
 Nepal,2020-01-29,people tested,4
 Nepal,2020-01-30,people tested,5
@@ -6846,6 +6975,8 @@ Nepal,2020-07-07,people tested,133377
 Nepal,2020-07-08,people tested,133377
 Nepal,2020-07-09,people tested,133377
 Nepal,2020-07-10,people tested,133377
+Nepal,2020-07-11,people tested,133377
+Nepal,2020-07-12,people tested,133377
 Netherlands,2020-03-15,people tested,17080
 Netherlands,2020-03-16,people tested,
 Netherlands,2020-03-17,people tested,
@@ -6964,6 +7095,8 @@ Netherlands,2020-07-07,people tested,681931
 Netherlands,2020-07-08,people tested,681931
 Netherlands,2020-07-09,people tested,681931
 Netherlands,2020-07-10,people tested,681931
+Netherlands,2020-07-11,people tested,681931
+Netherlands,2020-07-12,people tested,681931
 New Zealand,2020-03-09,samples tested,312
 New Zealand,2020-03-10,samples tested,401
 New Zealand,2020-03-11,samples tested,484
@@ -7086,8 +7219,10 @@ New Zealand,2020-07-05,samples tested,415283
 New Zealand,2020-07-06,samples tested,416924
 New Zealand,2020-07-07,samples tested,419055
 New Zealand,2020-07-08,samples tested,422144
-New Zealand,2020-07-09,samples tested,422144
-New Zealand,2020-07-10,samples tested,422144
+New Zealand,2020-07-09,samples tested,424719
+New Zealand,2020-07-10,samples tested,426776
+New Zealand,2020-07-11,samples tested,428600
+New Zealand,2020-07-12,samples tested,429643
 Nigeria,2020-04-08,samples tested,5000
 Nigeria,2020-04-09,samples tested,
 Nigeria,2020-04-10,samples tested,
@@ -7181,7 +7316,10 @@ Nigeria,2020-07-06,samples tested,152952
 Nigeria,2020-07-07,samples tested,
 Nigeria,2020-07-08,samples tested,169629
 Nigeria,2020-07-09,samples tested,171931
-Nigeria,2020-07-10,samples tested,171931
+Nigeria,2020-07-10,samples tested,175656
+Nigeria,2020-07-11,samples tested,178265
+Nigeria,2020-07-12,samples tested,181248
+Nigeria,2020-07-13,samples tested,183294
 Norway,2020-02-24,people tested,12
 Norway,2020-02-25,people tested,74
 Norway,2020-02-26,people tested,222
@@ -7247,79 +7385,81 @@ Norway,2020-04-25,people tested,139530
 Norway,2020-04-26,people tested,140381
 Norway,2020-04-27,people tested,144021
 Norway,2020-04-28,people tested,147670
-Norway,2020-04-29,people tested,151143
-Norway,2020-04-30,people tested,155125
-Norway,2020-05-01,people tested,156441
-Norway,2020-05-02,people tested,157812
-Norway,2020-05-03,people tested,158917
-Norway,2020-05-04,people tested,163154
-Norway,2020-05-05,people tested,167048
-Norway,2020-05-06,people tested,170870
-Norway,2020-05-07,people tested,174256
-Norway,2020-05-08,people tested,177657
-Norway,2020-05-09,people tested,178819
-Norway,2020-05-10,people tested,179668
-Norway,2020-05-11,people tested,183613
-Norway,2020-05-12,people tested,187439
-Norway,2020-05-13,people tested,191103
-Norway,2020-05-14,people tested,194849
-Norway,2020-05-15,people tested,198574
-Norway,2020-05-16,people tested,199706
-Norway,2020-05-17,people tested,200265
-Norway,2020-05-18,people tested,204198
-Norway,2020-05-19,people tested,208021
-Norway,2020-05-20,people tested,211549
-Norway,2020-05-21,people tested,212526
-Norway,2020-05-22,people tested,215465
-Norway,2020-05-23,people tested,216334
-Norway,2020-05-24,people tested,217071
-Norway,2020-05-25,people tested,220628
-Norway,2020-05-26,people tested,223622
-Norway,2020-05-27,people tested,226435
-Norway,2020-05-28,people tested,228893
-Norway,2020-05-29,people tested,231133
-Norway,2020-05-30,people tested,231802
-Norway,2020-05-31,people tested,232311
-Norway,2020-06-01,people tested,232914
-Norway,2020-06-02,people tested,235703
-Norway,2020-06-03,people tested,238190
-Norway,2020-06-04,people tested,240734
-Norway,2020-06-05,people tested,243253
-Norway,2020-06-06,people tested,244050
-Norway,2020-06-07,people tested,244814
-Norway,2020-06-08,people tested,250040
-Norway,2020-06-09,people tested,254846
-Norway,2020-06-10,people tested,258906
-Norway,2020-06-11,people tested,263272
-Norway,2020-06-12,people tested,267397
-Norway,2020-06-13,people tested,268455
-Norway,2020-06-14,people tested,269427
-Norway,2020-06-15,people tested,274617
-Norway,2020-06-16,people tested,279513
-Norway,2020-06-17,people tested,283984
-Norway,2020-06-18,people tested,287997
-Norway,2020-06-19,people tested,291314
-Norway,2020-06-20,people tested,292193
-Norway,2020-06-21,people tested,293042
-Norway,2020-06-22,people tested,297458
-Norway,2020-06-23,people tested,301528
-Norway,2020-06-24,people tested,305583
-Norway,2020-06-25,people tested,309193
-Norway,2020-06-26,people tested,312601
-Norway,2020-06-27,people tested,313496
-Norway,2020-06-28,people tested,314287
-Norway,2020-06-29,people tested,319351
-Norway,2020-06-30,people tested,323672
-Norway,2020-07-01,people tested,328040
-Norway,2020-07-02,people tested,332046
-Norway,2020-07-03,people tested,335744
-Norway,2020-07-04,people tested,336720
-Norway,2020-07-05,people tested,337483
-Norway,2020-07-06,people tested,338498
-Norway,2020-07-07,people tested,338498
-Norway,2020-07-08,people tested,338498
-Norway,2020-07-09,people tested,338498
-Norway,2020-07-10,people tested,338498
+Norway,2020-04-29,people tested,151144
+Norway,2020-04-30,people tested,155126
+Norway,2020-05-01,people tested,156443
+Norway,2020-05-02,people tested,157814
+Norway,2020-05-03,people tested,158919
+Norway,2020-05-04,people tested,163156
+Norway,2020-05-05,people tested,167050
+Norway,2020-05-06,people tested,170872
+Norway,2020-05-07,people tested,174258
+Norway,2020-05-08,people tested,177659
+Norway,2020-05-09,people tested,178821
+Norway,2020-05-10,people tested,179670
+Norway,2020-05-11,people tested,183615
+Norway,2020-05-12,people tested,187441
+Norway,2020-05-13,people tested,191105
+Norway,2020-05-14,people tested,194851
+Norway,2020-05-15,people tested,198575
+Norway,2020-05-16,people tested,199707
+Norway,2020-05-17,people tested,200266
+Norway,2020-05-18,people tested,204199
+Norway,2020-05-19,people tested,208022
+Norway,2020-05-20,people tested,211550
+Norway,2020-05-21,people tested,212527
+Norway,2020-05-22,people tested,215466
+Norway,2020-05-23,people tested,216335
+Norway,2020-05-24,people tested,217072
+Norway,2020-05-25,people tested,220629
+Norway,2020-05-26,people tested,223623
+Norway,2020-05-27,people tested,226436
+Norway,2020-05-28,people tested,228894
+Norway,2020-05-29,people tested,231134
+Norway,2020-05-30,people tested,231803
+Norway,2020-05-31,people tested,232312
+Norway,2020-06-01,people tested,232915
+Norway,2020-06-02,people tested,235704
+Norway,2020-06-03,people tested,238191
+Norway,2020-06-04,people tested,240735
+Norway,2020-06-05,people tested,243255
+Norway,2020-06-06,people tested,244053
+Norway,2020-06-07,people tested,244817
+Norway,2020-06-08,people tested,250043
+Norway,2020-06-09,people tested,254849
+Norway,2020-06-10,people tested,258909
+Norway,2020-06-11,people tested,263275
+Norway,2020-06-12,people tested,267399
+Norway,2020-06-13,people tested,268457
+Norway,2020-06-14,people tested,269429
+Norway,2020-06-15,people tested,274637
+Norway,2020-06-16,people tested,279545
+Norway,2020-06-17,people tested,284021
+Norway,2020-06-18,people tested,288034
+Norway,2020-06-19,people tested,291351
+Norway,2020-06-20,people tested,292230
+Norway,2020-06-21,people tested,293079
+Norway,2020-06-22,people tested,297495
+Norway,2020-06-23,people tested,301565
+Norway,2020-06-24,people tested,305620
+Norway,2020-06-25,people tested,309229
+Norway,2020-06-26,people tested,312637
+Norway,2020-06-27,people tested,313532
+Norway,2020-06-28,people tested,314323
+Norway,2020-06-29,people tested,319389
+Norway,2020-06-30,people tested,323713
+Norway,2020-07-01,people tested,328094
+Norway,2020-07-02,people tested,332129
+Norway,2020-07-03,people tested,335948
+Norway,2020-07-04,people tested,337104
+Norway,2020-07-05,people tested,338065
+Norway,2020-07-06,people tested,343411
+Norway,2020-07-07,people tested,347941
+Norway,2020-07-08,people tested,352375
+Norway,2020-07-09,people tested,356277
+Norway,2020-07-10,people tested,359314
+Norway,2020-07-11,people tested,360090
+Norway,2020-07-12,people tested,360090
 Oman,2020-06-04,people tested,
 Oman,2020-06-05,people tested,
 Oman,2020-06-06,people tested,
@@ -7357,6 +7497,9 @@ Oman,2020-07-07,people tested,
 Oman,2020-07-08,people tested,
 Oman,2020-07-09,people tested,
 Oman,2020-07-10,people tested,
+Oman,2020-07-11,people tested,
+Oman,2020-07-12,people tested,
+Oman,2020-07-13,people tested,
 Pakistan,2020-03-11,samples tested,471
 Pakistan,2020-03-12,samples tested,531
 Pakistan,2020-03-13,samples tested,609
@@ -7478,7 +7621,10 @@ Pakistan,2020-07-06,samples tested,1420623
 Pakistan,2020-07-07,samples tested,1445153
 Pakistan,2020-07-08,samples tested,1467104
 Pakistan,2020-07-09,samples tested,1491437
-Pakistan,2020-07-10,samples tested,1491437
+Pakistan,2020-07-10,samples tested,1514858
+Pakistan,2020-07-11,samples tested,1538427
+Pakistan,2020-07-12,samples tested,1562638
+Pakistan,2020-07-13,samples tested,1585170
 Panama,2020-03-09,samples tested,107
 Panama,2020-03-10,samples tested,138
 Panama,2020-03-11,samples tested,180
@@ -7600,135 +7746,139 @@ Panama,2020-07-04,samples tested,140801
 Panama,2020-07-05,samples tested,141967
 Panama,2020-07-06,samples tested,145139
 Panama,2020-07-07,samples tested,147560
-Panama,2020-07-08,samples tested,147560
-Panama,2020-07-09,samples tested,147560
-Panama,2020-07-10,samples tested,147560
-Paraguay,2020-03-07,samples tested,1
-Paraguay,2020-03-08,samples tested,
-Paraguay,2020-03-09,samples tested,
-Paraguay,2020-03-10,samples tested,9
-Paraguay,2020-03-11,samples tested,16
-Paraguay,2020-03-12,samples tested,22
-Paraguay,2020-03-13,samples tested,39
-Paraguay,2020-03-14,samples tested,54
-Paraguay,2020-03-15,samples tested,87
-Paraguay,2020-03-16,samples tested,114
-Paraguay,2020-03-17,samples tested,140
-Paraguay,2020-03-18,samples tested,164
-Paraguay,2020-03-19,samples tested,196
-Paraguay,2020-03-20,samples tested,240
-Paraguay,2020-03-21,samples tested,308
-Paraguay,2020-03-22,samples tested,345
-Paraguay,2020-03-23,samples tested,434
-Paraguay,2020-03-24,samples tested,525
-Paraguay,2020-03-25,samples tested,576
-Paraguay,2020-03-26,samples tested,654
-Paraguay,2020-03-27,samples tested,755
-Paraguay,2020-03-28,samples tested,815
-Paraguay,2020-03-29,samples tested,920
-Paraguay,2020-03-30,samples tested,988
-Paraguay,2020-03-31,samples tested,1078
-Paraguay,2020-04-01,samples tested,1173
-Paraguay,2020-04-02,samples tested,1289
-Paraguay,2020-04-03,samples tested,1454
-Paraguay,2020-04-04,samples tested,1646
-Paraguay,2020-04-05,samples tested,1846
-Paraguay,2020-04-06,samples tested,2008
-Paraguay,2020-04-07,samples tested,2220
-Paraguay,2020-04-08,samples tested,2462
-Paraguay,2020-04-09,samples tested,2685
-Paraguay,2020-04-10,samples tested,2905
-Paraguay,2020-04-11,samples tested,3135
-Paraguay,2020-04-12,samples tested,3394
-Paraguay,2020-04-13,samples tested,3642
-Paraguay,2020-04-14,samples tested,3888
-Paraguay,2020-04-15,samples tested,4267
-Paraguay,2020-04-16,samples tested,4612
-Paraguay,2020-04-17,samples tested,4950
-Paraguay,2020-04-18,samples tested,5254
-Paraguay,2020-04-19,samples tested,5501
-Paraguay,2020-04-20,samples tested,5878
-Paraguay,2020-04-21,samples tested,6292
-Paraguay,2020-04-22,samples tested,6598
-Paraguay,2020-04-23,samples tested,6917
-Paraguay,2020-04-24,samples tested,7322
-Paraguay,2020-04-25,samples tested,7630
-Paraguay,2020-04-26,samples tested,7925
-Paraguay,2020-04-27,samples tested,8444
-Paraguay,2020-04-28,samples tested,8891
-Paraguay,2020-04-29,samples tested,9454
-Paraguay,2020-04-30,samples tested,9903
-Paraguay,2020-05-01,samples tested,10342
-Paraguay,2020-05-02,samples tested,10766
-Paraguay,2020-05-03,samples tested,11106
-Paraguay,2020-05-04,samples tested,11455
-Paraguay,2020-05-05,samples tested,11913
-Paraguay,2020-05-06,samples tested,12497
-Paraguay,2020-05-07,samples tested,13096
-Paraguay,2020-05-08,samples tested,13846
-Paraguay,2020-05-09,samples tested,14646
-Paraguay,2020-05-10,samples tested,15446
-Paraguay,2020-05-11,samples tested,16155
-Paraguay,2020-05-12,samples tested,16917
-Paraguay,2020-05-13,samples tested,17589
-Paraguay,2020-05-14,samples tested,18184
-Paraguay,2020-05-15,samples tested,18856
-Paraguay,2020-05-16,samples tested,19308
-Paraguay,2020-05-17,samples tested,20124
-Paraguay,2020-05-18,samples tested,20429
-Paraguay,2020-05-19,samples tested,21121
-Paraguay,2020-05-20,samples tested,21542
-Paraguay,2020-05-21,samples tested,21987
-Paraguay,2020-05-22,samples tested,22868
-Paraguay,2020-05-23,samples tested,23805
-Paraguay,2020-05-24,samples tested,24812
-Paraguay,2020-05-25,samples tested,25216
-Paraguay,2020-05-26,samples tested,26169
-Paraguay,2020-05-27,samples tested,26760
-Paraguay,2020-05-28,samples tested,27425
-Paraguay,2020-05-29,samples tested,28337
-Paraguay,2020-05-30,samples tested,29153
-Paraguay,2020-05-31,samples tested,30004
-Paraguay,2020-06-01,samples tested,30834
-Paraguay,2020-06-02,samples tested,32106
-Paraguay,2020-06-03,samples tested,33081
-Paraguay,2020-06-04,samples tested,34240
-Paraguay,2020-06-05,samples tested,35258
-Paraguay,2020-06-06,samples tested,36373
-Paraguay,2020-06-07,samples tested,37532
-Paraguay,2020-06-08,samples tested,38942
-Paraguay,2020-06-09,samples tested,40032
-Paraguay,2020-06-10,samples tested,41702
-Paraguay,2020-06-11,samples tested,43292
-Paraguay,2020-06-12,samples tested,45132
-Paraguay,2020-06-13,samples tested,46608
-Paraguay,2020-06-14,samples tested,48081
-Paraguay,2020-06-15,samples tested,48729
-Paraguay,2020-06-16,samples tested,49978
-Paraguay,2020-06-17,samples tested,51178
-Paraguay,2020-06-18,samples tested,52649
-Paraguay,2020-06-19,samples tested,54278
-Paraguay,2020-06-20,samples tested,55827
-Paraguay,2020-06-21,samples tested,56992
-Paraguay,2020-06-22,samples tested,57895
-Paraguay,2020-06-23,samples tested,59454
-Paraguay,2020-06-24,samples tested,60811
-Paraguay,2020-06-25,samples tested,62384
-Paraguay,2020-06-26,samples tested,63974
-Paraguay,2020-06-27,samples tested,65605
-Paraguay,2020-06-28,samples tested,66966
-Paraguay,2020-06-29,samples tested,68027
-Paraguay,2020-06-30,samples tested,69343
-Paraguay,2020-07-01,samples tested,70690
-Paraguay,2020-07-02,samples tested,72319
-Paraguay,2020-07-03,samples tested,74088
-Paraguay,2020-07-04,samples tested,76077
-Paraguay,2020-07-05,samples tested,77879
-Paraguay,2020-07-06,samples tested,79365
-Paraguay,2020-07-07,samples tested,81441
-Paraguay,2020-07-08,samples tested,82974
-Paraguay,2020-07-09,samples tested,82974
-Paraguay,2020-07-10,samples tested,82974
+Panama,2020-07-08,samples tested,150144
+Panama,2020-07-09,samples tested,152642
+Panama,2020-07-10,samples tested,155664
+Panama,2020-07-11,samples tested,158570
+Panama,2020-07-12,samples tested,162005
+Paraguay,2020-03-07,people tested,1
+Paraguay,2020-03-08,people tested,
+Paraguay,2020-03-09,people tested,
+Paraguay,2020-03-10,people tested,9
+Paraguay,2020-03-11,people tested,16
+Paraguay,2020-03-12,people tested,22
+Paraguay,2020-03-13,people tested,39
+Paraguay,2020-03-14,people tested,54
+Paraguay,2020-03-15,people tested,87
+Paraguay,2020-03-16,people tested,114
+Paraguay,2020-03-17,people tested,140
+Paraguay,2020-03-18,people tested,164
+Paraguay,2020-03-19,people tested,196
+Paraguay,2020-03-20,people tested,240
+Paraguay,2020-03-21,people tested,308
+Paraguay,2020-03-22,people tested,345
+Paraguay,2020-03-23,people tested,434
+Paraguay,2020-03-24,people tested,525
+Paraguay,2020-03-25,people tested,576
+Paraguay,2020-03-26,people tested,654
+Paraguay,2020-03-27,people tested,755
+Paraguay,2020-03-28,people tested,815
+Paraguay,2020-03-29,people tested,920
+Paraguay,2020-03-30,people tested,988
+Paraguay,2020-03-31,people tested,1078
+Paraguay,2020-04-01,people tested,1173
+Paraguay,2020-04-02,people tested,1289
+Paraguay,2020-04-03,people tested,1454
+Paraguay,2020-04-04,people tested,1646
+Paraguay,2020-04-05,people tested,1846
+Paraguay,2020-04-06,people tested,2008
+Paraguay,2020-04-07,people tested,2220
+Paraguay,2020-04-08,people tested,2462
+Paraguay,2020-04-09,people tested,2685
+Paraguay,2020-04-10,people tested,2905
+Paraguay,2020-04-11,people tested,3135
+Paraguay,2020-04-12,people tested,3394
+Paraguay,2020-04-13,people tested,3642
+Paraguay,2020-04-14,people tested,3888
+Paraguay,2020-04-15,people tested,4267
+Paraguay,2020-04-16,people tested,4612
+Paraguay,2020-04-17,people tested,4950
+Paraguay,2020-04-18,people tested,5254
+Paraguay,2020-04-19,people tested,5501
+Paraguay,2020-04-20,people tested,5878
+Paraguay,2020-04-21,people tested,6292
+Paraguay,2020-04-22,people tested,6598
+Paraguay,2020-04-23,people tested,6917
+Paraguay,2020-04-24,people tested,7322
+Paraguay,2020-04-25,people tested,7630
+Paraguay,2020-04-26,people tested,7925
+Paraguay,2020-04-27,people tested,8444
+Paraguay,2020-04-28,people tested,8891
+Paraguay,2020-04-29,people tested,9454
+Paraguay,2020-04-30,people tested,9903
+Paraguay,2020-05-01,people tested,10342
+Paraguay,2020-05-02,people tested,10766
+Paraguay,2020-05-03,people tested,11106
+Paraguay,2020-05-04,people tested,11455
+Paraguay,2020-05-05,people tested,11913
+Paraguay,2020-05-06,people tested,12497
+Paraguay,2020-05-07,people tested,13096
+Paraguay,2020-05-08,people tested,13846
+Paraguay,2020-05-09,people tested,14646
+Paraguay,2020-05-10,people tested,15446
+Paraguay,2020-05-11,people tested,16155
+Paraguay,2020-05-12,people tested,16917
+Paraguay,2020-05-13,people tested,17589
+Paraguay,2020-05-14,people tested,18184
+Paraguay,2020-05-15,people tested,18856
+Paraguay,2020-05-16,people tested,19308
+Paraguay,2020-05-17,people tested,20124
+Paraguay,2020-05-18,people tested,20429
+Paraguay,2020-05-19,people tested,21121
+Paraguay,2020-05-20,people tested,21542
+Paraguay,2020-05-21,people tested,21987
+Paraguay,2020-05-22,people tested,22868
+Paraguay,2020-05-23,people tested,23805
+Paraguay,2020-05-24,people tested,24812
+Paraguay,2020-05-25,people tested,25216
+Paraguay,2020-05-26,people tested,26169
+Paraguay,2020-05-27,people tested,26760
+Paraguay,2020-05-28,people tested,27425
+Paraguay,2020-05-29,people tested,28337
+Paraguay,2020-05-30,people tested,29153
+Paraguay,2020-05-31,people tested,30004
+Paraguay,2020-06-01,people tested,30834
+Paraguay,2020-06-02,people tested,32106
+Paraguay,2020-06-03,people tested,33081
+Paraguay,2020-06-04,people tested,34240
+Paraguay,2020-06-05,people tested,35258
+Paraguay,2020-06-06,people tested,36373
+Paraguay,2020-06-07,people tested,37532
+Paraguay,2020-06-08,people tested,38942
+Paraguay,2020-06-09,people tested,40032
+Paraguay,2020-06-10,people tested,41702
+Paraguay,2020-06-11,people tested,43292
+Paraguay,2020-06-12,people tested,45132
+Paraguay,2020-06-13,people tested,46608
+Paraguay,2020-06-14,people tested,48081
+Paraguay,2020-06-15,people tested,48729
+Paraguay,2020-06-16,people tested,49978
+Paraguay,2020-06-17,people tested,51178
+Paraguay,2020-06-18,people tested,52649
+Paraguay,2020-06-19,people tested,54278
+Paraguay,2020-06-20,people tested,55827
+Paraguay,2020-06-21,people tested,56992
+Paraguay,2020-06-22,people tested,57895
+Paraguay,2020-06-23,people tested,59454
+Paraguay,2020-06-24,people tested,60811
+Paraguay,2020-06-25,people tested,62384
+Paraguay,2020-06-26,people tested,63974
+Paraguay,2020-06-27,people tested,65605
+Paraguay,2020-06-28,people tested,66966
+Paraguay,2020-06-29,people tested,68027
+Paraguay,2020-06-30,people tested,69343
+Paraguay,2020-07-01,people tested,70690
+Paraguay,2020-07-02,people tested,72319
+Paraguay,2020-07-03,people tested,74088
+Paraguay,2020-07-04,people tested,76077
+Paraguay,2020-07-05,people tested,77879
+Paraguay,2020-07-06,people tested,79365
+Paraguay,2020-07-07,people tested,81441
+Paraguay,2020-07-08,people tested,82974
+Paraguay,2020-07-09,people tested,84991
+Paraguay,2020-07-10,people tested,87203
+Paraguay,2020-07-11,people tested,87203
+Paraguay,2020-07-12,people tested,87203
 Peru,2020-03-04,people tested,107
 Peru,2020-03-05,people tested,
 Peru,2020-03-06,people tested,155
@@ -7856,8 +8006,10 @@ Peru,2020-07-05,people tested,261603
 Peru,2020-07-06,people tested,268134
 Peru,2020-07-07,people tested,271947
 Peru,2020-07-08,people tested,276620
-Peru,2020-07-09,people tested,276620
-Peru,2020-07-10,people tested,276620
+Peru,2020-07-09,people tested,
+Peru,2020-07-10,people tested,279773
+Peru,2020-07-11,people tested,283886
+Peru,2020-07-12,people tested,290234
 Philippines,2020-04-03,people tested,20276
 Philippines,2020-04-04,people tested,22683
 Philippines,2020-04-05,people tested,23027
@@ -7954,9 +8106,11 @@ Philippines,2020-07-04,people tested,
 Philippines,2020-07-05,people tested,783680
 Philippines,2020-07-06,people tested,
 Philippines,2020-07-07,people tested,822098
-Philippines,2020-07-08,people tested,822098
-Philippines,2020-07-09,people tested,822098
-Philippines,2020-07-10,people tested,822098
+Philippines,2020-07-08,people tested,846420
+Philippines,2020-07-09,people tested,870162
+Philippines,2020-07-10,people tested,
+Philippines,2020-07-11,people tested,910924
+Philippines,2020-07-12,people tested,910924
 Poland,2020-04-28,people tested,281787
 Poland,2020-04-29,people tested,294589
 Poland,2020-04-30,people tested,307098
@@ -8029,6 +8183,11 @@ Poland,2020-07-05,people tested,1452787
 Poland,2020-07-06,people tested,1464912
 Poland,2020-07-07,people tested,1481219
 Poland,2020-07-08,people tested,1510573
+Poland,2020-07-09,people tested,1529354
+Poland,2020-07-10,people tested,1548706
+Poland,2020-07-11,people tested,1581440
+Poland,2020-07-12,people tested,1594635
+Poland,2020-07-13,people tested,1605344
 Poland,2020-03-06,samples tested,855
 Poland,2020-03-07,samples tested,
 Poland,2020-03-08,samples tested,1154
@@ -8154,8 +8313,11 @@ Poland,2020-07-05,samples tested,1639370
 Poland,2020-07-06,samples tested,1655664
 Poland,2020-07-07,samples tested,1676364
 Poland,2020-07-08,samples tested,1696572
-Poland,2020-07-09,samples tested,1696572
-Poland,2020-07-10,samples tested,1696572
+Poland,2020-07-09,samples tested,1720428
+Poland,2020-07-10,samples tested,1744631
+Poland,2020-07-11,samples tested,1779643
+Poland,2020-07-12,samples tested,1797612
+Poland,2020-07-13,samples tested,1813365
 Portugal,2020-03-01,samples tested,25
 Portugal,2020-03-02,samples tested,70
 Portugal,2020-03-03,samples tested,131
@@ -8288,6 +8450,8 @@ Portugal,2020-07-07,samples tested,1299594
 Portugal,2020-07-08,samples tested,1299594
 Portugal,2020-07-09,samples tested,1299594
 Portugal,2020-07-10,samples tested,1299594
+Portugal,2020-07-11,samples tested,1299594
+Portugal,2020-07-12,samples tested,1299594
 Qatar,2020-03-14,people tested,6788
 Qatar,2020-03-15,people tested,7950
 Qatar,2020-03-16,people tested,
@@ -8405,8 +8569,10 @@ Qatar,2020-07-05,people tested,381434
 Qatar,2020-07-06,people tested,386111
 Qatar,2020-07-07,people tested,390997
 Qatar,2020-07-08,people tested,396199
-Qatar,2020-07-09,people tested,396199
-Qatar,2020-07-10,people tested,396199
+Qatar,2020-07-09,people tested,400767
+Qatar,2020-07-10,people tested,404868
+Qatar,2020-07-11,people tested,409199
+Qatar,2020-07-12,people tested,412682
 Romania,2020-03-12,samples tested,1921
 Romania,2020-03-13,samples tested,2545
 Romania,2020-03-14,samples tested,2929
@@ -8527,7 +8693,10 @@ Romania,2020-07-06,samples tested,766868
 Romania,2020-07-07,samples tested,783337
 Romania,2020-07-08,samples tested,796484
 Romania,2020-07-09,samples tested,809663
-Romania,2020-07-10,samples tested,809663
+Romania,2020-07-10,samples tested,824343
+Romania,2020-07-11,samples tested,838953
+Romania,2020-07-12,samples tested,847586
+Romania,2020-07-13,samples tested,854241
 Russia,2020-03-05,samples tested,46414
 Russia,2020-03-06,samples tested,51366
 Russia,2020-03-07,samples tested,55688
@@ -8655,7 +8824,10 @@ Russia,2020-07-06,samples tested,21335394
 Russia,2020-07-07,samples tested,21537771
 Russia,2020-07-08,samples tested,21790705
 Russia,2020-07-09,samples tested,22079294
-Russia,2020-07-10,samples tested,22079294
+Russia,2020-07-10,samples tested,22388195
+Russia,2020-07-11,samples tested,22708416
+Russia,2020-07-12,samples tested,23031056
+Russia,2020-07-13,samples tested,23292630
 Rwanda,2020-04-06,units unclear,5701
 Rwanda,2020-04-07,units unclear,6507
 Rwanda,2020-04-08,units unclear,7279
@@ -8750,8 +8922,10 @@ Rwanda,2020-07-05,units unclear,160550
 Rwanda,2020-07-06,units unclear,163384
 Rwanda,2020-07-07,units unclear,166255
 Rwanda,2020-07-08,units unclear,168899
-Rwanda,2020-07-09,units unclear,168899
-Rwanda,2020-07-10,units unclear,168899
+Rwanda,2020-07-09,units unclear,172362
+Rwanda,2020-07-10,units unclear,176260
+Rwanda,2020-07-11,units unclear,176260
+Rwanda,2020-07-12,units unclear,176260
 Saudi Arabia,2020-05-06,units unclear,389659
 Saudi Arabia,2020-05-07,units unclear,405685
 Saudi Arabia,2020-05-08,units unclear,418722
@@ -8816,8 +8990,11 @@ Saudi Arabia,2020-07-05,units unclear,1874327
 Saudi Arabia,2020-07-06,units unclear,1934391
 Saudi Arabia,2020-07-07,units unclear,2018657
 Saudi Arabia,2020-07-08,units unclear,2062535
-Saudi Arabia,2020-07-09,units unclear,2062535
-Saudi Arabia,2020-07-10,units unclear,2062535
+Saudi Arabia,2020-07-09,units unclear,2115688
+Saudi Arabia,2020-07-10,units unclear,2170160
+Saudi Arabia,2020-07-11,units unclear,2217002
+Saudi Arabia,2020-07-12,units unclear,2261431
+Saudi Arabia,2020-07-13,units unclear,2327586
 Senegal,2020-03-02,samples tested,1
 Senegal,2020-03-03,samples tested,3
 Senegal,2020-03-04,samples tested,14
@@ -8947,8 +9124,11 @@ Senegal,2020-07-05,samples tested,84372
 Senegal,2020-07-06,samples tested,85210
 Senegal,2020-07-07,samples tested,85903
 Senegal,2020-07-08,samples tested,86691
-Senegal,2020-07-09,samples tested,86691
-Senegal,2020-07-10,samples tested,86691
+Senegal,2020-07-09,samples tested,87661
+Senegal,2020-07-10,samples tested,88529
+Senegal,2020-07-11,samples tested,89229
+Senegal,2020-07-12,samples tested,90337
+Senegal,2020-07-13,samples tested,91047
 Serbia,2020-02-26,people tested,16
 Serbia,2020-02-27,people tested,25
 Serbia,2020-02-28,people tested,30
@@ -9084,7 +9264,10 @@ Serbia,2020-07-06,people tested,447317
 Serbia,2020-07-07,people tested,455604
 Serbia,2020-07-08,people tested,464171
 Serbia,2020-07-09,people tested,471700
-Serbia,2020-07-10,people tested,471700
+Serbia,2020-07-10,people tested,480346
+Serbia,2020-07-11,people tested,487378
+Serbia,2020-07-12,people tested,491428
+Serbia,2020-07-13,people tested,498343
 Singapore,2020-04-07,people tested,47486
 Singapore,2020-04-08,people tested,
 Singapore,2020-04-09,people tested,
@@ -9271,6 +9454,8 @@ Singapore,2020-07-07,samples tested,866414
 Singapore,2020-07-08,samples tested,866414
 Singapore,2020-07-09,samples tested,866414
 Singapore,2020-07-10,samples tested,866414
+Singapore,2020-07-11,samples tested,866414
+Singapore,2020-07-12,samples tested,866414
 Slovakia,2020-03-15,samples tested,1545
 Slovakia,2020-03-16,samples tested,1913
 Slovakia,2020-03-17,samples tested,
@@ -9388,7 +9573,9 @@ Slovakia,2020-07-06,samples tested,218396
 Slovakia,2020-07-07,samples tested,219269
 Slovakia,2020-07-08,samples tested,221494
 Slovakia,2020-07-09,samples tested,223778
-Slovakia,2020-07-10,samples tested,223778
+Slovakia,2020-07-10,samples tested,225950
+Slovakia,2020-07-11,samples tested,228829
+Slovakia,2020-07-12,samples tested,229789
 Slovenia,2020-03-12,samples tested,3863
 Slovenia,2020-03-13,samples tested,5060
 Slovenia,2020-03-14,samples tested,5976
@@ -9508,8 +9695,10 @@ Slovenia,2020-07-05,samples tested,106898
 Slovenia,2020-07-06,samples tested,108228
 Slovenia,2020-07-07,samples tested,109835
 Slovenia,2020-07-08,samples tested,111106
-Slovenia,2020-07-09,samples tested,111106
-Slovenia,2020-07-10,samples tested,111106
+Slovenia,2020-07-09,samples tested,112496
+Slovenia,2020-07-10,samples tested,113665
+Slovenia,2020-07-11,samples tested,114215
+Slovenia,2020-07-12,samples tested,114665
 South Africa,2020-02-07,people tested,42
 South Africa,2020-02-08,people tested,
 South Africa,2020-02-09,people tested,
@@ -9663,8 +9852,10 @@ South Africa,2020-07-05,people tested,1830161
 South Africa,2020-07-06,people tested,1864111
 South Africa,2020-07-07,people tested,1907532
 South Africa,2020-07-08,people tested,1944399
-South Africa,2020-07-09,people tested,1944399
-South Africa,2020-07-10,people tested,1944399
+South Africa,2020-07-09,people tested,2000569
+South Africa,2020-07-10,people tested,2057232
+South Africa,2020-07-11,people tested,2108570
+South Africa,2020-07-12,people tested,2154391
 South Korea,2020-01-21,people tested,11
 South Korea,2020-01-22,people tested,16
 South Korea,2020-01-23,people tested,
@@ -9836,7 +10027,10 @@ South Korea,2020-07-06,people tested,1310147
 South Korea,2020-07-07,people tested,1322519
 South Korea,2020-07-08,people tested,1335723
 South Korea,2020-07-09,people tested,1347759
-South Korea,2020-07-10,people tested,1347759
+South Korea,2020-07-10,people tested,1360978
+South Korea,2020-07-11,people tested,1373414
+South Korea,2020-07-12,people tested,1379194
+South Korea,2020-07-13,people tested,1386467
 Spain,2020-04-13,samples tested,930230
 Spain,2020-04-14,samples tested,
 Spain,2020-04-15,samples tested,
@@ -9918,14 +10112,16 @@ Spain,2020-06-29,samples tested,
 Spain,2020-06-30,samples tested,
 Spain,2020-07-01,samples tested,
 Spain,2020-07-02,samples tested,3644458
-Spain,2020-07-03,samples tested,3644458
-Spain,2020-07-04,samples tested,3644458
-Spain,2020-07-05,samples tested,3644458
-Spain,2020-07-06,samples tested,3644458
-Spain,2020-07-07,samples tested,3644458
-Spain,2020-07-08,samples tested,3644458
-Spain,2020-07-09,samples tested,3644458
-Spain,2020-07-10,samples tested,3644458
+Spain,2020-07-03,samples tested,
+Spain,2020-07-04,samples tested,
+Spain,2020-07-05,samples tested,
+Spain,2020-07-06,samples tested,
+Spain,2020-07-07,samples tested,
+Spain,2020-07-08,samples tested,
+Spain,2020-07-09,samples tested,3849701
+Spain,2020-07-10,samples tested,3849701
+Spain,2020-07-11,samples tested,3849701
+Spain,2020-07-12,samples tested,3849701
 Sweden,2020-02-23,people tested,180
 Sweden,2020-02-24,people tested,
 Sweden,2020-02-25,people tested,
@@ -10065,6 +10261,8 @@ Sweden,2020-07-07,people tested,600019
 Sweden,2020-07-08,people tested,600019
 Sweden,2020-07-09,people tested,600019
 Sweden,2020-07-10,people tested,600019
+Sweden,2020-07-11,people tested,600019
+Sweden,2020-07-12,people tested,600019
 Switzerland,2020-01-24,samples tested,3
 Switzerland,2020-01-25,samples tested,7
 Switzerland,2020-01-26,samples tested,
@@ -10193,47 +10391,49 @@ Switzerland,2020-05-27,samples tested,388117
 Switzerland,2020-05-28,samples tested,392310
 Switzerland,2020-05-29,samples tested,396021
 Switzerland,2020-05-30,samples tested,398608
-Switzerland,2020-05-31,samples tested,400181
-Switzerland,2020-06-01,samples tested,401964
-Switzerland,2020-06-02,samples tested,406248
-Switzerland,2020-06-03,samples tested,411513
-Switzerland,2020-06-04,samples tested,416733
-Switzerland,2020-06-05,samples tested,421552
-Switzerland,2020-06-06,samples tested,424673
-Switzerland,2020-06-07,samples tested,426215
-Switzerland,2020-06-08,samples tested,430927
-Switzerland,2020-06-09,samples tested,437420
-Switzerland,2020-06-10,samples tested,444019
-Switzerland,2020-06-11,samples tested,449628
-Switzerland,2020-06-12,samples tested,456086
-Switzerland,2020-06-13,samples tested,460445
-Switzerland,2020-06-14,samples tested,462237
-Switzerland,2020-06-15,samples tested,468735
-Switzerland,2020-06-16,samples tested,478780
-Switzerland,2020-06-17,samples tested,488400
-Switzerland,2020-06-18,samples tested,496835
-Switzerland,2020-06-19,samples tested,504421
-Switzerland,2020-06-20,samples tested,509114
-Switzerland,2020-06-21,samples tested,510894
-Switzerland,2020-06-22,samples tested,519099
-Switzerland,2020-06-23,samples tested,530762
-Switzerland,2020-06-24,samples tested,539905
-Switzerland,2020-06-25,samples tested,549158
-Switzerland,2020-06-26,samples tested,559355
-Switzerland,2020-06-27,samples tested,565801
-Switzerland,2020-06-28,samples tested,568336
-Switzerland,2020-06-29,samples tested,582415
-Switzerland,2020-06-30,samples tested,597273
-Switzerland,2020-07-01,samples tested,608424
-Switzerland,2020-07-02,samples tested,619075
-Switzerland,2020-07-03,samples tested,629380
-Switzerland,2020-07-04,samples tested,635523
-Switzerland,2020-07-05,samples tested,638022
-Switzerland,2020-07-06,samples tested,645805
-Switzerland,2020-07-07,samples tested,655413
-Switzerland,2020-07-08,samples tested,661362
-Switzerland,2020-07-09,samples tested,661362
-Switzerland,2020-07-10,samples tested,661362
+Switzerland,2020-05-31,samples tested,400180
+Switzerland,2020-06-01,samples tested,401963
+Switzerland,2020-06-02,samples tested,406246
+Switzerland,2020-06-03,samples tested,411511
+Switzerland,2020-06-04,samples tested,416729
+Switzerland,2020-06-05,samples tested,421549
+Switzerland,2020-06-06,samples tested,424670
+Switzerland,2020-06-07,samples tested,426212
+Switzerland,2020-06-08,samples tested,430924
+Switzerland,2020-06-09,samples tested,437416
+Switzerland,2020-06-10,samples tested,444015
+Switzerland,2020-06-11,samples tested,449624
+Switzerland,2020-06-12,samples tested,456080
+Switzerland,2020-06-13,samples tested,460439
+Switzerland,2020-06-14,samples tested,462231
+Switzerland,2020-06-15,samples tested,468729
+Switzerland,2020-06-16,samples tested,478774
+Switzerland,2020-06-17,samples tested,488391
+Switzerland,2020-06-18,samples tested,496825
+Switzerland,2020-06-19,samples tested,504410
+Switzerland,2020-06-20,samples tested,509103
+Switzerland,2020-06-21,samples tested,510882
+Switzerland,2020-06-22,samples tested,519087
+Switzerland,2020-06-23,samples tested,530750
+Switzerland,2020-06-24,samples tested,539893
+Switzerland,2020-06-25,samples tested,549146
+Switzerland,2020-06-26,samples tested,559343
+Switzerland,2020-06-27,samples tested,565790
+Switzerland,2020-06-28,samples tested,568325
+Switzerland,2020-06-29,samples tested,582404
+Switzerland,2020-06-30,samples tested,597263
+Switzerland,2020-07-01,samples tested,608415
+Switzerland,2020-07-02,samples tested,619066
+Switzerland,2020-07-03,samples tested,629374
+Switzerland,2020-07-04,samples tested,635517
+Switzerland,2020-07-05,samples tested,638017
+Switzerland,2020-07-06,samples tested,645802
+Switzerland,2020-07-07,samples tested,655566
+Switzerland,2020-07-08,samples tested,664345
+Switzerland,2020-07-09,samples tested,672779
+Switzerland,2020-07-10,samples tested,680311
+Switzerland,2020-07-11,samples tested,684766
+Switzerland,2020-07-12,samples tested,684766
 Taiwan,2020-03-06,samples tested,13555
 Taiwan,2020-03-07,samples tested,13855
 Taiwan,2020-03-08,samples tested,14154
@@ -10361,6 +10561,8 @@ Taiwan,2020-07-07,samples tested,77876
 Taiwan,2020-07-08,samples tested,77876
 Taiwan,2020-07-09,samples tested,77876
 Taiwan,2020-07-10,samples tested,77876
+Taiwan,2020-07-11,samples tested,77876
+Taiwan,2020-07-12,samples tested,77876
 Thailand,2020-03-03,people tested,3680
 Thailand,2020-03-04,people tested,3895
 Thailand,2020-03-05,people tested,4023
@@ -10490,7 +10692,9 @@ Thailand,2020-07-06,people tested,320990
 Thailand,2020-07-07,people tested,322306
 Thailand,2020-07-08,people tested,323642
 Thailand,2020-07-09,people tested,326073
-Thailand,2020-07-10,people tested,326073
+Thailand,2020-07-10,people tested,328444
+Thailand,2020-07-11,people tested,329887
+Thailand,2020-07-12,people tested,331018
 Thailand,2020-04-10,samples tested,100498
 Thailand,2020-04-11,samples tested,
 Thailand,2020-04-12,samples tested,
@@ -10693,11 +10897,13 @@ Togo,2020-07-02,samples tested,32001
 Togo,2020-07-03,samples tested,32284
 Togo,2020-07-04,samples tested,32775
 Togo,2020-07-05,samples tested,32916
-Togo,2020-07-06,samples tested,32916
-Togo,2020-07-07,samples tested,32916
-Togo,2020-07-08,samples tested,32916
-Togo,2020-07-09,samples tested,32916
-Togo,2020-07-10,samples tested,32916
+Togo,2020-07-06,samples tested,32967
+Togo,2020-07-07,samples tested,33349
+Togo,2020-07-08,samples tested,33610
+Togo,2020-07-09,samples tested,34118
+Togo,2020-07-10,samples tested,34627
+Togo,2020-07-11,samples tested,34627
+Togo,2020-07-12,samples tested,34627
 Tunisia,2020-03-02,samples tested,1
 Tunisia,2020-03-03,samples tested,
 Tunisia,2020-03-04,samples tested,
@@ -10829,6 +11035,8 @@ Tunisia,2020-07-07,samples tested,68104
 Tunisia,2020-07-08,samples tested,68104
 Tunisia,2020-07-09,samples tested,68104
 Tunisia,2020-07-10,samples tested,68104
+Tunisia,2020-07-11,samples tested,68104
+Tunisia,2020-07-12,samples tested,68104
 Turkey,2020-03-18,samples tested,10018
 Turkey,2020-03-19,samples tested,11999
 Turkey,2020-03-20,samples tested,15655
@@ -10942,8 +11150,11 @@ Turkey,2020-07-05,samples tested,
 Turkey,2020-07-06,samples tested,3682673
 Turkey,2020-07-07,samples tested,3733218
 Turkey,2020-07-08,samples tested,3782520
-Turkey,2020-07-09,samples tested,3782520
-Turkey,2020-07-10,samples tested,3782520
+Turkey,2020-07-09,samples tested,
+Turkey,2020-07-10,samples tested,3881410
+Turkey,2020-07-11,samples tested,3930223
+Turkey,2020-07-12,samples tested,3975455
+Turkey,2020-07-13,samples tested,4021947
 Uganda,2020-04-06,samples tested,3160
 Uganda,2020-04-07,samples tested,3310
 Uganda,2020-04-08,samples tested,3524
@@ -11037,9 +11248,11 @@ Uganda,2020-07-04,samples tested,180997
 Uganda,2020-07-05,samples tested,184100
 Uganda,2020-07-06,samples tested,186514
 Uganda,2020-07-07,samples tested,189965
-Uganda,2020-07-08,samples tested,189965
-Uganda,2020-07-09,samples tested,189965
-Uganda,2020-07-10,samples tested,189965
+Uganda,2020-07-08,samples tested,193281
+Uganda,2020-07-09,samples tested,195329
+Uganda,2020-07-10,samples tested,197765
+Uganda,2020-07-11,samples tested,200057
+Uganda,2020-07-12,samples tested,201759
 Ukraine,2020-04-09,units unclear,20608
 Ukraine,2020-04-10,units unclear,23522
 Ukraine,2020-04-11,units unclear,
@@ -11132,7 +11345,10 @@ Ukraine,2020-07-06,units unclear,722513
 Ukraine,2020-07-07,units unclear,731858
 Ukraine,2020-07-08,units unclear,745313
 Ukraine,2020-07-09,units unclear,760247
-Ukraine,2020-07-10,units unclear,760247
+Ukraine,2020-07-10,units unclear,773831
+Ukraine,2020-07-11,units unclear,786843
+Ukraine,2020-07-12,units unclear,796680
+Ukraine,2020-07-13,units unclear,803657
 United Arab Emirates,2020-04-08,samples tested,
 United Arab Emirates,2020-04-09,samples tested,
 United Arab Emirates,2020-04-10,samples tested,
@@ -11227,6 +11443,8 @@ United Arab Emirates,2020-07-07,samples tested,
 United Arab Emirates,2020-07-08,samples tested,
 United Arab Emirates,2020-07-09,samples tested,
 United Arab Emirates,2020-07-10,samples tested,
+United Arab Emirates,2020-07-11,samples tested,
+United Arab Emirates,2020-07-12,samples tested,
 United Kingdom,2020-03-31,samples tested,155174
 United Kingdom,2020-04-01,samples tested,167098
 United Kingdom,2020-04-02,samples tested,182047
@@ -11327,8 +11545,10 @@ United Kingdom,2020-07-05,samples tested,6433120
 United Kingdom,2020-07-06,samples tested,6496653
 United Kingdom,2020-07-07,samples tested,6597342
 United Kingdom,2020-07-08,samples tested,6717480
-United Kingdom,2020-07-09,samples tested,6717480
-United Kingdom,2020-07-10,samples tested,6717480
+United Kingdom,2020-07-09,samples tested,6849508
+United Kingdom,2020-07-10,samples tested,6977736
+United Kingdom,2020-07-11,samples tested,7101830
+United Kingdom,2020-07-12,samples tested,7188816
 United States,2020-05-12,tests performed (CDC) (incl. non-PCR),9724879
 United States,2020-05-13,tests performed (CDC) (incl. non-PCR),10217573
 United States,2020-05-14,tests performed (CDC) (incl. non-PCR),
@@ -11386,6 +11606,9 @@ United States,2020-07-04,tests performed (CDC) (incl. non-PCR),
 United States,2020-07-05,tests performed (CDC) (incl. non-PCR),
 United States,2020-07-06,tests performed (CDC) (incl. non-PCR),37258821
 United States,2020-07-07,tests performed (CDC) (incl. non-PCR),39011749
+United States,2020-07-08,tests performed (CDC) (incl. non-PCR),39208278
+United States,2020-07-09,tests performed (CDC) (incl. non-PCR),40045940
+United States,2020-07-10,tests performed (CDC) (incl. non-PCR),40787857
 United States,2020-03-07,units unclear,4138
 United States,2020-03-08,units unclear,5012
 United States,2020-03-09,units unclear,6785
@@ -11484,9 +11707,9 @@ United States,2020-06-09,units unclear,21093233
 United States,2020-06-10,units unclear,21521512
 United States,2020-06-11,units unclear,21977935
 United States,2020-06-12,units unclear,22595305
-United States,2020-06-13,units unclear,23096408
-United States,2020-06-14,units unclear,23575893
-United States,2020-06-15,units unclear,24016492
+United States,2020-06-13,units unclear,23100698
+United States,2020-06-14,units unclear,23583586
+United States,2020-06-15,units unclear,24018746
 United States,2020-06-16,units unclear,24481883
 United States,2020-06-17,units unclear,24969040
 United States,2020-06-18,units unclear,25482946
@@ -11498,20 +11721,22 @@ United States,2020-06-23,units unclear,28094430
 United States,2020-06-24,units unclear,28605565
 United States,2020-06-25,units unclear,29241456
 United States,2020-06-26,units unclear,29843418
-United States,2020-06-27,units unclear,30435529
-United States,2020-06-28,units unclear,31022498
+United States,2020-06-27,units unclear,30446284
+United States,2020-06-28,units unclear,31032977
 United States,2020-06-29,units unclear,31664642
 United States,2020-06-30,units unclear,32298587
 United States,2020-07-01,units unclear,32931869
-United States,2020-07-02,units unclear,33593944
-United States,2020-07-03,units unclear,34313007
+United States,2020-07-02,units unclear,33595245
+United States,2020-07-03,units unclear,34316685
 United States,2020-07-04,units unclear,34958916
 United States,2020-07-05,units unclear,35615824
 United States,2020-07-06,units unclear,36135775
 United States,2020-07-07,units unclear,36768996
-United States,2020-07-08,units unclear,37431666
-United States,2020-07-09,units unclear,37431666
-United States,2020-07-10,units unclear,37431666
+United States,2020-07-08,units unclear,37395666
+United States,2020-07-09,units unclear,38096046
+United States,2020-07-10,units unclear,38919421
+United States,2020-07-11,units unclear,39553395
+United States,2020-07-12,units unclear,40282176
 Uruguay,2020-03-28,samples tested,2926
 Uruguay,2020-03-29,samples tested,3126
 Uruguay,2020-03-30,samples tested,3425
@@ -11615,8 +11840,10 @@ Uruguay,2020-07-05,samples tested,
 Uruguay,2020-07-06,samples tested,72553
 Uruguay,2020-07-07,samples tested,73609
 Uruguay,2020-07-08,samples tested,74568
-Uruguay,2020-07-09,samples tested,74568
-Uruguay,2020-07-10,samples tested,74568
+Uruguay,2020-07-09,samples tested,76035
+Uruguay,2020-07-10,samples tested,77259
+Uruguay,2020-07-11,samples tested,78117
+Uruguay,2020-07-12,samples tested,78586
 Vietnam,2020-03-02,units unclear,1753
 Vietnam,2020-03-03,units unclear,1785
 Vietnam,2020-03-04,units unclear,
@@ -11748,6 +11975,8 @@ Vietnam,2020-07-07,units unclear,261004
 Vietnam,2020-07-08,units unclear,261004
 Vietnam,2020-07-09,units unclear,261004
 Vietnam,2020-07-10,units unclear,261004
+Vietnam,2020-07-11,units unclear,261004
+Vietnam,2020-07-12,units unclear,261004
 Zimbabwe,2020-05-06,samples tested,7808
 Zimbabwe,2020-05-07,samples tested,8141
 Zimbabwe,2020-05-08,samples tested,8741
@@ -11812,5 +12041,7 @@ Zimbabwe,2020-07-05,samples tested,33256
 Zimbabwe,2020-07-06,samples tested,33568
 Zimbabwe,2020-07-07,samples tested,34160
 Zimbabwe,2020-07-08,samples tested,34766
-Zimbabwe,2020-07-09,samples tested,34766
-Zimbabwe,2020-07-10,samples tested,34766
+Zimbabwe,2020-07-09,samples tested,35346
+Zimbabwe,2020-07-10,samples tested,36005
+Zimbabwe,2020-07-11,samples tested,36005
+Zimbabwe,2020-07-12,samples tested,36005

@@ -44,10 +44,10 @@ function plot(
     new_window::Bool = true,
     ylabel = _"People",
     yscale = nothing,
-    legend = :topleft,
-    left_margin = 1mm,
-    seriestype = :line,
-    #fillcolors = :red,
+    legend = false,
+    left_margin = 0mm,
+    seriestypes = :path,
+    seriescolors = :auto,
     kwargs...,
 )
     maybe_load_language()
@@ -85,16 +85,22 @@ function plot(
     end
     @argcheck ini <= iend
 
-    if isa(columns, String) || isa(columns, Symbol)
+    if !(isa(columns, AbstractVector) || isa(columns, Tuple))
         columns = [columns]
         #fillcolors = [fillcolors]
+    elseif (legend == false) && (length(columns) > 1)
+        legend = :topleft
+    end
+
+    if !(isa(seriestypes, AbstractVector) || isa(seriestypes, Tuple))
+        seriestypes = fill(seriestypes, length(columns))
+    end
+    if !(isa(seriescolors, AbstractVector) || isa(seriescolors, Tuple))
+        seriescolors = fill(seriescolors, length(columns))
     end
 
     df = df[ini:iend, :]
     columns = string.(columns)
-    if isnothing(labels)
-        labels = gettext.(string.(prettify.(Symbol.(columns))))
-    end
     max_yvalue = 0
     for cname ∈ columns
         max_yvalue = max(maximum(skipmissing(df[!, cname])), max_yvalue)
@@ -109,37 +115,47 @@ function plot(
         !isempty(scalestr) && (ylabel *= " ($(scalestr))")
     end
 
+    left_margin isa Real && (left_margin *= mm)
+
     if keycolumn == :date
         X = Dates.format.(df.date, date_format)
     else
         X = string.(df[!, keycolumn])
-        seriestype == :pie && (labels = [X])
+        isnothing(labels) && seriestype == :pie && (labels = [X])
     end
+    if isnothing(labels)
+        labels = gettext.(string.(prettify.(Symbol.(columns))))
+    end
+    Y = df[!, columns[1]] ./ yscale
 
-    left_margin isa Real && (left_margin *= mm)
+    @debug("Plotting series", column = columns[1], X = Tuple(X), Y = Tuple(Y))
 
     win = Plots.plot(
         X,
-        df[!, columns[1]] ./ yscale,
-        xrotation = 45,
-        xticks = 15,
-        #label = labels[1],
+        Y,
+        xrotation = 90,
+        xticks = min(30, length(X)),
+        label = labels[1],
         ylabel = ylabel,
         title = title,
         legend = legend,
         left_margin = left_margin,
-        seriestype = seriestype,
-        #fillcolor = fillcolors[1],
+        seriestype = seriestypes[1],
+        seriescolors = seriescolors[1],
     )
-    #for (yn, label, fillcolor) ∈ zip(columns[2:end], labels[2:end], fillcolors[2:end])
-    for (yn, label) ∈ zip(columns[2:end], labels[2:end])
+    #for (yn, label) ∈ zip(columns[2:end], labels[2:end])
+    for (column, label, seriestype, seriescolor) ∈
+        zip(columns[2:end], labels[2:end], seriestypes[2:end], seriescolors[2:end])
+
+        @debug("Plotting series", column = column, X = Tuple(X), Y = Tuple(Y))
+        Y = df[!, column] ./ yscale
         Plots.plot!(
             win,
             X,
-            df[!, yn] ./ yscale;
+            Y;
             label = label,
             seriestype = seriestype,
-            #fillcolor = fillcolor,
+            seriescolor = seriescolor,
         )
     end
     new_window && Plots.gui(win)
