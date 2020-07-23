@@ -1,0 +1,9 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-15,RS,Boa Vista do Incra,2,0,14,1,2629,4302238,8.4,17,14,3,,,,,,,,,,,,,,,0.0,6466.34,0.0,5325.22,5325.22,1141.12
+2020-07-16,RS,Boa Vista do Incra,2,0,14,2,2629,4302238,8.4,17,14,3,,,,,,,,,,,,,,,0.0,6466.34,0.0,5325.22,5325.22,1141.12
+2020-07-17,RS,Boa Vista do Incra,5,0,34,3,2629,4302238,8.4,42,34,8,,,,,,,,,,,,,,,0.0,15975.66,0.0,12932.67,12932.67,3042.98
+2020-07-18,RS,Boa Vista do Incra,5,0,34,4,2629,4302238,8.4,42,34,8,,,,,,,,,,,,,,,0.0,15975.66,0.0,12932.67,12932.67,3042.98
+2020-07-19,RS,Boa Vista do Incra,5,0,34,5,2629,4302238,8.4,42,34,8,0.571,4.71,3.86,0.0,3.86,0.857,,,,,,,,,0.0,15975.66,0.0,12932.67,12932.67,3042.98
+2020-07-20,RS,Boa Vista do Incra,5,0,35,6,2629,4302238,8.4,42,35,7,,,,,,,,,,,,,,,0.0,15975.66,0.0,13313.05,13313.05,2662.61
+2020-07-21,RS,Boa Vista do Incra,5,0,35,7,2629,4302238,8.4,42,35,7,,,,,,,,,,,,,,,0.0,15975.66,0.0,13313.05,13313.05,2662.61
+2020-07-22,RS,Boa Vista do Incra,6,0,41,8,2629,4302238,8.4,50,41,9,,,,,,,,,,,,,,,0.0,19018.64,0.0,15595.28,15595.28,3423.35

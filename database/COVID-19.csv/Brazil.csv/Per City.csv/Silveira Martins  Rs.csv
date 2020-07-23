@@ -1,0 +1,8 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-16,RS,Silveira Martins,1,0,6,1,2408,4320651,8.4,8,6,2,,,,,,,,,,,,,,,0.0,3322.26,0.0,2491.69,2491.69,830.56
+2020-07-17,RS,Silveira Martins,1,0,6,2,2408,4320651,8.4,8,6,2,,,,,,,,,,,,,,,0.0,3322.26,0.0,2491.69,2491.69,830.56
+2020-07-18,RS,Silveira Martins,2,0,14,3,2408,4320651,8.4,17,14,3,,,,,,,,,,,,,,,0.0,7059.8,0.0,5813.95,5813.95,1245.85
+2020-07-19,RS,Silveira Martins,2,0,14,4,2408,4320651,8.4,17,14,3,,,,,,,,,,,,,,,0.0,7059.8,0.0,5813.95,5813.95,1245.85
+2020-07-20,RS,Silveira Martins,2,0,14,5,2408,4320651,8.4,17,14,3,,,,,,,,,,,,,,,0.0,7059.8,0.0,5813.95,5813.95,1245.85
+2020-07-21,RS,Silveira Martins,2,0,14,6,2408,4320651,8.4,17,14,3,,,,,,,,,,,,,,,0.0,7059.8,0.0,5813.95,5813.95,1245.85
+2020-07-22,RS,Silveira Martins,2,0,14,7,2408,4320651,8.4,17,14,3,,,,,,,,,,,,,,,0.0,7059.8,0.0,5813.95,5813.95,1245.85

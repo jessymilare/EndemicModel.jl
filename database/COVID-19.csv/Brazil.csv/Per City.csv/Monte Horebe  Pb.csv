@@ -1,0 +1,9 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-14,PB,Monte Horebe,2,0,14,1,4864,2509602,8.3,17,14,3,,,,,,,,,,,,,,,0.0,3495.07,0.0,2878.29,2878.29,616.78
+2020-07-15,PB,Monte Horebe,1,0,6,2,4864,2509602,8.3,8,6,2,,,,,,,,,,,,,,,0.0,1644.74,0.0,1233.55,1233.55,411.18
+2020-07-16,PB,Monte Horebe,1,0,6,3,4864,2509602,8.3,8,6,2,,,,,,,,,,,,,,,0.0,1644.74,0.0,1233.55,1233.55,411.18
+2020-07-17,PB,Monte Horebe,1,0,6,4,4864,2509602,8.3,8,6,2,,,,,,,,,,,,,,,0.0,1644.74,0.0,1233.55,1233.55,411.18
+2020-07-18,PB,Monte Horebe,1,0,6,5,4864,2509602,8.3,8,6,2,0.143,1.14,1.0,0.0,1.0,0.143,,,,,,,,,0.0,1644.74,0.0,1233.55,1233.55,411.18
+2020-07-19,PB,Monte Horebe,3,0,20,6,4864,2509602,8.3,25,20,5,,,,,,,,,,,,,,,0.0,5139.8,0.0,4111.84,4111.84,1027.96
+2020-07-20,PB,Monte Horebe,3,0,21,7,4864,2509602,8.3,25,21,4,,,,,,,,,,,,,,,0.0,5139.8,0.0,4317.43,4317.43,822.37
+2020-07-21,PB,Monte Horebe,3,0,21,8,4864,2509602,8.3,25,21,4,,,,,,,,,,,,,,,0.0,5139.8,0.0,4317.43,4317.43,822.37

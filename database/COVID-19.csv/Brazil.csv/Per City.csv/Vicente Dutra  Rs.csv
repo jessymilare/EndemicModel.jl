@@ -1,0 +1,9 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-15,RS,Vicente Dutra,9,0,61,1,4717,4323101,8.4,76,61,15,,,,,,,,,,,,,,,0.0,16111.94,0.0,12931.95,12931.95,3179.99
+2020-07-16,RS,Vicente Dutra,9,0,61,2,4717,4323101,8.4,76,61,15,,,,,,,,,,,,,,,0.0,16111.94,0.0,12931.95,12931.95,3179.99
+2020-07-17,RS,Vicente Dutra,9,0,61,3,4717,4323101,8.4,76,61,15,,,,,,,,,,,,,,,0.0,16111.94,0.0,12931.95,12931.95,3179.99
+2020-07-18,RS,Vicente Dutra,9,0,61,4,4717,4323101,8.4,76,61,15,,,,,,,,,,,,,,,0.0,16111.94,0.0,12931.95,12931.95,3179.99
+2020-07-19,RS,Vicente Dutra,9,0,62,5,4717,4323101,8.4,76,62,14,0.429,3.57,3.0,0.0,3.0,0.571,,,,,,,,,0.0,16111.94,0.0,13143.95,13143.95,2967.99
+2020-07-20,RS,Vicente Dutra,9,0,63,6,4717,4323101,8.4,76,63,13,,,,,,,,,,,,,,,0.0,16111.94,0.0,13355.95,13355.95,2755.99
+2020-07-21,RS,Vicente Dutra,11,0,76,7,4717,4323101,8.4,92,76,16,,,,,,,,,,,,,,,0.0,19503.92,0.0,16111.94,16111.94,3391.99
+2020-07-22,RS,Vicente Dutra,12,0,82,8,4717,4323101,8.4,101,82,19,,,,,,,,,,,,,,,0.0,21411.91,0.0,17383.93,17383.93,4027.98

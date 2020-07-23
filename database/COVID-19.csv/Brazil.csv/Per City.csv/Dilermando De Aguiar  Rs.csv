@@ -1,0 +1,7 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-17,RS,Dilermando de Aguiar,1,0,6,1,3044,4306379,8.4,8,6,2,,,,,,,,,,,,,,,0.0,2628.12,0.0,1971.09,1971.09,657.03
+2020-07-18,RS,Dilermando de Aguiar,1,0,6,2,3044,4306379,8.4,8,6,2,,,,,,,,,,,,,,,0.0,2628.12,0.0,1971.09,1971.09,657.03
+2020-07-19,RS,Dilermando de Aguiar,1,0,7,3,3044,4306379,8.4,8,7,1,,,,,,,,,,,,,,,0.0,2628.12,0.0,2299.61,2299.61,328.52
+2020-07-20,RS,Dilermando de Aguiar,1,0,7,4,3044,4306379,8.4,8,7,1,,,,,,,,,,,,,,,0.0,2628.12,0.0,2299.61,2299.61,328.52
+2020-07-21,RS,Dilermando de Aguiar,1,0,7,5,3044,4306379,8.4,8,7,1,,,,,,,,,,,,,,,0.0,2628.12,0.0,2299.61,2299.61,328.52
+2020-07-22,RS,Dilermando de Aguiar,1,0,7,6,3044,4306379,8.4,8,7,1,,,,,,,,,,,,,,,0.0,2628.12,0.0,2299.61,2299.61,328.52

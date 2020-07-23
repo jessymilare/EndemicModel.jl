@@ -1,0 +1,9 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-15,RS,São Nicolau,1,0,6,1,5318,4319208,8.4,8,6,2,,,,,,,,,,,,,,,0.0,1504.32,0.0,1128.24,1128.24,376.08
+2020-07-16,RS,São Nicolau,1,0,6,2,5318,4319208,8.4,8,6,2,,,,,,,,,,,,,,,0.0,1504.32,0.0,1128.24,1128.24,376.08
+2020-07-17,RS,São Nicolau,1,0,6,3,5318,4319208,8.4,8,6,2,,,,,,,,,,,,,,,0.0,1504.32,0.0,1128.24,1128.24,376.08
+2020-07-18,RS,São Nicolau,1,0,6,4,5318,4319208,8.4,8,6,2,,,,,,,,,,,,,,,0.0,1504.32,0.0,1128.24,1128.24,376.08
+2020-07-19,RS,São Nicolau,1,0,7,5,5318,4319208,8.4,8,7,1,0.0,0.0,0.143,0.0,0.143,-0.1429,,,,,,,,,0.0,1504.32,0.0,1316.28,1316.28,188.04
+2020-07-20,RS,São Nicolau,1,0,7,6,5318,4319208,8.4,8,7,1,,,,,,,,,,,,,,,0.0,1504.32,0.0,1316.28,1316.28,188.04
+2020-07-21,RS,São Nicolau,1,0,7,7,5318,4319208,8.4,8,7,1,,,,,,,,,,,,,,,0.0,1504.32,0.0,1316.28,1316.28,188.04
+2020-07-22,RS,São Nicolau,1,0,7,8,5318,4319208,8.4,8,7,1,,,,,,,,,,,,,,,0.0,1504.32,0.0,1316.28,1316.28,188.04

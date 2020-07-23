@@ -1,0 +1,5 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-19,SP,Nova Canaã Paulista,1,0,8,1,1900,3532843,9.7,10,8,2,,,,,,,,,,,,,,,0.0,5263.16,0.0,4210.53,4210.53,1052.63
+2020-07-20,SP,Nova Canaã Paulista,1,0,8,2,1900,3532843,9.7,10,8,2,,,,,,,,,,,,,,,0.0,5263.16,0.0,4210.53,4210.53,1052.63
+2020-07-21,SP,Nova Canaã Paulista,1,0,8,3,1900,3532843,9.7,10,8,2,,,,,,,,,,,,,,,0.0,5263.16,0.0,4210.53,4210.53,1052.63
+2020-07-22,SP,Nova Canaã Paulista,1,0,8,4,1900,3532843,9.7,10,8,2,,,,,,,,,,,,,,,0.0,5263.16,0.0,4210.53,4210.53,1052.63

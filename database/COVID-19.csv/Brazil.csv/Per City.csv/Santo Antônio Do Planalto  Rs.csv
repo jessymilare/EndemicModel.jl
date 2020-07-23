@@ -1,0 +1,9 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-15,RS,Santo Antônio do Planalto,1,0,6,1,2039,4317756,8.4,8,6,2,,,,,,,,,,,,,,,0.0,3923.49,0.0,2942.62,2942.62,980.87
+2020-07-16,RS,Santo Antônio do Planalto,1,0,6,2,2039,4317756,8.4,8,6,2,,,,,,,,,,,,,,,0.0,3923.49,0.0,2942.62,2942.62,980.87
+2020-07-17,RS,Santo Antônio do Planalto,2,0,14,3,2039,4317756,8.4,17,14,3,,,,,,,,,,,,,,,0.0,8337.42,0.0,6866.11,6866.11,1471.31
+2020-07-18,RS,Santo Antônio do Planalto,2,0,14,4,2039,4317756,8.4,17,14,3,,,,,,,,,,,,,,,0.0,8337.42,0.0,6866.11,6866.11,1471.31
+2020-07-19,RS,Santo Antônio do Planalto,2,0,14,5,2039,4317756,8.4,17,14,3,1.0,8.43,6.86,0.0,6.86,1.57,,,,,,,,,0.0,8337.42,0.0,6866.11,6866.11,1471.31
+2020-07-20,RS,Santo Antônio do Planalto,3,0,21,6,2039,4317756,8.4,25,21,4,,,,,,,,,,,,,,,0.0,12260.91,0.0,10299.17,10299.17,1961.75
+2020-07-21,RS,Santo Antônio do Planalto,4,0,28,7,2039,4317756,8.4,34,28,6,,,,,,,,,,,,,,,0.0,16674.84,0.0,13732.22,13732.22,2942.62
+2020-07-22,RS,Santo Antônio do Planalto,8,0,54,8,2039,4317756,8.4,67,54,13,,,,,,,,,,,,,,,0.0,32859.24,0.0,26483.57,26483.57,6375.67

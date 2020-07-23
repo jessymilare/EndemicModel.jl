@@ -1,0 +1,8 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-15,PB,Poço de José de Moura,1,0,6,1,4350,2512077,8.3,8,6,2,,,,,,,,,,,,,,,0.0,1839.08,0.0,1379.31,1379.31,459.77
+2020-07-16,PB,Poço de José de Moura,1,0,6,2,4350,2512077,8.3,8,6,2,,,,,,,,,,,,,,,0.0,1839.08,0.0,1379.31,1379.31,459.77
+2020-07-17,PB,Poço de José de Moura,2,0,14,3,4350,2512077,8.3,17,14,3,,,,,,,,,,,,,,,0.0,3908.05,0.0,3218.39,3218.39,689.66
+2020-07-18,PB,Poço de José de Moura,2,0,14,4,4350,2512077,8.3,17,14,3,,,,,,,,,,,,,,,0.0,3908.05,0.0,3218.39,3218.39,689.66
+2020-07-19,PB,Poço de José de Moura,2,0,14,5,4350,2512077,8.3,17,14,3,,,,,,,,,,,,,,,0.0,3908.05,0.0,3218.39,3218.39,689.66
+2020-07-20,PB,Poço de José de Moura,2,0,14,6,4350,2512077,8.3,17,14,3,,,,,,,,,,,,,,,0.0,3908.05,0.0,3218.39,3218.39,689.66
+2020-07-21,PB,Poço de José de Moura,4,0,27,7,4350,2512077,8.3,33,27,6,,,,,,,,,,,,,,,0.0,7586.21,0.0,6206.9,6206.9,1379.31

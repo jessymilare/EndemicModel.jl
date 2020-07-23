@@ -1,0 +1,7 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-17,BA,Planaltino,0,0,0,1,9415,2924900,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-07-18,BA,Planaltino,0,0,0,2,9415,2924900,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-07-19,BA,Planaltino,1,0,7,3,9415,2924900,8.3,8,7,1,,,,,,,,,,,,,,,0.0,849.71,0.0,743.49,743.49,106.21
+2020-07-20,BA,Planaltino,1,0,7,4,9415,2924900,8.3,8,7,1,,,,,,,,,,,,,,,0.0,849.71,0.0,743.49,743.49,106.21
+2020-07-21,BA,Planaltino,1,0,7,5,9415,2924900,8.3,8,7,1,,,,,,,,,,,,,,,0.0,849.71,0.0,743.49,743.49,106.21
+2020-07-22,BA,Planaltino,1,0,7,6,9415,2924900,8.3,8,7,1,,,,,,,,,,,,,,,0.0,849.71,0.0,743.49,743.49,106.21

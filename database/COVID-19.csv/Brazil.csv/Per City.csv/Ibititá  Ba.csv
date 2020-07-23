@@ -1,0 +1,8 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-16,BA,Ibititá,1,0,6,1,17284,2913101,8.3,8,6,2,,,,,,,,,,,,,,,0.0,462.86,0.0,347.14,347.14,115.71
+2020-07-17,BA,Ibititá,2,0,14,2,17284,2913101,8.3,17,14,3,,,,,,,,,,,,,,,0.0,983.57,0.0,810.0,810.0,173.57
+2020-07-18,BA,Ibititá,2,1,14,3,17284,2913101,8.3,17,15,2,,,,,,,,,,,,,,,0.0667,983.57,57.86,810.0,867.85,115.71
+2020-07-19,BA,Ibititá,3,1,20,4,17284,2913101,8.3,25,21,4,,,,,,,,,,,,,,,0.0476,1446.42,57.86,1157.14,1215.0,231.43
+2020-07-20,BA,Ibititá,3,1,21,5,17284,2913101,8.3,25,22,3,,,,,,,,,,,,,,,0.0455,1446.42,57.86,1215.0,1272.85,173.57
+2020-07-21,BA,Ibititá,7,1,48,6,17284,2913101,8.3,58,49,9,,,,,,,,,,,,,,,0.0204,3355.7,57.86,2777.13,2834.99,520.71
+2020-07-22,BA,Ibititá,12,1,81,7,17284,2913101,8.3,100,82,18,,,,,,,,,,,,,,,0.0122,5785.7,57.86,4686.42,4744.27,1041.43

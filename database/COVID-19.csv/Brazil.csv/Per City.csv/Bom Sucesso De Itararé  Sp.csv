@@ -1,0 +1,10 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-14,SP,Bom Sucesso de Itararé,1,0,8,1,3994,3507159,9.7,10,8,2,,,,,,,,,,,,,,,0.0,2503.76,0.0,2003.0,2003.0,500.75
+2020-07-15,SP,Bom Sucesso de Itararé,1,0,8,2,3994,3507159,9.7,10,8,2,,,,,,,,,,,,,,,0.0,2503.76,0.0,2003.0,2003.0,500.75
+2020-07-16,SP,Bom Sucesso de Itararé,1,0,8,3,3994,3507159,9.7,10,8,2,,,,,,,,,,,,,,,0.0,2503.76,0.0,2003.0,2003.0,500.75
+2020-07-17,SP,Bom Sucesso de Itararé,1,0,8,4,3994,3507159,9.7,10,8,2,,,,,,,,,,,,,,,0.0,2503.76,0.0,2003.0,2003.0,500.75
+2020-07-18,SP,Bom Sucesso de Itararé,1,0,8,5,3994,3507159,9.7,10,8,2,0.143,1.29,1.14,0.0,1.14,0.143,,,,,,,,,0.0,2503.76,0.0,2003.0,2003.0,500.75
+2020-07-19,SP,Bom Sucesso de Itararé,1,0,8,6,3994,3507159,9.7,10,8,2,0.143,1.29,1.0,0.0,1.0,0.286,,,,,,,,,0.0,2503.76,0.0,2003.0,2003.0,500.75
+2020-07-20,SP,Bom Sucesso de Itararé,2,0,16,7,3994,3507159,9.7,19,16,3,,,,,,,,,,,,,,,0.0,4757.14,0.0,4006.01,4006.01,751.13
+2020-07-21,SP,Bom Sucesso de Itararé,2,0,16,8,3994,3507159,9.7,19,16,3,,,,,,,,,,,,,,,0.0,4757.14,0.0,4006.01,4006.01,751.13
+2020-07-22,SP,Bom Sucesso de Itararé,2,0,15,9,3994,3507159,9.7,19,15,4,,,,,,,,,,,,,,,0.0,4757.14,0.0,3755.63,3755.63,1001.5
