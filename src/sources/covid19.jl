@@ -169,17 +169,20 @@ function import_data(source::BrasilIo; url = BRASIL_IO_URL, kwargs...)
     col_drop = [:confirmed_per_100k_inhabitants, :death_rate, :is_last]
     gzfile = import_data(DownloadSource(url))
     file = gzopen(gzfile)
+    fstring = read(file)
+    close(file)
     raw_data::DataFrame = csv_read(
-        file;
+        IOBuffer(fstring);
         copycols = true,
         truestrings = ["True"],
         falsestrings = ["False"],
         drop = col_drop,
     )
     raw_data[(raw_data.deaths.===missing), :deaths] .= 0
+    raw_data[(raw_data.city.===missing), :city] .= ""
     sort!(raw_data, [:state, :city, :date])
 
-    rename!(raw_data, :estimated_population_2019 => :estimated_population)
+    rename!(raw_data, "estimated_population_2019" => "estimated_population")
     raw_data.estimated_population =
         round.(OptInt, raw_data.estimated_population .* BRAZIL_POP_FACTOR)
 
@@ -213,10 +216,5 @@ function import_data(source::BrasilIo; url = BRASIL_IO_URL, kwargs...)
         )
     end
 
-    DataDict(
-        :states => states,
-        :cities => cities,
-        :total => total,
-        :estimates => estimates,
-    )
+    DataDict(:states => states, :cities => cities, :total => total, :estimates => estimates)
 end

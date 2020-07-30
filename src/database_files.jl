@@ -47,12 +47,8 @@ function import_data(
             modified(model_input) >= today()
         )
             @debug "Importing data from cache." db_input model_input
-            data = import_data(
-                database_data_type;
-                path = db_input,
-                simple = simple,
-                kwargs...,
-            )
+            data =
+                import_data(database_data_type; path = db_input, simple = simple, kwargs...)
             modeldata = import_data(
                 database_data_type;
                 path = model_input,

@@ -190,9 +190,7 @@ function _cache_subpath(directory::AbstractPath, update_period::Period)
         lastdir = Path(Dates.format(perfloor, timeformat))
     else
         lastdir = Path(
-            Dates.format(perfloor, timeformat) *
-            " to " *
-            Dates.format(perceil, timeformat),
+            Dates.format(perfloor, timeformat) * " to " * Dates.format(perceil, timeformat),
         )
     end
     (period_directory, lastdir)
@@ -384,12 +382,7 @@ function export_data(
     )
 end
 
-function export_data(
-    source::OdsPath,
-    data::DataFrameDict;
-    pretty::Bool = false,
-    kwargs...,
-)
+function export_data(source::OdsPath, data::DataFrameDict; pretty::Bool = false, kwargs...)
     destiny = pathof(source)
     rm(destiny; recursive = true, force = true)
     sheetdict = SortedDict{Tuple,DataFrame}()

@@ -134,12 +134,7 @@ end
     PathDesignator
 )
 
-@defoption(
-    parameters_data_type,
-    :csv,
-    "Default format of model parameters files.",
-    Symbol
-)
+@defoption(parameters_data_type, :csv, "Default format of model parameters files.", Symbol)
 
 @defoption(
     minimum_infected,

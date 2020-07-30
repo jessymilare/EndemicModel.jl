@@ -38,8 +38,7 @@ computing_functions!(database::SubDatabase, value) =
     computing_functions!(parent(database), value)
 
 modeldict(database::SubDatabase) = modeldict(parent(database))[database.key]
-modeldict!(database::SubDatabase, value) =
-    modeldict(parent(database))[database.key] = value
+modeldict!(database::SubDatabase, value) = modeldict(parent(database))[database.key] = value
 
 root(database::SubDatabase) = root(parent(database))
 

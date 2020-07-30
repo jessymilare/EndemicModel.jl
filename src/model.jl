@@ -13,8 +13,7 @@ parameters(model::AbstractEndemicModel) = model.parameters
 parameters!(model::AbstractEndemicModel, value) = model.parameters = value
 
 modeldata(model::AbstractEndemicModel) = model.modeldata
-modeldata!(model::AbstractEndemicModel, value::AbstractDataFrame) =
-    model.modeldata = value
+modeldata!(model::AbstractEndemicModel, value::AbstractDataFrame) = model.modeldata = value
 
 modeldata!(model::AbstractEndemicModel; kwargs...) =
     modeldata!(model::AbstractEndemicModel, to_dataframe(model; kwargs...))
@@ -25,8 +24,7 @@ default_kwargs!(model::AbstractEndemicModel, value) = model.kwargs = value
 default_kwarg(model::AbstractEndemicModel, key::Symbol) = model.kwargs[key]
 default_kwarg(model::AbstractEndemicModel, key::Symbol, default) =
     get(model.kwargs, key, default)
-default_kwarg!(model::AbstractEndemicModel, key::Symbol, value) =
-    model.kwargs[key] = value
+default_kwarg!(model::AbstractEndemicModel, key::Symbol, value) = model.kwargs[key] = value
 
 realdata(model::AbstractEndemicModel) = model.realdata
 realdata!(model::AbstractEndemicModel, value) = model.realdata = value
@@ -364,12 +362,7 @@ function SEIR_ODEProblem(
     maxtime = 360,
     kwargs...,
 )
-    ODEProblem(
-        SEIR_ODE_fun,
-        pack_vars(inivars),
-        (0.0, Float(maxtime)),
-        pack_params(params),
-    )
+    ODEProblem(SEIR_ODE_fun, pack_vars(inivars), (0.0, Float(maxtime)), pack_params(params))
 end
 
 function model_problem(model::SEIRModel; kwargs...)

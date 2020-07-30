@@ -20,10 +20,10 @@ datadict(data::SortedDict) = SortedDataDict(data)
 datadict(data::WeakKeyDict) = WeakKeyDataDict(data)
 
 function csv_read(file::PathDesignator; kwargs...)::DataFrame
-    CSV.read(string(file); kwargs...)
+    CSV.read(string(file), DataFrame; kwargs...)
 end
 function csv_read(io; kwargs...)::DataFrame
-    CSV.read(io; kwargs...)
+    CSV.read(io, DataFrame; kwargs...)
 end
 csv_write(file::PathDesignator, table; kwargs...) =
     CSV.write(string(file), table; kwargs...)
@@ -133,19 +133,13 @@ function prettify(obj::Real; digits = 2, kwargs...)
     round(obj; digits = digits)
 end
 prettify(obj::Quantity{<:Integer}; kwargs...) = string(obj)
-prettify(obj::Quantity; digits = 2, kwargs...) =
-    round(unit(obj), obj; digits = digits + 2)
+prettify(obj::Quantity; digits = 2, kwargs...) = round(unit(obj), obj; digits = digits + 2)
 
 function prettify(obj::Symbol; case = titlecase, replace_pairs = ["_" => " "], kwargs...)
     if isnothing(case) && isnothing(replace_pairs)
         obj
     else
-        Symbol(prettify(
-            string(obj);
-            case = case,
-            replace_pairs = replace_pairs,
-            kwargs...,
-        ))
+        Symbol(prettify(string(obj); case = case, replace_pairs = replace_pairs, kwargs...))
     end
 end
 
@@ -185,12 +179,7 @@ function simplify(obj::Symbol; case = lowercase, replace_pairs = [" " => "_"], k
     if isnothing(case) && isnothing(replace_pairs)
         obj
     else
-        Symbol(simplify(
-            string(obj);
-            case = case,
-            replace_pairs = replace_pairs,
-            kwargs...,
-        ))
+        Symbol(simplify(string(obj); case = case, replace_pairs = replace_pairs, kwargs...))
     end
 end
 
@@ -243,9 +232,8 @@ function to_json_dict(
         values = intersect(values, colnames)
         for i ∈ 1:len
             jsonkey = data[i, key]
-            jsonval = OrderedDict(
-                [string(index) => prettify(data[i, index]) for index ∈ values],
-            )
+            jsonval =
+                OrderedDict([string(index) => prettify(data[i, index]) for index ∈ values])
             jsondict[jsonkey] = jsonval
         end
     else

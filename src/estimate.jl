@@ -246,8 +246,7 @@ function estimate_μ(data::AbstractDataFrame; ndays = 7, kwargs...)
     end
 end
 
-estimate_μ(model::AbstractEndemicModel; kwargs...) =
-    estimate_μ(realdata(model); kwargs...)
+estimate_μ(model::AbstractEndemicModel; kwargs...) = estimate_μ(realdata(model); kwargs...)
 
 function estimate_α(data::AbstractDataFrame; ndays = 7, kwargs...)
     # Get numbers from last `ndays` days
@@ -277,8 +276,7 @@ function estimate_α(data::AbstractDataFrame; ndays = 7, kwargs...)
     (1 / 11.0, 1.0)
 end
 
-estimate_α(model::AbstractEndemicModel; kwargs...) =
-    estimate_α(realdata(model); kwargs...)
+estimate_α(model::AbstractEndemicModel; kwargs...) = estimate_α(realdata(model); kwargs...)
 
 # function _γ_root(d1, d2, d3, I, α)
 #     a = -I .* d2 .+ d1 .^ 2 .- I .* α .* d1
@@ -340,8 +338,7 @@ function estimate_γ(
     (1 / 5.1, 0.7)
 end
 
-estimate_γ(model::AbstractEndemicModel; kwargs...) =
-    estimate_γ(realdata(model); kwargs...)
+estimate_γ(model::AbstractEndemicModel; kwargs...) = estimate_γ(realdata(model); kwargs...)
 
 function estimate_β(
     data::AbstractDataFrame;
@@ -454,8 +451,7 @@ function SEIRModel(
     μ_pair = estimate_μ(data; kwargs...)
     α_pair = estimate_α(data; μ_pair = μ_pair, kwargs...)
     γ_pair = estimate_γ(data; μ_pair = μ_pair, α_pair = α_pair, kwargs...)
-    β_pair =
-        estimate_β(data; μ_pair = μ_pair, α_pair = α_pair, γ_pair = γ_pair, kwargs...)
+    β_pair = estimate_β(data; μ_pair = μ_pair, α_pair = α_pair, γ_pair = γ_pair, kwargs...)
 
     (μ, σ_μ) = μ_pair
     (α, σ_α) = α_pair
@@ -565,8 +561,7 @@ end
 SEIRModel(data::AbstractDict; kwargs...) =
     SEIRModel!(empty(data, Symbol, Any), data; kwargs...)
 
-SEIRModel(database::AbstractDatabase; kwargs...) =
-    SEIRModel(datadict(database); kwargs...)
+SEIRModel(database::AbstractDatabase; kwargs...) = SEIRModel(datadict(database); kwargs...)
 
 function SEIRModel!(database::AbstractDatabase; kwargs...)
     modeldict!(database, SEIRModel(database; kwargs...))

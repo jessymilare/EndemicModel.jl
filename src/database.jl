@@ -188,8 +188,7 @@ function create_table!(
     func::Function;
     kwargs...,
 )
-    (_, updated) =
-        create_table!(datadict(database), tblname, tablesyms, func; kwargs...)
+    (_, updated) = create_table!(datadict(database), tblname, tablesyms, func; kwargs...)
     (database, updated)
 end
 
@@ -232,14 +231,8 @@ function group_table!(
     end
     for (_, elt) ∈ data
         if elt isa AbstractDict
-            (df, elt_updt) = group_table!(
-                elt,
-                tblname,
-                sourcetbl,
-                keycols,
-                cols_and_funcs...;
-                kwargs...,
-            )
+            (df, elt_updt) =
+                group_table!(elt, tblname, sourcetbl, keycols, cols_and_funcs...; kwargs...)
             updated = updated || elt_updt
         end
     end
@@ -268,14 +261,8 @@ end
 function group_table!(data, tblname, sourcetbls, keycols, cols_and_funcs...; kwargs...)
     updated = false
     for sourcetbl ∈ sourcetbls
-        (_, updt) = group_table!(
-            data,
-            tblname,
-            sourcetbl,
-            keycols,
-            cols_and_funcs...;
-            kwargs...,
-        )
+        (_, updt) =
+            group_table!(data, tblname, sourcetbl, keycols, cols_and_funcs...; kwargs...)
         updated = updated || updt
     end
     (data, updated)
