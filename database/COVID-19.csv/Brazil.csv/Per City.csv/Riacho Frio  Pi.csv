@@ -1,0 +1,4 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-26,PI,Riacho Frio,1,0,29,1,4355,2208858,36.0,36,29,7,,,,,,,,,,,,,,,0.0,8266.36,0.0,6659.01,6659.01,1607.35
+2020-07-27,PI,Riacho Frio,1,0,30,2,4355,2208858,36.0,36,30,6,,,,,,,,,,,,,,,0.0,8266.36,0.0,6888.63,6888.63,1377.73
+2020-07-28,PI,Riacho Frio,1,0,30,3,4355,2208858,36.0,36,30,6,,,,,,,,,,,,,,,0.0,8266.36,0.0,6888.63,6888.63,1377.73

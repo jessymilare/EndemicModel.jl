@@ -1,3 +1,9 @@
 Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-07-21,GO,Água Limpa,1,0,7,1,1868,5200209,8.3,8,7,1,,,,,,,,,,,,,,,0.0,4282.66,0.0,3747.32,3747.32,535.33
 2020-07-22,GO,Água Limpa,0,0,0,2,1868,5200209,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-07-23,GO,Água Limpa,0,0,0,3,1868,5200209,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-07-24,GO,Água Limpa,0,0,0,4,1868,5200209,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-07-25,GO,Água Limpa,0,0,0,5,1868,5200209,8.3,0,0,0,-0.1429,-1.1429,-1.0,0.0,-1.0,-0.1429,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-07-26,GO,Água Limpa,0,0,0,6,1868,5200209,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-07-27,GO,Água Limpa,0,0,0,7,1868,5200209,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0
+2020-07-28,GO,Água Limpa,0,0,0,8,1868,5200209,8.3,0,0,0,,,,,,,,,,,,,,,,0.0,0.0,0.0,0.0,0.0

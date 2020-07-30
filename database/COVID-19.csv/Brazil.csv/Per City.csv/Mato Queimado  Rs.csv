@@ -1,0 +1,7 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-23,RS,Mato Queimado,5,0,34,1,1664,4312179,8.4,42,34,8,,,,,,,,,,,,,,,0.0,25240.38,0.0,20432.69,20432.69,4807.69
+2020-07-24,RS,Mato Queimado,5,0,34,2,1664,4312179,8.4,42,34,8,,,,,,,,,,,,,,,0.0,25240.38,0.0,20432.69,20432.69,4807.69
+2020-07-25,RS,Mato Queimado,5,0,34,3,1664,4312179,8.4,42,34,8,,,,,,,,,,,,,,,0.0,25240.38,0.0,20432.69,20432.69,4807.69
+2020-07-26,RS,Mato Queimado,5,0,34,4,1664,4312179,8.4,42,34,8,,,,,,,,,,,,,,,0.0,25240.38,0.0,20432.69,20432.69,4807.69
+2020-07-27,RS,Mato Queimado,5,0,35,5,1664,4312179,8.4,42,35,7,,,,,,,,,,,,,,,0.0,25240.38,0.0,21033.65,21033.65,4206.73
+2020-07-28,RS,Mato Queimado,5,0,35,6,1664,4312179,8.4,42,35,7,,,,,,,,,,,,,,,0.0,25240.38,0.0,21033.65,21033.65,4206.73

@@ -1,2 +1,8 @@
 Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-07-22,GO,Bonópolis,2,0,14,1,4449,5203575,8.3,17,14,3,,,,,,,,,,,,,,,0.0,3821.08,0.0,3146.77,3146.77,674.31
+2020-07-23,GO,Bonópolis,2,0,14,2,4449,5203575,8.3,17,14,3,,,,,,,,,,,,,,,0.0,3821.08,0.0,3146.77,3146.77,674.31
+2020-07-24,GO,Bonópolis,2,0,14,3,4449,5203575,8.3,17,14,3,,,,,,,,,,,,,,,0.0,3821.08,0.0,3146.77,3146.77,674.31
+2020-07-25,GO,Bonópolis,2,0,14,4,4449,5203575,8.3,17,14,3,,,,,,,,,,,,,,,0.0,3821.08,0.0,3146.77,3146.77,674.31
+2020-07-26,GO,Bonópolis,2,0,14,5,4449,5203575,8.3,17,14,3,,,,,,,,,,,,,,,0.0,3821.08,0.0,3146.77,3146.77,674.31
+2020-07-27,GO,Bonópolis,3,0,21,6,4449,5203575,8.3,25,21,4,,,,,,,,,,,,,,,0.0,5619.24,0.0,4720.16,4720.16,899.08
+2020-07-28,GO,Bonópolis,3,0,21,7,4449,5203575,8.3,25,21,4,,,,,,,,,,,,,,,0.0,5619.24,0.0,4720.16,4720.16,899.08

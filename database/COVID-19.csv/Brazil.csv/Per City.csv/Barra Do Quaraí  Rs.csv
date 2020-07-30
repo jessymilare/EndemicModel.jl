@@ -1,3 +1,9 @@
 Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-07-21,RS,Barra do Quaraí,1,0,7,1,4257,4301875,8.4,8,7,1,,,,,,,,,,,,,,,0.0,1879.26,0.0,1644.35,1644.35,234.91
 2020-07-22,RS,Barra do Quaraí,2,0,14,2,4257,4301875,8.4,17,14,3,,,,,,,,,,,,,,,0.0,3993.42,0.0,3288.7,3288.7,704.72
+2020-07-23,RS,Barra do Quaraí,4,0,27,3,4257,4301875,8.4,34,27,7,,,,,,,,,,,,,,,0.0,7986.85,0.0,6342.49,6342.49,1644.35
+2020-07-24,RS,Barra do Quaraí,4,0,27,4,4257,4301875,8.4,34,27,7,,,,,,,,,,,,,,,0.0,7986.85,0.0,6342.49,6342.49,1644.35
+2020-07-25,RS,Barra do Quaraí,4,0,27,5,4257,4301875,8.4,34,27,7,0.429,3.71,3.0,0.0,3.0,0.714,,,,,,,,,0.0,7986.85,0.0,6342.49,6342.49,1644.35
+2020-07-26,RS,Barra do Quaraí,4,0,28,6,4257,4301875,8.4,34,28,6,,,,,,,,,,,,,,,0.0,7986.85,0.0,6577.4,6577.4,1409.44
+2020-07-27,RS,Barra do Quaraí,4,0,28,7,4257,4301875,8.4,34,28,6,,,,,,,,,,,,,,,0.0,7986.85,0.0,6577.4,6577.4,1409.44
+2020-07-28,RS,Barra do Quaraí,4,0,28,8,4257,4301875,8.4,34,28,6,,,,,,,,,,,,,,,0.0,7986.85,0.0,6577.4,6577.4,1409.44

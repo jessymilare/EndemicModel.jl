@@ -1,2 +1,8 @@
 Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-07-22,RS,Bozano,1,0,7,1,2144,4302584,8.4,8,7,1,,,,,,,,,,,,,,,0.0,3731.34,0.0,3264.93,3264.93,466.42
+2020-07-23,RS,Bozano,1,0,6,2,2144,4302584,8.4,8,6,2,,,,,,,,,,,,,,,0.0,3731.34,0.0,2798.51,2798.51,932.84
+2020-07-24,RS,Bozano,1,0,6,3,2144,4302584,8.4,8,6,2,,,,,,,,,,,,,,,0.0,3731.34,0.0,2798.51,2798.51,932.84
+2020-07-25,RS,Bozano,1,0,6,4,2144,4302584,8.4,8,6,2,,,,,,,,,,,,,,,0.0,3731.34,0.0,2798.51,2798.51,932.84
+2020-07-26,RS,Bozano,1,0,7,5,2144,4302584,8.4,8,7,1,,,,,,,,,,,,,,,0.0,3731.34,0.0,3264.93,3264.93,466.42
+2020-07-27,RS,Bozano,1,0,7,6,2144,4302584,8.4,8,7,1,,,,,,,,,,,,,,,0.0,3731.34,0.0,3264.93,3264.93,466.42
+2020-07-28,RS,Bozano,1,0,7,7,2144,4302584,8.4,8,7,1,,,,,,,,,,,,,,,0.0,3731.34,0.0,3264.93,3264.93,466.42

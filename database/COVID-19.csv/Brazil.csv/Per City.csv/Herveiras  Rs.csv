@@ -1,3 +1,9 @@
 Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-07-21,RS,Herveiras,1,0,7,1,3048,4309571,8.4,8,7,1,,,,,,,,,,,,,,,0.0,2624.67,0.0,2296.59,2296.59,328.08
 2020-07-22,RS,Herveiras,1,0,7,2,3048,4309571,8.4,8,7,1,,,,,,,,,,,,,,,0.0,2624.67,0.0,2296.59,2296.59,328.08
+2020-07-23,RS,Herveiras,1,0,6,3,3048,4309571,8.4,8,6,2,,,,,,,,,,,,,,,0.0,2624.67,0.0,1968.5,1968.5,656.17
+2020-07-24,RS,Herveiras,1,0,6,4,3048,4309571,8.4,8,6,2,,,,,,,,,,,,,,,0.0,2624.67,0.0,1968.5,1968.5,656.17
+2020-07-25,RS,Herveiras,1,0,6,5,3048,4309571,8.4,8,6,2,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,,0.0,2624.67,0.0,1968.5,1968.5,656.17
+2020-07-26,RS,Herveiras,1,0,7,6,3048,4309571,8.4,8,7,1,,,,,,,,,,,,,,,0.0,2624.67,0.0,2296.59,2296.59,328.08
+2020-07-27,RS,Herveiras,1,0,7,7,3048,4309571,8.4,8,7,1,,,,,,,,,,,,,,,0.0,2624.67,0.0,2296.59,2296.59,328.08
+2020-07-28,RS,Herveiras,1,0,7,8,3048,4309571,8.4,8,7,1,,,,,,,,,,,,,,,0.0,2624.67,0.0,2296.59,2296.59,328.08

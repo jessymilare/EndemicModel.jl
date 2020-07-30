@@ -1,3 +1,9 @@
 Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-07-21,RS,Novo Cabrais,1,0,7,1,4238,4313391,8.4,8,7,1,,,,,,,,,,,,,,,0.0,1887.68,0.0,1651.72,1651.72,235.96
 2020-07-22,RS,Novo Cabrais,1,0,7,2,4238,4313391,8.4,8,7,1,,,,,,,,,,,,,,,0.0,1887.68,0.0,1651.72,1651.72,235.96
+2020-07-23,RS,Novo Cabrais,1,0,6,3,4238,4313391,8.4,8,6,2,,,,,,,,,,,,,,,0.0,1887.68,0.0,1415.76,1415.76,471.92
+2020-07-24,RS,Novo Cabrais,1,0,6,4,4238,4313391,8.4,8,6,2,,,,,,,,,,,,,,,0.0,1887.68,0.0,1415.76,1415.76,471.92
+2020-07-25,RS,Novo Cabrais,1,0,6,5,4238,4313391,8.4,8,6,2,0.571,4.86,4.0,0.0,4.0,0.857,,,,,,,,,0.0,1887.68,0.0,1415.76,1415.76,471.92
+2020-07-26,RS,Novo Cabrais,1,0,7,6,4238,4313391,8.4,8,7,1,,,,,,,,,,,,,,,0.0,1887.68,0.0,1651.72,1651.72,235.96
+2020-07-27,RS,Novo Cabrais,5,0,35,7,4238,4313391,8.4,42,35,7,,,,,,,,,,,,,,,0.0,9910.34,0.0,8258.61,8258.61,1651.72
+2020-07-28,RS,Novo Cabrais,5,0,35,8,4238,4313391,8.4,42,35,7,,,,,,,,,,,,,,,0.0,9910.34,0.0,8258.61,8258.61,1651.72
