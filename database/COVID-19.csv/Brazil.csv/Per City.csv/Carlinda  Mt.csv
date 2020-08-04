@@ -1,0 +1,8 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-20,MT,Carlinda,2,0,16,1,10408,5102793,10.0,20,16,4,,,,,,,,,,,,,,,0.0,1921.6,0.0,1537.28,1537.28,384.32
+2020-07-21,MT,Carlinda,5,0,41,2,10408,5102793,10.0,50,41,9,,,,,,,,,,,,,,,0.0,4804.0,0.0,3939.28,3939.28,864.72
+2020-07-22,MT,Carlinda,11,1,89,3,10408,5102793,10.0,110,90,20,,,,,,,,,,,,,,,0.0111,10568.79,96.08,8551.11,8647.19,1921.6
+2020-07-23,MT,Carlinda,12,1,97,4,10408,5102793,10.0,120,98,22,,,,,,,,,,,,,,,0.0102,11529.59,96.08,9319.75,9415.83,2113.76
+2020-07-24,MT,Carlinda,12,1,97,5,10408,5102793,10.0,120,98,22,,,,,,,,,,,,,,,0.0102,11529.59,96.08,9319.75,9415.83,2113.76
+2020-07-28,MT,Carlinda,15,1,124,6,10408,5102793,10.0,150,125,25,,,,,,,,,,,,,,,0.008,14411.99,96.08,11913.91,12009.99,2402.0
+2020-07-29,MT,Carlinda,15,1,123,7,10408,5102793,10.0,150,124,26,,,,,,,,,,,,,,,0.0081,14411.99,96.08,11817.83,11913.91,2498.08

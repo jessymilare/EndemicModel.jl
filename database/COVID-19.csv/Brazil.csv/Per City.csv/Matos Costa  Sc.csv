@@ -1,2 +1,6 @@
 Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-07-28,SC,Matos Costa,1,0,21,1,2545,4210704,25.0,25,21,4,,,,,,,,,,,,,,,0.0,9823.18,0.0,8251.47,8251.47,1571.71
+2020-07-29,SC,Matos Costa,1,0,20,2,2545,4210704,25.0,25,20,5,,,,,,,,,,,,,,,0.0,9823.18,0.0,7858.55,7858.55,1964.64
+2020-07-30,SC,Matos Costa,1,0,20,3,2545,4210704,25.0,25,20,5,,,,,,,,,,,,,,,0.0,9823.18,0.0,7858.55,7858.55,1964.64
+2020-08-01,SC,Matos Costa,1,0,20,4,2545,4210704,25.0,25,20,5,,,,,,,,,,,,,,,0.0,9823.18,0.0,7858.55,7858.55,1964.64
+2020-08-02,SC,Matos Costa,1,0,21,5,2545,4210704,25.0,25,21,4,,,,,,,,,,,,,,,0.0,9823.18,0.0,8251.47,8251.47,1571.71

@@ -1,0 +1,3 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-08-01,RS,Toropi,11,0,75,1,2834,4321493,8.4,92,75,17,,,,,,,,,,,,,,,0.0,32462.95,0.0,26464.36,26464.36,5998.59
+2020-08-02,RS,Toropi,13,0,90,2,2834,4321493,8.4,109,90,19,,,,,,,,,,,,,,,0.0,38461.54,0.0,31757.23,31757.23,6704.3

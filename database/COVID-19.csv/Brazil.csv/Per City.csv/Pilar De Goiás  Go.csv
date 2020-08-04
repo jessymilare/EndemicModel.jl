@@ -1,2 +1,7 @@
 Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
 2020-07-28,GO,Pilar de Goiás,1,0,7,1,2276,5216908,8.3,8,7,1,,,,,,,,,,,,,,,0.0,3514.94,0.0,3075.57,3075.57,439.37
+2020-07-29,GO,Pilar de Goiás,1,0,7,2,2276,5216908,8.3,8,7,1,,,,,,,,,,,,,,,0.0,3514.94,0.0,3075.57,3075.57,439.37
+2020-07-30,GO,Pilar de Goiás,1,0,7,3,2276,5216908,8.3,8,7,1,,,,,,,,,,,,,,,0.0,3514.94,0.0,3075.57,3075.57,439.37
+2020-07-31,GO,Pilar de Goiás,1,0,7,4,2276,5216908,8.3,8,7,1,,,,,,,,,,,,,,,0.0,3514.94,0.0,3075.57,3075.57,439.37
+2020-08-01,GO,Pilar de Goiás,1,0,7,5,2276,5216908,8.3,8,7,1,,,,,,,,,,,,,,,0.0,3514.94,0.0,3075.57,3075.57,439.37
+2020-08-02,GO,Pilar de Goiás,1,0,7,6,2276,5216908,8.3,8,7,1,,,,,,,,,,,,,,,0.0,3514.94,0.0,3075.57,3075.57,439.37

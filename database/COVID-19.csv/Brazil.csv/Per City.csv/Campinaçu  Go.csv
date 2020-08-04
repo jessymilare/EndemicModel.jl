@@ -1,0 +1,4 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-07-31,GO,Campinaçu,8,0,54,1,3676,5204656,8.3,66,54,12,,,,,,,,,,,,,,,0.0,17954.3,0.0,14689.88,14689.88,3264.42
+2020-08-01,GO,Campinaçu,59,0,400,2,3676,5204656,8.3,490,400,90,,,,,,,,,,,,,,,0.0,133297.06,0.0,108813.93,108813.93,24483.13
+2020-08-02,GO,Campinaçu,59,0,405,3,3676,5204656,8.3,490,405,85,,,,,,,,,,,,,,,0.0,133297.06,0.0,110174.1,110174.1,23122.96
