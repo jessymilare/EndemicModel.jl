@@ -4,11 +4,13 @@
 # Parameter limits
 
 const MIN_μ = 0.001
-const MAX_μ = 0.1
+const MAX_μ = 0.300
 
 # Source: https://journals.lww.com/cmj/Fulltext/2020/05050/Persistence_and_clearance_of_viral_RNA_in_2019.6.aspx
 # Average infeccious period of 9.5 (6.0 to 11.0) days
-const MIN_α = 1 / 11.0
+# Source: https://www.sciencedirect.com/science/article/pii/S0163445320301195
+# Average infeccious period of 11.0 (10.0 to 12.0) days
+const MIN_α = 1 / 12.0
 const MAX_α = 1 / 6.0
 
 # Source: https://www.acpjournals.org/doi/10.7326/M20-0504
@@ -53,13 +55,14 @@ end
 function model_loss(
     model::SEIRModel;
     loss_func::Function = phuber_loss(1.0),
+    model_days = 30,
     kwargs...,
     # diff_loss_func::Function = diff_phuber_loss(1.0),
 )
     params = parameters(model)
     ng = model.ngroups
     data = realdata(model)
-    initial_date = default_kwarg(model, :initial_date, today() - Day(15))
+    initial_date = default_kwarg(model, :initial_date, today() - Day(model_days))
     ini = findfirst(isequal(initial_date), data.date)
     if isnothing(ini)
         throw(ErrorException("Initial date not found in model data", model, initial_date))
@@ -100,11 +103,17 @@ function model_loss(
     loss_value / max_loss
 end
 
-function optimize_parameters!(model::SEIRModel, params = (:β, :E); kwargs...)
+function optimize_parameters!(
+    model::SEIRModel,
+    params = (:M, :β, :E);
+    model_days = 30,
+    kwargs...,
+)
     packed_params = intersect(SEIR_PARAMETERS, params)
     n = model.ngroups
     lastparams = nothing
     model_params = parameters(model)
+    model_vars = variables(model)
 
     function _calc_loss(arg)
         if :E ∈ params
@@ -119,22 +128,31 @@ function optimize_parameters!(model::SEIRModel, params = (:β, :E); kwargs...)
             packed_params = packed_params,
             default_params = model_params,
         )
-
         parameters!(model, newparams)
         if :E ∈ params
             (S, E, I, R) = variables(model)
-            variables!(model, SEIRVariables(S, newE, I, R))
+            E = newE
+            if :M ∈ params
+                S = newparams[:M] .- E .- I .- R
+            end
+            variables!(model, SEIRVariables(S, E, I, R))
         end
         modeldata!(
             model,
-            to_dataframe(model; diff_columns = false, maxtime = 20, kwargs...),
+            to_dataframe(
+                model;
+                diff_columns = false,
+                maxtime = model_days + 1,
+                kwargs...,
+            ),
         )
         model_loss(model; kwargs...)
     end
 
     maxM = fill(1.01 * sum(model_params[:M]), n)
+    minM = 1.01 * (model_vars[:I] .+ model_vars[:R])
     maxp = (; M = maxM, β = MAX_β, γ = MAX_γ, α = MAX_α, μ = MAX_μ)
-    minp = (; M = 0.1 * maxM, β = MIN_β, γ = MIN_γ, α = MIN_α, μ = MIN_μ)
+    minp = (; M = minM, β = MIN_β, γ = MIN_γ, α = MIN_α, μ = MIN_μ)
 
     upper = pack_params(maxp; packed_params = packed_params)
     lower = pack_params(minp; packed_params = packed_params)
@@ -144,7 +162,7 @@ function optimize_parameters!(model::SEIRModel, params = (:β, :E); kwargs...)
         maxE, minE = maxM ./ 2, fill(0.0, n)
         append!(upper, maxE)
         append!(lower, minE)
-        E0 = variables(model)[:E]
+        E0 = model_vars[:E]
         append!(opt_params, Float.(E0))
     end
     @debug "Initial parameter values:" opt_params, lower, upper
@@ -239,14 +257,15 @@ function estimate_μ(data::AbstractDataFrame; ndays = 7, kwargs...)
     )
     isempty(vals) && return (NaN, Inf)
     val = mean(vals)
-    if val >= MAX_μ || val <= MIN_μ
+    if val >= 0.3 || val <= MIN_μ
         return (NaN, Inf)
     else
         return (val, StatsBase.std(vals; mean = val))
     end
 end
 
-estimate_μ(model::AbstractEndemicModel; kwargs...) = estimate_μ(realdata(model); kwargs...)
+estimate_μ(model::AbstractEndemicModel; kwargs...) =
+    estimate_μ(realdata(model); kwargs...)
 
 function estimate_α(data::AbstractDataFrame; ndays = 7, kwargs...)
     # Get numbers from last `ndays` days
@@ -276,7 +295,8 @@ function estimate_α(data::AbstractDataFrame; ndays = 7, kwargs...)
     (1 / 11.0, 1.0)
 end
 
-estimate_α(model::AbstractEndemicModel; kwargs...) = estimate_α(realdata(model); kwargs...)
+estimate_α(model::AbstractEndemicModel; kwargs...) =
+    estimate_α(realdata(model); kwargs...)
 
 # function _γ_root(d1, d2, d3, I, α)
 #     a = -I .* d2 .+ d1 .^ 2 .- I .* α .* d1
@@ -338,7 +358,8 @@ function estimate_γ(
     (1 / 5.1, 0.7)
 end
 
-estimate_γ(model::AbstractEndemicModel; kwargs...) = estimate_γ(realdata(model); kwargs...)
+estimate_γ(model::AbstractEndemicModel; kwargs...) =
+    estimate_γ(realdata(model); kwargs...)
 
 function estimate_β(
     data::AbstractDataFrame;
@@ -376,11 +397,11 @@ function estimate_β(
     isempty(vals) && return (NaN, Inf)
 
     if any(val -> val >= 1 - ε, vals)
-        return (MAX_β, StatsBase.std(vals; mean = MAX_β))
+        return (0.99 * MAX_β, StatsBase.std(vals; mean = 0.99 * MAX_β))
     elseif any(val -> val <= ε, vals)
-        return (MIN_β, StatsBase.std(vals; mean = MIN_β))
+        return (1.01 * MIN_β, StatsBase.std(vals; mean = 1.01 * MIN_β))
     else
-        val = min(MAX_β, max(MIN_β, geomean(vals .+ 1) - 1))
+        val = min(0.99 * MAX_β, max(1.01 * MIN_β, geomean(vals .+ 1) - 1))
         return (val, StatsBase.std(vals; mean = val))
     end
 
@@ -407,7 +428,7 @@ end
 
 function estimate_exposed!(data::AbstractDataFrame; kwargs...)
     (E, σ_E) = estimate_exposed(data; kwargs...)
-    if :exposed ∉ names(data)
+    if "exposed" ∉ names(data)
         insertcols!(data, ncol(data) + 1, :exposed => E)
     else
         data.exposed = E
@@ -424,7 +445,7 @@ function SEIRModel(
     data::AbstractDataFrame;
     modeldata = nothing,
     minimum_infected = option(:minimum_infected),
-    ndays = 14,
+    model_days = 30,
     optimize::Bool = true,
     kwargs...,
 )
@@ -433,7 +454,7 @@ function SEIRModel(
             data,
             modeldata;
             minimum_infected = minimum_infected,
-            ndays = ndays,
+            model_days = model_days,
             kwargs...,
         )
     end
@@ -443,7 +464,7 @@ function SEIRModel(
     iend = findlast(!ismissing, data.recovered)
     data = data[istart:iend, :]
 
-    idx = nrow(data) - ndays
+    idx = nrow(data) - model_days + 1
     idx <= 0 && return missing
 
     initial_date = data.date[idx]
@@ -451,7 +472,8 @@ function SEIRModel(
     μ_pair = estimate_μ(data; kwargs...)
     α_pair = estimate_α(data; μ_pair = μ_pair, kwargs...)
     γ_pair = estimate_γ(data; μ_pair = μ_pair, α_pair = α_pair, kwargs...)
-    β_pair = estimate_β(data; μ_pair = μ_pair, α_pair = α_pair, γ_pair = γ_pair, kwargs...)
+    β_pair =
+        estimate_β(data; μ_pair = μ_pair, α_pair = α_pair, γ_pair = γ_pair, kwargs...)
 
     (μ, σ_μ) = μ_pair
     (α, σ_α) = α_pair
@@ -485,7 +507,7 @@ function SEIRModel(
 
     if optimize
         @debug "Finding optimal parameters for model" model
-        result = optimize_parameters!(model; kwargs...)
+        result = optimize_parameters!(model; model_days = model_days, kwargs...)
         @debug "Optimal parameters for model computed" result
     end
 
@@ -498,7 +520,7 @@ function SEIRModel(
     minimum_infected = option(:minimum_infected),
     kwargs...,
 )
-    initial_date = data.date[1]
+    initial_date = modeldata.date[1]
     M = data.estimated_population[1]
 
     E, I = modeldata.exposed, modeldata.active
@@ -561,7 +583,8 @@ end
 SEIRModel(data::AbstractDict; kwargs...) =
     SEIRModel!(empty(data, Symbol, Any), data; kwargs...)
 
-SEIRModel(database::AbstractDatabase; kwargs...) = SEIRModel(datadict(database); kwargs...)
+SEIRModel(database::AbstractDatabase; kwargs...) =
+    SEIRModel(datadict(database); kwargs...)
 
 function SEIRModel!(database::AbstractDatabase; kwargs...)
     modeldict!(database, SEIRModel(database; kwargs...))

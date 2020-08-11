@@ -136,8 +136,16 @@ end
     wpop, wgdp = world_population, world_gdp_per_capita
     pop = wpop[wpop.country.=="World", :estimated_population]
     gdp = wgdp[wgdp.country.=="World", :gdp_per_capita]
-    cols =
-        [:date, :total_tests, :confirmed, :recovered, :deaths, :infected, :closed, :active]
+    cols = [
+        :date,
+        :total_tests,
+        :confirmed,
+        :recovered,
+        :deaths,
+        :infected,
+        :closed,
+        :active,
+    ]
     data = select(per_date, cols)
     insertcols!(data, 2, :estimated_population => pop[1])
     insertcols!(data, 3, :gdp_per_capita => gdp[1])
@@ -507,15 +515,15 @@ function covid19(;
             ),
         )
         datadict!(db, newdata)
-        br = db.brazil.total
-        db.world.per_country.datadict[:brazil] = br
+        # br = db.brazil.total
+        # db.world.per_country.datadict[:brazil] = br
         @info "COVID-19 database created." summary(db)
 
     else
         @info "COVID-19 database imported from cache."
     end
 
-    if compute_model || optimize
+    if compute_model
         @info "Computing SEIR model..."
         SEIRModel!(db; kwargs...)
         @info "SEIR model for COVID-19 database computed."

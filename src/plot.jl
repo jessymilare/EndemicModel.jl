@@ -168,6 +168,9 @@ function model_combined_data(
     plot_period = Day(14),
     kwargs...,
 )
+    if !(isa(columns, AbstractVector) || isa(columns, Tuple))
+        columns = [columns]
+    end
     columns = string.(columns)
 
     realdf = realdata(model)
@@ -186,7 +189,9 @@ function model_combined_data(
         (:date .<= realdf.date[end]) .& (:date .>= plot_initial_date)
     )
 
+    @debug "Getting columns" columns Tuple(names(modeldf)) Tuple(names(realdf))
     columns = intersect(columns, names(modeldf), names(realdf))
+    @debug "Got" columns
     rcolumns = [Symbol(sym, " (real)") for sym ∈ columns]
     mcolumns = [Symbol(sym, " (model)") for sym ∈ columns]
 
