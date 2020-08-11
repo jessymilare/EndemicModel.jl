@@ -1,0 +1,6 @@
+Date,State,City,Confirmed,Deaths,Recovered,Order For Place,Estimated Population,City Ibge Code,Infected Per Confirmed,Infected,Closed,Active,Diff Confirmed,Diff Infected,Diff Recovered,Diff Deaths,Diff Closed,Diff Active,Diff2 Infected,Diff2 Recovered,Diff2 Deaths,Diff2 Closed,Diff2 Active,Diff3 Infected,Diff4 Infected,Diff5 Infected,μ closed,Infected Per 1Mi,Deaths Per 1Mi,Recovered Per 1Mi,Closed Per 1Mi,Active Per 1Mi
+2020-08-06,RS,Pinhal Grande,1,0,6,1,4394,4314472,6.8,7,6,1,,,,,,,,,,,,,,,0.0,1593.08,0.0,1365.5,1365.5,227.58
+2020-08-07,RS,Pinhal Grande,1,0,6,2,4394,4314472,6.8,7,6,1,,,,,,,,,,,,,,,0.0,1593.08,0.0,1365.5,1365.5,227.58
+2020-08-08,RS,Pinhal Grande,1,0,6,3,4394,4314472,6.8,7,6,1,,,,,,,,,,,,,,,0.0,1593.08,0.0,1365.5,1365.5,227.58
+2020-08-09,RS,Pinhal Grande,1,0,6,4,4394,4314472,6.8,7,6,1,,,,,,,,,,,,,,,0.0,1593.08,0.0,1365.5,1365.5,227.58
+2020-08-10,RS,Pinhal Grande,1,0,6,5,4394,4314472,6.8,7,6,1,,,,,,,,,,,,,,,0.0,1593.08,0.0,1365.5,1365.5,227.58
