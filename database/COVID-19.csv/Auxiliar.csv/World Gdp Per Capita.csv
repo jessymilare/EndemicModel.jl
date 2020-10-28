@@ -74,7 +74,7 @@ European Union,EUU,1.04,34843
 Faroe Islands,FRO,1.0,22653
 Fiji,FJI,1.06,6220
 Finland,FIN,1.04,48686
-Fragile and conflict affected situations,FCS,1.0,834
+Fragile and conflict affected situations,FCS,1.05,2190
 France,FRA,1.03,40494
 French Polynesia,PYF,1.0,14324
 Gabon,GAB,1.03,7667
@@ -91,7 +91,7 @@ Guinea-Bissau,GNB,1.04,698
 Guyana,GUY,1.1,5468
 Haiti,HTI,1.03,755
 Heavily indebted poor countries (HIPC),HPC,1.05,947
-High income,HIC,1.03,44584
+High income,HIC,1.03,44540
 Honduras,HND,1.05,2575
 "Hong Kong SAR, China",HKG,1.03,48756
 Hungary,HUN,1.07,16476
@@ -165,10 +165,10 @@ New Zealand,NZL,1.06,42084
 Nicaragua,NIC,1.03,1913
 Niger,NER,1.06,555
 Nigeria,NGA,1.07,2230
-North America,NAC,1.03,63327
+North America,NAC,1.03,63182
 North Macedonia,MKD,1.06,6093
 Norway,NOR,1.04,75420
-OECD members,OED,1.03,39438
+OECD members,OED,1.03,39399
 Oman,OMN,1.03,15474
 Other small states,OSS,1.06,13982
 Pacific island small states,PSS,1.05,4193
@@ -181,7 +181,7 @@ Peru,PER,1.07,6978
 Philippines,PHL,1.06,3485
 Poland,POL,1.07,15595
 Portugal,PRT,1.04,23145
-Post-demographic dividend,PST,1.03,45578
+Post-demographic dividend,PST,1.03,45530
 Pre-demographic dividend,PRE,1.07,1472
 Puerto Rico,PRI,1.04,32874
 Qatar,QAT,1.04,64782
@@ -232,7 +232,7 @@ Uganda,UGA,1.06,777
 Ukraine,UKR,1.1,3659
 United Arab Emirates,ARE,1.01,43103
 United Kingdom,GBR,1.02,42300
-United States,USA,1.03,65281
+United States,USA,1.03,65118
 Upper middle income,UMC,1.09,9040
 Uruguay,URY,1.05,16190
 Uzbekistan,UZB,1.06,1725
@@ -240,7 +240,7 @@ Vanuatu,VUT,1.04,3058
 Venezuela,VEN,1.0,4842
 Vietnam,VNM,1.11,2715
 West Bank and Gaza,PSE,1.0,1476
-World,WLD,1.04,11436
+World,WLD,1.04,11429
 Yemen,YEM,1.0,554
 Zambia,ZMB,1.07,1291
 Zimbabwe,ZWE,1.05,1464
