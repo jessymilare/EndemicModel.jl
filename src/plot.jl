@@ -16,7 +16,7 @@ const FACTOR_LABEL_MAP = OrderedDict(
 function _get_yscale(max_yvalue)
     for (yscale, ylabel) ∈ FACTOR_LABEL_MAP
         if max_yvalue / yscale >= 2.0
-            return (yscale, gettext(ylabel))
+            return (yscale, ylabel)
         end
     end
     (1.0, "")
@@ -122,7 +122,7 @@ function plot(
         isnothing(labels) && seriestype == :pie && (labels = [X])
     end
     if isnothing(labels)
-        labels = gettext.(string.(prettify.(Symbol.(columns))))
+        labels = string.(prettify.(Symbol.(columns)))
     end
     Y = df[!, columns[1]] ./ yscale
 
@@ -130,7 +130,7 @@ function plot(
 
     win = Plots.plot(
         X,
-        Y,
+        Y;
         xrotation = 90,
         xticks = min(30, length(X)),
         label = labels[1],
@@ -140,6 +140,7 @@ function plot(
         left_margin = left_margin,
         seriestype = seriestypes[1],
         seriescolors = seriescolors[1],
+        kwargs...,
     )
     #for (yn, label) ∈ zip(columns[2:end], labels[2:end])
     for (column, label, seriestype, seriescolor) ∈
