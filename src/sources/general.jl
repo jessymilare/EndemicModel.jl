@@ -32,7 +32,7 @@ function import_data(
     metacols = ["Country Code", "Region", "IncomeGroup"]
 
     file = import_data(DownloadSource(url); update_period = update_period, kwargs...)
-    global r = ZipFile.Reader(file)
+    global r = ZipFile.Reader(string(file))
     zipfiles = r.files
     file = zipfiles[findfirst(f -> f.name[1:10] == "API_SP.POP", zipfiles)]
     metafile = zipfiles[findfirst(f -> f.name[1:16] == "Metadata_Country", zipfiles)]
@@ -138,7 +138,7 @@ function import_data(
     metacols = ["Country Code", "Region", "IncomeGroup"]
 
     file = import_data(DownloadSource(url); update_period = update_period, kwargs...)
-    global r = ZipFile.Reader(file)
+    global r = ZipFile.Reader(string(file))
     zipfiles = r.files
     file = zipfiles[findfirst(f -> f.name[1:15] == "API_NY.GDP.PCAP", zipfiles)]
     metafile = zipfiles[findfirst(f -> f.name[1:16] == "Metadata_Country", zipfiles)]

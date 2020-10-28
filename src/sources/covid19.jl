@@ -168,7 +168,7 @@ function import_data(source::BrasilIo; url = BRASIL_IO_URL, kwargs...)
     @debug "Importing data from Brasil.io."
     col_drop = [:confirmed_per_100k_inhabitants, :death_rate, :is_last]
     gzfile = import_data(DownloadSource(url))
-    file = gzopen(gzfile)
+    file = gzopen(string(gzfile))
     fstring = read(file)
     close(file)
     raw_data::DataFrame = csv_read(
@@ -182,7 +182,7 @@ function import_data(source::BrasilIo; url = BRASIL_IO_URL, kwargs...)
     raw_data[(raw_data.city.===missing), :city] .= ""
     sort!(raw_data, [:state, :city, :date])
 
-    rename!(raw_data, "estimated_population_2019" => "estimated_population")
+    #rename!(raw_data, "estimated_population_2019" => "estimated_population")
     raw_data.estimated_population =
         round.(OptInt, raw_data.estimated_population .* BRAZIL_POP_FACTOR)
 

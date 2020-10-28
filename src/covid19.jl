@@ -136,16 +136,8 @@ end
     wpop, wgdp = world_population, world_gdp_per_capita
     pop = wpop[wpop.country.=="World", :estimated_population]
     gdp = wgdp[wgdp.country.=="World", :gdp_per_capita]
-    cols = [
-        :date,
-        :total_tests,
-        :confirmed,
-        :recovered,
-        :deaths,
-        :infected,
-        :closed,
-        :active,
-    ]
+    cols =
+        [:date, :total_tests, :confirmed, :recovered, :deaths, :infected, :closed, :active]
     data = select(per_date, cols)
     insertcols!(data, 2, :estimated_population => pop[1])
     insertcols!(data, 3, :gdp_per_capita => gdp[1])
@@ -489,7 +481,8 @@ function covid19(;
             ],
         )
         for row ∈ eachrow(db.brasil_io.estimates)
-            data_kind = row.state == "total" ? "Estimate for Brazil on $(row.date)" :
+            data_kind =
+                row.state == "total" ? "Estimate for Brazil on $(row.date)" :
                 "Estimate for $(row.state), Brazil on $(row.date)"
             push!(sources, (; source = row.source, url = row.url, data_kind = data_kind))
         end

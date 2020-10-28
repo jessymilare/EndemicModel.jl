@@ -89,7 +89,7 @@ function get_input(
     directory = option(:parameter_directory),
     kwargs...,
 )
-    file = join(Path(directory), Path(table) * ".csv")
+    file = joinpath(Path(directory), Path(table * ".csv"))
     csv_read(file; kwargs...)
 end
 
@@ -132,8 +132,6 @@ function prettify(obj::Real; digits = 2, kwargs...)
     obj < 0.1 && (digits += 1)
     round(obj; digits = digits)
 end
-prettify(obj::Quantity{<:Integer}; kwargs...) = string(obj)
-prettify(obj::Quantity; digits = 2, kwargs...) = round(unit(obj), obj; digits = digits + 2)
 
 function prettify(obj::Symbol; case = titlecase, replace_pairs = ["_" => " "], kwargs...)
     if isnothing(case) && isnothing(replace_pairs)
@@ -263,32 +261,32 @@ end
 
 _debuginfo(object) = summary(object)
 
-function maybe_load_language(; force::Bool = false)
-    if Sys.iswindows() && (force || isnothing(get(ENV, "LANGUAGE", nothing)))
-        try
-            txt = read(
-                `reg query "HKCU\Control Panel\Desktop" /v PreferredUILanguages`,
-                String,
-            )
-            txt = filter(!isequal('\r'), txt)
-            lines = filter(!isempty, split(txt, '\n'))
-            if lines[1] == "HKEY_CURRENT_USER\\Control Panel\\Desktop"
-                langs = filter(!isempty, _win_get_lang.(lines[2:end]))
-                get!(ENV, "LANG", langs[1])
-                ENV["LANGUAGE"] = join(langs, ':')
-            end
-        catch exc
-            ENV["LANGUAGE"] = "en"
-        end
-    end
-    if force || textdomain() != "endemicmodel"
-        bindtextdomain(
-            "endemicmodel",
-            realpath(joinpath(dirname(Base.pathof(EndemicModel)), "..", "languages")),
-        )
-        textdomain("endemicmodel")
-    end
-end
+# function maybe_load_language(; force::Bool = false)
+#     if Sys.iswindows() && (force || isnothing(get(ENV, "LANGUAGE", nothing)))
+#         try
+#             txt = read(
+#                 `reg query "HKCU\Control Panel\Desktop" /v PreferredUILanguages`,
+#                 String,
+#             )
+#             txt = filter(!isequal('\r'), txt)
+#             lines = filter(!isempty, split(txt, '\n'))
+#             if lines[1] == "HKEY_CURRENT_USER\\Control Panel\\Desktop"
+#                 langs = filter(!isempty, _win_get_lang.(lines[2:end]))
+#                 get!(ENV, "LANG", langs[1])
+#                 ENV["LANGUAGE"] = join(langs, ':')
+#             end
+#         catch exc
+#             ENV["LANGUAGE"] = "en"
+#         end
+#     end
+#     if force || textdomain() != "endemicmodel"
+#         bindtextdomain(
+#             "endemicmodel",
+#             realpath(joinpath(dirname(Base.pathof(EndemicModel)), "..", "languages")),
+#         )
+#         textdomain("endemicmodel")
+#     end
+# end
 
 function _win_get_lang(line)
     tokens = filter(!isempty, split(line, ' '))

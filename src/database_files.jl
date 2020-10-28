@@ -7,7 +7,7 @@ function database_path(
     database_filename = option(:database_filename),
     kwargs...,
 )
-    join(Path(database_directory), Path(database_filename) * "." * ext)
+    joinpath(Path(database_directory), Path(database_filename * "." * ext))
 end
 
 function database_path(sourcesym::Symbol; kwargs...)
@@ -62,7 +62,7 @@ function import_data(
     end
     if !imported
         @debug "Importing data from sources."
-        imp_kwargs = merge(default_kwargs(database), kwargs...)
+        imp_kwargs = merge(default_kwargs(database), kwargs)
         data = import_data(sources(database); imp_kwargs...)
         model = nothing
         funcs = computing_functions(database)

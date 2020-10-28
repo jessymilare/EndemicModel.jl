@@ -47,14 +47,14 @@ end
 
 @defoption(
     cache_directory,
-    join(home(), p".cache/EndemicModel/"),
+    joinpath(home(), p".cache/EndemicModel/"),
     "Directory where cache files are saved.",
     AbstractPath
 )
 
 @defoption(
     parameter_directory,
-    join(parent(@__PATH__), p"input/"),
+    joinpath(parent(@__PATH__), p"input/"),
     "Directory to look for input parameters.",
     PathDesignator
 )
@@ -90,7 +90,7 @@ end
 
 @defoption(
     database_directory,
-    join(parent(@__PATH__), p"database/"),
+    joinpath(parent(@__PATH__), p"database/"),
     "Directory where databases are exported.",
     PathDesignator
 )
@@ -106,7 +106,7 @@ end
 
 @defoption(
     model_directory,
-    join(parent(@__PATH__), p"model/"),
+    joinpath(parent(@__PATH__), p"model/"),
     "Directory where models are exported.",
     PathDesignator
 )

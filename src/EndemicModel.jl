@@ -19,12 +19,11 @@ using DataFramesMeta
 using DataStructures
 using DifferentialEquations
 using FilePaths
-using Gettext
 using GZip
 using Interpolations
 using Optim
 using StatsBase
-using Unitful
+#using Unitful
 
 export DataDict,
     DataFrameDict,

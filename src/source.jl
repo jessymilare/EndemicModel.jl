@@ -167,9 +167,9 @@ function cache_path(
 )
     @argcheck nsamples >= 1
     (period_directory, lastdir) = _cache_subpath(Path(directory), update_period)
-    subpath = ext == nothing ? subpath : subpath * "." * ext
-    result = join(period_directory, lastdir, Path(subpath))
-    curdir = dirname(result)
+    subpath = isnothing(ext) ? subpath : subpath * "." * ext
+    result = joinpath(period_directory, lastdir, Path(subpath))
+    curdir = Path(dirname(result))
     if !exists(curdir)
         mkdir(curdir, recursive = true)
         gc_cache_directory(period_directory, nsamples)
@@ -184,7 +184,7 @@ function _cache_subpath(directory::AbstractPath, update_period::Period)
     end
     n = Dates.value(update_period)
     timeformat = _dateformat_aux(update_period)
-    period_directory = join(directory, Path("Update every " * string(update_period)))
+    period_directory = joinpath(directory, Path("Update every " * string(update_period)))
     (perfloor, perceil) = Dates.floorceil(now(), update_period)
     if n == 1
         lastdir = Path(Dates.format(perfloor, timeformat))
@@ -215,7 +215,8 @@ _dateformat_aux(per::Hour) =
     Dates.value(per) >= 24 ? dateformat"yyyy-mm-dd" : dateformat"yyyy-mm-dd HHh"
 _dateformat_aux(per::Minute) =
     Dates.value(per) >= 60 ? dateformat"yyyy-mm-dd HHh" : dateformat"yyyy-mm-dd HHhMM\m"
-_dateformat_aux(per::Second) = Dates.value(per) >= 60 ? dateformat"yyyy-mm-dd HHhMM\m" :
+_dateformat_aux(per::Second) =
+    Dates.value(per) >= 60 ? dateformat"yyyy-mm-dd HHhMM\m" :
     dateformat"yyyy-mm-dd HHhMM\mSS\s"
 
 _dateformat_aux(period::Period) = dateformat"yyyy-mm-dd HHhMM\mSS\s"
@@ -255,7 +256,7 @@ function import_data(data::DownloadSource; kwargs...)
     url = data.url
     ext = split(url, '.')[end]
     ext = all(isletter, ext) ? ext : nothing
-    subpath = p"_DOWNLOADS_/" / string(hash(url))
+    subpath = joinpath(p"_DOWNLOADS_/", Path(string(hash(url))))
     path = cache_path(ext; subpath = subpath, kwargs...)
     @debug "Downloading data." url path
     download(url, path)
@@ -323,7 +324,7 @@ function export_data(source::CsvPath, data::AbstractDict; pretty::Bool = false, 
     !exists(destiny) && mkdir(destiny; recursive = true)
     for (fname, fdata) ∈ data
         fname = replace(string(fname), '/' => '_')
-        fpath = join(destiny, Path(fname * ".csv"))
+        fpath = joinpath(destiny, Path(fname * ".csv"))
         export_data(CsvPath(fpath), fdata; pretty = pretty, kwargs...)
     end
     destiny
@@ -420,7 +421,7 @@ function export_data(
 
         for (fname, fdata) ∈ subdata
             fname = replace(string(fname), '/' => '_')
-            fpath = join(destiny, Path(fname * ".ods"))
+            fpath = joinpath(destiny, Path(fname * ".ods"))
             export_data(OdsPath(fpath), fdata; pretty = pretty, kwargs...)
         end
     end

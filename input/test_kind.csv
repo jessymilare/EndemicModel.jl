@@ -12,3 +12,4 @@ key,value
 "tests performed","samples tested"
 "cases tested","people tested"
 "units unclear (incl. non-PCR)","units unclear"
+"people tested (incl. non-PCR)","people tested"

@@ -2,14 +2,14 @@
 # See file LICENSE.md for more information.
 
 const FACTOR_LABEL_MAP = OrderedDict(
-    1e8 => N_"hundreds of millions",
-    1e7 => N_"tens of millions",
-    1e6 => N_"millions",
-    1e5 => N_"hundreds of thousands",
-    1e4 => N_"tens of thousands",
-    1e3 => N_"thousands",
-    1e2 => N_"hundreds",
-    1e1 => N_"tens",
+    1e8 => "hundreds of millions",
+    1e7 => "tens of millions",
+    1e6 => "millions",
+    1e5 => "hundreds of thousands",
+    1e4 => "tens of thousands",
+    1e3 => "thousands",
+    1e2 => "hundreds",
+    1e1 => "tens",
     1.0 => "",
 )
 
@@ -42,7 +42,7 @@ function plot(
     title = _get_plot_title(df),
     date_format = option(:plot_date_format),
     new_window::Bool = true,
-    ylabel = _"People",
+    ylabel = "People",
     yscale = nothing,
     legend = false,
     left_margin = 0mm,
@@ -50,8 +50,6 @@ function plot(
     seriescolors = :auto,
     kwargs...,
 )
-    maybe_load_language()
-
     if plot_begin isa Integer
         if plot_begin <= 0
             ini = max(1, nrow(df) + plot_begin)
